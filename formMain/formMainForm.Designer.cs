@@ -59,7 +59,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnScriptFactory_Save = new Button();
             btnScriptFactory_LaunchOsbot = new Button();
             btnScriptFactory_DeleteBot = new Button();
-            btnScriptFactory_UpdateScripts = new Button();
             dataGridViewScriptFactory = new DataGridView();
             dataGridViewScriptFactory_Account = new DataGridViewTextBoxColumn();
             dataGridViewScriptFactory_Password = new DataGridViewTextBoxColumn();
@@ -128,7 +127,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             labelNav_RamUsageMonitor = new Label();
             Column1 = new DataGridViewComboBoxColumn();
             panelOSBotManager = new Panel();
-            btnOSBotManager_LocalScripts = new Button();
             panel5 = new Panel();
             label8 = new Label();
             textBox4 = new TextBox();
@@ -159,7 +157,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonOSBotManager_DeleteBot = new Button();
             labelOSBotManager_Header = new Label();
             panelDreamBotManager = new Panel();
-            btnDreamBotManager_LocalScripts = new Button();
             panel4 = new Panel();
             label6 = new Label();
             textBox3 = new TextBox();
@@ -190,7 +187,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             dataGridViewDreamBotManager_Note = new DataGridViewTextBoxColumn();
             dataGridViewDreamBotManager_Status = new DataGridViewTextBoxColumn();
             panelTRiBotManager = new Panel();
-            buttonTRiBotManager_LocalScripts = new Button();
             panel3 = new Panel();
             label4 = new Label();
             textBox2 = new TextBox();
@@ -233,10 +229,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             labelSettings_Header = new Label();
             progressBarSettings = new ProgressBar();
             panelAccountsAndSettings = new Panel();
+            buttonSettings_UpdateJivaroScripts = new Button();
+            buttonSettings_ManageLocalScripts = new Button();
             btnSettings_InstallJava = new Button();
             buttonSettings_SaveLoginInfo = new Button();
             button7 = new Button();
-            button6 = new Button();
+            buttonSettings_SetupGuide = new Button();
             textBoxSettings_TRiBotPassword = new TextBox();
             textBoxSettings_TRiBotEmail = new TextBox();
             labelSettings_TRiBotPassword = new Label();
@@ -252,7 +250,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxSettings_OSBotUsername = new TextBox();
             labelSettings_OSBotUsername = new Label();
             labelSettings_OSBotDetails = new Label();
-            panel1 = new Panel();
+            panelNavigation = new Panel();
             label1 = new Label();
             panelScriptFactory.SuspendLayout();
             panelScriptFactory_AdditionalSettings.SuspendLayout();
@@ -269,12 +267,11 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewTRiBotManager).BeginInit();
             panelAccountsAndSettings.SuspendLayout();
-            panel1.SuspendLayout();
+            panelNavigation.SuspendLayout();
             SuspendLayout();
             // 
             // panelScriptFactory
             // 
-            panelScriptFactory.AutoSize = true;
             panelScriptFactory.BackColor = Color.FromArgb(64, 64, 64);
             panelScriptFactory.BackgroundImageLayout = ImageLayout.Stretch;
             panelScriptFactory.Controls.Add(panelScriptFactory_AdditionalSettings);
@@ -286,7 +283,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             panelScriptFactory.Controls.Add(btnScriptFactory_Save);
             panelScriptFactory.Controls.Add(btnScriptFactory_LaunchOsbot);
             panelScriptFactory.Controls.Add(btnScriptFactory_DeleteBot);
-            panelScriptFactory.Controls.Add(btnScriptFactory_UpdateScripts);
             panelScriptFactory.Controls.Add(dataGridViewScriptFactory);
             panelScriptFactory.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
             panelScriptFactory.ForeColor = Color.FromArgb(224, 224, 224);
@@ -298,7 +294,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // panelScriptFactory_AdditionalSettings
             // 
-            panelScriptFactory_AdditionalSettings.AutoSize = true;
             panelScriptFactory_AdditionalSettings.BackColor = Color.FromArgb(58, 58, 58, 58);
             panelScriptFactory_AdditionalSettings.BorderStyle = BorderStyle.Fixed3D;
             panelScriptFactory_AdditionalSettings.Controls.Add(label3);
@@ -314,7 +309,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // label3
             // 
-            label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(57, 3);
             label3.Margin = new Padding(0);
@@ -336,7 +330,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // checkBox2
             // 
-            checkBox2.AutoSize = true;
             checkBox2.Location = new Point(5, 40);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(78, 17);
@@ -346,7 +339,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // label2
             // 
-            label2.AutoSize = true;
             label2.Location = new Point(5, 90);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
@@ -356,7 +348,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // checkBox1
             // 
-            checkBox1.AutoSize = true;
             checkBox1.Location = new Point(5, 65);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(71, 17);
@@ -384,7 +375,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnScriptFactory_DownloadOSBot.FlatAppearance.MouseDownBackColor = Color.Coral;
             btnScriptFactory_DownloadOSBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnScriptFactory_DownloadOSBot.FlatStyle = FlatStyle.Flat;
-            btnScriptFactory_DownloadOSBot.Location = new Point(650, 650);
+            btnScriptFactory_DownloadOSBot.Location = new Point(625, 650);
             btnScriptFactory_DownloadOSBot.Margin = new Padding(0);
             btnScriptFactory_DownloadOSBot.Name = "btnScriptFactory_DownloadOSBot";
             btnScriptFactory_DownloadOSBot.Size = new Size(110, 50);
@@ -402,7 +393,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             button5.FlatAppearance.MouseDownBackColor = Color.Coral;
             button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Location = new Point(400, 650);
+            button5.Location = new Point(475, 650);
             button5.Margin = new Padding(0);
             button5.Name = "button5";
             button5.Size = new Size(110, 50);
@@ -433,7 +424,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnScriptFactory_AddBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnScriptFactory_AddBot.FlatStyle = FlatStyle.Flat;
             btnScriptFactory_AddBot.ForeColor = Color.FromArgb(224, 224, 224);
-            btnScriptFactory_AddBot.Location = new Point(150, 650);
+            btnScriptFactory_AddBot.Location = new Point(175, 650);
             btnScriptFactory_AddBot.Margin = new Padding(0);
             btnScriptFactory_AddBot.Name = "btnScriptFactory_AddBot";
             btnScriptFactory_AddBot.Size = new Size(110, 50);
@@ -487,7 +478,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnScriptFactory_DeleteBot.FlatAppearance.MouseDownBackColor = Color.Coral;
             btnScriptFactory_DeleteBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnScriptFactory_DeleteBot.FlatStyle = FlatStyle.Flat;
-            btnScriptFactory_DeleteBot.Location = new Point(275, 650);
+            btnScriptFactory_DeleteBot.Location = new Point(325, 650);
             btnScriptFactory_DeleteBot.Margin = new Padding(0);
             btnScriptFactory_DeleteBot.Name = "btnScriptFactory_DeleteBot";
             btnScriptFactory_DeleteBot.Size = new Size(110, 50);
@@ -495,24 +486,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnScriptFactory_DeleteBot.Text = "Delete Bot";
             btnScriptFactory_DeleteBot.UseVisualStyleBackColor = false;
             btnScriptFactory_DeleteBot.Click += btnScriptFactory_DeleteBot_Click;
-            // 
-            // btnScriptFactory_UpdateScripts
-            // 
-            btnScriptFactory_UpdateScripts.BackColor = Color.FromArgb(54, 54, 54);
-            btnScriptFactory_UpdateScripts.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptFactory_UpdateScripts.Cursor = Cursors.Hand;
-            btnScriptFactory_UpdateScripts.FlatAppearance.BorderColor = Color.Coral;
-            btnScriptFactory_UpdateScripts.FlatAppearance.MouseDownBackColor = Color.Coral;
-            btnScriptFactory_UpdateScripts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            btnScriptFactory_UpdateScripts.FlatStyle = FlatStyle.Flat;
-            btnScriptFactory_UpdateScripts.Location = new Point(525, 650);
-            btnScriptFactory_UpdateScripts.Margin = new Padding(0);
-            btnScriptFactory_UpdateScripts.Name = "btnScriptFactory_UpdateScripts";
-            btnScriptFactory_UpdateScripts.Size = new Size(110, 50);
-            btnScriptFactory_UpdateScripts.TabIndex = 5;
-            btnScriptFactory_UpdateScripts.Text = "Update Scripts";
-            btnScriptFactory_UpdateScripts.UseVisualStyleBackColor = false;
-            btnScriptFactory_UpdateScripts.Click += btnScriptFactory_UpdateScripts_Click;
             // 
             // dataGridViewScriptFactory
             // 
@@ -674,7 +647,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // panelBreakProfiles
             // 
-            panelBreakProfiles.BackColor = Color.Transparent;
+            panelBreakProfiles.BackColor = Color.FromArgb(64, 64, 64);
             panelBreakProfiles.BackgroundImageLayout = ImageLayout.Stretch;
             panelBreakProfiles.Controls.Add(labelBreakProfiles_Header);
             panelBreakProfiles.Controls.Add(labelSleepTimeVariationPercentage);
@@ -726,41 +699,45 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // labelSleepTimeVariationPercentage
             // 
+            labelSleepTimeVariationPercentage.AutoSize = true;
             labelSleepTimeVariationPercentage.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelSleepTimeVariationPercentage.ForeColor = Color.FromArgb(224, 224, 224);
             labelSleepTimeVariationPercentage.Location = new Point(900, 400);
             labelSleepTimeVariationPercentage.Name = "labelSleepTimeVariationPercentage";
-            labelSleepTimeVariationPercentage.Size = new Size(22, 18);
+            labelSleepTimeVariationPercentage.Size = new Size(21, 18);
             labelSleepTimeVariationPercentage.TabIndex = 39;
             labelSleepTimeVariationPercentage.Text = "%";
             // 
             // labelTimeUntilSleepVariationMinutes
             // 
+            labelTimeUntilSleepVariationMinutes.AutoSize = true;
             labelTimeUntilSleepVariationMinutes.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelTimeUntilSleepVariationMinutes.ForeColor = Color.FromArgb(224, 224, 224);
             labelTimeUntilSleepVariationMinutes.Location = new Point(900, 300);
             labelTimeUntilSleepVariationMinutes.Name = "labelTimeUntilSleepVariationMinutes";
-            labelTimeUntilSleepVariationMinutes.Size = new Size(62, 18);
+            labelTimeUntilSleepVariationMinutes.Size = new Size(60, 18);
             labelTimeUntilSleepVariationMinutes.TabIndex = 38;
             labelTimeUntilSleepVariationMinutes.Text = "Minutes";
             // 
             // labelSleepTimeMinutes
             // 
+            labelSleepTimeMinutes.AutoSize = true;
             labelSleepTimeMinutes.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelSleepTimeMinutes.ForeColor = Color.FromArgb(224, 224, 224);
             labelSleepTimeMinutes.Location = new Point(900, 350);
             labelSleepTimeMinutes.Name = "labelSleepTimeMinutes";
-            labelSleepTimeMinutes.Size = new Size(62, 18);
+            labelSleepTimeMinutes.Size = new Size(60, 18);
             labelSleepTimeMinutes.TabIndex = 37;
             labelSleepTimeMinutes.Text = "Minutes";
             // 
             // labelTimeUntilSleepMinutes
             // 
+            labelTimeUntilSleepMinutes.AutoSize = true;
             labelTimeUntilSleepMinutes.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelTimeUntilSleepMinutes.ForeColor = Color.FromArgb(224, 224, 224);
             labelTimeUntilSleepMinutes.Location = new Point(900, 250);
             labelTimeUntilSleepMinutes.Name = "labelTimeUntilSleepMinutes";
-            labelTimeUntilSleepMinutes.Size = new Size(62, 18);
+            labelTimeUntilSleepMinutes.Size = new Size(60, 18);
             labelTimeUntilSleepMinutes.TabIndex = 36;
             labelTimeUntilSleepMinutes.Text = "Minutes";
             // 
@@ -881,7 +858,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonSaveBreaks.Name = "buttonSaveBreaks";
             buttonSaveBreaks.Size = new Size(125, 50);
             buttonSaveBreaks.TabIndex = 27;
-            buttonSaveBreaks.Text = "Save to Profiles";
+            buttonSaveBreaks.Text = "Save Profile";
             buttonSaveBreaks.UseVisualStyleBackColor = true;
             buttonSaveBreaks.Click += btnBreakProfiles_Save_Click;
             // 
@@ -901,21 +878,23 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // labelBreakTimePercentage
             // 
+            labelBreakTimePercentage.AutoSize = true;
             labelBreakTimePercentage.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelBreakTimePercentage.ForeColor = Color.FromArgb(224, 224, 224);
             labelBreakTimePercentage.Location = new Point(425, 400);
             labelBreakTimePercentage.Name = "labelBreakTimePercentage";
-            labelBreakTimePercentage.Size = new Size(22, 18);
+            labelBreakTimePercentage.Size = new Size(21, 18);
             labelBreakTimePercentage.TabIndex = 25;
             labelBreakTimePercentage.Text = "%";
             // 
             // labelBreakTImeMinutes
             // 
+            labelBreakTImeMinutes.AutoSize = true;
             labelBreakTImeMinutes.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelBreakTImeMinutes.ForeColor = Color.FromArgb(224, 224, 224);
             labelBreakTImeMinutes.Location = new Point(425, 350);
             labelBreakTImeMinutes.Name = "labelBreakTImeMinutes";
-            labelBreakTImeMinutes.Size = new Size(62, 18);
+            labelBreakTImeMinutes.Size = new Size(60, 18);
             labelBreakTImeMinutes.TabIndex = 24;
             labelBreakTImeMinutes.Text = "Minutes";
             // 
@@ -971,21 +950,23 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // labelBotTimeMinutes
             // 
+            labelBotTimeMinutes.AutoSize = true;
             labelBotTimeMinutes.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelBotTimeMinutes.ForeColor = Color.FromArgb(224, 224, 224);
             labelBotTimeMinutes.Location = new Point(425, 250);
             labelBotTimeMinutes.Name = "labelBotTimeMinutes";
-            labelBotTimeMinutes.Size = new Size(62, 18);
+            labelBotTimeMinutes.Size = new Size(60, 18);
             labelBotTimeMinutes.TabIndex = 19;
             labelBotTimeMinutes.Text = "Minutes";
             // 
             // labelBotTimeVariationMinutes
             // 
+            labelBotTimeVariationMinutes.AutoSize = true;
             labelBotTimeVariationMinutes.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelBotTimeVariationMinutes.ForeColor = Color.FromArgb(224, 224, 224);
             labelBotTimeVariationMinutes.Location = new Point(425, 300);
             labelBotTimeVariationMinutes.Name = "labelBotTimeVariationMinutes";
-            labelBotTimeVariationMinutes.Size = new Size(62, 18);
+            labelBotTimeVariationMinutes.Size = new Size(60, 18);
             labelBotTimeVariationMinutes.TabIndex = 18;
             labelBotTimeVariationMinutes.Text = "Minutes";
             // 
@@ -1159,8 +1140,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // panelScriptProfiles
             // 
-            panelScriptProfiles.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panelScriptProfiles.BackColor = Color.Transparent;
+            panelScriptProfiles.BackColor = Color.FromArgb(64, 64, 64);
             panelScriptProfiles.BackgroundImageLayout = ImageLayout.Stretch;
             panelScriptProfiles.Controls.Add(labelScriptProfiles_Header);
             panelScriptProfiles.Controls.Add(linkLabelScriptProfilesWebpage);
@@ -1191,55 +1171,61 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // linkLabelScriptProfilesWebpage
             // 
+            linkLabelScriptProfilesWebpage.AutoSize = true;
             linkLabelScriptProfilesWebpage.LinkColor = Color.FromArgb(128, 255, 128);
             linkLabelScriptProfilesWebpage.Location = new Point(635, 448);
             linkLabelScriptProfilesWebpage.Name = "linkLabelScriptProfilesWebpage";
-            linkLabelScriptProfilesWebpage.Size = new Size(120, 18);
+            linkLabelScriptProfilesWebpage.Size = new Size(104, 18);
             linkLabelScriptProfilesWebpage.TabIndex = 48;
             linkLabelScriptProfilesWebpage.TabStop = true;
             linkLabelScriptProfilesWebpage.Text = "www.jivaro.net";
             // 
             // labelScriptProfiles_Explanation5
             // 
+            labelScriptProfiles_Explanation5.AutoSize = true;
             labelScriptProfiles_Explanation5.Location = new Point(425, 450);
             labelScriptProfiles_Explanation5.Name = "labelScriptProfiles_Explanation5";
-            labelScriptProfiles_Explanation5.Size = new Size(205, 18);
+            labelScriptProfiles_Explanation5.Size = new Size(198, 18);
             labelScriptProfiles_Explanation5.TabIndex = 47;
             labelScriptProfiles_Explanation5.Text = "> For more information, visit:";
             // 
             // labelScriptProfiles_Explanation4
             // 
+            labelScriptProfiles_Explanation4.AutoSize = true;
             labelScriptProfiles_Explanation4.Location = new Point(425, 400);
             labelScriptProfiles_Explanation4.Name = "labelScriptProfiles_Explanation4";
-            labelScriptProfiles_Explanation4.Size = new Size(245, 18);
+            labelScriptProfiles_Explanation4.Size = new Size(210, 18);
             labelScriptProfiles_Explanation4.TabIndex = 46;
-            labelScriptProfiles_Explanation4.Text = "> Click the Save to Profiles button.";
+            labelScriptProfiles_Explanation4.Text = "> Click the Save Profile button.";
             // 
             // labelScriptProfiles_Explanation2
             // 
+            labelScriptProfiles_Explanation2.AutoSize = true;
             labelScriptProfiles_Explanation2.Location = new Point(425, 350);
             labelScriptProfiles_Explanation2.Name = "labelScriptProfiles_Explanation2";
-            labelScriptProfiles_Explanation2.Size = new Size(322, 18);
+            labelScriptProfiles_Explanation2.Size = new Size(305, 18);
             labelScriptProfiles_Explanation2.TabIndex = 45;
             labelScriptProfiles_Explanation2.Text = "> Fill in the blanks and select desired options.";
             // 
             // labelScriptProfiles_Explanation1
             // 
+            labelScriptProfiles_Explanation1.AutoSize = true;
             labelScriptProfiles_Explanation1.Location = new Point(425, 300);
             labelScriptProfiles_Explanation1.Margin = new Padding(0);
             labelScriptProfiles_Explanation1.Name = "labelScriptProfiles_Explanation1";
-            labelScriptProfiles_Explanation1.Size = new Size(299, 18);
+            labelScriptProfiles_Explanation1.Size = new Size(288, 18);
             labelScriptProfiles_Explanation1.TabIndex = 44;
             labelScriptProfiles_Explanation1.Text = "> Select a script from the drop down menu";
             // 
             // labelScriptProfiles_SelectScript
             // 
+            labelScriptProfiles_SelectScript.AutoSize = true;
             labelScriptProfiles_SelectScript.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_SelectScript.ForeColor = Color.FromArgb(224, 224, 224);
             labelScriptProfiles_SelectScript.Location = new Point(525, 125);
             labelScriptProfiles_SelectScript.Margin = new Padding(0);
             labelScriptProfiles_SelectScript.Name = "labelScriptProfiles_SelectScript";
-            labelScriptProfiles_SelectScript.Size = new Size(91, 17);
+            labelScriptProfiles_SelectScript.Size = new Size(91, 18);
             labelScriptProfiles_SelectScript.TabIndex = 43;
             labelScriptProfiles_SelectScript.Text = "Select Script";
             // 
@@ -1400,9 +1386,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // panelOSBotManager
             // 
-            panelOSBotManager.BackColor = Color.Transparent;
+            panelOSBotManager.BackColor = Color.FromArgb(64, 64, 64);
             panelOSBotManager.BackgroundImageLayout = ImageLayout.Stretch;
-            panelOSBotManager.Controls.Add(btnOSBotManager_LocalScripts);
             panelOSBotManager.Controls.Add(panel5);
             panelOSBotManager.Controls.Add(progressBarOSBotManager);
             panelOSBotManager.Controls.Add(btnOSBotManager_DownloadOSBot);
@@ -1421,26 +1406,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             panelOSBotManager.Size = new Size(1130, 730);
             panelOSBotManager.TabIndex = 21;
             // 
-            // btnOSBotManager_LocalScripts
-            // 
-            btnOSBotManager_LocalScripts.BackColor = Color.FromArgb(54, 54, 54);
-            btnOSBotManager_LocalScripts.BackgroundImageLayout = ImageLayout.Stretch;
-            btnOSBotManager_LocalScripts.FlatAppearance.BorderColor = Color.Coral;
-            btnOSBotManager_LocalScripts.FlatAppearance.MouseDownBackColor = Color.Coral;
-            btnOSBotManager_LocalScripts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            btnOSBotManager_LocalScripts.FlatStyle = FlatStyle.Flat;
-            btnOSBotManager_LocalScripts.Location = new Point(525, 650);
-            btnOSBotManager_LocalScripts.Margin = new Padding(0);
-            btnOSBotManager_LocalScripts.Name = "btnOSBotManager_LocalScripts";
-            btnOSBotManager_LocalScripts.Size = new Size(110, 50);
-            btnOSBotManager_LocalScripts.TabIndex = 61;
-            btnOSBotManager_LocalScripts.Text = "Local Scripts";
-            btnOSBotManager_LocalScripts.UseVisualStyleBackColor = false;
-            btnOSBotManager_LocalScripts.Click += btnShared_OpenLocalScripts_Click;
-            // 
             // panel5
             // 
-            panel5.AutoSize = true;
             panel5.BackColor = Color.FromArgb(58, 58, 58, 58);
             panel5.BorderStyle = BorderStyle.Fixed3D;
             panel5.Controls.Add(label8);
@@ -1456,7 +1423,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // label8
             // 
-            label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label8.Location = new Point(57, 3);
             label8.Margin = new Padding(0);
@@ -1478,7 +1444,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // checkBox7
             // 
-            checkBox7.AutoSize = true;
             checkBox7.Location = new Point(5, 40);
             checkBox7.Margin = new Padding(0);
             checkBox7.Name = "checkBox7";
@@ -1489,7 +1454,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // label9
             // 
-            label9.AutoSize = true;
             label9.Location = new Point(5, 90);
             label9.Margin = new Padding(0);
             label9.Name = "label9";
@@ -1499,7 +1463,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // checkBox8
             // 
-            checkBox8.AutoSize = true;
             checkBox8.Location = new Point(5, 65);
             checkBox8.Name = "checkBox8";
             checkBox8.Size = new Size(117, 17);
@@ -1525,7 +1488,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnOSBotManager_DownloadOSBot.FlatAppearance.MouseDownBackColor = Color.Coral;
             btnOSBotManager_DownloadOSBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnOSBotManager_DownloadOSBot.FlatStyle = FlatStyle.Flat;
-            btnOSBotManager_DownloadOSBot.Location = new Point(650, 650);
+            btnOSBotManager_DownloadOSBot.Location = new Point(625, 650);
             btnOSBotManager_DownloadOSBot.Margin = new Padding(0);
             btnOSBotManager_DownloadOSBot.Name = "btnOSBotManager_DownloadOSBot";
             btnOSBotManager_DownloadOSBot.Size = new Size(110, 50);
@@ -1542,7 +1505,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnOSBotManager_ImportAccounts.FlatAppearance.MouseDownBackColor = Color.Coral;
             btnOSBotManager_ImportAccounts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnOSBotManager_ImportAccounts.FlatStyle = FlatStyle.Flat;
-            btnOSBotManager_ImportAccounts.Location = new Point(400, 650);
+            btnOSBotManager_ImportAccounts.Location = new Point(475, 650);
             btnOSBotManager_ImportAccounts.Margin = new Padding(0);
             btnOSBotManager_ImportAccounts.Name = "btnOSBotManager_ImportAccounts";
             btnOSBotManager_ImportAccounts.Size = new Size(110, 50);
@@ -1720,7 +1683,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonOSBotManager_AddBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             buttonOSBotManager_AddBot.FlatStyle = FlatStyle.Flat;
             buttonOSBotManager_AddBot.ForeColor = Color.FromArgb(224, 224, 224);
-            buttonOSBotManager_AddBot.Location = new Point(150, 650);
+            buttonOSBotManager_AddBot.Location = new Point(175, 650);
             buttonOSBotManager_AddBot.Margin = new Padding(0);
             buttonOSBotManager_AddBot.Name = "buttonOSBotManager_AddBot";
             buttonOSBotManager_AddBot.Size = new Size(110, 50);
@@ -1771,7 +1734,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonOSBotManager_DeleteBot.FlatAppearance.MouseDownBackColor = Color.Coral;
             buttonOSBotManager_DeleteBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             buttonOSBotManager_DeleteBot.FlatStyle = FlatStyle.Flat;
-            buttonOSBotManager_DeleteBot.Location = new Point(275, 650);
+            buttonOSBotManager_DeleteBot.Location = new Point(325, 650);
             buttonOSBotManager_DeleteBot.Margin = new Padding(0);
             buttonOSBotManager_DeleteBot.Name = "buttonOSBotManager_DeleteBot";
             buttonOSBotManager_DeleteBot.Size = new Size(110, 50);
@@ -1795,7 +1758,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             panelDreamBotManager.BackColor = Color.FromArgb(64, 64, 64);
             panelDreamBotManager.BackgroundImageLayout = ImageLayout.Stretch;
-            panelDreamBotManager.Controls.Add(btnDreamBotManager_LocalScripts);
             panelDreamBotManager.Controls.Add(panel4);
             panelDreamBotManager.Controls.Add(progressBarDreamBotManager);
             panelDreamBotManager.Controls.Add(btnDreamBotManager_DownloadDreamBot);
@@ -1814,27 +1776,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             panelDreamBotManager.Size = new Size(1130, 730);
             panelDreamBotManager.TabIndex = 22;
             // 
-            // btnDreamBotManager_LocalScripts
-            // 
-            btnDreamBotManager_LocalScripts.BackColor = Color.FromArgb(54, 54, 54);
-            btnDreamBotManager_LocalScripts.BackgroundImageLayout = ImageLayout.Stretch;
-            btnDreamBotManager_LocalScripts.Cursor = Cursors.Hand;
-            btnDreamBotManager_LocalScripts.FlatAppearance.BorderColor = Color.Coral;
-            btnDreamBotManager_LocalScripts.FlatAppearance.MouseDownBackColor = Color.Coral;
-            btnDreamBotManager_LocalScripts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            btnDreamBotManager_LocalScripts.FlatStyle = FlatStyle.Flat;
-            btnDreamBotManager_LocalScripts.Location = new Point(525, 650);
-            btnDreamBotManager_LocalScripts.Margin = new Padding(0);
-            btnDreamBotManager_LocalScripts.Name = "btnDreamBotManager_LocalScripts";
-            btnDreamBotManager_LocalScripts.Size = new Size(110, 50);
-            btnDreamBotManager_LocalScripts.TabIndex = 60;
-            btnDreamBotManager_LocalScripts.Text = "Local Scripts";
-            btnDreamBotManager_LocalScripts.UseVisualStyleBackColor = false;
-            btnDreamBotManager_LocalScripts.Click += btnShared_OpenLocalScripts_Click;
-            // 
             // panel4
             // 
-            panel4.AutoSize = true;
             panel4.BackColor = Color.FromArgb(58, 58, 58, 58);
             panel4.BorderStyle = BorderStyle.Fixed3D;
             panel4.Controls.Add(label6);
@@ -1850,7 +1793,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // label6
             // 
-            label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.Location = new Point(57, 3);
             label6.Margin = new Padding(0);
@@ -1872,7 +1814,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // checkBox5
             // 
-            checkBox5.AutoSize = true;
             checkBox5.Location = new Point(5, 40);
             checkBox5.Margin = new Padding(0);
             checkBox5.Name = "checkBox5";
@@ -1883,7 +1824,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // label7
             // 
-            label7.AutoSize = true;
             label7.Location = new Point(5, 90);
             label7.Margin = new Padding(0);
             label7.Name = "label7";
@@ -1893,7 +1833,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // checkBox6
             // 
-            checkBox6.AutoSize = true;
             checkBox6.Location = new Point(5, 65);
             checkBox6.Name = "checkBox6";
             checkBox6.Size = new Size(117, 17);
@@ -1920,7 +1859,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnDreamBotManager_DownloadDreamBot.FlatAppearance.MouseDownBackColor = Color.Coral;
             btnDreamBotManager_DownloadDreamBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnDreamBotManager_DownloadDreamBot.FlatStyle = FlatStyle.Flat;
-            btnDreamBotManager_DownloadDreamBot.Location = new Point(650, 650);
+            btnDreamBotManager_DownloadDreamBot.Location = new Point(625, 650);
             btnDreamBotManager_DownloadDreamBot.Margin = new Padding(0);
             btnDreamBotManager_DownloadDreamBot.Name = "btnDreamBotManager_DownloadDreamBot";
             btnDreamBotManager_DownloadDreamBot.Size = new Size(110, 50);
@@ -1938,7 +1877,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnDreamBotManager_ImportAccounts.FlatAppearance.MouseDownBackColor = Color.Coral;
             btnDreamBotManager_ImportAccounts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnDreamBotManager_ImportAccounts.FlatStyle = FlatStyle.Flat;
-            btnDreamBotManager_ImportAccounts.Location = new Point(400, 650);
+            btnDreamBotManager_ImportAccounts.Location = new Point(475, 650);
             btnDreamBotManager_ImportAccounts.Margin = new Padding(0);
             btnDreamBotManager_ImportAccounts.Name = "btnDreamBotManager_ImportAccounts";
             btnDreamBotManager_ImportAccounts.Size = new Size(110, 50);
@@ -1957,7 +1896,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnDreamBotManager_AddBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnDreamBotManager_AddBot.FlatStyle = FlatStyle.Flat;
             btnDreamBotManager_AddBot.ForeColor = Color.FromArgb(224, 224, 224);
-            btnDreamBotManager_AddBot.Location = new Point(150, 650);
+            btnDreamBotManager_AddBot.Location = new Point(175, 650);
             btnDreamBotManager_AddBot.Margin = new Padding(0);
             btnDreamBotManager_AddBot.Name = "btnDreamBotManager_AddBot";
             btnDreamBotManager_AddBot.Size = new Size(110, 50);
@@ -2011,7 +1950,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnDreamBotManager_DeleteBot.FlatAppearance.MouseDownBackColor = Color.Coral;
             btnDreamBotManager_DeleteBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnDreamBotManager_DeleteBot.FlatStyle = FlatStyle.Flat;
-            btnDreamBotManager_DeleteBot.Location = new Point(275, 650);
+            btnDreamBotManager_DeleteBot.Location = new Point(325, 650);
             btnDreamBotManager_DeleteBot.Margin = new Padding(0);
             btnDreamBotManager_DeleteBot.Name = "btnDreamBotManager_DeleteBot";
             btnDreamBotManager_DeleteBot.Size = new Size(110, 50);
@@ -2189,10 +2128,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // panelTRiBotManager
             // 
-            panelTRiBotManager.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panelTRiBotManager.BackColor = Color.Transparent;
+            panelTRiBotManager.BackColor = Color.FromArgb(64, 64, 64);
             panelTRiBotManager.BackgroundImageLayout = ImageLayout.Stretch;
-            panelTRiBotManager.Controls.Add(buttonTRiBotManager_LocalScripts);
             panelTRiBotManager.Controls.Add(panel3);
             panelTRiBotManager.Controls.Add(progressBarTRiBotManager);
             panelTRiBotManager.Controls.Add(buttonTRiBotManager_DownloadTRiBot);
@@ -2211,27 +2148,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             panelTRiBotManager.Size = new Size(1130, 730);
             panelTRiBotManager.TabIndex = 23;
             // 
-            // buttonTRiBotManager_LocalScripts
-            // 
-            buttonTRiBotManager_LocalScripts.BackColor = Color.FromArgb(54, 54, 54);
-            buttonTRiBotManager_LocalScripts.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonTRiBotManager_LocalScripts.Cursor = Cursors.Hand;
-            buttonTRiBotManager_LocalScripts.FlatAppearance.BorderColor = Color.Coral;
-            buttonTRiBotManager_LocalScripts.FlatAppearance.MouseDownBackColor = Color.Coral;
-            buttonTRiBotManager_LocalScripts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            buttonTRiBotManager_LocalScripts.FlatStyle = FlatStyle.Flat;
-            buttonTRiBotManager_LocalScripts.Location = new Point(525, 650);
-            buttonTRiBotManager_LocalScripts.Margin = new Padding(0);
-            buttonTRiBotManager_LocalScripts.Name = "buttonTRiBotManager_LocalScripts";
-            buttonTRiBotManager_LocalScripts.Size = new Size(110, 50);
-            buttonTRiBotManager_LocalScripts.TabIndex = 59;
-            buttonTRiBotManager_LocalScripts.Text = "Local Scripts";
-            buttonTRiBotManager_LocalScripts.UseVisualStyleBackColor = false;
-            buttonTRiBotManager_LocalScripts.Click += btnShared_OpenLocalScripts_Click;
-            // 
             // panel3
             // 
-            panel3.AutoSize = true;
             panel3.BackColor = Color.FromArgb(58, 58, 58, 58);
             panel3.BorderStyle = BorderStyle.Fixed3D;
             panel3.Controls.Add(label4);
@@ -2247,7 +2165,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // label4
             // 
-            label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(57, 3);
             label4.Margin = new Padding(0);
@@ -2269,7 +2186,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // checkBox3
             // 
-            checkBox3.AutoSize = true;
             checkBox3.Location = new Point(5, 40);
             checkBox3.Margin = new Padding(0);
             checkBox3.Name = "checkBox3";
@@ -2280,7 +2196,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // label5
             // 
-            label5.AutoSize = true;
             label5.Location = new Point(5, 90);
             label5.Margin = new Padding(0);
             label5.Name = "label5";
@@ -2290,7 +2205,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // checkBox4
             // 
-            checkBox4.AutoSize = true;
             checkBox4.Location = new Point(5, 65);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(117, 17);
@@ -2317,7 +2231,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonTRiBotManager_DownloadTRiBot.FlatAppearance.MouseDownBackColor = Color.Coral;
             buttonTRiBotManager_DownloadTRiBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             buttonTRiBotManager_DownloadTRiBot.FlatStyle = FlatStyle.Flat;
-            buttonTRiBotManager_DownloadTRiBot.Location = new Point(650, 650);
+            buttonTRiBotManager_DownloadTRiBot.Location = new Point(625, 650);
             buttonTRiBotManager_DownloadTRiBot.Margin = new Padding(0);
             buttonTRiBotManager_DownloadTRiBot.Name = "buttonTRiBotManager_DownloadTRiBot";
             buttonTRiBotManager_DownloadTRiBot.Size = new Size(110, 50);
@@ -2335,7 +2249,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonTRiBotManager_ImportAccounts.FlatAppearance.MouseDownBackColor = Color.Coral;
             buttonTRiBotManager_ImportAccounts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             buttonTRiBotManager_ImportAccounts.FlatStyle = FlatStyle.Flat;
-            buttonTRiBotManager_ImportAccounts.Location = new Point(400, 650);
+            buttonTRiBotManager_ImportAccounts.Location = new Point(475, 650);
             buttonTRiBotManager_ImportAccounts.Margin = new Padding(0);
             buttonTRiBotManager_ImportAccounts.Name = "buttonTRiBotManager_ImportAccounts";
             buttonTRiBotManager_ImportAccounts.Size = new Size(110, 50);
@@ -2354,7 +2268,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonTRiBotManager_AddBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             buttonTRiBotManager_AddBot.FlatStyle = FlatStyle.Flat;
             buttonTRiBotManager_AddBot.ForeColor = Color.FromArgb(224, 224, 224);
-            buttonTRiBotManager_AddBot.Location = new Point(150, 650);
+            buttonTRiBotManager_AddBot.Location = new Point(175, 650);
             buttonTRiBotManager_AddBot.Margin = new Padding(0);
             buttonTRiBotManager_AddBot.Name = "buttonTRiBotManager_AddBot";
             buttonTRiBotManager_AddBot.Size = new Size(110, 50);
@@ -2408,7 +2322,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonTRiBotManager_DeleteBot.FlatAppearance.MouseDownBackColor = Color.Coral;
             buttonTRiBotManager_DeleteBot.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             buttonTRiBotManager_DeleteBot.FlatStyle = FlatStyle.Flat;
-            buttonTRiBotManager_DeleteBot.Location = new Point(275, 650);
+            buttonTRiBotManager_DeleteBot.Location = new Point(325, 650);
             buttonTRiBotManager_DeleteBot.Margin = new Padding(0);
             buttonTRiBotManager_DeleteBot.Name = "buttonTRiBotManager_DeleteBot";
             buttonTRiBotManager_DeleteBot.Size = new Size(110, 50);
@@ -2595,7 +2509,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // labelSettings_LoggedUsername
             // 
             labelSettings_LoggedUsername.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_LoggedUsername.Location = new Point(190, 225);
+            labelSettings_LoggedUsername.Location = new Point(230, 225);
             labelSettings_LoggedUsername.Name = "labelSettings_LoggedUsername";
             labelSettings_LoggedUsername.Size = new Size(0, 1388);
             labelSettings_LoggedUsername.TabIndex = 55;
@@ -2609,7 +2523,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_InstallProxifier.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnSettings_InstallProxifier.FlatStyle = FlatStyle.Flat;
             btnSettings_InstallProxifier.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSettings_InstallProxifier.Location = new Point(800, 150);
+            btnSettings_InstallProxifier.Location = new Point(775, 200);
             btnSettings_InstallProxifier.Margin = new Padding(0);
             btnSettings_InstallProxifier.Name = "btnSettings_InstallProxifier";
             btnSettings_InstallProxifier.Size = new Size(125, 50);
@@ -2628,7 +2542,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_InstallSandboxie.FlatStyle = FlatStyle.Flat;
             btnSettings_InstallSandboxie.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettings_InstallSandboxie.ForeColor = Color.FromArgb(224, 224, 224);
-            btnSettings_InstallSandboxie.Location = new Point(975, 150);
+            btnSettings_InstallSandboxie.Location = new Point(950, 200);
             btnSettings_InstallSandboxie.Margin = new Padding(0);
             btnSettings_InstallSandboxie.Name = "btnSettings_InstallSandboxie";
             btnSettings_InstallSandboxie.Size = new Size(125, 50);
@@ -2647,7 +2561,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_CheckForUpdates.FlatStyle = FlatStyle.Flat;
             btnSettings_CheckForUpdates.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettings_CheckForUpdates.ForeColor = Color.FromArgb(224, 224, 224);
-            btnSettings_CheckForUpdates.Location = new Point(975, 225);
+            btnSettings_CheckForUpdates.Location = new Point(950, 275);
             btnSettings_CheckForUpdates.Margin = new Padding(0);
             btnSettings_CheckForUpdates.Name = "btnSettings_CheckForUpdates";
             btnSettings_CheckForUpdates.Size = new Size(125, 50);
@@ -2666,7 +2580,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_VisitWebsite.FlatStyle = FlatStyle.Flat;
             btnSettings_VisitWebsite.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettings_VisitWebsite.ForeColor = Color.FromArgb(224, 224, 224);
-            btnSettings_VisitWebsite.Location = new Point(800, 300);
+            btnSettings_VisitWebsite.Location = new Point(600, 350);
             btnSettings_VisitWebsite.Margin = new Padding(0);
             btnSettings_VisitWebsite.Name = "btnSettings_VisitWebsite";
             btnSettings_VisitWebsite.Size = new Size(125, 50);
@@ -2685,7 +2599,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_JoinDiscord.FlatStyle = FlatStyle.Flat;
             btnSettings_JoinDiscord.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettings_JoinDiscord.ForeColor = Color.FromArgb(224, 224, 224);
-            btnSettings_JoinDiscord.Location = new Point(977, 450);
+            btnSettings_JoinDiscord.Location = new Point(950, 425);
             btnSettings_JoinDiscord.Margin = new Padding(0);
             btnSettings_JoinDiscord.Name = "btnSettings_JoinDiscord";
             btnSettings_JoinDiscord.Size = new Size(125, 50);
@@ -2704,7 +2618,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_BottingGuide.FlatStyle = FlatStyle.Flat;
             btnSettings_BottingGuide.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettings_BottingGuide.ForeColor = Color.FromArgb(224, 224, 224);
-            btnSettings_BottingGuide.Location = new Point(975, 375);
+            btnSettings_BottingGuide.Location = new Point(950, 350);
             btnSettings_BottingGuide.Margin = new Padding(0);
             btnSettings_BottingGuide.Name = "btnSettings_BottingGuide";
             btnSettings_BottingGuide.Size = new Size(125, 50);
@@ -2723,7 +2637,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_BuyProxies.FlatStyle = FlatStyle.Flat;
             btnSettings_BuyProxies.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettings_BuyProxies.ForeColor = Color.FromArgb(224, 224, 224);
-            btnSettings_BuyProxies.Location = new Point(800, 450);
+            btnSettings_BuyProxies.Location = new Point(775, 425);
             btnSettings_BuyProxies.Margin = new Padding(0);
             btnSettings_BuyProxies.Name = "btnSettings_BuyProxies";
             btnSettings_BuyProxies.Size = new Size(125, 50);
@@ -2742,7 +2656,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_CreateOSRSAccount.FlatStyle = FlatStyle.Flat;
             btnSettings_CreateOSRSAccount.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettings_CreateOSRSAccount.ForeColor = Color.FromArgb(224, 224, 224);
-            btnSettings_CreateOSRSAccount.Location = new Point(975, 300);
+            btnSettings_CreateOSRSAccount.Location = new Point(600, 425);
             btnSettings_CreateOSRSAccount.Margin = new Padding(0);
             btnSettings_CreateOSRSAccount.Name = "btnSettings_CreateOSRSAccount";
             btnSettings_CreateOSRSAccount.Size = new Size(125, 50);
@@ -2775,12 +2689,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // panelAccountsAndSettings
             // 
-            panelAccountsAndSettings.BackColor = Color.Transparent;
+            panelAccountsAndSettings.BackColor = Color.FromArgb(64, 64, 64);
             panelAccountsAndSettings.BackgroundImageLayout = ImageLayout.Stretch;
+            panelAccountsAndSettings.Controls.Add(buttonSettings_UpdateJivaroScripts);
+            panelAccountsAndSettings.Controls.Add(buttonSettings_ManageLocalScripts);
             panelAccountsAndSettings.Controls.Add(btnSettings_InstallJava);
             panelAccountsAndSettings.Controls.Add(buttonSettings_SaveLoginInfo);
             panelAccountsAndSettings.Controls.Add(button7);
-            panelAccountsAndSettings.Controls.Add(button6);
+            panelAccountsAndSettings.Controls.Add(buttonSettings_SetupGuide);
             panelAccountsAndSettings.Controls.Add(textBoxSettings_TRiBotPassword);
             panelAccountsAndSettings.Controls.Add(textBoxSettings_TRiBotEmail);
             panelAccountsAndSettings.Controls.Add(labelSettings_TRiBotPassword);
@@ -2815,6 +2731,42 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             panelAccountsAndSettings.Size = new Size(1130, 730);
             panelAccountsAndSettings.TabIndex = 17;
             // 
+            // buttonSettings_UpdateJivaroScripts
+            // 
+            buttonSettings_UpdateJivaroScripts.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSettings_UpdateJivaroScripts.Cursor = Cursors.Hand;
+            buttonSettings_UpdateJivaroScripts.FlatAppearance.BorderColor = Color.Coral;
+            buttonSettings_UpdateJivaroScripts.FlatAppearance.MouseDownBackColor = Color.Coral;
+            buttonSettings_UpdateJivaroScripts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonSettings_UpdateJivaroScripts.FlatStyle = FlatStyle.Flat;
+            buttonSettings_UpdateJivaroScripts.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSettings_UpdateJivaroScripts.Location = new Point(600, 275);
+            buttonSettings_UpdateJivaroScripts.Margin = new Padding(0);
+            buttonSettings_UpdateJivaroScripts.Name = "buttonSettings_UpdateJivaroScripts";
+            buttonSettings_UpdateJivaroScripts.Size = new Size(125, 50);
+            buttonSettings_UpdateJivaroScripts.TabIndex = 102;
+            buttonSettings_UpdateJivaroScripts.Text = "Update Jivaro Scripts";
+            buttonSettings_UpdateJivaroScripts.UseVisualStyleBackColor = false;
+            buttonSettings_UpdateJivaroScripts.Click += btnScriptFactory_UpdateScripts_Click;
+            // 
+            // buttonSettings_ManageLocalScripts
+            // 
+            buttonSettings_ManageLocalScripts.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSettings_ManageLocalScripts.Cursor = Cursors.Hand;
+            buttonSettings_ManageLocalScripts.FlatAppearance.BorderColor = Color.Coral;
+            buttonSettings_ManageLocalScripts.FlatAppearance.MouseDownBackColor = Color.Coral;
+            buttonSettings_ManageLocalScripts.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonSettings_ManageLocalScripts.FlatStyle = FlatStyle.Flat;
+            buttonSettings_ManageLocalScripts.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSettings_ManageLocalScripts.Location = new Point(775, 275);
+            buttonSettings_ManageLocalScripts.Margin = new Padding(0);
+            buttonSettings_ManageLocalScripts.Name = "buttonSettings_ManageLocalScripts";
+            buttonSettings_ManageLocalScripts.Size = new Size(125, 50);
+            buttonSettings_ManageLocalScripts.TabIndex = 101;
+            buttonSettings_ManageLocalScripts.Text = "Manage Local Scripts";
+            buttonSettings_ManageLocalScripts.UseVisualStyleBackColor = false;
+            buttonSettings_ManageLocalScripts.Click += btnShared_OpenLocalScripts_Click;
+            // 
             // btnSettings_InstallJava
             // 
             btnSettings_InstallJava.BackgroundImageLayout = ImageLayout.Stretch;
@@ -2824,7 +2776,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             btnSettings_InstallJava.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnSettings_InstallJava.FlatStyle = FlatStyle.Flat;
             btnSettings_InstallJava.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSettings_InstallJava.Location = new Point(800, 225);
+            btnSettings_InstallJava.Location = new Point(600, 200);
             btnSettings_InstallJava.Margin = new Padding(0);
             btnSettings_InstallJava.Name = "btnSettings_InstallJava";
             btnSettings_InstallJava.Size = new Size(125, 50);
@@ -2842,7 +2794,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             buttonSettings_SaveLoginInfo.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             buttonSettings_SaveLoginInfo.FlatStyle = FlatStyle.Flat;
             buttonSettings_SaveLoginInfo.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonSettings_SaveLoginInfo.Location = new Point(160, 575);
+            buttonSettings_SaveLoginInfo.Location = new Point(200, 575);
             buttonSettings_SaveLoginInfo.Margin = new Padding(0);
             buttonSettings_SaveLoginInfo.Name = "buttonSettings_SaveLoginInfo";
             buttonSettings_SaveLoginInfo.Size = new Size(125, 50);
@@ -2862,7 +2814,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
             button7.ForeColor = Color.OrangeRed;
-            button7.Location = new Point(890, 525);
+            button7.Location = new Point(775, 500);
             button7.Margin = new Padding(0);
             button7.Name = "button7";
             button7.Size = new Size(125, 50);
@@ -2871,30 +2823,30 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             button7.UseVisualStyleBackColor = false;
             button7.Click += btnSettings_KillAllBots_Click;
             // 
-            // button6
+            // buttonSettings_SetupGuide
             // 
-            button6.BackgroundImageLayout = ImageLayout.Stretch;
-            button6.Cursor = Cursors.Hand;
-            button6.FlatAppearance.BorderColor = Color.Coral;
-            button6.FlatAppearance.MouseDownBackColor = Color.Coral;
-            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button6.ForeColor = Color.FromArgb(224, 224, 224);
-            button6.Location = new Point(800, 375);
-            button6.Margin = new Padding(0);
-            button6.Name = "button6";
-            button6.Size = new Size(125, 50);
-            button6.TabIndex = 96;
-            button6.Text = "Setup Guide";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += btnSettings_SetupGuide_Click;
+            buttonSettings_SetupGuide.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSettings_SetupGuide.Cursor = Cursors.Hand;
+            buttonSettings_SetupGuide.FlatAppearance.BorderColor = Color.Coral;
+            buttonSettings_SetupGuide.FlatAppearance.MouseDownBackColor = Color.Coral;
+            buttonSettings_SetupGuide.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonSettings_SetupGuide.FlatStyle = FlatStyle.Flat;
+            buttonSettings_SetupGuide.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSettings_SetupGuide.ForeColor = Color.FromArgb(224, 224, 224);
+            buttonSettings_SetupGuide.Location = new Point(775, 349);
+            buttonSettings_SetupGuide.Margin = new Padding(0);
+            buttonSettings_SetupGuide.Name = "buttonSettings_SetupGuide";
+            buttonSettings_SetupGuide.Size = new Size(125, 50);
+            buttonSettings_SetupGuide.TabIndex = 96;
+            buttonSettings_SetupGuide.Text = "Setup Guide";
+            buttonSettings_SetupGuide.UseVisualStyleBackColor = false;
+            buttonSettings_SetupGuide.Click += btnSettings_SetupGuide_Click;
             // 
             // textBoxSettings_TRiBotPassword
             // 
             textBoxSettings_TRiBotPassword.BackColor = Color.FromArgb(224, 224, 224);
             textBoxSettings_TRiBotPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            textBoxSettings_TRiBotPassword.Location = new Point(135, 525);
+            textBoxSettings_TRiBotPassword.Location = new Point(175, 525);
             textBoxSettings_TRiBotPassword.Name = "textBoxSettings_TRiBotPassword";
             textBoxSettings_TRiBotPassword.PasswordChar = '*';
             textBoxSettings_TRiBotPassword.Size = new Size(175, 24);
@@ -2904,7 +2856,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             textBoxSettings_TRiBotEmail.BackColor = Color.FromArgb(224, 224, 224);
             textBoxSettings_TRiBotEmail.ForeColor = Color.FromArgb(64, 64, 64);
-            textBoxSettings_TRiBotEmail.Location = new Point(135, 475);
+            textBoxSettings_TRiBotEmail.Location = new Point(175, 475);
             textBoxSettings_TRiBotEmail.Name = "textBoxSettings_TRiBotEmail";
             textBoxSettings_TRiBotEmail.Size = new Size(175, 24);
             textBoxSettings_TRiBotEmail.TabIndex = 92;
@@ -2913,7 +2865,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_TRiBotPassword.AutoSize = true;
             labelSettings_TRiBotPassword.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_TRiBotPassword.Location = new Point(35, 525);
+            labelSettings_TRiBotPassword.Location = new Point(75, 525);
             labelSettings_TRiBotPassword.Name = "labelSettings_TRiBotPassword";
             labelSettings_TRiBotPassword.Size = new Size(75, 18);
             labelSettings_TRiBotPassword.TabIndex = 91;
@@ -2923,7 +2875,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_TRiBotEmail.AutoSize = true;
             labelSettings_TRiBotEmail.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_TRiBotEmail.Location = new Point(35, 475);
+            labelSettings_TRiBotEmail.Location = new Point(75, 475);
             labelSettings_TRiBotEmail.Name = "labelSettings_TRiBotEmail";
             labelSettings_TRiBotEmail.Size = new Size(45, 18);
             labelSettings_TRiBotEmail.TabIndex = 90;
@@ -2933,7 +2885,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_TRiBotDetails.AutoSize = true;
             labelSettings_TRiBotDetails.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_TRiBotDetails.Location = new Point(85, 425);
+            labelSettings_TRiBotDetails.Location = new Point(125, 425);
             labelSettings_TRiBotDetails.Name = "labelSettings_TRiBotDetails";
             labelSettings_TRiBotDetails.Size = new Size(111, 20);
             labelSettings_TRiBotDetails.TabIndex = 89;
@@ -2943,7 +2895,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             textBoxSettings_DreamBotPassword.BackColor = Color.FromArgb(224, 224, 224);
             textBoxSettings_DreamBotPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            textBoxSettings_DreamBotPassword.Location = new Point(135, 375);
+            textBoxSettings_DreamBotPassword.Location = new Point(175, 375);
             textBoxSettings_DreamBotPassword.Name = "textBoxSettings_DreamBotPassword";
             textBoxSettings_DreamBotPassword.PasswordChar = '*';
             textBoxSettings_DreamBotPassword.Size = new Size(175, 24);
@@ -2953,7 +2905,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             textBoxSettings_DreamBotUsername.BackColor = Color.FromArgb(224, 224, 224);
             textBoxSettings_DreamBotUsername.ForeColor = Color.FromArgb(64, 64, 64);
-            textBoxSettings_DreamBotUsername.Location = new Point(135, 325);
+            textBoxSettings_DreamBotUsername.Location = new Point(175, 325);
             textBoxSettings_DreamBotUsername.Name = "textBoxSettings_DreamBotUsername";
             textBoxSettings_DreamBotUsername.Size = new Size(175, 24);
             textBoxSettings_DreamBotUsername.TabIndex = 87;
@@ -2962,7 +2914,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_DreamBotPassword.AutoSize = true;
             labelSettings_DreamBotPassword.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_DreamBotPassword.Location = new Point(35, 375);
+            labelSettings_DreamBotPassword.Location = new Point(75, 375);
             labelSettings_DreamBotPassword.Name = "labelSettings_DreamBotPassword";
             labelSettings_DreamBotPassword.Size = new Size(75, 18);
             labelSettings_DreamBotPassword.TabIndex = 86;
@@ -2972,7 +2924,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_DreamBotUsername.AutoSize = true;
             labelSettings_DreamBotUsername.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_DreamBotUsername.Location = new Point(35, 325);
+            labelSettings_DreamBotUsername.Location = new Point(75, 325);
             labelSettings_DreamBotUsername.Name = "labelSettings_DreamBotUsername";
             labelSettings_DreamBotUsername.Size = new Size(77, 18);
             labelSettings_DreamBotUsername.TabIndex = 85;
@@ -2982,7 +2934,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_DreamBotDetails.AutoSize = true;
             labelSettings_DreamBotDetails.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_DreamBotDetails.Location = new Point(85, 275);
+            labelSettings_DreamBotDetails.Location = new Point(125, 275);
             labelSettings_DreamBotDetails.Name = "labelSettings_DreamBotDetails";
             labelSettings_DreamBotDetails.Size = new Size(135, 20);
             labelSettings_DreamBotDetails.TabIndex = 84;
@@ -2992,7 +2944,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             textBoxSettings_OSBotPassword.BackColor = Color.FromArgb(224, 224, 224);
             textBoxSettings_OSBotPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            textBoxSettings_OSBotPassword.Location = new Point(135, 225);
+            textBoxSettings_OSBotPassword.Location = new Point(175, 225);
             textBoxSettings_OSBotPassword.Name = "textBoxSettings_OSBotPassword";
             textBoxSettings_OSBotPassword.PasswordChar = '*';
             textBoxSettings_OSBotPassword.Size = new Size(175, 24);
@@ -3002,7 +2954,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_OSBotPassword.AutoSize = true;
             labelSettings_OSBotPassword.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_OSBotPassword.Location = new Point(35, 225);
+            labelSettings_OSBotPassword.Location = new Point(75, 225);
             labelSettings_OSBotPassword.Name = "labelSettings_OSBotPassword";
             labelSettings_OSBotPassword.Size = new Size(75, 18);
             labelSettings_OSBotPassword.TabIndex = 82;
@@ -3012,7 +2964,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             textBoxSettings_OSBotUsername.BackColor = Color.FromArgb(224, 224, 224);
             textBoxSettings_OSBotUsername.ForeColor = Color.FromArgb(64, 64, 64);
-            textBoxSettings_OSBotUsername.Location = new Point(135, 175);
+            textBoxSettings_OSBotUsername.Location = new Point(175, 175);
             textBoxSettings_OSBotUsername.Name = "textBoxSettings_OSBotUsername";
             textBoxSettings_OSBotUsername.Size = new Size(175, 24);
             textBoxSettings_OSBotUsername.TabIndex = 81;
@@ -3021,7 +2973,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_OSBotUsername.AutoSize = true;
             labelSettings_OSBotUsername.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_OSBotUsername.Location = new Point(35, 175);
+            labelSettings_OSBotUsername.Location = new Point(75, 175);
             labelSettings_OSBotUsername.Name = "labelSettings_OSBotUsername";
             labelSettings_OSBotUsername.Size = new Size(77, 18);
             labelSettings_OSBotUsername.TabIndex = 80;
@@ -3031,34 +2983,33 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             labelSettings_OSBotDetails.AutoSize = true;
             labelSettings_OSBotDetails.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings_OSBotDetails.Location = new Point(85, 125);
+            labelSettings_OSBotDetails.Location = new Point(125, 125);
             labelSettings_OSBotDetails.Name = "labelSettings_OSBotDetails";
             labelSettings_OSBotDetails.Size = new Size(110, 20);
             labelSettings_OSBotDetails.TabIndex = 79;
             labelSettings_OSBotDetails.Text = "OSBot Details";
             // 
-            // panel1
+            // panelNavigation
             // 
-            panel1.AutoSize = true;
-            panel1.BackColor = Color.DarkSlateGray;
-            panel1.Controls.Add(buttonNav_JivaroLogo);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(labelNav_OSRSLauncher);
-            panel1.Controls.Add(labelNav_Jivaro);
-            panel1.Controls.Add(buttonNav_DreamBotManager);
-            panel1.Controls.Add(buttonNav_TRiBotManager);
-            panel1.Controls.Add(buttonNav_OSBotManager);
-            panel1.Controls.Add(labelNav_RamUsageMonitor);
-            panel1.Controls.Add(labelNav_CpuUsageMonitor);
-            panel1.Controls.Add(buttonNav_Settings);
-            panel1.Controls.Add(buttonNav_ScriptProfiles);
-            panel1.Controls.Add(buttonNav_ScriptFactory);
-            panel1.Controls.Add(buttonNav_BreakProfiles);
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(220, 730);
-            panel1.TabIndex = 24;
+            panelNavigation.BackColor = Color.DarkSlateGray;
+            panelNavigation.Controls.Add(buttonNav_JivaroLogo);
+            panelNavigation.Controls.Add(label1);
+            panelNavigation.Controls.Add(labelNav_OSRSLauncher);
+            panelNavigation.Controls.Add(labelNav_Jivaro);
+            panelNavigation.Controls.Add(buttonNav_DreamBotManager);
+            panelNavigation.Controls.Add(buttonNav_TRiBotManager);
+            panelNavigation.Controls.Add(buttonNav_OSBotManager);
+            panelNavigation.Controls.Add(labelNav_RamUsageMonitor);
+            panelNavigation.Controls.Add(labelNav_CpuUsageMonitor);
+            panelNavigation.Controls.Add(buttonNav_Settings);
+            panelNavigation.Controls.Add(buttonNav_ScriptProfiles);
+            panelNavigation.Controls.Add(buttonNav_ScriptFactory);
+            panelNavigation.Controls.Add(buttonNav_BreakProfiles);
+            panelNavigation.Location = new Point(0, 0);
+            panelNavigation.Margin = new Padding(0);
+            panelNavigation.Name = "panelNavigation";
+            panelNavigation.Size = new Size(220, 730);
+            panelNavigation.TabIndex = 24;
             // 
             // label1
             // 
@@ -3078,12 +3029,11 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            AutoSize = true;
             AutoValidate = AutoValidate.Disable;
             BackColor = Color.FromArgb(64, 64, 64);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1350, 729);
-            Controls.Add(panel1);
+            Controls.Add(panelNavigation);
             Controls.Add(panelScriptFactory);
             Controls.Add(panelAccountsAndSettings);
             Controls.Add(panelScriptProfiles);
@@ -3100,37 +3050,33 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             Name = "formMainForm";
             SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Jivaro Old School RuneScape Bot Manager v1.03";
+            Text = "Jivaro Old School RuneScape Bot Manager v1.04";
             FormClosing += formMainForm_FormClose;
             Load += formMainForm_Load;
             panelScriptFactory.ResumeLayout(false);
-            panelScriptFactory.PerformLayout();
             panelScriptFactory_AdditionalSettings.ResumeLayout(false);
             panelScriptFactory_AdditionalSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewScriptFactory).EndInit();
             panelBreakProfiles.ResumeLayout(false);
             panelBreakProfiles.PerformLayout();
             panelScriptProfiles.ResumeLayout(false);
+            panelScriptProfiles.PerformLayout();
             panelOSBotManager.ResumeLayout(false);
-            panelOSBotManager.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewOSBotManager).EndInit();
             panelDreamBotManager.ResumeLayout(false);
-            panelDreamBotManager.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewDreamBotManager).EndInit();
             panelTRiBotManager.ResumeLayout(false);
-            panelTRiBotManager.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewTRiBotManager).EndInit();
             panelAccountsAndSettings.ResumeLayout(false);
             panelAccountsAndSettings.PerformLayout();
-            panel1.ResumeLayout(false);
+            panelNavigation.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -3139,7 +3085,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public Button btnDreamBotManager_AddBot;
         public Button btnScriptFactory_LaunchOsbot;
         public Button btnScriptFactory_DeleteBot;
-        public Button btnScriptFactory_UpdateScripts;
         public Button buttonNav_BreakProfiles;
         public Button buttonNav_ScriptFactory;
         public Button buttonNav_ScriptProfiles;
@@ -3239,7 +3184,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public ProgressBar progressBarSettings;
         public Panel panelAccountsAndSettings;
         public Button button7;
-        public Button button6;
+        public Button buttonSettings_SetupGuide;
         public TextBox textBoxSettings_DreamBotPassword;
         public TextBox textBoxSettings_DreamBotUsername;
         public Label labelSettings_DreamBotPassword;
@@ -3259,10 +3204,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public Button buttonNav_JivaroLogo;
         public Label labelScriptProfiles_Header;
         public Label label1;
-        public Panel panel1;
-        public Button buttonTRiBotManager_LocalScripts;
-        public Button btnDreamBotManager_LocalScripts;
-        public Button btnOSBotManager_LocalScripts;
+        public Panel panelNavigation;
         public TextBox textBox1;
         public Label label2;
         public CheckBox checkBox2;
@@ -3344,5 +3286,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public DataGridViewTextBoxColumn dataGridViewDreamBotManager_Note;
         public DataGridViewTextBoxColumn dataGridViewDreamBotManager_Status;
         public Button btnSettings_InstallJava;
+        public Button buttonSettings_UpdateJivaroScripts;
+        public Button buttonSettings_ManageLocalScripts;
     }
 }

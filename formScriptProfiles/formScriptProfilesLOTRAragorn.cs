@@ -3,7 +3,7 @@
     public partial class formScriptProfilesLOTRAragorn : Form
     {
         // Initialize Instances
-        private formMainForm MainForm;
+        public formMainForm MainForm;
 
         public formScriptProfilesLOTRAragorn(formMainForm mainForm)
         {

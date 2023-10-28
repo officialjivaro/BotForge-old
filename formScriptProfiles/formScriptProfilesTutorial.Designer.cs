@@ -29,219 +29,231 @@
         public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesTutorial));
-            this.checkBoxScriptProfiles_TutorialIsland_FastDialogue = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_TutorialIsland_WorldHopping = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_TutorialIsland_Restocking = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_TutorialIsland_SellLoot = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_TutorialIsland_Antipattern = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_TutorialIsland_RenewBond = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_TutorialIsland_DeathHandler = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_TutorialIsland_StopImmediately = new System.Windows.Forms.CheckBox();
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions = new System.Windows.Forms.ListBox();
-            this.labelScriptProfiles_TutorialIsland_Title = new System.Windows.Forms.Label();
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles = new System.Windows.Forms.Button();
-            this.labelScriptProfiles_TutorialIsland_DisableInteractions = new System.Windows.Forms.Label();
-            this.labelScriptProfiles_TutorialIsland_Explanation = new System.Windows.Forms.Label();
-            this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom = new System.Windows.Forms.CheckBox();
-            this.labelScriptProfiles_Tutorial_Header = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue = new CheckBox();
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping = new CheckBox();
+            checkBoxScriptProfiles_TutorialIsland_Restocking = new CheckBox();
+            checkBoxScriptProfiles_TutorialIsland_SellLoot = new CheckBox();
+            checkBoxScriptProfiles_TutorialIsland_Antipattern = new CheckBox();
+            checkBoxScriptProfiles_TutorialIsland_RenewBond = new CheckBox();
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler = new CheckBox();
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately = new CheckBox();
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions = new ListBox();
+            labelScriptProfiles_TutorialIsland_Title = new Label();
+            btnScriptProfiles_TutorialIsland_SaveToProfiles = new Button();
+            labelScriptProfiles_TutorialIsland_DisableInteractions = new Label();
+            labelScriptProfiles_TutorialIsland_Explanation = new Label();
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom = new CheckBox();
+            labelScriptProfiles_Tutorial_Header = new Label();
+            SuspendLayout();
             // 
             // checkBoxScriptProfiles_TutorialIsland_FastDialogue
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_FastDialogue.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_FastDialogue.Location = new System.Drawing.Point(350, 200);
-            this.checkBoxScriptProfiles_TutorialIsland_FastDialogue.Name = "checkBoxScriptProfiles_TutorialIsland_FastDialogue";
-            this.checkBoxScriptProfiles_TutorialIsland_FastDialogue.Size = new System.Drawing.Size(118, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_FastDialogue.TabIndex = 191;
-            this.checkBoxScriptProfiles_TutorialIsland_FastDialogue.Text = "Fast Dialogue";
-            this.checkBoxScriptProfiles_TutorialIsland_FastDialogue.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue.Location = new Point(275, 125);
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue.Name = "checkBoxScriptProfiles_TutorialIsland_FastDialogue";
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue.Size = new Size(118, 22);
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue.TabIndex = 191;
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue.Text = "Fast Dialogue";
+            checkBoxScriptProfiles_TutorialIsland_FastDialogue.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_TutorialIsland_WorldHopping
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_WorldHopping.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_WorldHopping.Location = new System.Drawing.Point(125, 350);
-            this.checkBoxScriptProfiles_TutorialIsland_WorldHopping.Name = "checkBoxScriptProfiles_TutorialIsland_WorldHopping";
-            this.checkBoxScriptProfiles_TutorialIsland_WorldHopping.Size = new System.Drawing.Size(126, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_WorldHopping.TabIndex = 190;
-            this.checkBoxScriptProfiles_TutorialIsland_WorldHopping.Text = "World Hopping";
-            this.checkBoxScriptProfiles_TutorialIsland_WorldHopping.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping.Location = new Point(50, 275);
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping.Name = "checkBoxScriptProfiles_TutorialIsland_WorldHopping";
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping.Size = new Size(126, 22);
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping.TabIndex = 190;
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping.Text = "World Hopping";
+            checkBoxScriptProfiles_TutorialIsland_WorldHopping.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_TutorialIsland_Restocking
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_Restocking.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_Restocking.Location = new System.Drawing.Point(125, 400);
-            this.checkBoxScriptProfiles_TutorialIsland_Restocking.Name = "checkBoxScriptProfiles_TutorialIsland_Restocking";
-            this.checkBoxScriptProfiles_TutorialIsland_Restocking.Size = new System.Drawing.Size(102, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_Restocking.TabIndex = 189;
-            this.checkBoxScriptProfiles_TutorialIsland_Restocking.Text = "Restocking";
-            this.checkBoxScriptProfiles_TutorialIsland_Restocking.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_Restocking.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_Restocking.Location = new Point(50, 325);
+            checkBoxScriptProfiles_TutorialIsland_Restocking.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_Restocking.Name = "checkBoxScriptProfiles_TutorialIsland_Restocking";
+            checkBoxScriptProfiles_TutorialIsland_Restocking.Size = new Size(102, 22);
+            checkBoxScriptProfiles_TutorialIsland_Restocking.TabIndex = 189;
+            checkBoxScriptProfiles_TutorialIsland_Restocking.Text = "Restocking";
+            checkBoxScriptProfiles_TutorialIsland_Restocking.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_TutorialIsland_SellLoot
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_SellLoot.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_SellLoot.Location = new System.Drawing.Point(125, 450);
-            this.checkBoxScriptProfiles_TutorialIsland_SellLoot.Name = "checkBoxScriptProfiles_TutorialIsland_SellLoot";
-            this.checkBoxScriptProfiles_TutorialIsland_SellLoot.Size = new System.Drawing.Size(85, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_SellLoot.TabIndex = 188;
-            this.checkBoxScriptProfiles_TutorialIsland_SellLoot.Text = "Sell Loot";
-            this.checkBoxScriptProfiles_TutorialIsland_SellLoot.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_SellLoot.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_SellLoot.Location = new Point(50, 375);
+            checkBoxScriptProfiles_TutorialIsland_SellLoot.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_SellLoot.Name = "checkBoxScriptProfiles_TutorialIsland_SellLoot";
+            checkBoxScriptProfiles_TutorialIsland_SellLoot.Size = new Size(85, 22);
+            checkBoxScriptProfiles_TutorialIsland_SellLoot.TabIndex = 188;
+            checkBoxScriptProfiles_TutorialIsland_SellLoot.Text = "Sell Loot";
+            checkBoxScriptProfiles_TutorialIsland_SellLoot.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_TutorialIsland_Antipattern
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_Antipattern.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_Antipattern.Location = new System.Drawing.Point(125, 300);
-            this.checkBoxScriptProfiles_TutorialIsland_Antipattern.Name = "checkBoxScriptProfiles_TutorialIsland_Antipattern";
-            this.checkBoxScriptProfiles_TutorialIsland_Antipattern.Size = new System.Drawing.Size(96, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_Antipattern.TabIndex = 187;
-            this.checkBoxScriptProfiles_TutorialIsland_Antipattern.Text = "Antipattern";
-            this.checkBoxScriptProfiles_TutorialIsland_Antipattern.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_Antipattern.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_Antipattern.Location = new Point(50, 225);
+            checkBoxScriptProfiles_TutorialIsland_Antipattern.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_Antipattern.Name = "checkBoxScriptProfiles_TutorialIsland_Antipattern";
+            checkBoxScriptProfiles_TutorialIsland_Antipattern.Size = new Size(96, 22);
+            checkBoxScriptProfiles_TutorialIsland_Antipattern.TabIndex = 187;
+            checkBoxScriptProfiles_TutorialIsland_Antipattern.Text = "Antipattern";
+            checkBoxScriptProfiles_TutorialIsland_Antipattern.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_TutorialIsland_RenewBond
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_RenewBond.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_RenewBond.Location = new System.Drawing.Point(125, 250);
-            this.checkBoxScriptProfiles_TutorialIsland_RenewBond.Name = "checkBoxScriptProfiles_TutorialIsland_RenewBond";
-            this.checkBoxScriptProfiles_TutorialIsland_RenewBond.Size = new System.Drawing.Size(112, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_RenewBond.TabIndex = 186;
-            this.checkBoxScriptProfiles_TutorialIsland_RenewBond.Text = "Renew Bond";
-            this.checkBoxScriptProfiles_TutorialIsland_RenewBond.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_RenewBond.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_RenewBond.Location = new Point(50, 175);
+            checkBoxScriptProfiles_TutorialIsland_RenewBond.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_RenewBond.Name = "checkBoxScriptProfiles_TutorialIsland_RenewBond";
+            checkBoxScriptProfiles_TutorialIsland_RenewBond.Size = new Size(112, 22);
+            checkBoxScriptProfiles_TutorialIsland_RenewBond.TabIndex = 186;
+            checkBoxScriptProfiles_TutorialIsland_RenewBond.Text = "Renew Bond";
+            checkBoxScriptProfiles_TutorialIsland_RenewBond.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_TutorialIsland_DeathHandler
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_DeathHandler.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_DeathHandler.Location = new System.Drawing.Point(125, 200);
-            this.checkBoxScriptProfiles_TutorialIsland_DeathHandler.Name = "checkBoxScriptProfiles_TutorialIsland_DeathHandler";
-            this.checkBoxScriptProfiles_TutorialIsland_DeathHandler.Size = new System.Drawing.Size(121, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_DeathHandler.TabIndex = 185;
-            this.checkBoxScriptProfiles_TutorialIsland_DeathHandler.Text = "Death Handler";
-            this.checkBoxScriptProfiles_TutorialIsland_DeathHandler.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler.Name = "checkBoxScriptProfiles_TutorialIsland_DeathHandler";
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler.Size = new Size(121, 22);
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler.TabIndex = 185;
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler.Text = "Death Handler";
+            checkBoxScriptProfiles_TutorialIsland_DeathHandler.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_TutorialIsland_StopImmediately
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_StopImmediately.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_StopImmediately.Location = new System.Drawing.Point(350, 250);
-            this.checkBoxScriptProfiles_TutorialIsland_StopImmediately.Name = "checkBoxScriptProfiles_TutorialIsland_StopImmediately";
-            this.checkBoxScriptProfiles_TutorialIsland_StopImmediately.Size = new System.Drawing.Size(254, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_StopImmediately.TabIndex = 182;
-            this.checkBoxScriptProfiles_TutorialIsland_StopImmediately.Text = "Stop Immediately After Completion";
-            this.checkBoxScriptProfiles_TutorialIsland_StopImmediately.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately.Location = new Point(275, 175);
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately.Name = "checkBoxScriptProfiles_TutorialIsland_StopImmediately";
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately.Size = new Size(254, 22);
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately.TabIndex = 182;
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately.Text = "Stop Immediately After Completion";
+            checkBoxScriptProfiles_TutorialIsland_StopImmediately.UseVisualStyleBackColor = true;
             // 
             // listBoxScriptProfiles_TutorialIsland_DisableInteractions
             // 
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.ColumnWidth = 1;
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.FormattingEnabled = true;
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.ItemHeight = 18;
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.Items.AddRange(new object[] {
-            "Disable Object Interactions",
-            "Disable NPC Interactions",
-            "Disable Walk Interactions"});
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.Location = new System.Drawing.Point(700, 275);
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.Name = "listBoxScriptProfiles_TutorialIsland_DisableInteractions";
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.ScrollAlwaysVisible = true;
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.Size = new System.Drawing.Size(200, 220);
-            this.listBoxScriptProfiles_TutorialIsland_DisableInteractions.TabIndex = 181;
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.BackColor = Color.FromArgb(224, 224, 224);
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.ColumnWidth = 1;
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.Cursor = Cursors.Hand;
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.ForeColor = Color.FromArgb(64, 64, 64);
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.FormattingEnabled = true;
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.ImeMode = ImeMode.NoControl;
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.ItemHeight = 18;
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.Items.AddRange(new object[] { "Disable Object Interactions", "Disable NPC Interactions", "Disable Walk Interactions" });
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.Location = new Point(625, 200);
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.Margin = new Padding(0);
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.Name = "listBoxScriptProfiles_TutorialIsland_DisableInteractions";
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.ScrollAlwaysVisible = true;
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.SelectionMode = SelectionMode.MultiSimple;
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.Size = new Size(200, 220);
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.TabIndex = 181;
             // 
             // labelScriptProfiles_TutorialIsland_Title
             // 
-            this.labelScriptProfiles_TutorialIsland_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelScriptProfiles_TutorialIsland_Title.Location = new System.Drawing.Point(0, 50);
-            this.labelScriptProfiles_TutorialIsland_Title.Name = "labelScriptProfiles_TutorialIsland_Title";
-            this.labelScriptProfiles_TutorialIsland_Title.Size = new System.Drawing.Size(1015, 25);
-            this.labelScriptProfiles_TutorialIsland_Title.TabIndex = 180;
-            this.labelScriptProfiles_TutorialIsland_Title.Text = "Tutorial Island";
-            this.labelScriptProfiles_TutorialIsland_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_TutorialIsland_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            labelScriptProfiles_TutorialIsland_Title.Location = new Point(0, 50);
+            labelScriptProfiles_TutorialIsland_Title.Margin = new Padding(0);
+            labelScriptProfiles_TutorialIsland_Title.Name = "labelScriptProfiles_TutorialIsland_Title";
+            labelScriptProfiles_TutorialIsland_Title.Size = new Size(880, 25);
+            labelScriptProfiles_TutorialIsland_Title.TabIndex = 180;
+            labelScriptProfiles_TutorialIsland_Title.Text = "Tutorial Island";
+            labelScriptProfiles_TutorialIsland_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnScriptProfiles_TutorialIsland_SaveToProfiles
             // 
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.Location = new System.Drawing.Point(465, 550);
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.Name = "btnScriptProfiles_TutorialIsland_SaveToProfiles";
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.Size = new System.Drawing.Size(120, 68);
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.TabIndex = 178;
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.Text = "Save to Profiles";
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.UseVisualStyleBackColor = true;
-            this.btnScriptProfiles_TutorialIsland_SaveToProfiles.Click += new System.EventHandler(this.btnScriptProfiles_TutorialIsland_SaveButton_Click);
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.Cursor = Cursors.Hand;
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.Location = new Point(380, 450);
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.Margin = new Padding(0);
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.Name = "btnScriptProfiles_TutorialIsland_SaveToProfiles";
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.Size = new Size(125, 50);
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.TabIndex = 178;
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.Text = "Save Profile";
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.UseVisualStyleBackColor = true;
+            btnScriptProfiles_TutorialIsland_SaveToProfiles.Click += btnScriptProfiles_TutorialIsland_SaveButton_Click;
             // 
             // labelScriptProfiles_TutorialIsland_DisableInteractions
             // 
-            this.labelScriptProfiles_TutorialIsland_DisableInteractions.AutoSize = true;
-            this.labelScriptProfiles_TutorialIsland_DisableInteractions.Location = new System.Drawing.Point(725, 200);
-            this.labelScriptProfiles_TutorialIsland_DisableInteractions.Name = "labelScriptProfiles_TutorialIsland_DisableInteractions";
-            this.labelScriptProfiles_TutorialIsland_DisableInteractions.Size = new System.Drawing.Size(137, 18);
-            this.labelScriptProfiles_TutorialIsland_DisableInteractions.TabIndex = 235;
-            this.labelScriptProfiles_TutorialIsland_DisableInteractions.Text = "Disable Interactions";
+            labelScriptProfiles_TutorialIsland_DisableInteractions.AutoSize = true;
+            labelScriptProfiles_TutorialIsland_DisableInteractions.Location = new Point(650, 125);
+            labelScriptProfiles_TutorialIsland_DisableInteractions.Margin = new Padding(0);
+            labelScriptProfiles_TutorialIsland_DisableInteractions.Name = "labelScriptProfiles_TutorialIsland_DisableInteractions";
+            labelScriptProfiles_TutorialIsland_DisableInteractions.Size = new Size(137, 18);
+            labelScriptProfiles_TutorialIsland_DisableInteractions.TabIndex = 235;
+            labelScriptProfiles_TutorialIsland_DisableInteractions.Text = "Disable Interactions";
             // 
             // labelScriptProfiles_TutorialIsland_Explanation
             // 
-            this.labelScriptProfiles_TutorialIsland_Explanation.AutoSize = true;
-            this.labelScriptProfiles_TutorialIsland_Explanation.Location = new System.Drawing.Point(655, 225);
-            this.labelScriptProfiles_TutorialIsland_Explanation.Name = "labelScriptProfiles_TutorialIsland_Explanation";
-            this.labelScriptProfiles_TutorialIsland_Explanation.Size = new System.Drawing.Size(272, 18);
-            this.labelScriptProfiles_TutorialIsland_Explanation.TabIndex = 236;
-            this.labelScriptProfiles_TutorialIsland_Explanation.Text = "(These will significantly reduce banrates)";
+            labelScriptProfiles_TutorialIsland_Explanation.AutoSize = true;
+            labelScriptProfiles_TutorialIsland_Explanation.Location = new Point(580, 150);
+            labelScriptProfiles_TutorialIsland_Explanation.Margin = new Padding(0);
+            labelScriptProfiles_TutorialIsland_Explanation.Name = "labelScriptProfiles_TutorialIsland_Explanation";
+            labelScriptProfiles_TutorialIsland_Explanation.Size = new Size(272, 18);
+            labelScriptProfiles_TutorialIsland_Explanation.TabIndex = 236;
+            labelScriptProfiles_TutorialIsland_Explanation.Text = "(These will significantly reduce banrates)";
             // 
             // checkBoxScriptProfiles_TutorialIsland_WalkToRandom
             // 
-            this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom.AutoSize = true;
-            this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Location = new System.Drawing.Point(350, 300);
-            this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Name = "checkBoxScriptProfiles_TutorialIsland_WalkToRandom";
-            this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Size = new System.Drawing.Size(299, 22);
-            this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom.TabIndex = 237;
-            this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Text = "Walk To Random Place After Completion";
-            this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom.AutoSize = true;
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Location = new Point(275, 225);
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Margin = new Padding(0);
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Name = "checkBoxScriptProfiles_TutorialIsland_WalkToRandom";
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Size = new Size(299, 22);
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom.TabIndex = 237;
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom.Text = "Walk To Random Place After Completion";
+            checkBoxScriptProfiles_TutorialIsland_WalkToRandom.UseVisualStyleBackColor = true;
             // 
             // labelScriptProfiles_Tutorial_Header
             // 
-            this.labelScriptProfiles_Tutorial_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
-            this.labelScriptProfiles_Tutorial_Header.Location = new System.Drawing.Point(0, 0);
-            this.labelScriptProfiles_Tutorial_Header.Name = "labelScriptProfiles_Tutorial_Header";
-            this.labelScriptProfiles_Tutorial_Header.Size = new System.Drawing.Size(1015, 50);
-            this.labelScriptProfiles_Tutorial_Header.TabIndex = 258;
-            this.labelScriptProfiles_Tutorial_Header.Text = "Script Profiles";
-            this.labelScriptProfiles_Tutorial_Header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_Tutorial_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            labelScriptProfiles_Tutorial_Header.Location = new Point(0, 0);
+            labelScriptProfiles_Tutorial_Header.Margin = new Padding(0);
+            labelScriptProfiles_Tutorial_Header.Name = "labelScriptProfiles_Tutorial_Header";
+            labelScriptProfiles_Tutorial_Header.Size = new Size(880, 50);
+            labelScriptProfiles_Tutorial_Header.TabIndex = 258;
+            labelScriptProfiles_Tutorial_Header.Text = "Script Profiles";
+            labelScriptProfiles_Tutorial_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // formScriptProfilesTutorial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1014, 641);
-            this.Controls.Add(this.labelScriptProfiles_Tutorial_Header);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_WalkToRandom);
-            this.Controls.Add(this.labelScriptProfiles_TutorialIsland_Explanation);
-            this.Controls.Add(this.labelScriptProfiles_TutorialIsland_DisableInteractions);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_FastDialogue);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_WorldHopping);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_Restocking);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_SellLoot);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_Antipattern);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_RenewBond);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_DeathHandler);
-            this.Controls.Add(this.checkBoxScriptProfiles_TutorialIsland_StopImmediately);
-            this.Controls.Add(this.listBoxScriptProfiles_TutorialIsland_DisableInteractions);
-            this.Controls.Add(this.labelScriptProfiles_TutorialIsland_Title);
-            this.Controls.Add(this.btnScriptProfiles_TutorialIsland_SaveToProfiles);
-            this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "formScriptProfilesTutorial";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Script Profiles: Tutorial Island";
-            this.Load += new System.EventHandler(this.formScriptProfilesTutorial_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            BackColor = Color.FromArgb(60, 60, 60);
+            ClientSize = new Size(884, 536);
+            Controls.Add(labelScriptProfiles_Tutorial_Header);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_WalkToRandom);
+            Controls.Add(labelScriptProfiles_TutorialIsland_Explanation);
+            Controls.Add(labelScriptProfiles_TutorialIsland_DisableInteractions);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_FastDialogue);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_WorldHopping);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_Restocking);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_SellLoot);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_Antipattern);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_RenewBond);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_DeathHandler);
+            Controls.Add(checkBoxScriptProfiles_TutorialIsland_StopImmediately);
+            Controls.Add(listBoxScriptProfiles_TutorialIsland_DisableInteractions);
+            Controls.Add(labelScriptProfiles_TutorialIsland_Title);
+            Controls.Add(btnScriptProfiles_TutorialIsland_SaveToProfiles);
+            DoubleBuffered = true;
+            Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = Color.FromArgb(224, 224, 224);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            Name = "formScriptProfilesTutorial";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Script Profiles: Tutorial Island";
+            Load += formScriptProfilesTutorial_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

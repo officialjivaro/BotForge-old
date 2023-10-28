@@ -11,22 +11,13 @@
     <ApplicationIcon>media\icon_jivaro_launcher.ico</ApplicationIcon>
     <PackageIcon>icon_jivaro_launcher.png</PackageIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>True</Optimize>
-    <WarningLevel>5</WarningLevel>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <FileAlignment>4096</FileAlignment>
-    <WarningLevel>5</WarningLevel>
+    <Platforms>x64</Platforms>
   </PropertyGroup>
 
     <PropertyGroup>
 		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
-		<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+		<PlatformTarget>x64</PlatformTarget>
 	</PropertyGroup>
 
   <ItemGroup>
@@ -106,7 +97,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\Debug\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.exe&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\Debug\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.dll&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\Release\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.exe&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\Release\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.dll&quot;" />
+    <Exec Command="&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\x64\Debug\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.exe&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\x64\Debug\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.dll&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\x64\Release\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.exe&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\x64\Release\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.dll&quot;" />
   </Target>
 
 </Project>

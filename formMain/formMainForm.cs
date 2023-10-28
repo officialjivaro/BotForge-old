@@ -4,7 +4,6 @@ using Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO.Compression;
-using System.Management;
 using System.Text.RegularExpressions;
 
 namespace Jivaro_Old_School_RuneScape_Bot_Manager
@@ -69,7 +68,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public string folderPathScriptFactoryPrivateScriptsFushigiBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Private Scripts\\FushigiBot";
         public string folderPathScriptFactoryProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles";
         public string folderPathUsername = @"C:\\Users\\" + Environment.UserName;
-        public string lastFetchedArgs = "";
+        public static string lastFetchedArgs = "";
         public string pc_username = Environment.UserName;
         public string urlDreamBotClient = "https://dreambot.org/DBLauncher.jar";
         public string urlFushigiBotScripts = "https://download.jivaro.net/s/D7csx35Em5ADbNP/download/FushigiBot.zip";
@@ -319,12 +318,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     {
                         dataGridViewScriptFactory.Invoke(new MethodInvoker(delegate
                         {
-                            Invoke_UpdateRunningStatus(dataGridViewScriptFactory, "dataGridViewScriptFactory_Account", "dataGridViewScriptFactory_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewScriptFactory, "dataGridViewScriptFactory_Account", "dataGridViewScriptFactory_Status");
                         }));
                     }
                     else
                     {
-                        Invoke_UpdateRunningStatus(dataGridViewScriptFactory, "dataGridViewScriptFactory_Account", "dataGridViewScriptFactory_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewScriptFactory, "dataGridViewScriptFactory_Account", "dataGridViewScriptFactory_Status");
                     }
                 }
                 catch (Exception ex)
@@ -339,12 +338,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     {
                         dataGridViewOSBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewOSBotManager_Account", "dataGridViewOSBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewOSBotManager_Account", "dataGridViewOSBotManager_Status");
                         }));
                     }
                     else
                     {
-                        Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewOSBotManager_Account", "dataGridViewOSBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewOSBotManager_Account", "dataGridViewOSBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -359,12 +358,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     {
                         dataGridViewDreamBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewDreamBotManager_Account", "dataGridViewDreamBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewDreamBotManager_Account", "dataGridViewDreamBotManager_Status");
                         }));
                     }
                     else
                     {
-                        Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewDreamBotManager_Account", "dataGridViewDreamBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewDreamBotManager_Account", "dataGridViewDreamBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -379,12 +378,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     {
                         dataGridViewTRiBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewTRiBotManager_Account", "dataGridViewTRiBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewTRiBotManager_Account", "dataGridViewTRiBotManager_Status");
                         }));
                     }
                     else
                     {
-                        Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewTRiBotManager_Account", "dataGridViewTRiBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewTRiBotManager_Account", "dataGridViewTRiBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -663,13 +662,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         // Initialize Variables
                         string folderPathSandboxieCurrent = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\";
                         string folderPathSandboxieCurrentOSBotData = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\OSBot\\Data";
-                        var enabledSandboxes = Invoke_SandboxList(filePathSandboxieIni);
+                        var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
                         cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe\" -jar " + "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\"" + " -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mode + newmouse + "-debug 0";
 
                         //Create Sandbox If It Doesn't Exist
                         if (!enabledSandboxes.Contains(sandboxieNumber))
                         {
-                            Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
+                            invokeMethodsActiveMainForm.Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
                             Thread.Sleep(100);
                         }
 
@@ -996,13 +995,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         //Initialize Variables
                         string folderPathSandboxieCurrent = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\";
                         string folderPathSandboxieCurrentOSBotData = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\OSBot\\Data";
-                        var enabledSandboxes = Invoke_SandboxList(filePathSandboxieIni);
+                        var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
                         cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe\" -jar " + "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\"" + " -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mode + newmouse + "-debug 0";
 
                         // Create Sandbox If It Doesn't Exist
                         if (!enabledSandboxes.Contains(sandboxieNumber))
                         {
-                            Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
+                            invokeMethodsActiveMainForm.Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
                             Thread.Sleep(100);
                         }
 
@@ -1232,13 +1231,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     {
                         //Initialize Variables//
                         string folderPathSandboxieCurrent = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\";
-                        var enabledSandboxes = Invoke_SandboxList(filePathSandboxieIni);
+                        var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
                         cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe\" -jar \"C:\\Users\\" + pc_username + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptArgs + breaks + world + mode + "-fresh " + "-fps 25";
 
                         //Create Sandbox If It Doesn't Exist//
                         if (!enabledSandboxes.Contains(sandboxieNumber))
                         {
-                            Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
+                            invokeMethodsActiveMainForm.Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
                             Thread.Sleep(100);
                         }
 
@@ -1478,13 +1477,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         // Initialize Variables
                         string folderPathSandboxieCurrent = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\";
                         string folderPathSandboxieCurrentOSBotData = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\OSBot\\Data";
-                        var enabledSandboxes = Invoke_SandboxList(filePathSandboxieIni);
+                        var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
                         cliArgs = "/elevate /box:" + sandboxieNumber + " java -jar \"C:\\Users\\" + pc_username + "\\Jivaro\\Old School RuneScape Bot Manager\\TRiBot.jar\" " + loginInfoTRiBot + account + password + pin + proxy + script + scriptArgs + breaks + world + mode;
 
                         // Create Sandbox If It Doesn't Exist
                         if (!enabledSandboxes.Contains(sandboxieNumber))
                         {
-                            Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
+                            invokeMethodsActiveMainForm.Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
                             Thread.Sleep(100);
                         }
 
@@ -1854,11 +1853,11 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
 
 
 
-        /////////////////////////////
-        //Start of Callable Methods//
-        /////////////////////////////
+        ///////////////////////////
+        //Start of Invoke Methods//
+        ///////////////////////////
 
-        // Invoke - Check For Updates//
+        // Invoke - Check For Updates
         public async Task Invoke_CheckForUpdates(string urlLatestApplicationVersion, string filePathApplicationMainMiscVersion, string filePathApplicationMainUpdaterExe)
         {
             try
@@ -1893,79 +1892,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
         }
 
-        // Invoke - Sandbox List
-        public List<string> Invoke_SandboxList(string filePathSandboxieIni)
-        {
-            var lines = File.ReadAllLines(filePathSandboxieIni);
-            var enabledSandboxes = new List<string>();
-
-            for (int i = 0; i < lines.Length - 1; i++)
-            {
-                if (lines[i].StartsWith("[") && lines[i].EndsWith("]") && lines[i + 1].Equals("Enabled=y"))
-                {
-                    enabledSandboxes.Add(lines[i].TrimStart('[').TrimEnd(']'));
-                }
-            }
-            return enabledSandboxes;
-        }
-
-        // Invoke - Create Sandbox Folder
-        public void Invoke_CreateSandboxFolder(string sandboxie, string filePathSbieIni)
-        {
-            try
-            {
-                ProcessStartInfo startInfo = new ProcessStartInfo
-                {
-                    FileName = filePathSbieIni,
-                    Arguments = $"set {sandboxie} ConfigLevel 9",
-                    RedirectStandardOutput = true,
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                };
-                Process process = new Process { StartInfo = startInfo };
-                process.Start();
-                process.WaitForExit();
-
-                //Enable sandbox//
-                startInfo.Arguments = $"append {sandboxie} Enabled y";
-                process.Start();
-                process.WaitForExit();
-
-                //Other settings//
-                string[] settings = new string[]
-                {
-                    "BlockNetworkFiles=y",
-                    "RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%",
-                    "RecoverFolder=%Personal%",
-                    "RecoverFolder=%Desktop%",
-                    "BorderColor=#02f6f6,ttl",
-                    "Template=OpenBluetooth",
-                    "Template=SkipHook",
-                    "Template=FileCopy",
-                    "Template=qWave",
-                    "Template=BlockPorts",
-                    "Template=LingerPrograms",
-                    "Template=AutoRecoverIgnore",
-                    "AutoRecover=y",
-                    "UseSecurityMode=n",
-                    "UsePrivacyMode=n"
-                };
-
-                foreach (var setting in settings)
-                {
-                    var parts = setting.Split('=');
-                    startInfo.Arguments = $"append {sandboxie} {parts[0]} {parts[1]}";
-                    process.Start();
-                    process.WaitForExit();
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error creating sandbox: {ex.Message}");
-            }
-        }
-
-        // Invoke - Generate Unique Random Number Not In Use Across DataGridViews //
+        // Invoke - Generate Unique Random Number Not In Use Across DataGridViews
         public int Invoke_GenerateUniqueRandomNumber()
         {
             Random random = new Random();
@@ -1979,8 +1906,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             return randomNumber;
         }
 
-
-        // Invoke - Check If Random Number is Being Used in Various DataGridViews //
+        // Invoke - Check If Random Number is Being Used in Various DataGridViews
         public bool Invoke_IsRandomNumberInUse(int number)
         {
             return IsNumberInDataGridView(dataGridViewScriptFactory, "dataGridViewScriptFactory_SandboxieNumber", number) ||
@@ -1989,7 +1915,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                    IsNumberInDataGridView(dataGridViewTRiBotManager, "dataGridViewTRiBotManager_SandboxieNumber", number);
         }
 
-        private bool IsNumberInDataGridView(DataGridView dgv, string columnName, int number)
+        public bool IsNumberInDataGridView(DataGridView dgv, string columnName, int number)
         {
             foreach (DataGridViewRow row in dgv.Rows)
             {
@@ -2186,27 +2112,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
         }
 
-        // Invoke - Update Running Status
-        public void Invoke_UpdateRunningStatus(DataGridView dataGridView, string accountCellName, string statusCellName)
-        {
-            string commandLineArguments = lastFetchedArgs;
-
-            foreach (DataGridViewRow row in dataGridView.Rows)
-            {
-                var accountCell = row.Cells[accountCellName];
-                var statusCell = row.Cells[statusCellName];
-
-                if (accountCell.Value != null && commandLineArguments.Contains(accountCell.Value.ToString()))
-                {
-                    statusCell.Value = "Running";
-                }
-                else
-                {
-                    statusCell.Value = "";
-                }
-            }
-        }
-
         // Invoke - Update Application
         public static void Invoke_UpdateApplication(string updaterExePath)
         {
@@ -2282,9 +2187,9 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
         }
 
-        ///////////////////////////
-        //End of Callable Methods//
-        ///////////////////////////
+        /////////////////////////
+        //End of Invoke Methods//
+        /////////////////////////
 
 
 

@@ -59,7 +59,8 @@
             // labelScriptProfiles_FighterElderChaosDruids_SelectWeapon
             // 
             labelScriptProfiles_FighterElderChaosDruids_SelectWeapon.AutoSize = true;
-            labelScriptProfiles_FighterElderChaosDruids_SelectWeapon.Location = new Point(550, 400);
+            labelScriptProfiles_FighterElderChaosDruids_SelectWeapon.Location = new Point(500, 325);
+            labelScriptProfiles_FighterElderChaosDruids_SelectWeapon.Margin = new Padding(0);
             labelScriptProfiles_FighterElderChaosDruids_SelectWeapon.Name = "labelScriptProfiles_FighterElderChaosDruids_SelectWeapon";
             labelScriptProfiles_FighterElderChaosDruids_SelectWeapon.Size = new Size(109, 18);
             labelScriptProfiles_FighterElderChaosDruids_SelectWeapon.TabIndex = 129;
@@ -68,7 +69,8 @@
             // labelScriptProfiles_FighterElderChaosDruids_SelectCape
             // 
             labelScriptProfiles_FighterElderChaosDruids_SelectCape.AutoSize = true;
-            labelScriptProfiles_FighterElderChaosDruids_SelectCape.Location = new Point(550, 300);
+            labelScriptProfiles_FighterElderChaosDruids_SelectCape.Location = new Point(500, 225);
+            labelScriptProfiles_FighterElderChaosDruids_SelectCape.Margin = new Padding(0);
             labelScriptProfiles_FighterElderChaosDruids_SelectCape.Name = "labelScriptProfiles_FighterElderChaosDruids_SelectCape";
             labelScriptProfiles_FighterElderChaosDruids_SelectCape.Size = new Size(88, 18);
             labelScriptProfiles_FighterElderChaosDruids_SelectCape.TabIndex = 128;
@@ -82,7 +84,8 @@
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.Items.AddRange(new object[] { "Random", "Melee", "Ranged", "AbyssalWhip", "MagicShortbow" });
-            comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.Location = new Point(685, 397);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.Location = new Point(635, 322);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.Margin = new Padding(0);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.Name = "comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon";
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.Size = new Size(250, 26);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.TabIndex = 127;
@@ -95,7 +98,8 @@
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.Items.AddRange(new object[] { "None", "Random", "GuthixCloak", "ZamorakCloak", "SaradominCloak" });
-            comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.Location = new Point(685, 297);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.Location = new Point(635, 222);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.Margin = new Padding(0);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.Name = "comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape";
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.Size = new Size(250, 26);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.TabIndex = 126;
@@ -103,7 +107,8 @@
             // labelScriptProfiles_FighterElderChaosDruids_SelectGear
             // 
             labelScriptProfiles_FighterElderChaosDruids_SelectGear.AutoSize = true;
-            labelScriptProfiles_FighterElderChaosDruids_SelectGear.Location = new Point(550, 200);
+            labelScriptProfiles_FighterElderChaosDruids_SelectGear.Location = new Point(500, 125);
+            labelScriptProfiles_FighterElderChaosDruids_SelectGear.Margin = new Padding(0);
             labelScriptProfiles_FighterElderChaosDruids_SelectGear.Name = "labelScriptProfiles_FighterElderChaosDruids_SelectGear";
             labelScriptProfiles_FighterElderChaosDruids_SelectGear.Size = new Size(97, 18);
             labelScriptProfiles_FighterElderChaosDruids_SelectGear.TabIndex = 125;
@@ -117,7 +122,8 @@
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.Items.AddRange(new object[] { "None", "Random", "MonksRobe", "ZamorakMonksRobe" });
-            comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.Location = new Point(685, 197);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.Location = new Point(635, 122);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.Margin = new Padding(0);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.Name = "comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear";
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.Size = new Size(250, 26);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.TabIndex = 124;
@@ -125,7 +131,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Location = new Point(275, 200);
+            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Location = new Point(225, 125);
+            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly";
             checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Size = new Size(145, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.TabIndex = 117;
@@ -135,7 +142,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping.Location = new Point(100, 350);
+            checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping.Location = new Point(50, 275);
+            checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping";
             checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping.TabIndex = 116;
@@ -145,7 +153,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_Restocking
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_Restocking.Location = new Point(100, 400);
+            checkBoxScriptProfiles_FighterElderChaosDruids_Restocking.Location = new Point(50, 325);
+            checkBoxScriptProfiles_FighterElderChaosDruids_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_Restocking.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_Restocking";
             checkBoxScriptProfiles_FighterElderChaosDruids_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_Restocking.TabIndex = 115;
@@ -155,7 +164,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot.Location = new Point(100, 450);
+            checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot.Location = new Point(50, 375);
+            checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot";
             checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot.TabIndex = 114;
@@ -165,7 +175,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern.Location = new Point(100, 300);
+            checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern.Location = new Point(50, 225);
+            checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern";
             checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern.TabIndex = 113;
@@ -175,7 +186,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond.Location = new Point(100, 250);
+            checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond.Location = new Point(50, 175);
+            checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond";
             checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond.TabIndex = 112;
@@ -185,7 +197,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler.Location = new Point(100, 200);
+            checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler";
             checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler.TabIndex = 111;
@@ -196,8 +209,9 @@
             // 
             labelScriptProfiles_FighterElderChaosDruids_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_FighterElderChaosDruids_Title.Location = new Point(0, 50);
+            labelScriptProfiles_FighterElderChaosDruids_Title.Margin = new Padding(0);
             labelScriptProfiles_FighterElderChaosDruids_Title.Name = "labelScriptProfiles_FighterElderChaosDruids_Title";
-            labelScriptProfiles_FighterElderChaosDruids_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_FighterElderChaosDruids_Title.Size = new Size(930, 25);
             labelScriptProfiles_FighterElderChaosDruids_Title.TabIndex = 109;
             labelScriptProfiles_FighterElderChaosDruids_Title.Text = "Fighter: Elder Chaos Druids";
             labelScriptProfiles_FighterElderChaosDruids_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -208,18 +222,20 @@
             btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Location = new Point(465, 550);
+            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Location = new Point(405, 425);
+            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Name = "btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles";
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.TabIndex = 106;
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Click += btnScriptProfiles_FighterElderChaosDruids_SaveButton_Click;
             // 
             // labelScriptProfiles_FighterElderChaosDruids_SelectHat
             // 
             labelScriptProfiles_FighterElderChaosDruids_SelectHat.AutoSize = true;
-            labelScriptProfiles_FighterElderChaosDruids_SelectHat.Location = new Point(550, 250);
+            labelScriptProfiles_FighterElderChaosDruids_SelectHat.Location = new Point(500, 175);
+            labelScriptProfiles_FighterElderChaosDruids_SelectHat.Margin = new Padding(0);
             labelScriptProfiles_FighterElderChaosDruids_SelectHat.Name = "labelScriptProfiles_FighterElderChaosDruids_SelectHat";
             labelScriptProfiles_FighterElderChaosDruids_SelectHat.Size = new Size(117, 18);
             labelScriptProfiles_FighterElderChaosDruids_SelectHat.TabIndex = 130;
@@ -228,7 +244,8 @@
             // labelScriptProfiles_FighterElderChaosDruids_SelectBoots
             // 
             labelScriptProfiles_FighterElderChaosDruids_SelectBoots.AutoSize = true;
-            labelScriptProfiles_FighterElderChaosDruids_SelectBoots.Location = new Point(550, 350);
+            labelScriptProfiles_FighterElderChaosDruids_SelectBoots.Location = new Point(500, 275);
+            labelScriptProfiles_FighterElderChaosDruids_SelectBoots.Margin = new Padding(0);
             labelScriptProfiles_FighterElderChaosDruids_SelectBoots.Name = "labelScriptProfiles_FighterElderChaosDruids_SelectBoots";
             labelScriptProfiles_FighterElderChaosDruids_SelectBoots.Size = new Size(93, 18);
             labelScriptProfiles_FighterElderChaosDruids_SelectBoots.TabIndex = 131;
@@ -237,7 +254,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers.Location = new Point(275, 300);
+            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers.Location = new Point(225, 225);
+            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers";
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers.Size = new Size(240, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers.TabIndex = 132;
@@ -247,7 +265,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers.Location = new Point(275, 250);
+            checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers.Location = new Point(225, 175);
+            checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers";
             checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers.Size = new Size(175, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers.TabIndex = 134;
@@ -262,7 +281,8 @@
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.Items.AddRange(new object[] { "None", "Random", "GuthixMitre", "SaradominMitre", "ZamorakMitre" });
-            comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.Location = new Point(685, 247);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.Location = new Point(635, 172);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.Margin = new Padding(0);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.Name = "comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear";
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.Size = new Size(250, 26);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.TabIndex = 136;
@@ -275,7 +295,8 @@
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.Items.AddRange(new object[] { "None", "BestEquipable", "ClimbingBoots", "RuneBoots", "DragonBoots", "SnakeskinBoots" });
-            comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.Location = new Point(685, 347);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.Location = new Point(635, 272);
+            comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.Margin = new Padding(0);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.Name = "comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots";
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.Size = new Size(250, 26);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.TabIndex = 137;
@@ -284,8 +305,9 @@
             // 
             labelScriptProfiles_Gandalf_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_Gandalf_Header.Location = new Point(0, 0);
+            labelScriptProfiles_Gandalf_Header.Margin = new Padding(0);
             labelScriptProfiles_Gandalf_Header.Name = "labelScriptProfiles_Gandalf_Header";
-            labelScriptProfiles_Gandalf_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_Gandalf_Header.Size = new Size(930, 50);
             labelScriptProfiles_Gandalf_Header.TabIndex = 258;
             labelScriptProfiles_Gandalf_Header.Text = "Script Profiles";
             labelScriptProfiles_Gandalf_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -293,7 +315,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon.Location = new Point(275, 350);
+            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon.Location = new Point(225, 275);
+            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon";
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon.Size = new Size(148, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon.TabIndex = 259;
@@ -303,7 +326,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers.Location = new Point(275, 400);
+            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers.Location = new Point(225, 325);
+            checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers";
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers.Size = new Size(166, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers.TabIndex = 260;
@@ -313,7 +337,8 @@
             // checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows
             // 
             checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows.Location = new Point(275, 450);
+            checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows.Location = new Point(225, 375);
+            checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows";
             checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows.Size = new Size(108, 22);
             checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows.TabIndex = 261;
@@ -325,7 +350,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(934, 511);
             Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows);
             Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers);
             Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon);
@@ -354,8 +379,10 @@
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "formScriptProfilesFighterElderChaosDruids";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Script Profiles: Fighter - Elder Chaos Druids";

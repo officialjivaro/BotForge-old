@@ -4,6 +4,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
 {
     internal class invokeMethodsPassiveMainForm
     {
+
         // Invoke - Get Client Login Value From Line in File
         public static string Invoke_GetClientLoginValueFromLine(string line)
         {
@@ -66,8 +67,23 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
                     }
                 }
             }
-
             return results;
+        }
+
+        // Invoke - Get Sandbox List
+        public static List<string> Invoke_GetSandboxList(string filePathSandboxieIni)
+        {
+            var lines = File.ReadAllLines(filePathSandboxieIni);
+            var enabledSandboxes = new List<string>();
+
+            for (int i = 0; i < lines.Length - 1; i++)
+            {
+                if (lines[i].StartsWith("[") && lines[i].EndsWith("]") && lines[i + 1].Equals("Enabled=y"))
+                {
+                    enabledSandboxes.Add(lines[i].TrimStart('[').TrimEnd(']'));
+                }
+            }
+            return enabledSandboxes;
         }
 
         // Invoke - Populate DataGridView
@@ -130,6 +146,27 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
                             dataGridView.Rows[rowIndex].Cells[columnIndex].Value = cellValue;
                         }
                     }
+                }
+            }
+        }
+
+        // Invoke - Update Running Status
+        public static void Invoke_UpdateRunningStatus(DataGridView dataGridView, string accountCellName, string statusCellName)
+        {
+            string commandLineArguments = formMainForm.lastFetchedArgs;
+
+            foreach (DataGridViewRow row in dataGridView.Rows)
+            {
+                var accountCell = row.Cells[accountCellName];
+                var statusCell = row.Cells[statusCellName];
+
+                if (accountCell.Value != null && commandLineArguments.Contains(accountCell.Value.ToString()))
+                {
+                    statusCell.Value = "Running";
+                }
+                else
+                {
+                    statusCell.Value = "";
                 }
             }
         }

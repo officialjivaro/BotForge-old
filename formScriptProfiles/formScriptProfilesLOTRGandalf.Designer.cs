@@ -49,7 +49,8 @@
             // labelScriptProfiles_Gandalf_LavaDragonsArea
             // 
             labelScriptProfiles_Gandalf_LavaDragonsArea.AutoSize = true;
-            labelScriptProfiles_Gandalf_LavaDragonsArea.Location = new Point(500, 298);
+            labelScriptProfiles_Gandalf_LavaDragonsArea.Location = new Point(450, 250);
+            labelScriptProfiles_Gandalf_LavaDragonsArea.Margin = new Padding(0);
             labelScriptProfiles_Gandalf_LavaDragonsArea.Name = "labelScriptProfiles_Gandalf_LavaDragonsArea";
             labelScriptProfiles_Gandalf_LavaDragonsArea.Size = new Size(134, 18);
             labelScriptProfiles_Gandalf_LavaDragonsArea.TabIndex = 156;
@@ -64,7 +65,8 @@
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.FormattingEnabled = true;
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.Items.AddRange(new object[] { "Random", "North", "West", "East" });
-            comboBoxScriptProfiles_Gandalf_LavaDragonsArea.Location = new Point(650, 295);
+            comboBoxScriptProfiles_Gandalf_LavaDragonsArea.Location = new Point(600, 250);
+            comboBoxScriptProfiles_Gandalf_LavaDragonsArea.Margin = new Padding(0);
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.Name = "comboBoxScriptProfiles_Gandalf_LavaDragonsArea";
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.Size = new Size(175, 26);
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.TabIndex = 155;
@@ -72,7 +74,8 @@
             // checkBoxScriptProfiles_Gandalf_WorldHopping
             // 
             checkBoxScriptProfiles_Gandalf_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_Gandalf_WorldHopping.Location = new Point(256, 350);
+            checkBoxScriptProfiles_Gandalf_WorldHopping.Location = new Point(250, 125);
+            checkBoxScriptProfiles_Gandalf_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_Gandalf_WorldHopping.Name = "checkBoxScriptProfiles_Gandalf_WorldHopping";
             checkBoxScriptProfiles_Gandalf_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_Gandalf_WorldHopping.TabIndex = 147;
@@ -82,7 +85,8 @@
             // checkBoxScriptProfiles_Gandalf_Restocking
             // 
             checkBoxScriptProfiles_Gandalf_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_Gandalf_Restocking.Location = new Point(256, 400);
+            checkBoxScriptProfiles_Gandalf_Restocking.Location = new Point(250, 175);
+            checkBoxScriptProfiles_Gandalf_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_Gandalf_Restocking.Name = "checkBoxScriptProfiles_Gandalf_Restocking";
             checkBoxScriptProfiles_Gandalf_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_Gandalf_Restocking.TabIndex = 146;
@@ -92,7 +96,8 @@
             // checkBoxScriptProfiles_Gandalf_SellLoot
             // 
             checkBoxScriptProfiles_Gandalf_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_Gandalf_SellLoot.Location = new Point(256, 450);
+            checkBoxScriptProfiles_Gandalf_SellLoot.Location = new Point(250, 225);
+            checkBoxScriptProfiles_Gandalf_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_Gandalf_SellLoot.Name = "checkBoxScriptProfiles_Gandalf_SellLoot";
             checkBoxScriptProfiles_Gandalf_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_Gandalf_SellLoot.TabIndex = 145;
@@ -102,7 +107,8 @@
             // checkBoxScriptProfiles_Gandalf_Antipattern
             // 
             checkBoxScriptProfiles_Gandalf_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_Gandalf_Antipattern.Location = new Point(256, 300);
+            checkBoxScriptProfiles_Gandalf_Antipattern.Location = new Point(50, 225);
+            checkBoxScriptProfiles_Gandalf_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_Gandalf_Antipattern.Name = "checkBoxScriptProfiles_Gandalf_Antipattern";
             checkBoxScriptProfiles_Gandalf_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_Gandalf_Antipattern.TabIndex = 144;
@@ -112,7 +118,8 @@
             // checkBoxScriptProfiles_Gandalf_RenewBond
             // 
             checkBoxScriptProfiles_Gandalf_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_Gandalf_RenewBond.Location = new Point(256, 250);
+            checkBoxScriptProfiles_Gandalf_RenewBond.Location = new Point(50, 175);
+            checkBoxScriptProfiles_Gandalf_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_Gandalf_RenewBond.Name = "checkBoxScriptProfiles_Gandalf_RenewBond";
             checkBoxScriptProfiles_Gandalf_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_Gandalf_RenewBond.TabIndex = 143;
@@ -122,7 +129,8 @@
             // checkBoxScriptProfiles_Gandalf_DeathHandler
             // 
             checkBoxScriptProfiles_Gandalf_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_Gandalf_DeathHandler.Location = new Point(256, 200);
+            checkBoxScriptProfiles_Gandalf_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_Gandalf_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_Gandalf_DeathHandler.Name = "checkBoxScriptProfiles_Gandalf_DeathHandler";
             checkBoxScriptProfiles_Gandalf_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_Gandalf_DeathHandler.TabIndex = 142;
@@ -133,8 +141,9 @@
             // 
             labelScriptProfiles_Gandalf_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_Gandalf_Title.Location = new Point(0, 50);
+            labelScriptProfiles_Gandalf_Title.Margin = new Padding(0);
             labelScriptProfiles_Gandalf_Title.Name = "labelScriptProfiles_Gandalf_Title";
-            labelScriptProfiles_Gandalf_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_Gandalf_Title.Size = new Size(880, 25);
             labelScriptProfiles_Gandalf_Title.TabIndex = 140;
             labelScriptProfiles_Gandalf_Title.Text = "Lord of the Rings: Gandalf";
             labelScriptProfiles_Gandalf_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -145,18 +154,20 @@
             btnScriptProfiles_Gandalf_Save.Cursor = Cursors.Hand;
             btnScriptProfiles_Gandalf_Save.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_Gandalf_Save.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_Gandalf_Save.Location = new Point(465, 550);
+            btnScriptProfiles_Gandalf_Save.Location = new Point(380, 350);
+            btnScriptProfiles_Gandalf_Save.Margin = new Padding(0);
             btnScriptProfiles_Gandalf_Save.Name = "btnScriptProfiles_Gandalf_Save";
-            btnScriptProfiles_Gandalf_Save.Size = new Size(120, 68);
+            btnScriptProfiles_Gandalf_Save.Size = new Size(125, 50);
             btnScriptProfiles_Gandalf_Save.TabIndex = 138;
-            btnScriptProfiles_Gandalf_Save.Text = "Save to Profiles";
+            btnScriptProfiles_Gandalf_Save.Text = "Save Profile";
             btnScriptProfiles_Gandalf_Save.UseVisualStyleBackColor = true;
             btnScriptProfiles_Gandalf_Save.Click += btnScriptProfiles_Gandalf_SaveButton_Click;
             // 
             // labelScriptProfiles_Gandalf_SelectMode
             // 
             labelScriptProfiles_Gandalf_SelectMode.AutoSize = true;
-            labelScriptProfiles_Gandalf_SelectMode.Location = new Point(500, 198);
+            labelScriptProfiles_Gandalf_SelectMode.Location = new Point(450, 150);
+            labelScriptProfiles_Gandalf_SelectMode.Margin = new Padding(0);
             labelScriptProfiles_Gandalf_SelectMode.Name = "labelScriptProfiles_Gandalf_SelectMode";
             labelScriptProfiles_Gandalf_SelectMode.Size = new Size(91, 18);
             labelScriptProfiles_Gandalf_SelectMode.TabIndex = 158;
@@ -171,7 +182,8 @@
             comboBoxScriptProfiles_Gandalf_SelectMode.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_Gandalf_SelectMode.FormattingEnabled = true;
             comboBoxScriptProfiles_Gandalf_SelectMode.Items.AddRange(new object[] { "Splashing", "Lava Dragons" });
-            comboBoxScriptProfiles_Gandalf_SelectMode.Location = new Point(600, 195);
+            comboBoxScriptProfiles_Gandalf_SelectMode.Location = new Point(600, 150);
+            comboBoxScriptProfiles_Gandalf_SelectMode.Margin = new Padding(0);
             comboBoxScriptProfiles_Gandalf_SelectMode.Name = "comboBoxScriptProfiles_Gandalf_SelectMode";
             comboBoxScriptProfiles_Gandalf_SelectMode.Size = new Size(225, 26);
             comboBoxScriptProfiles_Gandalf_SelectMode.TabIndex = 157;
@@ -179,7 +191,8 @@
             // checkBoxScriptProfiles_Gandalf_UseFireBolt
             // 
             checkBoxScriptProfiles_Gandalf_UseFireBolt.AutoSize = true;
-            checkBoxScriptProfiles_Gandalf_UseFireBolt.Location = new Point(500, 400);
+            checkBoxScriptProfiles_Gandalf_UseFireBolt.Location = new Point(50, 275);
+            checkBoxScriptProfiles_Gandalf_UseFireBolt.Margin = new Padding(0);
             checkBoxScriptProfiles_Gandalf_UseFireBolt.Name = "checkBoxScriptProfiles_Gandalf_UseFireBolt";
             checkBoxScriptProfiles_Gandalf_UseFireBolt.Size = new Size(113, 22);
             checkBoxScriptProfiles_Gandalf_UseFireBolt.TabIndex = 160;
@@ -189,19 +202,21 @@
             // checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled
             // 
             checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.AutoSize = true;
-            checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.Location = new Point(500, 448);
+            checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.Location = new Point(250, 275);
+            checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.Margin = new Padding(0);
             checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.Name = "checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled";
-            checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.Size = new Size(266, 22);
+            checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.Size = new Size(106, 22);
             checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.TabIndex = 162;
-            checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.Text = "Hop Worlds If Nearby Skulled Player";
+            checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.Text = "Avoid Pkers";
             checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled.UseVisualStyleBackColor = true;
             // 
             // labelScriptProfiles_Gandalf_Header
             // 
             labelScriptProfiles_Gandalf_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_Gandalf_Header.Location = new Point(0, 0);
+            labelScriptProfiles_Gandalf_Header.Margin = new Padding(0);
             labelScriptProfiles_Gandalf_Header.Name = "labelScriptProfiles_Gandalf_Header";
-            labelScriptProfiles_Gandalf_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_Gandalf_Header.Size = new Size(880, 50);
             labelScriptProfiles_Gandalf_Header.TabIndex = 257;
             labelScriptProfiles_Gandalf_Header.Text = "Script Profiles";
             labelScriptProfiles_Gandalf_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -211,7 +226,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(884, 436);
             Controls.Add(labelScriptProfiles_Gandalf_Header);
             Controls.Add(checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled);
             Controls.Add(checkBoxScriptProfiles_Gandalf_UseFireBolt);
@@ -232,6 +247,7 @@
             ForeColor = Color.FromArgb(224, 224, 224);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "formScriptProfilesLOTRGandalf";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Script Profiles: Gandalf";

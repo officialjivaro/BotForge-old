@@ -3,7 +3,7 @@
     public partial class formScriptProfilesFighterElderChaosDruids : Form
     {
         // Initialize Instances
-        private formMainForm MainForm;
+        public formMainForm MainForm;
 
         public formScriptProfilesFighterElderChaosDruids(formMainForm mainForm)
         {

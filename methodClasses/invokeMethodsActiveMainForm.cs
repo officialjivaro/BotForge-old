@@ -6,6 +6,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
 {
     internal class invokeMethodsActiveMainForm
     {
+
         // Invoke - Copy Directory
         public static void Invoke_CopyDirectory(string sourceDir, string destDir, string messageOnSuccess)
         {
@@ -87,6 +88,62 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
             catch (Exception ex)
             {
                 Console.WriteLine($"An error occurred while trying to create the file: {ex.Message}");
+            }
+        }
+
+        // Invoke - Create Sandbox Folder
+        public static void Invoke_CreateSandboxFolder(string sandboxie, string filePathSbieIni)
+        {
+            try
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo
+                {
+                    FileName = filePathSbieIni,
+                    Arguments = $"set {sandboxie} ConfigLevel 9",
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                Process process = new Process { StartInfo = startInfo };
+                process.Start();
+                process.WaitForExit();
+
+                //Enable sandbox//
+                startInfo.Arguments = $"append {sandboxie} Enabled y";
+                process.Start();
+                process.WaitForExit();
+
+                //Other settings//
+                string[] settings = new string[]
+                {
+                    "BlockNetworkFiles=y",
+                    "RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%",
+                    "RecoverFolder=%Personal%",
+                    "RecoverFolder=%Desktop%",
+                    "BorderColor=#02f6f6,ttl",
+                    "Template=OpenBluetooth",
+                    "Template=SkipHook",
+                    "Template=FileCopy",
+                    "Template=qWave",
+                    "Template=BlockPorts",
+                    "Template=LingerPrograms",
+                    "Template=AutoRecoverIgnore",
+                    "AutoRecover=y",
+                    "UseSecurityMode=n",
+                    "UsePrivacyMode=n"
+                };
+
+                foreach (var setting in settings)
+                {
+                    var parts = setting.Split('=');
+                    startInfo.Arguments = $"append {sandboxie} {parts[0]} {parts[1]}";
+                    process.Start();
+                    process.WaitForExit();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error creating sandbox: {ex.Message}");
             }
         }
 
@@ -241,7 +298,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
             System.IO.File.WriteAllText(filePath, sb.ToString());
             MessageBox.Show("Dashboard saved successfully.");
         }
-
 
     }
 }

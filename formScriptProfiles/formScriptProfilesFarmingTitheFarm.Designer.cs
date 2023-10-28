@@ -44,10 +44,13 @@
             // 
             // textBoxScriptProfiles_FarmingTitheFarm_StopLevel
             // 
+            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Location = new Point(350, 375);
+            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Location = new Point(150, 225);
+            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Margin = new Padding(0);
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Name = "textBoxScriptProfiles_FarmingTitheFarm_StopLevel";
-            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Size = new Size(50, 22);
+            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Size = new Size(40, 22);
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.TabIndex = 210;
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Text = "99";
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.KeyPress += GlobalMethod_CancelNonNumbers_SetLimitTo99_KeyPress;
@@ -57,7 +60,8 @@
             // 
             labelScriptProfiles_FarmingTitheFarm_StopLevel.AutoSize = true;
             labelScriptProfiles_FarmingTitheFarm_StopLevel.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            labelScriptProfiles_FarmingTitheFarm_StopLevel.Location = new Point(250, 375);
+            labelScriptProfiles_FarmingTitheFarm_StopLevel.Location = new Point(50, 225);
+            labelScriptProfiles_FarmingTitheFarm_StopLevel.Margin = new Padding(0);
             labelScriptProfiles_FarmingTitheFarm_StopLevel.Name = "labelScriptProfiles_FarmingTitheFarm_StopLevel";
             labelScriptProfiles_FarmingTitheFarm_StopLevel.Size = new Size(77, 18);
             labelScriptProfiles_FarmingTitheFarm_StopLevel.TabIndex = 204;
@@ -66,7 +70,8 @@
             // checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping
             // 
             checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping.Location = new Point(650, 300);
+            checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping.Location = new Point(400, 175);
+            checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping.Name = "checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping";
             checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping.TabIndex = 194;
@@ -76,7 +81,8 @@
             // checkBoxScriptProfiles_FarmingTitheFarm_Restocking
             // 
             checkBoxScriptProfiles_FarmingTitheFarm_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_FarmingTitheFarm_Restocking.Location = new Point(450, 225);
+            checkBoxScriptProfiles_FarmingTitheFarm_Restocking.Location = new Point(225, 125);
+            checkBoxScriptProfiles_FarmingTitheFarm_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_FarmingTitheFarm_Restocking.Name = "checkBoxScriptProfiles_FarmingTitheFarm_Restocking";
             checkBoxScriptProfiles_FarmingTitheFarm_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_FarmingTitheFarm_Restocking.TabIndex = 193;
@@ -86,7 +92,8 @@
             // checkBoxScriptProfiles_FarmingTitheFarm_SellLoot
             // 
             checkBoxScriptProfiles_FarmingTitheFarm_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_FarmingTitheFarm_SellLoot.Location = new Point(450, 300);
+            checkBoxScriptProfiles_FarmingTitheFarm_SellLoot.Location = new Point(225, 175);
+            checkBoxScriptProfiles_FarmingTitheFarm_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_FarmingTitheFarm_SellLoot.Name = "checkBoxScriptProfiles_FarmingTitheFarm_SellLoot";
             checkBoxScriptProfiles_FarmingTitheFarm_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_FarmingTitheFarm_SellLoot.TabIndex = 192;
@@ -96,7 +103,8 @@
             // checkBoxScriptProfiles_FarmingTitheFarm_Antipattern
             // 
             checkBoxScriptProfiles_FarmingTitheFarm_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_FarmingTitheFarm_Antipattern.Location = new Point(650, 225);
+            checkBoxScriptProfiles_FarmingTitheFarm_Antipattern.Location = new Point(400, 125);
+            checkBoxScriptProfiles_FarmingTitheFarm_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_FarmingTitheFarm_Antipattern.Name = "checkBoxScriptProfiles_FarmingTitheFarm_Antipattern";
             checkBoxScriptProfiles_FarmingTitheFarm_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_FarmingTitheFarm_Antipattern.TabIndex = 191;
@@ -106,7 +114,8 @@
             // checkBoxScriptProfiles_FarmingTitheFarm_RenewBond
             // 
             checkBoxScriptProfiles_FarmingTitheFarm_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_FarmingTitheFarm_RenewBond.Location = new Point(250, 300);
+            checkBoxScriptProfiles_FarmingTitheFarm_RenewBond.Location = new Point(50, 175);
+            checkBoxScriptProfiles_FarmingTitheFarm_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_FarmingTitheFarm_RenewBond.Name = "checkBoxScriptProfiles_FarmingTitheFarm_RenewBond";
             checkBoxScriptProfiles_FarmingTitheFarm_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_FarmingTitheFarm_RenewBond.TabIndex = 190;
@@ -116,7 +125,8 @@
             // checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler
             // 
             checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler.Location = new Point(250, 225);
+            checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler.Name = "checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler";
             checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler.TabIndex = 189;
@@ -127,8 +137,9 @@
             // 
             labelScriptProfiles_FarmingTitheFarm_Title.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_FarmingTitheFarm_Title.Location = new Point(0, 50);
+            labelScriptProfiles_FarmingTitheFarm_Title.Margin = new Padding(0);
             labelScriptProfiles_FarmingTitheFarm_Title.Name = "labelScriptProfiles_FarmingTitheFarm_Title";
-            labelScriptProfiles_FarmingTitheFarm_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_FarmingTitheFarm_Title.Size = new Size(555, 25);
             labelScriptProfiles_FarmingTitheFarm_Title.TabIndex = 184;
             labelScriptProfiles_FarmingTitheFarm_Title.Text = "Farming: Tithe Farm";
             labelScriptProfiles_FarmingTitheFarm_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -139,11 +150,12 @@
             btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Location = new Point(450, 550);
+            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Location = new Point(215, 275);
+            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Name = "btnScriptProfiles_FarmingTitheFarm_SaveToProfiles";
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Click += btnScriptProfiles_FarmingTitheFarm_SaveButton_Click;
             // 
@@ -151,8 +163,9 @@
             // 
             labelScriptProfiles_FarmingTitheFarm_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_FarmingTitheFarm_Header.Location = new Point(0, 0);
+            labelScriptProfiles_FarmingTitheFarm_Header.Margin = new Padding(0);
             labelScriptProfiles_FarmingTitheFarm_Header.Name = "labelScriptProfiles_FarmingTitheFarm_Header";
-            labelScriptProfiles_FarmingTitheFarm_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_FarmingTitheFarm_Header.Size = new Size(555, 50);
             labelScriptProfiles_FarmingTitheFarm_Header.TabIndex = 255;
             labelScriptProfiles_FarmingTitheFarm_Header.Text = "Script Profiles";
             labelScriptProfiles_FarmingTitheFarm_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -162,7 +175,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(559, 361);
             Controls.Add(labelScriptProfiles_FarmingTitheFarm_Header);
             Controls.Add(textBoxScriptProfiles_FarmingTitheFarm_StopLevel);
             Controls.Add(labelScriptProfiles_FarmingTitheFarm_StopLevel);
@@ -182,7 +195,7 @@
             MaximizeBox = false;
             Name = "formScriptProfilesFarmingTitheFarm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "formScriptProfilesFarmingTitheFarm";
+            Text = "Script Profiles: Farming - Tithe Farm";
             Load += formScriptProfiles_FarmingTitheFarm_Load;
             ResumeLayout(false);
             PerformLayout();

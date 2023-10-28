@@ -49,9 +49,10 @@
             // textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel
             // 
             textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Location = new Point(700, 375);
+            textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Location = new Point(600, 275);
+            textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Margin = new Padding(0);
             textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Name = "textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel";
-            textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Size = new Size(50, 22);
+            textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Size = new Size(40, 22);
             textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.TabIndex = 210;
             textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Text = "99";
             textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.KeyPress += GlobalMethod_CancelNonNumbers_SetLimitTo99_KeyPress;
@@ -61,7 +62,8 @@
             // 
             labelScriptProfiles_HerbloreCleanHerbs_StopLevel.AutoSize = true;
             labelScriptProfiles_HerbloreCleanHerbs_StopLevel.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            labelScriptProfiles_HerbloreCleanHerbs_StopLevel.Location = new Point(550, 375);
+            labelScriptProfiles_HerbloreCleanHerbs_StopLevel.Location = new Point(450, 275);
+            labelScriptProfiles_HerbloreCleanHerbs_StopLevel.Margin = new Padding(0);
             labelScriptProfiles_HerbloreCleanHerbs_StopLevel.Name = "labelScriptProfiles_HerbloreCleanHerbs_StopLevel";
             labelScriptProfiles_HerbloreCleanHerbs_StopLevel.Size = new Size(77, 18);
             labelScriptProfiles_HerbloreCleanHerbs_StopLevel.TabIndex = 204;
@@ -70,7 +72,8 @@
             // checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping
             // 
             checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping.Location = new Point(350, 375);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping.Location = new Point(250, 275);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping.Name = "checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping";
             checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping.TabIndex = 194;
@@ -80,7 +83,8 @@
             // checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking
             // 
             checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking.Location = new Point(350, 225);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking.Location = new Point(250, 125);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking.Name = "checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking";
             checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking.TabIndex = 193;
@@ -90,7 +94,8 @@
             // checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot
             // 
             checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot.Location = new Point(350, 300);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot.Location = new Point(250, 200);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot.Name = "checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot";
             checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot.TabIndex = 192;
@@ -100,7 +105,8 @@
             // checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern
             // 
             checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern.Location = new Point(150, 375);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern.Location = new Point(50, 275);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern.Name = "checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern";
             checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern.TabIndex = 191;
@@ -110,7 +116,8 @@
             // checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond
             // 
             checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond.Location = new Point(150, 300);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond.Location = new Point(50, 200);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond.Name = "checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond";
             checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond.TabIndex = 190;
@@ -120,7 +127,8 @@
             // checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler
             // 
             checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler.Location = new Point(150, 225);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler.Name = "checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler";
             checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler.TabIndex = 189;
@@ -131,8 +139,9 @@
             // 
             labelScriptProfiles_HerbloreCleanHerbs_Title.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_HerbloreCleanHerbs_Title.Location = new Point(0, 50);
+            labelScriptProfiles_HerbloreCleanHerbs_Title.Margin = new Padding(0);
             labelScriptProfiles_HerbloreCleanHerbs_Title.Name = "labelScriptProfiles_HerbloreCleanHerbs_Title";
-            labelScriptProfiles_HerbloreCleanHerbs_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_HerbloreCleanHerbs_Title.Size = new Size(780, 25);
             labelScriptProfiles_HerbloreCleanHerbs_Title.TabIndex = 184;
             labelScriptProfiles_HerbloreCleanHerbs_Title.Text = "Herblore: Clean Herbs";
             labelScriptProfiles_HerbloreCleanHerbs_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -143,18 +152,20 @@
             btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Location = new Point(450, 550);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Location = new Point(325, 350);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Name = "btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles";
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Click += btnScriptProfiles_HerbloreCleanHerbs_SaveButton_Click;
             // 
             // labelScriptProfiles_HerbloreCleanHerbs_SelectHerb
             // 
             labelScriptProfiles_HerbloreCleanHerbs_SelectHerb.AutoSize = true;
-            labelScriptProfiles_HerbloreCleanHerbs_SelectHerb.Location = new Point(550, 225);
+            labelScriptProfiles_HerbloreCleanHerbs_SelectHerb.Location = new Point(450, 125);
+            labelScriptProfiles_HerbloreCleanHerbs_SelectHerb.Margin = new Padding(0);
             labelScriptProfiles_HerbloreCleanHerbs_SelectHerb.Name = "labelScriptProfiles_HerbloreCleanHerbs_SelectHerb";
             labelScriptProfiles_HerbloreCleanHerbs_SelectHerb.Size = new Size(85, 18);
             labelScriptProfiles_HerbloreCleanHerbs_SelectHerb.TabIndex = 253;
@@ -169,7 +180,8 @@
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.FormattingEnabled = true;
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.Items.AddRange(new object[] { "Progressive", "GuamLeaf", "Marrentill", "Tarromin", "Harralander", "RanarrWeed", "Toadflax", "IritLeaf", "Avantoe", "Kwuarm", "Snapdragon", "Cadantine", "Lantadyme", "DwarfWeed", "Torstol" });
-            comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.Location = new Point(700, 225);
+            comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.Location = new Point(600, 125);
+            comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.Margin = new Padding(0);
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.Name = "comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb";
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.Size = new Size(150, 26);
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.TabIndex = 254;
@@ -178,8 +190,9 @@
             // 
             labelScriptProfiles_HerbloreCleanHerbs_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_HerbloreCleanHerbs_Header.Location = new Point(0, 0);
+            labelScriptProfiles_HerbloreCleanHerbs_Header.Margin = new Padding(0);
             labelScriptProfiles_HerbloreCleanHerbs_Header.Name = "labelScriptProfiles_HerbloreCleanHerbs_Header";
-            labelScriptProfiles_HerbloreCleanHerbs_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_HerbloreCleanHerbs_Header.Size = new Size(780, 50);
             labelScriptProfiles_HerbloreCleanHerbs_Header.TabIndex = 255;
             labelScriptProfiles_HerbloreCleanHerbs_Header.Text = "Script Profiles";
             labelScriptProfiles_HerbloreCleanHerbs_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -187,7 +200,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(550, 300);
+            label1.Location = new Point(450, 200);
+            label1.Margin = new Padding(0);
             label1.Name = "label1";
             label1.Size = new Size(111, 18);
             label1.TabIndex = 256;
@@ -202,7 +216,8 @@
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.FormattingEnabled = true;
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.Items.AddRange(new object[] { "Progressive", "Gnome", "Draynor", "Varrock", "Falador", "Seers", "Fremennik", "Ardougne" });
-            comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.Location = new Point(700, 292);
+            comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.Location = new Point(600, 192);
+            comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.Margin = new Padding(0);
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.Name = "comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed";
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.Size = new Size(150, 26);
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.TabIndex = 257;
@@ -212,7 +227,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(784, 436);
             Controls.Add(comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed);
             Controls.Add(label1);
             Controls.Add(labelScriptProfiles_HerbloreCleanHerbs_Header);
@@ -233,9 +248,10 @@
             ForeColor = Color.FromArgb(224, 224, 224);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "formScriptProfilesHerbloreCleanHerbs";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "formScriptProfilesHerbloreCleanHerbs";
+            Text = "Script Profiles: Herblore - Clean Herbs";
             Load += formScriptProfiles_HerbloreCleanHerbs_Load;
             ResumeLayout(false);
             PerformLayout();

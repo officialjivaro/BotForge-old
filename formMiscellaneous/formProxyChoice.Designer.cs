@@ -43,6 +43,7 @@
             buttonProxyChoice_IPRoyal.FlatStyle = FlatStyle.Flat;
             buttonProxyChoice_IPRoyal.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             buttonProxyChoice_IPRoyal.Location = new Point(25, 25);
+            buttonProxyChoice_IPRoyal.Margin = new Padding(0);
             buttonProxyChoice_IPRoyal.Name = "buttonProxyChoice_IPRoyal";
             buttonProxyChoice_IPRoyal.Size = new Size(100, 65);
             buttonProxyChoice_IPRoyal.TabIndex = 0;
@@ -58,6 +59,7 @@
             buttonProxyChoice_SeeFullList.FlatStyle = FlatStyle.Flat;
             buttonProxyChoice_SeeFullList.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonProxyChoice_SeeFullList.Location = new Point(200, 125);
+            buttonProxyChoice_SeeFullList.Margin = new Padding(0);
             buttonProxyChoice_SeeFullList.Name = "buttonProxyChoice_SeeFullList";
             buttonProxyChoice_SeeFullList.Size = new Size(100, 65);
             buttonProxyChoice_SeeFullList.TabIndex = 1;
@@ -73,6 +75,7 @@
             buttonProxyChoice_ProxyCheap.FlatStyle = FlatStyle.Flat;
             buttonProxyChoice_ProxyCheap.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonProxyChoice_ProxyCheap.Location = new Point(200, 25);
+            buttonProxyChoice_ProxyCheap.Margin = new Padding(0);
             buttonProxyChoice_ProxyCheap.Name = "buttonProxyChoice_ProxyCheap";
             buttonProxyChoice_ProxyCheap.Size = new Size(100, 65);
             buttonProxyChoice_ProxyCheap.TabIndex = 2;
@@ -88,6 +91,7 @@
             buttonProxyChoice_ProxySeller.FlatStyle = FlatStyle.Flat;
             buttonProxyChoice_ProxySeller.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonProxyChoice_ProxySeller.Location = new Point(25, 125);
+            buttonProxyChoice_ProxySeller.Margin = new Padding(0);
             buttonProxyChoice_ProxySeller.Name = "buttonProxyChoice_ProxySeller";
             buttonProxyChoice_ProxySeller.Size = new Size(100, 65);
             buttonProxyChoice_ProxySeller.TabIndex = 3;

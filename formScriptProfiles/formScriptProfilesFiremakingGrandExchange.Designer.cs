@@ -45,11 +45,12 @@
             // textBoxScriptProfiles_FiremakingGrandExchange_StopLevel
             // 
             textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Location = new Point(650, 297);
+            textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Location = new Point(400, 222);
+            textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Margin = new Padding(0);
             textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Name = "textBoxScriptProfiles_FiremakingGrandExchange_StopLevel";
-            textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Size = new Size(30, 22);
+            textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Size = new Size(40, 22);
             textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.TabIndex = 206;
-            textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Text = "1";
+            textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Text = "99";
             textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.KeyPress += GlobalMethod_CancelNonNumbers_SetLimitTo99_KeyPress;
             textBoxScriptProfiles_FiremakingGrandExchange_StopLevel.Validating += GlobalMethod_RequireInput_Validating;
             // 
@@ -57,7 +58,8 @@
             // 
             labelScriptProfiles_FiremakingGrandExchange_StopLevel.AutoSize = true;
             labelScriptProfiles_FiremakingGrandExchange_StopLevel.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            labelScriptProfiles_FiremakingGrandExchange_StopLevel.Location = new Point(550, 300);
+            labelScriptProfiles_FiremakingGrandExchange_StopLevel.Location = new Point(300, 225);
+            labelScriptProfiles_FiremakingGrandExchange_StopLevel.Margin = new Padding(0);
             labelScriptProfiles_FiremakingGrandExchange_StopLevel.Name = "labelScriptProfiles_FiremakingGrandExchange_StopLevel";
             labelScriptProfiles_FiremakingGrandExchange_StopLevel.Size = new Size(77, 18);
             labelScriptProfiles_FiremakingGrandExchange_StopLevel.TabIndex = 200;
@@ -66,7 +68,8 @@
             // checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping
             // 
             checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping.Location = new Point(300, 350);
+            checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping.Location = new Point(50, 275);
+            checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping.Name = "checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping";
             checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_FiremakingGrandExchange_WorldHopping.TabIndex = 190;
@@ -76,7 +79,8 @@
             // checkBoxScriptProfiles_FiremakingGrandExchange_Restocking
             // 
             checkBoxScriptProfiles_FiremakingGrandExchange_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_FiremakingGrandExchange_Restocking.Location = new Point(550, 200);
+            checkBoxScriptProfiles_FiremakingGrandExchange_Restocking.Location = new Point(300, 125);
+            checkBoxScriptProfiles_FiremakingGrandExchange_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_FiremakingGrandExchange_Restocking.Name = "checkBoxScriptProfiles_FiremakingGrandExchange_Restocking";
             checkBoxScriptProfiles_FiremakingGrandExchange_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_FiremakingGrandExchange_Restocking.TabIndex = 189;
@@ -86,7 +90,8 @@
             // checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot
             // 
             checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot.Location = new Point(550, 250);
+            checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot.Location = new Point(300, 175);
+            checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot.Name = "checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot";
             checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_FiremakingGrandExchange_SellLoot.TabIndex = 188;
@@ -96,7 +101,8 @@
             // checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern
             // 
             checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern.Location = new Point(300, 300);
+            checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern.Location = new Point(50, 225);
+            checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern.Name = "checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern";
             checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern.TabIndex = 187;
@@ -106,7 +112,8 @@
             // checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond
             // 
             checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond.Location = new Point(300, 250);
+            checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond.Location = new Point(50, 175);
+            checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond.Name = "checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond";
             checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond.TabIndex = 186;
@@ -116,7 +123,8 @@
             // checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler
             // 
             checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler.Location = new Point(300, 200);
+            checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler.Name = "checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler";
             checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler.TabIndex = 185;
@@ -127,8 +135,9 @@
             // 
             labelScriptProfiles_FiremakingGrandExchange_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_FiremakingGrandExchange_Title.Location = new Point(0, 50);
+            labelScriptProfiles_FiremakingGrandExchange_Title.Margin = new Padding(0);
             labelScriptProfiles_FiremakingGrandExchange_Title.Name = "labelScriptProfiles_FiremakingGrandExchange_Title";
-            labelScriptProfiles_FiremakingGrandExchange_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_FiremakingGrandExchange_Title.Size = new Size(480, 25);
             labelScriptProfiles_FiremakingGrandExchange_Title.TabIndex = 180;
             labelScriptProfiles_FiremakingGrandExchange_Title.Text = "Firemaking: Grand Exchange";
             labelScriptProfiles_FiremakingGrandExchange_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -139,11 +148,12 @@
             btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Location = new Point(450, 550);
+            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Location = new Point(180, 325);
+            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Name = "btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles";
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.TabIndex = 178;
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Click += btnScriptProfiles_FiremakingGrandExchange_SaveButton_Click;
             // 
@@ -151,8 +161,9 @@
             // 
             labelScriptProfiles_FiremakingGrandExchange_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_FiremakingGrandExchange_Header.Location = new Point(0, 0);
+            labelScriptProfiles_FiremakingGrandExchange_Header.Margin = new Padding(0);
             labelScriptProfiles_FiremakingGrandExchange_Header.Name = "labelScriptProfiles_FiremakingGrandExchange_Header";
-            labelScriptProfiles_FiremakingGrandExchange_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_FiremakingGrandExchange_Header.Size = new Size(480, 50);
             labelScriptProfiles_FiremakingGrandExchange_Header.TabIndex = 235;
             labelScriptProfiles_FiremakingGrandExchange_Header.Text = "Script Profiles";
             labelScriptProfiles_FiremakingGrandExchange_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -162,7 +173,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(484, 411);
             Controls.Add(labelScriptProfiles_FiremakingGrandExchange_Header);
             Controls.Add(textBoxScriptProfiles_FiremakingGrandExchange_StopLevel);
             Controls.Add(labelScriptProfiles_FiremakingGrandExchange_StopLevel);
@@ -179,6 +190,7 @@
             ForeColor = Color.FromArgb(224, 224, 224);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "formScriptProfilesFiremakingGrandExchange";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Script Profiles: Firemaking - Grand Exchange";

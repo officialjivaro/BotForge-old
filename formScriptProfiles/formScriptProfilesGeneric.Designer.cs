@@ -45,7 +45,8 @@
             // checkBoxScriptProfiles_Generic_WorldHopping
             // 
             checkBoxScriptProfiles_Generic_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_Generic_WorldHopping.Location = new Point(450, 300);
+            checkBoxScriptProfiles_Generic_WorldHopping.Location = new Point(300, 175);
+            checkBoxScriptProfiles_Generic_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_Generic_WorldHopping.Name = "checkBoxScriptProfiles_Generic_WorldHopping";
             checkBoxScriptProfiles_Generic_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_Generic_WorldHopping.TabIndex = 244;
@@ -55,7 +56,8 @@
             // checkBoxScriptProfiles_Generic_Restocking
             // 
             checkBoxScriptProfiles_Generic_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_Generic_Restocking.Location = new Point(725, 225);
+            checkBoxScriptProfiles_Generic_Restocking.Location = new Point(575, 125);
+            checkBoxScriptProfiles_Generic_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_Generic_Restocking.Name = "checkBoxScriptProfiles_Generic_Restocking";
             checkBoxScriptProfiles_Generic_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_Generic_Restocking.TabIndex = 243;
@@ -65,7 +67,8 @@
             // checkBoxScriptProfiles_Generic_SellLoot
             // 
             checkBoxScriptProfiles_Generic_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_Generic_SellLoot.Location = new Point(725, 300);
+            checkBoxScriptProfiles_Generic_SellLoot.Location = new Point(575, 175);
+            checkBoxScriptProfiles_Generic_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_Generic_SellLoot.Name = "checkBoxScriptProfiles_Generic_SellLoot";
             checkBoxScriptProfiles_Generic_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_Generic_SellLoot.TabIndex = 242;
@@ -75,7 +78,8 @@
             // checkBoxScriptProfiles_Generic_Antipattern
             // 
             checkBoxScriptProfiles_Generic_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_Generic_Antipattern.Location = new Point(200, 300);
+            checkBoxScriptProfiles_Generic_Antipattern.Location = new Point(50, 175);
+            checkBoxScriptProfiles_Generic_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_Generic_Antipattern.Name = "checkBoxScriptProfiles_Generic_Antipattern";
             checkBoxScriptProfiles_Generic_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_Generic_Antipattern.TabIndex = 241;
@@ -85,7 +89,8 @@
             // checkBoxScriptProfiles_Generic_RenewBond
             // 
             checkBoxScriptProfiles_Generic_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_Generic_RenewBond.Location = new Point(450, 225);
+            checkBoxScriptProfiles_Generic_RenewBond.Location = new Point(300, 125);
+            checkBoxScriptProfiles_Generic_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_Generic_RenewBond.Name = "checkBoxScriptProfiles_Generic_RenewBond";
             checkBoxScriptProfiles_Generic_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_Generic_RenewBond.TabIndex = 240;
@@ -95,7 +100,8 @@
             // checkBoxScriptProfiles_Generic_DeathHandler
             // 
             checkBoxScriptProfiles_Generic_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_Generic_DeathHandler.Location = new Point(200, 225);
+            checkBoxScriptProfiles_Generic_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_Generic_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_Generic_DeathHandler.Name = "checkBoxScriptProfiles_Generic_DeathHandler";
             checkBoxScriptProfiles_Generic_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_Generic_DeathHandler.TabIndex = 239;
@@ -106,8 +112,9 @@
             // 
             labelScriptProfiles_Generic_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_Generic_Title.Location = new Point(0, 50);
+            labelScriptProfiles_Generic_Title.Margin = new Padding(0);
             labelScriptProfiles_Generic_Title.Name = "labelScriptProfiles_Generic_Title";
-            labelScriptProfiles_Generic_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_Generic_Title.Size = new Size(730, 25);
             labelScriptProfiles_Generic_Title.TabIndex = 237;
             labelScriptProfiles_Generic_Title.Text = "Generic Profile";
             labelScriptProfiles_Generic_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -118,11 +125,12 @@
             btnScriptProfiles_Generic_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_Generic_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_Generic_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_Generic_SaveToProfiles.Location = new Point(450, 550);
+            btnScriptProfiles_Generic_SaveToProfiles.Location = new Point(305, 325);
+            btnScriptProfiles_Generic_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_Generic_SaveToProfiles.Name = "btnScriptProfiles_Generic_SaveToProfiles";
-            btnScriptProfiles_Generic_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_Generic_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_Generic_SaveToProfiles.TabIndex = 236;
-            btnScriptProfiles_Generic_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_Generic_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_Generic_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_Generic_SaveToProfiles.Click += btnScriptProfiles_Generic_SaveButton_Click;
             // 
@@ -130,8 +138,9 @@
             // 
             labelScriptProfiles_Generic_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_Generic_Header.Location = new Point(0, 0);
+            labelScriptProfiles_Generic_Header.Margin = new Padding(0);
             labelScriptProfiles_Generic_Header.Name = "labelScriptProfiles_Generic_Header";
-            labelScriptProfiles_Generic_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_Generic_Header.Size = new Size(730, 50);
             labelScriptProfiles_Generic_Header.TabIndex = 252;
             labelScriptProfiles_Generic_Header.Text = "Script Profiles";
             labelScriptProfiles_Generic_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -139,7 +148,8 @@
             // labelScriptProfiles_Generic_SelectScript
             // 
             labelScriptProfiles_Generic_SelectScript.AutoSize = true;
-            labelScriptProfiles_Generic_SelectScript.Location = new Point(275, 400);
+            labelScriptProfiles_Generic_SelectScript.Location = new Point(125, 250);
+            labelScriptProfiles_Generic_SelectScript.Margin = new Padding(0);
             labelScriptProfiles_Generic_SelectScript.Name = "labelScriptProfiles_Generic_SelectScript";
             labelScriptProfiles_Generic_SelectScript.Size = new Size(91, 18);
             labelScriptProfiles_Generic_SelectScript.TabIndex = 253;
@@ -152,7 +162,8 @@
             comboBoxScriptProfiles_Generic_SelectScript.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_Generic_SelectScript.FormattingEnabled = true;
             comboBoxScriptProfiles_Generic_SelectScript.Items.AddRange(new object[] { "fxAgility-AgilityArena.txt", "fxCrafting-Jewelry.txt", "fxFarming-BaggedPlants.txt", "fxFletching-Longbows.txt", "fxGoldFarming-BonesToBananasCaster.txt", "fxGoldFarming-CowKiller.txt", "fxGoldFarming-FishFoodCollector.txt", "fxGoldFarming-MonksRobesCollector.txt", "fxGoldFarming-PotatoPicker.txt", "fxGoldFarming-RedSpidersEggsCollector.txt", "fxGoldFarming-Tanner.txt", "fxGoldFarming-WildyCollector.txt", "fxHouseFavour-Hosidius.txt", "fxMisc-VarrockMuseumQuiz.txt", "fxQuests-CooksAssistant.txt", "fxQuests-DruidicRitual.txt", "fxQuests-GoblinDiplomacy.txt", "fxQuests-LostCity.txt", "fxQuests-MageArenaOne.txt", "fxQuests-RomeoAndJuliet.txt", "fxQuests-RuneMysteries.txt", "fxQuests-SheepShearer.txt", "fxQuests-TheRestlessGhost.txt", "fxQuests-XMarksTheSpot.txt", "fxWoodcutting-AIO.txt" });
-            comboBoxScriptProfiles_Generic_SelectScript.Location = new Point(425, 400);
+            comboBoxScriptProfiles_Generic_SelectScript.Location = new Point(275, 250);
+            comboBoxScriptProfiles_Generic_SelectScript.Margin = new Padding(0);
             comboBoxScriptProfiles_Generic_SelectScript.Name = "comboBoxScriptProfiles_Generic_SelectScript";
             comboBoxScriptProfiles_Generic_SelectScript.Size = new Size(300, 26);
             comboBoxScriptProfiles_Generic_SelectScript.TabIndex = 254;
@@ -162,7 +173,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(734, 411);
             Controls.Add(comboBoxScriptProfiles_Generic_SelectScript);
             Controls.Add(labelScriptProfiles_Generic_SelectScript);
             Controls.Add(labelScriptProfiles_Generic_Header);
@@ -179,9 +190,10 @@
             ForeColor = Color.FromArgb(224, 224, 224);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "formScriptProfilesGeneric";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Script Profiles: Fletching - Longbows";
+            Text = "Script Profiles: Generic";
             Load += formScriptProfiles_Generic_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -197,7 +209,7 @@
         public CheckBox checkBoxScriptProfiles_Generic_RenewBond;
         public CheckBox checkBoxScriptProfiles_Generic_DeathHandler;
         public Button btnScriptProfiles_Generic_SaveToProfiles;
-        private Label labelScriptProfiles_Generic_SelectScript;
-        private ComboBox comboBoxScriptProfiles_Generic_SelectScript;
+        public Label labelScriptProfiles_Generic_SelectScript;
+        public ComboBox comboBoxScriptProfiles_Generic_SelectScript;
     }
 }

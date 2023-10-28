@@ -29,216 +29,217 @@
         public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesMiningMotherlodeMine));
-            this.labelScriptProfiles_MotherlodeMine_SpendNuggets = new System.Windows.Forms.Label();
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets = new System.Windows.Forms.ListBox();
-            this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe = new System.Windows.Forms.CheckBox();
-            this.labelScriptProfiles_MotherlodeMine_SelectSector = new System.Windows.Forms.Label();
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector = new System.Windows.Forms.ComboBox();
-            this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_MotherlodeMine_Restocking = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_MotherlodeMine_SellLoot = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_MotherlodeMine_Antipattern = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_MotherlodeMine_RenewBond = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler = new System.Windows.Forms.CheckBox();
-            this.labelScriptProfiles_MotherlodeMine_Title = new System.Windows.Forms.Label();
-            this.btnScriptProfiles_MotherlodeMine_Save = new System.Windows.Forms.Button();
-            this.labelScriptProfiles_MotherlodeMine_Header = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            labelScriptProfiles_MotherlodeMine_SpendNuggets = new Label();
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets = new ListBox();
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe = new CheckBox();
+            labelScriptProfiles_MotherlodeMine_SelectSector = new Label();
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector = new ComboBox();
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping = new CheckBox();
+            checkBoxScriptProfiles_MotherlodeMine_Restocking = new CheckBox();
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot = new CheckBox();
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern = new CheckBox();
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond = new CheckBox();
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler = new CheckBox();
+            labelScriptProfiles_MotherlodeMine_Title = new Label();
+            btnScriptProfiles_MotherlodeMine_Save = new Button();
+            labelScriptProfiles_MotherlodeMine_Header = new Label();
+            SuspendLayout();
             // 
             // labelScriptProfiles_MotherlodeMine_SpendNuggets
             // 
-            this.labelScriptProfiles_MotherlodeMine_SpendNuggets.AutoSize = true;
-            this.labelScriptProfiles_MotherlodeMine_SpendNuggets.Location = new System.Drawing.Point(564, 257);
-            this.labelScriptProfiles_MotherlodeMine_SpendNuggets.Name = "labelScriptProfiles_MotherlodeMine_SpendNuggets";
-            this.labelScriptProfiles_MotherlodeMine_SpendNuggets.Size = new System.Drawing.Size(109, 18);
-            this.labelScriptProfiles_MotherlodeMine_SpendNuggets.TabIndex = 141;
-            this.labelScriptProfiles_MotherlodeMine_SpendNuggets.Text = "Spend Nuggets";
+            labelScriptProfiles_MotherlodeMine_SpendNuggets.AutoSize = true;
+            labelScriptProfiles_MotherlodeMine_SpendNuggets.Location = new Point(275, 200);
+            labelScriptProfiles_MotherlodeMine_SpendNuggets.Margin = new Padding(0);
+            labelScriptProfiles_MotherlodeMine_SpendNuggets.Name = "labelScriptProfiles_MotherlodeMine_SpendNuggets";
+            labelScriptProfiles_MotherlodeMine_SpendNuggets.Size = new Size(109, 18);
+            labelScriptProfiles_MotherlodeMine_SpendNuggets.TabIndex = 141;
+            labelScriptProfiles_MotherlodeMine_SpendNuggets.Text = "Spend Nuggets";
             // 
             // listBoxScriptProfiles_MotherlodeMine_SpendNuggets
             // 
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.FormattingEnabled = true;
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.ItemHeight = 18;
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Items.AddRange(new object[] {
-            "Buy Outfit",
-            "Buy Coal Bag",
-            "Buy Gem Bag",
-            "Buy Softclay Packs"});
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Location = new System.Drawing.Point(539, 284);
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Name = "listBoxScriptProfiles_MotherlodeMine_SpendNuggets";
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Size = new System.Drawing.Size(175, 76);
-            this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets.TabIndex = 140;
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.BackColor = Color.FromArgb(64, 64, 64);
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.ForeColor = Color.FromArgb(224, 224, 224);
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.FormattingEnabled = true;
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.ItemHeight = 18;
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Items.AddRange(new object[] { "Buy Outfit", "Buy Coal Bag", "Buy Gem Bag", "Buy Softclay Packs" });
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Location = new Point(250, 225);
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Margin = new Padding(0);
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Name = "listBoxScriptProfiles_MotherlodeMine_SpendNuggets";
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectionMode = SelectionMode.MultiSimple;
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.Size = new Size(175, 94);
+            listBoxScriptProfiles_MotherlodeMine_SpendNuggets.TabIndex = 140;
             // 
             // checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe
             // 
-            this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.AutoSize = true;
-            this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Location = new System.Drawing.Point(539, 209);
-            this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Name = "checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe";
-            this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Size = new System.Drawing.Size(163, 22);
-            this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.TabIndex = 138;
-            this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Text = "Use Dragon Pickaxe";
-            this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.AutoSize = true;
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Location = new Point(250, 127);
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Margin = new Padding(0);
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Name = "checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe";
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Size = new Size(163, 22);
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.TabIndex = 138;
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Text = "Use Dragon Pickaxe";
+            checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.UseVisualStyleBackColor = true;
             // 
             // labelScriptProfiles_MotherlodeMine_SelectSector
             // 
-            this.labelScriptProfiles_MotherlodeMine_SelectSector.AutoSize = true;
-            this.labelScriptProfiles_MotherlodeMine_SelectSector.Location = new System.Drawing.Point(539, 457);
-            this.labelScriptProfiles_MotherlodeMine_SelectSector.Name = "labelScriptProfiles_MotherlodeMine_SelectSector";
-            this.labelScriptProfiles_MotherlodeMine_SelectSector.Size = new System.Drawing.Size(97, 18);
-            this.labelScriptProfiles_MotherlodeMine_SelectSector.TabIndex = 137;
-            this.labelScriptProfiles_MotherlodeMine_SelectSector.Text = "Select Sector";
+            labelScriptProfiles_MotherlodeMine_SelectSector.AutoSize = true;
+            labelScriptProfiles_MotherlodeMine_SelectSector.Location = new Point(250, 375);
+            labelScriptProfiles_MotherlodeMine_SelectSector.Margin = new Padding(0);
+            labelScriptProfiles_MotherlodeMine_SelectSector.Name = "labelScriptProfiles_MotherlodeMine_SelectSector";
+            labelScriptProfiles_MotherlodeMine_SelectSector.Size = new Size(97, 18);
+            labelScriptProfiles_MotherlodeMine_SelectSector.TabIndex = 137;
+            labelScriptProfiles_MotherlodeMine_SelectSector.Text = "Select Sector";
             // 
             // comboBoxScriptProfiles_MotherlodeMine_SelectSector
             // 
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.AutoCompleteCustomSource.AddRange(new string[] {
-            "Random",
-            "West",
-            "SouthWest",
-            "South",
-            "SouthEast"});
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.FormattingEnabled = true;
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.Items.AddRange(new object[] {
-            "Random",
-            "West",
-            "SouthWest",
-            "South",
-            "SouthEast"});
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.Location = new System.Drawing.Point(639, 454);
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.Name = "comboBoxScriptProfiles_MotherlodeMine_SelectSector";
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.Size = new System.Drawing.Size(75, 26);
-            this.comboBoxScriptProfiles_MotherlodeMine_SelectSector.TabIndex = 136;
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.AutoCompleteCustomSource.AddRange(new string[] { "Random", "West", "SouthWest", "South", "SouthEast" });
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.BackColor = Color.FromArgb(224, 224, 224);
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.FlatStyle = FlatStyle.Flat;
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.FormattingEnabled = true;
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.Items.AddRange(new object[] { "Random", "West", "SouthWest", "South", "SouthEast" });
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.Location = new Point(350, 372);
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.Margin = new Padding(0);
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.Name = "comboBoxScriptProfiles_MotherlodeMine_SelectSector";
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.Size = new Size(75, 26);
+            comboBoxScriptProfiles_MotherlodeMine_SelectSector.TabIndex = 136;
             // 
             // checkBoxScriptProfiles_MotherlodeMine_WorldHopping
             // 
-            this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping.AutoSize = true;
-            this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Location = new System.Drawing.Point(310, 359);
-            this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Name = "checkBoxScriptProfiles_MotherlodeMine_WorldHopping";
-            this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Size = new System.Drawing.Size(126, 22);
-            this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping.TabIndex = 130;
-            this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Text = "World Hopping";
-            this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping.AutoSize = true;
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Location = new Point(50, 275);
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Margin = new Padding(0);
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Name = "checkBoxScriptProfiles_MotherlodeMine_WorldHopping";
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Size = new Size(126, 22);
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping.TabIndex = 130;
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Text = "World Hopping";
+            checkBoxScriptProfiles_MotherlodeMine_WorldHopping.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_MotherlodeMine_Restocking
             // 
-            this.checkBoxScriptProfiles_MotherlodeMine_Restocking.AutoSize = true;
-            this.checkBoxScriptProfiles_MotherlodeMine_Restocking.Location = new System.Drawing.Point(310, 409);
-            this.checkBoxScriptProfiles_MotherlodeMine_Restocking.Name = "checkBoxScriptProfiles_MotherlodeMine_Restocking";
-            this.checkBoxScriptProfiles_MotherlodeMine_Restocking.Size = new System.Drawing.Size(106, 22);
-            this.checkBoxScriptProfiles_MotherlodeMine_Restocking.TabIndex = 129;
-            this.checkBoxScriptProfiles_MotherlodeMine_Restocking.Text = "Restocking ";
-            this.checkBoxScriptProfiles_MotherlodeMine_Restocking.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_MotherlodeMine_Restocking.AutoSize = true;
+            checkBoxScriptProfiles_MotherlodeMine_Restocking.Location = new Point(50, 325);
+            checkBoxScriptProfiles_MotherlodeMine_Restocking.Margin = new Padding(0);
+            checkBoxScriptProfiles_MotherlodeMine_Restocking.Name = "checkBoxScriptProfiles_MotherlodeMine_Restocking";
+            checkBoxScriptProfiles_MotherlodeMine_Restocking.Size = new Size(106, 22);
+            checkBoxScriptProfiles_MotherlodeMine_Restocking.TabIndex = 129;
+            checkBoxScriptProfiles_MotherlodeMine_Restocking.Text = "Restocking ";
+            checkBoxScriptProfiles_MotherlodeMine_Restocking.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_MotherlodeMine_SellLoot
             // 
-            this.checkBoxScriptProfiles_MotherlodeMine_SellLoot.AutoSize = true;
-            this.checkBoxScriptProfiles_MotherlodeMine_SellLoot.Location = new System.Drawing.Point(310, 459);
-            this.checkBoxScriptProfiles_MotherlodeMine_SellLoot.Name = "checkBoxScriptProfiles_MotherlodeMine_SellLoot";
-            this.checkBoxScriptProfiles_MotherlodeMine_SellLoot.Size = new System.Drawing.Size(85, 22);
-            this.checkBoxScriptProfiles_MotherlodeMine_SellLoot.TabIndex = 128;
-            this.checkBoxScriptProfiles_MotherlodeMine_SellLoot.Text = "Sell Loot";
-            this.checkBoxScriptProfiles_MotherlodeMine_SellLoot.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot.AutoSize = true;
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot.Location = new Point(50, 375);
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot.Margin = new Padding(0);
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot.Name = "checkBoxScriptProfiles_MotherlodeMine_SellLoot";
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot.Size = new Size(85, 22);
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot.TabIndex = 128;
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot.Text = "Sell Loot";
+            checkBoxScriptProfiles_MotherlodeMine_SellLoot.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_MotherlodeMine_Antipattern
             // 
-            this.checkBoxScriptProfiles_MotherlodeMine_Antipattern.AutoSize = true;
-            this.checkBoxScriptProfiles_MotherlodeMine_Antipattern.Location = new System.Drawing.Point(310, 309);
-            this.checkBoxScriptProfiles_MotherlodeMine_Antipattern.Name = "checkBoxScriptProfiles_MotherlodeMine_Antipattern";
-            this.checkBoxScriptProfiles_MotherlodeMine_Antipattern.Size = new System.Drawing.Size(96, 22);
-            this.checkBoxScriptProfiles_MotherlodeMine_Antipattern.TabIndex = 127;
-            this.checkBoxScriptProfiles_MotherlodeMine_Antipattern.Text = "Antipattern";
-            this.checkBoxScriptProfiles_MotherlodeMine_Antipattern.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern.AutoSize = true;
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern.Location = new Point(50, 225);
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern.Margin = new Padding(0);
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern.Name = "checkBoxScriptProfiles_MotherlodeMine_Antipattern";
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern.Size = new Size(96, 22);
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern.TabIndex = 127;
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern.Text = "Antipattern";
+            checkBoxScriptProfiles_MotherlodeMine_Antipattern.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_MotherlodeMine_RenewBond
             // 
-            this.checkBoxScriptProfiles_MotherlodeMine_RenewBond.AutoSize = true;
-            this.checkBoxScriptProfiles_MotherlodeMine_RenewBond.Location = new System.Drawing.Point(310, 259);
-            this.checkBoxScriptProfiles_MotherlodeMine_RenewBond.Name = "checkBoxScriptProfiles_MotherlodeMine_RenewBond";
-            this.checkBoxScriptProfiles_MotherlodeMine_RenewBond.Size = new System.Drawing.Size(112, 22);
-            this.checkBoxScriptProfiles_MotherlodeMine_RenewBond.TabIndex = 126;
-            this.checkBoxScriptProfiles_MotherlodeMine_RenewBond.Text = "Renew Bond";
-            this.checkBoxScriptProfiles_MotherlodeMine_RenewBond.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond.AutoSize = true;
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond.Location = new Point(50, 175);
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond.Margin = new Padding(0);
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond.Name = "checkBoxScriptProfiles_MotherlodeMine_RenewBond";
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond.Size = new Size(112, 22);
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond.TabIndex = 126;
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond.Text = "Renew Bond";
+            checkBoxScriptProfiles_MotherlodeMine_RenewBond.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_MotherlodeMine_DeathHandler
             // 
-            this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler.AutoSize = true;
-            this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Location = new System.Drawing.Point(310, 209);
-            this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Name = "checkBoxScriptProfiles_MotherlodeMine_DeathHandler";
-            this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Size = new System.Drawing.Size(121, 22);
-            this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler.TabIndex = 125;
-            this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Text = "Death Handler";
-            this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler.AutoSize = true;
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Margin = new Padding(0);
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Name = "checkBoxScriptProfiles_MotherlodeMine_DeathHandler";
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Size = new Size(121, 22);
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler.TabIndex = 125;
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Text = "Death Handler";
+            checkBoxScriptProfiles_MotherlodeMine_DeathHandler.UseVisualStyleBackColor = true;
             // 
             // labelScriptProfiles_MotherlodeMine_Title
             // 
-            this.labelScriptProfiles_MotherlodeMine_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelScriptProfiles_MotherlodeMine_Title.Location = new System.Drawing.Point(0, 50);
-            this.labelScriptProfiles_MotherlodeMine_Title.Name = "labelScriptProfiles_MotherlodeMine_Title";
-            this.labelScriptProfiles_MotherlodeMine_Title.Size = new System.Drawing.Size(1015, 25);
-            this.labelScriptProfiles_MotherlodeMine_Title.TabIndex = 123;
-            this.labelScriptProfiles_MotherlodeMine_Title.Text = "Mining: Motherlode Mine";
-            this.labelScriptProfiles_MotherlodeMine_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_MotherlodeMine_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            labelScriptProfiles_MotherlodeMine_Title.Location = new Point(0, 50);
+            labelScriptProfiles_MotherlodeMine_Title.Margin = new Padding(0);
+            labelScriptProfiles_MotherlodeMine_Title.Name = "labelScriptProfiles_MotherlodeMine_Title";
+            labelScriptProfiles_MotherlodeMine_Title.Size = new Size(480, 25);
+            labelScriptProfiles_MotherlodeMine_Title.TabIndex = 123;
+            labelScriptProfiles_MotherlodeMine_Title.Text = "Mining: Motherlode Mine";
+            labelScriptProfiles_MotherlodeMine_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnScriptProfiles_MotherlodeMine_Save
             // 
-            this.btnScriptProfiles_MotherlodeMine_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnScriptProfiles_MotherlodeMine_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnScriptProfiles_MotherlodeMine_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnScriptProfiles_MotherlodeMine_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnScriptProfiles_MotherlodeMine_Save.Location = new System.Drawing.Point(465, 550);
-            this.btnScriptProfiles_MotherlodeMine_Save.Name = "btnScriptProfiles_MotherlodeMine_Save";
-            this.btnScriptProfiles_MotherlodeMine_Save.Size = new System.Drawing.Size(120, 68);
-            this.btnScriptProfiles_MotherlodeMine_Save.TabIndex = 120;
-            this.btnScriptProfiles_MotherlodeMine_Save.Text = "Save to Profiles";
-            this.btnScriptProfiles_MotherlodeMine_Save.UseVisualStyleBackColor = true;
-            this.btnScriptProfiles_MotherlodeMine_Save.Click += new System.EventHandler(this.btnScriptProfiles_MotherlodeMine_SaveButton_Click);
+            btnScriptProfiles_MotherlodeMine_Save.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_MotherlodeMine_Save.Cursor = Cursors.Hand;
+            btnScriptProfiles_MotherlodeMine_Save.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_MotherlodeMine_Save.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MotherlodeMine_Save.Location = new Point(180, 425);
+            btnScriptProfiles_MotherlodeMine_Save.Margin = new Padding(0);
+            btnScriptProfiles_MotherlodeMine_Save.Name = "btnScriptProfiles_MotherlodeMine_Save";
+            btnScriptProfiles_MotherlodeMine_Save.Size = new Size(125, 50);
+            btnScriptProfiles_MotherlodeMine_Save.TabIndex = 120;
+            btnScriptProfiles_MotherlodeMine_Save.Text = "Save Profile";
+            btnScriptProfiles_MotherlodeMine_Save.UseVisualStyleBackColor = true;
+            btnScriptProfiles_MotherlodeMine_Save.Click += btnScriptProfiles_MotherlodeMine_SaveButton_Click;
             // 
             // labelScriptProfiles_MotherlodeMine_Header
             // 
-            this.labelScriptProfiles_MotherlodeMine_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
-            this.labelScriptProfiles_MotherlodeMine_Header.Location = new System.Drawing.Point(0, 0);
-            this.labelScriptProfiles_MotherlodeMine_Header.Name = "labelScriptProfiles_MotherlodeMine_Header";
-            this.labelScriptProfiles_MotherlodeMine_Header.Size = new System.Drawing.Size(1015, 50);
-            this.labelScriptProfiles_MotherlodeMine_Header.TabIndex = 256;
-            this.labelScriptProfiles_MotherlodeMine_Header.Text = "Script Profiles";
-            this.labelScriptProfiles_MotherlodeMine_Header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_MotherlodeMine_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            labelScriptProfiles_MotherlodeMine_Header.Location = new Point(0, 0);
+            labelScriptProfiles_MotherlodeMine_Header.Margin = new Padding(0);
+            labelScriptProfiles_MotherlodeMine_Header.Name = "labelScriptProfiles_MotherlodeMine_Header";
+            labelScriptProfiles_MotherlodeMine_Header.Size = new Size(480, 50);
+            labelScriptProfiles_MotherlodeMine_Header.TabIndex = 256;
+            labelScriptProfiles_MotherlodeMine_Header.Text = "Script Profiles";
+            labelScriptProfiles_MotherlodeMine_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // formScriptProfilesMotherlodeMine
+            // formScriptProfilesMiningMotherlodeMine
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1014, 641);
-            this.Controls.Add(this.labelScriptProfiles_MotherlodeMine_Header);
-            this.Controls.Add(this.labelScriptProfiles_MotherlodeMine_SpendNuggets);
-            this.Controls.Add(this.listBoxScriptProfiles_MotherlodeMine_SpendNuggets);
-            this.Controls.Add(this.checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe);
-            this.Controls.Add(this.labelScriptProfiles_MotherlodeMine_SelectSector);
-            this.Controls.Add(this.comboBoxScriptProfiles_MotherlodeMine_SelectSector);
-            this.Controls.Add(this.checkBoxScriptProfiles_MotherlodeMine_WorldHopping);
-            this.Controls.Add(this.checkBoxScriptProfiles_MotherlodeMine_Restocking);
-            this.Controls.Add(this.checkBoxScriptProfiles_MotherlodeMine_SellLoot);
-            this.Controls.Add(this.checkBoxScriptProfiles_MotherlodeMine_Antipattern);
-            this.Controls.Add(this.checkBoxScriptProfiles_MotherlodeMine_RenewBond);
-            this.Controls.Add(this.checkBoxScriptProfiles_MotherlodeMine_DeathHandler);
-            this.Controls.Add(this.labelScriptProfiles_MotherlodeMine_Title);
-            this.Controls.Add(this.btnScriptProfiles_MotherlodeMine_Save);
-            this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "formScriptProfilesMotherlodeMine";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Script Profiles: Motherlode Mine";
-            this.Load += new System.EventHandler(this.formScriptProfiles_MotherlodeMine_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            BackColor = Color.FromArgb(60, 60, 60);
+            ClientSize = new Size(484, 511);
+            Controls.Add(labelScriptProfiles_MotherlodeMine_Header);
+            Controls.Add(labelScriptProfiles_MotherlodeMine_SpendNuggets);
+            Controls.Add(listBoxScriptProfiles_MotherlodeMine_SpendNuggets);
+            Controls.Add(checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe);
+            Controls.Add(labelScriptProfiles_MotherlodeMine_SelectSector);
+            Controls.Add(comboBoxScriptProfiles_MotherlodeMine_SelectSector);
+            Controls.Add(checkBoxScriptProfiles_MotherlodeMine_WorldHopping);
+            Controls.Add(checkBoxScriptProfiles_MotherlodeMine_Restocking);
+            Controls.Add(checkBoxScriptProfiles_MotherlodeMine_SellLoot);
+            Controls.Add(checkBoxScriptProfiles_MotherlodeMine_Antipattern);
+            Controls.Add(checkBoxScriptProfiles_MotherlodeMine_RenewBond);
+            Controls.Add(checkBoxScriptProfiles_MotherlodeMine_DeathHandler);
+            Controls.Add(labelScriptProfiles_MotherlodeMine_Title);
+            Controls.Add(btnScriptProfiles_MotherlodeMine_Save);
+            DoubleBuffered = true;
+            Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = Color.FromArgb(224, 224, 224);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            Name = "formScriptProfilesMiningMotherlodeMine";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Script Profiles: Motherlode Mine";
+            Load += formScriptProfiles_MotherlodeMine_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

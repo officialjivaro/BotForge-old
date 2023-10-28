@@ -3,7 +3,7 @@
     public partial class formScriptProfilesGeneric : Form
     {
         // Initialize Instances
-        private formMainForm MainForm;
+        public formMainForm MainForm;
 
         public formScriptProfilesGeneric(formMainForm mainForm)
         {

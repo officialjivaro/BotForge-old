@@ -51,7 +51,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod.Location = new Point(350, 375);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod.Location = new Point(245, 300);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod.Size = new Size(143, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod.TabIndex = 251;
@@ -61,7 +62,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping.Location = new Point(150, 375);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping.Location = new Point(45, 300);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping.TabIndex = 194;
@@ -71,7 +73,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking.Location = new Point(350, 225);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking.Location = new Point(245, 150);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking.TabIndex = 193;
@@ -81,7 +84,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot.Location = new Point(350, 275);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot.Location = new Point(245, 200);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot.TabIndex = 192;
@@ -91,7 +95,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern.Location = new Point(150, 325);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern.Location = new Point(45, 250);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern.TabIndex = 191;
@@ -101,7 +106,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond.Location = new Point(150, 275);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond.Location = new Point(45, 200);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond.TabIndex = 190;
@@ -111,7 +117,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler.Location = new Point(150, 225);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler.Location = new Point(45, 150);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler.TabIndex = 189;
@@ -121,7 +128,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart.Location = new Point(350, 325);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart.Location = new Point(245, 250);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart.Size = new Size(222, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart.TabIndex = 186;
@@ -132,8 +140,9 @@
             // 
             labelScriptProfiles_AccountBuilderMasterFarmer_Title.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_AccountBuilderMasterFarmer_Title.Location = new Point(0, 50);
+            labelScriptProfiles_AccountBuilderMasterFarmer_Title.Margin = new Padding(0);
             labelScriptProfiles_AccountBuilderMasterFarmer_Title.Name = "labelScriptProfiles_AccountBuilderMasterFarmer_Title";
-            labelScriptProfiles_AccountBuilderMasterFarmer_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_AccountBuilderMasterFarmer_Title.Size = new Size(880, 25);
             labelScriptProfiles_AccountBuilderMasterFarmer_Title.TabIndex = 184;
             labelScriptProfiles_AccountBuilderMasterFarmer_Title.Text = "Account Builder: Master Farmer";
             labelScriptProfiles_AccountBuilderMasterFarmer_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -144,18 +153,20 @@
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Location = new Point(450, 550);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Location = new Point(375, 375);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Name = "btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles";
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Click += btnScriptProfiles_AccountBuilderMasterFarmer_SaveButton_Click;
             // 
             // labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel
             // 
             labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.AutoSize = true;
-            labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Location = new Point(600, 225);
+            labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Location = new Point(500, 150);
+            labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Margin = new Padding(0);
             labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Name = "labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel";
             labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Size = new Size(135, 18);
             labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.TabIndex = 253;
@@ -170,7 +181,8 @@
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.FormattingEnabled = true;
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Items.AddRange(new object[] { "71", "85" });
-            comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Location = new Point(750, 225);
+            comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Location = new Point(650, 150);
+            comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Margin = new Padding(0);
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Name = "comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel";
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Size = new Size(75, 26);
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.TabIndex = 254;
@@ -179,8 +191,9 @@
             // 
             labelScriptProfiles_AccountBuilderMasterFarmer_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_AccountBuilderMasterFarmer_Header.Location = new Point(0, 0);
+            labelScriptProfiles_AccountBuilderMasterFarmer_Header.Margin = new Padding(0);
             labelScriptProfiles_AccountBuilderMasterFarmer_Header.Name = "labelScriptProfiles_AccountBuilderMasterFarmer_Header";
-            labelScriptProfiles_AccountBuilderMasterFarmer_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_AccountBuilderMasterFarmer_Header.Size = new Size(880, 50);
             labelScriptProfiles_AccountBuilderMasterFarmer_Header.TabIndex = 255;
             labelScriptProfiles_AccountBuilderMasterFarmer_Header.Text = "Script Profiles";
             labelScriptProfiles_AccountBuilderMasterFarmer_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -188,7 +201,8 @@
             // checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers
             // 
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers.Location = new Point(600, 375);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers.Location = new Point(500, 300);
+            checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers.Margin = new Padding(0);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers.Name = "checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers";
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers.Size = new Size(265, 22);
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers.TabIndex = 256;
@@ -197,9 +211,10 @@
             // 
             // ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration
             // 
-            ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.Location = new Point(850, 300);
+            ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.Location = new Point(750, 225);
+            ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.Margin = new Padding(0);
             ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.Name = "ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration";
-            ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.Size = new Size(50, 24);
+            ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.Size = new Size(40, 24);
             ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.TabIndex = 257;
             ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.Text = "210";
             ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
@@ -208,7 +223,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(600, 300);
+            label1.Location = new Point(500, 225);
+            label1.Margin = new Padding(0);
             label1.Name = "label1";
             label1.Size = new Size(224, 18);
             label1.TabIndex = 258;
@@ -218,7 +234,8 @@
             // 
             labelScriptProfiles_AccountBuilder_Minutes3.AutoSize = true;
             labelScriptProfiles_AccountBuilder_Minutes3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
-            labelScriptProfiles_AccountBuilder_Minutes3.Location = new Point(905, 300);
+            labelScriptProfiles_AccountBuilder_Minutes3.Location = new Point(800, 225);
+            labelScriptProfiles_AccountBuilder_Minutes3.Margin = new Padding(0);
             labelScriptProfiles_AccountBuilder_Minutes3.Name = "labelScriptProfiles_AccountBuilder_Minutes3";
             labelScriptProfiles_AccountBuilder_Minutes3.Size = new Size(32, 18);
             labelScriptProfiles_AccountBuilder_Minutes3.TabIndex = 259;
@@ -229,7 +246,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(884, 461);
             Controls.Add(labelScriptProfiles_AccountBuilder_Minutes3);
             Controls.Add(label1);
             Controls.Add(ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration);
@@ -252,9 +269,10 @@
             ForeColor = Color.FromArgb(224, 224, 224);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "formScriptProfilesAccountBuilderMasterFarmer";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "formScriptProfilesAccountBuilderMasterFarmer";
+            Text = "Script Profiles: Account Builder - Master Farmer";
             Load += formScriptProfiles_AccountBuilderMasterFarmer_Load;
             ResumeLayout(false);
             PerformLayout();

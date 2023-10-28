@@ -29,191 +29,189 @@
         public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesThievingMasterFarmers));
-            this.labelScriptProfiles_ThievingMasterFarmers_SelectLocation = new System.Windows.Forms.Label();
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation = new System.Windows.Forms.ComboBox();
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler = new System.Windows.Forms.CheckBox();
-            this.labelScriptProfiles_ThievingMasterFarmers_Title = new System.Windows.Forms.Label();
-            this.btnScriptProfiles_ThievingMasterFarmers_Save = new System.Windows.Forms.Button();
-            this.labelScriptProfiles_ThievingMasterFarmers_Header = new System.Windows.Forms.Label();
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit = new System.Windows.Forms.CheckBox();
-            this.SuspendLayout();
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation = new Label();
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation = new ComboBox();
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping = new CheckBox();
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking = new CheckBox();
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot = new CheckBox();
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern = new CheckBox();
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond = new CheckBox();
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler = new CheckBox();
+            labelScriptProfiles_ThievingMasterFarmers_Title = new Label();
+            btnScriptProfiles_ThievingMasterFarmers_Save = new Button();
+            labelScriptProfiles_ThievingMasterFarmers_Header = new Label();
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit = new CheckBox();
+            SuspendLayout();
             // 
             // labelScriptProfiles_ThievingMasterFarmers_SelectLocation
             // 
-            this.labelScriptProfiles_ThievingMasterFarmers_SelectLocation.AutoSize = true;
-            this.labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new System.Drawing.Point(225, 350);
-            this.labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Name = "labelScriptProfiles_ThievingMasterFarmers_SelectLocation";
-            this.labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Size = new System.Drawing.Size(110, 18);
-            this.labelScriptProfiles_ThievingMasterFarmers_SelectLocation.TabIndex = 177;
-            this.labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Text = "Select Location";
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.AutoSize = true;
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new Point(50, 275);
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Margin = new Padding(0);
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Name = "labelScriptProfiles_ThievingMasterFarmers_SelectLocation";
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Size = new Size(110, 18);
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.TabIndex = 177;
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Text = "Select Location";
             // 
             // comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation
             // 
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.AutoCompleteCustomSource.AddRange(new string[] {
-            "Random Sector",
-            "Varrock",
-            "Hosidius South",
-            "Hosidius North"});
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.FormattingEnabled = true;
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Items.AddRange(new object[] {
-            "Random Sector",
-            "Varrock",
-            "Hosidius South",
-            "Hosidius North"});
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new System.Drawing.Point(400, 350);
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Name = "comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation";
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Size = new System.Drawing.Size(175, 26);
-            this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.TabIndex = 176;
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.AutoCompleteCustomSource.AddRange(new string[] { "Random Sector", "Varrock", "Hosidius South", "Hosidius North" });
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.BackColor = Color.FromArgb(224, 224, 224);
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.FlatStyle = FlatStyle.Flat;
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.FormattingEnabled = true;
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Items.AddRange(new object[] { "Random Sector", "Varrock", "Hosidius South", "Hosidius North" });
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new Point(200, 275);
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Margin = new Padding(0);
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Name = "comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation";
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Size = new Size(174, 26);
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.TabIndex = 176;
             // 
             // checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping
             // 
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Location = new System.Drawing.Point(650, 200);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Size = new System.Drawing.Size(126, 22);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.TabIndex = 168;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Text = "World Hopping";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.AutoSize = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Location = new Point(475, 125);
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Margin = new Padding(0);
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping";
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Size = new Size(126, 22);
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.TabIndex = 168;
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.Text = "World Hopping";
+            checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingMasterFarmers_Restocking
             // 
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Location = new System.Drawing.Point(650, 275);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_Restocking";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Size = new System.Drawing.Size(102, 22);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.TabIndex = 167;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Text = "Restocking";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.AutoSize = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Location = new Point(475, 200);
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Margin = new Padding(0);
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_Restocking";
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Size = new Size(102, 22);
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.TabIndex = 167;
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Text = "Restocking";
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot
             // 
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Location = new System.Drawing.Point(450, 275);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Size = new System.Drawing.Size(85, 22);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.TabIndex = 166;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Text = "Sell Loot";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.AutoSize = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Location = new Point(275, 200);
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Margin = new Padding(0);
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot";
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Size = new Size(85, 22);
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.TabIndex = 166;
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Text = "Sell Loot";
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern
             // 
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Location = new System.Drawing.Point(225, 275);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Size = new System.Drawing.Size(96, 22);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.TabIndex = 165;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Text = "Antipattern";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.AutoSize = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Location = new Point(50, 200);
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Margin = new Padding(0);
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern";
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Size = new Size(96, 22);
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.TabIndex = 165;
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Text = "Antipattern";
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond
             // 
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Location = new System.Drawing.Point(450, 200);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Size = new System.Drawing.Size(112, 22);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.TabIndex = 164;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Text = "Renew Bond";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.AutoSize = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Location = new Point(275, 125);
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Margin = new Padding(0);
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond";
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Size = new Size(112, 22);
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.TabIndex = 164;
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.Text = "Renew Bond";
+            checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler
             // 
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Location = new System.Drawing.Point(225, 200);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Size = new System.Drawing.Size(121, 22);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.TabIndex = 163;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Text = "Death Handler";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.AutoSize = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Margin = new Padding(0);
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler";
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Size = new Size(121, 22);
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.TabIndex = 163;
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.Text = "Death Handler";
+            checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler.UseVisualStyleBackColor = true;
             // 
             // labelScriptProfiles_ThievingMasterFarmers_Title
             // 
-            this.labelScriptProfiles_ThievingMasterFarmers_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelScriptProfiles_ThievingMasterFarmers_Title.Location = new System.Drawing.Point(0, 50);
-            this.labelScriptProfiles_ThievingMasterFarmers_Title.Name = "labelScriptProfiles_ThievingMasterFarmers_Title";
-            this.labelScriptProfiles_ThievingMasterFarmers_Title.Size = new System.Drawing.Size(1015, 25);
-            this.labelScriptProfiles_ThievingMasterFarmers_Title.TabIndex = 161;
-            this.labelScriptProfiles_ThievingMasterFarmers_Title.Text = "Thieving: Master Farmers";
-            this.labelScriptProfiles_ThievingMasterFarmers_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_ThievingMasterFarmers_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            labelScriptProfiles_ThievingMasterFarmers_Title.Location = new Point(0, 50);
+            labelScriptProfiles_ThievingMasterFarmers_Title.Margin = new Padding(0);
+            labelScriptProfiles_ThievingMasterFarmers_Title.Name = "labelScriptProfiles_ThievingMasterFarmers_Title";
+            labelScriptProfiles_ThievingMasterFarmers_Title.Size = new Size(680, 25);
+            labelScriptProfiles_ThievingMasterFarmers_Title.TabIndex = 161;
+            labelScriptProfiles_ThievingMasterFarmers_Title.Text = "Thieving: Master Farmers";
+            labelScriptProfiles_ThievingMasterFarmers_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnScriptProfiles_ThievingMasterFarmers_Save
             // 
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.Location = new System.Drawing.Point(465, 550);
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.Name = "btnScriptProfiles_ThievingMasterFarmers_Save";
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.Size = new System.Drawing.Size(120, 68);
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.TabIndex = 160;
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.Text = "Save to Profiles";
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.UseVisualStyleBackColor = true;
-            this.btnScriptProfiles_ThievingMasterFarmers_Save.Click += new System.EventHandler(this.btnScriptProfiles_ThievingMasterFarmers_SaveButton_Click);
+            btnScriptProfiles_ThievingMasterFarmers_Save.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_ThievingMasterFarmers_Save.Cursor = Cursors.Hand;
+            btnScriptProfiles_ThievingMasterFarmers_Save.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_ThievingMasterFarmers_Save.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_ThievingMasterFarmers_Save.Location = new Point(280, 350);
+            btnScriptProfiles_ThievingMasterFarmers_Save.Margin = new Padding(0);
+            btnScriptProfiles_ThievingMasterFarmers_Save.Name = "btnScriptProfiles_ThievingMasterFarmers_Save";
+            btnScriptProfiles_ThievingMasterFarmers_Save.Size = new Size(125, 50);
+            btnScriptProfiles_ThievingMasterFarmers_Save.TabIndex = 160;
+            btnScriptProfiles_ThievingMasterFarmers_Save.Text = "Save Profile";
+            btnScriptProfiles_ThievingMasterFarmers_Save.UseVisualStyleBackColor = true;
+            btnScriptProfiles_ThievingMasterFarmers_Save.Click += btnScriptProfiles_ThievingMasterFarmers_SaveButton_Click;
             // 
             // labelScriptProfiles_ThievingMasterFarmers_Header
             // 
-            this.labelScriptProfiles_ThievingMasterFarmers_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
-            this.labelScriptProfiles_ThievingMasterFarmers_Header.Location = new System.Drawing.Point(0, 0);
-            this.labelScriptProfiles_ThievingMasterFarmers_Header.Name = "labelScriptProfiles_ThievingMasterFarmers_Header";
-            this.labelScriptProfiles_ThievingMasterFarmers_Header.Size = new System.Drawing.Size(1015, 50);
-            this.labelScriptProfiles_ThievingMasterFarmers_Header.TabIndex = 253;
-            this.labelScriptProfiles_ThievingMasterFarmers_Header.Text = "Script Profiles";
-            this.labelScriptProfiles_ThievingMasterFarmers_Header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_ThievingMasterFarmers_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            labelScriptProfiles_ThievingMasterFarmers_Header.Location = new Point(0, 0);
+            labelScriptProfiles_ThievingMasterFarmers_Header.Margin = new Padding(0);
+            labelScriptProfiles_ThievingMasterFarmers_Header.Name = "labelScriptProfiles_ThievingMasterFarmers_Header";
+            labelScriptProfiles_ThievingMasterFarmers_Header.Size = new Size(680, 50);
+            labelScriptProfiles_ThievingMasterFarmers_Header.TabIndex = 253;
+            labelScriptProfiles_ThievingMasterFarmers_Header.Text = "Script Profiles";
+            labelScriptProfiles_ThievingMasterFarmers_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit
             // 
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Location = new System.Drawing.Point(650, 350);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Size = new System.Drawing.Size(149, 22);
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.TabIndex = 254;
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Text = "Use Rogues Outfit";
-            this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.AutoSize = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Location = new Point(475, 275);
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Margin = new Padding(0);
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit";
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Size = new Size(149, 22);
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.TabIndex = 254;
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Text = "Use Rogues Outfit";
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.UseVisualStyleBackColor = true;
             // 
             // formScriptProfilesThievingMasterFarmers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1014, 641);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit);
-            this.Controls.Add(this.labelScriptProfiles_ThievingMasterFarmers_Header);
-            this.Controls.Add(this.labelScriptProfiles_ThievingMasterFarmers_SelectLocation);
-            this.Controls.Add(this.comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingMasterFarmers_Restocking);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler);
-            this.Controls.Add(this.labelScriptProfiles_ThievingMasterFarmers_Title);
-            this.Controls.Add(this.btnScriptProfiles_ThievingMasterFarmers_Save);
-            this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "formScriptProfilesThievingMasterFarmers";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Script Profiles: Thieving - Master Farmers";
-            this.Load += new System.EventHandler(this.formScriptProfiles_ThievingMasterFarmers_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            BackColor = Color.FromArgb(60, 60, 60);
+            ClientSize = new Size(684, 436);
+            Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit);
+            Controls.Add(labelScriptProfiles_ThievingMasterFarmers_Header);
+            Controls.Add(labelScriptProfiles_ThievingMasterFarmers_SelectLocation);
+            Controls.Add(comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation);
+            Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping);
+            Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_Restocking);
+            Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot);
+            Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern);
+            Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond);
+            Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler);
+            Controls.Add(labelScriptProfiles_ThievingMasterFarmers_Title);
+            Controls.Add(btnScriptProfiles_ThievingMasterFarmers_Save);
+            DoubleBuffered = true;
+            Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = Color.FromArgb(224, 224, 224);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            Name = "formScriptProfilesThievingMasterFarmers";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Script Profiles: Thieving - Master Farmers";
+            Load += formScriptProfiles_ThievingMasterFarmers_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

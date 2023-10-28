@@ -3,7 +3,7 @@
     public partial class formScriptProfilesRunecraftingAbyss : Form
     {
         // Initialize Instances
-        private formMainForm MainForm;
+        public formMainForm MainForm;
 
         public formScriptProfilesRunecraftingAbyss(formMainForm mainForm)
         {

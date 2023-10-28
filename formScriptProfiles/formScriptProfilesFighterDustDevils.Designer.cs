@@ -80,6 +80,7 @@
             // 
             checkBoxScriptProfiles_FighterDustDevils_HighAlching.AutoSize = true;
             checkBoxScriptProfiles_FighterDustDevils_HighAlching.Location = new Point(100, 225);
+            checkBoxScriptProfiles_FighterDustDevils_HighAlching.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterDustDevils_HighAlching.Name = "checkBoxScriptProfiles_FighterDustDevils_HighAlching";
             checkBoxScriptProfiles_FighterDustDevils_HighAlching.Size = new Size(252, 22);
             checkBoxScriptProfiles_FighterDustDevils_HighAlching.TabIndex = 148;
@@ -88,8 +89,8 @@
             // 
             // checkBoxScriptProfiles_FighterDustDevils_WorldHopping
             // 
-            checkBoxScriptProfiles_FighterDustDevils_WorldHopping.AutoSize = true;
             checkBoxScriptProfiles_FighterDustDevils_WorldHopping.Location = new Point(400, 150);
+            checkBoxScriptProfiles_FighterDustDevils_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterDustDevils_WorldHopping.Name = "checkBoxScriptProfiles_FighterDustDevils_WorldHopping";
             checkBoxScriptProfiles_FighterDustDevils_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_FighterDustDevils_WorldHopping.TabIndex = 147;
@@ -100,6 +101,7 @@
             // 
             checkBoxScriptProfiles_FighterDustDevils_Restocking.AutoSize = true;
             checkBoxScriptProfiles_FighterDustDevils_Restocking.Location = new Point(700, 75);
+            checkBoxScriptProfiles_FighterDustDevils_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterDustDevils_Restocking.Name = "checkBoxScriptProfiles_FighterDustDevils_Restocking";
             checkBoxScriptProfiles_FighterDustDevils_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_FighterDustDevils_Restocking.TabIndex = 146;
@@ -110,6 +112,7 @@
             // 
             checkBoxScriptProfiles_FighterDustDevils_SellLoot.AutoSize = true;
             checkBoxScriptProfiles_FighterDustDevils_SellLoot.Location = new Point(700, 150);
+            checkBoxScriptProfiles_FighterDustDevils_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterDustDevils_SellLoot.Name = "checkBoxScriptProfiles_FighterDustDevils_SellLoot";
             checkBoxScriptProfiles_FighterDustDevils_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_FighterDustDevils_SellLoot.TabIndex = 145;
@@ -120,6 +123,7 @@
             // 
             checkBoxScriptProfiles_FighterDustDevils_Antipattern.AutoSize = true;
             checkBoxScriptProfiles_FighterDustDevils_Antipattern.Location = new Point(400, 75);
+            checkBoxScriptProfiles_FighterDustDevils_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterDustDevils_Antipattern.Name = "checkBoxScriptProfiles_FighterDustDevils_Antipattern";
             checkBoxScriptProfiles_FighterDustDevils_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_FighterDustDevils_Antipattern.TabIndex = 144;
@@ -130,6 +134,7 @@
             // 
             checkBoxScriptProfiles_FighterDustDevils_RenewBond.AutoSize = true;
             checkBoxScriptProfiles_FighterDustDevils_RenewBond.Location = new Point(100, 150);
+            checkBoxScriptProfiles_FighterDustDevils_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterDustDevils_RenewBond.Name = "checkBoxScriptProfiles_FighterDustDevils_RenewBond";
             checkBoxScriptProfiles_FighterDustDevils_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_FighterDustDevils_RenewBond.TabIndex = 143;
@@ -140,6 +145,7 @@
             // 
             checkBoxScriptProfiles_FighterDustDevils_DeathHandler.AutoSize = true;
             checkBoxScriptProfiles_FighterDustDevils_DeathHandler.Location = new Point(100, 75);
+            checkBoxScriptProfiles_FighterDustDevils_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_FighterDustDevils_DeathHandler.Name = "checkBoxScriptProfiles_FighterDustDevils_DeathHandler";
             checkBoxScriptProfiles_FighterDustDevils_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_FighterDustDevils_DeathHandler.TabIndex = 142;
@@ -150,6 +156,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_FighterDustDevils_Title.Location = new Point(0, 50);
+            labelScriptProfiles_FighterDustDevils_Title.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_Title.Name = "labelScriptProfiles_FighterDustDevils_Title";
             labelScriptProfiles_FighterDustDevils_Title.Size = new Size(1015, 25);
             labelScriptProfiles_FighterDustDevils_Title.TabIndex = 140;
@@ -162,11 +169,12 @@
             btnScriptProfiles_FighterDustDevils_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_FighterDustDevils_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_FighterDustDevils_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Location = new Point(465, 580);
+            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Location = new Point(445, 575);
+            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_FighterDustDevils_SaveToProfiles.Name = "btnScriptProfiles_FighterDustDevils_SaveToProfiles";
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Size = new Size(100, 50);
+            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_FighterDustDevils_SaveToProfiles.TabIndex = 138;
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_FighterDustDevils_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_FighterDustDevils_SaveToProfiles.Click += btnScriptProfiles_FighterDustDevils_SaveButton_Click;
             // 
@@ -174,6 +182,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeHands.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeHands.Location = new Point(105, 300);
+            labelScriptProfiles_FighterDustDevils_MeleeHands.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeHands.Name = "labelScriptProfiles_FighterDustDevils_MeleeHands";
             labelScriptProfiles_FighterDustDevils_MeleeHands.Size = new Size(51, 18);
             labelScriptProfiles_FighterDustDevils_MeleeHands.TabIndex = 195;
@@ -183,6 +192,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeHead.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeHead.Location = new Point(355, 100);
+            labelScriptProfiles_FighterDustDevils_MeleeHead.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeHead.Name = "labelScriptProfiles_FighterDustDevils_MeleeHead";
             labelScriptProfiles_FighterDustDevils_MeleeHead.Size = new Size(43, 18);
             labelScriptProfiles_FighterDustDevils_MeleeHead.TabIndex = 194;
@@ -192,6 +202,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeLegs.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeLegs.Location = new Point(355, 325);
+            labelScriptProfiles_FighterDustDevils_MeleeLegs.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeLegs.Name = "labelScriptProfiles_FighterDustDevils_MeleeLegs";
             labelScriptProfiles_FighterDustDevils_MeleeLegs.Size = new Size(40, 18);
             labelScriptProfiles_FighterDustDevils_MeleeLegs.TabIndex = 193;
@@ -201,6 +212,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeRing.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeRing.Location = new Point(605, 300);
+            labelScriptProfiles_FighterDustDevils_MeleeRing.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeRing.Name = "labelScriptProfiles_FighterDustDevils_MeleeRing";
             labelScriptProfiles_FighterDustDevils_MeleeRing.Size = new Size(38, 18);
             labelScriptProfiles_FighterDustDevils_MeleeRing.TabIndex = 192;
@@ -210,6 +222,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeWeapon.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeWeapon.Location = new Point(105, 225);
+            labelScriptProfiles_FighterDustDevils_MeleeWeapon.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeWeapon.Name = "labelScriptProfiles_FighterDustDevils_MeleeWeapon";
             labelScriptProfiles_FighterDustDevils_MeleeWeapon.Size = new Size(64, 18);
             labelScriptProfiles_FighterDustDevils_MeleeWeapon.TabIndex = 191;
@@ -219,6 +232,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeChest.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeChest.Location = new Point(355, 250);
+            labelScriptProfiles_FighterDustDevils_MeleeChest.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeChest.Name = "labelScriptProfiles_FighterDustDevils_MeleeChest";
             labelScriptProfiles_FighterDustDevils_MeleeChest.Size = new Size(47, 18);
             labelScriptProfiles_FighterDustDevils_MeleeChest.TabIndex = 190;
@@ -228,6 +242,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeArrow.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeArrow.Location = new Point(605, 150);
+            labelScriptProfiles_FighterDustDevils_MeleeArrow.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeArrow.Name = "labelScriptProfiles_FighterDustDevils_MeleeArrow";
             labelScriptProfiles_FighterDustDevils_MeleeArrow.Size = new Size(47, 18);
             labelScriptProfiles_FighterDustDevils_MeleeArrow.TabIndex = 189;
@@ -237,6 +252,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeFeet.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeFeet.Location = new Point(355, 400);
+            labelScriptProfiles_FighterDustDevils_MeleeFeet.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeFeet.Name = "labelScriptProfiles_FighterDustDevils_MeleeFeet";
             labelScriptProfiles_FighterDustDevils_MeleeFeet.Size = new Size(37, 18);
             labelScriptProfiles_FighterDustDevils_MeleeFeet.TabIndex = 188;
@@ -246,6 +262,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MeleeCape.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MeleeCape.Location = new Point(105, 150);
+            labelScriptProfiles_FighterDustDevils_MeleeCape.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MeleeCape.Name = "labelScriptProfiles_FighterDustDevils_MeleeCape";
             labelScriptProfiles_FighterDustDevils_MeleeCape.Size = new Size(43, 18);
             labelScriptProfiles_FighterDustDevils_MeleeCape.TabIndex = 187;
@@ -255,6 +272,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MiscAmulet.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MiscAmulet.Location = new Point(355, 175);
+            labelScriptProfiles_FighterDustDevils_MiscAmulet.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MiscAmulet.Name = "labelScriptProfiles_FighterDustDevils_MiscAmulet";
             labelScriptProfiles_FighterDustDevils_MiscAmulet.Size = new Size(53, 18);
             labelScriptProfiles_FighterDustDevils_MiscAmulet.TabIndex = 196;
@@ -264,6 +282,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_MiscShield.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_MiscShield.Location = new Point(605, 225);
+            labelScriptProfiles_FighterDustDevils_MiscShield.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_MiscShield.Name = "labelScriptProfiles_FighterDustDevils_MiscShield";
             labelScriptProfiles_FighterDustDevils_MiscShield.Size = new Size(48, 18);
             labelScriptProfiles_FighterDustDevils_MiscShield.TabIndex = 197;
@@ -274,6 +293,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.Location = new Point(205, 150);
+            textBoxScriptProfiles_FighterDustDevils_MeleeCape.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeCape";
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.TabIndex = 206;
@@ -285,6 +305,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.Location = new Point(455, 250);
+            textBoxScriptProfiles_FighterDustDevils_MeleeChest.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeChest";
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.TabIndex = 205;
@@ -296,6 +317,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.Location = new Point(705, 300);
+            textBoxScriptProfiles_FighterDustDevils_MeleeRing.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeRing";
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.TabIndex = 204;
@@ -307,6 +329,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Location = new Point(455, 325);
+            textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeLegs";
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.TabIndex = 203;
@@ -318,6 +341,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.Location = new Point(455, 100);
+            textBoxScriptProfiles_FighterDustDevils_MeleeHead.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeHead";
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.TabIndex = 202;
@@ -329,6 +353,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Location = new Point(455, 400);
+            textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeFeet";
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.TabIndex = 201;
@@ -340,6 +365,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.Location = new Point(205, 300);
+            textBoxScriptProfiles_FighterDustDevils_MeleeHands.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeHands";
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.TabIndex = 200;
@@ -351,6 +377,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Location = new Point(205, 225);
+            textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeWeapon";
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.TabIndex = 199;
@@ -362,6 +389,7 @@
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Location = new Point(705, 150);
+            textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeArrow";
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.TabIndex = 198;
@@ -373,6 +401,7 @@
             textBoxScriptProfiles_FighterDustDevils_MiscShield.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MiscShield.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MiscShield.Location = new Point(705, 225);
+            textBoxScriptProfiles_FighterDustDevils_MiscShield.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MiscShield.Name = "textBoxScriptProfiles_FighterDustDevils_MiscShield";
             textBoxScriptProfiles_FighterDustDevils_MiscShield.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MiscShield.TabIndex = 208;
@@ -384,6 +413,7 @@
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Location = new Point(455, 175);
+            textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Name = "textBoxScriptProfiles_FighterDustDevils_MiscAmulet";
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Size = new Size(115, 24);
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.TabIndex = 207;
@@ -394,6 +424,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_FighterDustDevils_Header.Location = new Point(0, 0);
+            labelScriptProfiles_FighterDustDevils_Header.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_Header.Name = "labelScriptProfiles_FighterDustDevils_Header";
             labelScriptProfiles_FighterDustDevils_Header.Size = new Size(1015, 50);
             labelScriptProfiles_FighterDustDevils_Header.TabIndex = 211;
@@ -406,6 +437,7 @@
             tabControlScriptProfiles_DustDevils.Controls.Add(tabPageScriptProfiles_DustDevils_GearSettings);
             tabControlScriptProfiles_DustDevils.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             tabControlScriptProfiles_DustDevils.Location = new Point(25, 75);
+            tabControlScriptProfiles_DustDevils.Margin = new Padding(0);
             tabControlScriptProfiles_DustDevils.Name = "tabControlScriptProfiles_DustDevils";
             tabControlScriptProfiles_DustDevils.SelectedIndex = 0;
             tabControlScriptProfiles_DustDevils.Size = new Size(965, 475);
@@ -427,6 +459,7 @@
             tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(checkBoxScriptProfiles_FighterDustDevils_WorldHopping);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(checkBoxScriptProfiles_FighterDustDevils_HighAlching);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Location = new Point(4, 27);
+            tabPageScriptProfiles_DustDevils_GeneralSettings.Margin = new Padding(0);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Name = "tabPageScriptProfiles_DustDevils_GeneralSettings";
             tabPageScriptProfiles_DustDevils_GeneralSettings.Padding = new Padding(3);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Size = new Size(957, 444);
@@ -437,8 +470,9 @@
             // 
             labelScriptProfiles_FighterDustDevils_GeneralSettings.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_FighterDustDevils_GeneralSettings.Location = new Point(0, 0);
+            labelScriptProfiles_FighterDustDevils_GeneralSettings.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_GeneralSettings.Name = "labelScriptProfiles_FighterDustDevils_GeneralSettings";
-            labelScriptProfiles_FighterDustDevils_GeneralSettings.Size = new Size(920, 50);
+            labelScriptProfiles_FighterDustDevils_GeneralSettings.Size = new Size(950, 50);
             labelScriptProfiles_FighterDustDevils_GeneralSettings.TabIndex = 215;
             labelScriptProfiles_FighterDustDevils_GeneralSettings.Text = "General Settings";
             labelScriptProfiles_FighterDustDevils_GeneralSettings.TextAlign = ContentAlignment.MiddleCenter;
@@ -452,6 +486,7 @@
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.Items.AddRange(new object[] { "SmokeDungeon", "CatacombsOfKourend" });
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.Location = new Point(400, 275);
+            comboBoxScriptProfiles_FighterDustDevils_SelectArea.Margin = new Padding(0);
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.Name = "comboBoxScriptProfiles_FighterDustDevils_SelectArea";
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.Size = new Size(125, 26);
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.TabIndex = 211;
@@ -465,6 +500,7 @@
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.Items.AddRange(new object[] { "None", "CombatPotion", "SuperCombatPotion" });
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.Location = new Point(700, 275);
+            comboBoxScriptProfiles_FighterDustDevils_SelectPotion.Margin = new Padding(0);
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.Name = "comboBoxScriptProfiles_FighterDustDevils_SelectPotion";
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.Size = new Size(125, 26);
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.TabIndex = 214;
@@ -473,6 +509,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_SelectArea.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_SelectArea.Location = new Point(400, 225);
+            labelScriptProfiles_FighterDustDevils_SelectArea.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_SelectArea.Name = "labelScriptProfiles_FighterDustDevils_SelectArea";
             labelScriptProfiles_FighterDustDevils_SelectArea.Size = new Size(83, 18);
             labelScriptProfiles_FighterDustDevils_SelectArea.TabIndex = 212;
@@ -482,6 +519,7 @@
             // 
             labelScriptProfiles_FighterDustDevils_SelectPotion.AutoSize = true;
             labelScriptProfiles_FighterDustDevils_SelectPotion.Location = new Point(700, 225);
+            labelScriptProfiles_FighterDustDevils_SelectPotion.Margin = new Padding(0);
             labelScriptProfiles_FighterDustDevils_SelectPotion.Name = "labelScriptProfiles_FighterDustDevils_SelectPotion";
             labelScriptProfiles_FighterDustDevils_SelectPotion.Size = new Size(96, 18);
             labelScriptProfiles_FighterDustDevils_SelectPotion.TabIndex = 213;
@@ -515,6 +553,7 @@
             tabPageScriptProfiles_DustDevils_GearSettings.Controls.Add(labelScriptProfiles_FighterDustDevils_MiscAmulet);
             tabPageScriptProfiles_DustDevils_GearSettings.Controls.Add(labelScriptProfiles_FighterDustDevils_MiscShield);
             tabPageScriptProfiles_DustDevils_GearSettings.Location = new Point(4, 27);
+            tabPageScriptProfiles_DustDevils_GearSettings.Margin = new Padding(0);
             tabPageScriptProfiles_DustDevils_GearSettings.Name = "tabPageScriptProfiles_DustDevils_GearSettings";
             tabPageScriptProfiles_DustDevils_GearSettings.Padding = new Padding(3);
             tabPageScriptProfiles_DustDevils_GearSettings.Size = new Size(957, 444);
@@ -525,6 +564,7 @@
             // 
             labelScriptProfiles_DustDevils_NoRestocking.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_DustDevils_NoRestocking.Location = new Point(0, 50);
+            labelScriptProfiles_DustDevils_NoRestocking.Margin = new Padding(0);
             labelScriptProfiles_DustDevils_NoRestocking.Name = "labelScriptProfiles_DustDevils_NoRestocking";
             labelScriptProfiles_DustDevils_NoRestocking.Size = new Size(955, 25);
             labelScriptProfiles_DustDevils_NoRestocking.TabIndex = 217;
@@ -535,6 +575,7 @@
             // 
             labelScriptProfiles_DustDevils_CustomGear.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_DustDevils_CustomGear.Location = new Point(0, 0);
+            labelScriptProfiles_DustDevils_CustomGear.Margin = new Padding(0);
             labelScriptProfiles_DustDevils_CustomGear.Name = "labelScriptProfiles_DustDevils_CustomGear";
             labelScriptProfiles_DustDevils_CustomGear.Size = new Size(955, 50);
             labelScriptProfiles_DustDevils_CustomGear.TabIndex = 216;
@@ -556,9 +597,10 @@
             ForeColor = Color.FromArgb(224, 224, 224);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "formScriptProfilesFighterDustDevils";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Script Profiles: Fighter - Kurasks";
+            Text = "Script Profiles: Fighter -Dust Devils";
             Load += formScriptProfilesFighterDustDevils_Load;
             tabControlScriptProfiles_DustDevils.ResumeLayout(false);
             tabPageScriptProfiles_DustDevils_GeneralSettings.ResumeLayout(false);
@@ -602,14 +644,14 @@
         public TextBox textBoxScriptProfiles_FighterDustDevils_MiscShield;
         public TextBox textBoxScriptProfiles_FighterDustDevils_MiscAmulet;
         public TabControl tabControlScriptProfiles_DustDevils;
-        private TabPage tabPageScriptProfiles_DustDevils_GeneralSettings;
-        private Label labelScriptProfiles_FighterDustDevils_GeneralSettings;
         public ComboBox comboBoxScriptProfiles_FighterDustDevils_SelectArea;
         public ComboBox comboBoxScriptProfiles_FighterDustDevils_SelectPotion;
         public Label labelScriptProfiles_FighterDustDevils_SelectArea;
         public Label labelScriptProfiles_FighterDustDevils_SelectPotion;
-        private TabPage tabPageScriptProfiles_DustDevils_GearSettings;
-        private Label labelScriptProfiles_DustDevils_NoRestocking;
-        private Label labelScriptProfiles_DustDevils_CustomGear;
+        public TabPage tabPageScriptProfiles_DustDevils_GeneralSettings;
+        public Label labelScriptProfiles_FighterDustDevils_GeneralSettings;
+        public TabPage tabPageScriptProfiles_DustDevils_GearSettings;
+        public Label labelScriptProfiles_DustDevils_NoRestocking;
+        public Label labelScriptProfiles_DustDevils_CustomGear;
     }
 }

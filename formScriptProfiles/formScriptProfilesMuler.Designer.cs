@@ -28,434 +28,434 @@
         /// </summary>
         public void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesMuler));
-            this.labelScriptProfiles_Muler_Title = new System.Windows.Forms.Label();
-            this.btnScriptProfiles_Muler_SaveToProfiles = new System.Windows.Forms.Button();
-            this.tabPageScriptProfiles_Muler_Bot = new System.Windows.Forms.TabPage();
-            this.dataGridViewScriptProfiles_Muler_Bot = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageScriptProfiles_Muler_Mule = new System.Windows.Forms.TabPage();
-            this.dataGridViewScriptProfiles_Muler_Mule = new System.Windows.Forms.DataGridView();
-            this.dataGridViewScriptProfiles_Muler_Mule_Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewScriptProfiles_Muler_Mule_Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControlScriptProfiles_Muler = new System.Windows.Forms.TabControl();
-            this.tabPageScriptProfiles_Muler_General = new System.Windows.Forms.TabPage();
-            this.textBoxScriptProfiles_Muler_Bot_MuleName = new System.Windows.Forms.TextBox();
-            this.labelScriptProfiles_Muler_Bot_MuleName = new System.Windows.Forms.Label();
-            this.textBoxScriptProfiles_Muler_Bot_Y = new System.Windows.Forms.TextBox();
-            this.textBoxScriptProfiles_Muler_Bot_Z = new System.Windows.Forms.TextBox();
-            this.textBoxScriptProfiles_Muler_Bot_X = new System.Windows.Forms.TextBox();
-            this.textBoxScriptProfiles_Muler_Bot_World = new System.Windows.Forms.TextBox();
-            this.labelScriptProfiles_Muler_Bot_World = new System.Windows.Forms.Label();
-            this.labelScriptProfiles_Muler_Bot_Coordinates = new System.Windows.Forms.Label();
-            this.textBoxScriptProfiles_Muler_Mule_Y = new System.Windows.Forms.TextBox();
-            this.textBoxScriptProfiles_Muler_Mule_Z = new System.Windows.Forms.TextBox();
-            this.textBoxScriptProfiles_Muler_Mule_X = new System.Windows.Forms.TextBox();
-            this.labelScriptProfiles_Muler_Mule_Coordinates = new System.Windows.Forms.Label();
-            this.labelScriptProfiles_Muler_Mule_World = new System.Windows.Forms.Label();
-            this.checkBoxScriptProfiles_Muler_Mule_ManualMode = new System.Windows.Forms.CheckBox();
-            this.textBoxScriptProfiles_Muler_Mule_World = new System.Windows.Forms.TextBox();
-            this.labelScriptProfiles_Muler_Header = new System.Windows.Forms.Label();
-            this.tabPageScriptProfiles_Muler_Bot.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewScriptProfiles_Muler_Bot)).BeginInit();
-            this.tabPageScriptProfiles_Muler_Mule.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewScriptProfiles_Muler_Mule)).BeginInit();
-            this.tabControlScriptProfiles_Muler.SuspendLayout();
-            this.tabPageScriptProfiles_Muler_General.SuspendLayout();
-            this.SuspendLayout();
+            labelScriptProfiles_Muler_Title = new Label();
+            btnScriptProfiles_Muler_SaveToProfiles = new Button();
+            tabPageScriptProfiles_Muler_Bot = new TabPage();
+            dataGridViewScriptProfiles_Muler_Bot = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            tabPageScriptProfiles_Muler_Mule = new TabPage();
+            dataGridViewScriptProfiles_Muler_Mule = new DataGridView();
+            dataGridViewScriptProfiles_Muler_Mule_Item = new DataGridViewTextBoxColumn();
+            dataGridViewScriptProfiles_Muler_Mule_Quantity = new DataGridViewTextBoxColumn();
+            tabControlScriptProfiles_Muler = new TabControl();
+            tabPageScriptProfiles_Muler_General = new TabPage();
+            textBoxScriptProfiles_Muler_Bot_MuleName = new TextBox();
+            labelScriptProfiles_Muler_Bot_MuleName = new Label();
+            textBoxScriptProfiles_Muler_Bot_Y = new TextBox();
+            textBoxScriptProfiles_Muler_Bot_Z = new TextBox();
+            textBoxScriptProfiles_Muler_Bot_X = new TextBox();
+            textBoxScriptProfiles_Muler_Bot_World = new TextBox();
+            labelScriptProfiles_Muler_Bot_World = new Label();
+            labelScriptProfiles_Muler_Bot_Coordinates = new Label();
+            textBoxScriptProfiles_Muler_Mule_Y = new TextBox();
+            textBoxScriptProfiles_Muler_Mule_Z = new TextBox();
+            textBoxScriptProfiles_Muler_Mule_X = new TextBox();
+            labelScriptProfiles_Muler_Mule_Coordinates = new Label();
+            labelScriptProfiles_Muler_Mule_World = new Label();
+            checkBoxScriptProfiles_Muler_Mule_ManualMode = new CheckBox();
+            textBoxScriptProfiles_Muler_Mule_World = new TextBox();
+            labelScriptProfiles_Muler_Header = new Label();
+            tabPageScriptProfiles_Muler_Bot.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewScriptProfiles_Muler_Bot).BeginInit();
+            tabPageScriptProfiles_Muler_Mule.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewScriptProfiles_Muler_Mule).BeginInit();
+            tabControlScriptProfiles_Muler.SuspendLayout();
+            tabPageScriptProfiles_Muler_General.SuspendLayout();
+            SuspendLayout();
             // 
             // labelScriptProfiles_Muler_Title
             // 
-            this.labelScriptProfiles_Muler_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelScriptProfiles_Muler_Title.Location = new System.Drawing.Point(0, 50);
-            this.labelScriptProfiles_Muler_Title.Name = "labelScriptProfiles_Muler_Title";
-            this.labelScriptProfiles_Muler_Title.Size = new System.Drawing.Size(1015, 25);
-            this.labelScriptProfiles_Muler_Title.TabIndex = 113;
-            this.labelScriptProfiles_Muler_Title.Text = "Muler";
-            this.labelScriptProfiles_Muler_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_Muler_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            labelScriptProfiles_Muler_Title.Location = new Point(0, 50);
+            labelScriptProfiles_Muler_Title.Name = "labelScriptProfiles_Muler_Title";
+            labelScriptProfiles_Muler_Title.Size = new Size(995, 25);
+            labelScriptProfiles_Muler_Title.TabIndex = 113;
+            labelScriptProfiles_Muler_Title.Text = "Muler";
+            labelScriptProfiles_Muler_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnScriptProfiles_Muler_SaveToProfiles
             // 
-            this.btnScriptProfiles_Muler_SaveToProfiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnScriptProfiles_Muler_SaveToProfiles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnScriptProfiles_Muler_SaveToProfiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnScriptProfiles_Muler_SaveToProfiles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnScriptProfiles_Muler_SaveToProfiles.Location = new System.Drawing.Point(450, 561);
-            this.btnScriptProfiles_Muler_SaveToProfiles.Name = "btnScriptProfiles_Muler_SaveToProfiles";
-            this.btnScriptProfiles_Muler_SaveToProfiles.Size = new System.Drawing.Size(120, 68);
-            this.btnScriptProfiles_Muler_SaveToProfiles.TabIndex = 110;
-            this.btnScriptProfiles_Muler_SaveToProfiles.Text = "Save to Profiles";
-            this.btnScriptProfiles_Muler_SaveToProfiles.UseVisualStyleBackColor = true;
-            this.btnScriptProfiles_Muler_SaveToProfiles.Click += new System.EventHandler(this.btnScriptProfiles_Muler_SaveButton_Click);
+            btnScriptProfiles_Muler_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_Muler_SaveToProfiles.Cursor = Cursors.Hand;
+            btnScriptProfiles_Muler_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_Muler_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_Muler_SaveToProfiles.Location = new Point(435, 575);
+            btnScriptProfiles_Muler_SaveToProfiles.Name = "btnScriptProfiles_Muler_SaveToProfiles";
+            btnScriptProfiles_Muler_SaveToProfiles.Size = new Size(125, 50);
+            btnScriptProfiles_Muler_SaveToProfiles.TabIndex = 110;
+            btnScriptProfiles_Muler_SaveToProfiles.Text = "Save Profile";
+            btnScriptProfiles_Muler_SaveToProfiles.UseVisualStyleBackColor = true;
+            btnScriptProfiles_Muler_SaveToProfiles.Click += btnScriptProfiles_Muler_SaveButton_Click;
             // 
             // tabPageScriptProfiles_Muler_Bot
             // 
-            this.tabPageScriptProfiles_Muler_Bot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPageScriptProfiles_Muler_Bot.Controls.Add(this.dataGridViewScriptProfiles_Muler_Bot);
-            this.tabPageScriptProfiles_Muler_Bot.Location = new System.Drawing.Point(4, 22);
-            this.tabPageScriptProfiles_Muler_Bot.Name = "tabPageScriptProfiles_Muler_Bot";
-            this.tabPageScriptProfiles_Muler_Bot.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageScriptProfiles_Muler_Bot.Size = new System.Drawing.Size(970, 426);
-            this.tabPageScriptProfiles_Muler_Bot.TabIndex = 1;
-            this.tabPageScriptProfiles_Muler_Bot.Text = "Bot";
+            tabPageScriptProfiles_Muler_Bot.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageScriptProfiles_Muler_Bot.Controls.Add(dataGridViewScriptProfiles_Muler_Bot);
+            tabPageScriptProfiles_Muler_Bot.Location = new Point(4, 24);
+            tabPageScriptProfiles_Muler_Bot.Name = "tabPageScriptProfiles_Muler_Bot";
+            tabPageScriptProfiles_Muler_Bot.Padding = new Padding(3);
+            tabPageScriptProfiles_Muler_Bot.Size = new Size(970, 424);
+            tabPageScriptProfiles_Muler_Bot.TabIndex = 1;
+            tabPageScriptProfiles_Muler_Bot.Text = "Bot";
             // 
             // dataGridViewScriptProfiles_Muler_Bot
             // 
-            this.dataGridViewScriptProfiles_Muler_Bot.AllowUserToAddRows = false;
-            this.dataGridViewScriptProfiles_Muler_Bot.AllowUserToDeleteRows = false;
-            this.dataGridViewScriptProfiles_Muler_Bot.AllowUserToResizeColumns = false;
-            this.dataGridViewScriptProfiles_Muler_Bot.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridViewScriptProfiles_Muler_Bot.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewScriptProfiles_Muler_Bot.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewScriptProfiles_Muler_Bot.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewScriptProfiles_Muler_Bot.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewScriptProfiles_Muler_Bot.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewScriptProfiles_Muler_Bot.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewScriptProfiles_Muler_Bot.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridViewScriptProfiles_Muler_Bot.Location = new System.Drawing.Point(10, 11);
-            this.dataGridViewScriptProfiles_Muler_Bot.MultiSelect = false;
-            this.dataGridViewScriptProfiles_Muler_Bot.Name = "dataGridViewScriptProfiles_Muler_Bot";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewScriptProfiles_Muler_Bot.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridViewScriptProfiles_Muler_Bot.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewScriptProfiles_Muler_Bot.RowTemplate.Height = 25;
-            this.dataGridViewScriptProfiles_Muler_Bot.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridViewScriptProfiles_Muler_Bot.Size = new System.Drawing.Size(950, 400);
-            this.dataGridViewScriptProfiles_Muler_Bot.TabIndex = 2;
-            this.dataGridViewScriptProfiles_Muler_Bot.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewScriptProfiles_Bot_OneClickEdit_CellClick);
+            dataGridViewScriptProfiles_Muler_Bot.AllowUserToAddRows = false;
+            dataGridViewScriptProfiles_Muler_Bot.AllowUserToDeleteRows = false;
+            dataGridViewScriptProfiles_Muler_Bot.AllowUserToResizeColumns = false;
+            dataGridViewScriptProfiles_Muler_Bot.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewScriptProfiles_Muler_Bot.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewScriptProfiles_Muler_Bot.BorderStyle = BorderStyle.Fixed3D;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridViewScriptProfiles_Muler_Bot.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewScriptProfiles_Muler_Bot.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewScriptProfiles_Muler_Bot.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1 });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridViewScriptProfiles_Muler_Bot.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewScriptProfiles_Muler_Bot.GridColor = Color.FromArgb(64, 64, 64);
+            dataGridViewScriptProfiles_Muler_Bot.Location = new Point(10, 10);
+            dataGridViewScriptProfiles_Muler_Bot.Margin = new Padding(0);
+            dataGridViewScriptProfiles_Muler_Bot.MultiSelect = false;
+            dataGridViewScriptProfiles_Muler_Bot.Name = "dataGridViewScriptProfiles_Muler_Bot";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle4.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridViewScriptProfiles_Muler_Bot.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewScriptProfiles_Muler_Bot.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewScriptProfiles_Muler_Bot.RowTemplate.Height = 25;
+            dataGridViewScriptProfiles_Muler_Bot.SelectionMode = DataGridViewSelectionMode.CellSelect;
+            dataGridViewScriptProfiles_Muler_Bot.Size = new Size(950, 400);
+            dataGridViewScriptProfiles_Muler_Bot.TabIndex = 2;
+            dataGridViewScriptProfiles_Muler_Bot.CellClick += DataGridViewScriptProfiles_Bot_OneClickEdit_CellClick;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Item";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 907;
+            dataGridViewTextBoxColumn1.HeaderText = "Item";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.Width = 907;
             // 
             // tabPageScriptProfiles_Muler_Mule
             // 
-            this.tabPageScriptProfiles_Muler_Mule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPageScriptProfiles_Muler_Mule.Controls.Add(this.dataGridViewScriptProfiles_Muler_Mule);
-            this.tabPageScriptProfiles_Muler_Mule.Location = new System.Drawing.Point(4, 22);
-            this.tabPageScriptProfiles_Muler_Mule.Name = "tabPageScriptProfiles_Muler_Mule";
-            this.tabPageScriptProfiles_Muler_Mule.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageScriptProfiles_Muler_Mule.Size = new System.Drawing.Size(970, 426);
-            this.tabPageScriptProfiles_Muler_Mule.TabIndex = 0;
-            this.tabPageScriptProfiles_Muler_Mule.Text = "Mule";
+            tabPageScriptProfiles_Muler_Mule.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageScriptProfiles_Muler_Mule.Controls.Add(dataGridViewScriptProfiles_Muler_Mule);
+            tabPageScriptProfiles_Muler_Mule.Location = new Point(4, 24);
+            tabPageScriptProfiles_Muler_Mule.Name = "tabPageScriptProfiles_Muler_Mule";
+            tabPageScriptProfiles_Muler_Mule.Padding = new Padding(3);
+            tabPageScriptProfiles_Muler_Mule.Size = new Size(970, 424);
+            tabPageScriptProfiles_Muler_Mule.TabIndex = 0;
+            tabPageScriptProfiles_Muler_Mule.Text = "Mule";
             // 
             // dataGridViewScriptProfiles_Muler_Mule
             // 
-            this.dataGridViewScriptProfiles_Muler_Mule.AllowUserToAddRows = false;
-            this.dataGridViewScriptProfiles_Muler_Mule.AllowUserToDeleteRows = false;
-            this.dataGridViewScriptProfiles_Muler_Mule.AllowUserToResizeColumns = false;
-            this.dataGridViewScriptProfiles_Muler_Mule.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridViewScriptProfiles_Muler_Mule.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewScriptProfiles_Muler_Mule.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewScriptProfiles_Muler_Mule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewScriptProfiles_Muler_Mule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewScriptProfiles_Muler_Mule.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewScriptProfiles_Muler_Mule_Item,
-            this.dataGridViewScriptProfiles_Muler_Mule_Quantity});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewScriptProfiles_Muler_Mule.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewScriptProfiles_Muler_Mule.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridViewScriptProfiles_Muler_Mule.Location = new System.Drawing.Point(10, 10);
-            this.dataGridViewScriptProfiles_Muler_Mule.MultiSelect = false;
-            this.dataGridViewScriptProfiles_Muler_Mule.Name = "dataGridViewScriptProfiles_Muler_Mule";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewScriptProfiles_Muler_Mule.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridViewScriptProfiles_Muler_Mule.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridViewScriptProfiles_Muler_Mule.RowTemplate.Height = 25;
-            this.dataGridViewScriptProfiles_Muler_Mule.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridViewScriptProfiles_Muler_Mule.Size = new System.Drawing.Size(950, 400);
-            this.dataGridViewScriptProfiles_Muler_Mule.TabIndex = 1;
-            this.dataGridViewScriptProfiles_Muler_Mule.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewScriptProfiles_Mule_OneClickEdit_CellClick);
+            dataGridViewScriptProfiles_Muler_Mule.AllowUserToAddRows = false;
+            dataGridViewScriptProfiles_Muler_Mule.AllowUserToDeleteRows = false;
+            dataGridViewScriptProfiles_Muler_Mule.AllowUserToResizeColumns = false;
+            dataGridViewScriptProfiles_Muler_Mule.AllowUserToResizeRows = false;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewScriptProfiles_Muler_Mule.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewScriptProfiles_Muler_Mule.BorderStyle = BorderStyle.Fixed3D;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle7.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            dataGridViewScriptProfiles_Muler_Mule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewScriptProfiles_Muler_Mule.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewScriptProfiles_Muler_Mule.Columns.AddRange(new DataGridViewColumn[] { dataGridViewScriptProfiles_Muler_Mule_Item, dataGridViewScriptProfiles_Muler_Mule_Quantity });
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle8.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
+            dataGridViewScriptProfiles_Muler_Mule.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewScriptProfiles_Muler_Mule.GridColor = Color.FromArgb(64, 64, 64);
+            dataGridViewScriptProfiles_Muler_Mule.Location = new Point(10, 10);
+            dataGridViewScriptProfiles_Muler_Mule.Margin = new Padding(0);
+            dataGridViewScriptProfiles_Muler_Mule.MultiSelect = false;
+            dataGridViewScriptProfiles_Muler_Mule.Name = "dataGridViewScriptProfiles_Muler_Mule";
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle9.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            dataGridViewScriptProfiles_Muler_Mule.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewScriptProfiles_Muler_Mule.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewScriptProfiles_Muler_Mule.RowTemplate.Height = 25;
+            dataGridViewScriptProfiles_Muler_Mule.SelectionMode = DataGridViewSelectionMode.CellSelect;
+            dataGridViewScriptProfiles_Muler_Mule.Size = new Size(950, 400);
+            dataGridViewScriptProfiles_Muler_Mule.TabIndex = 1;
+            dataGridViewScriptProfiles_Muler_Mule.CellClick += DataGridViewScriptProfiles_Mule_OneClickEdit_CellClick;
             // 
             // dataGridViewScriptProfiles_Muler_Mule_Item
             // 
-            this.dataGridViewScriptProfiles_Muler_Mule_Item.HeaderText = "Item";
-            this.dataGridViewScriptProfiles_Muler_Mule_Item.Name = "dataGridViewScriptProfiles_Muler_Mule_Item";
-            this.dataGridViewScriptProfiles_Muler_Mule_Item.Width = 707;
+            dataGridViewScriptProfiles_Muler_Mule_Item.HeaderText = "Item";
+            dataGridViewScriptProfiles_Muler_Mule_Item.Name = "dataGridViewScriptProfiles_Muler_Mule_Item";
+            dataGridViewScriptProfiles_Muler_Mule_Item.Width = 707;
             // 
             // dataGridViewScriptProfiles_Muler_Mule_Quantity
             // 
-            this.dataGridViewScriptProfiles_Muler_Mule_Quantity.HeaderText = "Quantity";
-            this.dataGridViewScriptProfiles_Muler_Mule_Quantity.Name = "dataGridViewScriptProfiles_Muler_Mule_Quantity";
-            this.dataGridViewScriptProfiles_Muler_Mule_Quantity.Width = 200;
+            dataGridViewScriptProfiles_Muler_Mule_Quantity.HeaderText = "Quantity";
+            dataGridViewScriptProfiles_Muler_Mule_Quantity.Name = "dataGridViewScriptProfiles_Muler_Mule_Quantity";
+            dataGridViewScriptProfiles_Muler_Mule_Quantity.Width = 200;
             // 
             // tabControlScriptProfiles_Muler
             // 
-            this.tabControlScriptProfiles_Muler.Controls.Add(this.tabPageScriptProfiles_Muler_General);
-            this.tabControlScriptProfiles_Muler.Controls.Add(this.tabPageScriptProfiles_Muler_Mule);
-            this.tabControlScriptProfiles_Muler.Controls.Add(this.tabPageScriptProfiles_Muler_Bot);
-            this.tabControlScriptProfiles_Muler.Location = new System.Drawing.Point(17, 92);
-            this.tabControlScriptProfiles_Muler.Name = "tabControlScriptProfiles_Muler";
-            this.tabControlScriptProfiles_Muler.SelectedIndex = 0;
-            this.tabControlScriptProfiles_Muler.Size = new System.Drawing.Size(978, 452);
-            this.tabControlScriptProfiles_Muler.TabIndex = 184;
+            tabControlScriptProfiles_Muler.Controls.Add(tabPageScriptProfiles_Muler_General);
+            tabControlScriptProfiles_Muler.Controls.Add(tabPageScriptProfiles_Muler_Mule);
+            tabControlScriptProfiles_Muler.Controls.Add(tabPageScriptProfiles_Muler_Bot);
+            tabControlScriptProfiles_Muler.Location = new Point(10, 90);
+            tabControlScriptProfiles_Muler.Name = "tabControlScriptProfiles_Muler";
+            tabControlScriptProfiles_Muler.SelectedIndex = 0;
+            tabControlScriptProfiles_Muler.Size = new Size(978, 452);
+            tabControlScriptProfiles_Muler.TabIndex = 184;
             // 
             // tabPageScriptProfiles_Muler_General
             // 
-            this.tabPageScriptProfiles_Muler_General.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Bot_MuleName);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.labelScriptProfiles_Muler_Bot_MuleName);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Bot_Y);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Bot_Z);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Bot_X);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Bot_World);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.labelScriptProfiles_Muler_Bot_World);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.labelScriptProfiles_Muler_Bot_Coordinates);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Mule_Y);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Mule_Z);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Mule_X);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.labelScriptProfiles_Muler_Mule_Coordinates);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.labelScriptProfiles_Muler_Mule_World);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.checkBoxScriptProfiles_Muler_Mule_ManualMode);
-            this.tabPageScriptProfiles_Muler_General.Controls.Add(this.textBoxScriptProfiles_Muler_Mule_World);
-            this.tabPageScriptProfiles_Muler_General.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPageScriptProfiles_Muler_General.Location = new System.Drawing.Point(4, 27);
-            this.tabPageScriptProfiles_Muler_General.Name = "tabPageScriptProfiles_Muler_General";
-            this.tabPageScriptProfiles_Muler_General.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageScriptProfiles_Muler_General.Size = new System.Drawing.Size(970, 421);
-            this.tabPageScriptProfiles_Muler_General.TabIndex = 2;
-            this.tabPageScriptProfiles_Muler_General.Text = "General";
+            tabPageScriptProfiles_Muler_General.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Bot_MuleName);
+            tabPageScriptProfiles_Muler_General.Controls.Add(labelScriptProfiles_Muler_Bot_MuleName);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Bot_Y);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Bot_Z);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Bot_X);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Bot_World);
+            tabPageScriptProfiles_Muler_General.Controls.Add(labelScriptProfiles_Muler_Bot_World);
+            tabPageScriptProfiles_Muler_General.Controls.Add(labelScriptProfiles_Muler_Bot_Coordinates);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Mule_Y);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Mule_Z);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Mule_X);
+            tabPageScriptProfiles_Muler_General.Controls.Add(labelScriptProfiles_Muler_Mule_Coordinates);
+            tabPageScriptProfiles_Muler_General.Controls.Add(labelScriptProfiles_Muler_Mule_World);
+            tabPageScriptProfiles_Muler_General.Controls.Add(checkBoxScriptProfiles_Muler_Mule_ManualMode);
+            tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Mule_World);
+            tabPageScriptProfiles_Muler_General.ForeColor = Color.FromArgb(224, 224, 224);
+            tabPageScriptProfiles_Muler_General.Location = new Point(4, 27);
+            tabPageScriptProfiles_Muler_General.Name = "tabPageScriptProfiles_Muler_General";
+            tabPageScriptProfiles_Muler_General.Padding = new Padding(3);
+            tabPageScriptProfiles_Muler_General.Size = new Size(970, 421);
+            tabPageScriptProfiles_Muler_General.TabIndex = 2;
+            tabPageScriptProfiles_Muler_General.Text = "General";
             // 
             // textBoxScriptProfiles_Muler_Bot_MuleName
             // 
-            this.textBoxScriptProfiles_Muler_Bot_MuleName.Location = new System.Drawing.Point(426, 200);
-            this.textBoxScriptProfiles_Muler_Bot_MuleName.Name = "textBoxScriptProfiles_Muler_Bot_MuleName";
-            this.textBoxScriptProfiles_Muler_Bot_MuleName.Size = new System.Drawing.Size(125, 24);
-            this.textBoxScriptProfiles_Muler_Bot_MuleName.TabIndex = 23;
-            this.textBoxScriptProfiles_Muler_Bot_MuleName.Text = "I Love Jivaro";
-            this.textBoxScriptProfiles_Muler_Bot_MuleName.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Bot_MuleName.Location = new Point(426, 200);
+            textBoxScriptProfiles_Muler_Bot_MuleName.Name = "textBoxScriptProfiles_Muler_Bot_MuleName";
+            textBoxScriptProfiles_Muler_Bot_MuleName.Size = new Size(125, 24);
+            textBoxScriptProfiles_Muler_Bot_MuleName.TabIndex = 23;
+            textBoxScriptProfiles_Muler_Bot_MuleName.Text = "I Love Jivaro";
+            textBoxScriptProfiles_Muler_Bot_MuleName.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // labelScriptProfiles_Muler_Bot_MuleName
             // 
-            this.labelScriptProfiles_Muler_Bot_MuleName.AutoSize = true;
-            this.labelScriptProfiles_Muler_Bot_MuleName.Location = new System.Drawing.Point(447, 150);
-            this.labelScriptProfiles_Muler_Bot_MuleName.Name = "labelScriptProfiles_Muler_Bot_MuleName";
-            this.labelScriptProfiles_Muler_Bot_MuleName.Size = new System.Drawing.Size(84, 18);
-            this.labelScriptProfiles_Muler_Bot_MuleName.TabIndex = 22;
-            this.labelScriptProfiles_Muler_Bot_MuleName.Text = "Mule Name";
+            labelScriptProfiles_Muler_Bot_MuleName.AutoSize = true;
+            labelScriptProfiles_Muler_Bot_MuleName.Location = new Point(447, 150);
+            labelScriptProfiles_Muler_Bot_MuleName.Name = "labelScriptProfiles_Muler_Bot_MuleName";
+            labelScriptProfiles_Muler_Bot_MuleName.Size = new Size(84, 18);
+            labelScriptProfiles_Muler_Bot_MuleName.TabIndex = 22;
+            labelScriptProfiles_Muler_Bot_MuleName.Text = "Mule Name";
             // 
             // textBoxScriptProfiles_Muler_Bot_Y
             // 
-            this.textBoxScriptProfiles_Muler_Bot_Y.Location = new System.Drawing.Point(630, 325);
-            this.textBoxScriptProfiles_Muler_Bot_Y.Name = "textBoxScriptProfiles_Muler_Bot_Y";
-            this.textBoxScriptProfiles_Muler_Bot_Y.Size = new System.Drawing.Size(50, 24);
-            this.textBoxScriptProfiles_Muler_Bot_Y.TabIndex = 21;
-            this.textBoxScriptProfiles_Muler_Bot_Y.Text = "Y";
-            this.textBoxScriptProfiles_Muler_Bot_Y.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GlobalMethod_CancelNonNumbers_KeyPress);
-            this.textBoxScriptProfiles_Muler_Bot_Y.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Bot_Y.Location = new Point(630, 325);
+            textBoxScriptProfiles_Muler_Bot_Y.Name = "textBoxScriptProfiles_Muler_Bot_Y";
+            textBoxScriptProfiles_Muler_Bot_Y.Size = new Size(50, 24);
+            textBoxScriptProfiles_Muler_Bot_Y.TabIndex = 21;
+            textBoxScriptProfiles_Muler_Bot_Y.Text = "Y";
+            textBoxScriptProfiles_Muler_Bot_Y.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
+            textBoxScriptProfiles_Muler_Bot_Y.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // textBoxScriptProfiles_Muler_Bot_Z
             // 
-            this.textBoxScriptProfiles_Muler_Bot_Z.Location = new System.Drawing.Point(695, 325);
-            this.textBoxScriptProfiles_Muler_Bot_Z.Name = "textBoxScriptProfiles_Muler_Bot_Z";
-            this.textBoxScriptProfiles_Muler_Bot_Z.Size = new System.Drawing.Size(50, 24);
-            this.textBoxScriptProfiles_Muler_Bot_Z.TabIndex = 20;
-            this.textBoxScriptProfiles_Muler_Bot_Z.Text = "Z";
-            this.textBoxScriptProfiles_Muler_Bot_Z.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GlobalMethod_CancelNonNumbers_KeyPress);
-            this.textBoxScriptProfiles_Muler_Bot_Z.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Bot_Z.Location = new Point(695, 325);
+            textBoxScriptProfiles_Muler_Bot_Z.Name = "textBoxScriptProfiles_Muler_Bot_Z";
+            textBoxScriptProfiles_Muler_Bot_Z.Size = new Size(50, 24);
+            textBoxScriptProfiles_Muler_Bot_Z.TabIndex = 20;
+            textBoxScriptProfiles_Muler_Bot_Z.Text = "Z";
+            textBoxScriptProfiles_Muler_Bot_Z.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
+            textBoxScriptProfiles_Muler_Bot_Z.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // textBoxScriptProfiles_Muler_Bot_X
             // 
-            this.textBoxScriptProfiles_Muler_Bot_X.Location = new System.Drawing.Point(565, 325);
-            this.textBoxScriptProfiles_Muler_Bot_X.Name = "textBoxScriptProfiles_Muler_Bot_X";
-            this.textBoxScriptProfiles_Muler_Bot_X.Size = new System.Drawing.Size(50, 24);
-            this.textBoxScriptProfiles_Muler_Bot_X.TabIndex = 19;
-            this.textBoxScriptProfiles_Muler_Bot_X.Text = "X";
-            this.textBoxScriptProfiles_Muler_Bot_X.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GlobalMethod_CancelNonNumbers_KeyPress);
-            this.textBoxScriptProfiles_Muler_Bot_X.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Bot_X.Location = new Point(565, 325);
+            textBoxScriptProfiles_Muler_Bot_X.Name = "textBoxScriptProfiles_Muler_Bot_X";
+            textBoxScriptProfiles_Muler_Bot_X.Size = new Size(50, 24);
+            textBoxScriptProfiles_Muler_Bot_X.TabIndex = 19;
+            textBoxScriptProfiles_Muler_Bot_X.Text = "X";
+            textBoxScriptProfiles_Muler_Bot_X.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
+            textBoxScriptProfiles_Muler_Bot_X.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // textBoxScriptProfiles_Muler_Bot_World
             // 
-            this.textBoxScriptProfiles_Muler_Bot_World.Location = new System.Drawing.Point(630, 200);
-            this.textBoxScriptProfiles_Muler_Bot_World.Name = "textBoxScriptProfiles_Muler_Bot_World";
-            this.textBoxScriptProfiles_Muler_Bot_World.Size = new System.Drawing.Size(50, 24);
-            this.textBoxScriptProfiles_Muler_Bot_World.TabIndex = 18;
-            this.textBoxScriptProfiles_Muler_Bot_World.Text = "499";
-            this.textBoxScriptProfiles_Muler_Bot_World.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GlobalMethod_CancelNonNumbers_KeyPress);
-            this.textBoxScriptProfiles_Muler_Bot_World.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Bot_World.Location = new Point(630, 200);
+            textBoxScriptProfiles_Muler_Bot_World.Name = "textBoxScriptProfiles_Muler_Bot_World";
+            textBoxScriptProfiles_Muler_Bot_World.Size = new Size(50, 24);
+            textBoxScriptProfiles_Muler_Bot_World.TabIndex = 18;
+            textBoxScriptProfiles_Muler_Bot_World.Text = "499";
+            textBoxScriptProfiles_Muler_Bot_World.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
+            textBoxScriptProfiles_Muler_Bot_World.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // labelScriptProfiles_Muler_Bot_World
             // 
-            this.labelScriptProfiles_Muler_Bot_World.AutoSize = true;
-            this.labelScriptProfiles_Muler_Bot_World.Location = new System.Drawing.Point(619, 150);
-            this.labelScriptProfiles_Muler_Bot_World.Name = "labelScriptProfiles_Muler_Bot_World";
-            this.labelScriptProfiles_Muler_Bot_World.Size = new System.Drawing.Size(75, 18);
-            this.labelScriptProfiles_Muler_Bot_World.TabIndex = 17;
-            this.labelScriptProfiles_Muler_Bot_World.Text = "Bot World";
+            labelScriptProfiles_Muler_Bot_World.AutoSize = true;
+            labelScriptProfiles_Muler_Bot_World.Location = new Point(619, 150);
+            labelScriptProfiles_Muler_Bot_World.Name = "labelScriptProfiles_Muler_Bot_World";
+            labelScriptProfiles_Muler_Bot_World.Size = new Size(75, 18);
+            labelScriptProfiles_Muler_Bot_World.TabIndex = 17;
+            labelScriptProfiles_Muler_Bot_World.Text = "Bot World";
             // 
             // labelScriptProfiles_Muler_Bot_Coordinates
             // 
-            this.labelScriptProfiles_Muler_Bot_Coordinates.AutoSize = true;
-            this.labelScriptProfiles_Muler_Bot_Coordinates.Location = new System.Drawing.Point(602, 275);
-            this.labelScriptProfiles_Muler_Bot_Coordinates.Name = "labelScriptProfiles_Muler_Bot_Coordinates";
-            this.labelScriptProfiles_Muler_Bot_Coordinates.Size = new System.Drawing.Size(116, 18);
-            this.labelScriptProfiles_Muler_Bot_Coordinates.TabIndex = 16;
-            this.labelScriptProfiles_Muler_Bot_Coordinates.Text = "Bot Coordinates";
+            labelScriptProfiles_Muler_Bot_Coordinates.AutoSize = true;
+            labelScriptProfiles_Muler_Bot_Coordinates.Location = new Point(602, 275);
+            labelScriptProfiles_Muler_Bot_Coordinates.Name = "labelScriptProfiles_Muler_Bot_Coordinates";
+            labelScriptProfiles_Muler_Bot_Coordinates.Size = new Size(116, 18);
+            labelScriptProfiles_Muler_Bot_Coordinates.TabIndex = 16;
+            labelScriptProfiles_Muler_Bot_Coordinates.Text = "Bot Coordinates";
             // 
             // textBoxScriptProfiles_Muler_Mule_Y
             // 
-            this.textBoxScriptProfiles_Muler_Mule_Y.Location = new System.Drawing.Point(270, 325);
-            this.textBoxScriptProfiles_Muler_Mule_Y.Name = "textBoxScriptProfiles_Muler_Mule_Y";
-            this.textBoxScriptProfiles_Muler_Mule_Y.Size = new System.Drawing.Size(50, 24);
-            this.textBoxScriptProfiles_Muler_Mule_Y.TabIndex = 15;
-            this.textBoxScriptProfiles_Muler_Mule_Y.Text = "Y";
-            this.textBoxScriptProfiles_Muler_Mule_Y.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GlobalMethod_CancelNonNumbers_KeyPress);
-            this.textBoxScriptProfiles_Muler_Mule_Y.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Mule_Y.Location = new Point(270, 325);
+            textBoxScriptProfiles_Muler_Mule_Y.Name = "textBoxScriptProfiles_Muler_Mule_Y";
+            textBoxScriptProfiles_Muler_Mule_Y.Size = new Size(50, 24);
+            textBoxScriptProfiles_Muler_Mule_Y.TabIndex = 15;
+            textBoxScriptProfiles_Muler_Mule_Y.Text = "Y";
+            textBoxScriptProfiles_Muler_Mule_Y.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
+            textBoxScriptProfiles_Muler_Mule_Y.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // textBoxScriptProfiles_Muler_Mule_Z
             // 
-            this.textBoxScriptProfiles_Muler_Mule_Z.Location = new System.Drawing.Point(335, 325);
-            this.textBoxScriptProfiles_Muler_Mule_Z.Name = "textBoxScriptProfiles_Muler_Mule_Z";
-            this.textBoxScriptProfiles_Muler_Mule_Z.Size = new System.Drawing.Size(50, 24);
-            this.textBoxScriptProfiles_Muler_Mule_Z.TabIndex = 14;
-            this.textBoxScriptProfiles_Muler_Mule_Z.Text = "Z";
-            this.textBoxScriptProfiles_Muler_Mule_Z.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GlobalMethod_CancelNonNumbers_KeyPress);
-            this.textBoxScriptProfiles_Muler_Mule_Z.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Mule_Z.Location = new Point(335, 325);
+            textBoxScriptProfiles_Muler_Mule_Z.Name = "textBoxScriptProfiles_Muler_Mule_Z";
+            textBoxScriptProfiles_Muler_Mule_Z.Size = new Size(50, 24);
+            textBoxScriptProfiles_Muler_Mule_Z.TabIndex = 14;
+            textBoxScriptProfiles_Muler_Mule_Z.Text = "Z";
+            textBoxScriptProfiles_Muler_Mule_Z.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
+            textBoxScriptProfiles_Muler_Mule_Z.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // textBoxScriptProfiles_Muler_Mule_X
             // 
-            this.textBoxScriptProfiles_Muler_Mule_X.Location = new System.Drawing.Point(205, 325);
-            this.textBoxScriptProfiles_Muler_Mule_X.Name = "textBoxScriptProfiles_Muler_Mule_X";
-            this.textBoxScriptProfiles_Muler_Mule_X.Size = new System.Drawing.Size(50, 24);
-            this.textBoxScriptProfiles_Muler_Mule_X.TabIndex = 13;
-            this.textBoxScriptProfiles_Muler_Mule_X.Text = "X";
-            this.textBoxScriptProfiles_Muler_Mule_X.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GlobalMethod_CancelNonNumbers_KeyPress);
-            this.textBoxScriptProfiles_Muler_Mule_X.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Mule_X.Location = new Point(205, 325);
+            textBoxScriptProfiles_Muler_Mule_X.Name = "textBoxScriptProfiles_Muler_Mule_X";
+            textBoxScriptProfiles_Muler_Mule_X.Size = new Size(50, 24);
+            textBoxScriptProfiles_Muler_Mule_X.TabIndex = 13;
+            textBoxScriptProfiles_Muler_Mule_X.Text = "X";
+            textBoxScriptProfiles_Muler_Mule_X.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
+            textBoxScriptProfiles_Muler_Mule_X.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // labelScriptProfiles_Muler_Mule_Coordinates
             // 
-            this.labelScriptProfiles_Muler_Mule_Coordinates.AutoSize = true;
-            this.labelScriptProfiles_Muler_Mule_Coordinates.Location = new System.Drawing.Point(235, 275);
-            this.labelScriptProfiles_Muler_Mule_Coordinates.Name = "labelScriptProfiles_Muler_Mule_Coordinates";
-            this.labelScriptProfiles_Muler_Mule_Coordinates.Size = new System.Drawing.Size(125, 18);
-            this.labelScriptProfiles_Muler_Mule_Coordinates.TabIndex = 12;
-            this.labelScriptProfiles_Muler_Mule_Coordinates.Text = "Mule Coordinates";
-            this.labelScriptProfiles_Muler_Mule_Coordinates.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_Muler_Mule_Coordinates.AutoSize = true;
+            labelScriptProfiles_Muler_Mule_Coordinates.Location = new Point(235, 275);
+            labelScriptProfiles_Muler_Mule_Coordinates.Name = "labelScriptProfiles_Muler_Mule_Coordinates";
+            labelScriptProfiles_Muler_Mule_Coordinates.Size = new Size(125, 18);
+            labelScriptProfiles_Muler_Mule_Coordinates.TabIndex = 12;
+            labelScriptProfiles_Muler_Mule_Coordinates.Text = "Mule Coordinates";
+            labelScriptProfiles_Muler_Mule_Coordinates.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // labelScriptProfiles_Muler_Mule_World
             // 
-            this.labelScriptProfiles_Muler_Mule_World.AutoSize = true;
-            this.labelScriptProfiles_Muler_Mule_World.Location = new System.Drawing.Point(254, 150);
-            this.labelScriptProfiles_Muler_Mule_World.Name = "labelScriptProfiles_Muler_Mule_World";
-            this.labelScriptProfiles_Muler_Mule_World.Size = new System.Drawing.Size(84, 18);
-            this.labelScriptProfiles_Muler_Mule_World.TabIndex = 11;
-            this.labelScriptProfiles_Muler_Mule_World.Text = "Mule World";
+            labelScriptProfiles_Muler_Mule_World.AutoSize = true;
+            labelScriptProfiles_Muler_Mule_World.Location = new Point(254, 150);
+            labelScriptProfiles_Muler_Mule_World.Name = "labelScriptProfiles_Muler_Mule_World";
+            labelScriptProfiles_Muler_Mule_World.Size = new Size(84, 18);
+            labelScriptProfiles_Muler_Mule_World.TabIndex = 11;
+            labelScriptProfiles_Muler_Mule_World.Text = "Mule World";
             // 
             // checkBoxScriptProfiles_Muler_Mule_ManualMode
             // 
-            this.checkBoxScriptProfiles_Muler_Mule_ManualMode.AutoSize = true;
-            this.checkBoxScriptProfiles_Muler_Mule_ManualMode.Location = new System.Drawing.Point(400, 75);
-            this.checkBoxScriptProfiles_Muler_Mule_ManualMode.Name = "checkBoxScriptProfiles_Muler_Mule_ManualMode";
-            this.checkBoxScriptProfiles_Muler_Mule_ManualMode.Size = new System.Drawing.Size(174, 22);
-            this.checkBoxScriptProfiles_Muler_Mule_ManualMode.TabIndex = 10;
-            this.checkBoxScriptProfiles_Muler_Mule_ManualMode.Text = "Control Mule Manually";
-            this.checkBoxScriptProfiles_Muler_Mule_ManualMode.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_Muler_Mule_ManualMode.AutoSize = true;
+            checkBoxScriptProfiles_Muler_Mule_ManualMode.Location = new Point(400, 75);
+            checkBoxScriptProfiles_Muler_Mule_ManualMode.Name = "checkBoxScriptProfiles_Muler_Mule_ManualMode";
+            checkBoxScriptProfiles_Muler_Mule_ManualMode.Size = new Size(174, 22);
+            checkBoxScriptProfiles_Muler_Mule_ManualMode.TabIndex = 10;
+            checkBoxScriptProfiles_Muler_Mule_ManualMode.Text = "Control Mule Manually";
+            checkBoxScriptProfiles_Muler_Mule_ManualMode.UseVisualStyleBackColor = true;
             // 
             // textBoxScriptProfiles_Muler_Mule_World
             // 
-            this.textBoxScriptProfiles_Muler_Mule_World.Location = new System.Drawing.Point(270, 200);
-            this.textBoxScriptProfiles_Muler_Mule_World.Name = "textBoxScriptProfiles_Muler_Mule_World";
-            this.textBoxScriptProfiles_Muler_Mule_World.Size = new System.Drawing.Size(50, 24);
-            this.textBoxScriptProfiles_Muler_Mule_World.TabIndex = 9;
-            this.textBoxScriptProfiles_Muler_Mule_World.Text = "499";
-            this.textBoxScriptProfiles_Muler_Mule_World.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GlobalMethod_CancelNonNumbers_KeyPress);
-            this.textBoxScriptProfiles_Muler_Mule_World.Validating += new System.ComponentModel.CancelEventHandler(this.GlobalMethod_RequireInput_Validating);
+            textBoxScriptProfiles_Muler_Mule_World.Location = new Point(270, 200);
+            textBoxScriptProfiles_Muler_Mule_World.Name = "textBoxScriptProfiles_Muler_Mule_World";
+            textBoxScriptProfiles_Muler_Mule_World.Size = new Size(50, 24);
+            textBoxScriptProfiles_Muler_Mule_World.TabIndex = 9;
+            textBoxScriptProfiles_Muler_Mule_World.Text = "499";
+            textBoxScriptProfiles_Muler_Mule_World.KeyPress += GlobalMethod_CancelNonNumbers_KeyPress;
+            textBoxScriptProfiles_Muler_Mule_World.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // labelScriptProfiles_Muler_Header
             // 
-            this.labelScriptProfiles_Muler_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
-            this.labelScriptProfiles_Muler_Header.Location = new System.Drawing.Point(0, 0);
-            this.labelScriptProfiles_Muler_Header.Name = "labelScriptProfiles_Muler_Header";
-            this.labelScriptProfiles_Muler_Header.Size = new System.Drawing.Size(1015, 50);
-            this.labelScriptProfiles_Muler_Header.TabIndex = 258;
-            this.labelScriptProfiles_Muler_Header.Text = "Script Profiles";
-            this.labelScriptProfiles_Muler_Header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_Muler_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            labelScriptProfiles_Muler_Header.Location = new Point(0, 0);
+            labelScriptProfiles_Muler_Header.Name = "labelScriptProfiles_Muler_Header";
+            labelScriptProfiles_Muler_Header.Size = new Size(995, 50);
+            labelScriptProfiles_Muler_Header.TabIndex = 258;
+            labelScriptProfiles_Muler_Header.Text = "Script Profiles";
+            labelScriptProfiles_Muler_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // formScriptProfilesMuler
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1014, 641);
-            this.Controls.Add(this.labelScriptProfiles_Muler_Header);
-            this.Controls.Add(this.tabControlScriptProfiles_Muler);
-            this.Controls.Add(this.labelScriptProfiles_Muler_Title);
-            this.Controls.Add(this.btnScriptProfiles_Muler_SaveToProfiles);
-            this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "formScriptProfilesMuler";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Script Profiles: Account Builder";
-            this.Load += new System.EventHandler(this.formScriptProfiles_Muler_Load);
-            this.tabPageScriptProfiles_Muler_Bot.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewScriptProfiles_Muler_Bot)).EndInit();
-            this.tabPageScriptProfiles_Muler_Mule.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewScriptProfiles_Muler_Mule)).EndInit();
-            this.tabControlScriptProfiles_Muler.ResumeLayout(false);
-            this.tabPageScriptProfiles_Muler_General.ResumeLayout(false);
-            this.tabPageScriptProfiles_Muler_General.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            BackColor = Color.FromArgb(60, 60, 60);
+            ClientSize = new Size(999, 641);
+            Controls.Add(labelScriptProfiles_Muler_Header);
+            Controls.Add(tabControlScriptProfiles_Muler);
+            Controls.Add(labelScriptProfiles_Muler_Title);
+            Controls.Add(btnScriptProfiles_Muler_SaveToProfiles);
+            DoubleBuffered = true;
+            Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = Color.FromArgb(224, 224, 224);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            Name = "formScriptProfilesMuler";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Script Profiles: Muler";
+            Load += formScriptProfiles_Muler_Load;
+            tabPageScriptProfiles_Muler_Bot.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewScriptProfiles_Muler_Bot).EndInit();
+            tabPageScriptProfiles_Muler_Mule.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewScriptProfiles_Muler_Mule).EndInit();
+            tabControlScriptProfiles_Muler.ResumeLayout(false);
+            tabPageScriptProfiles_Muler_General.ResumeLayout(false);
+            tabPageScriptProfiles_Muler_General.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

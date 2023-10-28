@@ -29,183 +29,165 @@
         public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesThievingPickpocket));
-            this.labelScriptProfiles_ThievingPickpocket_SelectNpc = new System.Windows.Forms.Label();
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc = new System.Windows.Forms.ComboBox();
-            this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingPickpocket_Restocking = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond = new System.Windows.Forms.CheckBox();
-            this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler = new System.Windows.Forms.CheckBox();
-            this.labelScriptProfiles_ThievingPickpocket_Title = new System.Windows.Forms.Label();
-            this.btnScriptProfiles_ThievingPickpocket_Save = new System.Windows.Forms.Button();
-            this.labelScriptProfiles_ThievingPickpocket_Header = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            labelScriptProfiles_ThievingPickpocket_SelectNpc = new Label();
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc = new ComboBox();
+            checkBoxScriptProfiles_ThievingPickpocket_WorldHopping = new CheckBox();
+            checkBoxScriptProfiles_ThievingPickpocket_Restocking = new CheckBox();
+            checkBoxScriptProfiles_ThievingPickpocket_SellLoot = new CheckBox();
+            checkBoxScriptProfiles_ThievingPickpocket_Antipattern = new CheckBox();
+            checkBoxScriptProfiles_ThievingPickpocket_RenewBond = new CheckBox();
+            checkBoxScriptProfiles_ThievingPickpocket_DeathHandler = new CheckBox();
+            labelScriptProfiles_ThievingPickpocket_Title = new Label();
+            btnScriptProfiles_ThievingPickpocket_Save = new Button();
+            labelScriptProfiles_ThievingPickpocket_Header = new Label();
+            SuspendLayout();
             // 
             // labelScriptProfiles_ThievingPickpocket_SelectNpc
             // 
-            this.labelScriptProfiles_ThievingPickpocket_SelectNpc.AutoSize = true;
-            this.labelScriptProfiles_ThievingPickpocket_SelectNpc.Location = new System.Drawing.Point(225, 350);
-            this.labelScriptProfiles_ThievingPickpocket_SelectNpc.Name = "labelScriptProfiles_ThievingPickpocket_SelectNpc";
-            this.labelScriptProfiles_ThievingPickpocket_SelectNpc.Size = new System.Drawing.Size(85, 18);
-            this.labelScriptProfiles_ThievingPickpocket_SelectNpc.TabIndex = 177;
-            this.labelScriptProfiles_ThievingPickpocket_SelectNpc.Text = "Select NPC";
+            labelScriptProfiles_ThievingPickpocket_SelectNpc.AutoSize = true;
+            labelScriptProfiles_ThievingPickpocket_SelectNpc.Location = new Point(50, 275);
+            labelScriptProfiles_ThievingPickpocket_SelectNpc.Name = "labelScriptProfiles_ThievingPickpocket_SelectNpc";
+            labelScriptProfiles_ThievingPickpocket_SelectNpc.Size = new Size(85, 18);
+            labelScriptProfiles_ThievingPickpocket_SelectNpc.TabIndex = 177;
+            labelScriptProfiles_ThievingPickpocket_SelectNpc.Text = "Select NPC";
             // 
             // comboBoxScriptProfiles_ThievingPickpocket_SelectNpc
             // 
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.AutoCompleteCustomSource.AddRange(new string[] {
-            "Progressive",
-            "Man",
-            "Warrior",
-            "Guard",
-            "ArdougneKnight",
-            "Paladin"});
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.FormattingEnabled = true;
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Items.AddRange(new object[] {
-            "Progressive",
-            "Man",
-            "Warrior",
-            "Guard",
-            "ArdougneKnight",
-            "Paladin"});
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Location = new System.Drawing.Point(400, 350);
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Name = "comboBoxScriptProfiles_ThievingPickpocket_SelectNpc";
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Size = new System.Drawing.Size(175, 26);
-            this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.TabIndex = 176;
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.AutoCompleteCustomSource.AddRange(new string[] { "Progressive", "Man", "Warrior", "Guard", "ArdougneKnight", "Paladin" });
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.BackColor = Color.FromArgb(224, 224, 224);
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.FlatStyle = FlatStyle.Flat;
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.FormattingEnabled = true;
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Items.AddRange(new object[] { "Progressive", "Man", "Warrior", "Guard", "ArdougneKnight", "Paladin" });
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Location = new Point(175, 275);
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Name = "comboBoxScriptProfiles_ThievingPickpocket_SelectNpc";
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.Size = new Size(150, 26);
+            comboBoxScriptProfiles_ThievingPickpocket_SelectNpc.TabIndex = 176;
             // 
             // checkBoxScriptProfiles_ThievingPickpocket_WorldHopping
             // 
-            this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.Location = new System.Drawing.Point(650, 200);
-            this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.Name = "checkBoxScriptProfiles_ThievingPickpocket_WorldHopping";
-            this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.Size = new System.Drawing.Size(126, 22);
-            this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.TabIndex = 168;
-            this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.Text = "World Hopping";
-            this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.AutoSize = true;
+            checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.Location = new Point(400, 125);
+            checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.Name = "checkBoxScriptProfiles_ThievingPickpocket_WorldHopping";
+            checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.Size = new Size(126, 22);
+            checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.TabIndex = 168;
+            checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.Text = "World Hopping";
+            checkBoxScriptProfiles_ThievingPickpocket_WorldHopping.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingPickpocket_Restocking
             // 
-            this.checkBoxScriptProfiles_ThievingPickpocket_Restocking.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingPickpocket_Restocking.Location = new System.Drawing.Point(650, 275);
-            this.checkBoxScriptProfiles_ThievingPickpocket_Restocking.Name = "checkBoxScriptProfiles_ThievingPickpocket_Restocking";
-            this.checkBoxScriptProfiles_ThievingPickpocket_Restocking.Size = new System.Drawing.Size(102, 22);
-            this.checkBoxScriptProfiles_ThievingPickpocket_Restocking.TabIndex = 167;
-            this.checkBoxScriptProfiles_ThievingPickpocket_Restocking.Text = "Restocking";
-            this.checkBoxScriptProfiles_ThievingPickpocket_Restocking.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingPickpocket_Restocking.AutoSize = true;
+            checkBoxScriptProfiles_ThievingPickpocket_Restocking.Location = new Point(400, 200);
+            checkBoxScriptProfiles_ThievingPickpocket_Restocking.Name = "checkBoxScriptProfiles_ThievingPickpocket_Restocking";
+            checkBoxScriptProfiles_ThievingPickpocket_Restocking.Size = new Size(102, 22);
+            checkBoxScriptProfiles_ThievingPickpocket_Restocking.TabIndex = 167;
+            checkBoxScriptProfiles_ThievingPickpocket_Restocking.Text = "Restocking";
+            checkBoxScriptProfiles_ThievingPickpocket_Restocking.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingPickpocket_SellLoot
             // 
-            this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot.Location = new System.Drawing.Point(450, 275);
-            this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot.Name = "checkBoxScriptProfiles_ThievingPickpocket_SellLoot";
-            this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot.Size = new System.Drawing.Size(85, 22);
-            this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot.TabIndex = 166;
-            this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot.Text = "Sell Loot";
-            this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingPickpocket_SellLoot.AutoSize = true;
+            checkBoxScriptProfiles_ThievingPickpocket_SellLoot.Location = new Point(225, 200);
+            checkBoxScriptProfiles_ThievingPickpocket_SellLoot.Name = "checkBoxScriptProfiles_ThievingPickpocket_SellLoot";
+            checkBoxScriptProfiles_ThievingPickpocket_SellLoot.Size = new Size(85, 22);
+            checkBoxScriptProfiles_ThievingPickpocket_SellLoot.TabIndex = 166;
+            checkBoxScriptProfiles_ThievingPickpocket_SellLoot.Text = "Sell Loot";
+            checkBoxScriptProfiles_ThievingPickpocket_SellLoot.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingPickpocket_Antipattern
             // 
-            this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern.Location = new System.Drawing.Point(225, 275);
-            this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern.Name = "checkBoxScriptProfiles_ThievingPickpocket_Antipattern";
-            this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern.Size = new System.Drawing.Size(96, 22);
-            this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern.TabIndex = 165;
-            this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern.Text = "Antipattern";
-            this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingPickpocket_Antipattern.AutoSize = true;
+            checkBoxScriptProfiles_ThievingPickpocket_Antipattern.Location = new Point(50, 200);
+            checkBoxScriptProfiles_ThievingPickpocket_Antipattern.Name = "checkBoxScriptProfiles_ThievingPickpocket_Antipattern";
+            checkBoxScriptProfiles_ThievingPickpocket_Antipattern.Size = new Size(96, 22);
+            checkBoxScriptProfiles_ThievingPickpocket_Antipattern.TabIndex = 165;
+            checkBoxScriptProfiles_ThievingPickpocket_Antipattern.Text = "Antipattern";
+            checkBoxScriptProfiles_ThievingPickpocket_Antipattern.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingPickpocket_RenewBond
             // 
-            this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond.Location = new System.Drawing.Point(450, 200);
-            this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond.Name = "checkBoxScriptProfiles_ThievingPickpocket_RenewBond";
-            this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond.Size = new System.Drawing.Size(112, 22);
-            this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond.TabIndex = 164;
-            this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond.Text = "Renew Bond";
-            this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingPickpocket_RenewBond.AutoSize = true;
+            checkBoxScriptProfiles_ThievingPickpocket_RenewBond.Location = new Point(225, 125);
+            checkBoxScriptProfiles_ThievingPickpocket_RenewBond.Name = "checkBoxScriptProfiles_ThievingPickpocket_RenewBond";
+            checkBoxScriptProfiles_ThievingPickpocket_RenewBond.Size = new Size(112, 22);
+            checkBoxScriptProfiles_ThievingPickpocket_RenewBond.TabIndex = 164;
+            checkBoxScriptProfiles_ThievingPickpocket_RenewBond.Text = "Renew Bond";
+            checkBoxScriptProfiles_ThievingPickpocket_RenewBond.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ThievingPickpocket_DeathHandler
             // 
-            this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.AutoSize = true;
-            this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.Location = new System.Drawing.Point(225, 200);
-            this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.Name = "checkBoxScriptProfiles_ThievingPickpocket_DeathHandler";
-            this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.Size = new System.Drawing.Size(121, 22);
-            this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.TabIndex = 163;
-            this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.Text = "Death Handler";
-            this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.AutoSize = true;
+            checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.Name = "checkBoxScriptProfiles_ThievingPickpocket_DeathHandler";
+            checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.Size = new Size(121, 22);
+            checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.TabIndex = 163;
+            checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.Text = "Death Handler";
+            checkBoxScriptProfiles_ThievingPickpocket_DeathHandler.UseVisualStyleBackColor = true;
             // 
             // labelScriptProfiles_ThievingPickpocket_Title
             // 
-            this.labelScriptProfiles_ThievingPickpocket_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelScriptProfiles_ThievingPickpocket_Title.Location = new System.Drawing.Point(0, 50);
-            this.labelScriptProfiles_ThievingPickpocket_Title.Name = "labelScriptProfiles_ThievingPickpocket_Title";
-            this.labelScriptProfiles_ThievingPickpocket_Title.Size = new System.Drawing.Size(1015, 25);
-            this.labelScriptProfiles_ThievingPickpocket_Title.TabIndex = 161;
-            this.labelScriptProfiles_ThievingPickpocket_Title.Text = "Thieving: Pickpocket";
-            this.labelScriptProfiles_ThievingPickpocket_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_ThievingPickpocket_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            labelScriptProfiles_ThievingPickpocket_Title.Location = new Point(0, 50);
+            labelScriptProfiles_ThievingPickpocket_Title.Name = "labelScriptProfiles_ThievingPickpocket_Title";
+            labelScriptProfiles_ThievingPickpocket_Title.Size = new Size(555, 25);
+            labelScriptProfiles_ThievingPickpocket_Title.TabIndex = 161;
+            labelScriptProfiles_ThievingPickpocket_Title.Text = "Thieving: AIO";
+            labelScriptProfiles_ThievingPickpocket_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnScriptProfiles_ThievingPickpocket_Save
             // 
-            this.btnScriptProfiles_ThievingPickpocket_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScriptProfiles_ThievingPickpocket_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnScriptProfiles_ThievingPickpocket_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnScriptProfiles_ThievingPickpocket_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnScriptProfiles_ThievingPickpocket_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnScriptProfiles_ThievingPickpocket_Save.Location = new System.Drawing.Point(465, 550);
-            this.btnScriptProfiles_ThievingPickpocket_Save.Name = "btnScriptProfiles_ThievingPickpocket_Save";
-            this.btnScriptProfiles_ThievingPickpocket_Save.Size = new System.Drawing.Size(120, 68);
-            this.btnScriptProfiles_ThievingPickpocket_Save.TabIndex = 160;
-            this.btnScriptProfiles_ThievingPickpocket_Save.Text = "Save to Profiles";
-            this.btnScriptProfiles_ThievingPickpocket_Save.UseVisualStyleBackColor = true;
-            this.btnScriptProfiles_ThievingPickpocket_Save.Click += new System.EventHandler(this.btnScriptProfiles_ThievingPickpocket_SaveButton_Click);
+            btnScriptProfiles_ThievingPickpocket_Save.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_ThievingPickpocket_Save.Cursor = Cursors.Hand;
+            btnScriptProfiles_ThievingPickpocket_Save.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_ThievingPickpocket_Save.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_ThievingPickpocket_Save.Location = new Point(215, 350);
+            btnScriptProfiles_ThievingPickpocket_Save.Name = "btnScriptProfiles_ThievingPickpocket_Save";
+            btnScriptProfiles_ThievingPickpocket_Save.Size = new Size(125, 50);
+            btnScriptProfiles_ThievingPickpocket_Save.TabIndex = 160;
+            btnScriptProfiles_ThievingPickpocket_Save.Text = "Save Profile";
+            btnScriptProfiles_ThievingPickpocket_Save.UseVisualStyleBackColor = true;
+            btnScriptProfiles_ThievingPickpocket_Save.Click += btnScriptProfiles_ThievingPickpocket_SaveButton_Click;
             // 
             // labelScriptProfiles_ThievingPickpocket_Header
             // 
-            this.labelScriptProfiles_ThievingPickpocket_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
-            this.labelScriptProfiles_ThievingPickpocket_Header.Location = new System.Drawing.Point(0, 0);
-            this.labelScriptProfiles_ThievingPickpocket_Header.Name = "labelScriptProfiles_ThievingPickpocket_Header";
-            this.labelScriptProfiles_ThievingPickpocket_Header.Size = new System.Drawing.Size(1015, 50);
-            this.labelScriptProfiles_ThievingPickpocket_Header.TabIndex = 253;
-            this.labelScriptProfiles_ThievingPickpocket_Header.Text = "Script Profiles";
-            this.labelScriptProfiles_ThievingPickpocket_Header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelScriptProfiles_ThievingPickpocket_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            labelScriptProfiles_ThievingPickpocket_Header.Location = new Point(0, 0);
+            labelScriptProfiles_ThievingPickpocket_Header.Name = "labelScriptProfiles_ThievingPickpocket_Header";
+            labelScriptProfiles_ThievingPickpocket_Header.Size = new Size(555, 50);
+            labelScriptProfiles_ThievingPickpocket_Header.TabIndex = 253;
+            labelScriptProfiles_ThievingPickpocket_Header.Text = "Script Profiles";
+            labelScriptProfiles_ThievingPickpocket_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // formScriptProfilesThievingPickpocket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1014, 641);
-            this.Controls.Add(this.labelScriptProfiles_ThievingPickpocket_Header);
-            this.Controls.Add(this.labelScriptProfiles_ThievingPickpocket_SelectNpc);
-            this.Controls.Add(this.comboBoxScriptProfiles_ThievingPickpocket_SelectNpc);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingPickpocket_WorldHopping);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingPickpocket_Restocking);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingPickpocket_SellLoot);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingPickpocket_Antipattern);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingPickpocket_RenewBond);
-            this.Controls.Add(this.checkBoxScriptProfiles_ThievingPickpocket_DeathHandler);
-            this.Controls.Add(this.labelScriptProfiles_ThievingPickpocket_Title);
-            this.Controls.Add(this.btnScriptProfiles_ThievingPickpocket_Save);
-            this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "formScriptProfilesThievingPickpocket";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Script Profiles: Thieving - Master Farmers";
-            this.Load += new System.EventHandler(this.formScriptProfiles_ThievingPickpocket_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            BackColor = Color.FromArgb(60, 60, 60);
+            ClientSize = new Size(559, 436);
+            Controls.Add(labelScriptProfiles_ThievingPickpocket_Header);
+            Controls.Add(labelScriptProfiles_ThievingPickpocket_SelectNpc);
+            Controls.Add(comboBoxScriptProfiles_ThievingPickpocket_SelectNpc);
+            Controls.Add(checkBoxScriptProfiles_ThievingPickpocket_WorldHopping);
+            Controls.Add(checkBoxScriptProfiles_ThievingPickpocket_Restocking);
+            Controls.Add(checkBoxScriptProfiles_ThievingPickpocket_SellLoot);
+            Controls.Add(checkBoxScriptProfiles_ThievingPickpocket_Antipattern);
+            Controls.Add(checkBoxScriptProfiles_ThievingPickpocket_RenewBond);
+            Controls.Add(checkBoxScriptProfiles_ThievingPickpocket_DeathHandler);
+            Controls.Add(labelScriptProfiles_ThievingPickpocket_Title);
+            Controls.Add(btnScriptProfiles_ThievingPickpocket_Save);
+            DoubleBuffered = true;
+            Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = Color.FromArgb(224, 224, 224);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            Name = "formScriptProfilesThievingPickpocket";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Script Profiles: Thieving - AIO";
+            Load += formScriptProfiles_ThievingPickpocket_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

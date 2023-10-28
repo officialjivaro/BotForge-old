@@ -50,12 +50,12 @@
             btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Location = new Point(450, 550);
+            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Location = new Point(325, 375);
             btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Name = "btnScriptProfiles_CookingRangeAndFire_SaveToProfiles";
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.TabIndex = 152;
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Click += btnScriptProfiles_CookingRangeAndFire_SaveButton_Click;
             // 
@@ -63,16 +63,18 @@
             // 
             labelScriptProfiles_CookingRangeAndFire_Title.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_CookingRangeAndFire_Title.Location = new Point(0, 50);
+            labelScriptProfiles_CookingRangeAndFire_Title.Margin = new Padding(0);
             labelScriptProfiles_CookingRangeAndFire_Title.Name = "labelScriptProfiles_CookingRangeAndFire_Title";
-            labelScriptProfiles_CookingRangeAndFire_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_CookingRangeAndFire_Title.Size = new Size(780, 25);
             labelScriptProfiles_CookingRangeAndFire_Title.TabIndex = 154;
-            labelScriptProfiles_CookingRangeAndFire_Title.Text = "Cooking: Normal Mode";
+            labelScriptProfiles_CookingRangeAndFire_Title.Text = "Cooking: Range & Fire";
             labelScriptProfiles_CookingRangeAndFire_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler
             // 
             checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler.Location = new Point(258, 221);
+            checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler.Location = new Point(50, 175);
+            checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler.Name = "checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler";
             checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler.TabIndex = 156;
@@ -82,7 +84,8 @@
             // checkBoxScriptProfiles_CookingRangeAndFire_RenewBond
             // 
             checkBoxScriptProfiles_CookingRangeAndFire_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_CookingRangeAndFire_RenewBond.Location = new Point(258, 271);
+            checkBoxScriptProfiles_CookingRangeAndFire_RenewBond.Location = new Point(50, 250);
+            checkBoxScriptProfiles_CookingRangeAndFire_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_CookingRangeAndFire_RenewBond.Name = "checkBoxScriptProfiles_CookingRangeAndFire_RenewBond";
             checkBoxScriptProfiles_CookingRangeAndFire_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_CookingRangeAndFire_RenewBond.TabIndex = 157;
@@ -92,7 +95,8 @@
             // checkBoxScriptProfiles_CookingRangeAndFire_Antipattern
             // 
             checkBoxScriptProfiles_CookingRangeAndFire_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_CookingRangeAndFire_Antipattern.Location = new Point(258, 321);
+            checkBoxScriptProfiles_CookingRangeAndFire_Antipattern.Location = new Point(50, 325);
+            checkBoxScriptProfiles_CookingRangeAndFire_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_CookingRangeAndFire_Antipattern.Name = "checkBoxScriptProfiles_CookingRangeAndFire_Antipattern";
             checkBoxScriptProfiles_CookingRangeAndFire_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_CookingRangeAndFire_Antipattern.TabIndex = 158;
@@ -102,7 +106,8 @@
             // checkBoxScriptProfiles_CookingRangeAndFire_SellLoot
             // 
             checkBoxScriptProfiles_CookingRangeAndFire_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_CookingRangeAndFire_SellLoot.Location = new Point(258, 471);
+            checkBoxScriptProfiles_CookingRangeAndFire_SellLoot.Location = new Point(225, 325);
+            checkBoxScriptProfiles_CookingRangeAndFire_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_CookingRangeAndFire_SellLoot.Name = "checkBoxScriptProfiles_CookingRangeAndFire_SellLoot";
             checkBoxScriptProfiles_CookingRangeAndFire_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_CookingRangeAndFire_SellLoot.TabIndex = 159;
@@ -112,7 +117,8 @@
             // checkBoxScriptProfiles_CookingRangeAndFire_Restocking
             // 
             checkBoxScriptProfiles_CookingRangeAndFire_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_CookingRangeAndFire_Restocking.Location = new Point(258, 421);
+            checkBoxScriptProfiles_CookingRangeAndFire_Restocking.Location = new Point(225, 250);
+            checkBoxScriptProfiles_CookingRangeAndFire_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_CookingRangeAndFire_Restocking.Name = "checkBoxScriptProfiles_CookingRangeAndFire_Restocking";
             checkBoxScriptProfiles_CookingRangeAndFire_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_CookingRangeAndFire_Restocking.TabIndex = 160;
@@ -122,7 +128,8 @@
             // checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping
             // 
             checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping.Location = new Point(258, 371);
+            checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping.Location = new Point(225, 175);
+            checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping.Name = "checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping";
             checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_CookingRangeAndFire_WorldHopping.TabIndex = 161;
@@ -138,7 +145,8 @@
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.FormattingEnabled = true;
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.Items.AddRange(new object[] { "AlKharid", "Falador", "Hosidius", "Zanaris", "RoguesDen" });
-            comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.Location = new Point(665, 218);
+            comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.Location = new Point(575, 175);
+            comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.Margin = new Padding(0);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.Name = "comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea";
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.Size = new Size(150, 26);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.TabIndex = 169;
@@ -146,7 +154,8 @@
             // labelScriptProfiles_CookingRangeAndFire_SelectCookingArea
             // 
             labelScriptProfiles_CookingRangeAndFire_SelectCookingArea.AutoSize = true;
-            labelScriptProfiles_CookingRangeAndFire_SelectCookingArea.Location = new Point(515, 221);
+            labelScriptProfiles_CookingRangeAndFire_SelectCookingArea.Location = new Point(400, 175);
+            labelScriptProfiles_CookingRangeAndFire_SelectCookingArea.Margin = new Padding(0);
             labelScriptProfiles_CookingRangeAndFire_SelectCookingArea.Name = "labelScriptProfiles_CookingRangeAndFire_SelectCookingArea";
             labelScriptProfiles_CookingRangeAndFire_SelectCookingArea.Size = new Size(143, 18);
             labelScriptProfiles_CookingRangeAndFire_SelectCookingArea.TabIndex = 170;
@@ -161,7 +170,8 @@
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.FormattingEnabled = true;
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.Items.AddRange(new object[] { "Progressive", "Shrimps", "Trout", "Salmon", "Lobster", "Swordfish", "Monkfish", "Shark", "Anglerfish" });
-            comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.Location = new Point(665, 293);
+            comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.Location = new Point(575, 250);
+            comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.Margin = new Padding(0);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.Name = "comboBoxScriptProfiles_CookingRangeAndFire_SelectDish";
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.Size = new Size(150, 26);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.TabIndex = 175;
@@ -169,7 +179,8 @@
             // labelScriptProfiles_CookingRangeAndFire_SelectDish
             // 
             labelScriptProfiles_CookingRangeAndFire_SelectDish.AutoSize = true;
-            labelScriptProfiles_CookingRangeAndFire_SelectDish.Location = new Point(515, 296);
+            labelScriptProfiles_CookingRangeAndFire_SelectDish.Location = new Point(400, 254);
+            labelScriptProfiles_CookingRangeAndFire_SelectDish.Margin = new Padding(0);
             labelScriptProfiles_CookingRangeAndFire_SelectDish.Name = "labelScriptProfiles_CookingRangeAndFire_SelectDish";
             labelScriptProfiles_CookingRangeAndFire_SelectDish.Size = new Size(83, 18);
             labelScriptProfiles_CookingRangeAndFire_SelectDish.TabIndex = 176;
@@ -179,8 +190,9 @@
             // 
             labelScriptProfiles_CookingRangeAndFire_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_CookingRangeAndFire_Header.Location = new Point(0, 0);
+            labelScriptProfiles_CookingRangeAndFire_Header.Margin = new Padding(0);
             labelScriptProfiles_CookingRangeAndFire_Header.Name = "labelScriptProfiles_CookingRangeAndFire_Header";
-            labelScriptProfiles_CookingRangeAndFire_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_CookingRangeAndFire_Header.Size = new Size(780, 50);
             labelScriptProfiles_CookingRangeAndFire_Header.TabIndex = 186;
             labelScriptProfiles_CookingRangeAndFire_Header.Text = "Script Profiles";
             labelScriptProfiles_CookingRangeAndFire_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -190,7 +202,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(784, 461);
             Controls.Add(labelScriptProfiles_CookingRangeAndFire_Header);
             Controls.Add(labelScriptProfiles_CookingRangeAndFire_SelectDish);
             Controls.Add(comboBoxScriptProfiles_CookingRangeAndFire_SelectDish);

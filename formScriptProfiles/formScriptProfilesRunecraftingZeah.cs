@@ -4,7 +4,7 @@
     {
 
         // Initialize Instances
-        private formMainForm MainForm;
+        public formMainForm MainForm;
 
         public formScriptProfilesRunecraftingZeah(formMainForm mainForm)
         {
@@ -70,12 +70,6 @@
             if (checkBoxScriptProfiles_RunecraftingZeah_ArceuusHomeTeleport.Checked)
             {
                 boolEnableSwitchSpellbook = "<Find>boolEnableSwitchSpellbook:false</Find><Replace>boolEnableSwitchSpellbook:true</Replace>";
-            }
-
-            // Enable dragon pickaxe checkbox
-            if (checkBoxScriptProfiles_RunecraftingZeah_DragonPickaxe.Checked)
-            {
-                boolEnableBuyDragonPickaxe = "<Find>boolEnableBuyDragonPickaxe:false</Find><Replace>boolEnableBuyDragonPickaxe:true</Replace>";
             }
 
             // Enable iron man checkbox

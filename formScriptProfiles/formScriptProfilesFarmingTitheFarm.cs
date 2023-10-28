@@ -9,7 +9,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
     {
 
         // Initialize Instances
-        private formMainForm MainForm;
+        public formMainForm MainForm;
 
         public formScriptProfilesFarmingTitheFarm(formMainForm mainForm)
         {

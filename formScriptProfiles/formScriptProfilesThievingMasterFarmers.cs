@@ -4,7 +4,7 @@
     {
 
         // Initialize Instances
-        private formMainForm MainForm;
+        public formMainForm MainForm;
 
         public formScriptProfilesThievingMasterFarmers(formMainForm mainForm)
         {

@@ -46,8 +46,11 @@
             // 
             // textBoxScriptProfiles_AgilityRooftops_TrainAgility
             // 
+            textBoxScriptProfiles_AgilityRooftops_TrainAgility.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxScriptProfiles_AgilityRooftops_TrainAgility.Location = new Point(700, 325);
+            textBoxScriptProfiles_AgilityRooftops_TrainAgility.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_AgilityRooftops_TrainAgility.Location = new Point(525, 225);
+            textBoxScriptProfiles_AgilityRooftops_TrainAgility.Margin = new Padding(0);
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.Name = "textBoxScriptProfiles_AgilityRooftops_TrainAgility";
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.Size = new Size(50, 22);
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.TabIndex = 210;
@@ -59,7 +62,8 @@
             // 
             labelScriptProfiles_AgilityRooftops_StopLevel.AutoSize = true;
             labelScriptProfiles_AgilityRooftops_StopLevel.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            labelScriptProfiles_AgilityRooftops_StopLevel.Location = new Point(575, 325);
+            labelScriptProfiles_AgilityRooftops_StopLevel.Location = new Point(425, 225);
+            labelScriptProfiles_AgilityRooftops_StopLevel.Margin = new Padding(0);
             labelScriptProfiles_AgilityRooftops_StopLevel.Name = "labelScriptProfiles_AgilityRooftops_StopLevel";
             labelScriptProfiles_AgilityRooftops_StopLevel.Size = new Size(77, 18);
             labelScriptProfiles_AgilityRooftops_StopLevel.TabIndex = 204;
@@ -68,7 +72,8 @@
             // checkBoxScriptProfiles_AgilityRooftops_WorldHopping
             // 
             checkBoxScriptProfiles_AgilityRooftops_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_AgilityRooftops_WorldHopping.Location = new Point(350, 375);
+            checkBoxScriptProfiles_AgilityRooftops_WorldHopping.Location = new Point(250, 300);
+            checkBoxScriptProfiles_AgilityRooftops_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_AgilityRooftops_WorldHopping.Name = "checkBoxScriptProfiles_AgilityRooftops_WorldHopping";
             checkBoxScriptProfiles_AgilityRooftops_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_AgilityRooftops_WorldHopping.TabIndex = 194;
@@ -78,7 +83,8 @@
             // checkBoxScriptProfiles_AgilityRooftops_Restocking
             // 
             checkBoxScriptProfiles_AgilityRooftops_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_AgilityRooftops_Restocking.Location = new Point(350, 225);
+            checkBoxScriptProfiles_AgilityRooftops_Restocking.Location = new Point(250, 150);
+            checkBoxScriptProfiles_AgilityRooftops_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_AgilityRooftops_Restocking.Name = "checkBoxScriptProfiles_AgilityRooftops_Restocking";
             checkBoxScriptProfiles_AgilityRooftops_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_AgilityRooftops_Restocking.TabIndex = 193;
@@ -88,7 +94,8 @@
             // checkBoxScriptProfiles_AgilityRooftops_SellLoot
             // 
             checkBoxScriptProfiles_AgilityRooftops_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_AgilityRooftops_SellLoot.Location = new Point(350, 300);
+            checkBoxScriptProfiles_AgilityRooftops_SellLoot.Location = new Point(250, 225);
+            checkBoxScriptProfiles_AgilityRooftops_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_AgilityRooftops_SellLoot.Name = "checkBoxScriptProfiles_AgilityRooftops_SellLoot";
             checkBoxScriptProfiles_AgilityRooftops_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_AgilityRooftops_SellLoot.TabIndex = 192;
@@ -98,7 +105,8 @@
             // checkBoxScriptProfiles_AgilityRooftops_Antipattern
             // 
             checkBoxScriptProfiles_AgilityRooftops_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_AgilityRooftops_Antipattern.Location = new Point(150, 375);
+            checkBoxScriptProfiles_AgilityRooftops_Antipattern.Location = new Point(75, 300);
+            checkBoxScriptProfiles_AgilityRooftops_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_AgilityRooftops_Antipattern.Name = "checkBoxScriptProfiles_AgilityRooftops_Antipattern";
             checkBoxScriptProfiles_AgilityRooftops_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_AgilityRooftops_Antipattern.TabIndex = 191;
@@ -108,7 +116,8 @@
             // checkBoxScriptProfiles_AgilityRooftops_RenewBond
             // 
             checkBoxScriptProfiles_AgilityRooftops_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_AgilityRooftops_RenewBond.Location = new Point(150, 300);
+            checkBoxScriptProfiles_AgilityRooftops_RenewBond.Location = new Point(75, 225);
+            checkBoxScriptProfiles_AgilityRooftops_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_AgilityRooftops_RenewBond.Name = "checkBoxScriptProfiles_AgilityRooftops_RenewBond";
             checkBoxScriptProfiles_AgilityRooftops_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_AgilityRooftops_RenewBond.TabIndex = 190;
@@ -118,7 +127,8 @@
             // checkBoxScriptProfiles_AgilityRooftops_DeathHandler
             // 
             checkBoxScriptProfiles_AgilityRooftops_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_AgilityRooftops_DeathHandler.Location = new Point(150, 225);
+            checkBoxScriptProfiles_AgilityRooftops_DeathHandler.Location = new Point(75, 150);
+            checkBoxScriptProfiles_AgilityRooftops_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_AgilityRooftops_DeathHandler.Name = "checkBoxScriptProfiles_AgilityRooftops_DeathHandler";
             checkBoxScriptProfiles_AgilityRooftops_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_AgilityRooftops_DeathHandler.TabIndex = 189;
@@ -129,8 +139,9 @@
             // 
             labelScriptProfiles_AgilityRooftops_Title.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_AgilityRooftops_Title.Location = new Point(0, 50);
+            labelScriptProfiles_AgilityRooftops_Title.Margin = new Padding(0);
             labelScriptProfiles_AgilityRooftops_Title.Name = "labelScriptProfiles_AgilityRooftops_Title";
-            labelScriptProfiles_AgilityRooftops_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_AgilityRooftops_Title.Size = new Size(780, 25);
             labelScriptProfiles_AgilityRooftops_Title.TabIndex = 184;
             labelScriptProfiles_AgilityRooftops_Title.Text = "Agility: Rooftops";
             labelScriptProfiles_AgilityRooftops_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -141,18 +152,20 @@
             btnScriptProfiles_AgilityRooftops_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_AgilityRooftops_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_AgilityRooftops_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Location = new Point(450, 550);
+            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Location = new Point(330, 375);
+            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_AgilityRooftops_SaveToProfiles.Name = "btnScriptProfiles_AgilityRooftops_SaveToProfiles";
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_AgilityRooftops_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_AgilityRooftops_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_AgilityRooftops_SaveToProfiles.Click += btnScriptProfiles_AgilityRooftops_SaveButton_Click;
             // 
             // labelScriptProfiles_AgilityRooftops_SelectCourse
             // 
             labelScriptProfiles_AgilityRooftops_SelectCourse.AutoSize = true;
-            labelScriptProfiles_AgilityRooftops_SelectCourse.Location = new Point(575, 225);
+            labelScriptProfiles_AgilityRooftops_SelectCourse.Location = new Point(425, 150);
+            labelScriptProfiles_AgilityRooftops_SelectCourse.Margin = new Padding(0);
             labelScriptProfiles_AgilityRooftops_SelectCourse.Name = "labelScriptProfiles_AgilityRooftops_SelectCourse";
             labelScriptProfiles_AgilityRooftops_SelectCourse.Size = new Size(102, 18);
             labelScriptProfiles_AgilityRooftops_SelectCourse.TabIndex = 253;
@@ -167,7 +180,8 @@
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.FormattingEnabled = true;
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.Items.AddRange(new object[] { "Progressive", "Gnome", "Draynor", "Varrock", "Falador", "Seers", "Fremennik", "Ardougne" });
-            comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.Location = new Point(700, 225);
+            comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.Location = new Point(550, 150);
+            comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.Margin = new Padding(0);
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.Name = "comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse";
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.Size = new Size(150, 26);
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.TabIndex = 254;
@@ -176,8 +190,9 @@
             // 
             labelScriptProfiles_AgilityRooftops_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_AgilityRooftops_Header.Location = new Point(0, 0);
+            labelScriptProfiles_AgilityRooftops_Header.Margin = new Padding(0);
             labelScriptProfiles_AgilityRooftops_Header.Name = "labelScriptProfiles_AgilityRooftops_Header";
-            labelScriptProfiles_AgilityRooftops_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_AgilityRooftops_Header.Size = new Size(780, 50);
             labelScriptProfiles_AgilityRooftops_Header.TabIndex = 255;
             labelScriptProfiles_AgilityRooftops_Header.Text = "Script Profiles";
             labelScriptProfiles_AgilityRooftops_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -187,7 +202,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(784, 461);
             Controls.Add(labelScriptProfiles_AgilityRooftops_Header);
             Controls.Add(comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse);
             Controls.Add(labelScriptProfiles_AgilityRooftops_SelectCourse);
@@ -209,7 +224,7 @@
             MaximizeBox = false;
             Name = "formScriptProfilesAgilityRooftops";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "formScriptProfilesAgilityRooftops";
+            Text = "Script Profiles: Agility - Rooftops";
             Load += formScriptProfiles_AgilityRooftops_Load;
             ResumeLayout(false);
             PerformLayout();

@@ -47,9 +47,10 @@
             // textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel
             // 
             textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.Location = new Point(750, 300);
+            textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.Location = new Point(600, 200);
+            textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.Margin = new Padding(0);
             textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.Name = "textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel";
-            textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.Size = new Size(30, 22);
+            textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.Size = new Size(40, 22);
             textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.TabIndex = 210;
             textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.Text = "99";
             textBoxScriptProfiles_PrayerGildedAltar_PrayerStopLevel.KeyPress += GlobalMethod_CancelNonNumbers_SetLimitTo99_KeyPress;
@@ -59,7 +60,8 @@
             // 
             labelScriptProfiles_PrayerGildedAltar_TrainAgility.AutoSize = true;
             labelScriptProfiles_PrayerGildedAltar_TrainAgility.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            labelScriptProfiles_PrayerGildedAltar_TrainAgility.Location = new Point(600, 300);
+            labelScriptProfiles_PrayerGildedAltar_TrainAgility.Location = new Point(450, 200);
+            labelScriptProfiles_PrayerGildedAltar_TrainAgility.Margin = new Padding(0);
             labelScriptProfiles_PrayerGildedAltar_TrainAgility.Name = "labelScriptProfiles_PrayerGildedAltar_TrainAgility";
             labelScriptProfiles_PrayerGildedAltar_TrainAgility.Size = new Size(124, 18);
             labelScriptProfiles_PrayerGildedAltar_TrainAgility.TabIndex = 204;
@@ -68,7 +70,8 @@
             // checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping
             // 
             checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping.Location = new Point(375, 325);
+            checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping.Location = new Point(250, 225);
+            checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping.Margin = new Padding(0);
             checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping.Name = "checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping";
             checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping.Size = new Size(126, 22);
             checkBoxScriptProfiles_PrayerGildedAltar_WorldHopping.TabIndex = 194;
@@ -78,7 +81,8 @@
             // checkBoxScriptProfiles_PrayerGildedAltar_Restocking
             // 
             checkBoxScriptProfiles_PrayerGildedAltar_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_PrayerGildedAltar_Restocking.Location = new Point(375, 225);
+            checkBoxScriptProfiles_PrayerGildedAltar_Restocking.Location = new Point(250, 125);
+            checkBoxScriptProfiles_PrayerGildedAltar_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_PrayerGildedAltar_Restocking.Name = "checkBoxScriptProfiles_PrayerGildedAltar_Restocking";
             checkBoxScriptProfiles_PrayerGildedAltar_Restocking.Size = new Size(102, 22);
             checkBoxScriptProfiles_PrayerGildedAltar_Restocking.TabIndex = 193;
@@ -88,7 +92,8 @@
             // checkBoxScriptProfiles_PrayerGildedAltar_SellLoot
             // 
             checkBoxScriptProfiles_PrayerGildedAltar_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_PrayerGildedAltar_SellLoot.Location = new Point(375, 275);
+            checkBoxScriptProfiles_PrayerGildedAltar_SellLoot.Location = new Point(250, 175);
+            checkBoxScriptProfiles_PrayerGildedAltar_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_PrayerGildedAltar_SellLoot.Name = "checkBoxScriptProfiles_PrayerGildedAltar_SellLoot";
             checkBoxScriptProfiles_PrayerGildedAltar_SellLoot.Size = new Size(85, 22);
             checkBoxScriptProfiles_PrayerGildedAltar_SellLoot.TabIndex = 192;
@@ -98,7 +103,8 @@
             // checkBoxScriptProfiles_PrayerGildedAltar_Antipattern
             // 
             checkBoxScriptProfiles_PrayerGildedAltar_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_PrayerGildedAltar_Antipattern.Location = new Point(175, 325);
+            checkBoxScriptProfiles_PrayerGildedAltar_Antipattern.Location = new Point(50, 225);
+            checkBoxScriptProfiles_PrayerGildedAltar_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_PrayerGildedAltar_Antipattern.Name = "checkBoxScriptProfiles_PrayerGildedAltar_Antipattern";
             checkBoxScriptProfiles_PrayerGildedAltar_Antipattern.Size = new Size(96, 22);
             checkBoxScriptProfiles_PrayerGildedAltar_Antipattern.TabIndex = 191;
@@ -108,7 +114,8 @@
             // checkBoxScriptProfiles_PrayerGildedAltar_RenewBond
             // 
             checkBoxScriptProfiles_PrayerGildedAltar_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_PrayerGildedAltar_RenewBond.Location = new Point(175, 275);
+            checkBoxScriptProfiles_PrayerGildedAltar_RenewBond.Location = new Point(50, 175);
+            checkBoxScriptProfiles_PrayerGildedAltar_RenewBond.Margin = new Padding(0);
             checkBoxScriptProfiles_PrayerGildedAltar_RenewBond.Name = "checkBoxScriptProfiles_PrayerGildedAltar_RenewBond";
             checkBoxScriptProfiles_PrayerGildedAltar_RenewBond.Size = new Size(112, 22);
             checkBoxScriptProfiles_PrayerGildedAltar_RenewBond.TabIndex = 190;
@@ -118,7 +125,8 @@
             // checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler
             // 
             checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler.Location = new Point(175, 225);
+            checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler.Location = new Point(50, 125);
+            checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler.Margin = new Padding(0);
             checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler.Name = "checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler";
             checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler.Size = new Size(121, 22);
             checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler.TabIndex = 189;
@@ -129,8 +137,9 @@
             // 
             labelScriptProfiles_PrayerGildedAltar_Title.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelScriptProfiles_PrayerGildedAltar_Title.Location = new Point(0, 50);
+            labelScriptProfiles_PrayerGildedAltar_Title.Margin = new Padding(0);
             labelScriptProfiles_PrayerGildedAltar_Title.Name = "labelScriptProfiles_PrayerGildedAltar_Title";
-            labelScriptProfiles_PrayerGildedAltar_Title.Size = new Size(1015, 25);
+            labelScriptProfiles_PrayerGildedAltar_Title.Size = new Size(780, 25);
             labelScriptProfiles_PrayerGildedAltar_Title.TabIndex = 184;
             labelScriptProfiles_PrayerGildedAltar_Title.Text = "Prayer: Gilded Altar";
             labelScriptProfiles_PrayerGildedAltar_Title.TextAlign = ContentAlignment.MiddleCenter;
@@ -141,18 +150,20 @@
             btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Cursor = Cursors.Hand;
             btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Location = new Point(450, 550);
+            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Location = new Point(330, 300);
+            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Margin = new Padding(0);
             btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Name = "btnScriptProfiles_PrayerGildedAltar_SaveToProfiles";
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Size = new Size(120, 68);
+            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Size = new Size(125, 50);
             btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Text = "Save to Profiles";
+            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Text = "Save Profile";
             btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.UseVisualStyleBackColor = true;
             btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Click += btnScriptProfiles_PrayerGildedAltar_SaveButton_Click;
             // 
             // labelScriptProfiles_PrayerGildedAltar_SelectOrb
             // 
             labelScriptProfiles_PrayerGildedAltar_SelectOrb.AutoSize = true;
-            labelScriptProfiles_PrayerGildedAltar_SelectOrb.Location = new Point(600, 225);
+            labelScriptProfiles_PrayerGildedAltar_SelectOrb.Location = new Point(450, 125);
+            labelScriptProfiles_PrayerGildedAltar_SelectOrb.Margin = new Padding(0);
             labelScriptProfiles_PrayerGildedAltar_SelectOrb.Name = "labelScriptProfiles_PrayerGildedAltar_SelectOrb";
             labelScriptProfiles_PrayerGildedAltar_SelectOrb.Size = new Size(88, 18);
             labelScriptProfiles_PrayerGildedAltar_SelectOrb.TabIndex = 253;
@@ -167,7 +178,8 @@
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.FormattingEnabled = true;
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.Items.AddRange(new object[] { "BigBones", "DragonBones", "LavaDragonBones", "SuperiorDragonBones" });
-            comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.Location = new Point(700, 225);
+            comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.Location = new Point(550, 125);
+            comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.Margin = new Padding(0);
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.Name = "comboBoxScriptProfiles_PrayerGildedAltar_SelectBone";
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.Size = new Size(150, 26);
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.TabIndex = 254;
@@ -176,8 +188,9 @@
             // 
             labelScriptProfiles_PrayerGildedAltar_Header.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             labelScriptProfiles_PrayerGildedAltar_Header.Location = new Point(0, 0);
+            labelScriptProfiles_PrayerGildedAltar_Header.Margin = new Padding(0);
             labelScriptProfiles_PrayerGildedAltar_Header.Name = "labelScriptProfiles_PrayerGildedAltar_Header";
-            labelScriptProfiles_PrayerGildedAltar_Header.Size = new Size(1015, 50);
+            labelScriptProfiles_PrayerGildedAltar_Header.Size = new Size(780, 50);
             labelScriptProfiles_PrayerGildedAltar_Header.TabIndex = 255;
             labelScriptProfiles_PrayerGildedAltar_Header.Text = "Script Profiles";
             labelScriptProfiles_PrayerGildedAltar_Header.TextAlign = ContentAlignment.MiddleCenter;
@@ -187,7 +200,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1014, 641);
+            ClientSize = new Size(784, 386);
             Controls.Add(labelScriptProfiles_PrayerGildedAltar_Header);
             Controls.Add(comboBoxScriptProfiles_PrayerGildedAltar_SelectBone);
             Controls.Add(labelScriptProfiles_PrayerGildedAltar_SelectOrb);
@@ -206,9 +219,10 @@
             ForeColor = Color.FromArgb(224, 224, 224);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "formScriptProfilesPrayerGildedAltar";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "formScriptProfilesPrayerGildedAltar";
+            Text = "Script Profiles: Prayer - Gilded Altar";
             Load += formScriptProfiles_PrayerGildedAltar_Load;
             ResumeLayout(false);
             PerformLayout();
