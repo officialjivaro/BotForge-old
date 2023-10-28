@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows10.0.17763.0</TargetFramework>
+    <RootNamespace>Jivaro_Old_School_RuneScape_Bot_Manager</RootNamespace>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>Jivaro_Old_School_RuneScape_Bot_Manager.Program</StartupObject>
+    <ApplicationIcon>media\icon_jivaro_launcher.ico</ApplicationIcon>
+    <PackageIcon>icon_jivaro_launcher.png</PackageIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>True</Optimize>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <FileAlignment>4096</FileAlignment>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+    <PropertyGroup>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="media\icon_jivaro_launcher.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Update="app.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="formMiscellaneous\formLocalScripts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesFarmingTitheFarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesHerbloreCleanHerbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesMiniGamesRoguesDen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesProgressiveFighterMagic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="media\icon_jivaro_launcher.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="misc\version.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="updater.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="misc\" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\Debug\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.exe&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\Debug\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.dll&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\Release\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.exe&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\Release\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.dll&quot;" />
+  </Target>
+
+</Project>
