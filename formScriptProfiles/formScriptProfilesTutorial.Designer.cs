@@ -39,7 +39,7 @@
             checkBoxScriptProfiles_TutorialIsland_StopImmediately = new CheckBox();
             listBoxScriptProfiles_TutorialIsland_DisableInteractions = new ListBox();
             labelScriptProfiles_TutorialIsland_Title = new Label();
-            btnScriptProfiles_TutorialIsland_SaveToProfiles = new Button();
+            btnScriptProfiles_TutorialIsland_SaveProfile = new Button();
             labelScriptProfiles_TutorialIsland_DisableInteractions = new Label();
             labelScriptProfiles_TutorialIsland_Explanation = new Label();
             checkBoxScriptProfiles_TutorialIsland_WalkToRandom = new CheckBox();
@@ -164,20 +164,20 @@
             labelScriptProfiles_TutorialIsland_Title.Text = "Tutorial Island";
             labelScriptProfiles_TutorialIsland_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_TutorialIsland_SaveToProfiles
+            // btnScriptProfiles_TutorialIsland_SaveProfile
             // 
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.Location = new Point(380, 450);
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.Name = "btnScriptProfiles_TutorialIsland_SaveToProfiles";
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.TabIndex = 178;
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_TutorialIsland_SaveToProfiles.Click += btnScriptProfiles_TutorialIsland_SaveButton_Click;
+            btnScriptProfiles_TutorialIsland_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_TutorialIsland_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_TutorialIsland_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_TutorialIsland_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_TutorialIsland_SaveProfile.Location = new Point(380, 450);
+            btnScriptProfiles_TutorialIsland_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_TutorialIsland_SaveProfile.Name = "btnScriptProfiles_TutorialIsland_SaveProfile";
+            btnScriptProfiles_TutorialIsland_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_TutorialIsland_SaveProfile.TabIndex = 178;
+            btnScriptProfiles_TutorialIsland_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_TutorialIsland_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_TutorialIsland_SaveProfile.Click += btnScriptProfiles_TutorialIsland_SaveButton_Click;
             // 
             // labelScriptProfiles_TutorialIsland_DisableInteractions
             // 
@@ -241,7 +241,7 @@
             Controls.Add(checkBoxScriptProfiles_TutorialIsland_StopImmediately);
             Controls.Add(listBoxScriptProfiles_TutorialIsland_DisableInteractions);
             Controls.Add(labelScriptProfiles_TutorialIsland_Title);
-            Controls.Add(btnScriptProfiles_TutorialIsland_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_TutorialIsland_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -268,7 +268,7 @@
         public CheckBox checkBoxScriptProfiles_TutorialIsland_StopImmediately;
         public ListBox listBoxScriptProfiles_TutorialIsland_DisableInteractions;
         public Label labelScriptProfiles_TutorialIsland_Title;
-        public Button btnScriptProfiles_TutorialIsland_SaveToProfiles;
+        public Button btnScriptProfiles_TutorialIsland_SaveProfile;
         public Label labelScriptProfiles_TutorialIsland_DisableInteractions;
         public Label labelScriptProfiles_TutorialIsland_Explanation;
         public CheckBox checkBoxScriptProfiles_TutorialIsland_WalkToRandom;

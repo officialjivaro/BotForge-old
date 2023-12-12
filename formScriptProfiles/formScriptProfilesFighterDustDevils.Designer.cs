@@ -37,7 +37,7 @@
             checkBoxScriptProfiles_FighterDustDevils_RenewBond = new CheckBox();
             checkBoxScriptProfiles_FighterDustDevils_DeathHandler = new CheckBox();
             labelScriptProfiles_FighterDustDevils_Title = new Label();
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles = new Button();
+            btnScriptProfiles_FighterDustDevils_SaveProfile = new Button();
             labelScriptProfiles_FighterDustDevils_MeleeHands = new Label();
             labelScriptProfiles_FighterDustDevils_MeleeHead = new Label();
             labelScriptProfiles_FighterDustDevils_MeleeLegs = new Label();
@@ -163,20 +163,20 @@
             labelScriptProfiles_FighterDustDevils_Title.Text = "Fighter: Dust Devils";
             labelScriptProfiles_FighterDustDevils_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_FighterDustDevils_SaveToProfiles
+            // btnScriptProfiles_FighterDustDevils_SaveProfile
             // 
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Location = new Point(445, 575);
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Name = "btnScriptProfiles_FighterDustDevils_SaveToProfiles";
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.TabIndex = 138;
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_FighterDustDevils_SaveToProfiles.Click += btnScriptProfiles_FighterDustDevils_SaveButton_Click;
+            btnScriptProfiles_FighterDustDevils_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_FighterDustDevils_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_FighterDustDevils_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_FighterDustDevils_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FighterDustDevils_SaveProfile.Location = new Point(445, 575);
+            btnScriptProfiles_FighterDustDevils_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_FighterDustDevils_SaveProfile.Name = "btnScriptProfiles_FighterDustDevils_SaveProfile";
+            btnScriptProfiles_FighterDustDevils_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_FighterDustDevils_SaveProfile.TabIndex = 138;
+            btnScriptProfiles_FighterDustDevils_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_FighterDustDevils_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_FighterDustDevils_SaveProfile.Click += btnScriptProfiles_FighterDustDevils_SaveButton_Click;
             // 
             // labelScriptProfiles_FighterDustDevils_MeleeHands
             // 
@@ -591,7 +591,7 @@
             Controls.Add(tabControlScriptProfiles_DustDevils);
             Controls.Add(labelScriptProfiles_FighterDustDevils_Header);
             Controls.Add(labelScriptProfiles_FighterDustDevils_Title);
-            Controls.Add(btnScriptProfiles_FighterDustDevils_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_FighterDustDevils_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -620,7 +620,7 @@
         public CheckBox checkBoxScriptProfiles_FighterDustDevils_Antipattern;
         public CheckBox checkBoxScriptProfiles_FighterDustDevils_RenewBond;
         public CheckBox checkBoxScriptProfiles_FighterDustDevils_DeathHandler;
-        public Button btnScriptProfiles_FighterDustDevils_SaveToProfiles;
+        public Button btnScriptProfiles_FighterDustDevils_SaveProfile;
         public Label labelScriptProfiles_FighterDustDevils_MeleeHands;
         public Label labelScriptProfiles_FighterDustDevils_MeleeHead;
         public Label labelScriptProfiles_FighterDustDevils_MeleeLegs;

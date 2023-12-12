@@ -1,4 +1,6 @@
-﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
+﻿using System.Diagnostics;
+
+namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
 {
     public partial class formLocalScripts : Form
     {
@@ -17,13 +19,13 @@
             Invoke_PopulateRichTextBoxes();
         }
 
-        // Button Click - Close Form
+        // Btn Click - Close Form
         public void btnLocalScripts_CloseForm_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        // Button Click - Update Script Collection with Local Scripts
+        // Btn Click - Update Script Collection with Local Scripts
         public void btnLocalScripts_UpdateScriptCollectionWithLocalScripts_Click(object sender, EventArgs e)
         {
             Invoke_UpdateScriptCollectionWithLocalScripts();
@@ -35,16 +37,16 @@
         {
             try
             {
-                UpdateComboBox(MainForm.dataGridViewScriptFactory.Columns["dataGridViewScriptFactory_Task"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_ScriptFactory.Lines);
-                UpdateComboBox(MainForm.dataGridViewOSBotManager.Columns["dataGridViewOSBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_OSBot.Lines);
-                UpdateComboBox(MainForm.dataGridViewDreamBotManager.Columns["dataGridViewDreamBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_DreamBot.Lines);
-                UpdateComboBox(MainForm.dataGridViewTRiBotManager.Columns["dataGridViewTRiBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_TRiBot.Lines);
+                UpdateComboBox(MainForm.kryptonDataGridViewDashboard_ScriptFactoryManager.Columns["kryptonDataGridViewDashboard_ScriptFactory_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_ScriptFactory.Lines);
+                UpdateComboBox(MainForm.kryptonDataGridViewDashboard_OSBotManager.Columns["kryptonDataGridViewDashboard_OSBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_OSBot.Lines);
+                UpdateComboBox(MainForm.kryptonDataGridViewDashboard_DreamBotManager.Columns["kryptonDataGridViewDashboard_DreamBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_DreamBot.Lines);
+                UpdateComboBox(MainForm.kryptonDataGridViewDashboard_TRiBotManager.Columns["kryptonDataGridViewDashboard_TRiBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_TRiBot.Lines);
 
                 // Save the contents of the richTextBox to a file
                 SaveRichTextBoxContent(MainForm.filePathApplicationDataLocalScriptsScriptFactory, richTextBoxLocalScript_ScriptFactory);
-                SaveRichTextBoxContent(MainForm.filePathApplicationDataLocalScriptsDreamBot, richTextBoxLocalScript_ScriptFactory);
-                SaveRichTextBoxContent(MainForm.filePathApplicationDataLocalScriptsOSBot, richTextBoxLocalScript_ScriptFactory);
-                SaveRichTextBoxContent(MainForm.filePathApplicationDataLocalScriptsTRiBot, richTextBoxLocalScript_ScriptFactory);
+                SaveRichTextBoxContent(MainForm.filePathApplicationDataLocalScriptsDreamBot, richTextBoxLocalScript_DreamBot);
+                SaveRichTextBoxContent(MainForm.filePathApplicationDataLocalScriptsOSBot, richTextBoxLocalScript_OSBot);
+                SaveRichTextBoxContent(MainForm.filePathApplicationDataLocalScriptsTRiBot, richTextBoxLocalScript_TRiBot);
 
                 // Display success message
                 MessageBox.Show("Scripts successfully updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -71,7 +73,17 @@
         }
         private void SaveRichTextBoxContent(string filePath, RichTextBox richTextBox)
         {
-            File.WriteAllText(filePath, richTextBox.Text);
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    writer.Write(richTextBox.Text);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Error writing to file: " + ex.Message);
+            }
         }
 
         // Invoke - Populate Rich Text Boxes

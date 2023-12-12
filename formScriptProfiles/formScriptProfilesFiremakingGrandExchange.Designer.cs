@@ -38,7 +38,7 @@
             checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond = new CheckBox();
             checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler = new CheckBox();
             labelScriptProfiles_FiremakingGrandExchange_Title = new Label();
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles = new Button();
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile = new Button();
             labelScriptProfiles_FiremakingGrandExchange_Header = new Label();
             SuspendLayout();
             // 
@@ -142,20 +142,20 @@
             labelScriptProfiles_FiremakingGrandExchange_Title.Text = "Firemaking: Grand Exchange";
             labelScriptProfiles_FiremakingGrandExchange_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles
+            // btnScriptProfiles_FiremakingGrandExchange_SaveProfile
             // 
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Location = new Point(180, 325);
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Name = "btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles";
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.TabIndex = 178;
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles.Click += btnScriptProfiles_FiremakingGrandExchange_SaveButton_Click;
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Location = new Point(180, 325);
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Name = "btnScriptProfiles_FiremakingGrandExchange_SaveProfile";
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.TabIndex = 178;
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Click += btnScriptProfiles_FiremakingGrandExchange_SaveButton_Click;
             // 
             // labelScriptProfiles_FiremakingGrandExchange_Header
             // 
@@ -184,7 +184,7 @@
             Controls.Add(checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond);
             Controls.Add(checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler);
             Controls.Add(labelScriptProfiles_FiremakingGrandExchange_Title);
-            Controls.Add(btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_FiremakingGrandExchange_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -209,6 +209,6 @@
         public CheckBox checkBoxScriptProfiles_FiremakingGrandExchange_Antipattern;
         public CheckBox checkBoxScriptProfiles_FiremakingGrandExchange_RenewBond;
         public CheckBox checkBoxScriptProfiles_FiremakingGrandExchange_DeathHandler;
-        public Button btnScriptProfiles_FiremakingGrandExchange_SaveToProfiles;
+        public Button btnScriptProfiles_FiremakingGrandExchange_SaveProfile;
     }
 }

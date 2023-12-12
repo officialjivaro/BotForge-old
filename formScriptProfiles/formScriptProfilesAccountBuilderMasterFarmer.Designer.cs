@@ -38,7 +38,7 @@
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler = new CheckBox();
             checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart = new CheckBox();
             labelScriptProfiles_AccountBuilderMasterFarmer_Title = new Label();
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles = new Button();
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile = new Button();
             labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel = new Label();
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel = new ComboBox();
             labelScriptProfiles_AccountBuilderMasterFarmer_Header = new Label();
@@ -147,20 +147,20 @@
             labelScriptProfiles_AccountBuilderMasterFarmer_Title.Text = "Account Builder: Master Farmer";
             labelScriptProfiles_AccountBuilderMasterFarmer_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles
+            // btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile
             // 
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Location = new Point(375, 375);
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Name = "btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles";
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles.Click += btnScriptProfiles_AccountBuilderMasterFarmer_SaveButton_Click;
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Location = new Point(375, 375);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Name = "btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile";
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.TabIndex = 182;
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Click += btnScriptProfiles_AccountBuilderMasterFarmer_SaveButton_Click;
             // 
             // labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel
             // 
@@ -263,7 +263,7 @@
             Controls.Add(checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler);
             Controls.Add(checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart);
             Controls.Add(labelScriptProfiles_AccountBuilderMasterFarmer_Title);
-            Controls.Add(btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -289,7 +289,7 @@
         public CheckBox checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler;
         public CheckBox checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart;
         public Label labelScriptProfiles_AccountBuilderMasterFarmer_Title;
-        public Button btnScriptProfiles_AccountBuilderMasterFarmer_SaveToProfiles;
+        public Button btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile;
         public Label labelScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel;
         public Label labelScriptProfiles_AccountBuilderMasterFarmer_Header;
         public CheckBox checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers;

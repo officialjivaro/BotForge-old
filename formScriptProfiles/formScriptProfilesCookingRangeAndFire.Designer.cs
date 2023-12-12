@@ -29,7 +29,7 @@
         public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesCookingRangeAndFire));
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles = new Button();
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile = new Button();
             labelScriptProfiles_CookingRangeAndFire_Title = new Label();
             checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler = new CheckBox();
             checkBoxScriptProfiles_CookingRangeAndFire_RenewBond = new CheckBox();
@@ -44,20 +44,20 @@
             labelScriptProfiles_CookingRangeAndFire_Header = new Label();
             SuspendLayout();
             // 
-            // btnScriptProfiles_CookingRangeAndFire_SaveToProfiles
+            // btnScriptProfiles_CookingRangeAndFire_SaveProfile
             // 
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Location = new Point(325, 375);
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Name = "btnScriptProfiles_CookingRangeAndFire_SaveToProfiles";
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.TabIndex = 152;
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_CookingRangeAndFire_SaveToProfiles.Click += btnScriptProfiles_CookingRangeAndFire_SaveButton_Click;
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.Location = new Point(325, 375);
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.Name = "btnScriptProfiles_CookingRangeAndFire_SaveProfile";
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.TabIndex = 152;
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.Click += btnScriptProfiles_CookingRangeAndFire_SaveButton_Click;
             // 
             // labelScriptProfiles_CookingRangeAndFire_Title
             // 
@@ -215,7 +215,7 @@
             Controls.Add(checkBoxScriptProfiles_CookingRangeAndFire_RenewBond);
             Controls.Add(checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler);
             Controls.Add(labelScriptProfiles_CookingRangeAndFire_Title);
-            Controls.Add(btnScriptProfiles_CookingRangeAndFire_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_CookingRangeAndFire_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -232,7 +232,7 @@
 
         #endregion
         public Label labelScriptProfiles_CookingRangeAndFire_Header;
-        public Button btnScriptProfiles_CookingRangeAndFire_SaveToProfiles;
+        public Button btnScriptProfiles_CookingRangeAndFire_SaveProfile;
         public Label labelScriptProfiles_CookingRangeAndFire_Title;
         public CheckBox checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler;
         public CheckBox checkBoxScriptProfiles_CookingRangeAndFire_RenewBond;

@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses;
+using System.ComponentModel;
+using System.Reflection;
 
 namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
@@ -14,131 +16,83 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             MainForm = mainForm;
         }
 
-        //Initialize Variables//
-        string pc_username = Environment.UserName;
-        string folderpathProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\";
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
+        // Initialize Variables
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
+        string boolEnableHighAlching = "<Find>boolEnableHighAlching:false</Find><Replace>boolEnableHighAlching:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileFighterDustDevils = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxFighter-DustDevils.txt");
 
-        //Form Load//
+
+        // Form Load
         public void formScriptProfilesFighterDustDevils_Load(object sender, EventArgs e)
         {
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.SelectedIndex = 0;
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.SelectedIndex = 0;
         }
 
-        //Require Input On Textbox//
+        // Require Input On Textbox
         public void GlobalMethod_RequireInput_Validating(object sender, CancelEventArgs e)
         {
-            System.Windows.Forms.TextBox textBox = sender as System.Windows.Forms.TextBox;
-
-            if (textBox != null)
-            {
-                // Ensure the textbox always has an input
-                if (string.IsNullOrWhiteSpace(textBox.Text))
-                {
-                    MessageBox.Show("This field is required");
-                    e.Cancel = true;
-                }
-            }
-            else
-            {
-            }
+            invokeMethodsPassiveGlobal.GlobalMethod_RequireInput_Validating(sender, e);
         }
 
-        //Button Click - Save Profile//
+        // Btn Click - Save Profile
         public void btnScriptProfiles_FighterDustDevils_SaveButton_Click(object sender, EventArgs e)
         {
-
-            //Initialize Variables//
-            string filepathProfileFighterDustDevils = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxFighter-DustDevils.txt");
-            string boolEnableHighAlching = "<Find>boolEnableHighAlching:false</Find><Replace>boolEnableHighAlching:false</Replace>";
-            string selectArea = "<Find>SmokeDungeon/*/CatacombsOfKourend</Find><Replace>" + comboBoxScriptProfiles_FighterDustDevils_SelectArea.SelectedItem.ToString() + "</Replace>";
-            string selectPotion = "<Find>None/*/CombatPotion/*/SuperCombatPotion</Find><Replace>" + comboBoxScriptProfiles_FighterDustDevils_SelectPotion.SelectedItem.ToString() + "</Replace>";
-            string meleeGearArrow = "<Find>None</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Text + "</Replace>";
-            string meleeGearCape = "<Find>Zamorak cloak</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeCape.Text + "</Replace>";
-            string meleeGearChest = "<Find>Obsidian platebody</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeChest.Text + "</Replace>";
-            string meleeGearFeet = "<Find>Dragon boots</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Text + "</Replace>";
-            string meleeGearHands = "<Find>Granite gloves</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeHands.Text + "</Replace>";
-            string meleeGearHead = "<Find>Obsidian helmet</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeHead.Text + "</Replace>";
-            string meleeGearLegs = "<Find>Obsidian platelegs</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Text + "</Replace>";
-            string meleeGearRing = "<Find>Warrior ring</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeRing.Text + "</Replace>";
-            string meleeGearWeapon = "<Find>Abyssal whip</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Text + "</Replace>";
-            string miscGearAmulet = "<Find>Amulet of glory</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Text + "</Replace>";
-            string miscGearShield = "<Find>Toktz-ket-xil</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MiscShield.Text + "</Replace>";
-
-            //Set EnableDeathHandler Variable//
-            if (checkBoxScriptProfiles_FighterDustDevils_DeathHandler.Checked)
+            // Set Checkbox Variables
+            var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:true</Replace>";
-            }
+                {"boolEnableAntipattern", checkBoxScriptProfiles_FighterDustDevils_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_FighterDustDevils_DeathHandler},
+                {"boolEnableHighAlching", checkBoxScriptProfiles_FighterDustDevils_HighAlching},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_FighterDustDevils_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_FighterDustDevils_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_FighterDustDevils_Restocking},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_FighterDustDevils_SellLoot}
+            };
 
-            //Set EnableRenewBond Handler Variable//
-            if (checkBoxScriptProfiles_FighterDustDevils_RenewBond.Checked)
+            foreach (var checkboxPair in checkBoxMappings)
             {
-                boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:true</Replace>";
-            }
+                if (checkboxPair.Value.Checked)
+                {
+                    var variableName = checkboxPair.Key;
+                    var variableValue = $"<Find>{variableName}:false</Find><Replace>{variableName}:true</Replace>";
 
-            //Set EnableAntipattern Handler Variable//
-            if (checkBoxScriptProfiles_FighterDustDevils_Antipattern.Checked)
-            {
-                boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:true</Replace>";
-            }
-
-            //Set EnableHopWorlds Handler Variable//
-            if (checkBoxScriptProfiles_FighterDustDevils_WorldHopping.Checked)
-            {
-                boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:true</Replace>";
-            }
-
-            //Set EnableRestocking Handler Variable//
-            if (checkBoxScriptProfiles_FighterDustDevils_Restocking.Checked)
-            {
-                boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:true</Replace>";
-            }
-
-            //Set EnableSellLoot Handler Variable//
-            if (checkBoxScriptProfiles_FighterDustDevils_SellLoot.Checked)
-            {
-                boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:true</Replace>";
-            }
-
-            //Set HighAlchemy Variable//
-            if (checkBoxScriptProfiles_FighterDustDevils_HighAlching.Checked)
-            {
-                boolEnableHighAlching = "<Find>boolEnableHighAlching:false</Find><Replace>boolEnableHighAlching:true</Replace>";
+                    // Using reflection to dynamically set field values
+                    this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(this, variableValue);
+                }
             }
 
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileFighterDustDevils))
             {
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
+                writer.WriteLine("General Settings");
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
+                writer.WriteLine("\nDust Devil Settings");
                 writer.WriteLine(boolEnableHighAlching);
-                writer.WriteLine(selectArea);
-                writer.WriteLine(selectPotion);
-                writer.WriteLine("-----------");
-                writer.WriteLine("Custom Gear");
-                writer.WriteLine("-----------");
-                writer.WriteLine(meleeGearArrow);
-                writer.WriteLine(meleeGearCape);
-                writer.WriteLine(meleeGearChest);
-                writer.WriteLine(meleeGearFeet);
-                writer.WriteLine(meleeGearHands);
-                writer.WriteLine(meleeGearHead);
-                writer.WriteLine(meleeGearLegs);
-                writer.WriteLine(meleeGearRing);
-                writer.WriteLine(meleeGearWeapon);
-                writer.WriteLine(miscGearAmulet);
-                writer.WriteLine(miscGearShield);
+                writer.WriteLine("<Find>SmokeDungeon/*/CatacombsOfKourend</Find><Replace>" + comboBoxScriptProfiles_FighterDustDevils_SelectArea.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>None/*/CombatPotion/*/SuperCombatPotion</Find><Replace>" + comboBoxScriptProfiles_FighterDustDevils_SelectPotion.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("\nGear Settings");
+                writer.WriteLine("<Find>Amulet of glory</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Text + "</Replace>");
+                writer.WriteLine("<Find>None</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Text + "</Replace>");
+                writer.WriteLine("<Find>Zamorak cloak</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeCape.Text + "</Replace>");
+                writer.WriteLine("<Find>Obsidian platebody</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeChest.Text + "</Replace>");
+                writer.WriteLine("<Find>Dragon boots</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Text + "</Replace>");
+                writer.WriteLine("<Find>Granite gloves</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeHands.Text + "</Replace>");
+                writer.WriteLine("<Find>Obsidian helmet</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeHead.Text + "</Replace>");
+                writer.WriteLine("<Find>Obsidian platelegs</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Text + "</Replace>");
+                writer.WriteLine("<Find>Toktz-ket-xil</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MiscShield.Text + "</Replace>");
+                writer.WriteLine("<Find>Warrior ring</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeRing.Text + "</Replace>");
+                writer.WriteLine("<Find>Abyssal whip</Find><Replace>" + textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Text + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

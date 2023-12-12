@@ -38,7 +38,7 @@
             checkBoxScriptProfiles_PrayerGildedAltar_RenewBond = new CheckBox();
             checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler = new CheckBox();
             labelScriptProfiles_PrayerGildedAltar_Title = new Label();
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles = new Button();
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile = new Button();
             labelScriptProfiles_PrayerGildedAltar_SelectOrb = new Label();
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone = new ComboBox();
             labelScriptProfiles_PrayerGildedAltar_Header = new Label();
@@ -144,20 +144,20 @@
             labelScriptProfiles_PrayerGildedAltar_Title.Text = "Prayer: Gilded Altar";
             labelScriptProfiles_PrayerGildedAltar_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_PrayerGildedAltar_SaveToProfiles
+            // btnScriptProfiles_PrayerGildedAltar_SaveProfile
             // 
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Location = new Point(330, 300);
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Name = "btnScriptProfiles_PrayerGildedAltar_SaveToProfiles";
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_PrayerGildedAltar_SaveToProfiles.Click += btnScriptProfiles_PrayerGildedAltar_SaveButton_Click;
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.Location = new Point(330, 300);
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.Name = "btnScriptProfiles_PrayerGildedAltar_SaveProfile";
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.TabIndex = 182;
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.Click += btnScriptProfiles_PrayerGildedAltar_SaveButton_Click;
             // 
             // labelScriptProfiles_PrayerGildedAltar_SelectOrb
             // 
@@ -213,7 +213,7 @@
             Controls.Add(checkBoxScriptProfiles_PrayerGildedAltar_RenewBond);
             Controls.Add(checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler);
             Controls.Add(labelScriptProfiles_PrayerGildedAltar_Title);
-            Controls.Add(btnScriptProfiles_PrayerGildedAltar_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_PrayerGildedAltar_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -238,7 +238,7 @@
         public CheckBox checkBoxScriptProfiles_PrayerGildedAltar_RenewBond;
         public CheckBox checkBoxScriptProfiles_PrayerGildedAltar_DeathHandler;
         public Label labelScriptProfiles_PrayerGildedAltar_Title;
-        public Button btnScriptProfiles_PrayerGildedAltar_SaveToProfiles;
+        public Button btnScriptProfiles_PrayerGildedAltar_SaveProfile;
         public Label labelScriptProfiles_PrayerGildedAltar_SelectOrb;
         public ComboBox comboBoxScriptProfiles_PrayerGildedAltar_SelectBone;
         public Label labelScriptProfiles_PrayerGildedAltar_Header;

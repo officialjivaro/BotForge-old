@@ -40,7 +40,7 @@
             DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesMuler));
             labelScriptProfiles_Muler_Title = new Label();
-            btnScriptProfiles_Muler_SaveToProfiles = new Button();
+            btnScriptProfiles_Muler_SaveProfile = new Button();
             tabPageScriptProfiles_Muler_Bot = new TabPage();
             dataGridViewScriptProfiles_Muler_Bot = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
@@ -84,19 +84,19 @@
             labelScriptProfiles_Muler_Title.Text = "Muler";
             labelScriptProfiles_Muler_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_Muler_SaveToProfiles
+            // btnScriptProfiles_Muler_SaveProfile
             // 
-            btnScriptProfiles_Muler_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_Muler_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_Muler_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_Muler_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_Muler_SaveToProfiles.Location = new Point(435, 575);
-            btnScriptProfiles_Muler_SaveToProfiles.Name = "btnScriptProfiles_Muler_SaveToProfiles";
-            btnScriptProfiles_Muler_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_Muler_SaveToProfiles.TabIndex = 110;
-            btnScriptProfiles_Muler_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_Muler_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_Muler_SaveToProfiles.Click += btnScriptProfiles_Muler_SaveButton_Click;
+            btnScriptProfiles_Muler_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_Muler_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_Muler_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_Muler_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_Muler_SaveProfile.Location = new Point(435, 575);
+            btnScriptProfiles_Muler_SaveProfile.Name = "btnScriptProfiles_Muler_SaveProfile";
+            btnScriptProfiles_Muler_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_Muler_SaveProfile.TabIndex = 110;
+            btnScriptProfiles_Muler_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_Muler_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_Muler_SaveProfile.Click += btnScriptProfiles_Muler_SaveButton_Click;
             // 
             // tabPageScriptProfiles_Muler_Bot
             // 
@@ -437,7 +437,7 @@
             Controls.Add(labelScriptProfiles_Muler_Header);
             Controls.Add(tabControlScriptProfiles_Muler);
             Controls.Add(labelScriptProfiles_Muler_Title);
-            Controls.Add(btnScriptProfiles_Muler_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_Muler_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -461,7 +461,7 @@
         #endregion
         public Label labelScriptProfiles_Muler_Title;
         public Label labelScriptProfiles_Muler_Header;
-        public Button btnScriptProfiles_Muler_SaveToProfiles;
+        public Button btnScriptProfiles_Muler_SaveProfile;
         public TabPage tabPageScriptProfiles_Muler_Bot;
         public TabPage tabPageScriptProfiles_Muler_Mule;
         public TabControl tabControlScriptProfiles_Muler;

@@ -38,7 +38,7 @@
             checkBoxScriptProfiles_MagicHouseAlcher_RenewBond = new CheckBox();
             checkBoxScriptProfiles_MagicHouseAlcher_DeathHandler = new CheckBox();
             labelScriptProfiles_MagicHouseAlcher_Title = new Label();
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles = new Button();
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile = new Button();
             textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch = new TextBox();
             textBoxScriptProfiles_MagicHouseAlcher_ItemId = new TextBox();
             btnScriptProfiles_MagicHouseAlcher_SearchForId = new Button();
@@ -142,20 +142,20 @@
             labelScriptProfiles_MagicHouseAlcher_Title.Text = "Magic: House Alcher";
             labelScriptProfiles_MagicHouseAlcher_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_MagicHouseAlcher_SaveToProfiles
+            // btnScriptProfiles_MagicHouseAlcher_SaveProfile
             // 
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.Location = new Point(205, 425);
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.Name = "btnScriptProfiles_MagicHouseAlcher_SaveToProfiles";
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.TabIndex = 202;
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_MagicHouseAlcher_SaveToProfiles.Click += btnScriptProfiles_MagicHouseAlcher_SaveButton_Click;
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.Location = new Point(205, 425);
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.Name = "btnScriptProfiles_MagicHouseAlcher_SaveProfile";
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.TabIndex = 202;
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.Click += btnScriptProfiles_MagicHouseAlcher_SaveButton_Click;
             // 
             // textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch
             // 
@@ -165,6 +165,7 @@
             textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch.Size = new Size(150, 24);
             textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch.TabIndex = 225;
             textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch.Text = "Yew longbow";
+            textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // textBoxScriptProfiles_MagicHouseAlcher_ItemId
             // 
@@ -174,6 +175,7 @@
             textBoxScriptProfiles_MagicHouseAlcher_ItemId.Size = new Size(150, 24);
             textBoxScriptProfiles_MagicHouseAlcher_ItemId.TabIndex = 226;
             textBoxScriptProfiles_MagicHouseAlcher_ItemId.Text = "855";
+            textBoxScriptProfiles_MagicHouseAlcher_ItemId.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // btnScriptProfiles_MagicHouseAlcher_SearchForId
             // 
@@ -220,7 +222,7 @@
             Controls.Add(checkBoxScriptProfiles_MagicHouseAlcher_RenewBond);
             Controls.Add(checkBoxScriptProfiles_MagicHouseAlcher_DeathHandler);
             Controls.Add(labelScriptProfiles_MagicHouseAlcher_Title);
-            Controls.Add(btnScriptProfiles_MagicHouseAlcher_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_MagicHouseAlcher_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -246,7 +248,7 @@
         public CheckBox checkBoxScriptProfiles_MagicHouseAlcher_RenewBond;
         public CheckBox checkBoxScriptProfiles_MagicHouseAlcher_DeathHandler;
         public Label labelScriptProfiles_MagicHouseAlcher_Title;
-        public Button btnScriptProfiles_MagicHouseAlcher_SaveToProfiles;
+        public Button btnScriptProfiles_MagicHouseAlcher_SaveProfile;
         public TextBox textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch;
         public TextBox textBoxScriptProfiles_MagicHouseAlcher_ItemId;
         public Button btnScriptProfiles_MagicHouseAlcher_SearchForId;

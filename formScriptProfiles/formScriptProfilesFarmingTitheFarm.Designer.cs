@@ -38,7 +38,7 @@
             checkBoxScriptProfiles_FarmingTitheFarm_RenewBond = new CheckBox();
             checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler = new CheckBox();
             labelScriptProfiles_FarmingTitheFarm_Title = new Label();
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles = new Button();
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile = new Button();
             labelScriptProfiles_FarmingTitheFarm_Header = new Label();
             SuspendLayout();
             // 
@@ -144,20 +144,20 @@
             labelScriptProfiles_FarmingTitheFarm_Title.Text = "Farming: Tithe Farm";
             labelScriptProfiles_FarmingTitheFarm_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_FarmingTitheFarm_SaveToProfiles
+            // btnScriptProfiles_FarmingTitheFarm_SaveProfile
             // 
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Location = new Point(215, 275);
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Name = "btnScriptProfiles_FarmingTitheFarm_SaveToProfiles";
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_FarmingTitheFarm_SaveToProfiles.Click += btnScriptProfiles_FarmingTitheFarm_SaveButton_Click;
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.Location = new Point(215, 275);
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.Name = "btnScriptProfiles_FarmingTitheFarm_SaveProfile";
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.TabIndex = 182;
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.Click += btnScriptProfiles_FarmingTitheFarm_SaveButton_Click;
             // 
             // labelScriptProfiles_FarmingTitheFarm_Header
             // 
@@ -186,7 +186,7 @@
             Controls.Add(checkBoxScriptProfiles_FarmingTitheFarm_RenewBond);
             Controls.Add(checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler);
             Controls.Add(labelScriptProfiles_FarmingTitheFarm_Title);
-            Controls.Add(btnScriptProfiles_FarmingTitheFarm_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_FarmingTitheFarm_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -211,7 +211,7 @@
         public CheckBox checkBoxScriptProfiles_FarmingTitheFarm_RenewBond;
         public CheckBox checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler;
         public Label labelScriptProfiles_FarmingTitheFarm_Title;
-        public Button btnScriptProfiles_FarmingTitheFarm_SaveToProfiles;
+        public Button btnScriptProfiles_FarmingTitheFarm_SaveProfile;
         public Label labelScriptProfiles_FarmingTitheFarm_Header;
     }
 }

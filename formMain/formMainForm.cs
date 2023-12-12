@@ -1,6 +1,7 @@
 using Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous;
 using Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles;
 using Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses;
+using Krypton.Toolkit;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO.Compression;
@@ -39,18 +40,19 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public string filePathApplicationDataAccountsDreamBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\Accounts_DreamBot";
         public string filePathApplicationDataAccountsOSBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\Accounts_OSBot";
         public string filePathApplicationDataAccountsScriptFactory = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\Accounts_ScriptFactory";
+        public string filePathApplicationDataAccountsSettingsIni = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\Settings.ini";
         public string filePathApplicationDataAccountsTRiBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\Accounts_TRiBot";
         public string filePathApplicationDataLocalScriptsDreamBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\LocalScripts_DreamBot";
         public string filePathApplicationDataLocalScriptsOSBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\LocalScripts_OSBot";
         public string filePathApplicationDataLocalScriptsScriptFactory = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\LocalScripts_ScriptFactory";
         public string filePathApplicationDataLocalScriptsTRiBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\LocalScripts_TRiBot";
-        public string filePathApplicationDataLoginInfoClients = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\Login_Info_Clients";
         public string filePathApplicationDreamBotJar = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\DreamBot.jar";
         public string filePathApplicationMainMiscVersion = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\misc\\version.txt";
         public string filePathApplicationMainUpdaterExe = Path.Combine("updater.exe");
         public string filePathApplicationOSBotJar = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar";
         public string filePathApplicationTRiBotJar = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\TRiBot.jar";
         public string filePathJivaroTempJavaRuntimeEnvironment = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\JavaRuntimeEnvironment.exe";
+        public string filePathJivaroTempBotManagerUpdaterExe = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\Old School RuneScape Bot Manager\\updater.exe";
         public string filePathJivaroTempProxifier = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\Proxifier.exe";
         public string filePathJivaroTempSandboxiePlus = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\Sandboxie-Plus.exe";
         public string filePathSandboxieIni = @"C:\\Windows\\Sandboxie.ini";
@@ -59,20 +61,23 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public string folderPathApplication = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\";
         public string folderPathApplicationData = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Data\\";
         public string folderPathApplicationMain = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\";
+        public string folderPathApplicationMainJava = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\";
         public string folderPathJagexCache = @"C:\\Users\\" + Environment.UserName.ToString() + "\\jagexcache";
         public string folderPathJivaroTemp = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\";
         public string folderPathJivaroTempFushigiBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\FushigiBot";
         public string folderPathJivaroTempFushigiBotZip = @"C:\Users\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\FushigiBot.zip";
+        public string folderPathJivaroTempJava = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\java";
+        public string folderPathJivaroTempJavaZip = @"C:\Users\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\java.zip";
         public string folderPathOSBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot";
         public string folderPathScriptFactoryPrivateScripts = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Private Scripts";
         public string folderPathScriptFactoryPrivateScriptsFushigiBot = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Private Scripts\\FushigiBot";
         public string folderPathScriptFactoryProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles";
+        public string folderPathJivaroTempBotManager = @"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Temp\\Old School RuneScape Bot Manager\\";
         public string folderPathUsername = @"C:\\Users\\" + Environment.UserName;
         public static string lastFetchedArgs = "";
-        public string pc_username = Environment.UserName;
         public string urlDreamBotClient = "https://dreambot.org/DBLauncher.jar";
         public string urlFushigiBotScripts = "https://download.jivaro.net/s/D7csx35Em5ADbNP/download/FushigiBot.zip";
-        public string urlJavaRuntimeEnvironment = "https://download.jivaro.net/s/PzPpgFZDfGtQ37y/download/Java%20Runtime%20Environment%20x64%20%5Bjivaro.net%5D.exe";
+        public string urlJavaRuntimeEnvironment = "https://download.jivaro.net/s/6kMtcjq97xaSbdr/download/jre_8.zip";
         public string urlLatestApplicationVersion = "https://download.jivaro.net/s/gBY4egoBbBAywyp/download/version.txt";
         public string urlOSBotClient = "https://osbot.org/mvc/get";
         public string urlProxifier = "https://www.proxifier.com/download/ProxifierSetup.exe";
@@ -82,7 +87,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public string urlSdnScriptsScriptFactory = "https://download.jivaro.net/s/fsjwMxi2G55YsYg/download/script_factory_script_list.txt";
         public string urlSdnScriptsTRiBot = "https://download.jivaro.net/s/QxpqptAkRsa6swC/download/tribot_script_list.txt";
         public string urlTRiBotClient = "https://installers.tribot.org/tribot-splash.jar";
-        public string[] filesMirrorJunk = Directory.GetFiles(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data", "mirror_*");
+        public string[] filesMirrorJunk;
 
         /////////////////////////////////////
         //End of Initialize Class Variables//
@@ -102,18 +107,20 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         {
             InitializeComponent();
 
+            // Hide the form
+            this.Visible = false;
+
             // Optimized double buffer
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             UpdateStyles();
 
-            //Instances - Performance Counters
+            // Instances - Performance Counters
             cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
             ramCounter = new PerformanceCounter("Memory", "% Committed Bytes In Use");
 
-            //Timers - Performance Counters
+            // Timers - Performance Counters
             timerNav_PerformanceCounters.Interval = 1000;
             timerNav_PerformanceCounters.Start();
-
         }
 
         ////////////////////////////////
@@ -133,18 +140,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Form Load
         public async void formMainForm_Load(object sender, EventArgs e)
         {
-
-            // Bring panelScriptFactory to the front
-            foreach (Control control in this.Controls)
-            {
-                if (control is Panel && control != panelScriptFactory)
-                {
-                    control.SendToBack();
-                }
-            }
-            panelScriptFactory.BringToFront();
-
-
             // Create Folders
             invokeMethodsActiveMainForm.Invoke_CreateFolderIfNotExists(folderPathApplication);
             invokeMethodsActiveMainForm.Invoke_CreateFolderIfNotExists(folderPathApplicationData);
@@ -157,13 +152,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsDreamBot);
             invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsOSBot);
             invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsScriptFactory);
+            invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsSettingsIni);
             invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsTRiBot);
             invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLocalScriptsDreamBot);
             invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLocalScriptsOSBot);
             invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLocalScriptsScriptFactory);
             invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLocalScriptsTRiBot);
-            invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLoginInfoClients);
-
 
             // Worker - File Handler
             workerFileHandler.DoWork += Worker_FileHandler;
@@ -193,36 +187,107 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
 
             // Populate  dataGridView's Script Collections
-            await Invoke_PopulateComboBoxColumn(dataGridViewDreamBotManager, "dataGridViewDreamBotManager_Script", urlSdnScriptsDreamBot, filePathApplicationDataLocalScriptsDreamBot);
-            await Invoke_PopulateComboBoxColumn(dataGridViewOSBotManager, "dataGridViewOSBotManager_Script", urlSdnScriptsOSBot, filePathApplicationDataLocalScriptsOSBot);
-            await Invoke_PopulateComboBoxColumn(dataGridViewScriptFactory, "dataGridViewScriptFactory_Task", urlSdnScriptsScriptFactory, filePathApplicationDataLocalScriptsScriptFactory);
-            await Invoke_PopulateComboBoxColumn(dataGridViewTRiBotManager, "dataGridViewTRiBotManager_Script", urlSdnScriptsTRiBot, filePathApplicationDataLocalScriptsTRiBot);
+            await Invoke_PopulateComboBoxColumn(kryptonDataGridViewDashboard_DreamBotManager, "kryptonDataGridViewDashboard_DreamBotManager_Script", urlSdnScriptsDreamBot, filePathApplicationDataLocalScriptsDreamBot);
+            await Invoke_PopulateComboBoxColumn(kryptonDataGridViewDashboard_OSBotManager, "kryptonDataGridViewDashboard_OSBotManager_Script", urlSdnScriptsOSBot, filePathApplicationDataLocalScriptsOSBot);
+            await Invoke_PopulateComboBoxColumn(kryptonDataGridViewDashboard_ScriptFactoryManager, "kryptonDataGridViewDashboard_ScriptFactory_Script", urlSdnScriptsScriptFactory, filePathApplicationDataLocalScriptsScriptFactory);
+            await Invoke_PopulateComboBoxColumn(kryptonDataGridViewDashboard_TRiBotManager, "kryptonDataGridViewDashboard_TRiBotManager_Script", urlSdnScriptsTRiBot, filePathApplicationDataLocalScriptsTRiBot);
 
             // Populate dataGridView's Account Data
-            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(dataGridViewScriptFactory, filePathApplicationDataAccountsScriptFactory);
-            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(dataGridViewOSBotManager, filePathApplicationDataAccountsOSBot);
-            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(dataGridViewDreamBotManager, filePathApplicationDataAccountsDreamBot);
-            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(dataGridViewTRiBotManager, filePathApplicationDataAccountsTRiBot);
-
+            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(kryptonDataGridViewDashboard_ScriptFactoryManager, filePathApplicationDataAccountsScriptFactory);
+            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(kryptonDataGridViewDashboard_OSBotManager, filePathApplicationDataAccountsOSBot);
+            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(kryptonDataGridViewDashboard_DreamBotManager, filePathApplicationDataAccountsDreamBot);
+            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(kryptonDataGridViewDashboard_TRiBotManager, filePathApplicationDataAccountsTRiBot);
 
             // Populate Client Login Info
-            Invoke_PopulateClientLoginInfo();
+            invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_OSBotUsername, "osbot_username=", filePathApplicationDataAccountsSettingsIni);
+            invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_OSBotPassword, "osbot_password=", filePathApplicationDataAccountsSettingsIni);
+            invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_DreamBotUsername, "dreambot_username=", filePathApplicationDataAccountsSettingsIni);
+            invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_DreamBotPassword, "dreambot_password=", filePathApplicationDataAccountsSettingsIni);
+            invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_TRiBotEmail, "tribot_email=", filePathApplicationDataAccountsSettingsIni);
+            invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_TRiBotPassword, "tribot_password=", filePathApplicationDataAccountsSettingsIni);
+
+            // Clear selection in the KryptonDataGridView
+            kryptonDataGridViewDashboard_ScriptFactoryManager.ClearSelection();
+            kryptonDataGridViewDashboard_OSBotManager.ClearSelection();
+            kryptonDataGridViewDashboard_DreamBotManager.ClearSelection();
+            kryptonDataGridViewDashboard_TRiBotManager.ClearSelection();
+
+            // Bring panelScriptFactory to the front
+            foreach (Control control in this.Controls)
+            {
+                if (control is Panel && control != kryptonPanelDashboard)
+                {
+                    control.SendToBack();
+                }
+            }
+            kryptonPanelDashboard.BringToFront();
 
             // Set ProgressBar Visibility to False
-            progressBarDreamBotManager.Visible = false;
-            progressBarOSBotManager.Visible = false;
-            progressBarScriptFactory.Visible = false;
-            progressBarSettings.Visible = false;
-            progressBarTRiBotManager.Visible = false;
+            kryptonProgressBarGlobal.Visible = false;
 
-            // Round Buttons
-            RoundButtonEdges();
+            // Bring Nav Controls to Front
+            this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
 
-            // Disable Script Factory Button
-            Invoke_DisableButtonAndChangeColorToTeal(buttonNav_ScriptFactory);
+            // Disable Dashboard Button
+            Invoke_DisableKryptonButton(this, "kryptonButtonNav_Dashboard");
 
             // Default ComboBox Selections
             comboBoxBreakProfiles_SelectBreakFilename.SelectedIndex = 0;
+
+            // Set default Checkboxes
+            try
+            {
+                string[] lines = File.ReadAllLines(filePathApplicationDataAccountsSettingsIni);
+
+                foreach (string line in lines)
+                {
+                    if (line.Trim().Equals("welcome_screen=false", StringComparison.OrdinalIgnoreCase))
+                    {
+                        checkBoxSettings_ShowWelcomeScreen.Checked = false;
+                    }
+                    else if (line.Trim().Equals("hardware_usage=false", StringComparison.OrdinalIgnoreCase))
+                    {
+                        checkBoxSettings_ShowCpuAndRamUsage.Checked = false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error reading settings: " + ex.Message);
+            }
+
+            // Show Welcome Screen
+            if (checkBoxSettings_ShowWelcomeScreen.Checked)
+            {
+                try
+                {
+                    formWelcomeScreen welcomeScreen = new formWelcomeScreen();
+                    welcomeScreen.Show();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error opening welcome screen: " + ex.Message);
+                }
+            }
+
+            // Send CPU and RAM Usage Controls to Back
+            if (!checkBoxSettings_ShowCpuAndRamUsage.Checked)
+            {
+                try
+                {
+                    labelNav_CpuUsageMonitor.Visible = false;
+                    labelNav_RamUsageMonitor.Visible = false;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+            // Show the form
+            await Task.Delay(3000);
+            this.Visible = true;
+
         }
 
         // Form Close
@@ -264,12 +329,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsDreamBot));
                     await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsOSBot));
                     await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsScriptFactory));
+                    await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsSettingsIni));
                     await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataAccountsTRiBot));
                     await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLocalScriptsDreamBot));
                     await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLocalScriptsOSBot));
                     await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLocalScriptsScriptFactory));
                     await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLocalScriptsTRiBot));
-                    await Task.Run(() => invokeMethodsActiveMainForm.Invoke_CreateFileIfNotExists(filePathApplicationDataLoginInfoClients));
                 }
                 catch (Exception ex)
                 {
@@ -314,16 +379,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 // Script Factory
                 try
                 {
-                    if (dataGridViewScriptFactory.InvokeRequired)
+                    if (kryptonDataGridViewDashboard_ScriptFactoryManager.InvokeRequired)
                     {
-                        dataGridViewScriptFactory.Invoke(new MethodInvoker(delegate
+                        kryptonDataGridViewDashboard_ScriptFactoryManager.Invoke(new MethodInvoker(delegate
                         {
-                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewScriptFactory, "dataGridViewScriptFactory_Account", "dataGridViewScriptFactory_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_ScriptFactoryManager, "kryptonDataGridViewDashboard_ScriptFactoryManager_Account", "kryptonDataGridViewDashboard_ScriptFactory_Status");
                         }));
                     }
                     else
                     {
-                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewScriptFactory, "dataGridViewScriptFactory_Account", "dataGridViewScriptFactory_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_ScriptFactoryManager, "kryptonDataGridViewDashboard_ScriptFactoryManager_Account", "kryptonDataGridViewDashboard_ScriptFactory_Status");
                     }
                 }
                 catch (Exception ex)
@@ -334,16 +399,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 // OSBot Manager
                 try
                 {
-                    if (dataGridViewOSBotManager.InvokeRequired)
+                    if (kryptonDataGridViewDashboard_OSBotManager.InvokeRequired)
                     {
-                        dataGridViewOSBotManager.Invoke(new MethodInvoker(delegate
+                        kryptonDataGridViewDashboard_OSBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewOSBotManager_Account", "dataGridViewOSBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_OSBotManager, "kryptonDataGridViewDashboard_OSBotManager_Account", "kryptonDataGridViewDashboard_OSBotManager_Status");
                         }));
                     }
                     else
                     {
-                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewOSBotManager_Account", "dataGridViewOSBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_OSBotManager, "kryptonDataGridViewDashboard_OSBotManager_Account", "kryptonDataGridViewDashboard_OSBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -354,16 +419,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 // DreamBot Manager
                 try
                 {
-                    if (dataGridViewDreamBotManager.InvokeRequired)
+                    if (kryptonDataGridViewDashboard_DreamBotManager.InvokeRequired)
                     {
-                        dataGridViewDreamBotManager.Invoke(new MethodInvoker(delegate
+                        kryptonDataGridViewDashboard_DreamBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewDreamBotManager_Account", "dataGridViewDreamBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_DreamBotManager, "kryptonDataGridViewDashboard_DreamBotManager_Account", "kryptonDataGridViewDashboard_DreamBotManager_Status");
                         }));
                     }
                     else
                     {
-                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewDreamBotManager_Account", "dataGridViewDreamBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_DreamBotManager, "kryptonDataGridViewDashboard_DreamBotManager_Account", "kryptonDataGridViewDashboard_DreamBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -374,16 +439,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 // TRiBot Manager
                 try
                 {
-                    if (dataGridViewTRiBotManager.InvokeRequired)
+                    if (kryptonDataGridViewDashboard_TRiBotManager.InvokeRequired)
                     {
-                        dataGridViewTRiBotManager.Invoke(new MethodInvoker(delegate
+                        kryptonDataGridViewDashboard_TRiBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewTRiBotManager_Account", "dataGridViewTRiBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_TRiBotManager, "kryptonDataGridViewDashboard_TRiBotManager_Account", "kryptonDataGridViewDashboard_TRiBotManager_Status");
                         }));
                     }
                     else
                     {
-                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewOSBotManager, "dataGridViewTRiBotManager_Account", "dataGridViewTRiBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_TRiBotManager, "kryptonDataGridViewDashboard_TRiBotManager_Account", "kryptonDataGridViewDashboard_TRiBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -395,8 +460,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 await Task.Delay(TimeSpan.FromSeconds(6));
             }
         }
-
-
 
         /////////////////////////////
         //End Of Background Workers//
@@ -454,74 +517,52 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
 
 
 
-        ////////////////////////
-        //Start of Ads Handler//
-        ////////////////////////
-
-
-
-        //////////////////////
-        //End of Ads Handler//
-        //////////////////////
-
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
         ///////////////////////////////
         //Start of Navigation Buttons//
         ///////////////////////////////
 
-        //Button Click - Navigate To Script Factory//
-        public void buttonNavigation_ScriptFactory_Click(object sender, EventArgs e)
+        // Btn Click - Navigate To Dashboard
+        public void btnNavigation_ScriptFactory_Click(object sender, EventArgs e)
         {
-            Invoke_NavigateToPanel(panelScriptFactory, progressBarScriptFactory);
-            Invoke_DisableButtonAndChangeColorToTeal(buttonNav_ScriptFactory);
+            Invoke_NavigateToPanel(kryptonPanelDashboard);
+            this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
+            Invoke_DisableKryptonButton(this, "kryptonButtonNav_Dashboard");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_ScriptProfiles");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_BreakProfiles");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_Settings");
         }
 
-
-        //Button Click - Navigate To OSBot Manager//
-        public void buttonNavigation_OSBotManager_Click(object sender, EventArgs e)
+        // Btn Click - Navigate To Script Profiles
+        public void btnNavigation_ScriptProfiles_Click(object sender, EventArgs e)
         {
-            Invoke_NavigateToPanel(panelOSBotManager, progressBarOSBotManager);
-            Invoke_DisableButtonAndChangeColorToTeal(buttonNav_OSBotManager);
+            Invoke_NavigateToPanel(kryptonPanelScriptProfiles);
+            this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_Dashboard");
+            Invoke_DisableKryptonButton(this, "kryptonButtonNav_ScriptProfiles");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_BreakProfiles");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_Settings");
         }
 
-        //Button Click - Navigate To TRiBot Manager//
-        public void buttonNavigation_TRiBotManager_Click(object sender, EventArgs e)
+        // Btn Click - Navigate to Break Profiles
+        public void btnNavigation_BreakProfiles_Click(object sender, EventArgs e)
         {
-            Invoke_NavigateToPanel(panelTRiBotManager, progressBarTRiBotManager);
-            Invoke_DisableButtonAndChangeColorToTeal(buttonNav_TRiBotManager);
+            Invoke_NavigateToPanel(kryptonPanelBreakProfiles);
+            this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_Dashboard");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_ScriptProfiles");
+            Invoke_DisableKryptonButton(this, "kryptonButtonNav_BreakProfiles");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_Settings");
         }
 
-        //Button Click - Navigate To DreamBot Manager//
-        public void buttonNavigation_DreamBotManager_Click(object sender, EventArgs e)
+        // Btn Click - Navigate To Settings
+        public void btnNavigation_Settings_Click(object sender, EventArgs e)
         {
-            Invoke_NavigateToPanel(panelDreamBotManager, progressBarDreamBotManager);
-            Invoke_DisableButtonAndChangeColorToTeal(buttonNav_DreamBotManager);
-        }
-
-        //Button Click - Navigate to Break Profiles//
-        public void buttonNavigation_BreakProfiles_Click(object sender, EventArgs e)
-        {
-            Invoke_NavigateToPanel(panelBreakProfiles);
-            Invoke_DisableButtonAndChangeColorToTeal(buttonNav_BreakProfiles);
-        }
-
-        //Button Click - Navigate To Script Profiles//
-        public void buttonNavigation_ScriptProfiles_Click(object sender, EventArgs e)
-        {
-            Invoke_NavigateToPanel(panelScriptProfiles);
-            Invoke_DisableButtonAndChangeColorToTeal(buttonNav_ScriptProfiles);
-        }
-
-        //Button Click - Navigate To Settings//
-        public void buttonNavigation_Settings_Click(object sender, EventArgs e)
-        {
-            Invoke_NavigateToPanel(panelAccountsAndSettings);
-            Invoke_DisableButtonAndChangeColorToTeal(buttonNav_Settings);
+            Invoke_NavigateToPanel(kryptonPanelSettings);
+            this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_Dashboard");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_ScriptProfiles");
+            Invoke_EnableKryptonButton(this, "kryptonButtonNav_BreakProfiles");
+            Invoke_DisableKryptonButton(this, "kryptonButtonNav_Settings");
         }
 
 
@@ -539,15 +580,29 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start of Script Factory Panel//
         /////////////////////////////////
 
-        // Cell Button Click - Cli Launch
+        // Cell Btn Click - Cli Launch
         public void dataGridView_ScriptFactoryRun_CellButtonClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridViewScriptFactory.Rows.Count)
+            if (e.RowIndex >= 0 && e.RowIndex < kryptonDataGridViewDashboard_ScriptFactoryManager.Rows.Count)
             {
+                // Initialize Variables
+                string directoryPath = @"C:\Users\" + Environment.UserName + @"\OSBot\Data";
+                if (Directory.Exists(directoryPath))
+                {
+                    filesMirrorJunk = Directory.GetFiles(directoryPath, "mirror_*");
+                }
+                else
+                {
+                    // Create the missing directory
+                    Directory.CreateDirectory(directoryPath);
+
+                    // Since the directory is new, it won't have any files matching the pattern
+                    filesMirrorJunk = new string[0];
+                }
 
                 // Point to dataGridView
-                DataGridViewRow clickedRow = dataGridViewScriptFactory.Rows[e.RowIndex];
-                string account = clickedRow.Cells["dataGridViewScriptFactory_Account"].Value?.ToString();
+                DataGridViewRow clickedRow = kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[e.RowIndex];
+                string account = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactoryManager_Account"].Value?.ToString();
 
                 // Get all the currently running Java processes with their arguments and process ID.
                 var javaProcessesList = invokeMethodsPassiveMainForm.Invoke_GetJavaCommandLineArgsAndProcessId();
@@ -567,56 +622,83 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 }
 
                 // Create Cli Args
-                if (processIdToKill == -1 && e.ColumnIndex == dataGridViewScriptFactory.Columns["dataGridViewScriptFactory_Run"].Index && e.RowIndex >= 0)
+                if (processIdToKill == -1 && e.ColumnIndex == kryptonDataGridViewDashboard_ScriptFactoryManager.Columns["kryptonDataGridViewDashboard_ScriptFactory_RunStop"].Index && e.RowIndex >= 0)
                 {
                     // Initialize variables
                     string loginInfoOSBot = "-login " + textBoxSettings_OSBotUsername.Text.ToString() + ":" + textBoxSettings_OSBotPassword.Text.ToString() + " ";
-                    string mode = clickedRow.Cells["dataGridViewScriptFactory_Mode"].Value?.ToString();
-                    string newmouse = clickedRow.Cells["dataGridViewScriptFactory_NewMouse"].Value?.ToString();
-                    string password = clickedRow.Cells["dataGridViewScriptFactory_Password"].Value?.ToString();
-                    string pin = clickedRow.Cells["dataGridViewScriptFactory_Pin"].Value?.ToString();
-                    string proxy = clickedRow.Cells["dataGridViewScriptFactory_Proxy"].Value?.ToString();
-                    string sandboxie = clickedRow.Cells["dataGridViewScriptFactory_Sandboxie"].Value?.ToString();
-                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["dataGridViewScriptFactory_SandboxieNumber"].Value?.ToString();
-                    string script = clickedRow.Cells["dataGridViewScriptFactory_Script"].Value?.ToString();
-                    string task = clickedRow.Cells["dataGridViewScriptFactory_Task"].Value?.ToString();
-                    string world = clickedRow.Cells["dataGridViewScriptFactory_World"].Value?.ToString();
+                    string lowCpu = "";
+                    string lowResource = "";
+                    string mirror = "";
+                    string newMouse = "";
+                    string noInterface = "";
+                    string noRender = "";
+                    string password = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_Password"].Value?.ToString();
+                    string pin = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_Pin"].Value?.ToString();
+                    string proxy = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_Proxy"].Value?.ToString();
+                    string sandboxie = "No";
+                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber"].Value?.ToString();
+                    string script = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory"].Value?.ToString();
+                    string task = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_Script"].Value?.ToString();
+                    string world = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_World"].Value?.ToString();
 
-                    //Set BotCli variables
+                    // Set BotCli variables
                     botcli = "-bot " + account + ":" + password + ":" + (string.IsNullOrWhiteSpace(pin) ? "1234" : pin) + " ";
 
-                    //Set Mode Variable
-                    mode = (mode == "Mirror" ? "-mirror " : "");
-
-                    //Set NewMouse Variable
-                    newmouse = (newmouse == "Yes" ? "-newmouse " : "");
-
-                    //Set Proxy Variable
+                    // Set Proxy Variable
                     proxy = string.IsNullOrWhiteSpace(proxy) || proxy == "IP:PORT:USER:PASS" ? "" : "-proxy " + proxy + " ";
 
-                    //Set Script Variable
-                    script = new Dictionary<string, string> { { "SF I", "1097" }, { "SF II", "1214" }, { "SF Pro", "1163" }, { "SF Exp", "1144" } }.TryGetValue(script, out var mappedValue) ? $"-script {mappedValue}:{task} " : script;
+                    // Set Script Variable
+                    script = new Dictionary<string, string> { { "SF I", "1097" }, { "SF II", "1214" }, { "SF Pro", "1163" }, { "SF Expansion", "1144" } }.TryGetValue(script, out var mappedValue) ? $"-script {mappedValue}:{task} " : script;
 
-                    //Set World Variable
+                    // Set World Variable
                     Random rnd = new Random();
 
                     Dictionary<string, int[]> worldMap = new Dictionary<string, int[]>
-                {
-                    { "-F2P-", new int[] { 301, 308, 316, 326, 335, 371, 380, 382, 383, 384, 394, 397, 398, 399, 417, 418, 430, 431, 433, 434, 435, 436, 437, 451, 452, 453, 454, 455, 456, 469, 470, 471, 475, 476, 483, 497, 498, 499, 500, 501, 537, 542, 543, 544, 545, 546, 547, 552, 553, 554, 555, 556, 557, 562, 563, 571, 575 } },
-                    { "-P2P-", new int[] { 302, 303, 304, 305, 306, 307, 309, 310, 311, 312, 313, 314, 315, 317, 318, 319, 320, 321, 322, 323, 324, 325, 327, 328, 329, 330, 331, 332, 333, 334, 336, 337, 338, 339, 340, 341, 343, 344, 346, 347, 348, 350, 351, 352, 354, 355, 357, 358, 359, 360, 362, 367, 368, 369, 370, 374, 375, 376, 377, 378, 386, 387, 388, 389, 390, 395, 421, 422, 424, 443, 444, 445, 446, 463, 464, 465, 466, 477, 478, 480, 481, 482, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 531, 532, 533, 534, 535, 580 } }
-                };
+                    {
+                        { "-F2P-", new int[] { 301, 308, 316, 326, 335, 371, 380, 382, 383, 384, 394, 397, 398, 399, 417, 418, 430, 431, 433, 434, 435, 436, 437, 451, 452, 453, 454, 455, 456, 469, 470, 471, 475, 476, 483, 497, 498, 499, 500, 501, 537, 542, 543, 544, 545, 546, 547, 552, 553, 554, 555, 556, 557, 562, 563, 571, 575 } },
+                        { "-P2P-", new int[] { 302, 303, 304, 305, 306, 307, 309, 310, 311, 312, 313, 314, 315, 317, 318, 319, 320, 321, 322, 323, 324, 325, 327, 328, 329, 330, 331, 332, 333, 334, 336, 337, 338, 339, 340, 341, 343, 344, 346, 347, 348, 350, 351, 352, 354, 355, 357, 358, 359, 360, 362, 367, 368, 369, 370, 374, 375, 376, 377, 378, 386, 387, 388, 389, 390, 395, 421, 422, 424, 443, 444, 445, 446, 463, 464, 465, 466, 477, 478, 480, 481, 482, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 531, 532, 533, 534, 535, 580 } }
+                    };
 
                     world = worldMap.ContainsKey(world)
                         ? "-world " + worldMap[world][rnd.Next(worldMap[world].Length)] + " "
                         : "-world " + world + " ";
 
-                    //Delete Mirror Files//
+                    // Set Additional Settings Variables
+                    if (kryptonListBoxDashboard_ScriptFactoryManager_AdditionalSettings.SelectedItems.Count > 0)
+                    {
+                        Dictionary<string, Action> additionalSettingsMap = new Dictionary<string, Action>
+                        {
+                            {"Low CPU", () => lowCpu = "-allow lowcpu "},
+                            {"Low Resource", () => lowResource = "-allow lowresource "},
+                            {"Mirror", () => mirror = "-mirror -launchgame "},
+                            {"New Mouse", () => newMouse = "-newmouse "},
+                            {"No Interface", () => noInterface = "-allow nointerface "},
+                            {"No Render", () => noRender = "-allow norender "},
+                            {"Sandboxie", () => sandboxie = "Yes"}
+                        };
+
+                        // Loop Through Dictionary & Generate Output
+                        foreach (var additionalSettingsItem in kryptonListBoxDashboard_ScriptFactoryManager_AdditionalSettings.SelectedItems)
+                        {
+                            string selectedAdditionalSetting = additionalSettingsItem.ToString();
+
+                            foreach (var additionalSetting in additionalSettingsMap)
+                            {
+                                if (selectedAdditionalSetting.Contains(additionalSetting.Key))
+                                {
+                                    additionalSetting.Value.Invoke();
+                                }
+                            }
+                        }
+                    }
+
+                    // Delete Mirror Files
                     foreach (string file in filesMirrorJunk)
                     {
                         invokeMethodsActiveMainForm.Invoke_DeleteFile(file);
                     }
 
-                    //Delete Jagex Files//
+                    // Delete Jagex Files
                     invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathUsername + "jagex_cl_oldschool_LIVE.dat");
                     invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathUsername + "jagexappletviewer.preferences");
                     invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathUsername + "random.dat");
@@ -627,14 +709,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     if (sandboxie == "No")
                     {
                         // Set CliArgs Variable
-                        cliArgs = "-jar \"C:\\Users\\" + pc_username + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\" -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mode + newmouse + "-debug 0";
+                        cliArgs = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\" -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mirror + newMouse + lowCpu + lowResource + noInterface + noRender + "-closeOnInitializationError -debug 0";
 
                         // Start Cli Process
                         try
                         {
                             ProcessStartInfo psi = new ProcessStartInfo
                             {
-                                FileName = "C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe",
+                                FileName = "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\"",
                                 Arguments = cliArgs,
                                 UseShellExecute = false,
                                 CreateNoWindow = true,
@@ -660,26 +742,26 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     if (sandboxie == "Yes")
                     {
                         // Initialize Variables
-                        string folderPathSandboxieCurrent = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\";
-                        string folderPathSandboxieCurrentOSBotData = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\OSBot\\Data";
+                        string folderPathSandboxieCurrent = "C:\\Sandbox\\" + Environment.UserName.ToString() + "\\" + sandboxieNumber + "\\user\\current\\";
+                        string folderPathSandboxieCurrentOSBotData = "C:\\Sandbox\\" + Environment.UserName.ToString() + "\\" + sandboxieNumber + "\\user\\current\\OSBot\\Data";
                         var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
-                        cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe\" -jar " + "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\"" + " -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mode + newmouse + "-debug 0";
+                        cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\" -jar " + "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\"" + " -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mirror + newMouse + lowCpu + lowResource + noInterface + noRender + "-closeOnInitializationError -debug 0";
 
-                        //Create Sandbox If It Doesn't Exist
+                        // Create Sandbox If It Doesn't Exist
                         if (!enabledSandboxes.Contains(sandboxieNumber))
                         {
                             invokeMethodsActiveMainForm.Invoke_CreateSandboxFolder(sandboxieNumber, filePathSbieIni);
                             Thread.Sleep(100);
                         }
 
-                        //Delete Sandbox Files
+                        // Delete Sandbox Files
                         invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathSandboxieCurrent + "\\jagex_cl_oldschool_LIVE.dat");
                         invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathSandboxieCurrent + "\\jagexappletviewer.preferences");
                         invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathSandboxieCurrent + "\\random.dat");
                         invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathSandboxieCurrentOSBotData + "\\map.bin");
                         invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathSandboxieCurrentOSBotData + "\\map.zip");
 
-                        //Copy Jagex Cache to Sandbox
+                        // Copy Jagex Cache to Sandbox
                         invokeMethodsActiveMainForm.Invoke_CopyDirectory(folderPathJagexCache, folderPathSandboxieCurrent + "\\jagexcache", "Copied jagexcache to sandboxie");
                         invokeMethodsActiveMainForm.Invoke_CopyDirectory(folderPathOSBot, folderPathSandboxieCurrent + "\\OSBot", "Copied OSBot folder to sandboxie");
 
@@ -709,7 +791,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         Console.WriteLine("Sandboxie CLI Args: " + cliArgs);
                     }
                 }
-                else if (processIdToKill != -1 && e.ColumnIndex == dataGridViewScriptFactory.Columns["dataGridViewScriptFactory_Run"].Index && e.RowIndex >= 0)
+                else if (processIdToKill != -1 && e.ColumnIndex == kryptonDataGridViewDashboard_ScriptFactoryManager.Columns["kryptonDataGridViewDashboard_ScriptFactory_RunStop"].Index && e.RowIndex >= 0)
                 {
                     try
                     {
@@ -724,138 +806,60 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
         }
 
-        // Button Click - Launch OSBot
+        // Btn Click - Launch OSBot
         public void btnScriptFactory_LaunchOsbot_Click(object sender, EventArgs e)
         {
             string arguments = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\"";
-            invokeMethodsActiveMainForm.Invoke_LaunchJavaw("C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe", arguments);
+            invokeMethodsActiveMainForm.Invoke_LaunchJavaw("\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\"", arguments);
         }
 
-        // Button Click - Add Bot
-        public void btnScriptFactory_AddBot_Click(object sender, EventArgs e)
+        // Btn Click - Add Bot
+        public void btnScriptFactory_AddAccount_Click(object sender, EventArgs e)
         {
             // Create New Row
             DataGridViewRow newRow = new DataGridViewRow();
 
             // Add Row to DataGridView
-            int rowIndex = dataGridViewScriptFactory.Rows.Add(newRow);
+            int rowIndex = kryptonDataGridViewDashboard_ScriptFactoryManager.Rows.Add(newRow);
 
             // Set Default Values
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_Account"].Value = "ACCOUNT_EMAIL";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_Password"].Value = "PASSWORD";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_Pin"].Value = "1234";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_Proxy"].Value = "IP:PORT:USER:PASS";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_Script"].Value = "SF I";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_Task"].Value = "fxAccountBuilder";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_World"].Value = "-F2P-";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_Mode"].Value = "Stealth";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_NewMouse"].Value = "Yes";
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_Sandboxie"].Value = "No";
+            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactoryManager_Account"].Value = "ACCOUNT_EMAIL";
+            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_Password"].Value = "PASSWORD";
+            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_Pin"].Value = "1234";
+            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_Proxy"].Value = "IP:PORT:USER:PASS";
+            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory"].Value = "SF I";
+            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_Script"].Value = "fxAccountBuilder";
+            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_World"].Value = "-F2P-";
 
             // Generate a unique random number for Sandboxie
             int randomNumber = Invoke_GenerateUniqueRandomNumber();
-            dataGridViewScriptFactory.Rows[rowIndex].Cells["dataGridViewScriptFactory_SandboxieNumber"].Value = randomNumber;
+            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber"].Value = randomNumber;
         }
 
-        // Button Click - Delete Bot//
-        public void btnScriptFactory_DeleteBot_Click(object sender, EventArgs e)
+        // Btn Click - Delete Bot
+        public void btnScriptFactory_DeleteAccount_Click(object sender, EventArgs e)
         {
-            if (dataGridViewScriptFactory.SelectedRows.Count > 0)
+            // Check if any cell is currently selected
+            if (kryptonDataGridViewDashboard_ScriptFactoryManager.CurrentCell != null)
             {
-                int rowIndex = dataGridViewScriptFactory.SelectedRows[0].Index;
-                dataGridViewScriptFactory.Rows.RemoveAt(rowIndex);
+                int rowIndex = kryptonDataGridViewDashboard_ScriptFactoryManager.CurrentCell.RowIndex;
+                if (rowIndex >= 0) // Check if the rowIndex is valid
+                {
+                    kryptonDataGridViewDashboard_ScriptFactoryManager.Rows.RemoveAt(rowIndex);
+                }
             }
         }
 
-        // Button Click - Download OSBot
+        // Btn Click - Download OSBot
         public async void btnScriptFactory_DownloadOSBot_Click(object sender, EventArgs e)
         {
-            await Invoke_DownloadFileProgerssBarDisableButton(urlOSBotClient, filePathApplicationOSBotJar, progressBarScriptFactory, value => isDownloadingOSBotEventRunning = value, sender as Button);
+            await Invoke_DownloadFileProgerssBarDisableButton(urlOSBotClient, filePathApplicationOSBotJar, kryptonProgressBarGlobal, value => isDownloadingOSBotEventRunning = value, sender as KryptonButton);
         }
 
-        // Button Click - Update Scripts
-        public async void btnScriptFactory_UpdateScripts_Click(object sender, EventArgs e)
-        {
-            //Check If Event is Running
-            if (isUpdatingScriptsEventRunning)
-            {
-                MessageBox.Show("The process is already running. Please wait.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            //Set Flag & Disable Button//
-            isUpdatingScriptsEventRunning = true;
-            (sender as Button).Enabled = false;
-
-            //Initiate Progress Bar//
-            progressBarScriptFactory.Visible = true;
-            progressBarScriptFactory.Value = 0;
-            progressBarScriptFactory.Step = 20;
-
-            //Delete Folders//
-            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathScriptFactoryPrivateScriptsFushigiBot);
-            progressBarScriptFactory.PerformStep();
-
-            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempFushigiBot);
-            progressBarScriptFactory.PerformStep();
-
-            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempFushigiBotZip);
-            progressBarScriptFactory.PerformStep();
-
-            invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathJivaroTempFushigiBotZip);
-            progressBarScriptFactory.PerformStep();
-
-            // Zip File Handler
-            try
-            {
-                //Download the .zip file//
-                using (HttpClient client = new HttpClient())
-                {
-                    var response = await client.GetAsync(urlFushigiBotScripts);
-                    using (FileStream fs = new FileStream(folderPathJivaroTempFushigiBotZip, FileMode.Create))
-                    {
-                        await response.Content.CopyToAsync(fs);
-                    }
-                }
-                progressBarScriptFactory.PerformStep();
-
-                //Unzip//
-                ZipFile.ExtractToDirectory(folderPathJivaroTempFushigiBotZip, folderPathJivaroTempFushigiBot);
-                progressBarScriptFactory.PerformStep();
-
-                //Move the Unzipped Folder//
-                Directory.Move(Path.Combine(folderPathJivaroTempFushigiBot), folderPathScriptFactoryPrivateScriptsFushigiBot);
-                progressBarScriptFactory.PerformStep();
-            }
-            catch (DirectoryNotFoundException dirEx)
-            {
-                MessageBox.Show($"Error: {dirEx.Message}. Please ensure that the directory structure in the zip file matches expectations.", "Directory Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            // Cleanup
-            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempFushigiBot);
-            progressBarScriptFactory.PerformStep();
-
-            invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathJivaroTempFushigiBotZip);
-            progressBarScriptFactory.PerformStep();
-
-            //Hide The Progress Bar//
-            progressBarScriptFactory.Value = 0;
-            progressBarScriptFactory.Visible = false;
-
-            //Reset Flag & Re-Enable Button//
-            isUpdatingScriptsEventRunning = false;
-            (sender as Button).Enabled = true;
-        }
-
-        // Button Click - Save
+        // Btn Click - Save
         public void btnScriptFactory_Save_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(dataGridViewScriptFactory, filePathApplicationDataAccountsScriptFactory);
+            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(kryptonDataGridViewDashboard_ScriptFactoryManager, filePathApplicationDataAccountsScriptFactory);
         }
 
         ///////////////////////////////
@@ -872,15 +876,29 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start of OSBot Manager Panel//
         ////////////////////////////////
 
-        // Cell Button Click - CLI Launch
+        // Cell Btn Click - CLI Launch
         public void dataGridView_OSBotRun_CellButtonClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridViewOSBotManager.Rows.Count)
+            if (e.RowIndex >= 0 && e.RowIndex < kryptonDataGridViewDashboard_OSBotManager.Rows.Count)
             {
+                // Initialize Variables
+                string directoryPath = @"C:\Users\" + Environment.UserName + @"\OSBot\Data";
+                if (Directory.Exists(directoryPath))
+                {
+                    filesMirrorJunk = Directory.GetFiles(directoryPath, "mirror_*");
+                }
+                else
+                {
+                    // Create the missing directory
+                    Directory.CreateDirectory(directoryPath);
+
+                    // Since the directory is new, it won't have any files matching the pattern
+                    filesMirrorJunk = new string[0];
+                }
 
                 // Point to dataGridView
-                DataGridViewRow clickedRow = dataGridViewOSBotManager.Rows[e.RowIndex];
-                string account = clickedRow.Cells["dataGridViewOSBotManager_Account"].Value?.ToString();
+                DataGridViewRow clickedRow = kryptonDataGridViewDashboard_OSBotManager.Rows[e.RowIndex];
+                string account = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Account"].Value?.ToString();
 
                 // Get all the currently running Java processes with their arguments and process ID.
                 var javaProcessesList = invokeMethodsPassiveMainForm.Invoke_GetJavaCommandLineArgsAndProcessId();
@@ -899,57 +917,91 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     }
                 }
 
-                if (processIdToKill == -1 && e.ColumnIndex == dataGridViewOSBotManager.Columns["dataGridViewOSBotManager_Run"].Index && e.RowIndex >= 0)
+                if (processIdToKill == -1 && e.ColumnIndex == kryptonDataGridViewDashboard_OSBotManager.Columns["kryptonDataGridViewDashboard_OSBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
 
                     // Initialize Variables
                     string loginInfoOSBot = "-login " + textBoxSettings_OSBotUsername.Text.ToString() + ":" + textBoxSettings_OSBotPassword.Text.ToString() + " ";
-                    string mode = clickedRow.Cells["dataGridViewOSBotManager_Mode"].Value?.ToString();
-                    string newmouse = clickedRow.Cells["dataGridViewOSBotManager_NewMouse"].Value?.ToString();
-                    string password = clickedRow.Cells["dataGridViewOSBotManager_Password"].Value?.ToString();
-                    string pin = clickedRow.Cells["dataGridViewOSBotManager_Pin"].Value?.ToString();
-                    string proxy = clickedRow.Cells["dataGridViewOSBotManager_Proxy"].Value?.ToString();
-                    string sandboxie = clickedRow.Cells["dataGridViewOSBotManager_Sandboxie"].Value?.ToString();
-                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["dataGridViewOSBotManager_SandboxieNumber"].Value?.ToString();
-                    string script = clickedRow.Cells["dataGridViewOSBotManager_Script"].Value?.ToString();
-                    string scriptArgs = clickedRow.Cells["dataGridViewOSBotManager_Args"].Value?.ToString();
-                    string world = clickedRow.Cells["dataGridViewOSBotManager_World"].Value?.ToString();
+                    string lowCpu = "";
+                    string lowResource = "";
+                    string mirror = "";
+                    string newMouse = "";
+                    string noInterface = "";
+                    string noRender = "";
+                    string password = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Password"].Value?.ToString();
+                    string pin = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Pin"].Value?.ToString();
+                    string proxy = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Proxy"].Value?.ToString();
+                    string sandboxie = "No";
+                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_SandboxieNumber"].Value?.ToString();
+                    string script = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Script"].Value?.ToString();
+                    string scriptArgs = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Args"].Value?.ToString();
+                    string world = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_World"].Value?.ToString();
 
                     // Set BotCli Variable
                     botcli = "-bot " + account + ":" + password + ":" + (string.IsNullOrWhiteSpace(pin) ? "1234" : pin) + " ";
-
-                    // Set Mode Variable
-                    mode = mode == "Mirror" ? "-mirror " : "";
-
-                    // Set NewMouse Variable
-                    newmouse = newmouse == "Yes" ? "-newmouse " : "";
 
                     // Set Proxy Variable
                     proxy = string.IsNullOrWhiteSpace(proxy) || proxy == "IP:PORT:USER:PASS" ? "" : "-proxy " + proxy + " ";
 
                     // Set Script Variable
-                    script = "-script " + Regex.Replace(script, "\\D", "") + ":" + scriptArgs + " ";
+                    if (Regex.IsMatch(script, @" - \d+"))
+                    {
+                        script = "-script " + Regex.Replace(script, "\\D", "") + ":" + scriptArgs + " ";
+                    }
+                    else
+                    {
+                        script = "-script " + script + ":" + scriptArgs + " ";
+                    }
 
                     // Set World Variable
                     Random rnd = new Random();
 
                     Dictionary<string, int[]> worldMap = new Dictionary<string, int[]>
-                {
-                    { "-F2P-", new int[] { 301, 308, 316, 326, 335, 371, 380, 382, 383, 384, 394, 397, 398, 399, 417, 418, 430, 431, 433, 434, 435, 436, 437, 451, 452, 453, 454, 455, 456, 469, 470, 471, 475, 476, 483, 497, 498, 499, 500, 501, 537, 542, 543, 544, 545, 546, 547, 552, 553, 554, 555, 556, 557, 562, 563, 571, 575 } },
-                    { "-P2P-", new int[] { 302, 303, 304, 305, 306, 307, 309, 310, 311, 312, 313, 314, 315, 317, 318, 319, 320, 321, 322, 323, 324, 325, 327, 328, 329, 330, 331, 332, 333, 334, 336, 337, 338, 339, 340, 341, 343, 344, 346, 347, 348, 350, 351, 352, 354, 355, 357, 358, 359, 360, 362, 367, 368, 369, 370, 374, 375, 376, 377, 378, 386, 387, 388, 389, 390, 395, 421, 422, 424, 443, 444, 445, 446, 463, 464, 465, 466, 477, 478, 480, 481, 482, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 531, 532, 533, 534, 535, 580 } }
-                };
+                    {
+                        { "-F2P-", new int[] { 301, 308, 316, 326, 335, 371, 380, 382, 383, 384, 394, 397, 398, 399, 417, 418, 430, 431, 433, 434, 435, 436, 437, 451, 452, 453, 454, 455, 456, 469, 470, 471, 475, 476, 483, 497, 498, 499, 500, 501, 537, 542, 543, 544, 545, 546, 547, 552, 553, 554, 555, 556, 557, 562, 563, 571, 575 } },
+                        { "-P2P-", new int[] { 302, 303, 304, 305, 306, 307, 309, 310, 311, 312, 313, 314, 315, 317, 318, 319, 320, 321, 322, 323, 324, 325, 327, 328, 329, 330, 331, 332, 333, 334, 336, 337, 338, 339, 340, 341, 343, 344, 346, 347, 348, 350, 351, 352, 354, 355, 357, 358, 359, 360, 362, 367, 368, 369, 370, 374, 375, 376, 377, 378, 386, 387, 388, 389, 390, 395, 421, 422, 424, 443, 444, 445, 446, 463, 464, 465, 466, 477, 478, 480, 481, 482, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 531, 532, 533, 534, 535, 580 } }
+                    };
 
                     world = worldMap.ContainsKey(world)
                         ? "-world " + worldMap[world][rnd.Next(worldMap[world].Length)] + " "
                         : "-world " + world + " ";
 
-                    //Delete Mirror Files//
+                    // Set Additional Settings Variables
+                    if (kryptonListBoxDashboard_OSBotManager_AdditionalSettings.SelectedItems.Count > 0)
+                    {
+                        Dictionary<string, Action> additionalSettingsMap = new Dictionary<string, Action>
+                        {
+                            {"Low CPU", () => lowCpu = "-allow lowcpu "},
+                            {"Low Resource", () => lowResource = "-allow lowresource "},
+                            {"Mirror", () => mirror = "-mirror -launchgame "},
+                            {"New Mouse", () => newMouse = "-newmouse "},
+                            {"No Interface", () => noInterface = "-allow nointerface "},
+                            {"No Render", () => noRender = "-allow norender "},
+                            {"Sandboxie", () => sandboxie = "Yes"}
+                        };
+
+                        // Loop Through Dictionary & Generate Output
+                        foreach (var additionalSettingsItem in kryptonListBoxDashboard_OSBotManager_AdditionalSettings.SelectedItems)
+                        {
+                            string selectedAdditionalSetting = additionalSettingsItem.ToString();
+
+                            foreach (var additionalSetting in additionalSettingsMap)
+                            {
+                                if (selectedAdditionalSetting.Contains(additionalSetting.Key))
+                                {
+                                    additionalSetting.Value.Invoke();
+                                }
+                            }
+                        }
+                    }
+
+                    // Delete Mirror Files
                     foreach (string file in filesMirrorJunk)
                     {
                         invokeMethodsActiveMainForm.Invoke_DeleteFile(file);
                     }
 
-                    //Delete Jagex Files//
+                    // Delete Jagex Files
                     invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathUsername + "jagex_cl_oldschool_LIVE.dat");
                     invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathUsername + "jagexappletviewer.preferences");
                     invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathUsername + "random.dat");
@@ -959,15 +1011,15 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     ///////////////////////
                     if (sandboxie == "No")
                     {
-                        //Set CliArgs Variable//
-                        cliArgs = "-jar \"C:\\Users\\" + pc_username + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\" -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mode + newmouse + "-debug 0";
+                        // Set CliArgs Variable
+                        cliArgs = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\" -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mirror + newMouse + lowCpu + lowResource + noInterface + noRender + "-closeOnInitializationError -debug 0";
 
                         // Start Cli Process
                         try
                         {
                             ProcessStartInfo psi = new ProcessStartInfo
                             {
-                                FileName = "C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe",
+                                FileName = "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\"",
                                 Arguments = cliArgs,
                                 UseShellExecute = false,
                                 CreateNoWindow = true,
@@ -993,10 +1045,10 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     if (sandboxie == "Yes")
                     {
                         //Initialize Variables
-                        string folderPathSandboxieCurrent = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\";
-                        string folderPathSandboxieCurrentOSBotData = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\OSBot\\Data";
+                        string folderPathSandboxieCurrent = "C:\\Sandbox\\" + Environment.UserName.ToString() + "\\" + sandboxieNumber + "\\user\\current\\";
+                        string folderPathSandboxieCurrentOSBotData = "C:\\Sandbox\\" + Environment.UserName.ToString() + "\\" + sandboxieNumber + "\\user\\current\\OSBot\\Data";
                         var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
-                        cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe\" -jar " + "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\"" + " -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mode + newmouse + "-debug 0";
+                        cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\" -jar " + "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\"" + " -launchgame -mfps 25 -mreactiontime 50 " + loginInfoOSBot + botcli + proxy + script + world + mirror + newMouse + lowCpu + lowResource + noInterface + noRender + "-closeOnInitializationError -debug 0";
 
                         // Create Sandbox If It Doesn't Exist
                         if (!enabledSandboxes.Contains(sandboxieNumber))
@@ -1042,7 +1094,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         Console.WriteLine("Sandboxie CLI Args: " + cliArgs);
                     }
                 }
-                else if (processIdToKill != -1 && e.ColumnIndex == dataGridViewOSBotManager.Columns["dataGridViewOSBotManager_Run"].Index && e.RowIndex >= 0)
+                else if (processIdToKill != -1 && e.ColumnIndex == kryptonDataGridViewDashboard_OSBotManager.Columns["kryptonDataGridViewDashboard_OSBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
                     try
                     {
@@ -1057,59 +1109,60 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
         }
 
-        // Button Click - Launch OSBot
+        // Btn Click - Launch OSBot
         public void btnOSBotManager_LaunchOsbot_Click(object sender, EventArgs e)
         {
             string arguments = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\OSBot.jar\"";
-            invokeMethodsActiveMainForm.Invoke_LaunchJavaw("C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe", arguments);
+            invokeMethodsActiveMainForm.Invoke_LaunchJavaw("\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\"", arguments);
         }
 
-        // Button Click - Add Bot
-        public void btnOSBotManager_AddBot_Click(object sender, EventArgs e)
+        // Btn Click - Add Bot
+        public void btnOSBotManager_AddAccount_Click(object sender, EventArgs e)
         {
             // Create New Row
             DataGridViewRow newRow = new DataGridViewRow();
 
             // Add Row to DataGridView
-            int rowIndex = dataGridViewOSBotManager.Rows.Add(newRow);
+            int rowIndex = kryptonDataGridViewDashboard_OSBotManager.Rows.Add(newRow);
 
             // Set Default Values
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_Account"].Value = "ACCOUNT_EMAIL";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_Password"].Value = "PASSWORD";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_Pin"].Value = "1234";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_Script"].Value = "Excellent Dragons - 898";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_Args"].Value = "SCRIPT_ARGS";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_World"].Value = "-F2P-";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_Mode"].Value = "Stealth";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_NewMouse"].Value = "Yes";
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_Sandboxie"].Value = "No";
+            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Account"].Value = "ACCOUNT_EMAIL";
+            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Password"].Value = "PASSWORD";
+            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Pin"].Value = "1234";
+            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
+            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Script"].Value = "Excellent Dragons - 898";
+            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Args"].Value = "SCRIPT_ARGS";
+            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_World"].Value = "-F2P-";
 
             // Generate a unique random number for Sandboxie
             int randomNumber = Invoke_GenerateUniqueRandomNumber();
-            dataGridViewOSBotManager.Rows[rowIndex].Cells["dataGridViewOSBotManager_SandboxieNumber"].Value = randomNumber;
+            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_SandboxieNumber"].Value = randomNumber;
         }
 
-        // Button Click - Delete Bot
-        public void btnOSBotManager_DeleteBot_Click(object sender, EventArgs e)
+        // Btn Click - Delete Bot
+        public void btnOSBotManager_DeleteAccount_Click(object sender, EventArgs e)
         {
-            if (dataGridViewOSBotManager.SelectedRows.Count > 0)
+            // Check if any cell is currently selected
+            if (kryptonDataGridViewDashboard_OSBotManager.CurrentCell != null)
             {
-                int rowIndex = dataGridViewOSBotManager.SelectedRows[0].Index;
-                dataGridViewOSBotManager.Rows.RemoveAt(rowIndex);
+                int rowIndex = kryptonDataGridViewDashboard_OSBotManager.CurrentCell.RowIndex;
+                if (rowIndex >= 0) // Check if the rowIndex is valid
+                {
+                    kryptonDataGridViewDashboard_OSBotManager.Rows.RemoveAt(rowIndex);
+                }
             }
         }
 
-        // Button Click - Download OSBot
+        // Btn Click - Download OSBot
         public async void btnOSBotManager_DownloadOSBot_Click(object sender, EventArgs e)
         {
-            await Invoke_DownloadFileProgerssBarDisableButton(urlOSBotClient, filePathApplicationOSBotJar, progressBarOSBotManager, value => isDownloadingOSBotEventRunning = value, sender as Button);
+            await Invoke_DownloadFileProgerssBarDisableButton(urlOSBotClient, filePathApplicationOSBotJar, kryptonProgressBarGlobal, value => isDownloadingOSBotEventRunning = value, sender as KryptonButton);
         }
 
-        // Button Click - Save
+        // Btn Click - Save
         public void btnOSBotManager_Save_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(dataGridViewOSBotManager, filePathApplicationDataAccountsOSBot);
+            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(kryptonDataGridViewDashboard_OSBotManager, filePathApplicationDataAccountsOSBot);
         }
 
         //////////////////////////////
@@ -1126,15 +1179,15 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start of DreamBot Manager Panel//
         ///////////////////////////////////
 
-        // OSBot Manager Panel - CLI Launch
+        // DreamBot Manager Panel - CLI Launch
         public void dataGridView_DreamBotRun_CellButtonClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridViewDreamBotManager.Rows.Count)
+            if (e.RowIndex >= 0 && e.RowIndex < kryptonDataGridViewDashboard_DreamBotManager.Rows.Count)
             {
 
                 // Point to dataGridView
-                DataGridViewRow clickedRow = dataGridViewDreamBotManager.Rows[e.RowIndex];
-                string account = clickedRow.Cells["dataGridViewDreamBotManager_Account"].Value?.ToString();
+                DataGridViewRow clickedRow = kryptonDataGridViewDashboard_DreamBotManager.Rows[e.RowIndex];
+                string account = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Account"].Value?.ToString();
 
                 // Get all the currently running Java processes with their arguments and process ID.
                 var javaProcessesList = invokeMethodsPassiveMainForm.Invoke_GetJavaCommandLineArgsAndProcessId();
@@ -1153,43 +1206,70 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     }
                 }
 
-                //Create Cli Args//
-                if (processIdToKill == -1 && e.ColumnIndex == dataGridViewDreamBotManager.Columns["dataGridViewDreamBotManager_Run"].Index && e.RowIndex >= 0)
+                // Create Cli Args
+                if (processIdToKill == -1 && e.ColumnIndex == kryptonDataGridViewDashboard_DreamBotManager.Columns["kryptonDataGridViewDashboard_DreamBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
 
-                    //Initialize Variables//
+                    // Initialize Variables
+                    string breaks = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Breaks"].Value?.ToString();
+                    string covert = "-no-covert ";
+                    string freshStart = "-no-fresh ";
+                    string layout = "-layout fixed ";
                     string loginInfoDreamBot = "-username " + textBoxSettings_DreamBotUsername.Text.ToString() + " " + "-password " + textBoxSettings_DreamBotPassword.Text.ToString() + " ";
-                    string password = "-accountPassword " + clickedRow.Cells["dataGridViewDreamBotManager_Password"].Value?.ToString() + " ";
-                    string pin = clickedRow.Cells["dataGridViewDreamBotManager_Pin"].Value?.ToString();
-                    string breaks = clickedRow.Cells["dataGridViewDreamBotManager_Breaks"].Value?.ToString();
-                    string mode = clickedRow.Cells["dataGridViewDreamBotManager_Mode"].Value?.ToString();
-                    string proxy = clickedRow.Cells["dataGridViewDreamBotManager_Proxy"].Value?.ToString();
-                    string sandboxie = clickedRow.Cells["dataGridViewDreamBotManager_Sandboxie"].Value?.ToString();
-                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["dataGridViewDreamBotManager_SandboxieNumber"].Value?.ToString();
-                    string script = "-script " + "\"" + clickedRow.Cells["dataGridViewDreamBotManager_Script"].Value?.ToString() + "\"" + " ";
-                    string scriptArgs = clickedRow.Cells["dataGridViewDreamBotManager_Args"].Value?.ToString();
-                    string world = "-world " + clickedRow.Cells["dataGridViewDreamBotManager_World"].Value?.ToString() + " ";
+                    string password = "-accountPassword " + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Password"].Value?.ToString() + " ";
+                    string pin = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Pin"].Value?.ToString();
+                    string proxy = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Proxy"].Value?.ToString();
+                    string render = "-render all ";
+                    string sandboxie = "No";
+                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_SandboxieNumber"].Value?.ToString();
+                    string script = "-script " + "\"" + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Script"].Value?.ToString() + "\"" + " ";
+                    string scriptParams = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Args"].Value?.ToString();
+                    string world = "-world " + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_World"].Value?.ToString() + " ";
 
                     // Initialize the mode mappings
                     var modeMappings = new Dictionary<string, string> { { "Normal - Render", "-no-covert -render all " }, { "Normal - No Render", "-no-covert -render none " }, { "Covert - Render", "-covert -render all " }, { "Covert - No Render", "-covert -render none " } };
 
                     // Set account variable
-                    account = "-accountUsername " + clickedRow.Cells["dataGridViewDreamBotManager_Account"].Value?.ToString() + " ";
+                    account = "-accountUsername " + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Account"].Value?.ToString() + " ";
 
                     // Set Pin Variable
                     pin = string.IsNullOrWhiteSpace(pin) ? "-accountPin 1234 " : "-accountPin " + pin + " ";
 
                     // Set Breaks Variable
-                    breaks = string.IsNullOrWhiteSpace(breaks) ? "" : "-breaks " + breaks + " ";
-
-                    // Set Mode Variable using dictionary
-                    mode = modeMappings.ContainsKey(mode) ? modeMappings[mode] : "";
+                    breaks = string.IsNullOrWhiteSpace(breaks) || breaks == "BREAK_NICKNAME" ? "" : "-breaks " + breaks + " ";
 
                     // Set Proxy Variable
                     proxy = string.IsNullOrWhiteSpace(proxy) || proxy == "IP:PORT:USER:PASS" ? "" : "-proxy " + proxy + " ";
 
-                    // Set ScriptArgs Variable
-                    scriptArgs = string.IsNullOrWhiteSpace(scriptArgs) ? "" : "-params " + scriptArgs + " ";
+                    // Set scriptParams Variable
+                    scriptParams = string.IsNullOrWhiteSpace(scriptParams) ? "" : "-params " + scriptParams + " ";
+
+                    // Set Additional Settings Variables
+                    if (kryptonListBoxDashboard_DreamBotManager_AdditionalSettings.SelectedItems.Count > 0)
+                    {
+                        Dictionary<string, Action> additionalSettingsMap = new Dictionary<string, Action>
+                        {
+                            {"Covert", () => covert = "-covert "},
+                            {"Fresh Start", () => freshStart = "-fresh "},
+                            {"No Render", () => render = "-render none "},
+                            {"Resizable Mode", () => layout = "-layout resizable_modern "},
+                            {"Sandboxie", () => sandboxie = "Yes"}
+                        };
+
+                        // Loop Through Dictionary & Generate Output
+                        foreach (var additionalSettingsItem in kryptonListBoxDashboard_DreamBotManager_AdditionalSettings.SelectedItems)
+                        {
+                            string selectedAdditionalSetting = additionalSettingsItem.ToString();
+
+                            foreach (var additionalSetting in additionalSettingsMap)
+                            {
+                                if (selectedAdditionalSetting.Contains(additionalSetting.Key))
+                                {
+                                    additionalSetting.Value.Invoke();
+                                }
+                            }
+                        }
+                    }
 
                     ///////////////////////
                     //No Sandboxie Launch//
@@ -1197,14 +1277,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     if (sandboxie == "No")
                     {
                         //Initialize CliArgs Variable//
-                        cliArgs = "-jar \"C:\\Users\\" + pc_username + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptArgs + breaks + world + mode + "-fresh " + "-fps 25";
+                        cliArgs = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptParams + breaks + world + covert + freshStart + render + layout + "-fps 25";
 
                         // Start Cli Process
                         try
                         {
                             ProcessStartInfo psi = new ProcessStartInfo
                             {
-                                FileName = "C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe",
+                                FileName = "\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\"",
                                 Arguments = cliArgs,
                                 UseShellExecute = false,
                                 CreateNoWindow = true,
@@ -1229,10 +1309,9 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     ///////////////////////
                     if (sandboxie == "Yes")
                     {
-                        //Initialize Variables//
-                        string folderPathSandboxieCurrent = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\";
+                        // Initialize Variables
                         var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
-                        cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe\" -jar \"C:\\Users\\" + pc_username + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptArgs + breaks + world + mode + "-fresh " + "-fps 25";
+                        cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\" -jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptParams + breaks + world + covert + freshStart + render + layout + "-fps 25";
 
                         //Create Sandbox If It Doesn't Exist//
                         if (!enabledSandboxes.Contains(sandboxieNumber))
@@ -1241,7 +1320,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                             Thread.Sleep(100);
                         }
 
-                        //Execute Cli Args//
+                        // Execute Cli Args
                         ProcessStartInfo startInfo = new ProcessStartInfo
                         {
                             FileName = filePathSandboxieStartExe,
@@ -1261,7 +1340,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         }
                     }
                 }
-                else if (processIdToKill != -1 && e.ColumnIndex == dataGridViewDreamBotManager.Columns["dataGridViewDreamBotManager_Run"].Index && e.RowIndex >= 0)
+                else if (processIdToKill != -1 && e.ColumnIndex == kryptonDataGridViewDashboard_DreamBotManager.Columns["kryptonDataGridViewDashboard_DreamBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
                     try
                     {
@@ -1276,59 +1355,61 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
         }
 
-        // Button Click - Launch DreamBot
+        // Btn Click - Launch DreamBot
         public void btnDreamBotManager_LaunchDreamBot_Click(object sender, EventArgs e)
         {
             string arguments = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\DreamBot.jar\"";
-            invokeMethodsActiveMainForm.Invoke_LaunchJavaw("C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe", arguments);
+            invokeMethodsActiveMainForm.Invoke_LaunchJavaw("\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\"", arguments);
         }
 
-        // Button Click - Add Bot
-        public void btnDreamBotManager_AddBot_Click(object sender, EventArgs e)
+        // Btn Click - Add Bot
+        public void btnDreamBotManager_AddAccount_Click(object sender, EventArgs e)
         {
             // Create New Row
             DataGridViewRow newRow = new DataGridViewRow();
 
             // Add Row to DataGridView
-            int rowIndex = dataGridViewDreamBotManager.Rows.Add(newRow);
+            int rowIndex = kryptonDataGridViewDashboard_DreamBotManager.Rows.Add(newRow);
 
             // Set Default Values
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Account"].Value = "ACCOUNT_EMAIL";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Password"].Value = "PASSWORD";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Pin"].Value = "1234";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Script"].Value = "0x's Aerial Fish Catcher";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Args"].Value = "SCRIPT_ARGS";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Breaks"].Value = "BREAK_NICKNAME";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_World"].Value = "f2p";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Mode"].Value = "Covert - Render";
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_Sandboxie"].Value = "No";
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Account"].Value = "ACCOUNT_EMAIL";
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Password"].Value = "PASSWORD";
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Pin"].Value = "1234";
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Script"].Value = "0x's Aerial Fish Catcher";
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Args"].Value = "SCRIPT_ARGS";
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Breaks"].Value = "BREAK_NICKNAME";
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_World"].Value = "f2p";
 
             // Generate a unique random number for Sandboxie
             int randomNumber = Invoke_GenerateUniqueRandomNumber();
-            dataGridViewDreamBotManager.Rows[rowIndex].Cells["dataGridViewDreamBotManager_SandboxieNumber"].Value = randomNumber;
+            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_SandboxieNumber"].Value = randomNumber;
         }
 
-        // Button Click - Delete Bot
-        public void btnDreamBotManager_DeleteBot_Click(object sender, EventArgs e)
+        // Btn Click - Delete Bot
+        public void btnDreamBotManager_DeleteAccount_Click(object sender, EventArgs e)
         {
-            if (dataGridViewDreamBotManager.SelectedRows.Count > 0)
+            // Check if any cell is currently selected
+            if (kryptonDataGridViewDashboard_DreamBotManager.CurrentCell != null)
             {
-                int rowIndex = dataGridViewDreamBotManager.SelectedRows[0].Index;
-                dataGridViewDreamBotManager.Rows.RemoveAt(rowIndex);
+                int rowIndex = kryptonDataGridViewDashboard_DreamBotManager.CurrentCell.RowIndex;
+                if (rowIndex >= 0) // Check if the rowIndex is valid
+                {
+                    kryptonDataGridViewDashboard_DreamBotManager.Rows.RemoveAt(rowIndex);
+                }
             }
         }
 
-        // Button Click - Download DreamBot
+        // Btn Click - Download DreamBot
         public async void btnDreamBotManager_DownloadDreamBot_Click(object sender, EventArgs e)
         {
-            await Invoke_DownloadFileProgerssBarDisableButton(urlDreamBotClient, filePathApplicationDreamBotJar, progressBarDreamBotManager, value => isDownloadingDreamBotEventRunning = value, sender as Button);
+            await Invoke_DownloadFileProgerssBarDisableButton(urlDreamBotClient, filePathApplicationDreamBotJar, kryptonProgressBarGlobal, value => isDownloadingDreamBotEventRunning = value, sender as KryptonButton);
         }
 
         // DreamBot Manager Panel - Save
         public void btnDreamBotManager_Save_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(dataGridViewDreamBotManager, filePathApplicationDataAccountsDreamBot);
+            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(kryptonDataGridViewDashboard_DreamBotManager, filePathApplicationDataAccountsDreamBot);
         }
 
         /////////////////////////////////
@@ -1345,16 +1426,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start of TRiBot Manager Panel//
         /////////////////////////////////
 
-        // Cell Button Click - Launch CLI
+        // Cell Btn Click - Launch CLI
         public void dataGridView_TRiBotRun_CellButtonClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridViewTRiBotManager.Rows.Count)
+            if (e.RowIndex >= 0 && e.RowIndex < kryptonDataGridViewDashboard_TRiBotManager.Rows.Count)
             {
 
                 // Point to dataGridView
-                DataGridViewRow clickedRow = dataGridViewTRiBotManager.Rows[e.RowIndex];
-                string account = clickedRow.Cells["dataGridViewTRiBotManager_Account"].Value?.ToString();
+                DataGridViewRow clickedRow = kryptonDataGridViewDashboard_TRiBotManager.Rows[e.RowIndex];
+                string account = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Account"].Value?.ToString();
 
                 // Get all the currently running Java processes with their arguments and process ID.
                 var javaProcessesList = invokeMethodsPassiveMainForm.Invoke_GetJavaCommandLineArgsAndProcessId();
@@ -1373,34 +1454,30 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     }
                 }
 
-                if (processIdToKill == -1 && e.ColumnIndex == dataGridViewTRiBotManager.Columns["dataGridViewTRiBotManager_Run"].Index && e.RowIndex >= 0)
+                if (processIdToKill == -1 && e.ColumnIndex == kryptonDataGridViewDashboard_TRiBotManager.Columns["kryptonDataGridViewDashboard_TRiBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
 
                     // Initialize Variables
                     string loginInfoTRiBot = "--username " + "\"" + textBoxSettings_TRiBotEmail.Text.ToString() + "\" " + "--password " + "\"" + textBoxSettings_TRiBotPassword.Text.ToString() + "\" ";
-                    string breaks = clickedRow.Cells["dataGridViewTRiBotManager_Breaks"].Value?.ToString();
-                    string password = "--charpassword " + "\"" + clickedRow.Cells["dataGridViewTRiBotManager_Password"].Value?.ToString() + "\" ";
-                    string mode = clickedRow.Cells["dataGridViewTRiBotManager_Mode"].Value?.ToString();
-                    string pin = clickedRow.Cells["dataGridViewTRiBotManager_Pin"].Value?.ToString();
-                    string proxy = clickedRow.Cells["dataGridViewTRiBotManager_Proxy"].Value?.ToString();
-                    string sandboxie = clickedRow.Cells["dataGridViewTRiBotManager_Sandboxie"].Value?.ToString();
-                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["dataGridViewTRiBotManager_SandboxieNumber"].Value?.ToString();
-                    string script = "--script \"" + clickedRow.Cells["dataGridViewTRiBotManager_Script"].Value?.ToString() + "\" ";
-                    string scriptArgs = "--scriptargs " + "\"" + clickedRow.Cells["dataGridViewTRiBotManager_Args"].Value?.ToString() + "\" ";
-                    string world = clickedRow.Cells["dataGridViewTRiBotManager_World"].Value?.ToString();
+                    string breaks = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Breaks"].Value?.ToString();
+                    string password = "--charpassword " + "\"" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Password"].Value?.ToString() + "\" ";
+                    string lookingGlass = "";
+                    string pin = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Pin"].Value?.ToString();
+                    string proxy = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Proxy"].Value?.ToString();
+                    string sandboxie = "No";
+                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_SandboxieNumber"].Value?.ToString();
+                    string script = "--script \"" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Script"].Value?.ToString() + "\" ";
+                    string scriptArgs = "--scriptargs " + "\"" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Args"].Value?.ToString() + "\" ";
+                    string world = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_World"].Value?.ToString();
 
                     // Set account variable
-                    account = "--charusername \"" + clickedRow.Cells["dataGridViewTRiBotManager_Account"].Value?.ToString() + "\" ";
+                    account = "--charusername \"" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Account"].Value?.ToString() + "\" ";
 
                     // Set pin variable
                     pin = string.IsNullOrWhiteSpace(pin) ? "" : "--charpin \"" + pin + "\" ";
 
                     // Set break profile variable
                     breaks = string.IsNullOrWhiteSpace(breaks) ? "" : "--breakprofile \"" + breaks + "\" ";
-
-                    // Set mode variable
-                    mode = mode == "Injection" ? "" :
-                    mode == "Looking Glass" ? "--lgdelay 10 --lgpath \"C:\\Users\\User\\Downloads\\OpenOSRS.jar\" " : mode;
 
                     // Set Proxy Variable
                     if (!string.IsNullOrWhiteSpace(proxy) && proxy != "IP:PORT:USER:PASS")
@@ -1435,20 +1512,44 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         ? "--charworld  \"" + worldMap[world][rnd.Next(worldMap[world].Length)] + "\" "
                         : "--charworld  \"" + world + "\" ";
 
+                    // Set Additional Settings Variables
+                    if (kryptonListBoxDashboard_TRiBotManager_AdditionalSettings.SelectedItems.Count > 0)
+                    {
+                        Dictionary<string, Action> additionalSettingsMap = new Dictionary<string, Action>
+                        {
+                            {"Looking Glass", () => lookingGlass = "--lgdelay 10 --lgpath \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\RuneLite.jar\" "},
+                            {"Sandboxie", () => sandboxie = "Yes"}
+                        };
+
+                        // Loop Through Dictionary & Generate Output
+                        foreach (var additionalSettingsItem in kryptonListBoxDashboard_TRiBotManager_AdditionalSettings.SelectedItems)
+                        {
+                            string selectedAdditionalSetting = additionalSettingsItem.ToString();
+
+                            foreach (var additionalSetting in additionalSettingsMap)
+                            {
+                                if (selectedAdditionalSetting.Contains(additionalSetting.Key))
+                                {
+                                    additionalSetting.Value.Invoke();
+                                }
+                            }
+                        }
+                    }
+
                     ///////////////////////
                     //No Sandboxie Launch//
                     ///////////////////////
                     if (sandboxie == "No")
                     {
                         // Set CliArgs Variable
-                        cliArgs = "-jar \"C:\\Users\\" + pc_username + "\\Jivaro\\Old School RuneScape Bot Manager\\TRiBot.jar\" " + loginInfoTRiBot + account + password + pin + proxy + script + scriptArgs + breaks + world + mode;
+                        cliArgs = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\TRiBot.jar\" " + loginInfoTRiBot + account + password + pin + proxy + script + scriptArgs + breaks + world + lookingGlass;
 
                         // Start Cli Process
                         try
                         {
                             ProcessStartInfo psi = new ProcessStartInfo
                             {
-                                FileName = "C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe",
+                                FileName = "C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe",
                                 Arguments = cliArgs,
                                 UseShellExecute = false,
                                 CreateNoWindow = true,
@@ -1475,10 +1576,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     if (sandboxie == "Yes")
                     {
                         // Initialize Variables
-                        string folderPathSandboxieCurrent = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\";
-                        string folderPathSandboxieCurrentOSBotData = "C:\\Sandbox\\" + pc_username + "\\" + sandboxieNumber + "\\user\\current\\OSBot\\Data";
                         var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
-                        cliArgs = "/elevate /box:" + sandboxieNumber + " java -jar \"C:\\Users\\" + pc_username + "\\Jivaro\\Old School RuneScape Bot Manager\\TRiBot.jar\" " + loginInfoTRiBot + account + password + pin + proxy + script + scriptArgs + breaks + world + mode;
+                        cliArgs = "/elevate /box:" + sandboxieNumber + " \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\" -jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\TRiBot.jar\" " + loginInfoTRiBot + account + password + pin + proxy + script + scriptArgs + breaks + world + lookingGlass;
 
                         // Create Sandbox If It Doesn't Exist
                         if (!enabledSandboxes.Contains(sandboxieNumber))
@@ -1508,7 +1607,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         Console.WriteLine("Sandboxie CLI Args: " + cliCommand + cliArgs);
                     }
                 }
-                else if (processIdToKill != -1 && e.ColumnIndex == dataGridViewTRiBotManager.Columns["dataGridViewTRiBotManager_Run"].Index && e.RowIndex >= 0)
+                else if (processIdToKill != -1 && e.ColumnIndex == kryptonDataGridViewDashboard_TRiBotManager.Columns["kryptonDataGridViewDashboard_TRiBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
                     try
                     {
@@ -1523,59 +1622,61 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
         }
 
-        // Button Click - Launch TRiBot
+        // Btn Click - Launch TRiBot
         public void btnTRiBotManager_LaunchTRiBot_Click(object sender, EventArgs e)
         {
             string arguments = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\TRiBot.jar\"";
-            invokeMethodsActiveMainForm.Invoke_LaunchJavaw("C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe", arguments);
+            invokeMethodsActiveMainForm.Invoke_LaunchJavaw("\"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\"", arguments);
         }
 
-        // Button Click - Add Bot
-        public void btnTRiBotManager_AddBot_Click(object sender, EventArgs e)
+        // Btn Click - Add Bot
+        public void btnTRiBotManager_AddAccount_Click(object sender, EventArgs e)
         {
             // Create New Row
             DataGridViewRow newRow = new DataGridViewRow();
 
             // Add Row to DataGridView
-            int rowIndex = dataGridViewTRiBotManager.Rows.Add(newRow);
+            int rowIndex = kryptonDataGridViewDashboard_TRiBotManager.Rows.Add(newRow);
 
             // Set default values
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Account"].Value = "ACCOUNT_EMAIL";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Password"].Value = "PASSWORD";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Pin"].Value = "1234";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Script"].Value = "aAgility AIO";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Args"].Value = "SCRIPT_ARGS";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Breaks"].Value = "BREAK_NAME";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_World"].Value = "-F2P-";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Mode"].Value = "Injection";
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_Sandboxie"].Value = "No";
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Account"].Value = "ACCOUNT_EMAIL";
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Password"].Value = "PASSWORD";
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Pin"].Value = "1234";
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Script"].Value = "aAgility AIO";
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Args"].Value = "SCRIPT_ARGS";
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Breaks"].Value = "BREAK_NAME";
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_World"].Value = "-F2P-";
 
             // Generate a unique random number for Sandboxie
             int randomNumber = Invoke_GenerateUniqueRandomNumber();
-            dataGridViewTRiBotManager.Rows[rowIndex].Cells["dataGridViewTRiBotManager_SandboxieNumber"].Value = randomNumber;
+            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_SandboxieNumber"].Value = randomNumber;
         }
 
-        // Button Click - Delete Bot
-        public void btnTRiBotManager_DeleteBot_Click(object sender, EventArgs e)
+        // Btn Click - Delete Bot
+        public void btnTRiBotManager_DeleteAccount_Click(object sender, EventArgs e)
         {
-            if (dataGridViewTRiBotManager.SelectedRows.Count > 0)
+            // Check if any cell is currently selected
+            if (kryptonDataGridViewDashboard_TRiBotManager.CurrentCell != null)
             {
-                int rowIndex = dataGridViewTRiBotManager.SelectedRows[0].Index;
-                dataGridViewTRiBotManager.Rows.RemoveAt(rowIndex);
+                int rowIndex = kryptonDataGridViewDashboard_TRiBotManager.CurrentCell.RowIndex;
+                if (rowIndex >= 0) // Check if the rowIndex is valid
+                {
+                    kryptonDataGridViewDashboard_TRiBotManager.Rows.RemoveAt(rowIndex);
+                }
             }
         }
 
-        //Button Click - Download TRiBot
+        //Btn Click - Download TRiBot
         public async void btnTRiBotManager_DownloadTRiBot_Click(object sender, EventArgs e)
         {
-            await Invoke_DownloadFileProgerssBarDisableButton(urlTRiBotClient, filePathApplicationTRiBotJar, progressBarTRiBotManager, value => isDownloadingTRiBotEventRunning = value, sender as Button);
+            await Invoke_DownloadFileProgerssBarDisableButton(urlTRiBotClient, filePathApplicationTRiBotJar, kryptonProgressBarGlobal, value => isDownloadingTRiBotEventRunning = value, sender as KryptonButton);
         }
 
         // DreamBot Manager Panel - Save
         public void btnTRiBotManager_Save_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(dataGridViewTRiBotManager, filePathApplicationDataAccountsTRiBot);
+            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(kryptonDataGridViewDashboard_TRiBotManager, filePathApplicationDataAccountsTRiBot);
         }
 
         ///////////////////////////////
@@ -1592,14 +1693,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start of Break Profiles Panel//
         /////////////////////////////////
 
-        // Button Click - Save Break Profile
+        // Btn Click - Save Break Profile
         public void btnBreakProfiles_Save_Click(object sender, EventArgs e)
         {
 
             // Initialize Variables
-            string filePathScriptFactoryProfiles = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\" + comboBoxBreakProfiles_SelectBreakFilename.SelectedItem.ToString());
+            string filePathScriptFactoryProfiles = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\" + comboBoxBreakProfiles_SelectBreakFilename.SelectedItem.ToString());
             string breakFileEnableBreaks = "<Find>boolEnableBreaks:true</Find><Replace>boolEnableBreaks:false</Replace>";
-            string breakFileEnableSleepBreaks = "<Find>boolEnableSleepBreaks:true</Find><Replace>boolEnableSleepBreaks:false</Replace>";
+            string breakFileEnableSleepBreaks = "<Find>boolEnableSleepBreaks:false</Find><Replace>boolEnableSleepBreaks:false</Replace>";
             string botTime;
             string botTimeVariation;
             string breakTime;
@@ -1624,7 +1725,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // Set EnableSleepBreaks Variable
             if (checkBoxBreakProfiles_EnableSleepBreaks.Checked)
             {
-                breakFileEnableSleepBreaks = "<Find>boolEnableSleepBreaks:true</Find><Replace>boolEnableSleepBreaks:true</Replace>";
+                breakFileEnableSleepBreaks = "<Find>boolEnableSleepBreaks:false</Find><Replace>boolEnableSleepBreaks:true</Replace>";
             }
 
             // Convert Minutes to Miliseconds & Set BotTime Variable
@@ -1710,6 +1811,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 {"fxFighter-DustDevils.txt", typeof(formScriptProfilesFighterDustDevils)},
                 {"fxFighter-ElderChaosDruids.txt", typeof(formScriptProfilesFighterElderChaosDruids)},
                 {"fxFighter-Kurasks.txt", typeof(formScriptProfilesFighterKurasks)},
+                {"fxFighter-Vyres.txt", typeof(formScriptProfilesFighterVyres)},
                 {"fxFiremaking-GrandExchange.txt", typeof(formScriptProfilesFiremakingGrandExchange)},
                 {"fxFletching-Longbows.txt", typeof(formScriptProfilesFletchingLongbows)},
                 {"fxGeneric.txt", typeof(formScriptProfilesGeneric)},
@@ -1719,6 +1821,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 {"fxMagic-HouseAlcher.txt", typeof(formScriptProfilesMagicHouseAlcher)},
                 {"fxMagic-Orber.txt", typeof(formScriptProfilesMagicOrber)},
                 {"fxMiniGames-RoguesDen.txt", typeof(formScriptProfilesMiniGamesRoguesDen)},
+                {"fxMining-AIO.txt", typeof(formScriptProfilesMiningAIO)},
                 {"fxMining-MotherlodeMine.txt", typeof(formScriptProfilesMiningMotherlodeMine)},
                 {"fxMuler.txt", typeof(formScriptProfilesMuler)},
                 {"fxPrayer-GildedAltar.txt", typeof(formScriptProfilesPrayerGildedAltar)},
@@ -1757,64 +1860,134 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start of Settings Panel//
         ///////////////////////////
 
-        // Button Click - Save Login Info
-        public void btnSettings_SaveLoginInfo_Click(object sender, EventArgs e)
-        {
-            using (StreamWriter writer = new StreamWriter(filePathApplicationDataLoginInfoClients))
-            {
-                writer.WriteLine("osbot_username: " + textBoxSettings_OSBotUsername.Text);
-                writer.WriteLine("osbot_password: " + textBoxSettings_OSBotPassword.Text);
-                writer.WriteLine("dreambot_username: " + textBoxSettings_DreamBotUsername.Text);
-                writer.WriteLine("dreambot_password: " + textBoxSettings_DreamBotPassword.Text);
-                writer.WriteLine("tribot_username: " + textBoxSettings_TRiBotEmail.Text);
-                writer.WriteLine("tribot_password: " + textBoxSettings_TRiBotPassword.Text);
-            }
-            MessageBox.Show("Login info saved successfully.");
-        }
-
-        // Button Click - Install Sandboxie
-        public async void btnSettings_InstallSandboxie_Click(object sender, EventArgs e)
-        {
-            await Invoke_DownloadAndInstallFileProgerssBarDisableButton(urlSandboxiePlus, filePathJivaroTempSandboxiePlus, progressBarSettings, value => isDownloadingSandboxiePlusEventRunning = value, sender as Button);
-        }
-
-        // Button Click - Install Proxifier
-        public async void btnSettings_InstallProxifier_Click(object sender, EventArgs e)
-        {
-            await Invoke_DownloadAndInstallFileProgerssBarDisableButton(urlProxifier, filePathJivaroTempProxifier, progressBarSettings, value => isDownloadingProxifierEventRunning = value, sender as Button);
-        }
-
-        // Button Click - Install Java
-        public async void btnSettings_InstallJava_Click(object sender, EventArgs e)
-        {
-            await Invoke_DownloadAndInstallFileProgerssBarDisableButton(urlJavaRuntimeEnvironment, filePathJivaroTempJavaRuntimeEnvironment, progressBarSettings, value => isDownloadingJavaRuntimeEnvironmentEventRunning = value, sender as Button);
-        }
-
-        // Button Click - Check For Updates
+        // Btn Click - Check For Updates
         public async void btnSettings_CheckForUpdates_Click(object sender, EventArgs e)
         {
             await Invoke_CheckForUpdates(urlLatestApplicationVersion, filePathApplicationMainMiscVersion, filePathApplicationMainUpdaterExe);
         }
 
-        // Button Click - Visit Jivaro's Website
-        public void btnSettings_VisitWebsite_Click(object sender, EventArgs e)
+        // Btn Click - Create OSRS Account
+        public void btnSettings_CreateOSRSAccount_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveGlobal.Invoke_OpenLink("https://www.jivaro.net/");
+            invokeMethodsActiveGlobal.Invoke_OpenLink("https://secure.runescape.com/m=account-creation/create_account");
         }
 
-        // Button Click - Join Jivaro's Discor
+        // Btn Click - Install Sandboxie
+        public async void btnSettings_InstallSandboxie_Click(object sender, EventArgs e)
+        {
+            await Invoke_DownloadAndInstallFileProgerssBarDisableButton(urlSandboxiePlus, filePathJivaroTempSandboxiePlus, kryptonProgressBarGlobal, value => isDownloadingSandboxiePlusEventRunning = value, sender as KryptonButton);
+        }
+
+        // Btn Click - Install Proxifier
+        public async void btnSettings_InstallProxifier_Click(object sender, EventArgs e)
+        {
+            await Invoke_DownloadAndInstallFileProgerssBarDisableButton(urlProxifier, filePathJivaroTempProxifier, kryptonProgressBarGlobal, value => isDownloadingProxifierEventRunning = value, sender as KryptonButton);
+        }
+
+        // Btn Click - Download Java
+        public async void btnScriptFactory_DownloadJava_Click(object sender, EventArgs e)
+        {
+            // Check If Event is Running
+            if (isDownloadingJavaRuntimeEnvironmentEventRunning)
+            {
+                MessageBox.Show("The process is already running. Please wait.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            // Set Flag & Disable Button
+            isDownloadingJavaRuntimeEnvironmentEventRunning = true;
+            (sender as KryptonButton).Enabled = false;
+
+            // Initiate Progress Bar
+            kryptonProgressBarGlobal.Visible = true;
+            kryptonProgressBarGlobal.BringToFront();
+            kryptonProgressBarGlobal.Value = 0;
+
+            // Delete Folders
+            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempJava);
+            kryptonProgressBarGlobal.PerformStep();
+
+            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempJavaZip);
+            kryptonProgressBarGlobal.PerformStep();
+
+            invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathJivaroTempJavaZip);
+            kryptonProgressBarGlobal.PerformStep();
+
+            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathApplicationMainJava);
+            kryptonProgressBarGlobal.PerformStep();
+
+            // Zip File Handler
+            try
+            {
+                // Download the .zip file
+                using (HttpClient client = new HttpClient())
+                {
+                    var response = await client.GetAsync(urlJavaRuntimeEnvironment);
+                    using (FileStream fs = new FileStream(folderPathJivaroTempJavaZip, FileMode.Create))
+                    {
+                        await response.Content.CopyToAsync(fs);
+                    }
+                }
+                kryptonProgressBarGlobal.PerformStep();
+
+                // Unzip
+                ZipFile.ExtractToDirectory(folderPathJivaroTempJavaZip, folderPathJivaroTempJava);
+                kryptonProgressBarGlobal.PerformStep();
+
+                // Move the Unzipped Folder
+                Directory.Move(Path.Combine(folderPathJivaroTempJava), folderPathApplicationMainJava);
+                kryptonProgressBarGlobal.PerformStep();
+            }
+            catch (DirectoryNotFoundException dirEx)
+            {
+                MessageBox.Show($"Error: {dirEx.Message}. Please ensure that the directory structure in the zip file matches expectations.", "Directory Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            // Cleanup
+            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempJava);
+            kryptonProgressBarGlobal.PerformStep();
+
+            invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathJivaroTempJavaZip);
+            kryptonProgressBarGlobal.PerformStep();
+
+            //Hide The Progress Bar//
+            kryptonProgressBarGlobal.Value = 0;
+            kryptonProgressBarGlobal.Visible = false;
+
+            //Reset Flag & Re-Enable Button//
+            isDownloadingJavaRuntimeEnvironmentEventRunning = false;
+            (sender as KryptonButton).Enabled = true;
+        }
+
+        // Btn Click - Join Jivaro's Discor
         public void btnSettings_JoinDiscord_Click(object sender, EventArgs e)
         {
             invokeMethodsActiveGlobal.Invoke_OpenLink("https://discord.gg/FSzuW4mR4M");
         }
 
-        // Button Click - Open Botting Guide
+        // Btn Click - Kill All Bots
+        public void btnSettings_KillAllBots_Click(object sender, EventArgs e)
+        {
+            invokeMethodsActiveMainForm.Invoke_KillAllBots(sender, e);
+        }
+
+        // Btn Click - Open Jivaro's Website
+        public void btnSettings_VisitWebsite_Click(object sender, EventArgs e)
+        {
+            invokeMethodsActiveGlobal.Invoke_OpenLink("https://www.jivaro.net/");
+        }
+
+        // Btn Click - Open Botting Guide's Webpage
         public void btnSettings_BottingGuide_Click(object sender, EventArgs e)
         {
             invokeMethodsActiveGlobal.Invoke_OpenLink("https://www.jivaro.net/media/guides/the-ultimate-guide-to-botting-old-school-runescape");
         }
 
-        // Button Click - Open Buy Proxies
+        // Btn Click - Open Buy Proxies' Webpage
         public void btnSettings_BuyProxies_Click(object sender, EventArgs e)
         {
             // Check if ProxyChoiceForm is already open
@@ -1825,22 +1998,149 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
         }
 
-        // Button Click - Create OSRS Account
-        public void btnSettings_CreateOSRSAccount_Click(object sender, EventArgs e)
-        {
-            invokeMethodsActiveGlobal.Invoke_OpenLink("https://secure.runescape.com/m=account-creation/create_account");
-        }
-
-        // Button Click - Open Setup Guide
+        // Btn Click - Open Setup Guide
         public void btnSettings_SetupGuide_Click(object sender, EventArgs e)
         {
             invokeMethodsActiveGlobal.Invoke_OpenLink("https://jivaro.net/osrs-botting/set-up-guide");
         }
 
-        // Button Click - Kill All Bots
-        public void btnSettings_KillAllBots_Click(object sender, EventArgs e)
+        // Btn Click - Save Login Info
+        public void btnSettings_SaveLoginInfo_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_KillAllBots(sender, e);
+
+            // Initialize Variables
+            string showWelcomeScreen = "welcome_screen=true";
+            string showCpuRamUsage = "hardware_usage=true";
+
+            if (!checkBoxSettings_ShowWelcomeScreen.Checked)
+            {
+                showWelcomeScreen = "welcome_screen=false";
+            }
+
+            if (!checkBoxSettings_ShowCpuAndRamUsage.Checked)
+            {
+                showCpuRamUsage = "hardware_usage=false";
+            }
+
+            using (StreamWriter writer = new StreamWriter(filePathApplicationDataAccountsSettingsIni))
+            {
+                writer.WriteLine("osbot_username=" + textBoxSettings_OSBotUsername.Text);
+                writer.WriteLine("osbot_password=" + textBoxSettings_OSBotPassword.Text);
+                writer.WriteLine("dreambot_username=" + textBoxSettings_DreamBotUsername.Text);
+                writer.WriteLine("dreambot_password=" + textBoxSettings_DreamBotPassword.Text);
+                writer.WriteLine("tribot_email=" + textBoxSettings_TRiBotEmail.Text);
+                writer.WriteLine("tribot_password=" + textBoxSettings_TRiBotPassword.Text);
+                writer.WriteLine("");
+                writer.WriteLine(showWelcomeScreen);
+                writer.WriteLine(showCpuRamUsage);
+            }
+
+            // Handle CPU and RAM Usage Controls
+            if (checkBoxSettings_ShowCpuAndRamUsage.Checked)
+            {
+                try
+                {
+                    labelNav_CpuUsageMonitor.Visible = true;
+                    labelNav_RamUsageMonitor.Visible = true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            if (!checkBoxSettings_ShowCpuAndRamUsage.Checked)
+            {
+                try
+                {
+                    labelNav_CpuUsageMonitor.Visible = false;
+                    labelNav_RamUsageMonitor.Visible = false;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+            MessageBox.Show("Settings Saved Successfully.");
+        }
+
+        // Btn Click - Update Scripts
+        public async void btnScriptFactory_UpdateScripts_Click(object sender, EventArgs e)
+        {
+            // Check If Event is Running
+            if (isUpdatingScriptsEventRunning)
+            {
+                MessageBox.Show("The process is already running. Please wait.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            // Set Flag & Disable Button
+            isUpdatingScriptsEventRunning = true;
+            (sender as KryptonButton).Enabled = false;
+
+            // Initiate Progress Bar
+            kryptonProgressBarGlobal.Visible = true;
+            kryptonProgressBarGlobal.BringToFront();
+            kryptonProgressBarGlobal.Value = 0;
+
+            // Delete Folders
+            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathScriptFactoryPrivateScriptsFushigiBot);
+            kryptonProgressBarGlobal.PerformStep();
+
+            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempFushigiBot);
+            kryptonProgressBarGlobal.PerformStep();
+
+            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempFushigiBotZip);
+            kryptonProgressBarGlobal.PerformStep();
+
+            invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathJivaroTempFushigiBotZip);
+            kryptonProgressBarGlobal.PerformStep();
+
+            // Zip File Handler
+            try
+            {
+                // Download the .zip file
+                using (HttpClient client = new HttpClient())
+                {
+                    var response = await client.GetAsync(urlFushigiBotScripts);
+                    using (FileStream fs = new FileStream(folderPathJivaroTempFushigiBotZip, FileMode.Create))
+                    {
+                        await response.Content.CopyToAsync(fs);
+                    }
+                }
+                kryptonProgressBarGlobal.PerformStep();
+
+                // Unzip
+                ZipFile.ExtractToDirectory(folderPathJivaroTempFushigiBotZip, folderPathJivaroTempFushigiBot);
+                kryptonProgressBarGlobal.PerformStep();
+
+                // Move the Unzipped Folder
+                Directory.Move(Path.Combine(folderPathJivaroTempFushigiBot), folderPathScriptFactoryPrivateScriptsFushigiBot);
+                kryptonProgressBarGlobal.PerformStep();
+            }
+            catch (DirectoryNotFoundException dirEx)
+            {
+                MessageBox.Show($"Error: {dirEx.Message}. Please ensure that the directory structure in the zip file matches expectations.", "Directory Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            // Cleanup
+            invokeMethodsActiveMainForm.Invoke_DeleteDirectory(folderPathJivaroTempFushigiBot);
+            kryptonProgressBarGlobal.PerformStep();
+
+            invokeMethodsActiveMainForm.Invoke_DeleteFile(folderPathJivaroTempFushigiBotZip);
+            kryptonProgressBarGlobal.PerformStep();
+
+            // Hide The Progress Bar
+            kryptonProgressBarGlobal.Value = 0;
+            kryptonProgressBarGlobal.Visible = false;
+
+            // Reset Flag & Re-Enable Button
+            isUpdatingScriptsEventRunning = false;
+            (sender as KryptonButton).Enabled = true;
         }
 
         //////////////////////////////////////
@@ -1856,6 +2156,21 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         ///////////////////////////
         //Start of Invoke Methods//
         ///////////////////////////
+
+        // Invoke - Bring Nav Controls to Front
+        public void Invoke_BringNavControlsToFront(object sender, EventArgs e)
+        {
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(labelNav_Jivaro);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(labelNav_OSRSLauncher);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(labelNav_ByFushigiBot);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(buttonNav_JivaroLogo);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(kryptonButtonNav_Dashboard);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(kryptonButtonNav_ScriptProfiles);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(kryptonButtonNav_BreakProfiles);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(kryptonButtonNav_Settings);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(labelNav_CpuUsageMonitor);
+            invokeMethodsActiveGlobal.Invoke_BringControlToFront(labelNav_RamUsageMonitor);
+        }
 
         // Invoke - Check For Updates
         public async Task Invoke_CheckForUpdates(string urlLatestApplicationVersion, string filePathApplicationMainMiscVersion, string filePathApplicationMainUpdaterExe)
@@ -1878,7 +2193,9 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     var result = MessageBox.Show("There is a new update. Would you like to update?", "Update Available", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                     {
-                        Invoke_UpdateApplication(filePathApplicationMainUpdaterExe);
+                        // Ensure file copy is complete before updating
+                        await invokeMethodsActiveMainForm.Invoke_CopyFileToDirectory(filePathApplicationMainUpdaterExe, folderPathJivaroTempBotManager, "File copied successfully.");
+                        Invoke_UpdateApplication(filePathJivaroTempBotManagerUpdaterExe);
                     }
                 }
                 else
@@ -1909,10 +2226,10 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Invoke - Check If Random Number is Being Used in Various DataGridViews
         public bool Invoke_IsRandomNumberInUse(int number)
         {
-            return IsNumberInDataGridView(dataGridViewScriptFactory, "dataGridViewScriptFactory_SandboxieNumber", number) ||
-                   IsNumberInDataGridView(dataGridViewOSBotManager, "dataGridViewOSBotManager_SandboxieNumber", number) ||
-                   IsNumberInDataGridView(dataGridViewDreamBotManager, "dataGridViewDreamBotManager_SandboxieNumber", number) ||
-                   IsNumberInDataGridView(dataGridViewTRiBotManager, "dataGridViewTRiBotManager_SandboxieNumber", number);
+            return IsNumberInDataGridView(kryptonDataGridViewDashboard_ScriptFactoryManager, "kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber", number) ||
+                   IsNumberInDataGridView(kryptonDataGridViewDashboard_OSBotManager, "kryptonDataGridViewDashboard_OSBotManager_SandboxieNumber", number) ||
+                   IsNumberInDataGridView(kryptonDataGridViewDashboard_DreamBotManager, "kryptonDataGridViewDashboard_DreamBotManager_SandboxieNumber", number) ||
+                   IsNumberInDataGridView(kryptonDataGridViewDashboard_TRiBotManager, "kryptonDataGridViewDashboard_TRiBotManager_SandboxieNumber", number);
         }
 
         public bool IsNumberInDataGridView(DataGridView dgv, string columnName, int number)
@@ -1942,25 +2259,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             this.ResumeLayout(true);
         }
 
-        // Invoke - Populate Client Login Info
-        public void Invoke_PopulateClientLoginInfo()
-        {
-            if (File.Exists(filePathApplicationDataLoginInfoClients))
-            {
-                using (StreamReader reader = new StreamReader(filePathApplicationDataLoginInfoClients))
-                {
-                    textBoxSettings_OSBotUsername.Text = invokeMethodsPassiveMainForm.Invoke_GetClientLoginValueFromLine(reader.ReadLine());
-                    textBoxSettings_OSBotPassword.Text = invokeMethodsPassiveMainForm.Invoke_GetClientLoginValueFromLine(reader.ReadLine());
-                    textBoxSettings_DreamBotUsername.Text = invokeMethodsPassiveMainForm.Invoke_GetClientLoginValueFromLine(reader.ReadLine());
-                    textBoxSettings_DreamBotPassword.Text = invokeMethodsPassiveMainForm.Invoke_GetClientLoginValueFromLine(reader.ReadLine());
-                    textBoxSettings_TRiBotEmail.Text = invokeMethodsPassiveMainForm.Invoke_GetClientLoginValueFromLine(reader.ReadLine());
-                    textBoxSettings_TRiBotPassword.Text = invokeMethodsPassiveMainForm.Invoke_GetClientLoginValueFromLine(reader.ReadLine());
-                }
-            }
-        }
-
         // Invoke - Download File With Progress Bar and Button Disabling
-        public async Task Invoke_DownloadFileProgerssBarDisableButton(string downloadLink, string filePath, ProgressBar progressBar, Action<bool> setEventRunningFlagAction, Button senderButton)
+        public async Task Invoke_DownloadFileProgerssBarDisableButton(string downloadLink, string filePath, KryptonProgressBar progressBar, Action<bool> setEventRunningFlagAction, KryptonButton senderButton)
         {
             // Check If Event is Running
             if (setEventRunningFlagAction.Target is bool isEventRunningFlag && isEventRunningFlag)
@@ -1975,6 +2275,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
 
             // Initiate Progress Bar
             progressBar.Visible = true;
+            progressBar.BringToFront();
             progressBar.Value = 0;
 
             using (HttpClient httpClient = new HttpClient())
@@ -2039,7 +2340,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         }
 
         // Invoke - Download & Install File With Progress Bar and Button Disabling
-        public async Task Invoke_DownloadAndInstallFileProgerssBarDisableButton(string downloadLink, string filePath, ProgressBar progressBar, Action<bool> setEventRunningFlagAction, Button senderButton)
+        public async Task Invoke_DownloadAndInstallFileProgerssBarDisableButton(string downloadLink, string filePath, KryptonProgressBar progressBar, Action<bool> setEventRunningFlagAction, KryptonButton senderButton)
         {
             // Check If Event is Running
             if (setEventRunningFlagAction.Target is bool isEventRunningFlag && isEventRunningFlag)
@@ -2063,6 +2364,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
 
                         // Initiate Progress Bar
                         progressBar.Visible = true;
+                        progressBar.BringToFront();
                         progressBar.Value = 0;
 
                         using (FileStream fs = new FileStream(filePath, FileMode.Create))
@@ -2201,13 +2503,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start Of Shared Methods//
         ///////////////////////////
 
-        // Button Click - Open Import Accounts Form
+        // Btn Click - Open Import Accounts Form
         public void btnShared_OpenImportAccounts_Click(object sender, EventArgs e)
         {
             Invoke_OpenUniqueForm(parentForm => new formImportAccounts(parentForm));
         }
 
-        // Button Click - Open Local Scripts Form
+        // Btn Click - Open Local Scripts Form
         public void btnShared_OpenLocalScripts_Click(object sender, EventArgs e)
         {
             Invoke_OpenUniqueForm(parentForm => new formLocalScripts(parentForm));
@@ -2259,46 +2561,37 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start of Graphical Methods//
         //////////////////////////////
 
-        // Set Round Edges on Nav Buttons
-        public void RoundButtonEdges()
+        // Invoke - Enable Krypton Button
+        public static void Invoke_EnableKryptonButton(Form form, string buttonName)
         {
-            invokeMethodsAppearance.RoundEdges(buttonNav_ScriptFactory);
-            invokeMethodsAppearance.RoundEdges(buttonNav_OSBotManager);
-            invokeMethodsAppearance.RoundEdges(buttonNav_DreamBotManager);
-            invokeMethodsAppearance.RoundEdges(buttonNav_TRiBotManager);
-            invokeMethodsAppearance.RoundEdges(buttonNav_ScriptProfiles);
-            invokeMethodsAppearance.RoundEdges(buttonNav_BreakProfiles);
-            invokeMethodsAppearance.RoundEdges(buttonNav_Settings);
+            // Search for the control within the form
+            Control[] controls = form.Controls.Find(buttonName, true);
+
+            if (controls.Length > 0 && controls[0] is KryptonButton button)
+            {
+                button.Enabled = true;
+            }
+            else
+            {
+                // Handle the case where the button is not found
+                Console.WriteLine($"Button with name '{buttonName}' not found on the form.");
+            }
         }
 
-        // Invoke - Disable Button and Change its color to teal
-        public void Invoke_DisableButtonAndChangeColorToTeal(Button clickedButton)
+        // Invoke - Disable Krypton Button
+        public void Invoke_DisableKryptonButton(Form form, string buttonName)
         {
-            // List of all the buttons.
-            List<Button> allButtons = new List<Button>
-            {
-                buttonNav_ScriptFactory,
-                buttonNav_OSBotManager,
-                buttonNav_DreamBotManager,
-                buttonNav_TRiBotManager,
-                buttonNav_ScriptProfiles,
-                buttonNav_BreakProfiles,
-                buttonNav_Settings
-            };
+            // Search for the control within the form
+            Control[] controls = form.Controls.Find(buttonName, true);
 
-            // Loop through the buttons.
-            foreach (Button btn in allButtons)
+            if (controls.Length > 0 && controls[0] is KryptonButton button)
             {
-                if (btn == clickedButton) // If it's the clicked button
-                {
-                    btn.Enabled = false;
-                    btn.BackColor = Color.Teal;
-                }
-                else // If it's any other button
-                {
-                    btn.Enabled = true;
-                    btn.BackColor = Color.Transparent;
-                }
+                button.Enabled = false;
+            }
+            else
+            {
+                // Handle the case where the button is not found
+                Console.WriteLine($"Button with name '{buttonName}' not found on the form.");
             }
         }
 

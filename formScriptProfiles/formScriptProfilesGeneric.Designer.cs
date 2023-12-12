@@ -36,7 +36,7 @@
             checkBoxScriptProfiles_Generic_RenewBond = new CheckBox();
             checkBoxScriptProfiles_Generic_DeathHandler = new CheckBox();
             labelScriptProfiles_Generic_Title = new Label();
-            btnScriptProfiles_Generic_SaveToProfiles = new Button();
+            btnScriptProfiles_Generic_SaveProfile = new Button();
             labelScriptProfiles_Generic_Header = new Label();
             labelScriptProfiles_Generic_SelectScript = new Label();
             comboBoxScriptProfiles_Generic_SelectScript = new ComboBox();
@@ -119,20 +119,20 @@
             labelScriptProfiles_Generic_Title.Text = "Generic Profile";
             labelScriptProfiles_Generic_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_Generic_SaveToProfiles
+            // btnScriptProfiles_Generic_SaveProfile
             // 
-            btnScriptProfiles_Generic_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_Generic_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_Generic_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_Generic_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_Generic_SaveToProfiles.Location = new Point(305, 325);
-            btnScriptProfiles_Generic_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_Generic_SaveToProfiles.Name = "btnScriptProfiles_Generic_SaveToProfiles";
-            btnScriptProfiles_Generic_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_Generic_SaveToProfiles.TabIndex = 236;
-            btnScriptProfiles_Generic_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_Generic_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_Generic_SaveToProfiles.Click += btnScriptProfiles_Generic_SaveButton_Click;
+            btnScriptProfiles_Generic_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_Generic_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_Generic_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_Generic_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_Generic_SaveProfile.Location = new Point(305, 325);
+            btnScriptProfiles_Generic_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_Generic_SaveProfile.Name = "btnScriptProfiles_Generic_SaveProfile";
+            btnScriptProfiles_Generic_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_Generic_SaveProfile.TabIndex = 236;
+            btnScriptProfiles_Generic_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_Generic_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_Generic_SaveProfile.Click += btnScriptProfiles_Generic_SaveButton_Click;
             // 
             // labelScriptProfiles_Generic_Header
             // 
@@ -161,7 +161,7 @@
             comboBoxScriptProfiles_Generic_SelectScript.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_Generic_SelectScript.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_Generic_SelectScript.FormattingEnabled = true;
-            comboBoxScriptProfiles_Generic_SelectScript.Items.AddRange(new object[] { "fxAgility-AgilityArena.txt", "fxCrafting-Jewelry.txt", "fxFarming-BaggedPlants.txt", "fxFletching-Longbows.txt", "fxGoldFarming-BonesToBananasCaster.txt", "fxGoldFarming-CowKiller.txt", "fxGoldFarming-FishFoodCollector.txt", "fxGoldFarming-MonksRobesCollector.txt", "fxGoldFarming-PotatoPicker.txt", "fxGoldFarming-RedSpidersEggsCollector.txt", "fxGoldFarming-Tanner.txt", "fxGoldFarming-WildyCollector.txt", "fxHouseFavour-Hosidius.txt", "fxMisc-VarrockMuseumQuiz.txt", "fxQuests-CooksAssistant.txt", "fxQuests-DruidicRitual.txt", "fxQuests-GoblinDiplomacy.txt", "fxQuests-LostCity.txt", "fxQuests-MageArenaOne.txt", "fxQuests-RomeoAndJuliet.txt", "fxQuests-RuneMysteries.txt", "fxQuests-SheepShearer.txt", "fxQuests-TheRestlessGhost.txt", "fxQuests-XMarksTheSpot.txt", "fxWoodcutting-AIO.txt" });
+            comboBoxScriptProfiles_Generic_SelectScript.Items.AddRange(new object[] { "fxAgility-AgilityArena.txt", "fxCrafting-Jewelry.txt", "fxFarming-BaggedPlants.txt", "fxFishing-AIO.txt", "fxFletching-Longbows.txt", "fxGoldFarming-BonesToBananasCaster.txt", "fxGoldFarming-CowKiller.txt", "fxGoldFarming-FishFoodCollector.txt", "fxGoldFarming-MonksRobesCollector.txt", "fxGoldFarming-PotatoPicker.txt", "fxGoldFarming-RedSpidersEggsCollector.txt", "fxGoldFarming-Tanner.txt", "fxGoldFarming-WildyCollector.txt", "fxHouseFavour-Hosidius.txt", "fxMisc-VarrockMuseumQuiz.txt", "fxPrayer-BuryBones.txt", "fxQuests-APorcineOfInterest.txt", "fxQuests-CooksAssistant.txt", "fxQuests-DruidicRitual.txt", "fxQuests-GoblinDiplomacy.txt", "fxQuests-LostCity.txt", "fxQuests-MageArenaOne.txt", "fxQuests-PriestInPeril.txt", "fxQuests-RomeoAndJuliet.txt", "fxQuests-RuneMysteries.txt", "fxQuests-SheepShearer.txt", "fxQuests-TheRestlessGhost.txt", "fxQuests-TheKnightsSword.txt", "fxQuests-VampyreSlayer.txt", "fxQuests-XMarksTheSpot.txt", "fxWoodcutting-AIO.txt" });
             comboBoxScriptProfiles_Generic_SelectScript.Location = new Point(275, 250);
             comboBoxScriptProfiles_Generic_SelectScript.Margin = new Padding(0);
             comboBoxScriptProfiles_Generic_SelectScript.Name = "comboBoxScriptProfiles_Generic_SelectScript";
@@ -184,7 +184,7 @@
             Controls.Add(checkBoxScriptProfiles_Generic_RenewBond);
             Controls.Add(checkBoxScriptProfiles_Generic_DeathHandler);
             Controls.Add(labelScriptProfiles_Generic_Title);
-            Controls.Add(btnScriptProfiles_Generic_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_Generic_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -208,7 +208,7 @@
         public CheckBox checkBoxScriptProfiles_Generic_Antipattern;
         public CheckBox checkBoxScriptProfiles_Generic_RenewBond;
         public CheckBox checkBoxScriptProfiles_Generic_DeathHandler;
-        public Button btnScriptProfiles_Generic_SaveToProfiles;
+        public Button btnScriptProfiles_Generic_SaveProfile;
         public Label labelScriptProfiles_Generic_SelectScript;
         public ComboBox comboBoxScriptProfiles_Generic_SelectScript;
     }

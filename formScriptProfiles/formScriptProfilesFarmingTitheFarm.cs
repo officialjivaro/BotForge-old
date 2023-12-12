@@ -18,18 +18,19 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         }
 
         // Initialize Variables
-        string pc_username = Environment.UserName;
-        string folderpathProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\";
         string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
         string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileFarmingTitheFarm = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxFarming-TitheFarm.txt");
+
 
         // Form load
         public void formScriptProfiles_FarmingTitheFarm_Load(object sender, EventArgs e)
         {
+
         }
 
         // Cancel Non Numbers & Set Limit To 99 From Textbox
@@ -44,21 +45,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             invokeMethodsPassiveGlobal.GlobalMethod_RequireInput_Validating(sender, e);
         }
 
-        // Button Click - Save Profile
+        // Btn Click - Save Profile
         public void btnScriptProfiles_FarmingTitheFarm_SaveButton_Click(object sender, EventArgs e)
         {
-
-            // Intialize Variables - Strings
-            string filepathProfileFarmingTitheFarm = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxFarming-TitheFarm.txt");
-            string farmingStopLevel = "<Find>23232323</Find><Replace>" + textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Text + "</Replace>";
-
             // Set Checkbox Variables
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                {"boolEnableDeathHandler", checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler},
-                {"boolEnableRenewBond", checkBoxScriptProfiles_FarmingTitheFarm_RenewBond},
                 {"boolEnableAntipattern", checkBoxScriptProfiles_FarmingTitheFarm_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_FarmingTitheFarm_DeathHandler},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_FarmingTitheFarm_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_FarmingTitheFarm_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_FarmingTitheFarm_Restocking},
                 {"boolEnableSellLoot", checkBoxScriptProfiles_FarmingTitheFarm_SellLoot},
             };
@@ -79,13 +75,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             using (StreamWriter writer = new StreamWriter(filepathProfileFarmingTitheFarm))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine(farmingStopLevel);
+                writer.WriteLine("\nTithe Farm Settings");
+                writer.WriteLine("<Find>23232323</Find><Replace>" + textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Text + "</Replace>");
             }
 
             MessageBox.Show("Profile successfully created.");

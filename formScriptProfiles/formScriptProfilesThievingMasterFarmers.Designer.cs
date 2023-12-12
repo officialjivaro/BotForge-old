@@ -41,12 +41,13 @@
             btnScriptProfiles_ThievingMasterFarmers_Save = new Button();
             labelScriptProfiles_ThievingMasterFarmers_Header = new Label();
             checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit = new CheckBox();
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers = new CheckBox();
             SuspendLayout();
             // 
             // labelScriptProfiles_ThievingMasterFarmers_SelectLocation
             // 
             labelScriptProfiles_ThievingMasterFarmers_SelectLocation.AutoSize = true;
-            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new Point(50, 275);
+            labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new Point(175, 275);
             labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Margin = new Padding(0);
             labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Name = "labelScriptProfiles_ThievingMasterFarmers_SelectLocation";
             labelScriptProfiles_ThievingMasterFarmers_SelectLocation.Size = new Size(110, 18);
@@ -61,8 +62,8 @@
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.FlatStyle = FlatStyle.Flat;
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.ForeColor = Color.FromArgb(64, 64, 64);
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.FormattingEnabled = true;
-            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Items.AddRange(new object[] { "Random Sector", "Varrock", "Hosidius South", "Hosidius North" });
-            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new Point(200, 275);
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Items.AddRange(new object[] { "Random Sector", "Ardougne", "Hosidius North", "Hosidius South", "Varrock" });
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new Point(375, 275);
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Margin = new Padding(0);
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Name = "comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation";
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Size = new Size(174, 26);
@@ -82,7 +83,7 @@
             // checkBoxScriptProfiles_ThievingMasterFarmers_Restocking
             // 
             checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Location = new Point(475, 200);
+            checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Location = new Point(475, 175);
             checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Margin = new Padding(0);
             checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_Restocking";
             checkBoxScriptProfiles_ThievingMasterFarmers_Restocking.Size = new Size(102, 22);
@@ -93,7 +94,7 @@
             // checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot
             // 
             checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Location = new Point(275, 200);
+            checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Location = new Point(275, 175);
             checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Margin = new Padding(0);
             checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot";
             checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot.Size = new Size(85, 22);
@@ -104,7 +105,7 @@
             // checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern
             // 
             checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Location = new Point(50, 200);
+            checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Location = new Point(50, 175);
             checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Margin = new Padding(0);
             checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern";
             checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern.Size = new Size(96, 22);
@@ -174,7 +175,7 @@
             // checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit
             // 
             checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.AutoSize = true;
-            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Location = new Point(475, 275);
+            checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Location = new Point(275, 225);
             checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Margin = new Padding(0);
             checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit";
             checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Size = new Size(149, 22);
@@ -182,12 +183,24 @@
             checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.Text = "Use Rogues Outfit";
             checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit.UseVisualStyleBackColor = true;
             // 
+            // checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers
+            // 
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers.AutoSize = true;
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers.Location = new Point(50, 225);
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers.Margin = new Padding(0);
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers.Name = "checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers";
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers.Size = new Size(116, 22);
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers.TabIndex = 255;
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers.Text = "Avoid Players";
+            checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers.UseVisualStyleBackColor = true;
+            // 
             // formScriptProfilesThievingMasterFarmers
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(684, 436);
+            Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers);
             Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit);
             Controls.Add(labelScriptProfiles_ThievingMasterFarmers_Header);
             Controls.Add(labelScriptProfiles_ThievingMasterFarmers_SelectLocation);
@@ -228,5 +241,6 @@
         public Label labelScriptProfiles_ThievingMasterFarmers_Title;
         public Button btnScriptProfiles_ThievingMasterFarmers_Save;
         public CheckBox checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit;
+        public CheckBox checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers;
     }
 }

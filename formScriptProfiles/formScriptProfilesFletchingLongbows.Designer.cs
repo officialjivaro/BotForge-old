@@ -36,7 +36,7 @@
             checkBoxScriptProfiles_FletchingLongbows_RenewBond = new CheckBox();
             checkBoxScriptProfiles_FletchingLongbows_DeathHandler = new CheckBox();
             labelScriptProfiles_FletchingLongbows_Title = new Label();
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles = new Button();
+            btnScriptProfiles_FletchingLongbows_SaveProfile = new Button();
             labelScriptProfiles_FletchingLongbows_Header = new Label();
             SuspendLayout();
             // 
@@ -117,20 +117,20 @@
             labelScriptProfiles_FletchingLongbows_Title.Text = "Fletching: Longbows";
             labelScriptProfiles_FletchingLongbows_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_FletchingLongbows_SaveToProfiles
+            // btnScriptProfiles_FletchingLongbows_SaveProfile
             // 
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.Location = new Point(155, 250);
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.Name = "btnScriptProfiles_FletchingLongbows_SaveToProfiles";
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.TabIndex = 236;
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_FletchingLongbows_SaveToProfiles.Click += btnScriptProfiles_FletchingLongbows_SaveButton_Click;
+            btnScriptProfiles_FletchingLongbows_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_FletchingLongbows_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_FletchingLongbows_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_FletchingLongbows_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FletchingLongbows_SaveProfile.Location = new Point(155, 250);
+            btnScriptProfiles_FletchingLongbows_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_FletchingLongbows_SaveProfile.Name = "btnScriptProfiles_FletchingLongbows_SaveProfile";
+            btnScriptProfiles_FletchingLongbows_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_FletchingLongbows_SaveProfile.TabIndex = 236;
+            btnScriptProfiles_FletchingLongbows_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_FletchingLongbows_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_FletchingLongbows_SaveProfile.Click += btnScriptProfiles_FletchingLongbows_SaveButton_Click;
             // 
             // labelScriptProfiles_FletchingLongbows_Header
             // 
@@ -157,7 +157,7 @@
             Controls.Add(checkBoxScriptProfiles_FletchingLongbows_RenewBond);
             Controls.Add(checkBoxScriptProfiles_FletchingLongbows_DeathHandler);
             Controls.Add(labelScriptProfiles_FletchingLongbows_Title);
-            Controls.Add(btnScriptProfiles_FletchingLongbows_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_FletchingLongbows_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -180,6 +180,6 @@
         public CheckBox checkBoxScriptProfiles_FletchingLongbows_Antipattern;
         public CheckBox checkBoxScriptProfiles_FletchingLongbows_RenewBond;
         public CheckBox checkBoxScriptProfiles_FletchingLongbows_DeathHandler;
-        public Button btnScriptProfiles_FletchingLongbows_SaveToProfiles;
+        public Button btnScriptProfiles_FletchingLongbows_SaveProfile;
     }
 }

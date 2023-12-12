@@ -47,6 +47,30 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
             }
         }
 
+        // Invoke - Copy File To Directory
+        public static async Task Invoke_CopyFileToDirectory(string sourceFile, string destDir, string messageOnSuccess)
+        {
+            try
+            {
+                // Ensure destination directory exists
+                string destFile = Path.Combine(destDir, Path.GetFileName(sourceFile));
+                if (!Directory.Exists(destDir))
+                {
+                    Directory.CreateDirectory(destDir);
+                }
+
+                // Copy the file
+                File.Copy(sourceFile, destFile, true);
+                await Task.Delay(1);  // Ensures asynchronous behavior
+
+                Console.WriteLine(messageOnSuccess);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error copying file: {ex.Message}");
+            }
+        }
+
         // Invoke - Create Directory
         public static void Invoke_CreateFolderIfNotExists(string folderPath)
         {

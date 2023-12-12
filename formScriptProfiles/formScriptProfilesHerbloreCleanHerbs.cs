@@ -17,14 +17,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         }
 
         // Initialize Variables
-        string pc_username = Environment.UserName;
-        string folderpathProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\";
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileHerbloreCleanHerbs = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxHerblore-CleanHerbs.txt");
 
         // Form load
         public void formScriptProfiles_HerbloreCleanHerbs_Load(object sender, EventArgs e)
@@ -45,22 +44,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             invokeMethodsPassiveGlobal.GlobalMethod_RequireInput_Validating(sender, e);
         }
 
-        // Button Click - Save Profile
+        // Btn Click - Save Profile
         public void btnScriptProfiles_HerbloreCleanHerbs_SaveButton_Click(object sender, EventArgs e)
         {
-
-            // Intialize Variables - Strings
-            string filepathProfileHerbloreCleanHerbs = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxHerblore-CleanHerbs.txt");
-            string herbloreStopLevel = "<Find>11111111</Find><Replace>" + textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Text + "</Replace>";
-            string selectHerbToClean = "<Find>Progressive/*/GuamLeaf/*/Marrentill/*/Tarromin/*/Harralander/*/RanarrWeed/*/Toadflax/*/IritLeaf/*/Avantoe/*/Kwuarm/*/Snapdragon/*/Cadantine/*/Lantadyme/*/DwarfWeed/*/Torstol</Find><Replace>" + comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.SelectedItem.ToString() + "</Replace>";
-            string selectCleaningSpeed = "Random/*/Slow/*/Fast" + comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.SelectedItem.ToString() + "</Replace>";
-
+            // Set Checkbox Variables
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                {"boolEnableDeathHandler", checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler},
-                {"boolEnableRenewBond", checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond},
                 {"boolEnableAntipattern", checkBoxScriptProfiles_HerbloreCleanHerbs_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_HerbloreCleanHerbs_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_HerbloreCleanHerbs_Restocking},
                 {"boolEnableSellLoot", checkBoxScriptProfiles_HerbloreCleanHerbs_SellLoot}
             };
@@ -77,20 +70,20 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 }
             }
 
-
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileHerbloreCleanHerbs))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine(herbloreStopLevel);
-                writer.WriteLine(selectHerbToClean);
-                writer.WriteLine(selectCleaningSpeed);
+                writer.WriteLine("\nHerblore Clean Herbs Settings");
+                writer.WriteLine("<Find>Progressive/*/GuamLeaf/*/Marrentill/*/Tarromin/*/Harralander/*/RanarrWeed/*/Toadflax/*/IritLeaf/*/Avantoe/*/Kwuarm/*/Snapdragon/*/Cadantine/*/Lantadyme/*/DwarfWeed/*/Torstol</Find><Replace>" + comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("Random/*/Slow/*/Fast" + comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>11111111</Find><Replace>" + textBoxScriptProfiles_HerbloreCleanHerbs_StopLevel.Text + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

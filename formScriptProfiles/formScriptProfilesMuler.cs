@@ -41,13 +41,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             invokeMethodsPassiveGlobal.GlobalMethod_RequireInput_Validating(sender, e);
         }
 
-        // Button Click - Save Profile
+        // Btn Click - Save Profile
         public void btnScriptProfiles_Muler_SaveButton_Click(object sender, EventArgs e)
         {
 
             // Intialize Variables - Strings
-            string filepathProfileMulerBot = Path.Combine(@"C:\\Users\\" + MainForm.pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMuler-Bot.txt");
-            string filepathProfileMulerMule = Path.Combine(@"C:\\Users\\" + MainForm.pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMuler-Mule.txt");
+            string filepathProfileMulerBot = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMuler-Bot.txt");
+            string filepathProfileMulerMule = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMuler-Mule.txt");
             string enableManualMule = "<Find>Yes/*/No</Find><Replace>No</Replace>";
             string muleWorld = "<Find>499</Find><Replace>" + textBoxScriptProfiles_Muler_Mule_World.Text + "</Replace>";
             string muleCoordX = textBoxScriptProfiles_Muler_Mule_X.Text;
@@ -144,7 +144,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             string botItem25 = "<Find>Item026</Find><Replace>Item026</Replace>";
             string botItem26 = "<Find>Item027</Find><Replace>Item027</Replace>";
 
-
             // Enable manual muling checkbox
             if (checkBoxScriptProfiles_Muler_Mule_ManualMode.Checked)
             {
@@ -152,331 +151,331 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             }
 
             // Mule items
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[0].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[0].Cells[0].Value != null)
             {
                 muleItem0 = "<Find>Item001</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[0].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[1].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[1].Cells[0].Value != null)
             {
                 muleItem1 = "<Find>Item002</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[1].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[2].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[2].Cells[0].Value != null)
             {
                 muleItem2 = "<Find>Item003</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[2].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[3].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[3].Cells[0].Value != null)
             {
                 muleItem3 = "<Find>Item004</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[3].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[4].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[4].Cells[0].Value != null)
             {
                 muleItem4 = "<Find>Item005</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[4].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[5].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[5].Cells[0].Value != null)
             {
                 muleItem5 = "<Find>Item006</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[5].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[6].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[6].Cells[0].Value != null)
             {
                 muleItem6 = "<Find>Item007</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[6].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[7].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[7].Cells[0].Value != null)
             {
                 muleItem7 = "<Find>Item008</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[7].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[8].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[8].Cells[0].Value != null)
             {
                 muleItem8 = "<Find>Item009</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[8].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[9].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[9].Cells[0].Value != null)
             {
                 muleItem9 = "<Find>Item010</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[9].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[10].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[10].Cells[0].Value != null)
             {
                 muleItem10 = "<Find>Item011</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[10].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[11].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[11].Cells[0].Value != null)
             {
                 muleItem11 = "<Find>Item012</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[11].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[12].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[12].Cells[0].Value != null)
             {
                 muleItem12 = "<Find>Item013</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[12].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[13].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[13].Cells[0].Value != null)
             {
                 muleItem13 = "<Find>Item014</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[13].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[14].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[14].Cells[0].Value != null)
             {
                 muleItem14 = "<Find>Item015</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[14].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[15].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[15].Cells[0].Value != null)
             {
                 muleItem15 = "<Find>Item016</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[15].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[16].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[16].Cells[0].Value != null)
             {
                 muleItem16 = "<Find>Item017</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[16].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[17].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[17].Cells[0].Value != null)
             {
                 muleItem17 = "<Find>Item018</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[17].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[18].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[18].Cells[0].Value != null)
             {
                 muleItem18 = "<Find>Item019</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[18].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[19].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[19].Cells[0].Value != null)
             {
                 muleItem19 = "<Find>Item020</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[19].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[20].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[20].Cells[0].Value != null)
             {
                 muleItem20 = "<Find>Item021</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[20].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[21].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[21].Cells[0].Value != null)
             {
                 muleItem21 = "<Find>Item022</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[21].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[22].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[22].Cells[0].Value != null)
             {
                 muleItem22 = "<Find>Item023</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[22].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[23].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[23].Cells[0].Value != null)
             {
                 muleItem23 = "<Find>Item024</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[23].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[24].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[24].Cells[0].Value != null)
             {
                 muleItem24 = "<Find>Item025</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[24].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[25].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[25].Cells[0].Value != null)
             {
                 muleItem25 = "<Find>Item026</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[25].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[26].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[26].Cells[0].Value != null)
             {
                 muleItem26 = "<Find>Item027</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[26].Cells[0].Value?.ToString() + "</Replace>";
             }
 
             // Mule Quantities
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[0].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[0].Cells[1].Value != null)
             {
-                muleQuantity0 = "<Find>987654321</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[0].Cells[1].Value?.ToString() + "</Replace>";
+                muleQuantity0 = "<Find>987654321</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[0].Cells[1].Value.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[1].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[1].Cells[1].Value != null)
             {
                 muleQuantity1 = "<Find>528974613</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[1].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[2].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[2].Cells[1].Value != null)
             {
                 muleQuantity2 = "<Find>369874125</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[2].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[3].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[3].Cells[1].Value != null)
             {
                 muleQuantity3 = "<Find>648912537</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[3].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[4].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[4].Cells[1].Value != null)
             {
                 muleQuantity4 = "<Find>784365219</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[4].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[5].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[5].Cells[1].Value != null)
             {
                 muleQuantity5 = "<Find>315496728</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[5].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[6].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[6].Cells[1].Value != null)
             {
                 muleQuantity6 = "<Find>426839517</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[6].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[7].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[7].Cells[1].Value != null)
             {
                 muleQuantity7 = "<Find>259137468</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[7].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[8].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[8].Cells[1].Value != null)
             {
                 muleQuantity8 = "<Find>614285739</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[8].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[9].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[9].Cells[1].Value != null)
             {
                 muleQuantity9 = "<Find>138947526</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[9].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[10].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[10].Cells[1].Value != null)
             {
                 muleQuantity10 = "<Find>976814352</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[10].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[11].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[11].Cells[1].Value != null)
             {
                 muleQuantity11 = "<Find>825496173</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[11].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[12].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[12].Cells[1].Value != null)
             {
                 muleQuantity12 = "<Find>741639825</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[12].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[13].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[13].Cells[1].Value != null)
             {
                 muleQuantity13 = "<Find>217986534</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[13].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[14].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[14].Cells[1].Value != null)
             {
                 muleQuantity14 = "<Find>352987416</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[14].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[15].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[15].Cells[1].Value != null)
             {
                 muleQuantity15 = "<Find>694283751</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[15].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[16].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[16].Cells[1].Value != null)
             {
                 muleQuantity16 = "<Find>578913246</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[16].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[17].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[17].Cells[1].Value != null)
             {
                 muleQuantity17 = "<Find>463589127</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[17].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[18].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[18].Cells[1].Value != null)
             {
                 muleQuantity18 = "<Find>893217564</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[18].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[19].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[19].Cells[1].Value != null)
             {
                 muleQuantity19 = "<Find>751843926</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[19].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[20].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[20].Cells[1].Value != null)
             {
                 muleQuantity20 = "<Find>437568219</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[20].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[21].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[21].Cells[1].Value != null)
             {
                 muleQuantity21 = "<Find>618357492</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[21].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[22].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[22].Cells[1].Value != null)
             {
                 muleQuantity22 = "<Find>924167583</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[22].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[23].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[23].Cells[1].Value != null)
             {
                 muleQuantity23 = "<Find>796851432</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[23].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[24].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[24].Cells[1].Value != null)
             {
                 muleQuantity24 = "<Find>135294678</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[24].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[25].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[25].Cells[1].Value != null)
             {
                 muleQuantity25 = "<Find>317458926</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[25].Cells[1].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Mule.Rows[26].Cells[1] != null)
+            if (dataGridViewScriptProfiles_Muler_Mule.Rows[26].Cells[1].Value != null)
             {
                 muleQuantity26 = "<Find>689317524</Find><Replace>" + dataGridViewScriptProfiles_Muler_Mule.Rows[26].Cells[1].Value?.ToString() + "</Replace>";
             }
 
             // Bot items
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[0].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[0].Cells[0].Value != null)
             {
                 botItem0 = "<Find>Item001</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[0].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[1].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[1].Cells[0].Value != null)
             {
                 botItem1 = "<Find>Item002</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[1].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[2].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[2].Cells[0].Value != null)
             {
                 botItem2 = "<Find>Item003</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[2].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[3].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[3].Cells[0].Value != null)
             {
                 botItem3 = "<Find>Item004</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[3].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[4].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[4].Cells[0].Value != null)
             {
                 botItem4 = "<Find>Item005</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[4].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[5].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[5].Cells[0].Value != null)
             {
                 botItem5 = "<Find>Item006</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[5].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[6].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[6].Cells[0].Value != null)
             {
                 botItem6 = "<Find>Item007</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[6].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[7].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[7].Cells[0].Value != null)
             {
                 botItem7 = "<Find>Item008</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[7].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[8].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[8].Cells[0].Value != null)
             {
                 botItem8 = "<Find>Item009</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[8].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[9].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[9].Cells[0].Value != null)
             {
                 botItem9 = "<Find>Item010</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[9].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[10].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[10].Cells[0].Value != null)
             {
                 botItem10 = "<Find>Item011</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[10].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[11].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[11].Cells[0].Value != null)
             {
                 botItem11 = "<Find>Item012</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[11].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[12].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[12].Cells[0].Value != null)
             {
                 botItem12 = "<Find>Item013</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[12].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[13].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[13].Cells[0].Value != null)
             {
                 botItem13 = "<Find>Item014</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[13].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[14].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[14].Cells[0].Value != null)
             {
                 botItem14 = "<Find>Item015</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[14].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[15].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[15].Cells[0].Value != null)
             {
                 botItem15 = "<Find>Item016</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[15].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[16].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[16].Cells[0].Value != null)
             {
                 botItem16 = "<Find>Item017</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[16].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[17].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[17].Cells[0].Value != null)
             {
                 botItem17 = "<Find>Item018</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[17].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[18].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[18].Cells[0].Value != null)
             {
                 botItem18 = "<Find>Item019</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[18].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[19].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[19].Cells[0].Value != null)
             {
                 botItem19 = "<Find>Item020</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[19].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[20].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[20].Cells[0].Value != null)
             {
                 botItem20 = "<Find>Item021</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[20].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[21].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[21].Cells[0].Value != null)
             {
                 botItem21 = "<Find>Item022</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[21].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[22].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[22].Cells[0].Value != null)
             {
                 botItem22 = "<Find>Item023</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[22].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[23].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[23].Cells[0].Value != null)
             {
                 botItem23 = "<Find>Item024</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[23].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[24].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[24].Cells[0].Value != null)
             {
                 botItem24 = "<Find>Item025</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[24].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[25].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[25].Cells[0].Value != null)
             {
                 botItem25 = "<Find>Item026</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[25].Cells[0].Value?.ToString() + "</Replace>";
             }
-            if (dataGridViewScriptProfiles_Muler_Bot.Rows[26].Cells[0] != null)
+            if (dataGridViewScriptProfiles_Muler_Bot.Rows[26].Cells[0].Value != null)
             {
                 botItem26 = "<Find>Item027</Find><Replace>" + dataGridViewScriptProfiles_Muler_Bot.Rows[26].Cells[0].Value?.ToString() + "</Replace>";
             }
@@ -486,9 +485,11 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             // Write to file bot
             using (StreamWriter writer = new StreamWriter(filepathProfileMulerBot))
             {
+                writer.WriteLine("Muler General Settings");
                 writer.WriteLine(botMuleName);
                 writer.WriteLine(botWorld);
                 writer.WriteLine(botCoords);
+                writer.WriteLine("\nMuler Items");
                 writer.WriteLine(botItem0);
                 writer.WriteLine(botItem1);
                 writer.WriteLine(botItem2);
@@ -516,15 +517,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine(botItem24);
                 writer.WriteLine(botItem25);
                 writer.WriteLine(botItem26);
-
             }
 
             // Write to file mule
             using (StreamWriter writer = new StreamWriter(filepathProfileMulerMule))
             {
+                writer.WriteLine("Muler General Settings");
                 writer.WriteLine(enableManualMule);
                 writer.WriteLine(muleWorld);
                 writer.WriteLine(muleCoords);
+                writer.WriteLine("\nMuler Items");
                 writer.WriteLine(muleItem0);
                 writer.WriteLine(muleItem1);
                 writer.WriteLine(muleItem2);
@@ -552,6 +554,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine(muleItem24);
                 writer.WriteLine(muleItem25);
                 writer.WriteLine(muleItem26);
+                writer.WriteLine("\nMuler Item Quantities");
                 writer.WriteLine(muleQuantity0);
                 writer.WriteLine(muleQuantity1);
                 writer.WriteLine(muleQuantity2);

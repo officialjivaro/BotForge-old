@@ -14,17 +14,23 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             MainForm = mainForm;
         }
 
-        //Initialize Variables//
-        string pc_username = Environment.UserName;
-        string folderpathProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\";
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
+        // Initialize Variables
+        int intGoldFarmingDuration;
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
+        string boolEnableFarmMasterFarmers = "<Find>boolEnableFarmMasterFarmers:false</Find><Replace>boolEnableFarmMasterFarmers:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableNoGpStart = "<Find>boolEnableNoGpStart:false</Find><Replace>boolEnableNoGpStart:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
+        string boolEnableRooftops = "<Find>boolEnableRooftops:false</Find><Replace>boolEnableRooftops:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileAccountBuilderMasterFarmer = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxAccountBuilder-MasterFarmer.txt");
+        string goldFarmingDuration;
 
-        //Cancel Non Numbers From Textbox//
+
+
+        // Cancel Non Numbers From Textbox
         public void GlobalMethod_CancelNonNumbers_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -33,7 +39,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             }
         }
 
-        //Require Input On Textbox//
+        // Require Input On Textbox
         public void GlobalMethod_RequireInput_Validating(object sender, CancelEventArgs e)
         {
             System.Windows.Forms.TextBox textBox = sender as System.Windows.Forms.TextBox;
@@ -52,31 +58,22 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             }
         }
 
-        //Button Click - Save Profile//
+        // Btn Click - Save Profile
         public void btnScriptProfiles_AccountBuilderMasterFarmer_SaveButton_Click(object sender, EventArgs e)
         {
-
-            // Intialize variables
-            string filepathProfileAccountBuilderMasterFarmer = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxAccountBuilder-MasterFarmer.txt");
-            string boolEnableRooftops = "<Find>boolEnableRooftops:false</Find><Replace>boolEnableRooftops:false</Replace>";
-            string boolEnableFarmMasterFarmers = "<Find>boolEnableFarmMasterFarmers:false</Find><Replace>boolEnableFarmMasterFarmers:false</Replace>";
-            string farmingStopLevel = "<Find>71/*/85</Find><Replace>" + comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.SelectedItem.ToString() + "</Replace>";
-            string boolEnableNoGpStart = "<Find>boolEnableNoGpStart:false</Find><Replace>boolEnableNoGpStart:false</Replace>";
-            string goldFarmingDuration = ScriptProfiles_AccountBuilderMasterFarmer_GoldFarmingDuration.Text;
-            int intGoldFarmingDuration;
 
             // Set Checkbox Variables
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                {"boolEnableDeathHandler", checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler},
-                {"boolEnableRenewBond", checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond},
                 {"boolEnableAntipattern", checkBoxScriptProfiles_AccountBuilderMasterFarmer_Antipattern},
-                {"boolEnableHopWorlds", checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping},
-                {"boolEnableRestocking", checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking},
-                {"boolEnableSellLoot", checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot},
-                {"boolEnableRooftops", checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler},
                 {"boolEnableFarmMasterFarmers", checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping},
                 {"boolEnableNoGpStart", checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking},
+                {"boolEnableRooftops", checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_AccountBuilderMasterFarmer_SellLoot},
             };
 
             foreach (var checkboxPair in checkBoxMappings)
@@ -102,16 +99,19 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileAccountBuilderMasterFarmer))
             {
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
+                writer.WriteLine("General Settings");
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine(boolEnableRooftops);
+                writer.WriteLine("\nAccount Builder Settings");
                 writer.WriteLine(boolEnableFarmMasterFarmers);
-                writer.WriteLine(farmingStopLevel);
                 writer.WriteLine(boolEnableNoGpStart);
+                writer.WriteLine(boolEnableRooftops);
+                writer.WriteLine("<Find>71/*/85</Find><Replace>" + comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("\nActivity Duration Settings");
                 writer.WriteLine("<Find>12600000</Find><Replace>" + goldFarmingDuration + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");

@@ -29,7 +29,7 @@
         public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesLOTRAragorn));
-            checkBoxScriptProfiles_Aragorn_UseOwnGear = new CheckBox();
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks = new CheckBox();
             checkBoxScriptProfiles_Aragorn_BuryBigBones = new CheckBox();
             labelScriptProfiles_Aragorn_SelectNpc = new Label();
             comboBoxScriptProfiles_Aragorn_SelectNpc = new ComboBox();
@@ -46,16 +46,16 @@
             labelScriptProfiles_Aragorn_Header = new Label();
             SuspendLayout();
             // 
-            // checkBoxScriptProfiles_Aragorn_UseOwnGear
+            // checkBoxScriptProfiles_Aragorn_DisableGearChecks
             // 
-            checkBoxScriptProfiles_Aragorn_UseOwnGear.AutoSize = true;
-            checkBoxScriptProfiles_Aragorn_UseOwnGear.Location = new Point(250, 175);
-            checkBoxScriptProfiles_Aragorn_UseOwnGear.Margin = new Padding(0);
-            checkBoxScriptProfiles_Aragorn_UseOwnGear.Name = "checkBoxScriptProfiles_Aragorn_UseOwnGear";
-            checkBoxScriptProfiles_Aragorn_UseOwnGear.Size = new Size(126, 22);
-            checkBoxScriptProfiles_Aragorn_UseOwnGear.TabIndex = 134;
-            checkBoxScriptProfiles_Aragorn_UseOwnGear.Text = "Use Own Gear";
-            checkBoxScriptProfiles_Aragorn_UseOwnGear.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks.AutoSize = true;
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks.Location = new Point(250, 175);
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks.Margin = new Padding(0);
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks.Name = "checkBoxScriptProfiles_Aragorn_DisableGearChecks";
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks.Size = new Size(126, 22);
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks.TabIndex = 134;
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks.Text = "Use Own Gear";
+            checkBoxScriptProfiles_Aragorn_DisableGearChecks.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_Aragorn_BuryBigBones
             // 
@@ -226,7 +226,7 @@
             ClientSize = new Size(659, 511);
             Controls.Add(labelScriptProfiles_Aragorn_Header);
             Controls.Add(checkBoxScriptProfiles_Aragorn_FightObor);
-            Controls.Add(checkBoxScriptProfiles_Aragorn_UseOwnGear);
+            Controls.Add(checkBoxScriptProfiles_Aragorn_DisableGearChecks);
             Controls.Add(checkBoxScriptProfiles_Aragorn_BuryBigBones);
             Controls.Add(labelScriptProfiles_Aragorn_SelectNpc);
             Controls.Add(comboBoxScriptProfiles_Aragorn_SelectNpc);
@@ -261,7 +261,7 @@
         public CheckBox checkBoxScriptProfiles_Aragorn_Antipattern;
         public CheckBox checkBoxScriptProfiles_Aragorn_RenewBond;
         public CheckBox checkBoxScriptProfiles_Aragorn_DeathHandler;
-        public CheckBox checkBoxScriptProfiles_Aragorn_UseOwnGear;
+        public CheckBox checkBoxScriptProfiles_Aragorn_DisableGearChecks;
         public CheckBox checkBoxScriptProfiles_Aragorn_BuryBigBones;
         public Label labelScriptProfiles_Aragorn_SelectNpc;
         public CheckBox checkBoxScriptProfiles_Aragorn_TrainStatsEvenly;

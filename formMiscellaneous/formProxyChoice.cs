@@ -19,6 +19,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
             invokeMethodsActiveGlobal.Invoke_OpenLink("https://iproyal.com?r=97274");
         }
 
+        // Button CLick - Open Bright Data
+        public void btnProxyChoice_BrightData_Click(object sender, EventArgs e)
+        {
+            invokeMethodsActiveGlobal.Invoke_OpenLink("https://get.brightdata.com/2wxh9pwrolog");
+        }
+
         // Button CLick - Open Proxy-Cheap
         public void btnProxyChoice_ProxyCheap_Click(object sender, EventArgs e)
         {

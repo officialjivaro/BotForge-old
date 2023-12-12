@@ -36,7 +36,7 @@
             checkBoxScriptProfiles_ProgressiveFighterMagic_RenewBond = new CheckBox();
             checkBoxScriptProfiles_ProgressiveFighterMagic_DeathHandler = new CheckBox();
             labelScriptProfiles_ProgressiveFighterMagic_Title = new Label();
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles = new Button();
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile = new Button();
             comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC = new ComboBox();
             labelScriptProfiles_ProgressiveFighterMagic_SelectNPC = new Label();
             labelScriptProfiles_ProgressiveFighterMagic_Header = new Label();
@@ -119,20 +119,20 @@
             labelScriptProfiles_ProgressiveFighterMagic_Title.Text = "Progressive Fighter: Magic";
             labelScriptProfiles_ProgressiveFighterMagic_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles
+            // btnScriptProfiles_ProgressiveFighterMagic_SaveProfile
             // 
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.Location = new Point(155, 375);
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.Name = "btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles";
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.TabIndex = 177;
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles.Click += btnScriptProfiles_ProgressiveFighterMagic_SaveButton_Click;
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Location = new Point(155, 375);
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Name = "btnScriptProfiles_ProgressiveFighterMagic_SaveProfile";
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.TabIndex = 177;
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Click += btnScriptProfiles_ProgressiveFighterMagic_SaveButton_Click;
             // 
             // comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC
             // 
@@ -186,7 +186,7 @@
             Controls.Add(checkBoxScriptProfiles_ProgressiveFighterMagic_RenewBond);
             Controls.Add(checkBoxScriptProfiles_ProgressiveFighterMagic_DeathHandler);
             Controls.Add(labelScriptProfiles_ProgressiveFighterMagic_Title);
-            Controls.Add(btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_ProgressiveFighterMagic_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -210,7 +210,7 @@
         public CheckBox checkBoxScriptProfiles_ProgressiveFighterMagic_RenewBond;
         public CheckBox checkBoxScriptProfiles_ProgressiveFighterMagic_DeathHandler;
         public Label labelScriptProfiles_ProgressiveFighterMagic_Title;
-        public Button btnScriptProfiles_ProgressiveFighterMagic_SaveToProfiles;
+        public Button btnScriptProfiles_ProgressiveFighterMagic_SaveProfile;
         public ComboBox comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC;
         public Label labelScriptProfiles_ProgressiveFighterMagic_SelectNPC;
     }

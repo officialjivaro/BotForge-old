@@ -1,4 +1,6 @@
-﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
+﻿using System.Reflection;
+
+namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
     public partial class formScriptProfilesGeneric : Form
     {
@@ -11,12 +13,11 @@
             MainForm = mainForm;
         }
 
-        // Initialize Variables - Strings
-        string pc_username = Environment.UserName;
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
+        // Initialize Variables
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
 
@@ -26,63 +27,43 @@
             comboBoxScriptProfiles_Generic_SelectScript.SelectedIndex = 0;
         }
 
-        // Button Click - Save Script Profile
+        // Btn Click - Save Profile
         public void btnScriptProfiles_Generic_SaveButton_Click(object sender, EventArgs e)
         {
+            // Initialize Variables
+            string filepathProfileGeneric = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\" + comboBoxScriptProfiles_Generic_SelectScript.SelectedItem.ToString());
 
-            // Intialize variables
-            string filepathProfileGeneric = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\" + comboBoxScriptProfiles_Generic_SelectScript.SelectedItem.ToString());
-
-            //Set Checkbox Variables//
+            // Set Checkbox Variables
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                {"boolEnableDeathHandler", checkBoxScriptProfiles_Generic_DeathHandler},
-                {"boolEnableRenewBond", checkBoxScriptProfiles_Generic_RenewBond},
                 {"boolEnableAntipattern", checkBoxScriptProfiles_Generic_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_Generic_DeathHandler},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_Generic_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_Generic_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_Generic_Restocking},
                 {"boolEnableSellLoot", checkBoxScriptProfiles_Generic_SellLoot}
             };
 
-            //Dictionary To Store Booleans//
-            var checkBoxMappingResults = new Dictionary<string, string>();
-
-            //Loop Through Dictionary & Generate Output//
             foreach (var checkboxPair in checkBoxMappings)
             {
                 if (checkboxPair.Value.Checked)
                 {
-                    checkBoxMappingResults[checkboxPair.Key] = $"<Find>{checkboxPair.Key}:false</Find><Replace>{checkboxPair.Key}:true</Replace>";
+                    var variableName = checkboxPair.Key;
+                    var variableValue = $"<Find>{variableName}:false</Find><Replace>{variableName}:true</Replace>";
+
+                    // Using reflection to dynamically set field values
+                    this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(this, variableValue);
                 }
             }
 
-            //Check & Update Variables//
-            if (checkBoxMappingResults.ContainsKey("boolEnableDeathHandler"))
-                boolEnableDeathHandler = checkBoxMappingResults["boolEnableDeathHandler"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableRenewBond"))
-                boolEnableRenewBond = checkBoxMappingResults["boolEnableRenewBond"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableAntipattern"))
-                boolEnableAntipattern = checkBoxMappingResults["boolEnableAntipattern"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableHopWorlds"))
-                boolEnableHopWorlds = checkBoxMappingResults["boolEnableHopWorlds"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableRestocking"))
-                boolEnableRestocking = checkBoxMappingResults["boolEnableRestocking"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableSellLoot"))
-                boolEnableSellLoot = checkBoxMappingResults["boolEnableSellLoot"];
-
-            //Write To File//
+            // Write To File
             using (StreamWriter writer = new StreamWriter(filepathProfileGeneric))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
             }

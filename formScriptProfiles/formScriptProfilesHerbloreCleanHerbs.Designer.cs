@@ -38,7 +38,7 @@
             checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond = new CheckBox();
             checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler = new CheckBox();
             labelScriptProfiles_HerbloreCleanHerbs_Title = new Label();
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles = new Button();
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile = new Button();
             labelScriptProfiles_HerbloreCleanHerbs_SelectHerb = new Label();
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb = new ComboBox();
             labelScriptProfiles_HerbloreCleanHerbs_Header = new Label();
@@ -146,20 +146,20 @@
             labelScriptProfiles_HerbloreCleanHerbs_Title.Text = "Herblore: Clean Herbs";
             labelScriptProfiles_HerbloreCleanHerbs_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles
+            // btnScriptProfiles_HerbloreCleanHerbs_SaveProfile
             // 
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Location = new Point(325, 350);
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Name = "btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles";
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles.Click += btnScriptProfiles_HerbloreCleanHerbs_SaveButton_Click;
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Location = new Point(325, 350);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Name = "btnScriptProfiles_HerbloreCleanHerbs_SaveProfile";
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.TabIndex = 182;
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Click += btnScriptProfiles_HerbloreCleanHerbs_SaveButton_Click;
             // 
             // labelScriptProfiles_HerbloreCleanHerbs_SelectHerb
             // 
@@ -242,7 +242,7 @@
             Controls.Add(checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond);
             Controls.Add(checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler);
             Controls.Add(labelScriptProfiles_HerbloreCleanHerbs_Title);
-            Controls.Add(btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_HerbloreCleanHerbs_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -267,7 +267,7 @@
         public CheckBox checkBoxScriptProfiles_HerbloreCleanHerbs_RenewBond;
         public CheckBox checkBoxScriptProfiles_HerbloreCleanHerbs_DeathHandler;
         public Label labelScriptProfiles_HerbloreCleanHerbs_Title;
-        public Button btnScriptProfiles_HerbloreCleanHerbs_SaveToProfiles;
+        public Button btnScriptProfiles_HerbloreCleanHerbs_SaveProfile;
         public Label labelScriptProfiles_HerbloreCleanHerbs_SelectHerb;
         public ComboBox comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb;
         public Label labelScriptProfiles_HerbloreCleanHerbs_Header;

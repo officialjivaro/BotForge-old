@@ -36,7 +36,7 @@
             checkBoxScriptProfiles_MiniGamesRoguesDen_RenewBond = new CheckBox();
             checkBoxScriptProfiles_MiniGamesRoguesDen_DeathHandler = new CheckBox();
             labelScriptProfiles_MiniGamesRoguesDen_Title = new Label();
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles = new Button();
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile = new Button();
             labelScriptProfiles_MiniGamesRoguesDen_Header = new Label();
             checkBoxScriptProfiles_MiniGamesRoguesDen_StopOnFiveCrates = new CheckBox();
             SuspendLayout();
@@ -118,20 +118,20 @@
             labelScriptProfiles_MiniGamesRoguesDen_Title.Text = "Mini Games: Rogues Den";
             labelScriptProfiles_MiniGamesRoguesDen_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles
+            // btnScriptProfiles_MiniGamesRoguesDen_SaveProfile
             // 
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.Location = new Point(155, 350);
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.Name = "btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles";
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles.Click += btnScriptProfiles_MiniGamesRoguesDen_SaveButton_Click;
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Location = new Point(155, 350);
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Name = "btnScriptProfiles_MiniGamesRoguesDen_SaveProfile";
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.TabIndex = 182;
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Click += btnScriptProfiles_MiniGamesRoguesDen_SaveButton_Click;
             // 
             // labelScriptProfiles_MiniGamesRoguesDen_Header
             // 
@@ -171,7 +171,7 @@
             Controls.Add(checkBoxScriptProfiles_MiniGamesRoguesDen_RenewBond);
             Controls.Add(checkBoxScriptProfiles_MiniGamesRoguesDen_DeathHandler);
             Controls.Add(labelScriptProfiles_MiniGamesRoguesDen_Title);
-            Controls.Add(btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_MiniGamesRoguesDen_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -193,7 +193,7 @@
         public CheckBox checkBoxScriptProfiles_MiniGamesRoguesDen_RenewBond;
         public CheckBox checkBoxScriptProfiles_MiniGamesRoguesDen_DeathHandler;
         public Label labelScriptProfiles_MiniGamesRoguesDen_Title;
-        public Button btnScriptProfiles_MiniGamesRoguesDen_SaveToProfiles;
+        public Button btnScriptProfiles_MiniGamesRoguesDen_SaveProfile;
         public Label labelScriptProfiles_MiniGamesRoguesDen_Header;
         public CheckBox checkBoxScriptProfiles_MiniGamesRoguesDen_StopOnFiveCrates;
     }

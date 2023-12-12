@@ -36,7 +36,7 @@
             checkBoxScriptProfiles_ProgressiveFighterRanged_RenewBond = new CheckBox();
             checkBoxScriptProfiles_ProgressiveFighterRanged_DeathHandler = new CheckBox();
             labelScriptProfiles_ProgressiveFighterRanged_Title = new Label();
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles = new Button();
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile = new Button();
             comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC = new ComboBox();
             labelScriptProfiles_ProgressiveFighterRanged_SelectNPC = new Label();
             checkBoxScriptProfiles_ProgressiveFighterRanged_LongRangeMode = new CheckBox();
@@ -115,19 +115,19 @@
             labelScriptProfiles_ProgressiveFighterRanged_Title.Text = "Progressive Fighter: Ranged";
             labelScriptProfiles_ProgressiveFighterRanged_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles
+            // btnScriptProfiles_ProgressiveFighterRanged_SaveProfile
             // 
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.Location = new Point(190, 425);
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.Name = "btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles";
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.TabIndex = 177;
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles.Click += btnScriptProfiles_ProgressiveFighterRanged_SaveButton_Click;
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Location = new Point(190, 425);
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Name = "btnScriptProfiles_ProgressiveFighterRanged_SaveProfile";
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.TabIndex = 177;
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Click += btnScriptProfiles_ProgressiveFighterRanged_SaveButton_Click;
             // 
             // comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC
             // 
@@ -167,9 +167,9 @@
             checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.AutoSize = true;
             checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.Location = new Point(275, 277);
             checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.Name = "checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows";
-            checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.Size = new Size(57, 22);
+            checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.Size = new Size(108, 22);
             checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.TabIndex = 196;
-            checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.Text = "Loot";
+            checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.Text = "Loot Arrows";
             checkBoxScriptProfiles_ProgressiveFighterRanged_DontLootArrows.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_ProgressiveFighterRanged_BuryBigBones
@@ -211,7 +211,7 @@
             Controls.Add(checkBoxScriptProfiles_ProgressiveFighterRanged_RenewBond);
             Controls.Add(checkBoxScriptProfiles_ProgressiveFighterRanged_DeathHandler);
             Controls.Add(labelScriptProfiles_ProgressiveFighterRanged_Title);
-            Controls.Add(btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_ProgressiveFighterRanged_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -235,7 +235,7 @@
         public CheckBox checkBoxScriptProfiles_ProgressiveFighterRanged_RenewBond;
         public CheckBox checkBoxScriptProfiles_ProgressiveFighterRanged_DeathHandler;
         public Label labelScriptProfiles_ProgressiveFighterRanged_Title;
-        public Button btnScriptProfiles_ProgressiveFighterRanged_SaveToProfiles;
+        public Button btnScriptProfiles_ProgressiveFighterRanged_SaveProfile;
         public ComboBox comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC;
         public Label labelScriptProfiles_ProgressiveFighterRanged_SelectNPC;
         public CheckBox checkBoxScriptProfiles_ProgressiveFighterRanged_LongRangeMode;

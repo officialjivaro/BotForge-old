@@ -42,7 +42,7 @@
             checkBoxScriptProfiles_MagicOrber_DeathHandler = new CheckBox();
             checkBoxScriptProfiles_MagicOrber_UseStaminas = new CheckBox();
             labelScriptProfiles_MagicOrber_Title = new Label();
-            btnScriptProfiles_MagicOrber_SaveToProfiles = new Button();
+            btnScriptProfiles_MagicOrber_SaveProfile = new Button();
             labelScriptProfiles_MagicOrber_SelectOrb = new Label();
             comboBoxScriptProfiles_MagicOrber_SelectOrb = new ComboBox();
             labelScriptProfiles_MagicOrber_Header = new Label();
@@ -193,20 +193,20 @@
             labelScriptProfiles_MagicOrber_Title.Text = "Magic: Orber";
             labelScriptProfiles_MagicOrber_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_MagicOrber_SaveToProfiles
+            // btnScriptProfiles_MagicOrber_SaveProfile
             // 
-            btnScriptProfiles_MagicOrber_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_MagicOrber_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_MagicOrber_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MagicOrber_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_MagicOrber_SaveToProfiles.Location = new Point(330, 350);
-            btnScriptProfiles_MagicOrber_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_MagicOrber_SaveToProfiles.Name = "btnScriptProfiles_MagicOrber_SaveToProfiles";
-            btnScriptProfiles_MagicOrber_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_MagicOrber_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_MagicOrber_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_MagicOrber_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_MagicOrber_SaveToProfiles.Click += btnScriptProfiles_MagicOrber_SaveButton_Click;
+            btnScriptProfiles_MagicOrber_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_MagicOrber_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_MagicOrber_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_MagicOrber_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MagicOrber_SaveProfile.Location = new Point(330, 350);
+            btnScriptProfiles_MagicOrber_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_MagicOrber_SaveProfile.Name = "btnScriptProfiles_MagicOrber_SaveProfile";
+            btnScriptProfiles_MagicOrber_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_MagicOrber_SaveProfile.TabIndex = 182;
+            btnScriptProfiles_MagicOrber_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_MagicOrber_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_MagicOrber_SaveProfile.Click += btnScriptProfiles_MagicOrber_SaveButton_Click;
             // 
             // labelScriptProfiles_MagicOrber_SelectOrb
             // 
@@ -267,7 +267,7 @@
             Controls.Add(checkBoxScriptProfiles_MagicOrber_DeathHandler);
             Controls.Add(checkBoxScriptProfiles_MagicOrber_UseStaminas);
             Controls.Add(labelScriptProfiles_MagicOrber_Title);
-            Controls.Add(btnScriptProfiles_MagicOrber_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_MagicOrber_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -297,7 +297,7 @@
         public CheckBox checkBoxScriptProfiles_MagicOrber_DeathHandler;
         public CheckBox checkBoxScriptProfiles_MagicOrber_UseStaminas;
         public Label labelScriptProfiles_MagicOrber_Title;
-        public Button btnScriptProfiles_MagicOrber_SaveToProfiles;
+        public Button btnScriptProfiles_MagicOrber_SaveProfile;
         public Label labelScriptProfiles_MagicOrber_SelectOrb;
         public ComboBox comboBoxScriptProfiles_MagicOrber_SelectOrb;
         public Label labelScriptProfiles_MagicOrber_Header;

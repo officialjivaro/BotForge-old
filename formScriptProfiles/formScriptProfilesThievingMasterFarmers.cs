@@ -1,4 +1,6 @@
-﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
+﻿using System.Reflection;
+
+namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
     public partial class formScriptProfilesThievingMasterFarmers : Form
     {
@@ -12,15 +14,17 @@
             MainForm = mainForm;
         }
 
-        // Initialize Variables - Strings
-        public string pc_username = Environment.UserName;
-        public string folderpathProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\";
-        public string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        public string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
-        public string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
-        public string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
-        public string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
-        public string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        // Initialize Variables
+        string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableAvoidPlayers = "<Find>boolEnableAvoidPlayers:false</Find><Replace>boolEnableAvoidPlayers:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
+        string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
+        string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
+        string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string boolEnableUseRoguesOutfit = "<Find>boolEnableUseRogueOutfit:false</Find><Replace>boolEnableUseRogueOutfit:false</Replace>";
+        string filepathProfileThievingMasterFarmers = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxThieving-MasterFarmers.txt");
+
 
         // Form Load
         public void formScriptProfiles_ThievingMasterFarmers_Load(object sender, EventArgs e)
@@ -28,72 +32,48 @@
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.SelectedIndex = 0;
         }
 
-        // Button Click - Save Script Profile
+        // Btn Click - Save Profile
         public void btnScriptProfiles_ThievingMasterFarmers_SaveButton_Click(object sender, EventArgs e)
         {
-
-            // Intialize variables
-            string filepathProfileThievingMasterFarmers = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxThieving-MasterFarmers.txt");
-            string selectLocation = "<Find>Random Sector/*/Varrock/*/Hosidius South/*/Hosidius North</Find><Replace>" + comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.SelectedItem.ToString() + "</Replace>";
-            string boolEnableUseRoguesOutfit = "<Find>boolEnableUseRogueOutfit:false</Find><Replace>boolEnableUseRogueOutfit:false</Replace>";
-
-            //Set Checkbox Variables//
+            // Set Checkbox Variables
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                {"boolEnableDeathHandler", checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler},
-                {"boolEnableRenewBond", checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond},
                 {"boolEnableAntipattern", checkBoxScriptProfiles_ThievingMasterFarmers_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_ThievingMasterFarmers_DeathHandler},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_ThievingMasterFarmers_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_ThievingMasterFarmers_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_ThievingMasterFarmers_Restocking},
                 {"boolEnableSellLoot", checkBoxScriptProfiles_ThievingMasterFarmers_SellLoot},
-                {"boolEnableUseRoguesOutfit", checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit}
+                {"boolEnableUseRoguesOutfit", checkBoxScriptProfiles_ThievingMasterFarmers_UseRoguesOutfit},
+                {"boolEnableAvoidPlayers", checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers}
             };
-            //Dictionary To Store Booleans//
-            var checkBoxMappingResults = new Dictionary<string, string>();
-            //Loop Through Dictionary & Generate Output//
+
             foreach (var checkboxPair in checkBoxMappings)
             {
                 if (checkboxPair.Value.Checked)
                 {
-                    checkBoxMappingResults[checkboxPair.Key] = $"<Find>{checkboxPair.Key}:false</Find><Replace>{checkboxPair.Key}:true</Replace>";
+                    var variableName = checkboxPair.Key;
+                    var variableValue = $"<Find>{variableName}:false</Find><Replace>{variableName}:true</Replace>";
+
+                    // Using reflection to dynamically set field values
+                    this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(this, variableValue);
                 }
             }
-
-            //Check & Update Variables//
-            if (checkBoxMappingResults.ContainsKey("boolEnableDeathHandler"))
-                boolEnableDeathHandler = checkBoxMappingResults["boolEnableDeathHandler"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableRenewBond"))
-                boolEnableRenewBond = checkBoxMappingResults["boolEnableRenewBond"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableAntipattern"))
-                boolEnableAntipattern = checkBoxMappingResults["boolEnableAntipattern"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableHopWorlds"))
-                boolEnableHopWorlds = checkBoxMappingResults["boolEnableHopWorlds"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableRestocking"))
-                boolEnableRestocking = checkBoxMappingResults["boolEnableRestocking"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableSellLoot"))
-                boolEnableSellLoot = checkBoxMappingResults["boolEnableSellLoot"];
-
-            if (checkBoxMappingResults.ContainsKey("boolEnableUseRoguesOutfit"))
-                boolEnableUseRoguesOutfit = checkBoxMappingResults["boolEnableUseRoguesOutfit"];
 
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileThievingMasterFarmers))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine("Master Farmer Settings");
+                writer.WriteLine("\nMaster Farmer Settings");
+                writer.WriteLine(boolEnableAvoidPlayers);
                 writer.WriteLine(boolEnableUseRoguesOutfit);
-                writer.WriteLine(selectLocation);
+                writer.WriteLine("<Find>Random Sector/*/Ardougne/*/Hosidius North/*/Hosidius South/*/Varrock</Find><Replace>" + comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.SelectedItem.ToString() + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

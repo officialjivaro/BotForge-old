@@ -1,4 +1,6 @@
-﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
+﻿using System.Reflection;
+
+namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
     public partial class formScriptProfilesFighterElderChaosDruids : Form
     {
@@ -11,15 +13,20 @@
             MainForm = mainForm;
         }
 
-        // Variables - Strings
-        string pc_username = Environment.UserName;
-        string folderpathProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\";
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
+        // Initialize Variables
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableAvoidCannon = "<Find>boolEnableAvoidCannon:false</Find><Replace>boolEnableAvoidCannon:false</Replace>";
+        string boolEnableAvoidPlayers = "<Find>boolEnableAvoidPlayers:false</Find><Replace>boolEnableAvoidPlayers:false</Replace>";
+        string boolEnableDamagePrayers = "<Find>boolEnableDamagePrayers:false</Find><Replace>boolEnableDamagePrayers:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableLootArrows = "<Find>boolEnableLootArrows:false</Find><Replace>boolEnableLootArrows:false</Replace>";
+        string boolEnableProgressiveTraining = "<Find>boolEnableProgressiveTraining:false</Find><Replace>boolEnableProgressiveTraining:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string boolEnableTeleportFromPkers = "<Find>boolEnableTeleportFromPkers:false</Find><Replace>boolEnableTeleportFromPkers:false</Replace>";
+        string filepathProfileFighterElderChaosDruids = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxFighter-ElderChaosDruids.txt");
 
         // Form Load
         public void formScriptProfilesFighterElderChaosDruids_Load(object sender, EventArgs e)
@@ -31,123 +38,64 @@
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.SelectedIndex = 0;
         }
 
-        // Button Click - Save Profile
+        // Btn Click - Save Profile
         public void btnScriptProfiles_FighterElderChaosDruids_SaveButton_Click(object sender, EventArgs e)
         {
-            // Intialize variables
-            string filepathProfileFighterElderChaosDruids = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxFighter-ElderChaosDruids.txt");
-            string boolEnableProgressiveTraining = "<Find>boolEnableProgressiveTraining:false</Find><Replace>boolEnableProgressiveTraining:false</Replace>";
-            string boolEnableTeleportFromPkers = "<Find>boolEnableTeleportFromPkers:false</Find><Replace>boolEnableTeleportFromPkers:false</Replace>";
-            string boolEnableDamagePrayers = "<Find>boolEnableDamagePrayers:false</Find><Replace>boolEnableDamagePrayers:false</Replace>";
-            string boolEnableAvoidCannon = "<Find>boolEnableAvoidCannon:false</Find><Replace>boolEnableAvoidCannon:false</Replace>";
-            string boolEnableAvoidPlayers = "<Find>boolEnableAvoidPlayers:false</Find><Replace>boolEnableAvoidPlayers:false</Replace>";
-            string boolEnableLootArrows = "<Find>boolEnableLootArrows:false</Find><Replace>boolEnableLootArrows:false</Replace>";
-            string selectGear = comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.SelectedItem.ToString();
-            string selectCape = comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.SelectedItem.ToString();
-            string selectBoots = comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.SelectedItem.ToString();
-            string selectHeadgear = comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.SelectedItem.ToString();
-            string selectWeapon = comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.SelectedItem.ToString();
 
-            //Set EnableDeathHandler Variable//
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler.Checked)
+            // Set Checkbox Variables
+            var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:true</Replace>";
-            }
+                {"boolEnableAntipattern", checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern},
+                {"boolEnableAvoidCannon", checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon},
+                {"boolEnableAvoidPlayers", checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers},
+                {"boolEnableDamagePrayers", checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping},
+                {"boolEnableLootArrows", checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows},
+                {"boolEnableProgressiveTraining", checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_FighterElderChaosDruids_Restocking},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot},
+                {"boolEnableTeleportFromPkers", checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers}
+            };
 
-            //Set EnableRenewBond Handler Variable//
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond.Checked)
+            foreach (var checkboxPair in checkBoxMappings)
             {
-                boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:true</Replace>";
-            }
+                if (checkboxPair.Value.Checked)
+                {
+                    var variableName = checkboxPair.Key;
+                    var variableValue = $"<Find>{variableName}:false</Find><Replace>{variableName}:true</Replace>";
 
-            //Set EnableAntipattern Handler Variable//
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_Antipattern.Checked)
-            {
-                boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:true</Replace>";
+                    // Using reflection to dynamically set field values
+                    this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(this, variableValue);
+                }
             }
-
-            //Set EnableHopWorlds Handler Variable//
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping.Checked)
-            {
-                boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:true</Replace>";
-            }
-
-            //Set EnableRestocking Handler Variable//
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_Restocking.Checked)
-            {
-                boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:true</Replace>";
-            }
-
-            //Set EnableSellLoot Handler Variable//
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot.Checked)
-            {
-                boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:true</Replace>";
-            }
-
-            // Train stats evenly
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Checked)
-            {
-                boolEnableProgressiveTraining = "<Find>boolEnableProgressiveTraining:false</Find><Replace>boolEnableProgressiveTraining:true</Replace>";
-            }
-
-            // Teleport From Pkers
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers.Checked)
-            {
-                boolEnableTeleportFromPkers = "<Find>boolEnableTeleportFromPkers:false</Find><Replace>boolEnableTeleportFromPkers:true</Replace>";
-            }
-
-            // Use Offensive Prayers
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_UseOffensivePrayers.Checked)
-            {
-                boolEnableDamagePrayers = "<Find>boolEnableDamagePrayers:false</Find><Replace>boolEnableDamagePrayers:true</Replace>";
-            }
-
-            // Teleport From Cannon
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_AvoidCannon.Checked)
-            {
-                boolEnableAvoidCannon = "<Find>boolEnableAvoidCannon:false</Find><Replace>boolEnableAvoidCannon:true</Replace>";
-            }
-
-            // Teleport If Area is Full
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPlayers.Checked)
-            {
-                boolEnableAvoidPlayers = "<Find>boolEnableAvoidPlayers:false</Find><Replace>boolEnableAvoidPlayers:true</Replace>";
-            }
-
-            // Loot arrows
-            if (checkBoxScriptProfiles_FighterElderChaosDruids_LootArrows.Checked)
-            {
-                boolEnableLootArrows = "<Find>boolEnableLootArrows:false</Find><Replace>boolEnableLootArrows:true</Replace>";
-            }
-
 
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileFighterElderChaosDruids))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine("Fighter - Elder Chaos Druids Settings");
-                writer.WriteLine(boolEnableProgressiveTraining);
-                writer.WriteLine(boolEnableTeleportFromPkers);
-                writer.WriteLine(boolEnableDamagePrayers);
+                writer.WriteLine("\nElder Chaos Druids Settings");
                 writer.WriteLine(boolEnableAvoidCannon);
                 writer.WriteLine(boolEnableAvoidPlayers);
+                writer.WriteLine(boolEnableDamagePrayers);
                 writer.WriteLine(boolEnableLootArrows);
-                writer.WriteLine("Gear Settings");
-                writer.WriteLine("<Find>None/*/Random/*/MonksRobe/*/ZamorakMonksRobe</Find><Replace>" + selectGear + "</Replace>");
-                writer.WriteLine("<Find>None/*/Random/*/GuthixCloak/*/ZamorakCloak/*/SaradominCloak</Find><Replace>" + selectCape + "</Replace>");
-                writer.WriteLine("<Find>None/*/BestEquipable/*/ClimbingBoots/*/RuneBoots/*/DragonBoots/*/SnakeskinBoots</Find><Replace>" + selectBoots + "</Replace>");
-                writer.WriteLine("<Find>None/*/Random/*/GuthixMitre/*/SaradominMitre/*/ZamorakMitre</Find><Replace>" + selectHeadgear + "</Replace>");
-                writer.WriteLine("<Find>Random/*/Melee/*/Ranged/*/AbyssalWhip/*/MagicShortbow</Find><Replace>" + selectWeapon + "</Replace>");
+                writer.WriteLine(boolEnableProgressiveTraining);
+                writer.WriteLine(boolEnableTeleportFromPkers);
+                writer.WriteLine("\nGear Settings");
+                writer.WriteLine("<Find>None/*/BestEquipable/*/ClimbingBoots/*/RuneBoots/*/DragonBoots/*/SnakeskinBoots</Find><Replace>" + comboBoxScriptProfiles_FighterElderChaosDruids_SelectBoots.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>None/*/Random/*/GuthixCloak/*/ZamorakCloak/*/SaradominCloak</Find><Replace>" + comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>None/*/Random/*/MonksRobe/*/ZamorakMonksRobe</Find><Replace>" + comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>None/*/Random/*/GuthixMitre/*/SaradominMitre/*/ZamorakMitre</Find><Replace>" + comboBoxScriptProfiles_FighterElderChaosDruids_SelectHeadgear.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>Random/*/Melee/*/Ranged/*/AbyssalWhip/*/MagicShortbow</Find><Replace>" + comboBoxScriptProfiles_FighterElderChaosDruids_SelectWeapon.SelectedItem.ToString() + "</Replace>");
             }
-
             MessageBox.Show("Profile successfully created.");
-
         }
     }
 }

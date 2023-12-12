@@ -51,7 +51,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                     int randomNumber = MainForm.Invoke_GenerateUniqueRandomNumber();
 
                     // Format the string
-                    var formattedLine = $"{accountEmail},{password},{pin},IP:PORT:USER:PASS,SF I,fxAccountBuilder,-F2P-,Stealth,Yes,No,,{randomNumber},,,";
+                    var formattedLine = $"{accountEmail},{password},{pin},IP:PORT:USER:PASS,SF I,fxAccountBuilder,-F2P-,,,,{randomNumber},";
 
                     // Add it to the collection
                     formattedLines.Add(formattedLine);
@@ -61,7 +61,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                 File.AppendAllLines(MainForm.filePathApplicationDataAccountsScriptFactory, formattedLines);
 
                 // Repopulate dataGridView
-                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.dataGridViewScriptFactory, MainForm.filePathApplicationDataAccountsScriptFactory);
+                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.kryptonDataGridViewDashboard_ScriptFactoryManager, MainForm.filePathApplicationDataAccountsScriptFactory);
             }
 
             catch (Exception ex)
@@ -108,7 +108,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                     int randomNumber = MainForm.Invoke_GenerateUniqueRandomNumber();
 
                     // Format the string
-                    var formattedLine = $"{accountEmail},{password},{pin},IP:PORT:USER:PASS,Perfect Agility - 808,SCRIPT_ARGS,-F2P-,Stealth,Yes,No,,{randomNumber},,,";
+                    var formattedLine = $"{accountEmail},{password},{pin},IP:PORT:USER:PASS,Perfect Agility - 808,SCRIPT_ARGS,-F2P-,,,,{randomNumber},";
 
                     // Add it to the collection
                     formattedLines.Add(formattedLine);
@@ -118,7 +118,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                 File.AppendAllLines(MainForm.filePathApplicationDataAccountsOSBot, formattedLines);
 
                 // Repopulate dataGridView
-                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.dataGridViewOSBotManager, MainForm.filePathApplicationDataAccountsOSBot);
+                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.kryptonDataGridViewDashboard_OSBotManager, MainForm.filePathApplicationDataAccountsOSBot);
             }
 
             catch (Exception ex)
@@ -165,7 +165,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                     int randomNumber = MainForm.Invoke_GenerateUniqueRandomNumber();
 
                     // Format the string
-                    var formattedLine = $"{accountEmail},{password},{pin},IP:PORT:USER:PASS,0x's Aerial Fish Catcher,SCRIPT_ARGS,BREAK_NICKNAME,f2p,Covert - Render,No,,{randomNumber},,,";
+                    var formattedLine = $"{accountEmail},{password},{pin},IP:PORT:USER:PASS,0x's Aerial Fish Catcher,SCRIPT_ARGS,BREAK_NICKNAME,f2p,,,,{randomNumber},";
 
                     // Add it to the collection
                     formattedLines.Add(formattedLine);
@@ -175,7 +175,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                 File.AppendAllLines(MainForm.filePathApplicationDataAccountsDreamBot, formattedLines);
 
                 // Repopulate dataGridView
-                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.dataGridViewDreamBotManager, MainForm.filePathApplicationDataAccountsDreamBot);
+                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.kryptonDataGridViewDashboard_DreamBotManager, MainForm.filePathApplicationDataAccountsDreamBot);
             }
 
             catch (Exception ex)
@@ -222,7 +222,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                     int randomNumber = MainForm.Invoke_GenerateUniqueRandomNumber();
 
                     // Format the string
-                    var formattedLine = $"{accountEmail},{password},{pin},IP:PORT:USER:PASS,aAgility AIO,SCRIPT_ARGS,-F2P-,BREAK_NAME,Injection,No,,{randomNumber},,,";
+                    var formattedLine = $"{accountEmail},{password},{pin},IP:PORT:USER:PASS,aAgility AIO,SCRIPT_ARGS,BREAK_NAME,-F2P-,,,,{randomNumber},";
 
                     // Add it to the collection
                     formattedLines.Add(formattedLine);
@@ -232,7 +232,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                 File.AppendAllLines(MainForm.filePathApplicationDataAccountsTRiBot, formattedLines);
 
                 // Repopulate dataGridView
-                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.dataGridViewTRiBotManager, MainForm.filePathApplicationDataAccountsTRiBot);
+                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.kryptonDataGridViewDashboard_TRiBotManager, MainForm.filePathApplicationDataAccountsTRiBot);
             }
 
             catch (Exception ex)

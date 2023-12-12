@@ -35,7 +35,7 @@
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape = new ComboBox();
             labelScriptProfiles_FighterElderChaosDruids_SelectGear = new Label();
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear = new ComboBox();
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly = new CheckBox();
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining = new CheckBox();
             checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping = new CheckBox();
             checkBoxScriptProfiles_FighterElderChaosDruids_Restocking = new CheckBox();
             checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot = new CheckBox();
@@ -43,7 +43,7 @@
             checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond = new CheckBox();
             checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler = new CheckBox();
             labelScriptProfiles_FighterElderChaosDruids_Title = new Label();
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles = new Button();
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile = new Button();
             labelScriptProfiles_FighterElderChaosDruids_SelectHat = new Label();
             labelScriptProfiles_FighterElderChaosDruids_SelectBoots = new Label();
             checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers = new CheckBox();
@@ -128,16 +128,16 @@
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.Size = new Size(250, 26);
             comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear.TabIndex = 124;
             // 
-            // checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly
+            // checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining
             // 
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.AutoSize = true;
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Location = new Point(225, 125);
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Margin = new Padding(0);
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly";
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Size = new Size(145, 22);
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.TabIndex = 117;
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.Text = "Train Stats Evenly";
-            checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining.AutoSize = true;
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining.Location = new Point(225, 125);
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining.Name = "checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining";
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining.Size = new Size(145, 22);
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining.TabIndex = 117;
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining.Text = "Train Stats Evenly";
+            checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping
             // 
@@ -216,20 +216,20 @@
             labelScriptProfiles_FighterElderChaosDruids_Title.Text = "Fighter: Elder Chaos Druids";
             labelScriptProfiles_FighterElderChaosDruids_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles
+            // btnScriptProfiles_FighterElderChaosDruids_SaveProfile
             // 
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Location = new Point(405, 425);
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Name = "btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles";
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.TabIndex = 106;
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles.Click += btnScriptProfiles_FighterElderChaosDruids_SaveButton_Click;
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.Location = new Point(405, 425);
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.Name = "btnScriptProfiles_FighterElderChaosDruids_SaveProfile";
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.TabIndex = 106;
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_FighterElderChaosDruids_SaveProfile.Click += btnScriptProfiles_FighterElderChaosDruids_SaveButton_Click;
             // 
             // labelScriptProfiles_FighterElderChaosDruids_SelectHat
             // 
@@ -367,7 +367,7 @@
             Controls.Add(comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape);
             Controls.Add(labelScriptProfiles_FighterElderChaosDruids_SelectGear);
             Controls.Add(comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear);
-            Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly);
+            Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining);
             Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping);
             Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_Restocking);
             Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot);
@@ -375,7 +375,7 @@
             Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond);
             Controls.Add(checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler);
             Controls.Add(labelScriptProfiles_FighterElderChaosDruids_Title);
-            Controls.Add(btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_FighterElderChaosDruids_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -400,7 +400,7 @@
         public ComboBox comboBoxScriptProfiles_FighterElderChaosDruids_SelectCape;
         public Label labelScriptProfiles_FighterElderChaosDruids_SelectGear;
         public ComboBox comboBoxScriptProfiles_FighterElderChaosDruids_SelectGear;
-        public CheckBox checkBoxScriptProfiles_FighterElderChaosDruids_TrainStatsEvenly;
+        public CheckBox checkBoxScriptProfiles_FighterElderChaosDruids_ProgressiveTraining;
         public CheckBox checkBoxScriptProfiles_FighterElderChaosDruids_WorldHopping;
         public CheckBox checkBoxScriptProfiles_FighterElderChaosDruids_Restocking;
         public CheckBox checkBoxScriptProfiles_FighterElderChaosDruids_SellLoot;
@@ -408,7 +408,7 @@
         public CheckBox checkBoxScriptProfiles_FighterElderChaosDruids_RenewBond;
         public CheckBox checkBoxScriptProfiles_FighterElderChaosDruids_DeathHandler;
         public Label labelScriptProfiles_FighterElderChaosDruids_Title;
-        public Button btnScriptProfiles_FighterElderChaosDruids_SaveToProfiles;
+        public Button btnScriptProfiles_FighterElderChaosDruids_SaveProfile;
         public Label labelScriptProfiles_FighterElderChaosDruids_SelectHat;
         public Label labelScriptProfiles_FighterElderChaosDruids_SelectBoots;
         public CheckBox checkBoxScriptProfiles_FighterElderChaosDruids_AvoidPkers;

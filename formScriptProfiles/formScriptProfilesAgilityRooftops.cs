@@ -18,14 +18,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         }
 
         // Initialize Variables
-        string pc_username = Environment.UserName;
-        string folderpathProfiles = @"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\";
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileAgilityRooftops = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxAgility-Rooftops.txt");
 
         // Form load
         public void formScriptProfiles_AgilityRooftops_Load(object sender, EventArgs e)
@@ -45,22 +44,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             invokeMethodsPassiveGlobal.GlobalMethod_RequireInput_Validating(sender, e);
         }
 
-        // Button Click - Save Profile
+        // Btn Click - Save Profile
         public void btnScriptProfiles_AgilityRooftops_SaveButton_Click(object sender, EventArgs e)
         {
-
-            // Intialize Variables - Strings
-            string filepathProfileAgilityRooftops = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxAgility-Rooftops.txt");
-            string agilityStopLevel = "<Find>10101010</Find><Replace>" + textBoxScriptProfiles_AgilityRooftops_TrainAgility.Text + "</Replace>";
-            string selectRooftopCourse = "<Find>Progressive/*/Gnome/*/Draynor/*/Varrock/*/Falador/*/Seers/*/Fremennik/*/Ardougne</Find><Replace>" + comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.SelectedItem.ToString() + "</Replace>";
-
             // Set Checkbox Variables
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                {"boolEnableDeathHandler", checkBoxScriptProfiles_AgilityRooftops_DeathHandler},
-                {"boolEnableRenewBond", checkBoxScriptProfiles_AgilityRooftops_RenewBond},
                 {"boolEnableAntipattern", checkBoxScriptProfiles_AgilityRooftops_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_AgilityRooftops_DeathHandler},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_AgilityRooftops_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_AgilityRooftops_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_AgilityRooftops_Restocking},
                 {"boolEnableSellLoot", checkBoxScriptProfiles_AgilityRooftops_SellLoot},
             };
@@ -81,14 +74,15 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             using (StreamWriter writer = new StreamWriter(filepathProfileAgilityRooftops))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine(agilityStopLevel);
-                writer.WriteLine(selectRooftopCourse);
+                writer.WriteLine("\nRooftops Settings");
+                writer.WriteLine("<Find>Progressive/*/Gnome/*/Draynor/*/Varrock/*/Falador/*/Seers/*/Fremennik/*/Ardougne</Find><Replace>" + comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>10101010</Find><Replace>" + textBoxScriptProfiles_AgilityRooftops_TrainAgility.Text + "</Replace>");
             }
 
             MessageBox.Show("Profile successfully created.");

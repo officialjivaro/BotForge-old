@@ -35,15 +35,15 @@
             labelScriptProfiles_Kurasks_RangedCape = new Label();
             labelScriptProfiles_Kurasks_SelectMode = new Label();
             comboBoxScriptProfiles_Kurasks_SelectMode = new ComboBox();
-            checkBoxScriptProfiles_Kurasks_HighAlching = new CheckBox();
-            checkBoxScriptProfiles_Kurasks_WorldHopping = new CheckBox();
-            checkBoxScriptProfiles_Kurasks_Restocking = new CheckBox();
-            checkBoxScriptProfiles_Kurasks_SellLoot = new CheckBox();
-            checkBoxScriptProfiles_Kurasks_Antipattern = new CheckBox();
-            checkBoxScriptProfiles_Kurasks_RenewBond = new CheckBox();
-            checkBoxScriptProfiles_Kurasks_DeathHandler = new CheckBox();
+            checkBoxScriptProfiles_FighterKurasks_HighAlching = new CheckBox();
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping = new CheckBox();
+            checkBoxScriptProfiles_FighterKurasks_Restocking = new CheckBox();
+            checkBoxScriptProfiles_FighterKurasks_SellLoot = new CheckBox();
+            checkBoxScriptProfiles_FighterKurasks_Antipattern = new CheckBox();
+            checkBoxScriptProfiles_FighterKurasks_RenewBond = new CheckBox();
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler = new CheckBox();
             labelScriptProfiles_FighterKurasks_Title = new Label();
-            btnScriptProfiles_Kurasks_SaveToProfiles = new Button();
+            btnScriptProfiles_Kurasks_SaveProfile = new Button();
             textBoxScriptProfiles_Kurasks_RangedArrow = new TextBox();
             labelScriptProfiles_Kurasks_RangedWeapon = new Label();
             labelScriptProfiles_Kurasks_RangedRing = new Label();
@@ -154,82 +154,82 @@
             comboBoxScriptProfiles_Kurasks_SelectMode.Size = new Size(125, 26);
             comboBoxScriptProfiles_Kurasks_SelectMode.TabIndex = 155;
             // 
-            // checkBoxScriptProfiles_Kurasks_HighAlching
+            // checkBoxScriptProfiles_FighterKurasks_HighAlching
             // 
-            checkBoxScriptProfiles_Kurasks_HighAlching.AutoSize = true;
-            checkBoxScriptProfiles_Kurasks_HighAlching.Location = new Point(50, 477);
-            checkBoxScriptProfiles_Kurasks_HighAlching.Margin = new Padding(0);
-            checkBoxScriptProfiles_Kurasks_HighAlching.Name = "checkBoxScriptProfiles_Kurasks_HighAlching";
-            checkBoxScriptProfiles_Kurasks_HighAlching.Size = new Size(117, 22);
-            checkBoxScriptProfiles_Kurasks_HighAlching.TabIndex = 148;
-            checkBoxScriptProfiles_Kurasks_HighAlching.Text = "High Alchemy";
-            checkBoxScriptProfiles_Kurasks_HighAlching.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterKurasks_HighAlching.AutoSize = true;
+            checkBoxScriptProfiles_FighterKurasks_HighAlching.Location = new Point(50, 477);
+            checkBoxScriptProfiles_FighterKurasks_HighAlching.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterKurasks_HighAlching.Name = "checkBoxScriptProfiles_FighterKurasks_HighAlching";
+            checkBoxScriptProfiles_FighterKurasks_HighAlching.Size = new Size(117, 22);
+            checkBoxScriptProfiles_FighterKurasks_HighAlching.TabIndex = 148;
+            checkBoxScriptProfiles_FighterKurasks_HighAlching.Text = "High Alchemy";
+            checkBoxScriptProfiles_FighterKurasks_HighAlching.UseVisualStyleBackColor = true;
             // 
-            // checkBoxScriptProfiles_Kurasks_WorldHopping
+            // checkBoxScriptProfiles_FighterKurasks_WorldHopping
             // 
-            checkBoxScriptProfiles_Kurasks_WorldHopping.AutoSize = true;
-            checkBoxScriptProfiles_Kurasks_WorldHopping.Location = new Point(50, 327);
-            checkBoxScriptProfiles_Kurasks_WorldHopping.Margin = new Padding(0);
-            checkBoxScriptProfiles_Kurasks_WorldHopping.Name = "checkBoxScriptProfiles_Kurasks_WorldHopping";
-            checkBoxScriptProfiles_Kurasks_WorldHopping.Size = new Size(126, 22);
-            checkBoxScriptProfiles_Kurasks_WorldHopping.TabIndex = 147;
-            checkBoxScriptProfiles_Kurasks_WorldHopping.Text = "World Hopping";
-            checkBoxScriptProfiles_Kurasks_WorldHopping.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping.AutoSize = true;
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping.Location = new Point(50, 327);
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping.Name = "checkBoxScriptProfiles_FighterKurasks_WorldHopping";
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping.Size = new Size(126, 22);
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping.TabIndex = 147;
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping.Text = "World Hopping";
+            checkBoxScriptProfiles_FighterKurasks_WorldHopping.UseVisualStyleBackColor = true;
             // 
-            // checkBoxScriptProfiles_Kurasks_Restocking
+            // checkBoxScriptProfiles_FighterKurasks_Restocking
             // 
-            checkBoxScriptProfiles_Kurasks_Restocking.AutoSize = true;
-            checkBoxScriptProfiles_Kurasks_Restocking.Location = new Point(50, 377);
-            checkBoxScriptProfiles_Kurasks_Restocking.Margin = new Padding(0);
-            checkBoxScriptProfiles_Kurasks_Restocking.Name = "checkBoxScriptProfiles_Kurasks_Restocking";
-            checkBoxScriptProfiles_Kurasks_Restocking.Size = new Size(102, 22);
-            checkBoxScriptProfiles_Kurasks_Restocking.TabIndex = 146;
-            checkBoxScriptProfiles_Kurasks_Restocking.Text = "Restocking";
-            checkBoxScriptProfiles_Kurasks_Restocking.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterKurasks_Restocking.AutoSize = true;
+            checkBoxScriptProfiles_FighterKurasks_Restocking.Location = new Point(50, 377);
+            checkBoxScriptProfiles_FighterKurasks_Restocking.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterKurasks_Restocking.Name = "checkBoxScriptProfiles_FighterKurasks_Restocking";
+            checkBoxScriptProfiles_FighterKurasks_Restocking.Size = new Size(102, 22);
+            checkBoxScriptProfiles_FighterKurasks_Restocking.TabIndex = 146;
+            checkBoxScriptProfiles_FighterKurasks_Restocking.Text = "Restocking";
+            checkBoxScriptProfiles_FighterKurasks_Restocking.UseVisualStyleBackColor = true;
             // 
-            // checkBoxScriptProfiles_Kurasks_SellLoot
+            // checkBoxScriptProfiles_FighterKurasks_SellLoot
             // 
-            checkBoxScriptProfiles_Kurasks_SellLoot.AutoSize = true;
-            checkBoxScriptProfiles_Kurasks_SellLoot.Location = new Point(50, 427);
-            checkBoxScriptProfiles_Kurasks_SellLoot.Margin = new Padding(0);
-            checkBoxScriptProfiles_Kurasks_SellLoot.Name = "checkBoxScriptProfiles_Kurasks_SellLoot";
-            checkBoxScriptProfiles_Kurasks_SellLoot.Size = new Size(85, 22);
-            checkBoxScriptProfiles_Kurasks_SellLoot.TabIndex = 145;
-            checkBoxScriptProfiles_Kurasks_SellLoot.Text = "Sell Loot";
-            checkBoxScriptProfiles_Kurasks_SellLoot.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterKurasks_SellLoot.AutoSize = true;
+            checkBoxScriptProfiles_FighterKurasks_SellLoot.Location = new Point(50, 427);
+            checkBoxScriptProfiles_FighterKurasks_SellLoot.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterKurasks_SellLoot.Name = "checkBoxScriptProfiles_FighterKurasks_SellLoot";
+            checkBoxScriptProfiles_FighterKurasks_SellLoot.Size = new Size(85, 22);
+            checkBoxScriptProfiles_FighterKurasks_SellLoot.TabIndex = 145;
+            checkBoxScriptProfiles_FighterKurasks_SellLoot.Text = "Sell Loot";
+            checkBoxScriptProfiles_FighterKurasks_SellLoot.UseVisualStyleBackColor = true;
             // 
-            // checkBoxScriptProfiles_Kurasks_Antipattern
+            // checkBoxScriptProfiles_FighterKurasks_Antipattern
             // 
-            checkBoxScriptProfiles_Kurasks_Antipattern.AutoSize = true;
-            checkBoxScriptProfiles_Kurasks_Antipattern.Location = new Point(50, 277);
-            checkBoxScriptProfiles_Kurasks_Antipattern.Margin = new Padding(0);
-            checkBoxScriptProfiles_Kurasks_Antipattern.Name = "checkBoxScriptProfiles_Kurasks_Antipattern";
-            checkBoxScriptProfiles_Kurasks_Antipattern.Size = new Size(96, 22);
-            checkBoxScriptProfiles_Kurasks_Antipattern.TabIndex = 144;
-            checkBoxScriptProfiles_Kurasks_Antipattern.Text = "Antipattern";
-            checkBoxScriptProfiles_Kurasks_Antipattern.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterKurasks_Antipattern.AutoSize = true;
+            checkBoxScriptProfiles_FighterKurasks_Antipattern.Location = new Point(50, 277);
+            checkBoxScriptProfiles_FighterKurasks_Antipattern.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterKurasks_Antipattern.Name = "checkBoxScriptProfiles_FighterKurasks_Antipattern";
+            checkBoxScriptProfiles_FighterKurasks_Antipattern.Size = new Size(96, 22);
+            checkBoxScriptProfiles_FighterKurasks_Antipattern.TabIndex = 144;
+            checkBoxScriptProfiles_FighterKurasks_Antipattern.Text = "Antipattern";
+            checkBoxScriptProfiles_FighterKurasks_Antipattern.UseVisualStyleBackColor = true;
             // 
-            // checkBoxScriptProfiles_Kurasks_RenewBond
+            // checkBoxScriptProfiles_FighterKurasks_RenewBond
             // 
-            checkBoxScriptProfiles_Kurasks_RenewBond.AutoSize = true;
-            checkBoxScriptProfiles_Kurasks_RenewBond.Location = new Point(50, 227);
-            checkBoxScriptProfiles_Kurasks_RenewBond.Margin = new Padding(0);
-            checkBoxScriptProfiles_Kurasks_RenewBond.Name = "checkBoxScriptProfiles_Kurasks_RenewBond";
-            checkBoxScriptProfiles_Kurasks_RenewBond.Size = new Size(112, 22);
-            checkBoxScriptProfiles_Kurasks_RenewBond.TabIndex = 143;
-            checkBoxScriptProfiles_Kurasks_RenewBond.Text = "Renew Bond";
-            checkBoxScriptProfiles_Kurasks_RenewBond.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterKurasks_RenewBond.AutoSize = true;
+            checkBoxScriptProfiles_FighterKurasks_RenewBond.Location = new Point(50, 227);
+            checkBoxScriptProfiles_FighterKurasks_RenewBond.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterKurasks_RenewBond.Name = "checkBoxScriptProfiles_FighterKurasks_RenewBond";
+            checkBoxScriptProfiles_FighterKurasks_RenewBond.Size = new Size(112, 22);
+            checkBoxScriptProfiles_FighterKurasks_RenewBond.TabIndex = 143;
+            checkBoxScriptProfiles_FighterKurasks_RenewBond.Text = "Renew Bond";
+            checkBoxScriptProfiles_FighterKurasks_RenewBond.UseVisualStyleBackColor = true;
             // 
-            // checkBoxScriptProfiles_Kurasks_DeathHandler
+            // checkBoxScriptProfiles_FighterKurasks_DeathHandler
             // 
-            checkBoxScriptProfiles_Kurasks_DeathHandler.AutoSize = true;
-            checkBoxScriptProfiles_Kurasks_DeathHandler.Location = new Point(50, 177);
-            checkBoxScriptProfiles_Kurasks_DeathHandler.Margin = new Padding(0);
-            checkBoxScriptProfiles_Kurasks_DeathHandler.Name = "checkBoxScriptProfiles_Kurasks_DeathHandler";
-            checkBoxScriptProfiles_Kurasks_DeathHandler.Size = new Size(121, 22);
-            checkBoxScriptProfiles_Kurasks_DeathHandler.TabIndex = 142;
-            checkBoxScriptProfiles_Kurasks_DeathHandler.Text = "Death Handler";
-            checkBoxScriptProfiles_Kurasks_DeathHandler.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler.AutoSize = true;
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler.Location = new Point(50, 177);
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler.Name = "checkBoxScriptProfiles_FighterKurasks_DeathHandler";
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler.Size = new Size(121, 22);
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler.TabIndex = 142;
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler.Text = "Death Handler";
+            checkBoxScriptProfiles_FighterKurasks_DeathHandler.UseVisualStyleBackColor = true;
             // 
             // labelScriptProfiles_FighterKurasks_Title
             // 
@@ -242,20 +242,20 @@
             labelScriptProfiles_FighterKurasks_Title.Text = "Fighter: Kurasks";
             labelScriptProfiles_FighterKurasks_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_Kurasks_SaveToProfiles
+            // btnScriptProfiles_Kurasks_SaveProfile
             // 
-            btnScriptProfiles_Kurasks_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_Kurasks_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_Kurasks_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_Kurasks_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_Kurasks_SaveToProfiles.Location = new Point(455, 625);
-            btnScriptProfiles_Kurasks_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_Kurasks_SaveToProfiles.Name = "btnScriptProfiles_Kurasks_SaveToProfiles";
-            btnScriptProfiles_Kurasks_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_Kurasks_SaveToProfiles.TabIndex = 138;
-            btnScriptProfiles_Kurasks_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_Kurasks_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_Kurasks_SaveToProfiles.Click += btnScriptProfiles_Kurasks_SaveButton_Click;
+            btnScriptProfiles_Kurasks_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_Kurasks_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_Kurasks_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_Kurasks_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_Kurasks_SaveProfile.Location = new Point(455, 625);
+            btnScriptProfiles_Kurasks_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_Kurasks_SaveProfile.Name = "btnScriptProfiles_Kurasks_SaveProfile";
+            btnScriptProfiles_Kurasks_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_Kurasks_SaveProfile.TabIndex = 138;
+            btnScriptProfiles_Kurasks_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_Kurasks_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_Kurasks_SaveProfile.Click += btnScriptProfiles_Kurasks_SaveButton_Click;
             // 
             // textBoxScriptProfiles_Kurasks_RangedArrow
             // 
@@ -761,15 +761,15 @@
             Controls.Add(labelScriptProfiles_Kurasks_RangedCape);
             Controls.Add(labelScriptProfiles_Kurasks_SelectMode);
             Controls.Add(comboBoxScriptProfiles_Kurasks_SelectMode);
-            Controls.Add(checkBoxScriptProfiles_Kurasks_HighAlching);
-            Controls.Add(checkBoxScriptProfiles_Kurasks_WorldHopping);
-            Controls.Add(checkBoxScriptProfiles_Kurasks_Restocking);
-            Controls.Add(checkBoxScriptProfiles_Kurasks_SellLoot);
-            Controls.Add(checkBoxScriptProfiles_Kurasks_Antipattern);
-            Controls.Add(checkBoxScriptProfiles_Kurasks_RenewBond);
-            Controls.Add(checkBoxScriptProfiles_Kurasks_DeathHandler);
+            Controls.Add(checkBoxScriptProfiles_FighterKurasks_HighAlching);
+            Controls.Add(checkBoxScriptProfiles_FighterKurasks_WorldHopping);
+            Controls.Add(checkBoxScriptProfiles_FighterKurasks_Restocking);
+            Controls.Add(checkBoxScriptProfiles_FighterKurasks_SellLoot);
+            Controls.Add(checkBoxScriptProfiles_FighterKurasks_Antipattern);
+            Controls.Add(checkBoxScriptProfiles_FighterKurasks_RenewBond);
+            Controls.Add(checkBoxScriptProfiles_FighterKurasks_DeathHandler);
             Controls.Add(labelScriptProfiles_FighterKurasks_Title);
-            Controls.Add(btnScriptProfiles_Kurasks_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_Kurasks_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -792,14 +792,14 @@
         public Label labelScriptProfiles_Kurasks_RangedCape;
         public Label labelScriptProfiles_Kurasks_SelectMode;
         public ComboBox comboBoxScriptProfiles_Kurasks_SelectMode;
-        public CheckBox checkBoxScriptProfiles_Kurasks_HighAlching;
-        public CheckBox checkBoxScriptProfiles_Kurasks_WorldHopping;
-        public CheckBox checkBoxScriptProfiles_Kurasks_Restocking;
-        public CheckBox checkBoxScriptProfiles_Kurasks_SellLoot;
-        public CheckBox checkBoxScriptProfiles_Kurasks_Antipattern;
-        public CheckBox checkBoxScriptProfiles_Kurasks_RenewBond;
-        public CheckBox checkBoxScriptProfiles_Kurasks_DeathHandler;
-        public Button btnScriptProfiles_Kurasks_SaveToProfiles;
+        public CheckBox checkBoxScriptProfiles_FighterKurasks_HighAlching;
+        public CheckBox checkBoxScriptProfiles_FighterKurasks_WorldHopping;
+        public CheckBox checkBoxScriptProfiles_FighterKurasks_Restocking;
+        public CheckBox checkBoxScriptProfiles_FighterKurasks_SellLoot;
+        public CheckBox checkBoxScriptProfiles_FighterKurasks_Antipattern;
+        public CheckBox checkBoxScriptProfiles_FighterKurasks_RenewBond;
+        public CheckBox checkBoxScriptProfiles_FighterKurasks_DeathHandler;
+        public Button btnScriptProfiles_Kurasks_SaveProfile;
         public TextBox textBoxScriptProfiles_Kurasks_RangedArrow;
         public Label labelScriptProfiles_Kurasks_RangedWeapon;
         public Label labelScriptProfiles_Kurasks_RangedRing;

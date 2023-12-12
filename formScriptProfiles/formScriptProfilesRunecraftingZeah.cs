@@ -1,4 +1,6 @@
-﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
+﻿using System.Reflection;
+
+namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
     public partial class formScriptProfilesRunecraftingZeah : Form
     {
@@ -13,85 +15,59 @@
         }
 
         // Initialize Variables - Strings
-        string pc_username = Environment.UserName;
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableBuyDragonPickaxe = "<Find>boolEnableBuyDragonPickaxe:false</Find><Replace>boolEnableBuyDragonPickaxe:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableIronMan = "<Find>boolEnableIronMan:false</Find><Replace>boolEnableIronMan:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string boolEnableSwitchSpellbook = "<Find>boolEnableSwitchSpellbook:false</Find><Replace>boolEnableSwitchSpellbook:false</Replace>";
+        string filepathProfileRunecraftingZeah = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxRunecrafting-Zeah.txt");
 
-        // Button Click - Save Profile
+        // Btn Click - Save Profile
         public void btnScriptProfiles_RunecraftingZeah_SaveButton_Click(object sender, EventArgs e)
         {
-            // Intialize variables
-            string filepathProfileRunecraftingZeah = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxRunecrafting-Zeah.txt");
-            string boolEnableBuyDragonPickaxe = "<Find>boolEnableBuyDragonPickaxe:false</Find><Replace>boolEnableBuyDragonPickaxe:false</Replace>";
-            string boolEnableIronMan = "<Find>boolEnableIronMan:false</Find><Replace>boolEnableIronMan:false</Replace>";
-            string boolEnableSwitchSpellbook = "<Find>boolEnableSwitchSpellbook:false</Find><Replace>boolEnableSwitchSpellbook:false</Replace>";
-
-            //Set EnableDeathHandler Variable//
-            if (checkBoxScriptProfiles_RunecraftingZeah_DeathHandler.Checked)
+            // Set Checkbox Variables
+            var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:true</Replace>";
-            }
+                {"boolEnableAntipattern", checkBoxScriptProfiles_RunecraftingZeah_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_RunecraftingZeah_DeathHandler},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_RunecraftingZeah_WorldHopping},
+                {"boolEnableIronMan", checkBoxScriptProfiles_RunecraftingZeah_IronMan},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_RunecraftingZeah_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_RunecraftingZeah_Restocking},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_RunecraftingZeah_SellLoot },
+                {"boolEnableSwitchSpellbook", checkBoxScriptProfiles_RunecraftingZeah_ArceuusHomeTeleport}
+            };
 
-            //Set EnableRenewBond Handler Variable//
-            if (checkBoxScriptProfiles_RunecraftingZeah_RenewBond.Checked)
+            foreach (var checkboxPair in checkBoxMappings)
             {
-                boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:true</Replace>";
-            }
+                if (checkboxPair.Value.Checked)
+                {
+                    var variableName = checkboxPair.Key;
+                    var variableValue = $"<Find>{variableName}:false</Find><Replace>{variableName}:true</Replace>";
 
-            //Set EnableAntipattern Handler Variable//
-            if (checkBoxScriptProfiles_RunecraftingZeah_Antipattern.Checked)
-            {
-                boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:true</Replace>";
+                    // Using reflection to dynamically set field values
+                    this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(this, variableValue);
+                }
             }
-
-            //Set EnableHopWorlds Handler Variable//
-            if (checkBoxScriptProfiles_RunecraftingZeah_WorldHopping.Checked)
-            {
-                boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:true</Replace>";
-            }
-
-            //Set EnableRestocking Handler Variable//
-            if (checkBoxScriptProfiles_RunecraftingZeah_Restocking.Checked)
-            {
-                boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:true</Replace>";
-            }
-
-            //Set EnableSellLoot Handler Variable//
-            if (checkBoxScriptProfiles_RunecraftingZeah_SellLoot.Checked)
-            {
-                boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:true</Replace>";
-            }
-
-            // Enable switch spellbook checkbox
-            if (checkBoxScriptProfiles_RunecraftingZeah_ArceuusHomeTeleport.Checked)
-            {
-                boolEnableSwitchSpellbook = "<Find>boolEnableSwitchSpellbook:false</Find><Replace>boolEnableSwitchSpellbook:true</Replace>";
-            }
-
-            // Enable iron man checkbox
-            if (checkBoxScriptProfiles_RunecraftingZeah_IronMan.Checked)
-            {
-                boolEnableIronMan = "<Find>boolEnableIronMan:false</Find><Replace>boolEnableIronMan:true</Replace>";
-            }
-
 
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileRunecraftingZeah))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine(boolEnableSwitchSpellbook);
+                writer.WriteLine("\nRunecrafting Zeah Settings");
                 writer.WriteLine(boolEnableBuyDragonPickaxe);
                 writer.WriteLine(boolEnableIronMan);
+                writer.WriteLine(boolEnableSwitchSpellbook);
             }
             MessageBox.Show("Profile successfully created.");
         }

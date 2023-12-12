@@ -1,4 +1,6 @@
-﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
+﻿using System.Reflection;
+
+namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
     public partial class formScriptProfilesMiningMotherlodeMine : Form
     {
@@ -12,115 +14,95 @@
             MainForm = mainForm;
         }
 
-        // Initialize Variables - Strings
-        string pc_username = Environment.UserName;
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
+        // Initialize Variables
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableBuyCoalBag = "<Find>boolEnableBuyCoalBag:false</Find><Replace>boolEnableBuyCoalBag:false</Replace>";
+        string boolEnableBuyGemBag = "<Find>boolEnableBuyGemBag:false</Find><Replace>boolEnableBuyGemBag:false</Replace>";
+        string boolEnableBuyOutfit = "<Find>boolEnableBuyOutfit:false</Find><Replace>boolEnableBuyOutfit:false</Replace>";
+        string boolEnableBuySoftClayPack = "<Find>boolEnableBuySoftClayPack:false</Find><Replace>boolEnableBuySoftClayPack:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
+        string boolEnableDragonPickaxe = "<Find>boolEnableDragonPickaxe:false</Find><Replace>boolEnableDragonPickaxe:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileMotherlodeMine = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMining-MotherlodeMine.txt");
 
         // Form load
-        public void formScriptProfiles_MotherlodeMine_Load(object sender, EventArgs e)
+        public void formScriptProfiles_MiningMotherlodeMine_Load(object sender, EventArgs e)
         {
-            comboBoxScriptProfiles_MotherlodeMine_SelectSector.SelectedIndex = 0;
+            comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.SelectedIndex = 0;
         }
 
-        // Button Click - Save Profile
-        public void btnScriptProfiles_MotherlodeMine_SaveButton_Click(object sender, EventArgs e)
+        // Btn Click - Save Profile
+        public void btnScriptProfiles_MiningMotherlodeMine_SaveButton_Click(object sender, EventArgs e)
         {
-            // Intialize variables
-            string filepathProfileMotherlodeMine = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMining-MotherlodeMine.txt");
-            string boolEnableDragonPickaxe = "<Find>boolEnableDragonPickaxe:false</Find><Replace>boolEnableDragonPickaxe:false</Replace>";
-            string boolEnableBuyOutfit = "<Find>boolEnableBuyOutfit:false</Find><Replace>boolEnableBuyOutfit:false</Replace>";
-            string boolEnableBuyGemBag = "<Find>boolEnableBuyGemBag:false</Find><Replace>boolEnableBuyGemBag:false</Replace>";
-            string boolEnableBuyCoalBag = "<Find>boolEnableBuyCoalBag:false</Find><Replace>boolEnableBuyCoalBag:false</Replace>";
-            string boolEnableBuySoftClayPack = "<Find>boolEnableBuySoftClayPack:false</Find><Replace>boolEnableBuySoftClayPack:false</Replace>";
-            string selectMotherlodeMineSector = "<Find>Random/*/West/*/SouthWest/*/South/*/SouthEast</Find><Replace>" + comboBoxScriptProfiles_MotherlodeMine_SelectSector.SelectedItem.ToString() + "</Replace>";
-
-            //Set EnableDeathHandler Variable//
-            if (checkBoxScriptProfiles_MotherlodeMine_DeathHandler.Checked)
+            // Set Checkbox Variables
+            var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:true</Replace>";
+                {"boolEnableAntipattern", checkBoxScriptProfiles_MiningMotherlodeMine_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_MiningMotherlodeMine_DeathHandler},
+                {"boolEnableDragonPickaxe", checkBoxScriptProfiles_MiningMotherlodeMine_DragonPickaxe},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_MiningMotherlodeMine_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_MiningMotherlodeMine_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_MiningMotherlodeMine_Restocking},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_MiningMotherlodeMine_SellLoot}
+            };
+
+            foreach (var checkboxPair in checkBoxMappings)
+            {
+                if (checkboxPair.Value.Checked)
+                {
+                    var variableName = checkboxPair.Key;
+                    var variableValue = $"<Find>{variableName}:false</Find><Replace>{variableName}:true</Replace>";
+
+                    // Using reflection to dynamically set field values
+                    this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(this, variableValue);
+                }
             }
 
-            //Set EnableRenewBond Handler Variable//
-            if (checkBoxScriptProfiles_MotherlodeMine_RenewBond.Checked)
+            if (listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.SelectedItems.Count > 0)
             {
-                boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:true</Replace>";
-            }
+                Dictionary<string, Action> f2pQuestsMap = new Dictionary<string, Action>
+                {
+                    {"Coal Bag", () => boolEnableBuyCoalBag = "<Find>boolEnableBuyCoalBag:false</Find><Replace>boolEnableBuyCoalBag:true</Replace>"},
+                    {"Gem Bag", () => boolEnableBuyGemBag = "<Find>boolEnableBuyGemBag:false</Find><Replace>boolEnableBuyGemBag:true</Replace>"},
+                    {"Prospector Outfit", () => boolEnableBuyOutfit = "<Find>boolEnableBuyOutfit:false</Find><Replace>boolEnableBuyOutfit:true</Replace>"},
+                    {"Softclay Packs", () => boolEnableBuySoftClayPack = "<Find>boolEnableBuySoftClayPack:false</Find><Replace>boolEnableBuySoftClayPack:true</Replace>"},
+                };
 
-            //Set EnableAntipattern Handler Variable//
-            if (checkBoxScriptProfiles_MotherlodeMine_Antipattern.Checked)
-            {
-                boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:true</Replace>";
-            }
+                // Loop Through Dictionary & Generate Output
+                foreach (var selectedF2pItem in listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.SelectedItems)
+                {
+                    string selectedF2pQuest = selectedF2pItem.ToString();
 
-            //Set EnableHopWorlds Handler Variable//
-            if (checkBoxScriptProfiles_MotherlodeMine_WorldHopping.Checked)
-            {
-                boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:true</Replace>";
-            }
-
-            //Set EnableRestocking Handler Variable//
-            if (checkBoxScriptProfiles_MotherlodeMine_Restocking.Checked)
-            {
-                boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:true</Replace>";
-            }
-
-            //Set EnableSellLoot Handler Variable//
-            if (checkBoxScriptProfiles_MotherlodeMine_SellLoot.Checked)
-            {
-                boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:true</Replace>";
-            }
-
-            // Enable dragon pickaxe checkbox
-            if (checkBoxScriptProfiles_MotherlodeMine_DragonPickaxe.Checked)
-            {
-                boolEnableDragonPickaxe = "<Find>boolEnableDragonPickaxe:false</Find><Replace>boolEnableDragonPickaxe:true</Replace>";
-            }
-
-            // Buy outfit
-            if (listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectedItem != null && listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectedItem.ToString() == "Buy Outfit")
-            {
-                boolEnableBuyOutfit = "<Find>boolEnableBuyOutfit:false</Find><Replace>boolEnableBuyOutfit:true</Replace>";
-            }
-
-            // Buy gem bag
-            if (listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectedItem != null && listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectedItem.ToString() == "Buy Gem Bag")
-            {
-                boolEnableBuyGemBag = "<Find>boolEnableBuyGemBag:false</Find><Replace>boolEnableBuyGemBag:true</Replace>";
-            }
-
-            // Buy coal bag
-            if (listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectedItem != null && listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectedItem.ToString() == "Buy Coal Bag")
-            {
-                boolEnableBuyCoalBag = "<Find>boolEnableBuyCoalBag:false</Find><Replace>boolEnableBuyCoalBag:true</Replace>";
-            }
-
-            // Buy soft clay packs
-            if (listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectedItem != null && listBoxScriptProfiles_MotherlodeMine_SpendNuggets.SelectedItem.ToString() == "Buy Softclay Packs")
-            {
-                boolEnableBuySoftClayPack = "<Find>boolEnableBuySoftClayPack:false</Find><Replace>boolEnableBuySoftClayPack:true</Replace>";
+                    foreach (var f2PQuest in f2pQuestsMap)
+                    {
+                        if (selectedF2pQuest.Contains(f2PQuest.Key))
+                        {
+                            f2PQuest.Value.Invoke();
+                        }
+                    }
+                }
             }
 
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileMotherlodeMine))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine(boolEnableDragonPickaxe);
-                writer.WriteLine(boolEnableBuyOutfit);
-                writer.WriteLine(boolEnableBuyGemBag);
+                writer.WriteLine("\nMining Motherlode Mine Settings");
                 writer.WriteLine(boolEnableBuyCoalBag);
+                writer.WriteLine(boolEnableBuyGemBag);
+                writer.WriteLine(boolEnableBuyOutfit);
                 writer.WriteLine(boolEnableBuySoftClayPack);
-                writer.WriteLine(selectMotherlodeMineSector);
+                writer.WriteLine(boolEnableDragonPickaxe);
+                writer.WriteLine("<Find>Random/*/West/*/SouthWest/*/South/*/SouthEast</Find><Replace>" + comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.SelectedItem.ToString() + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

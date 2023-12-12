@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesAccountBuilder));
             labelScriptProfiles_AccountBuilder_Title = new Label();
-            btnScriptProfiles_AccountBuilder_SaveToProfiles = new Button();
+            btnScriptProfiles_AccountBuilder_SaveProfile = new Button();
             tabPageScriptProfiles_AccountBuilder_Quests = new TabPage();
             labelScriptProfiles_AccountBuilder_Miscellaneous = new Label();
             listBoxScriptProfiles_AccountBuilder_MiniGames = new ListBox();
@@ -84,7 +84,6 @@
             labelScriptProfiles_AccountBuilder_Crafting = new Label();
             tabPageScriptProfiles_AccountBuilder_GeneralSettings = new TabPage();
             checkBoxScriptProfiles_AccountBuilder_EnableJugsOfWine = new CheckBox();
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones = new CheckBox();
             checkBoxScriptProfiles_AccountBuilder_EnableNoGpStart = new CheckBox();
             labelScriptProfiles_AccountBuilder_Minutes3 = new Label();
             labelScriptProfiles_AccountBuilder_GoldFarmingDuration = new Label();
@@ -107,6 +106,7 @@
             checkBoxScriptProfiles_AccountBuilder_EnableRooftops = new CheckBox();
             tabControlScriptProfiles_AccountBuilder = new TabControl();
             labelScriptProfiles_AccountBuilder_Header = new Label();
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones = new CheckBox();
             tabPageScriptProfiles_AccountBuilder_Quests.SuspendLayout();
             tabPageScriptProfiles_AccountBuilder_Skills.SuspendLayout();
             tabPageScriptProfiles_AccountBuilder_GeneralSettings.SuspendLayout();
@@ -124,20 +124,20 @@
             labelScriptProfiles_AccountBuilder_Title.Text = "Account Builder";
             labelScriptProfiles_AccountBuilder_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_AccountBuilder_SaveToProfiles
+            // btnScriptProfiles_AccountBuilder_SaveProfile
             // 
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.Font = new Font("Microsoft New Tai Lue", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.Location = new Point(435, 575);
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.Name = "btnScriptProfiles_AccountBuilder_SaveToProfiles";
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.TabIndex = 110;
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_AccountBuilder_SaveToProfiles.Click += btnScriptProfiles_AccountBuilder_SaveButton_Click;
+            btnScriptProfiles_AccountBuilder_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_AccountBuilder_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_AccountBuilder_SaveProfile.Font = new Font("Microsoft New Tai Lue", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_AccountBuilder_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_AccountBuilder_SaveProfile.Location = new Point(435, 575);
+            btnScriptProfiles_AccountBuilder_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_AccountBuilder_SaveProfile.Name = "btnScriptProfiles_AccountBuilder_SaveProfile";
+            btnScriptProfiles_AccountBuilder_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_AccountBuilder_SaveProfile.TabIndex = 110;
+            btnScriptProfiles_AccountBuilder_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_AccountBuilder_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_AccountBuilder_SaveProfile.Click += btnScriptProfiles_AccountBuilder_SaveButton_Click;
             // 
             // tabPageScriptProfiles_AccountBuilder_Quests
             // 
@@ -245,7 +245,7 @@
             listBoxScriptProfiles_AccountBuilder_F2PQuests.FormattingEnabled = true;
             listBoxScriptProfiles_AccountBuilder_F2PQuests.ImeMode = ImeMode.NoControl;
             listBoxScriptProfiles_AccountBuilder_F2PQuests.ItemHeight = 18;
-            listBoxScriptProfiles_AccountBuilder_F2PQuests.Items.AddRange(new object[] { "Cooks Assistant", "Goblin Diplomacy", "Romeo & Juliet", "Rune Mysteries", "Sheep Shearer", "The Restless Ghost", "Vampyre Slayer", "X Marks The Spot" });
+            listBoxScriptProfiles_AccountBuilder_F2PQuests.Items.AddRange(new object[] { "Cooks Assistant", "Doric's Quest", "Goblin Diplomacy", "Romeo & Juliet", "Rune Mysteries", "Sheep Shearer", "The Knight's Sword", "The Restless Ghost", "Vampyre Slayer", "X Marks The Spot" });
             listBoxScriptProfiles_AccountBuilder_F2PQuests.Location = new Point(50, 150);
             listBoxScriptProfiles_AccountBuilder_F2PQuests.Margin = new Padding(0);
             listBoxScriptProfiles_AccountBuilder_F2PQuests.Name = "listBoxScriptProfiles_AccountBuilder_F2PQuests";
@@ -264,7 +264,7 @@
             listBoxScriptProfiles_AccountBuilder_P2PQuests.FormattingEnabled = true;
             listBoxScriptProfiles_AccountBuilder_P2PQuests.ImeMode = ImeMode.NoControl;
             listBoxScriptProfiles_AccountBuilder_P2PQuests.ItemHeight = 18;
-            listBoxScriptProfiles_AccountBuilder_P2PQuests.Items.AddRange(new object[] { "Druidic Ritual", "Lost City" });
+            listBoxScriptProfiles_AccountBuilder_P2PQuests.Items.AddRange(new object[] { "A Porcine of Interest", "Druidic Ritual", "Lost City", "Priest in Peril" });
             listBoxScriptProfiles_AccountBuilder_P2PQuests.Location = new Point(280, 150);
             listBoxScriptProfiles_AccountBuilder_P2PQuests.Margin = new Padding(0);
             listBoxScriptProfiles_AccountBuilder_P2PQuests.Name = "listBoxScriptProfiles_AccountBuilder_P2PQuests";
@@ -880,8 +880,8 @@
             // tabPageScriptProfiles_AccountBuilder_GeneralSettings
             // 
             tabPageScriptProfiles_AccountBuilder_GeneralSettings.BackColor = Color.FromArgb(64, 64, 64);
-            tabPageScriptProfiles_AccountBuilder_GeneralSettings.Controls.Add(checkBoxScriptProfiles_AccountBuilder_EnableJugsOfWine);
             tabPageScriptProfiles_AccountBuilder_GeneralSettings.Controls.Add(checkBoxScriptProfiles_AccountBuilder_BuryBigBones);
+            tabPageScriptProfiles_AccountBuilder_GeneralSettings.Controls.Add(checkBoxScriptProfiles_AccountBuilder_EnableJugsOfWine);
             tabPageScriptProfiles_AccountBuilder_GeneralSettings.Controls.Add(checkBoxScriptProfiles_AccountBuilder_EnableNoGpStart);
             tabPageScriptProfiles_AccountBuilder_GeneralSettings.Controls.Add(labelScriptProfiles_AccountBuilder_Minutes3);
             tabPageScriptProfiles_AccountBuilder_GeneralSettings.Controls.Add(labelScriptProfiles_AccountBuilder_GoldFarmingDuration);
@@ -920,17 +920,6 @@
             checkBoxScriptProfiles_AccountBuilder_EnableJugsOfWine.TabIndex = 225;
             checkBoxScriptProfiles_AccountBuilder_EnableJugsOfWine.Text = "Jugs of Wine Method";
             checkBoxScriptProfiles_AccountBuilder_EnableJugsOfWine.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxScriptProfiles_AccountBuilder_BuryBigBones
-            // 
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.AutoSize = true;
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Location = new Point(350, 350);
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Margin = new Padding(0);
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Name = "checkBoxScriptProfiles_AccountBuilder_BuryBigBones";
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Size = new Size(129, 22);
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.TabIndex = 224;
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Text = "Bury Big Bones";
-            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_AccountBuilder_EnableNoGpStart
             // 
@@ -1178,6 +1167,17 @@
             labelScriptProfiles_AccountBuilder_Header.Text = "Script Profiles";
             labelScriptProfiles_AccountBuilder_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // checkBoxScriptProfiles_AccountBuilder_BuryBigBones
+            // 
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.AutoSize = true;
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Location = new Point(350, 350);
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Margin = new Padding(0);
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Name = "checkBoxScriptProfiles_AccountBuilder_BuryBigBones";
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Size = new Size(129, 22);
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.TabIndex = 226;
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.Text = "Bury Big Bones";
+            checkBoxScriptProfiles_AccountBuilder_BuryBigBones.UseVisualStyleBackColor = true;
+            // 
             // formScriptProfilesAccountBuilder
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -1187,7 +1187,7 @@
             Controls.Add(labelScriptProfiles_AccountBuilder_Header);
             Controls.Add(tabControlScriptProfiles_AccountBuilder);
             Controls.Add(labelScriptProfiles_AccountBuilder_Title);
-            Controls.Add(btnScriptProfiles_AccountBuilder_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_AccountBuilder_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -1216,7 +1216,7 @@
         public ListBox listBoxScriptProfiles_AccountBuilder_MiniQuests;
         public ListBox listBoxScriptProfiles_AccountBuilder_F2PQuests;
         public ListBox listBoxScriptProfiles_AccountBuilder_MiniGames;
-        public Button btnScriptProfiles_AccountBuilder_SaveToProfiles;
+        public Button btnScriptProfiles_AccountBuilder_SaveProfile;
         public TabPage tabPageScriptProfiles_AccountBuilder_Quests;
         public TabPage tabPageScriptProfiles_AccountBuilder_Skills;
         public Label labelScriptProfiles_AccountBuilder_SetLevels;
@@ -1286,7 +1286,7 @@
         public TextBox textBoxScriptProfiles_AccountBuilder_GoldFarmingDuration;
         public Label labelScriptProfiles_AccountBuilder_GeneralSettings;
         public Label labelScriptProfiles_AccountBuilder_Miscellaneous;
-        public CheckBox checkBoxScriptProfiles_AccountBuilder_BuryBigBones;
         public CheckBox checkBoxScriptProfiles_AccountBuilder_EnableJugsOfWine;
+        public CheckBox checkBoxScriptProfiles_AccountBuilder_BuryBigBones;
     }
 }

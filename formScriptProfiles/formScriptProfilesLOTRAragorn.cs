@@ -1,4 +1,6 @@
-﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
+﻿using System.Reflection;
+
+namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
     public partial class formScriptProfilesLOTRAragorn : Form
     {
@@ -11,14 +13,18 @@
             MainForm = mainForm;
         }
 
-        // Initialize variables
-        string pc_username = Environment.UserName;
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
+        // Initialize Variables
+        string boolDisableGearChecks = "<Find>boolDisableGearChecks:false</Find><Replace>boolDisableGearChecks:false</Replace>";
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableBuryBones = "<Find>boolEnableBuryBones:false</Find><Replace>boolEnableBuryBones:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
+        string boolEnableFightObor = "<Find>boolEnableFightObor:false</Find><Replace>boolEnableFightObor:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableProgressiveTraining = "<Find>boolEnableProgressiveTraining:false</Find><Replace>boolEnableProgressiveTraining:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileAragorn = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxLOTR-Aragorn.txt");
 
         // Form Load
         public void formScriptProfiles_Aragorn_Load(object sender, EventArgs e)
@@ -26,94 +32,52 @@
             comboBoxScriptProfiles_Aragorn_SelectNpc.SelectedIndex = 0;
         }
 
-        //Button Click - Save Script Profile//
+        // Btn Click - Save Profile
         public void btnScriptProfiles_Aragorn_SaveButton_Click(object sender, EventArgs e)
         {
-
-            //Initialize Variables//
-            string filepathProfileAragorn = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxLOTR-Aragorn.txt");
-            string boolDisableGearChecks = "<Find>boolDisableGearChecks:false</Find><Replace>boolDisableGearChecks:false</Replace>";
-            string boolEnableFightObor = "<Find>boolEnableFightObor:false</Find><Replace>boolEnableFightObor:false</Replace>";
-            string boolEnableBuryBones = "<Find>boolEnableBuryBones:false</Find><Replace>boolEnableBuryBones:false</Replace>";
-            string boolEnableProgressiveTraining = "<Find>boolEnableProgressiveTraining:false</Find><Replace>boolEnableProgressiveTraining:false</Replace>";
-            string slectNpc = "<Find>Progressive/*/Chickens/*/Giant Frogs/*/Hill Giants/*/Sand Crabs/*/Chaos Druids</Find><Replace>" + comboBoxScriptProfiles_Aragorn_SelectNpc.SelectedItem.ToString() + "</Replace>";
-
-            //Set EnableDeathHandler Variable//
-            if (checkBoxScriptProfiles_Aragorn_DeathHandler.Checked)
+            // Set Checkbox Variables
+            var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:true</Replace>";
-            }
+                {"boolDisableGearChecks", checkBoxScriptProfiles_Aragorn_DisableGearChecks},
+                {"boolEnableAntipattern", checkBoxScriptProfiles_Aragorn_Antipattern},
+                {"boolEnableBuryBones", checkBoxScriptProfiles_Aragorn_BuryBigBones},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_Aragorn_DeathHandler},
+                {"boolEnableFightObor", checkBoxScriptProfiles_Aragorn_FightObor},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_Aragorn_WorldHopping},
+                {"boolEnableProgressiveTraining", checkBoxScriptProfiles_Aragorn_TrainStatsEvenly},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_Aragorn_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_Aragorn_Restocking},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_Aragorn_SellLoot}
+            };
 
-            //Set EnableRenewBond Handler Variable//
-            if (checkBoxScriptProfiles_Aragorn_RenewBond.Checked)
+            foreach (var checkboxPair in checkBoxMappings)
             {
-                boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:true</Replace>";
-            }
+                if (checkboxPair.Value.Checked)
+                {
+                    var variableName = checkboxPair.Key;
+                    var variableValue = $"<Find>{variableName}:false</Find><Replace>{variableName}:true</Replace>";
 
-            //Set EnableAntipattern Handler Variable//
-            if (checkBoxScriptProfiles_Aragorn_Antipattern.Checked)
-            {
-                boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:true</Replace>";
-            }
-
-            //Set EnableHopWorlds Handler Variable//
-            if (checkBoxScriptProfiles_Aragorn_WorldHopping.Checked)
-            {
-                boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:true</Replace>";
-            }
-
-            //Set EnableRestocking Handler Variable//
-            if (checkBoxScriptProfiles_Aragorn_Restocking.Checked)
-            {
-                boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:true</Replace>";
-            }
-
-            //Set EnableSellLoot Handler Variable// checked
-            if (checkBoxScriptProfiles_Aragorn_SellLoot.Checked)
-            {
-                boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:true</Replace>";
-            }
-
-            // Disable gear checks checked
-            if (checkBoxScriptProfiles_Aragorn_UseOwnGear.Checked)
-            {
-                boolDisableGearChecks = "<Find>boolDisableGearChecks:false</Find><Replace>boolDisableGearChecks:true</Replace>";
-            }
-
-            // Enable fight Obor checked
-            if (checkBoxScriptProfiles_Aragorn_FightObor.Checked)
-            {
-                boolEnableFightObor = "<Find>boolEnableFightObor:false</Find><Replace>boolEnableFightObor:true</Replace>";
-            }
-
-            // Enable bury bones checked
-            if (checkBoxScriptProfiles_Aragorn_BuryBigBones.Checked)
-            {
-                boolEnableBuryBones = "<Find>boolEnableBuryBones:false</Find><Replace>boolEnableBuryBones:true</Replace>";
-            }
-
-            // Enable progressive training checked
-            if (checkBoxScriptProfiles_Aragorn_TrainStatsEvenly.Checked)
-            {
-                boolEnableProgressiveTraining = "<Find>boolEnableProgressiveTraining:false</Find><Replace>boolEnableProgressiveTraining:true</Replace>";
+                    // Using reflection to dynamically set field values
+                    this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(this, variableValue);
+                }
             }
 
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileAragorn))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine("Progressive Melee Trainer Settings");
+                writer.WriteLine("\nAragorn Settings");
                 writer.WriteLine(boolDisableGearChecks);
-                writer.WriteLine(boolEnableFightObor);
                 writer.WriteLine(boolEnableBuryBones);
+                writer.WriteLine(boolEnableFightObor);
                 writer.WriteLine(boolEnableProgressiveTraining);
-                writer.WriteLine(slectNpc);
+                writer.WriteLine("<Find>Progressive/*/Chickens/*/Giant Frogs/*/Hill Giants/*/Sand Crabs/*/Chaos Druids</Find><Replace>" + comboBoxScriptProfiles_Aragorn_SelectNpc.SelectedItem.ToString() + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

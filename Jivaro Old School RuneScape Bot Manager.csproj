@@ -27,7 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Management" Version="7.0.2" />
+    <PackageReference Include="Krypton.Navigator" Version="80.23.11.321" />
+    <PackageReference Include="Krypton.Toolkit" Version="80.23.11.321" />
+    <PackageReference Include="System.CodeDom" Version="8.0.0" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,10 +43,19 @@
     <Compile Update="formMiscellaneous\formLocalScripts.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="formMiscellaneous\formWelcomeScreen.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
     <Compile Update="formScriptProfiles\formScriptProfilesFarmingTitheFarm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesFighterVyres.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="formScriptProfiles\formScriptProfilesHerbloreCleanHerbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesMiningAIO.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="formScriptProfiles\formScriptProfilesMiniGamesRoguesDen.cs">
@@ -91,13 +103,5 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="misc\" />
-  </ItemGroup>
-
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\x64\Debug\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.exe&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\x64\Debug\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.dll&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\x64\Release\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.exe&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\SignTool.exe&quot; sign /f &quot;C:\Users\harry\source\repos\JivaroLLC-CodeSigning.pfx&quot; /p HENP!1989!japan /fd SHA256 &quot;C:\Users\harry\source\repos\Jivaro Old School RuneScape Bot Manager\bin\x64\Release\net7.0-windows10.0.17763.0\Jivaro Old School RuneScape Bot Manager.dll&quot;" />
-  </Target>
 
 </Project>

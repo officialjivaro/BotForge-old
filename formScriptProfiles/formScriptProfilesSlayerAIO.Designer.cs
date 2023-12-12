@@ -29,7 +29,7 @@
         public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesSlayerAIO));
-            btnScriptProfiles_SlayerAIO_SaveToProfiles = new Button();
+            btnScriptProfiles_SlayerAIO_SaveProfile = new Button();
             labelScriptProfiles_SlayerAIO_Title = new Label();
             checkBoxScriptProfiles_SlayerAIO_GeneralSettings_DeathHandler = new CheckBox();
             checkBoxScriptProfiles_SlayerAIO_GeneralSettings_RenewBond = new CheckBox();
@@ -109,20 +109,20 @@
             tabPageScriptProfiles_SlayerAIO_GearMisc.SuspendLayout();
             SuspendLayout();
             // 
-            // btnScriptProfiles_SlayerAIO_SaveToProfiles
+            // btnScriptProfiles_SlayerAIO_SaveProfile
             // 
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.Location = new Point(440, 575);
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.Name = "btnScriptProfiles_SlayerAIO_SaveToProfiles";
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.TabIndex = 152;
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_SlayerAIO_SaveToProfiles.Click += btnScriptProfiles_SlayerAIO_SaveButton_Click;
+            btnScriptProfiles_SlayerAIO_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_SlayerAIO_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_SlayerAIO_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_SlayerAIO_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_SlayerAIO_SaveProfile.Location = new Point(440, 575);
+            btnScriptProfiles_SlayerAIO_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_SlayerAIO_SaveProfile.Name = "btnScriptProfiles_SlayerAIO_SaveProfile";
+            btnScriptProfiles_SlayerAIO_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_SlayerAIO_SaveProfile.TabIndex = 152;
+            btnScriptProfiles_SlayerAIO_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_SlayerAIO_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_SlayerAIO_SaveProfile.Click += btnScriptProfiles_SlayerAIO_SaveButton_Click;
             // 
             // labelScriptProfiles_SlayerAIO_Title
             // 
@@ -925,7 +925,7 @@
             Controls.Add(labelScriptProfiles_FletchingLongbows_Header);
             Controls.Add(tabControlScriptProfiles_SlayerAIO);
             Controls.Add(labelScriptProfiles_SlayerAIO_Title);
-            Controls.Add(btnScriptProfiles_SlayerAIO_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_SlayerAIO_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -952,7 +952,7 @@
         #endregion
         public Label labelScriptProfiles_FletchingLongbows_Header;
         public Label labelScriptProfiles_SlayerAIO_Title;
-        public Button btnScriptProfiles_SlayerAIO_SaveToProfiles;
+        public Button btnScriptProfiles_SlayerAIO_SaveProfile;
         public CheckBox checkBoxScriptProfiles_SlayerAIO_GeneralSettings_DeathHandler;
         public CheckBox checkBoxScriptProfiles_SlayerAIO_GeneralSettings_RenewBond;
         public CheckBox checkBoxScriptProfiles_SlayerAIO_GeneralSettings_Antipattern;

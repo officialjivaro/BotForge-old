@@ -49,7 +49,7 @@
             checkBoxScriptProfiles_RunecraftingAbyss_RenewBond = new CheckBox();
             checkBoxScriptProfiles_RunecraftingAbyss_DeathHandler = new CheckBox();
             labelScriptProfiles_RunecraftingAbyss_Title = new Label();
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles = new Button();
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile = new Button();
             labelScriptProfiles_RunecraftingAbyss_Header = new Label();
             SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.Margin = new Padding(0);
             listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.Name = "listBoxScriptProfiles_RunecraftingAbyss_SelectPouches";
             listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.SelectionMode = SelectionMode.MultiSimple;
-            listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.Size = new Size(175, 76);
+            listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.Size = new Size(175, 94);
             listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.TabIndex = 150;
             // 
             // comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables
@@ -287,20 +287,20 @@
             labelScriptProfiles_RunecraftingAbyss_Title.Text = "Runecrafting: Abyss";
             labelScriptProfiles_RunecraftingAbyss_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_RunecraftingAbyss_SaveToProfiles
+            // btnScriptProfiles_RunecraftingAbyss_SaveProfile
             // 
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.Location = new Point(340, 425);
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.Name = "btnScriptProfiles_RunecraftingAbyss_SaveToProfiles";
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.TabIndex = 120;
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_RunecraftingAbyss_SaveToProfiles.Click += btnScriptProfiles_RunecraftingAbyss_SaveButton_Click;
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.Location = new Point(340, 425);
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.Name = "btnScriptProfiles_RunecraftingAbyss_SaveProfile";
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.TabIndex = 120;
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.Click += btnScriptProfiles_RunecraftingAbyss_SaveButton_Click;
             // 
             // labelScriptProfiles_RunecraftingAbyss_Header
             // 
@@ -341,7 +341,7 @@
             Controls.Add(checkBoxScriptProfiles_RunecraftingAbyss_RenewBond);
             Controls.Add(checkBoxScriptProfiles_RunecraftingAbyss_DeathHandler);
             Controls.Add(labelScriptProfiles_RunecraftingAbyss_Title);
-            Controls.Add(btnScriptProfiles_RunecraftingAbyss_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_RunecraftingAbyss_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -378,6 +378,6 @@
         public CheckBox checkBoxScriptProfiles_RunecraftingAbyss_RenewBond;
         public CheckBox checkBoxScriptProfiles_RunecraftingAbyss_DeathHandler;
         public Label labelScriptProfiles_RunecraftingAbyss_Title;
-        public Button btnScriptProfiles_RunecraftingAbyss_SaveToProfiles;
+        public Button btnScriptProfiles_RunecraftingAbyss_SaveProfile;
     }
 }

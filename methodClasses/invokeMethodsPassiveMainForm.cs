@@ -1,23 +1,27 @@
-﻿using System.Management;
+﻿using Krypton.Toolkit;
+using System.Management;
 
 namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
 {
     internal class invokeMethodsPassiveMainForm
     {
 
-        // Invoke - Get Client Login Value From Line in File
-        public static string Invoke_GetClientLoginValueFromLine(string line)
+        public static void Invoke_PopulateTextBoxFromIniFile(TextBox textBox, string key, string filePath)
         {
-            if (string.IsNullOrEmpty(line))
-                return "";
+            if (!File.Exists(filePath) || textBox == null)
+                return;
 
-            string[] parts = line.Split(':');
-            if (parts.Length > 1)
+            string[] lines = File.ReadAllLines(filePath);
+            string lineToRead = lines.FirstOrDefault(line => line.StartsWith(key));
+
+            if (!string.IsNullOrEmpty(lineToRead))
             {
-                return parts[1].Trim();
+                string[] parts = lineToRead.Split(new[] { '=' }, 2);
+                if (parts.Length == 2)
+                {
+                    textBox.Text = parts[1].Trim();
+                }
             }
-
-            return string.Empty;
         }
 
         // Invoke - Get Java Command Line Args
@@ -151,7 +155,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
         }
 
         // Invoke - Update Running Status
-        public static void Invoke_UpdateRunningStatus(DataGridView dataGridView, string accountCellName, string statusCellName)
+        public static void Invoke_UpdateRunningStatus(KryptonDataGridView dataGridView, string accountCellName, string statusCellName)
         {
             string commandLineArguments = formMainForm.lastFetchedArgs;
 

@@ -1,4 +1,7 @@
-﻿using System.Diagnostics;
+﻿using Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
@@ -14,83 +17,60 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             MainForm = mainForm;
         }
 
-        // Initialize Variables - String
-        string pc_username = Environment.UserName;
-        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
+        // Initialize Variables
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
+        string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
+        string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileMagicHouseAlcher = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMagic-HouseAlcher.txt");
 
-        // Button Click - Save Profile
+        // Require Input On Textbox
+        public void GlobalMethod_RequireInput_Validating(object sender, CancelEventArgs e)
+        {
+            invokeMethodsPassiveGlobal.GlobalMethod_RequireInput_Validating(sender, e);
+        }
+
+        // Btn Click - Save Profile
         public void btnScriptProfiles_MagicHouseAlcher_SaveButton_Click(object sender, EventArgs e)
         {
-            // Intialize variables
-            string filepathProfileMagicHouseAlcher = Path.Combine(@"C:\\Users\\" + pc_username + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMagic-HouseAlcher.txt");
-            string itemToAlch = "<Find>Yew longbow</Find><Replace>Yew longbow</Replace>";
-            string itemToAlchId = "<Find>855</Find><Replace>855</Replace>";
-
-            //Set EnableDeathHandler Variable//
-            if (checkBoxScriptProfiles_MagicHouseAlcher_DeathHandler.Checked)
+            // Set Checkbox Variables
+            var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:true</Replace>";
-            }
+                {"boolEnableAntipattern", checkBoxScriptProfiles_MagicHouseAlcher_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_MagicHouseAlcher_DeathHandler},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_MagicHouseAlcher_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_MagicHouseAlcher_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_MagicHouseAlcher_Restocking},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_MagicHouseAlcher_SellLoot}
+            };
 
-            //Set EnableRenewBond Handler Variable//
-            if (checkBoxScriptProfiles_MagicHouseAlcher_RenewBond.Checked)
+            foreach (var checkboxPair in checkBoxMappings)
             {
-                boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:true</Replace>";
-            }
+                if (checkboxPair.Value.Checked)
+                {
+                    var variableName = checkboxPair.Key;
+                    var variableValue = $"<Find>{variableName}:false</Find><Replace>{variableName}:true</Replace>";
 
-            //Set EnableAntipattern Handler Variable//
-            if (checkBoxScriptProfiles_MagicHouseAlcher_Antipattern.Checked)
-            {
-                boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:true</Replace>";
-            }
-
-            //Set EnableHopWorlds Handler Variable//
-            if (checkBoxScriptProfiles_MagicHouseAlcher_WorldHopping.Checked)
-            {
-                boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:true</Replace>";
-            }
-
-            //Set EnableRestocking Handler Variable//
-            if (checkBoxScriptProfiles_MagicHouseAlcher_Restocking.Checked)
-            {
-                boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:true</Replace>";
-            }
-
-            //Set EnableSellLoot Handler Variable//
-            if (checkBoxScriptProfiles_MagicHouseAlcher_SellLoot.Checked)
-            {
-                boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:true</Replace>";
-            }
-
-            // Item to alch
-            if (!string.IsNullOrEmpty(textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch.Text))
-            {
-                itemToAlch = "<Find>Yew longbow</Find><Replace>" + textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch.Text + "</Replace>";
-            }
-
-            // Item to alch id
-            if (!string.IsNullOrEmpty(textBoxScriptProfiles_MagicHouseAlcher_ItemId.Text))
-            {
-                itemToAlchId = "<Find>855</Find><Replace>" + textBoxScriptProfiles_MagicHouseAlcher_ItemId.Text + "</Replace>";
+                    // Using reflection to dynamically set field values
+                    this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(this, variableValue);
+                }
             }
 
             // Write to file
             using (StreamWriter writer = new StreamWriter(filepathProfileMagicHouseAlcher))
             {
                 writer.WriteLine("General Settings");
-                writer.WriteLine(boolEnableDeathHandler);
-                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableAntipattern);
+                writer.WriteLine(boolEnableDeathHandler);
                 writer.WriteLine(boolEnableHopWorlds);
+                writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine(itemToAlch);
-                writer.WriteLine(itemToAlchId);
+                writer.WriteLine("\nMagic House Alcher Settings");
+                writer.WriteLine("<Find>Yew longbow</Find><Replace>" + textBoxScriptProfiles_MagicHouseAlcher_ItemToAlch.Text + "</Replace>");
+                writer.WriteLine("<Find>855</Find><Replace>" + textBoxScriptProfiles_MagicHouseAlcher_ItemId.Text + "</Replace>");
             }
 
             MessageBox.Show("Profile successfully created.");

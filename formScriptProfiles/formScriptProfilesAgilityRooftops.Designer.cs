@@ -38,7 +38,7 @@
             checkBoxScriptProfiles_AgilityRooftops_RenewBond = new CheckBox();
             checkBoxScriptProfiles_AgilityRooftops_DeathHandler = new CheckBox();
             labelScriptProfiles_AgilityRooftops_Title = new Label();
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles = new Button();
+            btnScriptProfiles_AgilityRooftops_SaveProfile = new Button();
             labelScriptProfiles_AgilityRooftops_SelectCourse = new Label();
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse = new ComboBox();
             labelScriptProfiles_AgilityRooftops_Header = new Label();
@@ -146,20 +146,20 @@
             labelScriptProfiles_AgilityRooftops_Title.Text = "Agility: Rooftops";
             labelScriptProfiles_AgilityRooftops_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnScriptProfiles_AgilityRooftops_SaveToProfiles
+            // btnScriptProfiles_AgilityRooftops_SaveProfile
             // 
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.BackgroundImageLayout = ImageLayout.Stretch;
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Cursor = Cursors.Hand;
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Location = new Point(330, 375);
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Margin = new Padding(0);
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Name = "btnScriptProfiles_AgilityRooftops_SaveToProfiles";
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Size = new Size(125, 50);
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.TabIndex = 182;
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Text = "Save Profile";
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.UseVisualStyleBackColor = true;
-            btnScriptProfiles_AgilityRooftops_SaveToProfiles.Click += btnScriptProfiles_AgilityRooftops_SaveButton_Click;
+            btnScriptProfiles_AgilityRooftops_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnScriptProfiles_AgilityRooftops_SaveProfile.Cursor = Cursors.Hand;
+            btnScriptProfiles_AgilityRooftops_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnScriptProfiles_AgilityRooftops_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_AgilityRooftops_SaveProfile.Location = new Point(330, 375);
+            btnScriptProfiles_AgilityRooftops_SaveProfile.Margin = new Padding(0);
+            btnScriptProfiles_AgilityRooftops_SaveProfile.Name = "btnScriptProfiles_AgilityRooftops_SaveProfile";
+            btnScriptProfiles_AgilityRooftops_SaveProfile.Size = new Size(125, 50);
+            btnScriptProfiles_AgilityRooftops_SaveProfile.TabIndex = 182;
+            btnScriptProfiles_AgilityRooftops_SaveProfile.Text = "Save Profile";
+            btnScriptProfiles_AgilityRooftops_SaveProfile.UseVisualStyleBackColor = true;
+            btnScriptProfiles_AgilityRooftops_SaveProfile.Click += btnScriptProfiles_AgilityRooftops_SaveButton_Click;
             // 
             // labelScriptProfiles_AgilityRooftops_SelectCourse
             // 
@@ -215,7 +215,7 @@
             Controls.Add(checkBoxScriptProfiles_AgilityRooftops_RenewBond);
             Controls.Add(checkBoxScriptProfiles_AgilityRooftops_DeathHandler);
             Controls.Add(labelScriptProfiles_AgilityRooftops_Title);
-            Controls.Add(btnScriptProfiles_AgilityRooftops_SaveToProfiles);
+            Controls.Add(btnScriptProfiles_AgilityRooftops_SaveProfile);
             DoubleBuffered = true;
             Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(224, 224, 224);
@@ -240,7 +240,7 @@
         public CheckBox checkBoxScriptProfiles_AgilityRooftops_RenewBond;
         public CheckBox checkBoxScriptProfiles_AgilityRooftops_DeathHandler;
         public Label labelScriptProfiles_AgilityRooftops_Title;
-        public Button btnScriptProfiles_AgilityRooftops_SaveToProfiles;
+        public Button btnScriptProfiles_AgilityRooftops_SaveProfile;
         public Label labelScriptProfiles_AgilityRooftops_SelectCourse;
         public ComboBox comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse;
         public Label labelScriptProfiles_AgilityRooftops_Header;
