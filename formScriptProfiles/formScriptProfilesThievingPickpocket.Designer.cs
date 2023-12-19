@@ -162,7 +162,7 @@
             // formScriptProfilesThievingPickpocket
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(559, 436);
             Controls.Add(labelScriptProfiles_ThievingAIO_Header);

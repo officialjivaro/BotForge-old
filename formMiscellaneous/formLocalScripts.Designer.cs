@@ -200,7 +200,7 @@
             // formLocalScripts
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(534, 361);
             Controls.Add(buttonLocalScripts_Update);

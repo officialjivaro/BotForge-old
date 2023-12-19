@@ -5043,8 +5043,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             // 
             // formMainForm
             // 
-            AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScaleMode = AutoScaleMode.None;
             AutoValidate = AutoValidate.Disable;
             BackColor = Color.FromArgb(64, 64, 64);
             BackgroundImageLayout = ImageLayout.Stretch;
@@ -5059,7 +5058,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             Name = "formMainForm";
             SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Jivaro Old School RuneScape Bot Manager v1.11";
+            Text = "Jivaro Old School RuneScape Bot Manager v1.12";
             FormClosing += formMainForm_FormClose;
             Load += formMainForm_Load;
             ((System.ComponentModel.ISupportInitialize)kryptonNavigatorDashboard).EndInit();

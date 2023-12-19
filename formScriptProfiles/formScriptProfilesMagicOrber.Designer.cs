@@ -247,7 +247,7 @@
             // formScriptProfilesMagicOrber
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScaleMode = AutoScaleMode.None;
             AutoSize = true;
             BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(784, 436);

@@ -1239,7 +1239,15 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     breaks = string.IsNullOrWhiteSpace(breaks) || breaks == "BREAK_NICKNAME" ? "" : "-breaks " + breaks + " ";
 
                     // Set Proxy Variable
-                    proxy = string.IsNullOrWhiteSpace(proxy) || proxy == "IP:PORT:USER:PASS" ? "" : "-proxy " + proxy + " ";
+                    try
+                    {
+                        string[] proxyParts = proxy.Split(':');
+                        proxy = string.IsNullOrWhiteSpace(proxy) || proxy == "IP:PORT:USER:PASS" ? "" : $"-proxyHost {proxyParts[0]} -proxyPort {proxyParts[1]} -proxyUser {proxyParts[2]} -proxyPass {proxyParts[3]} ";
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error processing proxy string: " + ex.Message);
+                    }
 
                     // Set scriptParams Variable
                     scriptParams = string.IsNullOrWhiteSpace(scriptParams) ? "" : "-params " + scriptParams + " ";
@@ -1480,33 +1488,24 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     breaks = string.IsNullOrWhiteSpace(breaks) ? "" : "--breakprofile \"" + breaks + "\" ";
 
                     // Set Proxy Variable
-                    if (!string.IsNullOrWhiteSpace(proxy) && proxy != "IP:PORT:USER:PASS")
+                    try
                     {
-                        var parts = proxy.Split(':');
-                        if (parts.Length == 4)
-                        {
-                            proxy = $" --proxyhost \"{parts[0]}\" --proxyport \"{parts[1]}\" --proxyusername \"{parts[2]}\" --proxypassword \"{parts[3]}\"";
-                        }
-                        else
-                        {
-                            // Handle unexpected format if necessary
-                            Console.WriteLine("The proxy string is in an unexpected format.");
-                        }
+                        string[] proxyParts = proxy.Split(':');
+                        proxy = string.IsNullOrWhiteSpace(proxy) || proxy == "IP:PORT:USER:PASS" ? "" : $"--proxyhost {proxyParts[0]} --proxyport {proxyParts[1]} --proxyusername {proxyParts[2]} --proxypassword {proxyParts[3]} ";
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        proxy = "";
+                        Console.WriteLine("Error processing proxy string: " + ex.Message);
                     }
-
 
                     // Set World Variable
                     Random rnd = new Random();
 
                     Dictionary<string, int[]> worldMap = new Dictionary<string, int[]>
-                {
-                    { "-F2P-", new int[] { 301, 308, 316, 326, 335, 371, 380, 382, 383, 384, 394, 397, 398, 399, 417, 418, 430, 431, 433, 434, 435, 436, 437, 451, 452, 453, 454, 455, 456, 469, 470, 471, 475, 476, 483, 497, 498, 499, 500, 501, 537, 542, 543, 544, 545, 546, 547, 552, 553, 554, 555, 556, 557, 562, 563, 571, 575 } },
-                    { "-P2P-", new int[] { 302, 303, 304, 305, 306, 307, 309, 310, 311, 312, 313, 314, 315, 317, 318, 319, 320, 321, 322, 323, 324, 325, 327, 328, 329, 330, 331, 332, 333, 334, 336, 337, 338, 339, 340, 341, 343, 344, 346, 347, 348, 350, 351, 352, 354, 355, 357, 358, 359, 360, 362, 367, 368, 369, 370, 374, 375, 376, 377, 378, 386, 387, 388, 389, 390, 395, 421, 422, 424, 443, 444, 445, 446, 463, 464, 465, 466, 477, 478, 480, 481, 482, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 531, 532, 533, 534, 535, 580 } }
-                };
+                    {
+                        { "-F2P-", new int[] { 301, 308, 316, 326, 335, 371, 380, 382, 383, 384, 394, 397, 398, 399, 417, 418, 430, 431, 433, 434, 435, 436, 437, 451, 452, 453, 454, 455, 456, 469, 470, 471, 475, 476, 483, 497, 498, 499, 500, 501, 537, 542, 543, 544, 545, 546, 547, 552, 553, 554, 555, 556, 557, 562, 563, 571, 575 } },
+                        { "-P2P-", new int[] { 302, 303, 304, 305, 306, 307, 309, 310, 311, 312, 313, 314, 315, 317, 318, 319, 320, 321, 322, 323, 324, 325, 327, 328, 329, 330, 331, 332, 333, 334, 336, 337, 338, 339, 340, 341, 343, 344, 346, 347, 348, 350, 351, 352, 354, 355, 357, 358, 359, 360, 362, 367, 368, 369, 370, 374, 375, 376, 377, 378, 386, 387, 388, 389, 390, 395, 421, 422, 424, 443, 444, 445, 446, 463, 464, 465, 466, 477, 478, 480, 481, 482, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 531, 532, 533, 534, 535, 580 } }
+                    };
 
                     world = worldMap.ContainsKey(world)
                         ? "--charworld  \"" + worldMap[world][rnd.Next(worldMap[world].Length)] + "\" "

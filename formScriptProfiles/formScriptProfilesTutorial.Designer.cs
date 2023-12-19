@@ -224,7 +224,7 @@
             // formScriptProfilesTutorial
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(884, 536);
             Controls.Add(labelScriptProfiles_Tutorial_Header);
