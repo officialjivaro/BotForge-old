@@ -197,7 +197,7 @@
             // formScriptProfilesThievingMasterFarmers
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(684, 436);
             Controls.Add(checkBoxScriptProfiles_ThievingMasterFarmers_AvoidPlayers);

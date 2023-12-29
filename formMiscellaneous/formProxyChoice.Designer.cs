@@ -316,7 +316,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
             // formProxyChoice
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(399, 251);
             Controls.Add(kryptonButtonProxyChoice_ProxyCheap);

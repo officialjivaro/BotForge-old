@@ -211,7 +211,7 @@
             // formScriptProfilesMiningMotherlodeMine
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(484, 511);
             Controls.Add(labelScriptProfiles_MiningMotherlodeMine_Header);

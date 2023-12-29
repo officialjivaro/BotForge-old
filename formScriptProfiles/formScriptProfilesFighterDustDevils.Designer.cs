@@ -585,7 +585,7 @@
             // formScriptProfilesFighterDustDevils
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(1014, 641);
             Controls.Add(tabControlScriptProfiles_DustDevils);

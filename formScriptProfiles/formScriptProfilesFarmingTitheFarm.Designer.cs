@@ -173,7 +173,7 @@
             // formScriptProfilesFarmingTitheFarm
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(559, 361);
             Controls.Add(labelScriptProfiles_FarmingTitheFarm_Header);

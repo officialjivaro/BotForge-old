@@ -29,14 +29,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMainForm));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
@@ -63,6 +55,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             DataGridViewCellStyle dataGridViewCellStyle32 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle33 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle34 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             labelBreakProfiles_Header = new Label();
             labelSleepTimeVariationPercentage = new Label();
             labelTimeUntilSleepVariationMinutes = new Label();
@@ -143,17 +143,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             kryptonButtonDashboard_ScriptFactoryManager_AddAccount = new Krypton.Toolkit.KryptonButton();
             kryptonButtonDashboard_ScriptFactoryManager_LaunchOSBot = new Krypton.Toolkit.KryptonButton();
             kryptonDataGridViewDashboard_ScriptFactoryManager = new Krypton.Toolkit.KryptonDataGridView();
-            kryptonDataGridViewDashboard_ScriptFactoryManager_Account = new DataGridViewTextBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_Password = new DataGridViewTextBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_Pin = new DataGridViewTextBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_Proxy = new DataGridViewTextBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory = new DataGridViewComboBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_Script = new DataGridViewComboBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_World = new DataGridViewComboBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_RunStop = new DataGridViewButtonColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_Notes = new DataGridViewTextBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_Status = new DataGridViewTextBoxColumn();
-            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber = new DataGridViewTextBoxColumn();
             kryptonPageDashboard_OSBotManager = new KryptonPage();
             labelDashboard_OSBotManager_BreakTimeMins = new Label();
             kryptonTextBoxDashboard_OSBotManager_BreakTime = new Krypton.Toolkit.KryptonTextBox();
@@ -265,6 +254,17 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             kryptonButtonSettings_SaveLogin = new Krypton.Toolkit.KryptonButton();
             kryptonPanelMain = new Krypton.Toolkit.KryptonPanel();
             kryptonProgressBarGlobal = new Krypton.Toolkit.KryptonProgressBar();
+            kryptonDataGridViewDashboard_ScriptFactoryManager_Account = new DataGridViewTextBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_Password = new DataGridViewTextBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_Pin = new DataGridViewTextBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_Proxy = new DataGridViewTextBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory = new DataGridViewComboBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_Script = new DataGridViewComboBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_World = new DataGridViewComboBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_RunStop = new DataGridViewButtonColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_Notes = new DataGridViewTextBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_Status = new DataGridViewTextBoxColumn();
+            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)kryptonNavigatorDashboard).BeginInit();
             ((System.ComponentModel.ISupportInitialize)kryptonPageDashboard_ScriptFactoryManager).BeginInit();
             kryptonPageDashboard_ScriptFactoryManager.SuspendLayout();
@@ -355,7 +355,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxBreakProfiles_TimeUntilSleep.BackColor = Color.FromArgb(224, 224, 224);
             textBoxBreakProfiles_TimeUntilSleep.BorderStyle = BorderStyle.FixedSingle;
             textBoxBreakProfiles_TimeUntilSleep.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBreakProfiles_TimeUntilSleep.ForeColor = Color.Black;
+            textBoxBreakProfiles_TimeUntilSleep.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxBreakProfiles_TimeUntilSleep.Location = new Point(1050, 275);
             textBoxBreakProfiles_TimeUntilSleep.Margin = new Padding(0);
             textBoxBreakProfiles_TimeUntilSleep.Name = "textBoxBreakProfiles_TimeUntilSleep";
@@ -370,7 +370,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxBreakProfiles_TimeUntilSleepVariation.BackColor = Color.FromArgb(224, 224, 224);
             textBoxBreakProfiles_TimeUntilSleepVariation.BorderStyle = BorderStyle.FixedSingle;
             textBoxBreakProfiles_TimeUntilSleepVariation.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBreakProfiles_TimeUntilSleepVariation.ForeColor = Color.Black;
+            textBoxBreakProfiles_TimeUntilSleepVariation.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxBreakProfiles_TimeUntilSleepVariation.Location = new Point(1050, 325);
             textBoxBreakProfiles_TimeUntilSleepVariation.Margin = new Padding(0);
             textBoxBreakProfiles_TimeUntilSleepVariation.Name = "textBoxBreakProfiles_TimeUntilSleepVariation";
@@ -385,7 +385,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxBreakProfiles_SleepTime.BackColor = Color.FromArgb(224, 224, 224);
             textBoxBreakProfiles_SleepTime.BorderStyle = BorderStyle.FixedSingle;
             textBoxBreakProfiles_SleepTime.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBreakProfiles_SleepTime.ForeColor = Color.Black;
+            textBoxBreakProfiles_SleepTime.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxBreakProfiles_SleepTime.Location = new Point(1050, 375);
             textBoxBreakProfiles_SleepTime.Margin = new Padding(0);
             textBoxBreakProfiles_SleepTime.Name = "textBoxBreakProfiles_SleepTime";
@@ -400,7 +400,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxBreakProfiles_SleepTimeVariation.BackColor = Color.FromArgb(224, 224, 224);
             textBoxBreakProfiles_SleepTimeVariation.BorderStyle = BorderStyle.FixedSingle;
             textBoxBreakProfiles_SleepTimeVariation.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBreakProfiles_SleepTimeVariation.ForeColor = Color.Black;
+            textBoxBreakProfiles_SleepTimeVariation.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxBreakProfiles_SleepTimeVariation.Location = new Point(1050, 425);
             textBoxBreakProfiles_SleepTimeVariation.Margin = new Padding(0);
             textBoxBreakProfiles_SleepTimeVariation.Name = "textBoxBreakProfiles_SleepTimeVariation";
@@ -501,7 +501,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxBreakProfiles_BreakTimeVariation.BackColor = Color.FromArgb(224, 224, 224);
             textBoxBreakProfiles_BreakTimeVariation.BorderStyle = BorderStyle.FixedSingle;
             textBoxBreakProfiles_BreakTimeVariation.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBreakProfiles_BreakTimeVariation.ForeColor = Color.Black;
+            textBoxBreakProfiles_BreakTimeVariation.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxBreakProfiles_BreakTimeVariation.Location = new Point(575, 425);
             textBoxBreakProfiles_BreakTimeVariation.Name = "textBoxBreakProfiles_BreakTimeVariation";
             textBoxBreakProfiles_BreakTimeVariation.Size = new Size(72, 24);
@@ -515,7 +515,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxBreakProfiles_BreakTime.BackColor = Color.FromArgb(224, 224, 224);
             textBoxBreakProfiles_BreakTime.BorderStyle = BorderStyle.FixedSingle;
             textBoxBreakProfiles_BreakTime.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBreakProfiles_BreakTime.ForeColor = Color.Black;
+            textBoxBreakProfiles_BreakTime.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxBreakProfiles_BreakTime.Location = new Point(575, 375);
             textBoxBreakProfiles_BreakTime.Name = "textBoxBreakProfiles_BreakTime";
             textBoxBreakProfiles_BreakTime.Size = new Size(72, 24);
@@ -603,7 +603,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxBreakProfiles_BotTimeVariation.BackColor = Color.FromArgb(224, 224, 224);
             textBoxBreakProfiles_BotTimeVariation.BorderStyle = BorderStyle.FixedSingle;
             textBoxBreakProfiles_BotTimeVariation.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBreakProfiles_BotTimeVariation.ForeColor = Color.Black;
+            textBoxBreakProfiles_BotTimeVariation.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxBreakProfiles_BotTimeVariation.Location = new Point(575, 325);
             textBoxBreakProfiles_BotTimeVariation.Name = "textBoxBreakProfiles_BotTimeVariation";
             textBoxBreakProfiles_BotTimeVariation.Size = new Size(72, 24);
@@ -617,7 +617,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             textBoxBreakProfiles_BotTime.BackColor = Color.FromArgb(224, 224, 224);
             textBoxBreakProfiles_BotTime.BorderStyle = BorderStyle.FixedSingle;
             textBoxBreakProfiles_BotTime.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBreakProfiles_BotTime.ForeColor = Color.Black;
+            textBoxBreakProfiles_BotTime.ForeColor = Color.FromArgb(64, 64, 64);
             textBoxBreakProfiles_BotTime.Location = new Point(575, 275);
             textBoxBreakProfiles_BotTime.Name = "textBoxBreakProfiles_BotTime";
             textBoxBreakProfiles_BotTime.Size = new Size(72, 24);
@@ -631,13 +631,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             checkBoxBreakProfiles_EnableSleepBreaks.AutoSize = true;
             checkBoxBreakProfiles_EnableSleepBreaks.BackColor = Color.Transparent;
             checkBoxBreakProfiles_EnableSleepBreaks.BackgroundImageLayout = ImageLayout.Stretch;
-            checkBoxBreakProfiles_EnableSleepBreaks.FlatStyle = FlatStyle.Flat;
             checkBoxBreakProfiles_EnableSleepBreaks.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             checkBoxBreakProfiles_EnableSleepBreaks.ForeColor = Color.FromArgb(224, 224, 224);
             checkBoxBreakProfiles_EnableSleepBreaks.Location = new Point(825, 200);
             checkBoxBreakProfiles_EnableSleepBreaks.Name = "checkBoxBreakProfiles_EnableSleepBreaks";
             checkBoxBreakProfiles_EnableSleepBreaks.RightToLeft = RightToLeft.No;
-            checkBoxBreakProfiles_EnableSleepBreaks.Size = new Size(161, 22);
+            checkBoxBreakProfiles_EnableSleepBreaks.Size = new Size(164, 22);
             checkBoxBreakProfiles_EnableSleepBreaks.TabIndex = 12;
             checkBoxBreakProfiles_EnableSleepBreaks.Text = "Enable Sleep Breaks";
             checkBoxBreakProfiles_EnableSleepBreaks.UseVisualStyleBackColor = false;
@@ -647,13 +646,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             checkBoxBreakProfiles_EnableBreaks.AutoSize = true;
             checkBoxBreakProfiles_EnableBreaks.BackColor = Color.Transparent;
             checkBoxBreakProfiles_EnableBreaks.BackgroundImageLayout = ImageLayout.Stretch;
-            checkBoxBreakProfiles_EnableBreaks.FlatStyle = FlatStyle.Flat;
+            checkBoxBreakProfiles_EnableBreaks.Checked = true;
+            checkBoxBreakProfiles_EnableBreaks.CheckState = CheckState.Checked;
             checkBoxBreakProfiles_EnableBreaks.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             checkBoxBreakProfiles_EnableBreaks.ForeColor = Color.FromArgb(224, 224, 224);
             checkBoxBreakProfiles_EnableBreaks.Location = new Point(350, 200);
             checkBoxBreakProfiles_EnableBreaks.Name = "checkBoxBreakProfiles_EnableBreaks";
             checkBoxBreakProfiles_EnableBreaks.RightToLeft = RightToLeft.No;
-            checkBoxBreakProfiles_EnableBreaks.Size = new Size(120, 22);
+            checkBoxBreakProfiles_EnableBreaks.Size = new Size(123, 22);
             checkBoxBreakProfiles_EnableBreaks.TabIndex = 11;
             checkBoxBreakProfiles_EnableBreaks.Text = "Enable Breaks";
             checkBoxBreakProfiles_EnableBreaks.UseVisualStyleBackColor = false;
@@ -1677,102 +1677,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             kryptonDataGridViewDashboard_ScriptFactoryManager.StateCommon.HeaderRow.Content.Color2 = Color.FromArgb(224, 224, 224);
             kryptonDataGridViewDashboard_ScriptFactoryManager.TabIndex = 54;
             kryptonDataGridViewDashboard_ScriptFactoryManager.CellContentClick += dataGridView_ScriptFactoryRun_CellButtonClick;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactoryManager_Account
-            // 
-            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(64, 64, 64);
-            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.DefaultCellStyle = dataGridViewCellStyle1;
-            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.HeaderText = "Account";
-            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.Name = "kryptonDataGridViewDashboard_ScriptFactoryManager_Account";
-            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.Resizable = DataGridViewTriState.True;
-            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.Width = 150;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_Password
-            // 
-            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(64, 64, 64);
-            kryptonDataGridViewDashboard_ScriptFactory_Password.DefaultCellStyle = dataGridViewCellStyle2;
-            kryptonDataGridViewDashboard_ScriptFactory_Password.HeaderText = "Password";
-            kryptonDataGridViewDashboard_ScriptFactory_Password.Name = "kryptonDataGridViewDashboard_ScriptFactory_Password";
-            kryptonDataGridViewDashboard_ScriptFactory_Password.Resizable = DataGridViewTriState.True;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_Pin
-            // 
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(64, 64, 64);
-            kryptonDataGridViewDashboard_ScriptFactory_Pin.DefaultCellStyle = dataGridViewCellStyle3;
-            kryptonDataGridViewDashboard_ScriptFactory_Pin.HeaderText = "Pin";
-            kryptonDataGridViewDashboard_ScriptFactory_Pin.Name = "kryptonDataGridViewDashboard_ScriptFactory_Pin";
-            kryptonDataGridViewDashboard_ScriptFactory_Pin.Resizable = DataGridViewTriState.True;
-            kryptonDataGridViewDashboard_ScriptFactory_Pin.Width = 75;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_Proxy
-            // 
-            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(64, 64, 64);
-            kryptonDataGridViewDashboard_ScriptFactory_Proxy.DefaultCellStyle = dataGridViewCellStyle4;
-            kryptonDataGridViewDashboard_ScriptFactory_Proxy.HeaderText = "Proxy";
-            kryptonDataGridViewDashboard_ScriptFactory_Proxy.Name = "kryptonDataGridViewDashboard_ScriptFactory_Proxy";
-            kryptonDataGridViewDashboard_ScriptFactory_Proxy.Resizable = DataGridViewTriState.True;
-            kryptonDataGridViewDashboard_ScriptFactory_Proxy.Width = 125;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory
-            // 
-            dataGridViewCellStyle5.ForeColor = Color.FromArgb(64, 64, 64);
-            dataGridViewCellStyle5.SelectionForeColor = Color.FromArgb(64, 64, 64);
-            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.DefaultCellStyle = dataGridViewCellStyle5;
-            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.HeaderText = "Script Factory";
-            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.Items.AddRange(new object[] { "SF I", "SF II", "SF Pro", "SF Expansion" });
-            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.Name = "kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory";
-            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.Resizable = DataGridViewTriState.True;
-            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.SortMode = DataGridViewColumnSortMode.Automatic;
-            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.Width = 110;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_Script
-            // 
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(64, 64, 64);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(64, 64, 64);
-            kryptonDataGridViewDashboard_ScriptFactory_Script.DefaultCellStyle = dataGridViewCellStyle6;
-            kryptonDataGridViewDashboard_ScriptFactory_Script.HeaderText = "Script";
-            kryptonDataGridViewDashboard_ScriptFactory_Script.Name = "kryptonDataGridViewDashboard_ScriptFactory_Script";
-            kryptonDataGridViewDashboard_ScriptFactory_Script.Resizable = DataGridViewTriState.True;
-            kryptonDataGridViewDashboard_ScriptFactory_Script.SortMode = DataGridViewColumnSortMode.Automatic;
-            kryptonDataGridViewDashboard_ScriptFactory_Script.Width = 225;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_World
-            // 
-            dataGridViewCellStyle7.ForeColor = Color.FromArgb(64, 64, 64);
-            dataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(64, 64, 64);
-            kryptonDataGridViewDashboard_ScriptFactory_World.DefaultCellStyle = dataGridViewCellStyle7;
-            kryptonDataGridViewDashboard_ScriptFactory_World.HeaderText = "World";
-            kryptonDataGridViewDashboard_ScriptFactory_World.Items.AddRange(new object[] { "-F2P-", "301", "308", "316", "326", "335", "371", "380", "382", "383", "384", "394", "397", "398", "399", "417", "418", "430", "431", "433", "434", "435", "436", "437", "451", "452", "453", "454", "455", "456", "469", "470", "471", "475", "476", "483", "497", "498", "499", "500", "501", "537", "542", "543", "544", "545", "546", "547", "552", "553", "554", "555", "556", "557", "562", "563", "571", "575", "-P2P-", "302", "303", "304", "305", "306", "307", "309", "310", "311", "312", "313", "314", "315", "317", "318", "319", "320", "321", "322", "323", "324", "325", "327", "328", "329", "330", "331", "332", "333", "334", "336", "337", "338", "339", "340", "341", "343", "344", "346", "347", "348", "350", "351", "352", "354", "355", "357", "358", "359", "360", "362", "367", "368", "369", "370", "374", "375", "376", "377", "378", "386", "387", "388", "389", "390", "395", "421", "422", "424", "443", "444", "445", "446", "463", "464", "465", "466", "477", "478", "480", "481", "482", "484", "485", "486", "487", "488", "489", "490", "491", "492", "493", "494", "495", "496", "505", "506", "507", "508", "509", "510", "511", "512", "513", "514", "515", "516", "517", "518", "519", "520", "521", "522", "523", "524", "525", "531", "532", "533", "534", "535", "580" });
-            kryptonDataGridViewDashboard_ScriptFactory_World.Name = "kryptonDataGridViewDashboard_ScriptFactory_World";
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_RunStop
-            // 
-            kryptonDataGridViewDashboard_ScriptFactory_RunStop.HeaderText = "Run | Stop";
-            kryptonDataGridViewDashboard_ScriptFactory_RunStop.Name = "kryptonDataGridViewDashboard_ScriptFactory_RunStop";
-            kryptonDataGridViewDashboard_ScriptFactory_RunStop.Width = 75;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_Notes
-            // 
-            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(64, 64, 64);
-            kryptonDataGridViewDashboard_ScriptFactory_Notes.DefaultCellStyle = dataGridViewCellStyle8;
-            kryptonDataGridViewDashboard_ScriptFactory_Notes.HeaderText = "Notes";
-            kryptonDataGridViewDashboard_ScriptFactory_Notes.Name = "kryptonDataGridViewDashboard_ScriptFactory_Notes";
-            kryptonDataGridViewDashboard_ScriptFactory_Notes.Resizable = DataGridViewTriState.False;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_Status
-            // 
-            kryptonDataGridViewDashboard_ScriptFactory_Status.HeaderText = "Status";
-            kryptonDataGridViewDashboard_ScriptFactory_Status.Name = "kryptonDataGridViewDashboard_ScriptFactory_Status";
-            kryptonDataGridViewDashboard_ScriptFactory_Status.ReadOnly = true;
-            kryptonDataGridViewDashboard_ScriptFactory_Status.Resizable = DataGridViewTriState.True;
-            kryptonDataGridViewDashboard_ScriptFactory_Status.Width = 75;
-            // 
-            // kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber
-            // 
-            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber.HeaderText = "Sandboxie Number";
-            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber.Name = "kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber";
-            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber.Resizable = DataGridViewTriState.True;
-            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber.Visible = false;
             // 
             // kryptonPageDashboard_OSBotManager
             // 
@@ -5041,9 +4945,108 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             kryptonProgressBarGlobal.TabIndex = 43;
             kryptonProgressBarGlobal.Values.Text = "";
             // 
+            // kryptonDataGridViewDashboard_ScriptFactoryManager_Account
+            // 
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(64, 64, 64);
+            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.DefaultCellStyle = dataGridViewCellStyle1;
+            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.HeaderText = "Account";
+            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.Name = "kryptonDataGridViewDashboard_ScriptFactoryManager_Account";
+            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.Resizable = DataGridViewTriState.True;
+            kryptonDataGridViewDashboard_ScriptFactoryManager_Account.Width = 150;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_Password
+            // 
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(64, 64, 64);
+            kryptonDataGridViewDashboard_ScriptFactory_Password.DefaultCellStyle = dataGridViewCellStyle2;
+            kryptonDataGridViewDashboard_ScriptFactory_Password.HeaderText = "Password";
+            kryptonDataGridViewDashboard_ScriptFactory_Password.Name = "kryptonDataGridViewDashboard_ScriptFactory_Password";
+            kryptonDataGridViewDashboard_ScriptFactory_Password.Resizable = DataGridViewTriState.True;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_Pin
+            // 
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(64, 64, 64);
+            kryptonDataGridViewDashboard_ScriptFactory_Pin.DefaultCellStyle = dataGridViewCellStyle3;
+            kryptonDataGridViewDashboard_ScriptFactory_Pin.HeaderText = "Pin";
+            kryptonDataGridViewDashboard_ScriptFactory_Pin.Name = "kryptonDataGridViewDashboard_ScriptFactory_Pin";
+            kryptonDataGridViewDashboard_ScriptFactory_Pin.Resizable = DataGridViewTriState.True;
+            kryptonDataGridViewDashboard_ScriptFactory_Pin.Width = 75;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_Proxy
+            // 
+            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(64, 64, 64);
+            kryptonDataGridViewDashboard_ScriptFactory_Proxy.DefaultCellStyle = dataGridViewCellStyle4;
+            kryptonDataGridViewDashboard_ScriptFactory_Proxy.HeaderText = "Proxy";
+            kryptonDataGridViewDashboard_ScriptFactory_Proxy.Name = "kryptonDataGridViewDashboard_ScriptFactory_Proxy";
+            kryptonDataGridViewDashboard_ScriptFactory_Proxy.Resizable = DataGridViewTriState.True;
+            kryptonDataGridViewDashboard_ScriptFactory_Proxy.Width = 125;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory
+            // 
+            dataGridViewCellStyle5.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle5.SelectionForeColor = Color.FromArgb(64, 64, 64);
+            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.DefaultCellStyle = dataGridViewCellStyle5;
+            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.HeaderText = "Script Factory";
+            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.Items.AddRange(new object[] { "SF I", "SF II", "SF Pro", "SF Expansion" });
+            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.Name = "kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory";
+            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.Resizable = DataGridViewTriState.True;
+            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.SortMode = DataGridViewColumnSortMode.Automatic;
+            kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory.Width = 110;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_Script
+            // 
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(64, 64, 64);
+            kryptonDataGridViewDashboard_ScriptFactory_Script.DefaultCellStyle = dataGridViewCellStyle6;
+            kryptonDataGridViewDashboard_ScriptFactory_Script.HeaderText = "Script";
+            kryptonDataGridViewDashboard_ScriptFactory_Script.Name = "kryptonDataGridViewDashboard_ScriptFactory_Script";
+            kryptonDataGridViewDashboard_ScriptFactory_Script.Resizable = DataGridViewTriState.True;
+            kryptonDataGridViewDashboard_ScriptFactory_Script.SortMode = DataGridViewColumnSortMode.Automatic;
+            kryptonDataGridViewDashboard_ScriptFactory_Script.Width = 225;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_World
+            // 
+            dataGridViewCellStyle7.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(64, 64, 64);
+            kryptonDataGridViewDashboard_ScriptFactory_World.DefaultCellStyle = dataGridViewCellStyle7;
+            kryptonDataGridViewDashboard_ScriptFactory_World.HeaderText = "World";
+            kryptonDataGridViewDashboard_ScriptFactory_World.Items.AddRange(new object[] { "-F2P-", "301", "308", "316", "326", "335", "371", "380", "382", "383", "384", "394", "397", "398", "399", "417", "418", "430", "431", "433", "434", "435", "436", "437", "451", "452", "453", "454", "455", "456", "469", "470", "471", "475", "476", "483", "497", "498", "499", "500", "501", "537", "542", "543", "544", "545", "546", "547", "552", "553", "554", "555", "556", "557", "562", "563", "571", "575", "-P2P-", "302", "303", "304", "305", "306", "307", "309", "310", "311", "312", "313", "314", "315", "317", "318", "319", "320", "321", "322", "323", "324", "325", "327", "328", "329", "330", "331", "332", "333", "334", "336", "337", "338", "339", "340", "341", "343", "344", "346", "347", "348", "350", "351", "352", "354", "355", "357", "358", "359", "360", "362", "367", "368", "369", "370", "374", "375", "376", "377", "378", "386", "387", "388", "389", "390", "395", "421", "422", "424", "443", "444", "445", "446", "463", "464", "465", "466", "477", "478", "480", "481", "482", "484", "485", "486", "487", "488", "489", "490", "491", "492", "493", "494", "495", "496", "505", "506", "507", "508", "509", "510", "511", "512", "513", "514", "515", "516", "517", "518", "519", "520", "521", "522", "523", "524", "525", "531", "532", "533", "534", "535", "580" });
+            kryptonDataGridViewDashboard_ScriptFactory_World.Name = "kryptonDataGridViewDashboard_ScriptFactory_World";
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_RunStop
+            // 
+            kryptonDataGridViewDashboard_ScriptFactory_RunStop.HeaderText = "Run | Stop";
+            kryptonDataGridViewDashboard_ScriptFactory_RunStop.Name = "kryptonDataGridViewDashboard_ScriptFactory_RunStop";
+            kryptonDataGridViewDashboard_ScriptFactory_RunStop.Width = 75;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_Notes
+            // 
+            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(64, 64, 64);
+            kryptonDataGridViewDashboard_ScriptFactory_Notes.DefaultCellStyle = dataGridViewCellStyle8;
+            kryptonDataGridViewDashboard_ScriptFactory_Notes.HeaderText = "Notes";
+            kryptonDataGridViewDashboard_ScriptFactory_Notes.Name = "kryptonDataGridViewDashboard_ScriptFactory_Notes";
+            kryptonDataGridViewDashboard_ScriptFactory_Notes.Resizable = DataGridViewTriState.False;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_Status
+            // 
+            kryptonDataGridViewDashboard_ScriptFactory_Status.HeaderText = "Status";
+            kryptonDataGridViewDashboard_ScriptFactory_Status.Name = "kryptonDataGridViewDashboard_ScriptFactory_Status";
+            kryptonDataGridViewDashboard_ScriptFactory_Status.ReadOnly = true;
+            kryptonDataGridViewDashboard_ScriptFactory_Status.Resizable = DataGridViewTriState.True;
+            kryptonDataGridViewDashboard_ScriptFactory_Status.Width = 75;
+            // 
+            // kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber
+            // 
+            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber.HeaderText = "Sandboxie Number";
+            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber.Name = "kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber";
+            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber.Resizable = DataGridViewTriState.True;
+            kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber.Visible = false;
+            // 
             // formMainForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             AutoValidate = AutoValidate.Disable;
             BackColor = Color.FromArgb(64, 64, 64);
             BackgroundImageLayout = ImageLayout.Stretch;
@@ -5253,17 +5256,6 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public Krypton.Toolkit.KryptonButton kryptonButtonSettings_SetupGuide;
         public Krypton.Toolkit.KryptonButton kryptonButtonSettings_KillAllBotClients;
         public Krypton.Toolkit.KryptonButton kryptonButtonSettings_Discord;
-        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactoryManager_Account;
-        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Password;
-        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Pin;
-        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Proxy;
-        private DataGridViewComboBoxColumn kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory;
-        private DataGridViewComboBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Script;
-        private DataGridViewComboBoxColumn kryptonDataGridViewDashboard_ScriptFactory_World;
-        private DataGridViewButtonColumn kryptonDataGridViewDashboard_ScriptFactory_RunStop;
-        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Notes;
-        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Status;
-        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber;
         private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_OSBotManager_Account;
         private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_OSBotManager_Password;
         private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_OSBotManager_Pin;
@@ -5299,5 +5291,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_TRiBotManager_Notes;
         private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_TRiBotManager_Status;
         private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_TRiBotManager_SandboxieNumber;
+        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactoryManager_Account;
+        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Password;
+        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Pin;
+        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Proxy;
+        private DataGridViewComboBoxColumn kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory;
+        private DataGridViewComboBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Script;
+        private DataGridViewComboBoxColumn kryptonDataGridViewDashboard_ScriptFactory_World;
+        private DataGridViewButtonColumn kryptonDataGridViewDashboard_ScriptFactory_RunStop;
+        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Notes;
+        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_Status;
+        private DataGridViewTextBoxColumn kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber;
     }
 }

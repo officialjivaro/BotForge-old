@@ -63,7 +63,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 
             if (listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.SelectedItems.Count > 0)
             {
-                Dictionary<string, Action> f2pQuestsMap = new Dictionary<string, Action>
+                Dictionary<string, Action> spendNuggetsMap = new Dictionary<string, Action>
                 {
                     {"Coal Bag", () => boolEnableBuyCoalBag = "<Find>boolEnableBuyCoalBag:false</Find><Replace>boolEnableBuyCoalBag:true</Replace>"},
                     {"Gem Bag", () => boolEnableBuyGemBag = "<Find>boolEnableBuyGemBag:false</Find><Replace>boolEnableBuyGemBag:true</Replace>"},
@@ -72,15 +72,15 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 };
 
                 // Loop Through Dictionary & Generate Output
-                foreach (var selectedF2pItem in listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.SelectedItems)
+                foreach (var selectedSpendNuggetsItem in listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.SelectedItems)
                 {
-                    string selectedF2pQuest = selectedF2pItem.ToString();
+                    string selectedSpendNuggets = selectedSpendNuggetsItem.ToString();
 
-                    foreach (var f2PQuest in f2pQuestsMap)
+                    foreach (var spendNuggets in spendNuggetsMap)
                     {
-                        if (selectedF2pQuest.Contains(f2PQuest.Key))
+                        if (selectedSpendNuggets.Contains(spendNuggets.Key))
                         {
-                            f2PQuest.Value.Invoke();
+                            spendNuggets.Value.Invoke();
                         }
                     }
                 }

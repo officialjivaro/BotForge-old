@@ -171,7 +171,7 @@
             // formScriptProfilesFiremakingGrandExchange
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(484, 411);
             Controls.Add(labelScriptProfiles_FiremakingGrandExchange_Header);

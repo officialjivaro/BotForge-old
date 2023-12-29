@@ -23,7 +23,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
-        string filepathProfileMiningAIO = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMagic-Orber.txt");
+        string filepathProfileMiningAIO = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxMining-AIO.txt");
 
         // Form load
         public void formScriptProfiles_MiningAIO_Load(object sender, EventArgs e)

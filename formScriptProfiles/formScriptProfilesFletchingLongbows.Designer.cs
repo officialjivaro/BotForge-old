@@ -146,7 +146,7 @@
             // formScriptProfilesFletchingLongbows
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(434, 336);
             Controls.Add(labelScriptProfiles_FletchingLongbows_Header);

@@ -225,7 +225,7 @@
             // formScriptProfilesHerbloreCleanHerbs
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(784, 436);
             Controls.Add(comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed);
