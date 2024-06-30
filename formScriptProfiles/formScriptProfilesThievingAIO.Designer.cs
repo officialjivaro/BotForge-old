@@ -1,6 +1,6 @@
 ﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
-    partial class formScriptProfilesThievingPickpocket
+    partial class formScriptProfilesThievingAIO
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         public void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesThievingPickpocket));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesThievingAIO));
             labelScriptProfiles_ThievingAIO_SelectNpc = new Label();
             comboBoxScriptProfiles_ThievingAIO_SelectNpc = new ComboBox();
             checkBoxScriptProfiles_ThievingAIO_WorldHopping = new CheckBox();
@@ -57,7 +57,7 @@
             comboBoxScriptProfiles_ThievingAIO_SelectNpc.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_ThievingAIO_SelectNpc.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_ThievingAIO_SelectNpc.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_ThievingAIO_SelectNpc.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_ThievingAIO_SelectNpc.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_ThievingAIO_SelectNpc.FormattingEnabled = true;
             comboBoxScriptProfiles_ThievingAIO_SelectNpc.Items.AddRange(new object[] { "Progressive", "Man", "Warrior", "Guard", "ArdougneKnight", "Paladin" });
             comboBoxScriptProfiles_ThievingAIO_SelectNpc.Location = new Point(175, 275);
@@ -140,7 +140,7 @@
             btnScriptProfiles_ThievingAIO_Save.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_ThievingAIO_Save.Cursor = Cursors.Hand;
             btnScriptProfiles_ThievingAIO_Save.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_ThievingAIO_Save.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_ThievingAIO_Save.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_ThievingAIO_Save.Location = new Point(215, 350);
             btnScriptProfiles_ThievingAIO_Save.Name = "btnScriptProfiles_ThievingAIO_Save";
             btnScriptProfiles_ThievingAIO_Save.Size = new Size(125, 50);
@@ -159,7 +159,7 @@
             labelScriptProfiles_ThievingAIO_Header.Text = "Script Profiles";
             labelScriptProfiles_ThievingAIO_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // formScriptProfilesThievingPickpocket
+            // formScriptProfilesThievingAIO
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
@@ -182,7 +182,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             MaximizeBox = false;
-            Name = "formScriptProfilesThievingPickpocket";
+            Name = "formScriptProfilesThievingAIO";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Script Profiles: Thieving - AIO";
             Load += formScriptProfiles_ThievingAIO_Load;

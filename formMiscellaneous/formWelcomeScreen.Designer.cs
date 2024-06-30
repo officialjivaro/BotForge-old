@@ -38,7 +38,7 @@
             // 
             // richTextBoxWelcomeScreen_QuickSetup
             // 
-            richTextBoxWelcomeScreen_QuickSetup.BackColor = Color.FromArgb(64, 64, 64);
+            richTextBoxWelcomeScreen_QuickSetup.BackColor = Color.FromArgb(60, 60, 60);
             richTextBoxWelcomeScreen_QuickSetup.BorderStyle = BorderStyle.None;
             richTextBoxWelcomeScreen_QuickSetup.ForeColor = Color.FromArgb(224, 224, 224);
             richTextBoxWelcomeScreen_QuickSetup.Location = new Point(10, 100);
@@ -91,7 +91,7 @@
             // 
             // richTextBoxWelcomeScreen_LatestNewst
             // 
-            richTextBoxWelcomeScreen_LatestNewst.BackColor = Color.FromArgb(64, 64, 64);
+            richTextBoxWelcomeScreen_LatestNewst.BackColor = Color.FromArgb(60, 60, 60);
             richTextBoxWelcomeScreen_LatestNewst.BorderStyle = BorderStyle.None;
             richTextBoxWelcomeScreen_LatestNewst.ForeColor = Color.FromArgb(224, 224, 224);
             richTextBoxWelcomeScreen_LatestNewst.Location = new Point(355, 102);
@@ -107,7 +107,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(684, 361);
             Controls.Add(richTextBoxWelcomeScreen_LatestNewst);
             Controls.Add(labelWelcomeScreen_LatestNews);

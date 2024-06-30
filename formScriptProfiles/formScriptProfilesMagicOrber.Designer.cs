@@ -198,7 +198,7 @@
             btnScriptProfiles_MagicOrber_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_MagicOrber_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_MagicOrber_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MagicOrber_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MagicOrber_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_MagicOrber_SaveProfile.Location = new Point(330, 350);
             btnScriptProfiles_MagicOrber_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_MagicOrber_SaveProfile.Name = "btnScriptProfiles_MagicOrber_SaveProfile";
@@ -224,7 +224,7 @@
             comboBoxScriptProfiles_MagicOrber_SelectOrb.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_MagicOrber_SelectOrb.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_MagicOrber_SelectOrb.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_MagicOrber_SelectOrb.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_MagicOrber_SelectOrb.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_MagicOrber_SelectOrb.FormattingEnabled = true;
             comboBoxScriptProfiles_MagicOrber_SelectOrb.Items.AddRange(new object[] { "Earth", "Air" });
             comboBoxScriptProfiles_MagicOrber_SelectOrb.Location = new Point(575, 125);

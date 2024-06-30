@@ -64,7 +64,7 @@
             // 
             // tabPageLocalScripts_ScriptFactory
             // 
-            tabPageLocalScripts_ScriptFactory.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageLocalScripts_ScriptFactory.BackColor = Color.FromArgb(60, 60, 60);
             tabPageLocalScripts_ScriptFactory.Controls.Add(richTextBoxLocalScript_ScriptFactory);
             tabPageLocalScripts_ScriptFactory.Location = new Point(4, 24);
             tabPageLocalScripts_ScriptFactory.Margin = new Padding(0);
@@ -76,7 +76,7 @@
             // richTextBoxLocalScript_ScriptFactory
             // 
             richTextBoxLocalScript_ScriptFactory.BackColor = Color.FromArgb(224, 224, 224);
-            richTextBoxLocalScript_ScriptFactory.ForeColor = Color.FromArgb(64, 64, 64);
+            richTextBoxLocalScript_ScriptFactory.ForeColor = Color.FromArgb(60, 60, 60);
             richTextBoxLocalScript_ScriptFactory.Location = new Point(9, 10);
             richTextBoxLocalScript_ScriptFactory.Margin = new Padding(0);
             richTextBoxLocalScript_ScriptFactory.Name = "richTextBoxLocalScript_ScriptFactory";
@@ -86,7 +86,7 @@
             // 
             // tabPageLocalScripts_OSBot
             // 
-            tabPageLocalScripts_OSBot.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageLocalScripts_OSBot.BackColor = Color.FromArgb(60, 60, 60);
             tabPageLocalScripts_OSBot.Controls.Add(richTextBoxLocalScript_OSBot);
             tabPageLocalScripts_OSBot.Location = new Point(4, 24);
             tabPageLocalScripts_OSBot.Margin = new Padding(0);
@@ -98,7 +98,7 @@
             // richTextBoxLocalScript_OSBot
             // 
             richTextBoxLocalScript_OSBot.BackColor = Color.FromArgb(224, 224, 224);
-            richTextBoxLocalScript_OSBot.ForeColor = Color.FromArgb(64, 64, 64);
+            richTextBoxLocalScript_OSBot.ForeColor = Color.FromArgb(60, 60, 60);
             richTextBoxLocalScript_OSBot.Location = new Point(9, 10);
             richTextBoxLocalScript_OSBot.Margin = new Padding(0);
             richTextBoxLocalScript_OSBot.Name = "richTextBoxLocalScript_OSBot";
@@ -108,7 +108,7 @@
             // 
             // tabPageLocalScripts_DreamBot
             // 
-            tabPageLocalScripts_DreamBot.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageLocalScripts_DreamBot.BackColor = Color.FromArgb(60, 60, 60);
             tabPageLocalScripts_DreamBot.Controls.Add(richTextBoxLocalScript_DreamBot);
             tabPageLocalScripts_DreamBot.Location = new Point(4, 24);
             tabPageLocalScripts_DreamBot.Margin = new Padding(0);
@@ -120,7 +120,7 @@
             // richTextBoxLocalScript_DreamBot
             // 
             richTextBoxLocalScript_DreamBot.BackColor = Color.FromArgb(224, 224, 224);
-            richTextBoxLocalScript_DreamBot.ForeColor = Color.FromArgb(64, 64, 64);
+            richTextBoxLocalScript_DreamBot.ForeColor = Color.FromArgb(60, 60, 60);
             richTextBoxLocalScript_DreamBot.Location = new Point(9, 10);
             richTextBoxLocalScript_DreamBot.Margin = new Padding(0);
             richTextBoxLocalScript_DreamBot.Name = "richTextBoxLocalScript_DreamBot";
@@ -130,7 +130,7 @@
             // 
             // tabPageLocalScripts_TRiBot
             // 
-            tabPageLocalScripts_TRiBot.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageLocalScripts_TRiBot.BackColor = Color.FromArgb(60, 60, 60);
             tabPageLocalScripts_TRiBot.Controls.Add(richTextBoxLocalScript_TRiBot);
             tabPageLocalScripts_TRiBot.Location = new Point(4, 24);
             tabPageLocalScripts_TRiBot.Margin = new Padding(0);
@@ -142,7 +142,7 @@
             // richTextBoxLocalScript_TRiBot
             // 
             richTextBoxLocalScript_TRiBot.BackColor = Color.FromArgb(224, 224, 224);
-            richTextBoxLocalScript_TRiBot.ForeColor = Color.FromArgb(64, 64, 64);
+            richTextBoxLocalScript_TRiBot.ForeColor = Color.FromArgb(60, 60, 60);
             richTextBoxLocalScript_TRiBot.Location = new Point(9, 10);
             richTextBoxLocalScript_TRiBot.Margin = new Padding(0);
             richTextBoxLocalScript_TRiBot.Name = "richTextBoxLocalScript_TRiBot";
@@ -157,7 +157,7 @@
             buttonLocalScripts_Update.Cursor = Cursors.Hand;
             buttonLocalScripts_Update.FlatAppearance.BorderColor = Color.Coral;
             buttonLocalScripts_Update.FlatAppearance.MouseDownBackColor = Color.Coral;
-            buttonLocalScripts_Update.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonLocalScripts_Update.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 60, 60);
             buttonLocalScripts_Update.FlatStyle = FlatStyle.Flat;
             buttonLocalScripts_Update.Location = new Point(325, 310);
             buttonLocalScripts_Update.Margin = new Padding(0);
@@ -175,7 +175,7 @@
             buttonLocalScripts_Cancel.Cursor = Cursors.Hand;
             buttonLocalScripts_Cancel.FlatAppearance.BorderColor = Color.Coral;
             buttonLocalScripts_Cancel.FlatAppearance.MouseDownBackColor = Color.Coral;
-            buttonLocalScripts_Cancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonLocalScripts_Cancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 60, 60);
             buttonLocalScripts_Cancel.FlatStyle = FlatStyle.Flat;
             buttonLocalScripts_Cancel.Location = new Point(100, 310);
             buttonLocalScripts_Cancel.Margin = new Padding(0);
@@ -201,7 +201,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(534, 361);
             Controls.Add(buttonLocalScripts_Update);
             Controls.Add(buttonLocalScripts_Cancel);

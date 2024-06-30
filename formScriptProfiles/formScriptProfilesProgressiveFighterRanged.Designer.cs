@@ -120,7 +120,7 @@
             btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Location = new Point(190, 425);
             btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Name = "btnScriptProfiles_ProgressiveFighterRanged_SaveProfile";
             btnScriptProfiles_ProgressiveFighterRanged_SaveProfile.Size = new Size(125, 50);
@@ -135,7 +135,7 @@
             comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC.FormattingEnabled = true;
             comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC.Items.AddRange(new object[] { "Progressive", "Cows", "ElementalWizards", "Goblins", "HillGiants", "Monks", "MossGiants", "RockCrabs" });
             comboBoxScriptProfiles_ProgressiveFighterRanged_SelectNPC.Location = new Point(275, 167);

@@ -65,7 +65,7 @@
             // 
             // listBoxScriptProfiles_RunecraftingAbyss_SelectPouches
             // 
-            listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.BackColor = Color.FromArgb(64, 64, 64);
+            listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.BackColor = Color.FromArgb(60, 60, 60);
             listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.ForeColor = Color.FromArgb(224, 224, 224);
             listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.FormattingEnabled = true;
             listBoxScriptProfiles_RunecraftingAbyss_SelectPouches.ItemHeight = 18;
@@ -83,7 +83,7 @@
             comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables.FormattingEnabled = true;
             comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables.Items.AddRange(new object[] { "None", "Adamant Armor", "Graceful", "Rainment" });
             comboBoxScriptProfiles_RunecraftingAbyss_SelectWearables.Location = new Point(550, 272);
@@ -98,7 +98,7 @@
             comboBoxScriptProfiles_RunecraftingAbyss_Teleport.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_RunecraftingAbyss_Teleport.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_RunecraftingAbyss_Teleport.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_RunecraftingAbyss_Teleport.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_RunecraftingAbyss_Teleport.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_RunecraftingAbyss_Teleport.FormattingEnabled = true;
             comboBoxScriptProfiles_RunecraftingAbyss_Teleport.Items.AddRange(new object[] { "Amulet of Glory", "Games Necklace", "Ring of Dueling" });
             comboBoxScriptProfiles_RunecraftingAbyss_Teleport.Location = new Point(550, 347);
@@ -143,7 +143,7 @@
             comboBoxScriptProfiles_RunecraftingAbyss_SelectObstacle.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_RunecraftingAbyss_SelectObstacle.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_RunecraftingAbyss_SelectObstacle.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_RunecraftingAbyss_SelectObstacle.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_RunecraftingAbyss_SelectObstacle.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_RunecraftingAbyss_SelectObstacle.FormattingEnabled = true;
             comboBoxScriptProfiles_RunecraftingAbyss_SelectObstacle.Items.AddRange(new object[] { "Mining", "Agility", "Thieving", "None" });
             comboBoxScriptProfiles_RunecraftingAbyss_SelectObstacle.Location = new Point(550, 197);
@@ -190,7 +190,7 @@
             comboBoxScriptProfiles_RunecraftingAbyss_SelectRune.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_RunecraftingAbyss_SelectRune.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_RunecraftingAbyss_SelectRune.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_RunecraftingAbyss_SelectRune.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_RunecraftingAbyss_SelectRune.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_RunecraftingAbyss_SelectRune.FormattingEnabled = true;
             comboBoxScriptProfiles_RunecraftingAbyss_SelectRune.Items.AddRange(new object[] { "Progressive", "Air", "Water", "Earth", "Fire", "Body", "Cosmic", "Nature", "Law", "Soul", "Mind", "Chaos", "Death", "Blood", "Soul" });
             comboBoxScriptProfiles_RunecraftingAbyss_SelectRune.Location = new Point(550, 122);
@@ -292,7 +292,7 @@
             btnScriptProfiles_RunecraftingAbyss_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_RunecraftingAbyss_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_RunecraftingAbyss_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_RunecraftingAbyss_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_RunecraftingAbyss_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_RunecraftingAbyss_SaveProfile.Location = new Point(340, 425);
             btnScriptProfiles_RunecraftingAbyss_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_RunecraftingAbyss_SaveProfile.Name = "btnScriptProfiles_RunecraftingAbyss_SaveProfile";

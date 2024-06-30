@@ -17,41 +17,64 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         }
 
         // Initialize Variables
-        int intActivityDuration;
-        int intActivityDurationVariation;
+        int intMainActivityDuration;
+        int intMainActivityDurationVariation;
+        int intGoldFarmingActivityDuration;
+        int intGoldFarmingActivityDurationVariation;
         int intGoldFarmingDuration;
-        string activityDuration;
-        string activityDurationVariation;
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
-        string boolEnableAPorcineOfInterest = "<Find>boolEnableAPorcineOfInterest:false</Find><Replace>boolEnableAPorcineOfInterest:false</Replace>";
-        string boolEnableBankCoal = "<Find>boolEnableBankCoal:false</Find><Replace>boolEnableBankCoal:false</Replace>";
+        string boolEnableBankOre = "<Find>boolEnableBankOre:false</Find><Replace>boolEnableBankOre:false</Replace>";
         string boolEnableBuryBones = "<Find>boolEnableBuryBones:false</Find><Replace>boolEnableBuryBones:false</Replace>";
-        string boolEnableCooksAssistant = "<Find>boolEnableCooksAssistant:false</Find><Replace>boolEnableCooksAssistant:false</Replace>";
+        string boolEnableChaosTemple = "<Find>boolEnableChaosTemple:false</Find><Replace>boolEnableChaosTemple:false</Replace>";
         string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableDoricsQuest = "<Find>boolEnableDoricsQuest:false</Find><Replace>boolEnableDoricsQuest:false</Replace>";
-        string boolEnableDruidicRitual = "<Find>boolEnableDruidicRitual:false</Find><Replace>boolEnableDruidicRitual:false</Replace>";
-        string boolEnableGoblinDiplomacy = "<Find>boolEnableGoblinDiplomacy:false</Find><Replace>boolEnableGoblinDiplomacy:false</Replace>";
+        string boolEnableDiscordWebhooks = "<Find>boolEnableDiscordWebhooks:false</Find><Replace>boolEnableDiscordWebhooks:false</Replace>";
+        string boolEnableGoldFarmingBuyBronzeBars = "<Find>boolEnableGoldFarmingBuyBronzeBars:false</Find><Replace>boolEnableGoldFarmingBuyBronzeBars:false</Replace>";
+        string boolEnableGoldFarmingCastBonesToBananas = "<Find>boolEnableGoldFarmingCastBonesToBananas:false</Find><Replace>boolEnableGoldFarmingCastBonesToBananas:false</Replace>";
+        string boolEnableGoldFarmingCollectBones = "<Find>boolEnableGoldFarmingCollectBones:false</Find><Replace>boolEnableGoldFarmingCollectBones:false</Replace>";
+        string boolEnableGoldFarmingCollectFishFood = "<Find>boolEnableGoldFarmingCollectFishFood:false</Find><Replace>boolEnableGoldFarmingCollectFishFood:false</Replace>";
+        string boolEnableGoldFarmingCollectMonksRobes = "<Find>boolEnableGoldFarmingCollectMonksRobes:false</Find><Replace>boolEnableGoldFarmingCollectMonksRobes:false</Replace>";
+        string boolEnableGoldFarmingCollectPotatoes = "<Find>boolEnableGoldFarmingCollectPotatoes:false</Find><Replace>boolEnableGoldFarmingCollectPotatoes:false</Replace>";
+        string boolEnableGoldFarmingCollectRedSpidersEggs = "<Find>boolEnableGoldFarmingCollectRedSpidersEggs:false</Find><Replace>boolEnableGoldFarmingCollectRedSpidersEggs:false</Replace>";
+        string boolEnableGoldFarmingCollectTinderboxes = "<Find>boolEnableGoldFarmingCollectTinderboxes:false</Find><Replace>boolEnableGoldFarmingCollectTinderboxes:false</Replace>";
+        string boolEnableGoldFarmingKillCows = "<Find>boolEnableGoldFarmingKillCows:false</Find><Replace>boolEnableGoldFarmingKillCows:false</Replace>";
+        string boolEnableGoldFarmingMakeBowstrings = "<Find>boolEnableGoldFarmingMakeBowstrings:false</Find><Replace>boolEnableGoldFarmingMakeBowstrings:false</Replace>";
+        string boolEnableGoldFarmingTanHides = "<Find>boolEnableGoldFarmingTanHides:false</Find><Replace>boolEnableGoldFarmingTanHides:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
         string boolEnableJugsOfWine = "<Find>boolEnableJugsOfWine:false</Find><Replace>boolEnableJugsOfWine:false</Replace>";
         string boolEnableLongRangeTraining = "<Find>boolEnableLongRangeTraining:false</Find><Replace>boolEnableLongRangeTraining:false</Replace>";
-        string boolEnableLostCity = "<Find>boolEnableLostCity:false</Find><Replace>boolEnableLostCity:false</Replace>";
-        string boolEnableMageArenaOne = "<Find>boolEnableMageArenaOne:false</Find><Replace>boolEnableMageArenaOne:false</Replace>";
-        string boolEnableNoGpStart = "<Find>boolEnableNoGpStart:false</Find><Replace>boolEnableNoGpStart:false</Replace>";
-        string boolEnablePriestInPeril = "<Find>boolEnablePriestInPeril:false</Find><Replace>boolEnablePriestInPeril:false</Replace>";
+        string boolEnableFailedRestockGoldFarming = "<Find>boolEnableFailedRestockGoldFarming:false</Find><Replace>boolEnableFailedRestockGoldFarming:false</Replace>";
+        string boolEnableQuestAPorcineOfInterest = "<Find>boolEnableQuestAPorcineOfInterest:false</Find><Replace>boolEnableQuestAPorcineOfInterest:false</Replace>";
+        string boolEnableQuestCooksAssistant = "<Find>boolEnableQuestCooksAssistant:false</Find><Replace>boolEnableQuestCooksAssistant:false</Replace>";
+        string boolEnableQuestDoricsQuest = "<Find>boolEnableQuestDoricsQuest:false</Find><Replace>boolEnableQuestDoricsQuest:false</Replace>";
+        string boolEnableQuestDruidicRitual = "<Find>boolEnableQuestDruidicRitual:false</Find><Replace>boolEnableQuestDruidicRitual:false</Replace>";
+        string boolEnableQuestDwarfCannon = "<Find>boolEnableQuestDwarfCannon:false</Find><Replace>boolEnableQuestDwarfCannon:false</Replace>";
+        string boolEnableQuestErnestTheChicken = "<Find>boolEnableQuestErnestTheChicken:false</Find><Replace>boolEnableQuestErnestTheChicken:false</Replace>";
+        string boolEnableQuestGoblinDiplomacy = "<Find>boolEnableQuestGoblinDiplomacy:false</Find><Replace>boolEnableQuestGoblinDiplomacy:false</Replace>";
+        string boolEnableQuestImpCatcher = "<Find>boolEnableQuestImpCatcher:false</Find><Replace>boolEnableQuestImpCatcher:false</Replace>";
+        string boolEnableQuestInSearchOfTheMyreque = "<Find>boolEnableQuestInSearchOfTheMyreque:false</Find><Replace>boolEnableQuestInSearchOfTheMyreque:false</Replace>";
+        string boolEnableQuestLostCity = "<Find>boolEnableQuestLostCity:false</Find><Replace>boolEnableQuestLostCity:false</Replace>";
+        string boolEnableQuestMageArenaOne = "<Find>boolEnableQuestMageArenaOne:false</Find><Replace>boolEnableQuestMageArenaOne:false</Replace>";
+        string boolEnableQuestNaturesSpirit = "<Find>boolEnableQuestNaturesSpirit:false</Find><Replace>boolEnableQuestNaturesSpirit:false</Replace>";
+        string boolEnableQuestPriestInPeril = "<Find>boolEnableQuestPriestInPeril:false</Find><Replace>boolEnableQuestPriestInPeril:false</Replace>";
+        string boolEnableQuestRomeoAndJuliet = "<Find>boolEnableQuestRomeoAndJuliet:false</Find><Replace>boolEnableQuestRomeoAndJuliet:false</Replace>";
+        string boolEnableQuestRuneMysteries = "<Find>boolEnableQuestRuneMysteries:false</Find><Replace>boolEnableQuestRuneMysteries:false</Replace>";
+        string boolEnableQuestSheepShearer = "<Find>boolEnableQuestSheepShearer:false</Find><Replace>boolEnableQuestSheepShearer:false</Replace>";
+        string boolEnableQuestTheKnightsSword = "<Find>boolEnableQuestTheKnightsSword:false</Find><Replace>boolEnableQuestTheKnightsSword:false</Replace>";
+        string boolEnableQuestTheRestlessGhost = "<Find>boolEnableQuestTheRestlessGhost:false</Find><Replace>boolEnableQuestTheRestlessGhost:false</Replace>";
+        string boolEnableQuestVampyreSlayer = "<Find>boolEnableQuestVampyreSlayer:false</Find><Replace>boolEnableQuestVampyreSlayer:false</Replace>";
+        string boolEnableQuestXMarksTheSpot = "<Find>boolEnableQuestXMarksTheSpot:false</Find><Replace>boolEnableQuestXMarksTheSpot:false</Replace>";
         string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableRoguesDen = "<Find>boolEnableRoguesDen:false</Find><Replace>boolEnableRoguesDen:false</Replace>";
-        string boolEnableRomeoAndJuliet = "<Find>boolEnableRomeoAndJuliet:false</Find><Replace>boolEnableRomeoAndJuliet:false</Replace>";
         string boolEnableRooftops = "<Find>boolEnableRooftops:false</Find><Replace>boolEnableRooftops:false</Replace>";
-        string boolEnableRuneMysteries = "<Find>boolEnableRuneMysteries:false</Find><Replace>boolEnableRuneMysteries:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
-        string boolEnableSheepShearer = "<Find>boolEnableSheepShearer:false</Find><Replace>boolEnableSheepShearer:false</Replace>";
-        string boolEnableTheKnightsSword = "<Find>boolEnableTheKnightsSword:false</Find><Replace>boolEnableTheKnightsSword:false</Replace>";
-        string boolEnableTheRestlessGhost = "<Find>boolEnableTheRestlessGhost:false</Find><Replace>boolEnableTheRestlessGhost:false</Replace>";
-        string boolEnableVampyreSlayer = "<Find>boolEnableVampyreSlayer:false</Find><Replace>boolEnableVampyreSlayer:false</Replace>";
-        string boolEnableXMarksTheSpot = "<Find>boolEnableXMarksTheSpot:false</Find><Replace>boolEnableXMarksTheSpot:false</Replace>";
-        string filepathProfileAccountBuilder = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxAccountBuilder.txt");
+        string goldFarmingActivityDuration;
+        string goldFarmingActivityDurationVariation;
         string goldFarmingDuration;
+        string mainActivityDuration;
+        string mainActivityDurationVariation;
+
+        string filepathProfileAccountBuilder = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxAccountBuilder.txt");
 
         // Form Load
         public void formScriptProfiles_AccountBuilder_Load(object sender, EventArgs e)
@@ -84,13 +107,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
                 {"boolEnableAntipattern", checkBoxScriptProfiles_AccountBuilder_Antipattern},
-                {"boolEnableBankCoal", checkBoxScriptProfiles_AccountBuilder_BankCoal},
-                {"boolEnableBuryBones", checkBoxScriptProfiles_AccountBuilder_BuryBigBones},
+                {"boolEnableBankOre", checkBoxScriptProfiles_AccountBuilder_BankOre},
+                {"boolEnableBuryBones", checkBoxScriptProfiles_AccountBuilder_BuryBones},
                 {"boolEnableDeathHandler", checkBoxScriptProfiles_AccountBuilder_DeathHandler},
+                {"boolEnableDiscordWebhooks", checkBoxScriptProfiles_AccountBuilder_DiscordWebhooks},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_AccountBuilder_WorldHopping},
                 {"boolEnableJugsOfWine", checkBoxScriptProfiles_AccountBuilder_EnableJugsOfWine},
                 {"boolEnableLongRangeTraining", checkBoxScriptProfiles_AccountBuilder_EnableLongrangeTraining},
-                {"boolEnableNoGpStart", checkBoxScriptProfiles_AccountBuilder_EnableNoGpStart},
+                {"boolEnableFailedRestockGoldFarming", checkBoxScriptProfiles_AccountBuilder_EnableNoGpStart},
                 {"boolEnableRenewBond", checkBoxScriptProfiles_AccountBuilder_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_AccountBuilder_Restocking},
                 {"boolEnableRooftops", checkBoxScriptProfiles_AccountBuilder_EnableRooftops},
@@ -114,16 +138,18 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             {
                 Dictionary<string, Action> f2pQuestsMap = new Dictionary<string, Action>
                 {
-                    {"Cooks Assistant", () => boolEnableCooksAssistant = "<Find>boolEnableCooksAssistant:false</Find><Replace>boolEnableCooksAssistant:true</Replace>"},
-                    {"Doric's Quest", () => boolEnableDoricsQuest = "<Find>boolEnableDoricsQuest:false</Find><Replace>boolEnableDoricsQuest:true</Replace>"},
-                    {"Goblin Diplomacy", () => boolEnableGoblinDiplomacy = "<Find>boolEnableGoblinDiplomacy:false</Find><Replace>boolEnableGoblinDiplomacy:true</Replace>"},
-                    {"Romeo & Juliet", () => boolEnableRomeoAndJuliet = "<Find>boolEnableRomeoAndJuliet:false</Find><Replace>boolEnableRomeoAndJuliet:true</Replace>"},
-                    {"Rune Mysteries", () => boolEnableRuneMysteries = "<Find>boolEnableRuneMysteries:false</Find><Replace>boolEnableRuneMysteries:true</Replace>"},
-                    {"Sheep Shearer", () => boolEnableSheepShearer = "<Find>boolEnableSheepShearer:false</Find><Replace>boolEnableSheepShearer:true</Replace>"},
-                    {"The Knight's Sword", () => boolEnableTheKnightsSword = "<Find>boolEnableTheKnightsSword:false</Find><Replace>boolEnableTheKnightsSword:true</Replace>"},
-                    {"The Restless Ghost", () => boolEnableTheRestlessGhost = "<Find>boolEnableTheRestlessGhost:false</Find><Replace>boolEnableTheRestlessGhost:true</Replace>"},
-                    {"Vampyre Slayer", () => boolEnableVampyreSlayer = "<Find>boolEnableVampyreSlayer:false</Find><Replace>boolEnableVampyreSlayer:true</Replace>"},
-                    {"X Marks The Spot", () => boolEnableXMarksTheSpot = "<Find>boolEnableXMarksTheSpot:false</Find><Replace>boolEnableXMarksTheSpot:true</Replace>"}
+                    {"Cooks Assistant", () => boolEnableQuestCooksAssistant = "<Find>boolEnableQuestCooksAssistant:false</Find><Replace>boolEnableQuestCooksAssistant:true</Replace>"},
+                    {"Doric's Quest", () => boolEnableQuestDoricsQuest = "<Find>boolEnableQuestDoricsQuest:false</Find><Replace>boolEnableQuestDoricsQuest:true</Replace>"},
+                    {"Ernest the Chicken", () => boolEnableQuestErnestTheChicken = "<Find>boolEnableQuestErnestTheChicken:false</Find><Replace>boolEnableQuestErnestTheChicken:true</Replace>"},
+                    {"Goblin Diplomacy", () => boolEnableQuestGoblinDiplomacy = "<Find>boolEnableQuestGoblinDiplomacy:false</Find><Replace>boolEnableQuestGoblinDiplomacy:true</Replace>"},
+                    {"Imp Catcher", () => boolEnableQuestImpCatcher = "<Find>boolEnableQuestImpCatcher:false</Find><Replace>boolEnableQuestImpCatcher:true</Replace>"},
+                    {"Romeo & Juliet", () => boolEnableQuestRomeoAndJuliet = "<Find>boolEnableQuestRomeoAndJuliet:false</Find><Replace>boolEnableQuestRomeoAndJuliet:true</Replace>"},
+                    {"Rune Mysteries", () => boolEnableQuestRuneMysteries = "<Find>boolEnableQuestRuneMysteries:false</Find><Replace>boolEnableQuestRuneMysteries:true</Replace>"},
+                    {"Sheep Shearer", () => boolEnableQuestSheepShearer = "<Find>boolEnableQuestSheepShearer:false</Find><Replace>boolEnableQuestSheepShearer:true</Replace>"},
+                    {"The Knight's Sword", () => boolEnableQuestTheKnightsSword = "<Find>boolEnableQuestTheKnightsSword:false</Find><Replace>boolEnableQuestTheKnightsSword:true</Replace>"},
+                    {"The Restless Ghost", () => boolEnableQuestTheRestlessGhost = "<Find>boolEnableQuestTheRestlessGhost:false</Find><Replace>boolEnableQuestTheRestlessGhost:true</Replace>"},
+                    {"Vampyre Slayer", () => boolEnableQuestVampyreSlayer = "<Find>boolEnableQuestVampyreSlayer:false</Find><Replace>boolEnableQuestVampyreSlayer:true</Replace>"},
+                    {"X Marks The Spot", () => boolEnableQuestXMarksTheSpot = "<Find>boolEnableQuestXMarksTheSpot:false</Find><Replace>boolEnableQuestXMarksTheSpot:true</Replace>"}
                 };
 
                 // Loop Through Dictionary & Generate Output
@@ -146,10 +172,13 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             {
                 Dictionary<string, Action> p2pQuestsMap = new Dictionary<string, Action>
                 {
-                    {"A Porcine of Interest", () => boolEnableDruidicRitual = "<Find>boolEnableAPorcineOfInterest:false</Find><Replace>boolEnableAPorcineOfInterest:true</Replace>"},
-                    {"Druidic Ritual", () => boolEnableDruidicRitual = "<Find>boolEnableDruidicRitual:false</Find><Replace>boolEnableDruidicRitual:true</Replace>"},
-                    {"Lost City", () => boolEnableLostCity = "<Find>boolEnableLostCity:false</Find><Replace>boolEnableLostCity:true</Replace>"},
-                    {"Priest in Peril", () => boolEnablePriestInPeril = "<Find>boolEnablePriestInPeril:false</Find><Replace>boolEnablePriestInPeril:true</Replace>"}
+                    {"A Porcine of Interest", () => boolEnableQuestDruidicRitual = "<Find>boolEnableQuestAPorcineOfInterest:false</Find><Replace>boolEnableQuestAPorcineOfInterest:true</Replace>"},
+                    {"Druidic Ritual", () => boolEnableQuestDruidicRitual = "<Find>boolEnableQuestDruidicRitual:false</Find><Replace>boolEnableQuestDruidicRitual:true</Replace>"},
+                    {"Dwarf Cannon", () => boolEnableQuestDwarfCannon = "<Find>boolEnableQuestDwarfCannon:false</Find><Replace>boolEnableQuestDwarfCannon:true</Replace>"},
+                    {"In Search of the Myreque", () => boolEnableQuestInSearchOfTheMyreque = "<Find>boolEnableQuestInSearchOfTheMyreque:false</Find><Replace>boolEnableQuestInSearchOfTheMyreque:true</Replace>"},
+                    {"Lost City", () => boolEnableQuestLostCity = "<Find>boolEnableQuestLostCity:false</Find><Replace>boolEnableQuestLostCity:true</Replace>"},
+                    {"Nature's Spirit", () => boolEnableQuestNaturesSpirit = "<Find>boolEnableQuestNaturesSpirit:false</Find><Replace>boolEnableQuestNaturesSpirit:true</Replace>"},
+                    {"Priest in Peril", () => boolEnableQuestPriestInPeril = "<Find>boolEnableQuestPriestInPeril:false</Find><Replace>boolEnableQuestPriestInPeril:true</Replace>"}
                 };
 
                 // Loop Through Dictionary & Generate Output 
@@ -172,7 +201,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             {
                 Dictionary<string, Action> miniQuestsMap = new Dictionary<string, Action>
                 {
-                    {"Mage Arena I", () => boolEnableMageArenaOne = "<Find>boolEnableMageArenaOne:false</Find><Replace>boolEnableMageArenaOne:true</Replace>"},
+                    {"Mage Arena I", () => boolEnableQuestMageArenaOne = "<Find>boolEnableQuestMageArenaOne:false</Find><Replace>boolEnableQuestMageArenaOne:true</Replace>"},
                 };
 
                 // Loop Through Dictionary & Generate Output 
@@ -190,40 +219,90 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 }
             }
 
-            // Set MiniQuests Variables 
-            if (listBoxScriptProfiles_AccountBuilder_MiniGames.SelectedItems.Count > 0)
+            // Set Misc Variables 
+            if (listBoxScriptProfiles_AccountBuilder_MiscActivities.SelectedItems.Count > 0)
             {
-                foreach (var selectedItem in listBoxScriptProfiles_AccountBuilder_MiniGames.SelectedItems)
+                Dictionary<string, Action> miniQuestsMap = new Dictionary<string, Action>
                 {
-                    string selectedQuest = selectedItem.ToString();
+                    {"Elder Chaos Druids", () => boolEnableChaosTemple = "<Find>boolEnableChaosTemple:false</Find><Replace>boolEnableChaosTemple:true</Replace>"},
+                    {"Rogues Den", () => boolEnableRoguesDen = "<Find>boolEnableRoguesDen:false</Find><Replace>boolEnableRoguesDen:true</Replace>"},
+                };
 
-                    // Mare Arena I quest data to string
-                    if (selectedQuest.Contains("Rogues Den"))
+                // Loop Through Dictionary & Generate Output 
+                foreach (var selectedMiniItem in listBoxScriptProfiles_AccountBuilder_MiscActivities.SelectedItems)
+                {
+                    string selectedMiniQuest = selectedMiniItem.ToString();
+
+                    foreach (var miniQuest in miniQuestsMap)
                     {
-                        boolEnableRoguesDen = "<Find>boolEnableRoguesDen:false</Find><Replace>boolEnableRoguesDen:true</Replace>";
+                        if (selectedMiniQuest.Contains(miniQuest.Key))
+                        {
+                            miniQuest.Value.Invoke();
+                        }
                     }
                 }
             }
 
-            // Activity Time Min To Ms Converter 
-            int.TryParse(textBoxScriptProfiles_AccountBuilder_ActivityDuration.Text, out int intActivityDurationMs);
+
+            // Set GoldFarming Variables
+            if (listBoxScriptProfiles_AccountBuilder_GoldFarmingActivities.SelectedItems.Count > 0)
             {
-                intActivityDuration = intActivityDurationMs * 60000;
-                activityDuration = intActivityDuration.ToString();
+                Dictionary<string, Action> goldFarmingAcitivitiesMap = new Dictionary<string, Action>
+                {
+                    {"Buy Bronze Bars", () => boolEnableGoldFarmingBuyBronzeBars = "<Find>boolEnableGoldFarmingBuyBronzeBars:false</Find><Replace>boolEnableGoldFarmingBuyBronzeBars:true</Replace>"},
+                    {"Cast Bones to Bananas", () => boolEnableGoldFarmingCastBonesToBananas = "<Find>boolEnableGoldFarmingCastBonesToBananas:false</Find><Replace>boolEnableGoldFarmingCastBonesToBananas:true</Replace>"},
+                    {"Collect Bones", () => boolEnableGoldFarmingCollectBones = "<Find>boolEnableGoldFarmingCollectBones:false</Find><Replace>boolEnableGoldFarmingCollectBones:true</Replace>"},
+                    {"Collect Fish Food", () => boolEnableGoldFarmingCollectFishFood = "<Find>boolEnableGoldFarmingCollectFishFood:false</Find><Replace>boolEnableGoldFarmingCollectFishFood:true</Replace>"},
+                    {"Collect Monk's Robes", () => boolEnableGoldFarmingCollectMonksRobes = "<Find>boolEnableGoldFarmingCollectMonksRobes:false</Find><Replace>boolEnableGoldFarmingCollectMonksRobes:true</Replace>"},
+                    {"Collect Potatoes", () => boolEnableGoldFarmingCollectPotatoes = "<Find>boolEnableGoldFarmingCollectPotatoes:false</Find><Replace>boolEnableGoldFarmingCollectPotatoes:true</Replace>"},
+                    {"Collect Red Spiders' Eggs", () => boolEnableGoldFarmingCollectRedSpidersEggs = "<Find>boolEnableGoldFarmingCollectRedSpidersEggs:false</Find><Replace>boolEnableGoldFarmingCollectRedSpidersEggs:true</Replace>"},
+                    {"Collect Tinderboxes", () => boolEnableGoldFarmingCollectTinderboxes = "<Find>boolEnableGoldFarmingCollectTinderboxes:false</Find><Replace>boolEnableGoldFarmingCollectTinderboxes:true</Replace>"},
+                    {"Kill Cows", () => boolEnableGoldFarmingKillCows = "<Find>boolEnableGoldFarmingKillCows:false</Find><Replace>boolEnableGoldFarmingKillCows:true</Replace>"},
+                    {"Make Bowstrings", () => boolEnableGoldFarmingMakeBowstrings = "<Find>boolEnableGoldFarmingMakeBowstrings:false</Find><Replace>boolEnableGoldFarmingMakeBowstrings:true</Replace>"},
+                    {"Tan Hides", () => boolEnableGoldFarmingTanHides = "<Find>boolEnableGoldFarmingTanHides:false</Find><Replace>boolEnableGoldFarmingTanHides:true</Replace>"}
+                };
+
+                // Loop Through Dictionary & Generate Output 
+                foreach (var selectedGoldFarmingItem in listBoxScriptProfiles_AccountBuilder_GoldFarmingActivities.SelectedItems)
+                {
+                    string selectedGoldFarmingActivity = selectedGoldFarmingItem.ToString();
+
+                    foreach (var goldFarmingActivitiy in goldFarmingAcitivitiesMap)
+                    {
+                        if (selectedGoldFarmingActivity.Contains(goldFarmingActivitiy.Key))
+                        {
+                            goldFarmingActivitiy.Value.Invoke();
+                        }
+                    }
+                }
             }
 
-            // Convert activity time variation mins to ms
-            int.TryParse(textBoxScriptProfiles_AccountBuilder_AcivityDurationVariation.Text, out int intActivityDurationVariationMs);
+            // Main Activity Time Min To Ms Converter 
+            int.TryParse(textBoxScriptProfiles_AccountBuilder_MainActivityDuration.Text, out int intMainActivityDurationMs);
             {
-                intActivityDurationVariation = intActivityDurationVariationMs * 60000;
-                activityDurationVariation = intActivityDurationVariation.ToString();
+                intMainActivityDuration = intMainActivityDurationMs * 60000;
+                mainActivityDuration = intMainActivityDuration.ToString();
             }
 
-            // Convert gold farming duration mins to ms
-            int.TryParse(textBoxScriptProfiles_AccountBuilder_GoldFarmingDuration.Text, out int intGoldFarmingDurationMs);
+            // Main Activity Time Variation Min To Ms Converter 
+            int.TryParse(textBoxScriptProfiles_AccountBuilder_MainAcivityDurationVariation.Text, out int intMainActivityDurationVariationMs);
             {
-                intGoldFarmingDuration = intGoldFarmingDurationMs * 60000;
-                goldFarmingDuration = intGoldFarmingDuration.ToString();
+                intMainActivityDurationVariation = intMainActivityDurationVariationMs * 60000;
+                mainActivityDurationVariation = intMainActivityDurationVariation.ToString();
+            }
+
+            // Gold Farming Activity Time Min To Ms Converter 
+            int.TryParse(textBoxScriptProfiles_AccountBuilder_GoldFarmingActivityDuration.Text, out int intGoldFarmingActivityDurationMs);
+            {
+                intGoldFarmingActivityDuration = intGoldFarmingActivityDurationMs * 60000;
+                goldFarmingActivityDuration = intGoldFarmingActivityDuration.ToString();
+            }
+
+            // Gold Farming Activity Time Variation Min To Ms Converter 
+            int.TryParse(textBoxScriptProfiles_AccountBuilder_GoldFarmingAcivityDurationVariation.Text, out int intGoldFarmingActivityDurationVariationMs);
+            {
+                intGoldFarmingActivityDurationVariation = intGoldFarmingActivityDurationVariationMs * 60000;
+                goldFarmingActivityDurationVariation = intGoldFarmingActivityDurationVariation.ToString();
             }
 
             // Write to file
@@ -232,37 +311,58 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine("General Settings");
                 writer.WriteLine(boolEnableAntipattern);
                 writer.WriteLine(boolEnableDeathHandler);
+                writer.WriteLine(boolEnableDiscordWebhooks);
                 writer.WriteLine(boolEnableHopWorlds);
                 writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
                 writer.WriteLine("\nAccount Builder Settings");
-                writer.WriteLine(boolEnableBankCoal);
+                writer.WriteLine(boolEnableBankOre);
                 writer.WriteLine(boolEnableBuryBones);
                 writer.WriteLine(boolEnableJugsOfWine);
                 writer.WriteLine(boolEnableLongRangeTraining);
-                writer.WriteLine(boolEnableNoGpStart);
+                writer.WriteLine(boolEnableFailedRestockGoldFarming);
                 writer.WriteLine(boolEnableRooftops);
                 writer.WriteLine("\nF2p Quest Settings");
-                writer.WriteLine(boolEnableCooksAssistant);
-                writer.WriteLine(boolEnableDoricsQuest);
-                writer.WriteLine(boolEnableGoblinDiplomacy);
-                writer.WriteLine(boolEnableRomeoAndJuliet);
-                writer.WriteLine(boolEnableRuneMysteries);
-                writer.WriteLine(boolEnableSheepShearer);
-                writer.WriteLine(boolEnableVampyreSlayer);
-                writer.WriteLine(boolEnableTheKnightsSword);
-                writer.WriteLine(boolEnableTheRestlessGhost);
-                writer.WriteLine(boolEnableXMarksTheSpot);
+                writer.WriteLine(boolEnableQuestCooksAssistant);
+                writer.WriteLine(boolEnableQuestDoricsQuest);
+                writer.WriteLine(boolEnableQuestErnestTheChicken);
+                writer.WriteLine(boolEnableQuestGoblinDiplomacy);
+                writer.WriteLine(boolEnableQuestImpCatcher);
+                writer.WriteLine(boolEnableQuestRomeoAndJuliet);
+                writer.WriteLine(boolEnableQuestRuneMysteries);
+                writer.WriteLine(boolEnableQuestSheepShearer);
+                writer.WriteLine(boolEnableQuestVampyreSlayer);
+                writer.WriteLine(boolEnableQuestTheKnightsSword);
+                writer.WriteLine(boolEnableQuestTheRestlessGhost);
+                writer.WriteLine(boolEnableQuestXMarksTheSpot);
                 writer.WriteLine("\nP2p Quest Settings");
-                writer.WriteLine(boolEnableAPorcineOfInterest);
-                writer.WriteLine(boolEnableDruidicRitual);
-                writer.WriteLine(boolEnableLostCity);
-                writer.WriteLine(boolEnablePriestInPeril);
+                writer.WriteLine(boolEnableQuestAPorcineOfInterest);
+                writer.WriteLine(boolEnableQuestDruidicRitual);
+                writer.WriteLine(boolEnableQuestDwarfCannon);
+                writer.WriteLine(boolEnableQuestInSearchOfTheMyreque);
+                writer.WriteLine(boolEnableQuestLostCity);
+                writer.WriteLine(boolEnableQuestNaturesSpirit);
+                writer.WriteLine(boolEnableQuestPriestInPeril);
                 writer.WriteLine("\nMini Quest Settings");
-                writer.WriteLine(boolEnableMageArenaOne);
+                writer.WriteLine(boolEnableQuestMageArenaOne);
                 writer.WriteLine("\nMiscellaneous Activity Settings");
+                writer.WriteLine(boolEnableChaosTemple);
                 writer.WriteLine(boolEnableRoguesDen);
+                writer.WriteLine("\nGold Farming Settings");
+                writer.WriteLine(boolEnableGoldFarmingBuyBronzeBars);
+                writer.WriteLine(boolEnableGoldFarmingCastBonesToBananas);
+                writer.WriteLine(boolEnableGoldFarmingCollectBones);
+                writer.WriteLine(boolEnableGoldFarmingCollectFishFood);
+                writer.WriteLine(boolEnableGoldFarmingCollectMonksRobes);
+                writer.WriteLine(boolEnableGoldFarmingCollectPotatoes);
+                writer.WriteLine(boolEnableGoldFarmingCollectRedSpidersEggs);
+                writer.WriteLine(boolEnableGoldFarmingCollectTinderboxes);
+                writer.WriteLine(boolEnableGoldFarmingKillCows);
+                writer.WriteLine(boolEnableGoldFarmingMakeBowstrings);
+                writer.WriteLine(boolEnableGoldFarmingTanHides);
+                writer.WriteLine("\nGold Farming Activity Duration Settings");
+                writer.WriteLine("<Find>14400000,true,5400000,true</Find><Replace>" + goldFarmingActivityDuration + ",true," + goldFarmingActivityDurationVariation + ",true</Replace>");
                 writer.WriteLine("\nSkill Settings");
                 writer.WriteLine("Agility");
                 writer.WriteLine("<Find>10101010</Find><Replace>" + textBoxScriptProfiles_AccountBuilder_Agility.Text + "</Replace>");
@@ -304,9 +404,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine("<Find>12121212</Find><Replace>" + textBoxScriptProfiles_AccountBuilder_Thieving.Text + "</Replace>");
                 writer.WriteLine("Woodcutting");
                 writer.WriteLine("<Find>22222222</Find><Replace>" + textBoxScriptProfiles_AccountBuilder_Woodcutting.Text + "</Replace>");
-                writer.WriteLine("\nActivity Duration Settings");
-                writer.WriteLine("<Find>5400000,true,1800000,true</Find><Replace>" + activityDuration + ",true," + activityDurationVariation + ",true</Replace>");
-                writer.WriteLine("<Find>12600000</Find><Replace>" + goldFarmingDuration + "</Replace>");
+                writer.WriteLine("\nMain Activity Duration Settings");
+                writer.WriteLine("<Find>7200000,true,3600000,true</Find><Replace>" + mainActivityDuration + ",true," + mainActivityDurationVariation + ",true</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

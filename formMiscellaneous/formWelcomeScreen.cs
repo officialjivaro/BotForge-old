@@ -15,8 +15,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
 
         public async void formWelcomeScreen_Load(object sender, EventArgs e)
         {
-            await classWelcomeScreen.Invoke_FillRichTextBoxFromUrl(urlTextFileQuickSetup, richTextBoxWelcomeScreen_QuickSetup);
-            await classWelcomeScreen.Invoke_FillRichTextBoxFromUrl(urlTextFileLatestNews, richTextBoxWelcomeScreen_LatestNewst);
+            await invokeWelcomeScreen.Invoke_FillRichTextBoxFromUrl(urlTextFileQuickSetup, richTextBoxWelcomeScreen_QuickSetup);
+            await invokeWelcomeScreen.Invoke_FillRichTextBoxFromUrl(urlTextFileLatestNews, richTextBoxWelcomeScreen_LatestNewst);
 
         }
     }

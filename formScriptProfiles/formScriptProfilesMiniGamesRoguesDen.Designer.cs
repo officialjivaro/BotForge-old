@@ -123,7 +123,7 @@
             btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Location = new Point(155, 350);
             btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_MiniGamesRoguesDen_SaveProfile.Name = "btnScriptProfiles_MiniGamesRoguesDen_SaveProfile";
@@ -160,7 +160,7 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoSize = true;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(434, 436);
             Controls.Add(checkBoxScriptProfiles_MiniGamesRoguesDen_StopOnFiveCrates);
             Controls.Add(labelScriptProfiles_MiniGamesRoguesDen_Header);

@@ -46,7 +46,7 @@
             // 
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FarmingTitheFarm_StopLevel.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Location = new Point(150, 225);
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Margin = new Padding(0);
             textBoxScriptProfiles_FarmingTitheFarm_StopLevel.Name = "textBoxScriptProfiles_FarmingTitheFarm_StopLevel";
@@ -149,7 +149,7 @@
             btnScriptProfiles_FarmingTitheFarm_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_FarmingTitheFarm_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_FarmingTitheFarm_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FarmingTitheFarm_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FarmingTitheFarm_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_FarmingTitheFarm_SaveProfile.Location = new Point(215, 275);
             btnScriptProfiles_FarmingTitheFarm_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_FarmingTitheFarm_SaveProfile.Name = "btnScriptProfiles_FarmingTitheFarm_SaveProfile";
@@ -174,7 +174,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(559, 361);
             Controls.Add(labelScriptProfiles_FarmingTitheFarm_Header);
             Controls.Add(textBoxScriptProfiles_FarmingTitheFarm_StopLevel);

@@ -122,7 +122,7 @@
             btnScriptProfiles_FletchingLongbows_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_FletchingLongbows_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_FletchingLongbows_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FletchingLongbows_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FletchingLongbows_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_FletchingLongbows_SaveProfile.Location = new Point(155, 250);
             btnScriptProfiles_FletchingLongbows_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_FletchingLongbows_SaveProfile.Name = "btnScriptProfiles_FletchingLongbows_SaveProfile";
@@ -147,7 +147,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(434, 336);
             Controls.Add(labelScriptProfiles_FletchingLongbows_Header);
             Controls.Add(checkBoxScriptProfiles_FletchingLongbows_WorldHopping);

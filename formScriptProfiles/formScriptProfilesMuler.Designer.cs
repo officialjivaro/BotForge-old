@@ -43,7 +43,7 @@
             btnScriptProfiles_Muler_SaveProfile = new Button();
             tabPageScriptProfiles_Muler_Bot = new TabPage();
             dataGridViewScriptProfiles_Muler_Bot = new DataGridView();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewScriptProfiles_Muler_Bot_Item = new DataGridViewTextBoxColumn();
             tabPageScriptProfiles_Muler_Mule = new TabPage();
             dataGridViewScriptProfiles_Muler_Mule = new DataGridView();
             dataGridViewScriptProfiles_Muler_Mule_Item = new DataGridViewTextBoxColumn();
@@ -89,7 +89,7 @@
             btnScriptProfiles_Muler_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_Muler_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_Muler_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_Muler_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_Muler_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_Muler_SaveProfile.Location = new Point(435, 575);
             btnScriptProfiles_Muler_SaveProfile.Name = "btnScriptProfiles_Muler_SaveProfile";
             btnScriptProfiles_Muler_SaveProfile.Size = new Size(125, 50);
@@ -100,7 +100,7 @@
             // 
             // tabPageScriptProfiles_Muler_Bot
             // 
-            tabPageScriptProfiles_Muler_Bot.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageScriptProfiles_Muler_Bot.BackColor = Color.FromArgb(60, 60, 60);
             tabPageScriptProfiles_Muler_Bot.Controls.Add(dataGridViewScriptProfiles_Muler_Bot);
             tabPageScriptProfiles_Muler_Bot.Location = new Point(4, 24);
             tabPageScriptProfiles_Muler_Bot.Name = "tabPageScriptProfiles_Muler_Bot";
@@ -116,19 +116,19 @@
             dataGridViewScriptProfiles_Muler_Bot.AllowUserToResizeColumns = false;
             dataGridViewScriptProfiles_Muler_Bot.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(224, 224, 224);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(60, 60, 60);
             dataGridViewScriptProfiles_Muler_Bot.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewScriptProfiles_Muler_Bot.BorderStyle = BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(224, 224, 224);
             dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(60, 60, 60);
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dataGridViewScriptProfiles_Muler_Bot.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewScriptProfiles_Muler_Bot.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewScriptProfiles_Muler_Bot.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1 });
+            dataGridViewScriptProfiles_Muler_Bot.Columns.AddRange(new DataGridViewColumn[] { dataGridViewScriptProfiles_Muler_Bot_Item });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(224, 224, 224);
             dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -137,7 +137,7 @@
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dataGridViewScriptProfiles_Muler_Bot.DefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewScriptProfiles_Muler_Bot.GridColor = Color.FromArgb(64, 64, 64);
+            dataGridViewScriptProfiles_Muler_Bot.GridColor = Color.FromArgb(60, 60, 60);
             dataGridViewScriptProfiles_Muler_Bot.Location = new Point(10, 10);
             dataGridViewScriptProfiles_Muler_Bot.Margin = new Padding(0);
             dataGridViewScriptProfiles_Muler_Bot.MultiSelect = false;
@@ -145,12 +145,12 @@
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = Color.FromArgb(224, 224, 224);
             dataGridViewCellStyle4.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle4.ForeColor = Color.FromArgb(60, 60, 60);
             dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
             dataGridViewScriptProfiles_Muler_Bot.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle5.ForeColor = Color.FromArgb(60, 60, 60);
             dataGridViewScriptProfiles_Muler_Bot.RowsDefaultCellStyle = dataGridViewCellStyle5;
             dataGridViewScriptProfiles_Muler_Bot.RowTemplate.Height = 25;
             dataGridViewScriptProfiles_Muler_Bot.SelectionMode = DataGridViewSelectionMode.CellSelect;
@@ -158,15 +158,15 @@
             dataGridViewScriptProfiles_Muler_Bot.TabIndex = 2;
             dataGridViewScriptProfiles_Muler_Bot.CellClick += DataGridViewScriptProfiles_Bot_OneClickEdit_CellClick;
             // 
-            // dataGridViewTextBoxColumn1
+            // dataGridViewScriptProfiles_Muler_Bot_Item
             // 
-            dataGridViewTextBoxColumn1.HeaderText = "Item";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Width = 907;
+            dataGridViewScriptProfiles_Muler_Bot_Item.HeaderText = "Item";
+            dataGridViewScriptProfiles_Muler_Bot_Item.Name = "dataGridViewScriptProfiles_Muler_Bot_Item";
+            dataGridViewScriptProfiles_Muler_Bot_Item.Width = 907;
             // 
             // tabPageScriptProfiles_Muler_Mule
             // 
-            tabPageScriptProfiles_Muler_Mule.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageScriptProfiles_Muler_Mule.BackColor = Color.FromArgb(60, 60, 60);
             tabPageScriptProfiles_Muler_Mule.Controls.Add(dataGridViewScriptProfiles_Muler_Mule);
             tabPageScriptProfiles_Muler_Mule.Location = new Point(4, 24);
             tabPageScriptProfiles_Muler_Mule.Name = "tabPageScriptProfiles_Muler_Mule";
@@ -182,13 +182,13 @@
             dataGridViewScriptProfiles_Muler_Mule.AllowUserToResizeColumns = false;
             dataGridViewScriptProfiles_Muler_Mule.AllowUserToResizeRows = false;
             dataGridViewCellStyle6.BackColor = Color.FromArgb(224, 224, 224);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(60, 60, 60);
             dataGridViewScriptProfiles_Muler_Mule.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             dataGridViewScriptProfiles_Muler_Mule.BorderStyle = BorderStyle.Fixed3D;
             dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = Color.FromArgb(224, 224, 224);
             dataGridViewCellStyle7.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle7.ForeColor = Color.FromArgb(60, 60, 60);
             dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
@@ -203,7 +203,7 @@
             dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
             dataGridViewScriptProfiles_Muler_Mule.DefaultCellStyle = dataGridViewCellStyle8;
-            dataGridViewScriptProfiles_Muler_Mule.GridColor = Color.FromArgb(64, 64, 64);
+            dataGridViewScriptProfiles_Muler_Mule.GridColor = Color.FromArgb(60, 60, 60);
             dataGridViewScriptProfiles_Muler_Mule.Location = new Point(10, 10);
             dataGridViewScriptProfiles_Muler_Mule.Margin = new Padding(0);
             dataGridViewScriptProfiles_Muler_Mule.MultiSelect = false;
@@ -211,12 +211,12 @@
             dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = Color.FromArgb(224, 224, 224);
             dataGridViewCellStyle9.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle9.ForeColor = Color.FromArgb(60, 60, 60);
             dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
             dataGridViewScriptProfiles_Muler_Mule.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewCellStyle10.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle10.ForeColor = Color.FromArgb(60, 60, 60);
             dataGridViewScriptProfiles_Muler_Mule.RowsDefaultCellStyle = dataGridViewCellStyle10;
             dataGridViewScriptProfiles_Muler_Mule.RowTemplate.Height = 25;
             dataGridViewScriptProfiles_Muler_Mule.SelectionMode = DataGridViewSelectionMode.CellSelect;
@@ -249,7 +249,7 @@
             // 
             // tabPageScriptProfiles_Muler_General
             // 
-            tabPageScriptProfiles_Muler_General.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageScriptProfiles_Muler_General.BackColor = Color.FromArgb(60, 60, 60);
             tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Bot_MuleName);
             tabPageScriptProfiles_Muler_General.Controls.Add(labelScriptProfiles_Muler_Bot_MuleName);
             tabPageScriptProfiles_Muler_General.Controls.Add(textBoxScriptProfiles_Muler_Bot_Y);
@@ -483,7 +483,7 @@
         public TextBox textBoxScriptProfiles_Muler_Bot_Z;
         public TextBox textBoxScriptProfiles_Muler_Bot_X;
         public DataGridView dataGridViewScriptProfiles_Muler_Bot;
-        public DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        public DataGridViewTextBoxColumn dataGridViewScriptProfiles_Muler_Bot_Item;
         public TextBox textBoxScriptProfiles_Muler_Bot_MuleName;
         public Label labelScriptProfiles_Muler_Bot_MuleName;
     }

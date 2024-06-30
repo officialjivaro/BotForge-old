@@ -1,6 +1,6 @@
 ﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
-    partial class formScriptProfilesLOTRGandalf
+    partial class formScriptProfilesFighterLavaDragons
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         public void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesLOTRGandalf));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesFighterLavaDragons));
             labelScriptProfiles_Gandalf_LavaDragonsArea = new Label();
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea = new ComboBox();
             checkBoxScriptProfiles_Gandalf_WorldHopping = new CheckBox();
@@ -62,7 +62,7 @@
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_Gandalf_LavaDragonsArea.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_Gandalf_LavaDragonsArea.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.FormattingEnabled = true;
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.Items.AddRange(new object[] { "Random", "North", "West", "East" });
             comboBoxScriptProfiles_Gandalf_LavaDragonsArea.Location = new Point(600, 250);
@@ -153,7 +153,7 @@
             btnScriptProfiles_Gandalf_Save.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_Gandalf_Save.Cursor = Cursors.Hand;
             btnScriptProfiles_Gandalf_Save.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_Gandalf_Save.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_Gandalf_Save.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_Gandalf_Save.Location = new Point(380, 350);
             btnScriptProfiles_Gandalf_Save.Margin = new Padding(0);
             btnScriptProfiles_Gandalf_Save.Name = "btnScriptProfiles_Gandalf_Save";
@@ -179,7 +179,7 @@
             comboBoxScriptProfiles_Gandalf_SelectMode.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_Gandalf_SelectMode.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_Gandalf_SelectMode.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_Gandalf_SelectMode.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_Gandalf_SelectMode.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_Gandalf_SelectMode.FormattingEnabled = true;
             comboBoxScriptProfiles_Gandalf_SelectMode.Items.AddRange(new object[] { "Splashing", "Lava Dragons" });
             comboBoxScriptProfiles_Gandalf_SelectMode.Location = new Point(600, 150);
@@ -221,11 +221,11 @@
             labelScriptProfiles_Gandalf_Header.Text = "Script Profiles";
             labelScriptProfiles_Gandalf_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // formScriptProfilesLOTRGandalf
+            // formScriptProfilesFighterLavaDragons
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(884, 436);
             Controls.Add(labelScriptProfiles_Gandalf_Header);
             Controls.Add(checkBoxScriptProfiles_Gandalf_HopWorldsIfPlayerIsSkulled);
@@ -248,7 +248,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             MaximizeBox = false;
-            Name = "formScriptProfilesLOTRGandalf";
+            Name = "formScriptProfilesFighterLavaDragons";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Script Profiles: Gandalf";
             Load += formScriptProfiles_Gandalf_Load;

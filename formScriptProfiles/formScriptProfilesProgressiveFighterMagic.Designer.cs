@@ -124,7 +124,7 @@
             btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Location = new Point(155, 375);
             btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_ProgressiveFighterMagic_SaveProfile.Name = "btnScriptProfiles_ProgressiveFighterMagic_SaveProfile";
@@ -140,7 +140,7 @@
             comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC.FormattingEnabled = true;
             comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC.Items.AddRange(new object[] { "Random", "CyclopsAndJogres", "Hobgoblins", "LesserDemons", "Ogres" });
             comboBoxScriptProfiles_ProgressiveFighterMagic_SelectNPC.Location = new Point(50, 317);
@@ -174,7 +174,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(434, 461);
             Controls.Add(labelScriptProfiles_ProgressiveFighterMagic_Header);
             Controls.Add(labelScriptProfiles_ProgressiveFighterMagic_SelectNPC);

@@ -60,7 +60,7 @@
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.FormattingEnabled = true;
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Items.AddRange(new object[] { "Random Sector", "Ardougne", "Hosidius North", "Hosidius South", "Varrock" });
             comboBoxScriptProfiles_ThievingMasterFarmers_SelectLocation.Location = new Point(375, 275);
@@ -151,7 +151,7 @@
             btnScriptProfiles_ThievingMasterFarmers_Save.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_ThievingMasterFarmers_Save.Cursor = Cursors.Hand;
             btnScriptProfiles_ThievingMasterFarmers_Save.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_ThievingMasterFarmers_Save.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_ThievingMasterFarmers_Save.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_ThievingMasterFarmers_Save.Location = new Point(280, 350);
             btnScriptProfiles_ThievingMasterFarmers_Save.Margin = new Padding(0);
             btnScriptProfiles_ThievingMasterFarmers_Save.Name = "btnScriptProfiles_ThievingMasterFarmers_Save";

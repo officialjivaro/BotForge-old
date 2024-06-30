@@ -151,7 +151,7 @@
             btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Location = new Point(325, 350);
             btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_HerbloreCleanHerbs_SaveProfile.Name = "btnScriptProfiles_HerbloreCleanHerbs_SaveProfile";
@@ -177,7 +177,7 @@
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.FormattingEnabled = true;
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.Items.AddRange(new object[] { "Progressive", "GuamLeaf", "Marrentill", "Tarromin", "Harralander", "RanarrWeed", "Toadflax", "IritLeaf", "Avantoe", "Kwuarm", "Snapdragon", "Cadantine", "Lantadyme", "DwarfWeed", "Torstol" });
             comboBoxScriptProfiles_HerbloreCleanHerbs_SelectHerb.Location = new Point(600, 125);
@@ -213,7 +213,7 @@
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.FormattingEnabled = true;
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.Items.AddRange(new object[] { "Progressive", "Gnome", "Draynor", "Varrock", "Falador", "Seers", "Fremennik", "Ardougne" });
             comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed.Location = new Point(600, 192);
@@ -226,7 +226,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(784, 436);
             Controls.Add(comboBoxScriptProfiles_HerbloreCleanHerbs_CleaningSpeed);
             Controls.Add(label1);

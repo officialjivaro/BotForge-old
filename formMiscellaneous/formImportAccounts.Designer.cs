@@ -39,7 +39,7 @@
             // richTextBoxImportAccounts
             // 
             richTextBoxImportAccounts.BackColor = Color.FromArgb(224, 224, 224);
-            richTextBoxImportAccounts.ForeColor = Color.FromArgb(64, 64, 64);
+            richTextBoxImportAccounts.ForeColor = Color.FromArgb(60, 60, 60);
             richTextBoxImportAccounts.Location = new Point(15, 15);
             richTextBoxImportAccounts.Name = "richTextBoxImportAccounts";
             richTextBoxImportAccounts.Size = new Size(500, 250);
@@ -50,7 +50,7 @@
             // 
             buttonImportAccounts_ImportToScriptFactory.FlatAppearance.BorderColor = Color.Coral;
             buttonImportAccounts_ImportToScriptFactory.FlatAppearance.MouseDownBackColor = Color.Coral;
-            buttonImportAccounts_ImportToScriptFactory.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonImportAccounts_ImportToScriptFactory.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 60, 60);
             buttonImportAccounts_ImportToScriptFactory.FlatStyle = FlatStyle.Flat;
             buttonImportAccounts_ImportToScriptFactory.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonImportAccounts_ImportToScriptFactory.Location = new Point(20, 290);
@@ -66,7 +66,7 @@
             // 
             buttonImportAccounts_ImportToOSBotManager.FlatAppearance.BorderColor = Color.Coral;
             buttonImportAccounts_ImportToOSBotManager.FlatAppearance.MouseDownBackColor = Color.Coral;
-            buttonImportAccounts_ImportToOSBotManager.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonImportAccounts_ImportToOSBotManager.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 60, 60);
             buttonImportAccounts_ImportToOSBotManager.FlatStyle = FlatStyle.Flat;
             buttonImportAccounts_ImportToOSBotManager.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonImportAccounts_ImportToOSBotManager.Location = new Point(145, 290);
@@ -82,7 +82,7 @@
             // 
             buttonImportAccounts_ImportToDreamBotManager.FlatAppearance.BorderColor = Color.Coral;
             buttonImportAccounts_ImportToDreamBotManager.FlatAppearance.MouseDownBackColor = Color.Coral;
-            buttonImportAccounts_ImportToDreamBotManager.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonImportAccounts_ImportToDreamBotManager.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 60, 60);
             buttonImportAccounts_ImportToDreamBotManager.FlatStyle = FlatStyle.Flat;
             buttonImportAccounts_ImportToDreamBotManager.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonImportAccounts_ImportToDreamBotManager.Location = new Point(270, 290);
@@ -98,7 +98,7 @@
             // 
             buttonImportAccounts_ImportToTRiBotManager.FlatAppearance.BorderColor = Color.Coral;
             buttonImportAccounts_ImportToTRiBotManager.FlatAppearance.MouseDownBackColor = Color.Coral;
-            buttonImportAccounts_ImportToTRiBotManager.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            buttonImportAccounts_ImportToTRiBotManager.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 60, 60);
             buttonImportAccounts_ImportToTRiBotManager.FlatStyle = FlatStyle.Flat;
             buttonImportAccounts_ImportToTRiBotManager.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonImportAccounts_ImportToTRiBotManager.Location = new Point(395, 290);
@@ -114,7 +114,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(534, 361);
             Controls.Add(buttonImportAccounts_ImportToTRiBotManager);
             Controls.Add(buttonImportAccounts_ImportToDreamBotManager);

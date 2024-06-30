@@ -1,6 +1,6 @@
 ﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
-    partial class formScriptProfilesCookingRangeAndFire
+    partial class formScriptProfilesCookingAIO
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         public void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesCookingRangeAndFire));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesCookingAIO));
             btnScriptProfiles_CookingRangeAndFire_SaveProfile = new Button();
             labelScriptProfiles_CookingRangeAndFire_Title = new Label();
             checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler = new CheckBox();
@@ -49,7 +49,7 @@
             btnScriptProfiles_CookingRangeAndFire_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_CookingRangeAndFire_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_CookingRangeAndFire_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_CookingRangeAndFire_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_CookingRangeAndFire_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_CookingRangeAndFire_SaveProfile.Location = new Point(325, 375);
             btnScriptProfiles_CookingRangeAndFire_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_CookingRangeAndFire_SaveProfile.Name = "btnScriptProfiles_CookingRangeAndFire_SaveProfile";
@@ -67,7 +67,7 @@
             labelScriptProfiles_CookingRangeAndFire_Title.Name = "labelScriptProfiles_CookingRangeAndFire_Title";
             labelScriptProfiles_CookingRangeAndFire_Title.Size = new Size(780, 25);
             labelScriptProfiles_CookingRangeAndFire_Title.TabIndex = 154;
-            labelScriptProfiles_CookingRangeAndFire_Title.Text = "Cooking: Range & Fire";
+            labelScriptProfiles_CookingRangeAndFire_Title.Text = "Cooking: AIO";
             labelScriptProfiles_CookingRangeAndFire_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // checkBoxScriptProfiles_CookingRangeAndFire_DeathHandler
@@ -142,7 +142,7 @@
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.FormattingEnabled = true;
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.Items.AddRange(new object[] { "AlKharid", "Falador", "Hosidius", "Zanaris", "RoguesDen" });
             comboBoxScriptProfiles_CookingRangeAndFire_SelectCookingArea.Location = new Point(575, 175);
@@ -167,7 +167,7 @@
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.FormattingEnabled = true;
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.Items.AddRange(new object[] { "Progressive", "Shrimps", "Trout", "Salmon", "Lobster", "Swordfish", "Monkfish", "Shark", "Anglerfish" });
             comboBoxScriptProfiles_CookingRangeAndFire_SelectDish.Location = new Point(575, 250);
@@ -197,11 +197,11 @@
             labelScriptProfiles_CookingRangeAndFire_Header.Text = "Script Profiles";
             labelScriptProfiles_CookingRangeAndFire_Header.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // formScriptProfilesCookingRangeAndFire
+            // formScriptProfilesCookingAIO
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(784, 461);
             Controls.Add(labelScriptProfiles_CookingRangeAndFire_Header);
             Controls.Add(labelScriptProfiles_CookingRangeAndFire_SelectDish);
@@ -222,7 +222,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             MaximizeBox = false;
-            Name = "formScriptProfilesCookingRangeAndFire";
+            Name = "formScriptProfilesCookingAIO";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Script Profiles: Cooking - Range & Fire";
             Load += formScriptProfiles_CookingRangeAndFire_Load;

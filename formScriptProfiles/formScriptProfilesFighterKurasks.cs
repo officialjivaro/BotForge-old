@@ -19,7 +19,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         // Initialize Variables - Strings
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
         string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableHighAlching = "<Find>boolEnableHighAlching:false</Find><Replace>boolEnableHighAlching:false</Replace>";
+        string boolEnableHighAlchemy = "<Find>boolEnableHighAlchemy:false</Find><Replace>boolEnableHighAlchemy:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
         string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
@@ -47,7 +47,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             {
                 {"boolEnableAntipattern", checkBoxScriptProfiles_FighterKurasks_Antipattern},
                 {"boolEnableDeathHandler", checkBoxScriptProfiles_FighterKurasks_DeathHandler},
-                {"boolEnableHighAlching", checkBoxScriptProfiles_FighterKurasks_HighAlching},
+                {"boolEnableHighAlchemy", checkBoxScriptProfiles_FighterKurasks_HighAlchemy},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_FighterKurasks_WorldHopping},
                 {"boolEnableRenewBond", checkBoxScriptProfiles_FighterKurasks_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_FighterKurasks_Restocking},
@@ -77,7 +77,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
                 writer.WriteLine("\nKurasks Settings");
-                writer.WriteLine(boolEnableHighAlching);
+                writer.WriteLine(boolEnableHighAlchemy);
                 writer.WriteLine("<Find>Ranged/*/Melee</Find><Replace>" + comboBoxScriptProfiles_Kurasks_SelectMode.SelectedItem.ToString() + "</Replace>");
                 writer.WriteLine("<Find>None/*/RangingPotion/*/CombatPotion/*/SuperCombatPotion</Find><Replace>" + comboBoxScriptProfiles_Kurasks_SelectPotion.SelectedItem.ToString() + "</Replace>");
                 writer.WriteLine("\nMelee Gear Settings");
@@ -89,7 +89,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine("<Find>Obsidian helmet</Find><Replace>" + textBoxScriptProfiles_Kurasks_MeleeHead.Text + "</Replace>");
                 writer.WriteLine("<Find>Obsidian platelegs</Find><Replace>" + textBoxScriptProfiles_Kurasks_MeleeLegs.Text + "</Replace>");
                 writer.WriteLine("<Find>Warrior ring</Find><Replace>" + textBoxScriptProfiles_Kurasks_MeleeRing.Text + "</Replace>");
-                writer.WriteLine("<Find>Abyssal whip</Find><Replace>" + textBoxScriptProfiles_Kurasks_MeleeWeapon.Text + "</Replace>");
+                writer.WriteLine("<Find>Toktz-ket-xil</Find><Replace>" + textBoxScriptProfiles_Kurasks_MeleeShield.Text + "</Replace>");
+                writer.WriteLine("<Find>Leaf-bladed battleaxe</Find><Replace>" + textBoxScriptProfiles_Kurasks_MeleeWeapon.Text + "</Replace>");
                 writer.WriteLine("\nRanged Gear Settings");
                 writer.WriteLine("<Find>Broad bolts</Find><Replace>" + textBoxScriptProfiles_Kurasks_RangedArrow.Text + "</Replace>");
                 writer.WriteLine("<Find>Ava's</Find><Replace>" + textBoxScriptProfiles_Kurasks_RangedCape.Text + "</Replace>");
@@ -99,10 +100,10 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine("<Find>Snakeskin bandana</Find><Replace>" + textBoxScriptProfiles_Kurasks_RangedHead.Text + "</Replace>");
                 writer.WriteLine("<Find>Black d'hide chaps</Find><Replace>" + textBoxScriptProfiles_Kurasks_RangedLegs.Text + "</Replace>");
                 writer.WriteLine("<Find>Ring of wealth</Find><Replace>" + textBoxScriptProfiles_Kurasks_RangedRing.Text + "</Replace>");
+                writer.WriteLine("<Find>Black d'hide shield</Find><Replace>" + textBoxScriptProfiles_Kurasks_RangedShield.Text + "</Replace>");
                 writer.WriteLine("<Find>Rune crossbow</Find><Replace>" + textBoxScriptProfiles_Kurasks_RangedWeapon.Text + "</Replace>");
                 writer.WriteLine("\nMiscellaneous Gear Settings");
                 writer.WriteLine("<Find>Amulet of glory</Find><Replace>" + textBoxScriptProfiles_Kurasks_MiscAmulet.Text + "</Replace>");
-                writer.WriteLine("<Find>Mirror shield</Find><Replace>" + textBoxScriptProfiles_Kurasks_MiscShield.Text + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

@@ -40,6 +40,7 @@
             labelScriptProfiles_Generic_Header = new Label();
             labelScriptProfiles_Generic_SelectScript = new Label();
             comboBoxScriptProfiles_Generic_SelectScript = new ComboBox();
+            checkBoxScriptProfiles_Generic_DiscordWebhooks = new CheckBox();
             SuspendLayout();
             // 
             // checkBoxScriptProfiles_Generic_WorldHopping
@@ -124,7 +125,7 @@
             btnScriptProfiles_Generic_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_Generic_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_Generic_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_Generic_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_Generic_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_Generic_SaveProfile.Location = new Point(305, 325);
             btnScriptProfiles_Generic_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_Generic_SaveProfile.Name = "btnScriptProfiles_Generic_SaveProfile";
@@ -148,7 +149,7 @@
             // labelScriptProfiles_Generic_SelectScript
             // 
             labelScriptProfiles_Generic_SelectScript.AutoSize = true;
-            labelScriptProfiles_Generic_SelectScript.Location = new Point(125, 250);
+            labelScriptProfiles_Generic_SelectScript.Location = new Point(125, 275);
             labelScriptProfiles_Generic_SelectScript.Margin = new Padding(0);
             labelScriptProfiles_Generic_SelectScript.Name = "labelScriptProfiles_Generic_SelectScript";
             labelScriptProfiles_Generic_SelectScript.Size = new Size(91, 18);
@@ -159,21 +160,33 @@
             // 
             comboBoxScriptProfiles_Generic_SelectScript.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_Generic_SelectScript.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxScriptProfiles_Generic_SelectScript.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_Generic_SelectScript.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_Generic_SelectScript.FormattingEnabled = true;
             comboBoxScriptProfiles_Generic_SelectScript.Items.AddRange(new object[] { "fxAgility-AgilityArena.txt", "fxCrafting-Jewelry.txt", "fxFarming-BaggedPlants.txt", "fxFishing-AIO.txt", "fxFletching-Longbows.txt", "fxGoldFarming-BonesToBananasCaster.txt", "fxGoldFarming-CowKiller.txt", "fxGoldFarming-FishFoodCollector.txt", "fxGoldFarming-MonksRobesCollector.txt", "fxGoldFarming-PotatoPicker.txt", "fxGoldFarming-RedSpidersEggsCollector.txt", "fxGoldFarming-Tanner.txt", "fxGoldFarming-WildyCollector.txt", "fxHouseFavour-Hosidius.txt", "fxMisc-VarrockMuseumQuiz.txt", "fxPrayer-BuryBones.txt", "fxQuests-APorcineOfInterest.txt", "fxQuests-CooksAssistant.txt", "fxQuests-DruidicRitual.txt", "fxQuests-GoblinDiplomacy.txt", "fxQuests-LostCity.txt", "fxQuests-MageArenaOne.txt", "fxQuests-PriestInPeril.txt", "fxQuests-RomeoAndJuliet.txt", "fxQuests-RuneMysteries.txt", "fxQuests-SheepShearer.txt", "fxQuests-TheRestlessGhost.txt", "fxQuests-TheKnightsSword.txt", "fxQuests-VampyreSlayer.txt", "fxQuests-XMarksTheSpot.txt", "fxWoodcutting-AIO.txt" });
-            comboBoxScriptProfiles_Generic_SelectScript.Location = new Point(275, 250);
+            comboBoxScriptProfiles_Generic_SelectScript.Location = new Point(275, 275);
             comboBoxScriptProfiles_Generic_SelectScript.Margin = new Padding(0);
             comboBoxScriptProfiles_Generic_SelectScript.Name = "comboBoxScriptProfiles_Generic_SelectScript";
             comboBoxScriptProfiles_Generic_SelectScript.Size = new Size(300, 26);
             comboBoxScriptProfiles_Generic_SelectScript.TabIndex = 254;
             // 
+            // checkBoxScriptProfiles_Generic_DiscordWebhooks
+            // 
+            checkBoxScriptProfiles_Generic_DiscordWebhooks.AutoSize = true;
+            checkBoxScriptProfiles_Generic_DiscordWebhooks.Location = new Point(50, 225);
+            checkBoxScriptProfiles_Generic_DiscordWebhooks.Margin = new Padding(0);
+            checkBoxScriptProfiles_Generic_DiscordWebhooks.Name = "checkBoxScriptProfiles_Generic_DiscordWebhooks";
+            checkBoxScriptProfiles_Generic_DiscordWebhooks.Size = new Size(156, 22);
+            checkBoxScriptProfiles_Generic_DiscordWebhooks.TabIndex = 255;
+            checkBoxScriptProfiles_Generic_DiscordWebhooks.Text = "Discord Webhooks";
+            checkBoxScriptProfiles_Generic_DiscordWebhooks.UseVisualStyleBackColor = true;
+            // 
             // formScriptProfilesGeneric
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(734, 411);
+            Controls.Add(checkBoxScriptProfiles_Generic_DiscordWebhooks);
             Controls.Add(comboBoxScriptProfiles_Generic_SelectScript);
             Controls.Add(labelScriptProfiles_Generic_SelectScript);
             Controls.Add(labelScriptProfiles_Generic_Header);
@@ -211,5 +224,6 @@
         public Button btnScriptProfiles_Generic_SaveProfile;
         public Label labelScriptProfiles_Generic_SelectScript;
         public ComboBox comboBoxScriptProfiles_Generic_SelectScript;
+        public CheckBox checkBoxScriptProfiles_Generic_DiscordWebhooks;
     }
 }

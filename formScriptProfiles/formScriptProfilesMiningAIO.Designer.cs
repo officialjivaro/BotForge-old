@@ -137,7 +137,7 @@
             btnScriptProfiles_MiningAIO_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_MiningAIO_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_MiningAIO_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MiningAIO_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MiningAIO_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_MiningAIO_SaveProfile.Location = new Point(315, 275);
             btnScriptProfiles_MiningAIO_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_MiningAIO_SaveProfile.Name = "btnScriptProfiles_MiningAIO_SaveProfile";
@@ -163,7 +163,7 @@
             comboBoxScriptProfiles_MiningAIO_SelectOre.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_MiningAIO_SelectOre.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_MiningAIO_SelectOre.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_MiningAIO_SelectOre.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_MiningAIO_SelectOre.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_MiningAIO_SelectOre.FormattingEnabled = true;
             comboBoxScriptProfiles_MiningAIO_SelectOre.Items.AddRange(new object[] { "Progressive", "Tin", "Copper", "Clay", "Iron", "Silver", "Coal", "Mithril", "Adamantite", "Runite" });
             comboBoxScriptProfiles_MiningAIO_SelectOre.Location = new Point(550, 225);

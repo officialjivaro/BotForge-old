@@ -16,7 +16,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
         // Button CLick - Open IPRoyal
         public void btnProxyChoice_IPRoyal_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveGlobal.Invoke_OpenLink("https://iproyal.com?r=97274");
+            invokeMethodsActiveGlobal.Invoke_OpenLink("https://iproyal.com?r=fushigibot");
         }
 
         // Button CLick - Open Bright Data

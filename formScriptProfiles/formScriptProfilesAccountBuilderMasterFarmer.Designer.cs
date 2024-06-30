@@ -152,7 +152,7 @@
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Location = new Point(375, 375);
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile.Name = "btnScriptProfiles_AccountBuilderMasterFarmer_SaveProfile";
@@ -178,7 +178,7 @@
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.FormattingEnabled = true;
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Items.AddRange(new object[] { "71", "85" });
             comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.Location = new Point(650, 150);
@@ -245,7 +245,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(884, 461);
             Controls.Add(labelScriptProfiles_AccountBuilder_Minutes3);
             Controls.Add(label1);

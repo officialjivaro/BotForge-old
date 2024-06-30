@@ -146,7 +146,7 @@
             btnScriptProfiles_RunecraftingZeah_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_RunecraftingZeah_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_RunecraftingZeah_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_RunecraftingZeah_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_RunecraftingZeah_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_RunecraftingZeah_SaveProfile.Location = new Point(165, 325);
             btnScriptProfiles_RunecraftingZeah_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_RunecraftingZeah_SaveProfile.Name = "btnScriptProfiles_RunecraftingZeah_SaveProfile";

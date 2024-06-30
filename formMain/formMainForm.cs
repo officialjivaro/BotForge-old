@@ -15,6 +15,9 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         //Start of initialize class variables//
         ///////////////////////////////////////
 
+        // Initialize Variables - Classes
+        public invokeMethodsSearchQueries searchQueries = new invokeMethodsSearchQueries();
+
         // Initialize Variables - Background Workers
         public BackgroundWorker workerFileHandler = new BackgroundWorker();
         public BackgroundWorker workerGetProcessHandler = new BackgroundWorker();
@@ -187,16 +190,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             }
 
             // Populate  dataGridView's Script Collections
-            await Invoke_PopulateComboBoxColumn(kryptonDataGridViewDashboard_DreamBotManager, "kryptonDataGridViewDashboard_DreamBotManager_Script", urlSdnScriptsDreamBot, filePathApplicationDataLocalScriptsDreamBot);
-            await Invoke_PopulateComboBoxColumn(kryptonDataGridViewDashboard_OSBotManager, "kryptonDataGridViewDashboard_OSBotManager_Script", urlSdnScriptsOSBot, filePathApplicationDataLocalScriptsOSBot);
-            await Invoke_PopulateComboBoxColumn(kryptonDataGridViewDashboard_ScriptFactoryManager, "kryptonDataGridViewDashboard_ScriptFactory_Script", urlSdnScriptsScriptFactory, filePathApplicationDataLocalScriptsScriptFactory);
-            await Invoke_PopulateComboBoxColumn(kryptonDataGridViewDashboard_TRiBotManager, "kryptonDataGridViewDashboard_TRiBotManager_Script", urlSdnScriptsTRiBot, filePathApplicationDataLocalScriptsTRiBot);
+            await Invoke_PopulateComboBoxColumn(dataGridViewDashboard_DreamBotManager, "dataGridViewDashboard_DreamBotManager_Script", urlSdnScriptsDreamBot, filePathApplicationDataLocalScriptsDreamBot);
+            await Invoke_PopulateComboBoxColumn(dataGridViewDashboard_OSBotManager, "dataGridViewDashboard_OSBotManager_Script", urlSdnScriptsOSBot, filePathApplicationDataLocalScriptsOSBot);
+            await Invoke_PopulateComboBoxColumn(dataGridViewDashboard_ScriptFactoryManager, "dataGridViewDashboard_ScriptFactory_Script", urlSdnScriptsScriptFactory, filePathApplicationDataLocalScriptsScriptFactory);
+            await Invoke_PopulateComboBoxColumn(dataGridViewDashboard_TRiBotManager, "dataGridViewDashboard_TRiBotManager_Script", urlSdnScriptsTRiBot, filePathApplicationDataLocalScriptsTRiBot);
 
             // Populate dataGridView's Account Data
-            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(kryptonDataGridViewDashboard_ScriptFactoryManager, filePathApplicationDataAccountsScriptFactory);
-            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(kryptonDataGridViewDashboard_OSBotManager, filePathApplicationDataAccountsOSBot);
-            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(kryptonDataGridViewDashboard_DreamBotManager, filePathApplicationDataAccountsDreamBot);
-            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(kryptonDataGridViewDashboard_TRiBotManager, filePathApplicationDataAccountsTRiBot);
+            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(dataGridViewDashboard_ScriptFactoryManager, filePathApplicationDataAccountsScriptFactory);
+            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(dataGridViewDashboard_OSBotManager, filePathApplicationDataAccountsOSBot);
+            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(dataGridViewDashboard_DreamBotManager, filePathApplicationDataAccountsDreamBot);
+            invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(dataGridViewDashboard_TRiBotManager, filePathApplicationDataAccountsTRiBot);
 
             // Populate Client Login Info
             invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_OSBotUsername, "osbot_username=", filePathApplicationDataAccountsSettingsIni);
@@ -206,21 +209,21 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_TRiBotEmail, "tribot_email=", filePathApplicationDataAccountsSettingsIni);
             invokeMethodsPassiveMainForm.Invoke_PopulateTextBoxFromIniFile(textBoxSettings_TRiBotPassword, "tribot_password=", filePathApplicationDataAccountsSettingsIni);
 
-            // Clear selection in the KryptonDataGridView
-            kryptonDataGridViewDashboard_ScriptFactoryManager.ClearSelection();
-            kryptonDataGridViewDashboard_OSBotManager.ClearSelection();
-            kryptonDataGridViewDashboard_DreamBotManager.ClearSelection();
-            kryptonDataGridViewDashboard_TRiBotManager.ClearSelection();
+            // Clear selection in the DataGridView
+            dataGridViewDashboard_ScriptFactoryManager.ClearSelection();
+            dataGridViewDashboard_OSBotManager.ClearSelection();
+            dataGridViewDashboard_DreamBotManager.ClearSelection();
+            dataGridViewDashboard_TRiBotManager.ClearSelection();
 
             // Bring panelScriptFactory to the front
             foreach (Control control in this.Controls)
             {
-                if (control is Panel && control != kryptonPanelDashboard)
+                if (control is Panel && control != panelDashboard)
                 {
                     control.SendToBack();
                 }
             }
-            kryptonPanelDashboard.BringToFront();
+            panelDashboard.BringToFront();
 
             // Set ProgressBar Visibility to False
             kryptonProgressBarGlobal.Visible = false;
@@ -379,16 +382,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 // Script Factory
                 try
                 {
-                    if (kryptonDataGridViewDashboard_ScriptFactoryManager.InvokeRequired)
+                    if (dataGridViewDashboard_ScriptFactoryManager.InvokeRequired)
                     {
-                        kryptonDataGridViewDashboard_ScriptFactoryManager.Invoke(new MethodInvoker(delegate
+                        dataGridViewDashboard_ScriptFactoryManager.Invoke(new MethodInvoker(delegate
                         {
-                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_ScriptFactoryManager, "kryptonDataGridViewDashboard_ScriptFactoryManager_Account", "kryptonDataGridViewDashboard_ScriptFactory_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewDashboard_ScriptFactoryManager, "dataGridViewDashboard_ScriptFactoryManager_Account", "dataGridViewDashboard_ScriptFactory_Status");
                         }));
                     }
                     else
                     {
-                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_ScriptFactoryManager, "kryptonDataGridViewDashboard_ScriptFactoryManager_Account", "kryptonDataGridViewDashboard_ScriptFactory_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewDashboard_ScriptFactoryManager, "dataGridViewDashboard_ScriptFactoryManager_Account", "dataGridViewDashboard_ScriptFactory_Status");
                     }
                 }
                 catch (Exception ex)
@@ -399,16 +402,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 // OSBot Manager
                 try
                 {
-                    if (kryptonDataGridViewDashboard_OSBotManager.InvokeRequired)
+                    if (dataGridViewDashboard_OSBotManager.InvokeRequired)
                     {
-                        kryptonDataGridViewDashboard_OSBotManager.Invoke(new MethodInvoker(delegate
+                        dataGridViewDashboard_OSBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_OSBotManager, "kryptonDataGridViewDashboard_OSBotManager_Account", "kryptonDataGridViewDashboard_OSBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewDashboard_OSBotManager, "dataGridViewDashboard_OSBotManager_Account", "dataGridViewDashboard_OSBotManager_Status");
                         }));
                     }
                     else
                     {
-                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_OSBotManager, "kryptonDataGridViewDashboard_OSBotManager_Account", "kryptonDataGridViewDashboard_OSBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewDashboard_OSBotManager, "dataGridViewDashboard_OSBotManager_Account", "dataGridViewDashboard_OSBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -419,16 +422,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 // DreamBot Manager
                 try
                 {
-                    if (kryptonDataGridViewDashboard_DreamBotManager.InvokeRequired)
+                    if (dataGridViewDashboard_DreamBotManager.InvokeRequired)
                     {
-                        kryptonDataGridViewDashboard_DreamBotManager.Invoke(new MethodInvoker(delegate
+                        dataGridViewDashboard_DreamBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_DreamBotManager, "kryptonDataGridViewDashboard_DreamBotManager_Account", "kryptonDataGridViewDashboard_DreamBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewDashboard_DreamBotManager, "dataGridViewDashboard_DreamBotManager_Account", "dataGridViewDashboard_DreamBotManager_Status");
                         }));
                     }
                     else
                     {
-                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_DreamBotManager, "kryptonDataGridViewDashboard_DreamBotManager_Account", "kryptonDataGridViewDashboard_DreamBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewDashboard_DreamBotManager, "dataGridViewDashboard_DreamBotManager_Account", "dataGridViewDashboard_DreamBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -439,16 +442,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 // TRiBot Manager
                 try
                 {
-                    if (kryptonDataGridViewDashboard_TRiBotManager.InvokeRequired)
+                    if (dataGridViewDashboard_TRiBotManager.InvokeRequired)
                     {
-                        kryptonDataGridViewDashboard_TRiBotManager.Invoke(new MethodInvoker(delegate
+                        dataGridViewDashboard_TRiBotManager.Invoke(new MethodInvoker(delegate
                         {
-                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_TRiBotManager, "kryptonDataGridViewDashboard_TRiBotManager_Account", "kryptonDataGridViewDashboard_TRiBotManager_Status");
+                            invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewDashboard_TRiBotManager, "dataGridViewDashboard_TRiBotManager_Account", "dataGridViewDashboard_TRiBotManager_Status");
                         }));
                     }
                     else
                     {
-                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(kryptonDataGridViewDashboard_TRiBotManager, "kryptonDataGridViewDashboard_TRiBotManager_Account", "kryptonDataGridViewDashboard_TRiBotManager_Status");
+                        invokeMethodsPassiveMainForm.Invoke_UpdateRunningStatus(dataGridViewDashboard_TRiBotManager, "dataGridViewDashboard_TRiBotManager_Account", "dataGridViewDashboard_TRiBotManager_Status");
                     }
                 }
                 catch (Exception ex)
@@ -466,6 +469,19 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         /////////////////////////////
 
 
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+        ///////////////////////////
+        //Start Of Search Queries//
+        ///////////////////////////
+
+
+        /////////////////////////
+        //End Of Search Queties//
+        /////////////////////////
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -524,7 +540,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Navigate To Dashboard
         public void btnNavigation_ScriptFactory_Click(object sender, EventArgs e)
         {
-            Invoke_NavigateToPanel(kryptonPanelDashboard);
+            Invoke_NavigateToPanel(panelDashboard);
             this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
             Invoke_DisableKryptonButton(this, "kryptonButtonNav_Dashboard");
             Invoke_EnableKryptonButton(this, "kryptonButtonNav_ScriptProfiles");
@@ -535,7 +551,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Navigate To Script Profiles
         public void btnNavigation_ScriptProfiles_Click(object sender, EventArgs e)
         {
-            Invoke_NavigateToPanel(kryptonPanelScriptProfiles);
+            Invoke_NavigateToPanel(panelScriptProfiles);
             this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
             Invoke_EnableKryptonButton(this, "kryptonButtonNav_Dashboard");
             Invoke_DisableKryptonButton(this, "kryptonButtonNav_ScriptProfiles");
@@ -546,7 +562,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Navigate to Break Profiles
         public void btnNavigation_BreakProfiles_Click(object sender, EventArgs e)
         {
-            Invoke_NavigateToPanel(kryptonPanelBreakProfiles);
+            Invoke_NavigateToPanel(panelBreakProfiles);
             this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
             Invoke_EnableKryptonButton(this, "kryptonButtonNav_Dashboard");
             Invoke_EnableKryptonButton(this, "kryptonButtonNav_ScriptProfiles");
@@ -557,7 +573,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Navigate To Settings
         public void btnNavigation_Settings_Click(object sender, EventArgs e)
         {
-            Invoke_NavigateToPanel(kryptonPanelSettings);
+            Invoke_NavigateToPanel(panelSettings);
             this.Invoke_BringNavControlsToFront(null, EventArgs.Empty);
             Invoke_EnableKryptonButton(this, "kryptonButtonNav_Dashboard");
             Invoke_EnableKryptonButton(this, "kryptonButtonNav_ScriptProfiles");
@@ -583,7 +599,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Cell Btn Click - Cli Launch
         public void dataGridView_ScriptFactoryRun_CellButtonClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < kryptonDataGridViewDashboard_ScriptFactoryManager.Rows.Count)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridViewDashboard_ScriptFactoryManager.Rows.Count)
             {
                 // Initialize Variables
                 string directoryPath = @"C:\Users\" + Environment.UserName + @"\OSBot\Data";
@@ -601,8 +617,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 }
 
                 // Point to dataGridView
-                DataGridViewRow clickedRow = kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[e.RowIndex];
-                string account = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactoryManager_Account"].Value?.ToString();
+                DataGridViewRow clickedRow = dataGridViewDashboard_ScriptFactoryManager.Rows[e.RowIndex];
+                string account = clickedRow.Cells["dataGridViewDashboard_ScriptFactoryManager_Account"].Value?.ToString();
 
                 // Get all the currently running Java processes with their arguments and process ID.
                 var javaProcessesList = invokeMethodsPassiveMainForm.Invoke_GetJavaCommandLineArgsAndProcessId();
@@ -622,7 +638,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 }
 
                 // Create Cli Args
-                if (processIdToKill == -1 && e.ColumnIndex == kryptonDataGridViewDashboard_ScriptFactoryManager.Columns["kryptonDataGridViewDashboard_ScriptFactory_RunStop"].Index && e.RowIndex >= 0)
+                if (processIdToKill == -1 && e.ColumnIndex == dataGridViewDashboard_ScriptFactoryManager.Columns["dataGridViewDashboard_ScriptFactory_RunStop"].Index && e.RowIndex >= 0)
                 {
                     // Initialize variables
                     string loginInfoOSBot = "-login " + textBoxSettings_OSBotUsername.Text.ToString() + ":" + textBoxSettings_OSBotPassword.Text.ToString() + " ";
@@ -632,14 +648,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     string newMouse = "";
                     string noInterface = "";
                     string noRender = "";
-                    string password = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_Password"].Value?.ToString();
-                    string pin = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_Pin"].Value?.ToString();
-                    string proxy = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_Proxy"].Value?.ToString();
+                    string password = clickedRow.Cells["dataGridViewDashboard_ScriptFactory_Password"].Value?.ToString();
+                    string pin = clickedRow.Cells["dataGridViewDashboard_ScriptFactory_Pin"].Value?.ToString();
+                    string proxy = clickedRow.Cells["dataGridViewDashboard_ScriptFactory_Proxy"].Value?.ToString();
                     string sandboxie = "No";
-                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber"].Value?.ToString();
-                    string script = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory"].Value?.ToString();
-                    string task = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_Script"].Value?.ToString();
-                    string world = clickedRow.Cells["kryptonDataGridViewDashboard_ScriptFactory_World"].Value?.ToString();
+                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["dataGridViewDashboard_ScriptFactory_SandboxieNumber"].Value?.ToString();
+                    string script = clickedRow.Cells["dataGridViewDashboard_ScriptFactory_ScriptFactory"].Value?.ToString();
+                    string task = clickedRow.Cells["dataGridViewDashboard_ScriptFactory_Script"].Value?.ToString();
+                    string world = clickedRow.Cells["dataGridViewDashboard_ScriptFactory_World"].Value?.ToString();
 
                     // Set BotCli variables
                     botcli = "-bot " + account + ":" + password + ":" + (string.IsNullOrWhiteSpace(pin) ? "1234" : pin) + " ";
@@ -791,7 +807,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         Console.WriteLine("Sandboxie CLI Args: " + cliArgs);
                     }
                 }
-                else if (processIdToKill != -1 && e.ColumnIndex == kryptonDataGridViewDashboard_ScriptFactoryManager.Columns["kryptonDataGridViewDashboard_ScriptFactory_RunStop"].Index && e.RowIndex >= 0)
+                else if (processIdToKill != -1 && e.ColumnIndex == dataGridViewDashboard_ScriptFactoryManager.Columns["dataGridViewDashboard_ScriptFactory_RunStop"].Index && e.RowIndex >= 0)
                 {
                     try
                     {
@@ -820,32 +836,32 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             DataGridViewRow newRow = new DataGridViewRow();
 
             // Add Row to DataGridView
-            int rowIndex = kryptonDataGridViewDashboard_ScriptFactoryManager.Rows.Add(newRow);
+            int rowIndex = dataGridViewDashboard_ScriptFactoryManager.Rows.Add(newRow);
 
             // Set Default Values
-            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactoryManager_Account"].Value = "ACCOUNT_EMAIL";
-            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_Password"].Value = "PASSWORD";
-            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_Pin"].Value = "1234";
-            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_Proxy"].Value = "IP:PORT:USER:PASS";
-            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_ScriptFactory"].Value = "SF I";
-            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_Script"].Value = "fxAccountBuilder";
-            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_World"].Value = "-F2P-";
+            dataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["dataGridViewDashboard_ScriptFactoryManager_Account"].Value = "ACCOUNT_EMAIL";
+            dataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["dataGridViewDashboard_ScriptFactory_Password"].Value = "PASSWORD";
+            dataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["dataGridViewDashboard_ScriptFactory_Pin"].Value = "1234";
+            dataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["dataGridViewDashboard_ScriptFactory_Proxy"].Value = "IP:PORT:USER:PASS";
+            dataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["dataGridViewDashboard_ScriptFactory_ScriptFactory"].Value = "SF I";
+            dataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["dataGridViewDashboard_ScriptFactory_Script"].Value = "fxAccountBuilder";
+            dataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["dataGridViewDashboard_ScriptFactory_World"].Value = "-F2P-";
 
             // Generate a unique random number for Sandboxie
             int randomNumber = Invoke_GenerateUniqueRandomNumber();
-            kryptonDataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber"].Value = randomNumber;
+            dataGridViewDashboard_ScriptFactoryManager.Rows[rowIndex].Cells["dataGridViewDashboard_ScriptFactory_SandboxieNumber"].Value = randomNumber;
         }
 
         // Btn Click - Delete Bot
         public void btnScriptFactory_DeleteAccount_Click(object sender, EventArgs e)
         {
             // Check if any cell is currently selected
-            if (kryptonDataGridViewDashboard_ScriptFactoryManager.CurrentCell != null)
+            if (dataGridViewDashboard_ScriptFactoryManager.CurrentCell != null)
             {
-                int rowIndex = kryptonDataGridViewDashboard_ScriptFactoryManager.CurrentCell.RowIndex;
+                int rowIndex = dataGridViewDashboard_ScriptFactoryManager.CurrentCell.RowIndex;
                 if (rowIndex >= 0) // Check if the rowIndex is valid
                 {
-                    kryptonDataGridViewDashboard_ScriptFactoryManager.Rows.RemoveAt(rowIndex);
+                    dataGridViewDashboard_ScriptFactoryManager.Rows.RemoveAt(rowIndex);
                 }
             }
         }
@@ -859,7 +875,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Save
         public void btnScriptFactory_Save_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(kryptonDataGridViewDashboard_ScriptFactoryManager, filePathApplicationDataAccountsScriptFactory);
+            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(dataGridViewDashboard_ScriptFactoryManager, filePathApplicationDataAccountsScriptFactory);
         }
 
         ///////////////////////////////
@@ -879,7 +895,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Cell Btn Click - CLI Launch
         public void dataGridView_OSBotRun_CellButtonClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < kryptonDataGridViewDashboard_OSBotManager.Rows.Count)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridViewDashboard_OSBotManager.Rows.Count)
             {
                 // Initialize Variables
                 string directoryPath = @"C:\Users\" + Environment.UserName + @"\OSBot\Data";
@@ -897,8 +913,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 }
 
                 // Point to dataGridView
-                DataGridViewRow clickedRow = kryptonDataGridViewDashboard_OSBotManager.Rows[e.RowIndex];
-                string account = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Account"].Value?.ToString();
+                DataGridViewRow clickedRow = dataGridViewDashboard_OSBotManager.Rows[e.RowIndex];
+                string account = clickedRow.Cells["dataGridViewDashboard_OSBotManager_Account"].Value?.ToString();
 
                 // Get all the currently running Java processes with their arguments and process ID.
                 var javaProcessesList = invokeMethodsPassiveMainForm.Invoke_GetJavaCommandLineArgsAndProcessId();
@@ -917,7 +933,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     }
                 }
 
-                if (processIdToKill == -1 && e.ColumnIndex == kryptonDataGridViewDashboard_OSBotManager.Columns["kryptonDataGridViewDashboard_OSBotManager_RunStop"].Index && e.RowIndex >= 0)
+                if (processIdToKill == -1 && e.ColumnIndex == dataGridViewDashboard_OSBotManager.Columns["dataGridViewDashboard_OSBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
 
                     // Initialize Variables
@@ -928,14 +944,14 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     string newMouse = "";
                     string noInterface = "";
                     string noRender = "";
-                    string password = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Password"].Value?.ToString();
-                    string pin = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Pin"].Value?.ToString();
-                    string proxy = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Proxy"].Value?.ToString();
+                    string password = clickedRow.Cells["dataGridViewDashboard_OSBotManager_Password"].Value?.ToString();
+                    string pin = clickedRow.Cells["dataGridViewDashboard_OSBotManager_Pin"].Value?.ToString();
+                    string proxy = clickedRow.Cells["dataGridViewDashboard_OSBotManager_Proxy"].Value?.ToString();
                     string sandboxie = "No";
-                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_SandboxieNumber"].Value?.ToString();
-                    string script = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Script"].Value?.ToString();
-                    string scriptArgs = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_Args"].Value?.ToString();
-                    string world = clickedRow.Cells["kryptonDataGridViewDashboard_OSBotManager_World"].Value?.ToString();
+                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["dataGridViewDashboard_OSBotManager_SandboxieNumber"].Value?.ToString();
+                    string script = clickedRow.Cells["dataGridViewDashboard_OSBotManager_Script"].Value?.ToString();
+                    string scriptArgs = clickedRow.Cells["dataGridViewDashboard_OSBotManager_Args"].Value?.ToString();
+                    string world = clickedRow.Cells["dataGridViewDashboard_OSBotManager_World"].Value?.ToString();
 
                     // Set BotCli Variable
                     botcli = "-bot " + account + ":" + password + ":" + (string.IsNullOrWhiteSpace(pin) ? "1234" : pin) + " ";
@@ -1094,7 +1110,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         Console.WriteLine("Sandboxie CLI Args: " + cliArgs);
                     }
                 }
-                else if (processIdToKill != -1 && e.ColumnIndex == kryptonDataGridViewDashboard_OSBotManager.Columns["kryptonDataGridViewDashboard_OSBotManager_RunStop"].Index && e.RowIndex >= 0)
+                else if (processIdToKill != -1 && e.ColumnIndex == dataGridViewDashboard_OSBotManager.Columns["dataGridViewDashboard_OSBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
                     try
                     {
@@ -1123,32 +1139,32 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             DataGridViewRow newRow = new DataGridViewRow();
 
             // Add Row to DataGridView
-            int rowIndex = kryptonDataGridViewDashboard_OSBotManager.Rows.Add(newRow);
+            int rowIndex = dataGridViewDashboard_OSBotManager.Rows.Add(newRow);
 
             // Set Default Values
-            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Account"].Value = "ACCOUNT_EMAIL";
-            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Password"].Value = "PASSWORD";
-            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Pin"].Value = "1234";
-            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
-            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Script"].Value = "Excellent Dragons - 898";
-            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_Args"].Value = "SCRIPT_ARGS";
-            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_World"].Value = "-F2P-";
+            dataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_OSBotManager_Account"].Value = "ACCOUNT_EMAIL";
+            dataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_OSBotManager_Password"].Value = "PASSWORD";
+            dataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_OSBotManager_Pin"].Value = "1234";
+            dataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_OSBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
+            dataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_OSBotManager_Script"].Value = "Excellent Dragons - 898";
+            dataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_OSBotManager_Args"].Value = "SCRIPT_ARGS";
+            dataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_OSBotManager_World"].Value = "-F2P-";
 
             // Generate a unique random number for Sandboxie
             int randomNumber = Invoke_GenerateUniqueRandomNumber();
-            kryptonDataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_OSBotManager_SandboxieNumber"].Value = randomNumber;
+            dataGridViewDashboard_OSBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_OSBotManager_SandboxieNumber"].Value = randomNumber;
         }
 
         // Btn Click - Delete Bot
         public void btnOSBotManager_DeleteAccount_Click(object sender, EventArgs e)
         {
             // Check if any cell is currently selected
-            if (kryptonDataGridViewDashboard_OSBotManager.CurrentCell != null)
+            if (dataGridViewDashboard_OSBotManager.CurrentCell != null)
             {
-                int rowIndex = kryptonDataGridViewDashboard_OSBotManager.CurrentCell.RowIndex;
+                int rowIndex = dataGridViewDashboard_OSBotManager.CurrentCell.RowIndex;
                 if (rowIndex >= 0) // Check if the rowIndex is valid
                 {
-                    kryptonDataGridViewDashboard_OSBotManager.Rows.RemoveAt(rowIndex);
+                    dataGridViewDashboard_OSBotManager.Rows.RemoveAt(rowIndex);
                 }
             }
         }
@@ -1162,7 +1178,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Save
         public void btnOSBotManager_Save_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(kryptonDataGridViewDashboard_OSBotManager, filePathApplicationDataAccountsOSBot);
+            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(dataGridViewDashboard_OSBotManager, filePathApplicationDataAccountsOSBot);
         }
 
         //////////////////////////////
@@ -1182,12 +1198,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // DreamBot Manager Panel - CLI Launch
         public void dataGridView_DreamBotRun_CellButtonClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < kryptonDataGridViewDashboard_DreamBotManager.Rows.Count)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridViewDashboard_DreamBotManager.Rows.Count)
             {
 
                 // Point to dataGridView
-                DataGridViewRow clickedRow = kryptonDataGridViewDashboard_DreamBotManager.Rows[e.RowIndex];
-                string account = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Account"].Value?.ToString();
+                DataGridViewRow clickedRow = dataGridViewDashboard_DreamBotManager.Rows[e.RowIndex];
+                string account = clickedRow.Cells["dataGridViewDashboard_DreamBotManager_Account"].Value?.ToString();
 
                 // Get all the currently running Java processes with their arguments and process ID.
                 var javaProcessesList = invokeMethodsPassiveMainForm.Invoke_GetJavaCommandLineArgsAndProcessId();
@@ -1207,30 +1223,34 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 }
 
                 // Create Cli Args
-                if (processIdToKill == -1 && e.ColumnIndex == kryptonDataGridViewDashboard_DreamBotManager.Columns["kryptonDataGridViewDashboard_DreamBotManager_RunStop"].Index && e.RowIndex >= 0)
+                if (processIdToKill == -1 && e.ColumnIndex == dataGridViewDashboard_DreamBotManager.Columns["dataGridViewDashboard_DreamBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
 
                     // Initialize Variables
-                    string breaks = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Breaks"].Value?.ToString();
+                    string breaks = clickedRow.Cells["dataGridViewDashboard_DreamBotManager_Breaks"].Value?.ToString();
+                    string clickWalk = "";
                     string covert = "-no-covert ";
                     string freshStart = "-no-fresh ";
+                    string handle2FA = "";
+                    string jagexAccount = "";
                     string layout = "-layout fixed ";
                     string loginInfoDreamBot = "-username " + textBoxSettings_DreamBotUsername.Text.ToString() + " " + "-password " + textBoxSettings_DreamBotPassword.Text.ToString() + " ";
-                    string password = "-accountPassword " + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Password"].Value?.ToString() + " ";
-                    string pin = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Pin"].Value?.ToString();
-                    string proxy = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Proxy"].Value?.ToString();
+                    string menuManipulation = "";
+                    string password = "-accountPassword " + clickedRow.Cells["dataGridViewDashboard_DreamBotManager_Password"].Value?.ToString() + " ";
+                    string pin = clickedRow.Cells["dataGridViewDashboard_DreamBotManager_Pin"].Value?.ToString();
+                    string proxy = clickedRow.Cells["dataGridViewDashboard_DreamBotManager_Proxy"].Value?.ToString();
                     string render = "-render all ";
                     string sandboxie = "No";
-                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_SandboxieNumber"].Value?.ToString();
-                    string script = "-script " + "\"" + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Script"].Value?.ToString() + "\"" + " ";
-                    string scriptParams = clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Args"].Value?.ToString();
-                    string world = "-world " + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_World"].Value?.ToString() + " ";
+                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["dataGridViewDashboard_DreamBotManager_SandboxieNumber"].Value?.ToString();
+                    string script = "-script " + "\"" + clickedRow.Cells["dataGridViewDashboard_DreamBotManager_Script"].Value?.ToString() + "\"" + " ";
+                    string scriptParams = clickedRow.Cells["dataGridViewDashboard_DreamBotManager_Args"].Value?.ToString();
+                    string world = "-world " + clickedRow.Cells["dataGridViewDashboard_DreamBotManager_World"].Value?.ToString() + " ";
 
                     // Initialize the mode mappings
                     var modeMappings = new Dictionary<string, string> { { "Normal - Render", "-no-covert -render all " }, { "Normal - No Render", "-no-covert -render none " }, { "Covert - Render", "-covert -render all " }, { "Covert - No Render", "-covert -render none " } };
 
                     // Set account variable
-                    account = "-accountUsername " + clickedRow.Cells["kryptonDataGridViewDashboard_DreamBotManager_Account"].Value?.ToString() + " ";
+                    account = "-accountUsername " + clickedRow.Cells["dataGridViewDashboard_DreamBotManager_Account"].Value?.ToString() + " ";
 
                     // Set Pin Variable
                     pin = string.IsNullOrWhiteSpace(pin) ? "-accountPin 1234 " : "-accountPin " + pin + " ";
@@ -1257,8 +1277,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     {
                         Dictionary<string, Action> additionalSettingsMap = new Dictionary<string, Action>
                         {
+                            {"No Click Walk", () => clickWalk = "-no-click-walk "},
                             {"Covert", () => covert = "-covert "},
                             {"Fresh Start", () => freshStart = "-fresh "},
+                            {"Handle 2FA", () => handle2FA = "-accountTotp "},
+                            {"Jagex Account", () => jagexAccount = "-newAccountSystem "},
+                            {"Menu Manipulation", () => menuManipulation = "-menu-manipulation "},
                             {"No Render", () => render = "-render none "},
                             {"Resizable Mode", () => layout = "-layout resizable_modern "},
                             {"Sandboxie", () => sandboxie = "Yes"}
@@ -1285,7 +1309,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     if (sandboxie == "No")
                     {
                         //Initialize CliArgs Variable//
-                        cliArgs = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptParams + breaks + world + covert + freshStart + render + layout + "-fps 25";
+                        cliArgs = "-jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptParams + breaks + world + clickWalk + covert + freshStart + menuManipulation + render + layout + jagexAccount + handle2FA;
 
                         // Start Cli Process
                         try
@@ -1319,7 +1343,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     {
                         // Initialize Variables
                         var enabledSandboxes = invokeMethodsPassiveMainForm.Invoke_GetSandboxList(filePathSandboxieIni);
-                        cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\" -jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptParams + breaks + world + covert + freshStart + render + layout + "-fps 25";
+                        cliArgs = "/elevate /nosbiectrl /silent /wait /box:" + sandboxieNumber + " \"C:\\Users\\" + Environment.UserName.ToString() + "\\Jivaro\\Old School RuneScape Bot Manager\\Main\\java\\bin\\javaw.exe\" -jar \"C:\\Users\\" + Environment.UserName.ToString() + "\\DreamBot\\BotData\\client.jar\" " + loginInfoDreamBot + account + password + pin + proxy + script + scriptParams + breaks + world + clickWalk + covert + freshStart + menuManipulation + render + layout + jagexAccount + handle2FA;
 
                         //Create Sandbox If It Doesn't Exist//
                         if (!enabledSandboxes.Contains(sandboxieNumber))
@@ -1348,7 +1372,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         }
                     }
                 }
-                else if (processIdToKill != -1 && e.ColumnIndex == kryptonDataGridViewDashboard_DreamBotManager.Columns["kryptonDataGridViewDashboard_DreamBotManager_RunStop"].Index && e.RowIndex >= 0)
+                else if (processIdToKill != -1 && e.ColumnIndex == dataGridViewDashboard_DreamBotManager.Columns["dataGridViewDashboard_DreamBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
                     try
                     {
@@ -1377,33 +1401,33 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             DataGridViewRow newRow = new DataGridViewRow();
 
             // Add Row to DataGridView
-            int rowIndex = kryptonDataGridViewDashboard_DreamBotManager.Rows.Add(newRow);
+            int rowIndex = dataGridViewDashboard_DreamBotManager.Rows.Add(newRow);
 
             // Set Default Values
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Account"].Value = "ACCOUNT_EMAIL";
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Password"].Value = "PASSWORD";
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Pin"].Value = "1234";
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Script"].Value = "0x's Aerial Fish Catcher";
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Args"].Value = "SCRIPT_ARGS";
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_Breaks"].Value = "BREAK_NICKNAME";
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_World"].Value = "f2p";
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_Account"].Value = "ACCOUNT_EMAIL";
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_Password"].Value = "PASSWORD";
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_Pin"].Value = "1234";
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_Script"].Value = "0x's Aerial Fish Catcher";
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_Args"].Value = "SCRIPT_ARGS";
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_Breaks"].Value = "BREAK_NICKNAME";
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_World"].Value = "f2p";
 
             // Generate a unique random number for Sandboxie
             int randomNumber = Invoke_GenerateUniqueRandomNumber();
-            kryptonDataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_DreamBotManager_SandboxieNumber"].Value = randomNumber;
+            dataGridViewDashboard_DreamBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_DreamBotManager_SandboxieNumber"].Value = randomNumber;
         }
 
         // Btn Click - Delete Bot
         public void btnDreamBotManager_DeleteAccount_Click(object sender, EventArgs e)
         {
             // Check if any cell is currently selected
-            if (kryptonDataGridViewDashboard_DreamBotManager.CurrentCell != null)
+            if (dataGridViewDashboard_DreamBotManager.CurrentCell != null)
             {
-                int rowIndex = kryptonDataGridViewDashboard_DreamBotManager.CurrentCell.RowIndex;
+                int rowIndex = dataGridViewDashboard_DreamBotManager.CurrentCell.RowIndex;
                 if (rowIndex >= 0) // Check if the rowIndex is valid
                 {
-                    kryptonDataGridViewDashboard_DreamBotManager.Rows.RemoveAt(rowIndex);
+                    dataGridViewDashboard_DreamBotManager.Rows.RemoveAt(rowIndex);
                 }
             }
         }
@@ -1417,7 +1441,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // DreamBot Manager Panel - Save
         public void btnDreamBotManager_Save_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(kryptonDataGridViewDashboard_DreamBotManager, filePathApplicationDataAccountsDreamBot);
+            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(dataGridViewDashboard_DreamBotManager, filePathApplicationDataAccountsDreamBot);
         }
 
         /////////////////////////////////
@@ -1438,12 +1462,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         public void dataGridView_TRiBotRun_CellButtonClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            if (e.RowIndex >= 0 && e.RowIndex < kryptonDataGridViewDashboard_TRiBotManager.Rows.Count)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridViewDashboard_TRiBotManager.Rows.Count)
             {
 
                 // Point to dataGridView
-                DataGridViewRow clickedRow = kryptonDataGridViewDashboard_TRiBotManager.Rows[e.RowIndex];
-                string account = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Account"].Value?.ToString();
+                DataGridViewRow clickedRow = dataGridViewDashboard_TRiBotManager.Rows[e.RowIndex];
+                string account = clickedRow.Cells["dataGridViewDashboard_TRiBotManager_Account"].Value?.ToString();
 
                 // Get all the currently running Java processes with their arguments and process ID.
                 var javaProcessesList = invokeMethodsPassiveMainForm.Invoke_GetJavaCommandLineArgsAndProcessId();
@@ -1462,24 +1486,24 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                     }
                 }
 
-                if (processIdToKill == -1 && e.ColumnIndex == kryptonDataGridViewDashboard_TRiBotManager.Columns["kryptonDataGridViewDashboard_TRiBotManager_RunStop"].Index && e.RowIndex >= 0)
+                if (processIdToKill == -1 && e.ColumnIndex == dataGridViewDashboard_TRiBotManager.Columns["dataGridViewDashboard_TRiBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
 
                     // Initialize Variables
                     string loginInfoTRiBot = "--username " + "\"" + textBoxSettings_TRiBotEmail.Text.ToString() + "\" " + "--password " + "\"" + textBoxSettings_TRiBotPassword.Text.ToString() + "\" ";
-                    string breaks = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Breaks"].Value?.ToString();
-                    string password = "--charpassword " + "\"" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Password"].Value?.ToString() + "\" ";
+                    string breaks = clickedRow.Cells["dataGridViewDashboard_TRiBotManager_Breaks"].Value?.ToString();
+                    string password = "--charpassword " + "\"" + clickedRow.Cells["dataGridViewDashboard_TRiBotManager_Password"].Value?.ToString() + "\" ";
                     string lookingGlass = "";
-                    string pin = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Pin"].Value?.ToString();
-                    string proxy = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Proxy"].Value?.ToString();
+                    string pin = clickedRow.Cells["dataGridViewDashboard_TRiBotManager_Pin"].Value?.ToString();
+                    string proxy = clickedRow.Cells["dataGridViewDashboard_TRiBotManager_Proxy"].Value?.ToString();
                     string sandboxie = "No";
-                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_SandboxieNumber"].Value?.ToString();
-                    string script = "--script \"" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Script"].Value?.ToString() + "\" ";
-                    string scriptArgs = "--scriptargs " + "\"" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Args"].Value?.ToString() + "\" ";
-                    string world = clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_World"].Value?.ToString();
+                    string sandboxieNumber = "JIVARO" + clickedRow.Cells["dataGridViewDashboard_TRiBotManager_SandboxieNumber"].Value?.ToString();
+                    string script = "--script \"" + clickedRow.Cells["dataGridViewDashboard_TRiBotManager_Script"].Value?.ToString() + "\" ";
+                    string scriptArgs = "--scriptargs " + "\"" + clickedRow.Cells["dataGridViewDashboard_TRiBotManager_Args"].Value?.ToString() + "\" ";
+                    string world = clickedRow.Cells["dataGridViewDashboard_TRiBotManager_World"].Value?.ToString();
 
                     // Set account variable
-                    account = "--charusername \"" + clickedRow.Cells["kryptonDataGridViewDashboard_TRiBotManager_Account"].Value?.ToString() + "\" ";
+                    account = "--charusername \"" + clickedRow.Cells["dataGridViewDashboard_TRiBotManager_Account"].Value?.ToString() + "\" ";
 
                     // Set pin variable
                     pin = string.IsNullOrWhiteSpace(pin) ? "" : "--charpin \"" + pin + "\" ";
@@ -1606,7 +1630,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                         Console.WriteLine("Sandboxie CLI Args: " + cliCommand + cliArgs);
                     }
                 }
-                else if (processIdToKill != -1 && e.ColumnIndex == kryptonDataGridViewDashboard_TRiBotManager.Columns["kryptonDataGridViewDashboard_TRiBotManager_RunStop"].Index && e.RowIndex >= 0)
+                else if (processIdToKill != -1 && e.ColumnIndex == dataGridViewDashboard_TRiBotManager.Columns["dataGridViewDashboard_TRiBotManager_RunStop"].Index && e.RowIndex >= 0)
                 {
                     try
                     {
@@ -1635,33 +1659,33 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
             DataGridViewRow newRow = new DataGridViewRow();
 
             // Add Row to DataGridView
-            int rowIndex = kryptonDataGridViewDashboard_TRiBotManager.Rows.Add(newRow);
+            int rowIndex = dataGridViewDashboard_TRiBotManager.Rows.Add(newRow);
 
             // Set default values
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Account"].Value = "ACCOUNT_EMAIL";
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Password"].Value = "PASSWORD";
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Pin"].Value = "1234";
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Script"].Value = "aAgility AIO";
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Args"].Value = "SCRIPT_ARGS";
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_Breaks"].Value = "BREAK_NAME";
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_World"].Value = "-F2P-";
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_Account"].Value = "ACCOUNT_EMAIL";
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_Password"].Value = "PASSWORD";
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_Pin"].Value = "1234";
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_Proxy"].Value = "IP:PORT:USER:PASS";
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_Script"].Value = "aAgility AIO";
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_Args"].Value = "SCRIPT_ARGS";
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_Breaks"].Value = "BREAK_NAME";
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_World"].Value = "-F2P-";
 
             // Generate a unique random number for Sandboxie
             int randomNumber = Invoke_GenerateUniqueRandomNumber();
-            kryptonDataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["kryptonDataGridViewDashboard_TRiBotManager_SandboxieNumber"].Value = randomNumber;
+            dataGridViewDashboard_TRiBotManager.Rows[rowIndex].Cells["dataGridViewDashboard_TRiBotManager_SandboxieNumber"].Value = randomNumber;
         }
 
         // Btn Click - Delete Bot
         public void btnTRiBotManager_DeleteAccount_Click(object sender, EventArgs e)
         {
             // Check if any cell is currently selected
-            if (kryptonDataGridViewDashboard_TRiBotManager.CurrentCell != null)
+            if (dataGridViewDashboard_TRiBotManager.CurrentCell != null)
             {
-                int rowIndex = kryptonDataGridViewDashboard_TRiBotManager.CurrentCell.RowIndex;
+                int rowIndex = dataGridViewDashboard_TRiBotManager.CurrentCell.RowIndex;
                 if (rowIndex >= 0) // Check if the rowIndex is valid
                 {
-                    kryptonDataGridViewDashboard_TRiBotManager.Rows.RemoveAt(rowIndex);
+                    dataGridViewDashboard_TRiBotManager.Rows.RemoveAt(rowIndex);
                 }
             }
         }
@@ -1675,7 +1699,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // DreamBot Manager Panel - Save
         public void btnTRiBotManager_Save_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(kryptonDataGridViewDashboard_TRiBotManager, filePathApplicationDataAccountsTRiBot);
+            invokeMethodsActiveMainForm.Invoke_SaveDataGridViewToFile(dataGridViewDashboard_TRiBotManager, filePathApplicationDataAccountsTRiBot);
         }
 
         ///////////////////////////////
@@ -1805,18 +1829,18 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 {"fxAccountBuilder.txt", typeof(formScriptProfilesAccountBuilder)},
                 {"fxAccountBuilder-MasterFarmer.txt", typeof(formScriptProfilesAccountBuilderMasterFarmer)},
                 {"fxAgility-Rooftops.txt", typeof(formScriptProfilesAgilityRooftops)},
-                {"fxCooking-RangeAndFire.txt", typeof(formScriptProfilesCookingRangeAndFire)},
+                {"fxCooking-AIO.txt", typeof(formScriptProfilesCookingAIO)},
                 {"fxFarming-TitheFarm.txt", typeof(formScriptProfilesFarmingTitheFarm)},
+                {"fxFighter-ChaosTemple.txt", typeof(formScriptProfilesFighterChaosTemple)},
                 {"fxFighter-DustDevils.txt", typeof(formScriptProfilesFighterDustDevils)},
-                {"fxFighter-ElderChaosDruids.txt", typeof(formScriptProfilesFighterElderChaosDruids)},
                 {"fxFighter-Kurasks.txt", typeof(formScriptProfilesFighterKurasks)},
-                {"fxFighter-Vyres.txt", typeof(formScriptProfilesFighterVyres)},
+                {"fxFighter-LavaDragons.txt", typeof(formScriptProfilesFighterLavaDragons)},
+                {"fxFighter-RuneDragons.txt", typeof(formScriptProfilesFighterRuneDragons)},
+                {"fxFighter-VyrewatchSentinels.txt", typeof(formScriptProfilesFighterVyrewatchSentinels)},
                 {"fxFiremaking-GrandExchange.txt", typeof(formScriptProfilesFiremakingGrandExchange)},
                 {"fxFletching-Longbows.txt", typeof(formScriptProfilesFletchingLongbows)},
                 {"fxGeneric.txt", typeof(formScriptProfilesGeneric)},
                 {"fxHerblore-CleanHerbs.txt", typeof(formScriptProfilesHerbloreCleanHerbs)},
-                {"fxLOTR-Aragorn.txt", typeof(formScriptProfilesLOTRAragorn)},
-                {"fxLOTR-Gandalf.txt", typeof(formScriptProfilesLOTRGandalf)},
                 {"fxMagic-HouseAlcher.txt", typeof(formScriptProfilesMagicHouseAlcher)},
                 {"fxMagic-Orber.txt", typeof(formScriptProfilesMagicOrber)},
                 {"fxMiniGames-RoguesDen.txt", typeof(formScriptProfilesMiniGamesRoguesDen)},
@@ -1825,13 +1849,16 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 {"fxMuler.txt", typeof(formScriptProfilesMuler)},
                 {"fxPrayer-GildedAltar.txt", typeof(formScriptProfilesPrayerGildedAltar)},
                 {"fxProgressiveFighter-Magic.txt", typeof(formScriptProfilesProgressiveFighterMagic)},
+                {"fxProgressiveFighter-Melee.txt", typeof(formScriptProfilesProgressiveFighterMelee)},
                 {"fxProgressiveFighter-Ranged.txt", typeof(formScriptProfilesProgressiveFighterRanged)},
                 {"fxRunecrafting-Abyss.txt", typeof(formScriptProfilesRunecraftingAbyss)},
                 {"fxRunecrafting-Zeah.txt", typeof(formScriptProfilesRunecraftingZeah)},
                 {"fxSlayer-AIO.txt", typeof(formScriptProfilesSlayerAIO)},
+                {"fxSmithing-AIO.txt", typeof(formScriptProfilesSmithingAIO)},
+                {"fxThieving-Elves.txt", typeof(formScriptProfilesThievingElves)},
                 {"fxThieving-MasterFarmers.txt", typeof(formScriptProfilesThievingMasterFarmers)},
-                {"fxThieving-Pickpocket.txt", typeof(formScriptProfilesThievingPickpocket)},
-                {"fxThieving-Vyres.txt", typeof(formScriptProfilesThievingVyres)},
+                {"fxThieving-AIO.txt", typeof(formScriptProfilesThievingAIO)},
+                {"fxThieving-VyrewatchSentinels.txt", typeof(formScriptProfilesThievingVyrewatchSentinels)},
                 {"fxTutorial.txt", typeof(formScriptProfilesTutorial)}
             };
 
@@ -1965,7 +1992,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Join Jivaro's Discor
         public void btnSettings_JoinDiscord_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveGlobal.Invoke_OpenLink("https://discord.gg/FSzuW4mR4M");
+            invokeMethodsActiveGlobal.Invoke_OpenLink("https://discord.gg/GDfX5BFGye");
         }
 
         // Btn Click - Kill All Bots
@@ -1983,7 +2010,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Open Botting Guide's Webpage
         public void btnSettings_BottingGuide_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveGlobal.Invoke_OpenLink("https://www.jivaro.net/media/guides/the-ultimate-guide-to-botting-old-school-runescape");
+            invokeMethodsActiveGlobal.Invoke_OpenLink("https://www.jivaro.net/content/guides/the-ultimate-guide-to-botting-old-school-runescape");
         }
 
         // Btn Click - Open Buy Proxies' Webpage
@@ -2000,7 +2027,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Btn Click - Open Setup Guide
         public void btnSettings_SetupGuide_Click(object sender, EventArgs e)
         {
-            invokeMethodsActiveGlobal.Invoke_OpenLink("https://jivaro.net/osrs-botting/set-up-guide");
+            invokeMethodsActiveGlobal.Invoke_OpenLink("https://jivaro.net/downloads/programs/info/jivaro-old-school-runescape-bot-manager");
         }
 
         // Btn Click - Save Login Info
@@ -2225,10 +2252,10 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
         // Invoke - Check If Random Number is Being Used in Various DataGridViews
         public bool Invoke_IsRandomNumberInUse(int number)
         {
-            return IsNumberInDataGridView(kryptonDataGridViewDashboard_ScriptFactoryManager, "kryptonDataGridViewDashboard_ScriptFactory_SandboxieNumber", number) ||
-                   IsNumberInDataGridView(kryptonDataGridViewDashboard_OSBotManager, "kryptonDataGridViewDashboard_OSBotManager_SandboxieNumber", number) ||
-                   IsNumberInDataGridView(kryptonDataGridViewDashboard_DreamBotManager, "kryptonDataGridViewDashboard_DreamBotManager_SandboxieNumber", number) ||
-                   IsNumberInDataGridView(kryptonDataGridViewDashboard_TRiBotManager, "kryptonDataGridViewDashboard_TRiBotManager_SandboxieNumber", number);
+            return IsNumberInDataGridView(dataGridViewDashboard_ScriptFactoryManager, "dataGridViewDashboard_ScriptFactory_SandboxieNumber", number) ||
+                   IsNumberInDataGridView(dataGridViewDashboard_OSBotManager, "dataGridViewDashboard_OSBotManager_SandboxieNumber", number) ||
+                   IsNumberInDataGridView(dataGridViewDashboard_DreamBotManager, "dataGridViewDashboard_DreamBotManager_SandboxieNumber", number) ||
+                   IsNumberInDataGridView(dataGridViewDashboard_TRiBotManager, "dataGridViewDashboard_TRiBotManager_SandboxieNumber", number);
         }
 
         public bool IsNumberInDataGridView(DataGridView dgv, string columnName, int number)
@@ -2593,6 +2620,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager
                 Console.WriteLine($"Button with name '{buttonName}' not found on the form.");
             }
         }
+
 
         ////////////////////////////
         //End of Graphical Methods//

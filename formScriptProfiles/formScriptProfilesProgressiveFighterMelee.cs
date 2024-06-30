@@ -2,12 +2,12 @@
 
 namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
-    public partial class formScriptProfilesLOTRAragorn : Form
+    public partial class formScriptProfilesProgressiveFighterMelee : Form
     {
         // Initialize Instances
         public formMainForm MainForm;
 
-        public formScriptProfilesLOTRAragorn(formMainForm mainForm)
+        public formScriptProfilesProgressiveFighterMelee(formMainForm mainForm)
         {
             InitializeComponent();
             MainForm = mainForm;
@@ -24,30 +24,30 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
-        string filepathProfileAragorn = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxLOTR-Aragorn.txt");
+        string filepathProfileAragorn = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxProgressiveFighter-Melee.txt");
 
         // Form Load
-        public void formScriptProfiles_Aragorn_Load(object sender, EventArgs e)
+        public void formScriptProfiles_ProgressiveFighterMelee_Load(object sender, EventArgs e)
         {
-            comboBoxScriptProfiles_Aragorn_SelectNpc.SelectedIndex = 0;
+            comboBoxScriptProfiles_ProgressiveFighterMelee_SelectNpc.SelectedIndex = 0;
         }
 
         // Btn Click - Save Profile
-        public void btnScriptProfiles_Aragorn_SaveButton_Click(object sender, EventArgs e)
+        public void btnScriptProfiles_ProgressiveFighterMelee_SaveButton_Click(object sender, EventArgs e)
         {
             // Set Checkbox Variables
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                {"boolDisableGearChecks", checkBoxScriptProfiles_Aragorn_DisableGearChecks},
-                {"boolEnableAntipattern", checkBoxScriptProfiles_Aragorn_Antipattern},
-                {"boolEnableBuryBones", checkBoxScriptProfiles_Aragorn_BuryBigBones},
-                {"boolEnableDeathHandler", checkBoxScriptProfiles_Aragorn_DeathHandler},
-                {"boolEnableFightObor", checkBoxScriptProfiles_Aragorn_FightObor},
-                {"boolEnableHopWorlds", checkBoxScriptProfiles_Aragorn_WorldHopping},
-                {"boolEnableProgressiveTraining", checkBoxScriptProfiles_Aragorn_TrainStatsEvenly},
-                {"boolEnableRenewBond", checkBoxScriptProfiles_Aragorn_RenewBond},
-                {"boolEnableRestocking", checkBoxScriptProfiles_Aragorn_Restocking},
-                {"boolEnableSellLoot", checkBoxScriptProfiles_Aragorn_SellLoot}
+                {"boolDisableGearChecks", checkBoxScriptProfiles_ProgressiveFighterMelee_DisableGearChecks},
+                {"boolEnableAntipattern", checkBoxScriptProfiles_ProgressiveFighterMelee_Antipattern},
+                {"boolEnableBuryBones", checkBoxScriptProfiles_ProgressiveFighterMelee_BuryBigBones},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_ProgressiveFighterMelee_DeathHandler},
+                {"boolEnableFightObor", checkBoxScriptProfiles_ProgressiveFighterMelee_FightObor},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_ProgressiveFighterMelee_WorldHopping},
+                {"boolEnableProgressiveTraining", checkBoxScriptProfiles_ProgressiveFighterMelee_TrainStatsEvenly},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_ProgressiveFighterMelee_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_ProgressiveFighterMelee_Restocking},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_ProgressiveFighterMelee_SellLoot}
             };
 
             foreach (var checkboxPair in checkBoxMappings)
@@ -72,12 +72,12 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
-                writer.WriteLine("\nAragorn Settings");
+                writer.WriteLine("\nProgressive Fighter Settings");
                 writer.WriteLine(boolDisableGearChecks);
                 writer.WriteLine(boolEnableBuryBones);
                 writer.WriteLine(boolEnableFightObor);
                 writer.WriteLine(boolEnableProgressiveTraining);
-                writer.WriteLine("<Find>Progressive/*/Chickens/*/Giant Frogs/*/Hill Giants/*/Sand Crabs/*/Chaos Druids</Find><Replace>" + comboBoxScriptProfiles_Aragorn_SelectNpc.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>Progressive/*/ChaosDruids/*/Chickens/*/FireGiants/*/GiantFrogs/*/Goblins/*/GreaterDemons/*/Guards/*/HillGiants/*/Hobgoblins/*/IceGiants/*/MossGiants/*/Pirates/*/Seagulls/*/Skeletons/*/Zombies</Find><Replace>" + comboBoxScriptProfiles_ProgressiveFighterMelee_SelectNpc.SelectedItem.ToString() + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

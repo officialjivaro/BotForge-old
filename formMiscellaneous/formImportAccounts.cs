@@ -61,7 +61,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                 File.AppendAllLines(MainForm.filePathApplicationDataAccountsScriptFactory, formattedLines);
 
                 // Repopulate dataGridView
-                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.kryptonDataGridViewDashboard_ScriptFactoryManager, MainForm.filePathApplicationDataAccountsScriptFactory);
+                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.dataGridViewDashboard_ScriptFactoryManager, MainForm.filePathApplicationDataAccountsScriptFactory);
             }
 
             catch (Exception ex)
@@ -118,7 +118,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                 File.AppendAllLines(MainForm.filePathApplicationDataAccountsOSBot, formattedLines);
 
                 // Repopulate dataGridView
-                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.kryptonDataGridViewDashboard_OSBotManager, MainForm.filePathApplicationDataAccountsOSBot);
+                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.dataGridViewDashboard_OSBotManager, MainForm.filePathApplicationDataAccountsOSBot);
             }
 
             catch (Exception ex)
@@ -175,7 +175,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                 File.AppendAllLines(MainForm.filePathApplicationDataAccountsDreamBot, formattedLines);
 
                 // Repopulate dataGridView
-                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.kryptonDataGridViewDashboard_DreamBotManager, MainForm.filePathApplicationDataAccountsDreamBot);
+                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.dataGridViewDashboard_DreamBotManager, MainForm.filePathApplicationDataAccountsDreamBot);
             }
 
             catch (Exception ex)
@@ -232,7 +232,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
                 File.AppendAllLines(MainForm.filePathApplicationDataAccountsTRiBot, formattedLines);
 
                 // Repopulate dataGridView
-                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.kryptonDataGridViewDashboard_TRiBotManager, MainForm.filePathApplicationDataAccountsTRiBot);
+                invokeMethodsPassiveMainForm.Invoke_PopulateDataGridView(MainForm.dataGridViewDashboard_TRiBotManager, MainForm.filePathApplicationDataAccountsTRiBot);
             }
 
             catch (Exception ex)

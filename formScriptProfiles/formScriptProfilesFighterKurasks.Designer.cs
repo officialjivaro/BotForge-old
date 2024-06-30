@@ -35,7 +35,7 @@
             labelScriptProfiles_Kurasks_RangedCape = new Label();
             labelScriptProfiles_Kurasks_SelectMode = new Label();
             comboBoxScriptProfiles_Kurasks_SelectMode = new ComboBox();
-            checkBoxScriptProfiles_FighterKurasks_HighAlching = new CheckBox();
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy = new CheckBox();
             checkBoxScriptProfiles_FighterKurasks_WorldHopping = new CheckBox();
             checkBoxScriptProfiles_FighterKurasks_Restocking = new CheckBox();
             checkBoxScriptProfiles_FighterKurasks_SellLoot = new CheckBox();
@@ -71,7 +71,6 @@
             labelScriptProfiles_Kurasks_MeleeFeet = new Label();
             labelScriptProfiles_Kurasks_MeleeCape = new Label();
             labelScriptProfiles_Kurasks_MiscAmulet = new Label();
-            labelScriptProfiles_Kurasks_MiscShield = new Label();
             textBoxScriptProfiles_Kurasks_MeleeCape = new TextBox();
             textBoxScriptProfiles_Kurasks_MeleeChest = new TextBox();
             textBoxScriptProfiles_Kurasks_MeleeRing = new TextBox();
@@ -81,13 +80,16 @@
             textBoxScriptProfiles_Kurasks_MeleeHands = new TextBox();
             textBoxScriptProfiles_Kurasks_MeleeWeapon = new TextBox();
             textBoxScriptProfiles_Kurasks_MeleeArrow = new TextBox();
-            textBoxScriptProfiles_Kurasks_MiscShield = new TextBox();
             textBoxScriptProfiles_Kurasks_MiscAmulet = new TextBox();
             labelScriptProfiles_Kurasks_SelectPotion = new Label();
             comboBoxScriptProfiles_Kurasks_SelectPotion = new ComboBox();
             labelScriptProfiles_AccountBuilder_Header = new Label();
             label1 = new Label();
             label2 = new Label();
+            textBoxScriptProfiles_Kurasks_MeleeShield = new TextBox();
+            labelScriptProfiles_Kurasks_MeleeShield = new Label();
+            textBoxScriptProfiles_Kurasks_RangedShield = new TextBox();
+            labelScriptProfiles_Kurasks_RangedShield = new Label();
             SuspendLayout();
             // 
             // labelScriptProfiles_Kurasks_RangedChest
@@ -133,7 +135,7 @@
             // labelScriptProfiles_Kurasks_SelectMode
             // 
             labelScriptProfiles_Kurasks_SelectMode.AutoSize = true;
-            labelScriptProfiles_Kurasks_SelectMode.Location = new Point(800, 275);
+            labelScriptProfiles_Kurasks_SelectMode.Location = new Point(800, 250);
             labelScriptProfiles_Kurasks_SelectMode.Margin = new Padding(0);
             labelScriptProfiles_Kurasks_SelectMode.Name = "labelScriptProfiles_Kurasks_SelectMode";
             labelScriptProfiles_Kurasks_SelectMode.Size = new Size(91, 18);
@@ -145,25 +147,25 @@
             comboBoxScriptProfiles_Kurasks_SelectMode.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_Kurasks_SelectMode.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_Kurasks_SelectMode.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_Kurasks_SelectMode.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_Kurasks_SelectMode.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_Kurasks_SelectMode.FormattingEnabled = true;
             comboBoxScriptProfiles_Kurasks_SelectMode.Items.AddRange(new object[] { "Ranged", "Melee" });
-            comboBoxScriptProfiles_Kurasks_SelectMode.Location = new Point(800, 300);
+            comboBoxScriptProfiles_Kurasks_SelectMode.Location = new Point(800, 275);
             comboBoxScriptProfiles_Kurasks_SelectMode.Margin = new Padding(0);
             comboBoxScriptProfiles_Kurasks_SelectMode.Name = "comboBoxScriptProfiles_Kurasks_SelectMode";
             comboBoxScriptProfiles_Kurasks_SelectMode.Size = new Size(125, 26);
             comboBoxScriptProfiles_Kurasks_SelectMode.TabIndex = 155;
             // 
-            // checkBoxScriptProfiles_FighterKurasks_HighAlching
+            // checkBoxScriptProfiles_FighterKurasks_HighAlchemy
             // 
-            checkBoxScriptProfiles_FighterKurasks_HighAlching.AutoSize = true;
-            checkBoxScriptProfiles_FighterKurasks_HighAlching.Location = new Point(50, 477);
-            checkBoxScriptProfiles_FighterKurasks_HighAlching.Margin = new Padding(0);
-            checkBoxScriptProfiles_FighterKurasks_HighAlching.Name = "checkBoxScriptProfiles_FighterKurasks_HighAlching";
-            checkBoxScriptProfiles_FighterKurasks_HighAlching.Size = new Size(117, 22);
-            checkBoxScriptProfiles_FighterKurasks_HighAlching.TabIndex = 148;
-            checkBoxScriptProfiles_FighterKurasks_HighAlching.Text = "High Alchemy";
-            checkBoxScriptProfiles_FighterKurasks_HighAlching.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy.AutoSize = true;
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy.Location = new Point(50, 477);
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy.Name = "checkBoxScriptProfiles_FighterKurasks_HighAlchemy";
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy.Size = new Size(117, 22);
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy.TabIndex = 148;
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy.Text = "High Alchemy";
+            checkBoxScriptProfiles_FighterKurasks_HighAlchemy.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_FighterKurasks_WorldHopping
             // 
@@ -247,8 +249,8 @@
             btnScriptProfiles_Kurasks_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_Kurasks_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_Kurasks_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_Kurasks_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
-            btnScriptProfiles_Kurasks_SaveProfile.Location = new Point(455, 625);
+            btnScriptProfiles_Kurasks_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
+            btnScriptProfiles_Kurasks_SaveProfile.Location = new Point(455, 670);
             btnScriptProfiles_Kurasks_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_Kurasks_SaveProfile.Name = "btnScriptProfiles_Kurasks_SaveProfile";
             btnScriptProfiles_Kurasks_SaveProfile.Size = new Size(125, 50);
@@ -270,7 +272,7 @@
             // labelScriptProfiles_Kurasks_RangedWeapon
             // 
             labelScriptProfiles_Kurasks_RangedWeapon.AutoSize = true;
-            labelScriptProfiles_Kurasks_RangedWeapon.Location = new Point(250, 570);
+            labelScriptProfiles_Kurasks_RangedWeapon.Location = new Point(250, 620);
             labelScriptProfiles_Kurasks_RangedWeapon.Margin = new Padding(0);
             labelScriptProfiles_Kurasks_RangedWeapon.Name = "labelScriptProfiles_Kurasks_RangedWeapon";
             labelScriptProfiles_Kurasks_RangedWeapon.Size = new Size(64, 18);
@@ -330,7 +332,7 @@
             // 
             // textBoxScriptProfiles_Kurasks_RangedWeapon
             // 
-            textBoxScriptProfiles_Kurasks_RangedWeapon.Location = new Point(350, 565);
+            textBoxScriptProfiles_Kurasks_RangedWeapon.Location = new Point(350, 615);
             textBoxScriptProfiles_Kurasks_RangedWeapon.Margin = new Padding(0);
             textBoxScriptProfiles_Kurasks_RangedWeapon.Name = "textBoxScriptProfiles_Kurasks_RangedWeapon";
             textBoxScriptProfiles_Kurasks_RangedWeapon.Size = new Size(125, 24);
@@ -473,7 +475,7 @@
             // labelScriptProfiles_Kurasks_MeleeWeapon
             // 
             labelScriptProfiles_Kurasks_MeleeWeapon.AutoSize = true;
-            labelScriptProfiles_Kurasks_MeleeWeapon.Location = new Point(525, 570);
+            labelScriptProfiles_Kurasks_MeleeWeapon.Location = new Point(525, 620);
             labelScriptProfiles_Kurasks_MeleeWeapon.Margin = new Padding(0);
             labelScriptProfiles_Kurasks_MeleeWeapon.Name = "labelScriptProfiles_Kurasks_MeleeWeapon";
             labelScriptProfiles_Kurasks_MeleeWeapon.Size = new Size(64, 18);
@@ -529,16 +531,6 @@
             labelScriptProfiles_Kurasks_MiscAmulet.Size = new Size(53, 18);
             labelScriptProfiles_Kurasks_MiscAmulet.TabIndex = 196;
             labelScriptProfiles_Kurasks_MiscAmulet.Text = "Amulet";
-            // 
-            // labelScriptProfiles_Kurasks_MiscShield
-            // 
-            labelScriptProfiles_Kurasks_MiscShield.AutoSize = true;
-            labelScriptProfiles_Kurasks_MiscShield.Location = new Point(775, 220);
-            labelScriptProfiles_Kurasks_MiscShield.Margin = new Padding(0);
-            labelScriptProfiles_Kurasks_MiscShield.Name = "labelScriptProfiles_Kurasks_MiscShield";
-            labelScriptProfiles_Kurasks_MiscShield.Size = new Size(48, 18);
-            labelScriptProfiles_Kurasks_MiscShield.TabIndex = 197;
-            labelScriptProfiles_Kurasks_MiscShield.Text = "Shield";
             // 
             // textBoxScriptProfiles_Kurasks_MeleeCape
             // 
@@ -612,12 +604,12 @@
             // 
             // textBoxScriptProfiles_Kurasks_MeleeWeapon
             // 
-            textBoxScriptProfiles_Kurasks_MeleeWeapon.Location = new Point(625, 565);
+            textBoxScriptProfiles_Kurasks_MeleeWeapon.Location = new Point(625, 615);
             textBoxScriptProfiles_Kurasks_MeleeWeapon.Margin = new Padding(0);
             textBoxScriptProfiles_Kurasks_MeleeWeapon.Name = "textBoxScriptProfiles_Kurasks_MeleeWeapon";
             textBoxScriptProfiles_Kurasks_MeleeWeapon.Size = new Size(125, 24);
             textBoxScriptProfiles_Kurasks_MeleeWeapon.TabIndex = 199;
-            textBoxScriptProfiles_Kurasks_MeleeWeapon.Text = "Abyssal whip";
+            textBoxScriptProfiles_Kurasks_MeleeWeapon.Text = "Leaf-bladed battleaxe";
             textBoxScriptProfiles_Kurasks_MeleeWeapon.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // textBoxScriptProfiles_Kurasks_MeleeArrow
@@ -629,16 +621,6 @@
             textBoxScriptProfiles_Kurasks_MeleeArrow.TabIndex = 198;
             textBoxScriptProfiles_Kurasks_MeleeArrow.Text = "None";
             textBoxScriptProfiles_Kurasks_MeleeArrow.Validating += GlobalMethod_RequireInput_Validating;
-            // 
-            // textBoxScriptProfiles_Kurasks_MiscShield
-            // 
-            textBoxScriptProfiles_Kurasks_MiscShield.Location = new Point(875, 215);
-            textBoxScriptProfiles_Kurasks_MiscShield.Margin = new Padding(0);
-            textBoxScriptProfiles_Kurasks_MiscShield.Name = "textBoxScriptProfiles_Kurasks_MiscShield";
-            textBoxScriptProfiles_Kurasks_MiscShield.Size = new Size(125, 24);
-            textBoxScriptProfiles_Kurasks_MiscShield.TabIndex = 208;
-            textBoxScriptProfiles_Kurasks_MiscShield.Text = "Mirror shield";
-            textBoxScriptProfiles_Kurasks_MiscShield.Validating += GlobalMethod_RequireInput_Validating;
             // 
             // textBoxScriptProfiles_Kurasks_MiscAmulet
             // 
@@ -653,7 +635,7 @@
             // labelScriptProfiles_Kurasks_SelectPotion
             // 
             labelScriptProfiles_Kurasks_SelectPotion.AutoSize = true;
-            labelScriptProfiles_Kurasks_SelectPotion.Location = new Point(800, 350);
+            labelScriptProfiles_Kurasks_SelectPotion.Location = new Point(800, 325);
             labelScriptProfiles_Kurasks_SelectPotion.Margin = new Padding(0);
             labelScriptProfiles_Kurasks_SelectPotion.Name = "labelScriptProfiles_Kurasks_SelectPotion";
             labelScriptProfiles_Kurasks_SelectPotion.Size = new Size(96, 18);
@@ -665,10 +647,10 @@
             comboBoxScriptProfiles_Kurasks_SelectPotion.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_Kurasks_SelectPotion.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_Kurasks_SelectPotion.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_Kurasks_SelectPotion.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_Kurasks_SelectPotion.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_Kurasks_SelectPotion.FormattingEnabled = true;
             comboBoxScriptProfiles_Kurasks_SelectPotion.Items.AddRange(new object[] { "None", "RangingPotion", "CombatPotion", "SuperCombatPotion" });
-            comboBoxScriptProfiles_Kurasks_SelectPotion.Location = new Point(800, 375);
+            comboBoxScriptProfiles_Kurasks_SelectPotion.Location = new Point(800, 350);
             comboBoxScriptProfiles_Kurasks_SelectPotion.Margin = new Padding(0);
             comboBoxScriptProfiles_Kurasks_SelectPotion.Name = "comboBoxScriptProfiles_Kurasks_SelectPotion";
             comboBoxScriptProfiles_Kurasks_SelectPotion.Size = new Size(125, 26);
@@ -705,18 +687,59 @@
             label2.TabIndex = 213;
             label2.Text = "won't support restocking**";
             // 
+            // textBoxScriptProfiles_Kurasks_MeleeShield
+            // 
+            textBoxScriptProfiles_Kurasks_MeleeShield.Location = new Point(625, 565);
+            textBoxScriptProfiles_Kurasks_MeleeShield.Margin = new Padding(0);
+            textBoxScriptProfiles_Kurasks_MeleeShield.Name = "textBoxScriptProfiles_Kurasks_MeleeShield";
+            textBoxScriptProfiles_Kurasks_MeleeShield.Size = new Size(125, 24);
+            textBoxScriptProfiles_Kurasks_MeleeShield.TabIndex = 217;
+            textBoxScriptProfiles_Kurasks_MeleeShield.Text = "Toktz-ket-xil";
+            // 
+            // labelScriptProfiles_Kurasks_MeleeShield
+            // 
+            labelScriptProfiles_Kurasks_MeleeShield.AutoSize = true;
+            labelScriptProfiles_Kurasks_MeleeShield.Location = new Point(525, 570);
+            labelScriptProfiles_Kurasks_MeleeShield.Margin = new Padding(0);
+            labelScriptProfiles_Kurasks_MeleeShield.Name = "labelScriptProfiles_Kurasks_MeleeShield";
+            labelScriptProfiles_Kurasks_MeleeShield.Size = new Size(48, 18);
+            labelScriptProfiles_Kurasks_MeleeShield.TabIndex = 216;
+            labelScriptProfiles_Kurasks_MeleeShield.Text = "Shield";
+            // 
+            // textBoxScriptProfiles_Kurasks_RangedShield
+            // 
+            textBoxScriptProfiles_Kurasks_RangedShield.Location = new Point(350, 565);
+            textBoxScriptProfiles_Kurasks_RangedShield.Margin = new Padding(0);
+            textBoxScriptProfiles_Kurasks_RangedShield.Name = "textBoxScriptProfiles_Kurasks_RangedShield";
+            textBoxScriptProfiles_Kurasks_RangedShield.Size = new Size(125, 24);
+            textBoxScriptProfiles_Kurasks_RangedShield.TabIndex = 215;
+            textBoxScriptProfiles_Kurasks_RangedShield.Text = "Black d'hide shield";
+            // 
+            // labelScriptProfiles_Kurasks_RangedShield
+            // 
+            labelScriptProfiles_Kurasks_RangedShield.AutoSize = true;
+            labelScriptProfiles_Kurasks_RangedShield.Location = new Point(250, 570);
+            labelScriptProfiles_Kurasks_RangedShield.Margin = new Padding(0);
+            labelScriptProfiles_Kurasks_RangedShield.Name = "labelScriptProfiles_Kurasks_RangedShield";
+            labelScriptProfiles_Kurasks_RangedShield.Size = new Size(48, 18);
+            labelScriptProfiles_Kurasks_RangedShield.TabIndex = 214;
+            labelScriptProfiles_Kurasks_RangedShield.Text = "Shield";
+            // 
             // formScriptProfilesFighterKurasks
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1034, 711);
+            BackColor = Color.FromArgb(60, 60, 60);
+            ClientSize = new Size(1034, 736);
+            Controls.Add(textBoxScriptProfiles_Kurasks_MeleeShield);
+            Controls.Add(labelScriptProfiles_Kurasks_MeleeShield);
+            Controls.Add(textBoxScriptProfiles_Kurasks_RangedShield);
+            Controls.Add(labelScriptProfiles_Kurasks_RangedShield);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(labelScriptProfiles_AccountBuilder_Header);
             Controls.Add(comboBoxScriptProfiles_Kurasks_SelectPotion);
             Controls.Add(labelScriptProfiles_Kurasks_SelectPotion);
-            Controls.Add(textBoxScriptProfiles_Kurasks_MiscShield);
             Controls.Add(textBoxScriptProfiles_Kurasks_MiscAmulet);
             Controls.Add(textBoxScriptProfiles_Kurasks_MeleeCape);
             Controls.Add(textBoxScriptProfiles_Kurasks_MeleeChest);
@@ -727,7 +750,6 @@
             Controls.Add(textBoxScriptProfiles_Kurasks_MeleeHands);
             Controls.Add(textBoxScriptProfiles_Kurasks_MeleeWeapon);
             Controls.Add(textBoxScriptProfiles_Kurasks_MeleeArrow);
-            Controls.Add(labelScriptProfiles_Kurasks_MiscShield);
             Controls.Add(labelScriptProfiles_Kurasks_MiscAmulet);
             Controls.Add(labelScriptProfiles_Kurasks_MeleeHands);
             Controls.Add(labelScriptProfiles_Kurasks_MeleeHead);
@@ -761,7 +783,7 @@
             Controls.Add(labelScriptProfiles_Kurasks_RangedCape);
             Controls.Add(labelScriptProfiles_Kurasks_SelectMode);
             Controls.Add(comboBoxScriptProfiles_Kurasks_SelectMode);
-            Controls.Add(checkBoxScriptProfiles_FighterKurasks_HighAlching);
+            Controls.Add(checkBoxScriptProfiles_FighterKurasks_HighAlchemy);
             Controls.Add(checkBoxScriptProfiles_FighterKurasks_WorldHopping);
             Controls.Add(checkBoxScriptProfiles_FighterKurasks_Restocking);
             Controls.Add(checkBoxScriptProfiles_FighterKurasks_SellLoot);
@@ -792,7 +814,7 @@
         public Label labelScriptProfiles_Kurasks_RangedCape;
         public Label labelScriptProfiles_Kurasks_SelectMode;
         public ComboBox comboBoxScriptProfiles_Kurasks_SelectMode;
-        public CheckBox checkBoxScriptProfiles_FighterKurasks_HighAlching;
+        public CheckBox checkBoxScriptProfiles_FighterKurasks_HighAlchemy;
         public CheckBox checkBoxScriptProfiles_FighterKurasks_WorldHopping;
         public CheckBox checkBoxScriptProfiles_FighterKurasks_Restocking;
         public CheckBox checkBoxScriptProfiles_FighterKurasks_SellLoot;
@@ -827,7 +849,6 @@
         public Label labelScriptProfiles_Kurasks_MeleeFeet;
         public Label labelScriptProfiles_Kurasks_MeleeCape;
         public Label labelScriptProfiles_Kurasks_MiscAmulet;
-        public Label labelScriptProfiles_Kurasks_MiscShield;
         public TextBox textBoxScriptProfiles_Kurasks_MeleeCape;
         public TextBox textBoxScriptProfiles_Kurasks_MeleeChest;
         public TextBox textBoxScriptProfiles_Kurasks_MeleeRing;
@@ -837,11 +858,14 @@
         public TextBox textBoxScriptProfiles_Kurasks_MeleeHands;
         public TextBox textBoxScriptProfiles_Kurasks_MeleeWeapon;
         public TextBox textBoxScriptProfiles_Kurasks_MeleeArrow;
-        public TextBox textBoxScriptProfiles_Kurasks_MiscShield;
         public TextBox textBoxScriptProfiles_Kurasks_MiscAmulet;
         public Label labelScriptProfiles_Kurasks_SelectPotion;
         public ComboBox comboBoxScriptProfiles_Kurasks_SelectPotion;
         public Label label1;
         public Label label2;
+        public TextBox textBoxScriptProfiles_Kurasks_MeleeShield;
+        public Label labelScriptProfiles_Kurasks_MeleeShield;
+        public TextBox textBoxScriptProfiles_Kurasks_RangedShield;
+        public Label labelScriptProfiles_Kurasks_RangedShield;
     }
 }

@@ -149,7 +149,7 @@
             btnScriptProfiles_PrayerGildedAltar_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_PrayerGildedAltar_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_PrayerGildedAltar_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_PrayerGildedAltar_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_PrayerGildedAltar_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_PrayerGildedAltar_SaveProfile.Location = new Point(330, 300);
             btnScriptProfiles_PrayerGildedAltar_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_PrayerGildedAltar_SaveProfile.Name = "btnScriptProfiles_PrayerGildedAltar_SaveProfile";
@@ -175,7 +175,7 @@
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.FormattingEnabled = true;
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.Items.AddRange(new object[] { "BigBones", "DragonBones", "LavaDragonBones", "SuperiorDragonBones" });
             comboBoxScriptProfiles_PrayerGildedAltar_SelectBone.Location = new Point(550, 125);
@@ -199,7 +199,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(784, 386);
             Controls.Add(labelScriptProfiles_PrayerGildedAltar_Header);
             Controls.Add(comboBoxScriptProfiles_PrayerGildedAltar_SelectBone);

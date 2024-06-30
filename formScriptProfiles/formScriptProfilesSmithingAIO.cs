@@ -2,12 +2,13 @@
 
 namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
 {
-    public partial class formScriptProfilesGeneric : Form
+    public partial class formScriptProfilesSmithingAIO : Form
     {
+
         // Initialize Instances
         public formMainForm MainForm;
 
-        public formScriptProfilesGeneric(formMainForm mainForm)
+        public formScriptProfilesSmithingAIO(formMainForm mainForm)
         {
             InitializeComponent();
             MainForm = mainForm;
@@ -21,29 +22,30 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableSellLoot = "<Find>boolEnableSellLoot:false</Find><Replace>boolEnableSellLoot:false</Replace>";
+        string filepathProfileSmithingAIO = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\fxSmithing-AIO.txt");
 
-        // Form Load
-        public void formScriptProfiles_Generic_Load(object sender, EventArgs e)
+        // Form load
+        public void formScriptProfiles_SmithingAIO_Load(object sender, EventArgs e)
         {
-            comboBoxScriptProfiles_Generic_SelectScript.SelectedIndex = 0;
+            comboBoxScriptProfiles_SmithingAIO_SelectBar.SelectedIndex = 0;
+            comboBoxScriptProfiles_SmithingAIO_SelectMode.SelectedIndex = 0;
+            comboBoxScriptProfiles_SmithingAIO_SelectItem.SelectedIndex = 0;
+            comboBoxScriptProfiles_SmithingAIO_SelectArea.SelectedIndex = 0;
         }
 
         // Btn Click - Save Profile
-        public void btnScriptProfiles_Generic_SaveButton_Click(object sender, EventArgs e)
+        public void btnScriptProfiles_SmithingAIO_SaveButton_Click(object sender, EventArgs e)
         {
-            // Initialize Variables
-            string filepathProfileGeneric = Path.Combine(@"C:\\Users\\" + Environment.UserName.ToString() + "\\OSBot\\Data\\ProjectPact\\OSRS Script Factory\\Profiles\\" + comboBoxScriptProfiles_Generic_SelectScript.SelectedItem.ToString());
-
             // Set Checkbox Variables
             var checkBoxMappings = new Dictionary<string, CheckBox>
             {
-                {"boolEnableAntipattern", checkBoxScriptProfiles_Generic_Antipattern},
-                {"boolEnableDeathHandler", checkBoxScriptProfiles_Generic_DeathHandler},
-                {"boolEnableDiscordWebhooks", checkBoxScriptProfiles_Generic_DiscordWebhooks},
-                {"boolEnableHopWorlds", checkBoxScriptProfiles_Generic_WorldHopping},
-                {"boolEnableRenewBond", checkBoxScriptProfiles_Generic_RenewBond},
-                {"boolEnableRestocking", checkBoxScriptProfiles_Generic_Restocking},
-                {"boolEnableSellLoot", checkBoxScriptProfiles_Generic_SellLoot}
+                {"boolEnableAntipattern", checkBoxScriptProfiles_SmithingAIO_Antipattern},
+                {"boolEnableDeathHandler", checkBoxScriptProfiles_SmithingAIO_DeathHandler},
+                {"boolEnableDiscordWebhooks", checkBoxScriptProfiles_SmithingAIO_DiscordWebhooks},
+                {"boolEnableHopWorlds", checkBoxScriptProfiles_SmithingAIO_WorldHopping},
+                {"boolEnableRenewBond", checkBoxScriptProfiles_SmithingAIO_RenewBond},
+                {"boolEnableRestocking", checkBoxScriptProfiles_SmithingAIO_Restocking},
+                {"boolEnableSellLoot", checkBoxScriptProfiles_SmithingAIO_SellLoot}
             };
 
             foreach (var checkboxPair in checkBoxMappings)
@@ -58,8 +60,8 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 }
             }
 
-            // Write To File
-            using (StreamWriter writer = new StreamWriter(filepathProfileGeneric))
+            // Write to file
+            using (StreamWriter writer = new StreamWriter(filepathProfileSmithingAIO))
             {
                 writer.WriteLine("General Settings");
                 writer.WriteLine(boolEnableAntipattern);
@@ -69,6 +71,11 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine(boolEnableRenewBond);
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
+                writer.WriteLine("\nSmithing AIO Settings");
+                writer.WriteLine("<Find>Cannonballs/*/Smelting/*/Smithing</Find><Replace>" + comboBoxScriptProfiles_SmithingAIO_SelectMode.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>Progressive/*/Bronze/*/IronBar/*/Silver/*/Steel/*/Gold/*/Mithril/*/Adamantite/*/Runite</Find><Replace>" + comboBoxScriptProfiles_SmithingAIO_SelectBar.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>SmithingAioItem</Find><Replace>" + comboBoxScriptProfiles_SmithingAIO_SelectItem.SelectedItem.ToString() + "</Replace>");
+                writer.WriteLine("<Find>Random/*/AnvilSeersVillage/*/AnvilVarrockEast/*/AnvilVarrockWest/*/FurnaceAlKharid/*/FurnaceArdougne/*/FurnaceEdgeville/*/FurnaceFalador</Find><Replace>" + comboBoxScriptProfiles_SmithingAIO_SelectArea.SelectedItem.ToString() + "</Replace>");
             }
             MessageBox.Show("Profile successfully created.");
         }

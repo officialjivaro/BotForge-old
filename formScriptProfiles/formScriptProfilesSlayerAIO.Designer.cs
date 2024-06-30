@@ -114,7 +114,7 @@
             btnScriptProfiles_SlayerAIO_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_SlayerAIO_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_SlayerAIO_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_SlayerAIO_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_SlayerAIO_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_SlayerAIO_SaveProfile.Location = new Point(440, 575);
             btnScriptProfiles_SlayerAIO_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_SlayerAIO_SaveProfile.Name = "btnScriptProfiles_SlayerAIO_SaveProfile";

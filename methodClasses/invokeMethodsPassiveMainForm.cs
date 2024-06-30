@@ -1,5 +1,4 @@
-﻿using Krypton.Toolkit;
-using System.Management;
+﻿using System.Management;
 
 namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
 {
@@ -155,7 +154,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
         }
 
         // Invoke - Update Running Status
-        public static void Invoke_UpdateRunningStatus(KryptonDataGridView dataGridView, string accountCellName, string statusCellName)
+        public static void Invoke_UpdateRunningStatus(DataGridView dataGridView, string accountCellName, string statusCellName)
         {
             string commandLineArguments = formMainForm.lastFetchedArgs;
 

@@ -49,19 +49,26 @@
     <Compile Update="formScriptProfiles\formScriptProfilesFarmingTitheFarm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formScriptProfiles\formScriptProfilesFighterVyres.cs">
+    <Compile Update="formScriptProfiles\formScriptProfilesFighterRuneDragons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesFighterVyrewatchSentinels.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="formScriptProfiles\formScriptProfilesHerbloreCleanHerbs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formScriptProfiles\formScriptProfilesMiningAIO.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesMiningAIO.cs" />
     <Compile Update="formScriptProfiles\formScriptProfilesMiniGamesRoguesDen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesSmithingAIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="formScriptProfiles\formScriptProfilesProgressiveFighterMagic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formScriptProfiles\formScriptProfilesThievingElves.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
@@ -102,6 +109,10 @@
     <None Update="updater.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="graphicClasses\" />
   </ItemGroup>
 
 </Project>

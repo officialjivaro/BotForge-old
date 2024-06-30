@@ -1,6 +1,6 @@
 ﻿namespace Jivaro_Old_School_RuneScape_Bot_Manager.methodClasses
 {
-    internal class classWelcomeScreen
+    internal class invokeWelcomeScreen
     {
 
         // Invoke - Fetch Text from Url and Paste into Rich Text Box

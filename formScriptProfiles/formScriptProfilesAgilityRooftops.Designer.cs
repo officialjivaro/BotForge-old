@@ -48,7 +48,7 @@
             // 
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.BackColor = Color.FromArgb(224, 224, 224);
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxScriptProfiles_AgilityRooftops_TrainAgility.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_AgilityRooftops_TrainAgility.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.Location = new Point(525, 225);
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.Margin = new Padding(0);
             textBoxScriptProfiles_AgilityRooftops_TrainAgility.Name = "textBoxScriptProfiles_AgilityRooftops_TrainAgility";
@@ -151,7 +151,7 @@
             btnScriptProfiles_AgilityRooftops_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_AgilityRooftops_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_AgilityRooftops_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_AgilityRooftops_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_AgilityRooftops_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_AgilityRooftops_SaveProfile.Location = new Point(330, 375);
             btnScriptProfiles_AgilityRooftops_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_AgilityRooftops_SaveProfile.Name = "btnScriptProfiles_AgilityRooftops_SaveProfile";
@@ -177,7 +177,7 @@
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.FormattingEnabled = true;
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.Items.AddRange(new object[] { "Progressive", "Gnome", "Draynor", "Varrock", "Falador", "Seers", "Fremennik", "Ardougne" });
             comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse.Location = new Point(550, 150);
@@ -201,7 +201,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(784, 461);
             Controls.Add(labelScriptProfiles_AgilityRooftops_Header);
             Controls.Add(comboBoxScriptProfiles_AgilityRooftops_SelectRooftopCourse);

@@ -147,7 +147,7 @@
             btnScriptProfiles_MagicHouseAlcher_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_MagicHouseAlcher_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_MagicHouseAlcher_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MagicHouseAlcher_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MagicHouseAlcher_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_MagicHouseAlcher_SaveProfile.Location = new Point(205, 425);
             btnScriptProfiles_MagicHouseAlcher_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_MagicHouseAlcher_SaveProfile.Name = "btnScriptProfiles_MagicHouseAlcher_SaveProfile";
@@ -182,7 +182,7 @@
             btnScriptProfiles_MagicHouseAlcher_SearchForId.BackColor = Color.FromArgb(224, 224, 224);
             btnScriptProfiles_MagicHouseAlcher_SearchForId.Cursor = Cursors.Hand;
             btnScriptProfiles_MagicHouseAlcher_SearchForId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MagicHouseAlcher_SearchForId.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MagicHouseAlcher_SearchForId.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_MagicHouseAlcher_SearchForId.Location = new Point(350, 325);
             btnScriptProfiles_MagicHouseAlcher_SearchForId.Margin = new Padding(0);
             btnScriptProfiles_MagicHouseAlcher_SearchForId.Name = "btnScriptProfiles_MagicHouseAlcher_SearchForId";

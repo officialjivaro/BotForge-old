@@ -57,7 +57,7 @@
             // 
             // listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets
             // 
-            listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.BackColor = Color.FromArgb(64, 64, 64);
+            listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.BackColor = Color.FromArgb(60, 60, 60);
             listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.ForeColor = Color.FromArgb(224, 224, 224);
             listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.FormattingEnabled = true;
             listBoxScriptProfiles_MiningMotherlodeMine_SpendNuggets.ItemHeight = 18;
@@ -96,7 +96,7 @@
             comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.FormattingEnabled = true;
             comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.Items.AddRange(new object[] { "Random", "West", "SouthWest", "South", "SouthEast" });
             comboBoxScriptProfiles_MiningMotherlodeMine_SelectSector.Location = new Point(350, 372);
@@ -187,7 +187,7 @@
             btnScriptProfiles_MiningMotherlodeMine_Save.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_MiningMotherlodeMine_Save.Cursor = Cursors.Hand;
             btnScriptProfiles_MiningMotherlodeMine_Save.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_MiningMotherlodeMine_Save.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_MiningMotherlodeMine_Save.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_MiningMotherlodeMine_Save.Location = new Point(180, 425);
             btnScriptProfiles_MiningMotherlodeMine_Save.Margin = new Padding(0);
             btnScriptProfiles_MiningMotherlodeMine_Save.Name = "btnScriptProfiles_MiningMotherlodeMine_Save";

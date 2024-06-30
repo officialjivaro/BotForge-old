@@ -37,10 +37,10 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formMiscellaneous
         {
             try
             {
-                UpdateComboBox(MainForm.kryptonDataGridViewDashboard_ScriptFactoryManager.Columns["kryptonDataGridViewDashboard_ScriptFactory_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_ScriptFactory.Lines);
-                UpdateComboBox(MainForm.kryptonDataGridViewDashboard_OSBotManager.Columns["kryptonDataGridViewDashboard_OSBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_OSBot.Lines);
-                UpdateComboBox(MainForm.kryptonDataGridViewDashboard_DreamBotManager.Columns["kryptonDataGridViewDashboard_DreamBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_DreamBot.Lines);
-                UpdateComboBox(MainForm.kryptonDataGridViewDashboard_TRiBotManager.Columns["kryptonDataGridViewDashboard_TRiBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_TRiBot.Lines);
+                UpdateComboBox(MainForm.dataGridViewDashboard_ScriptFactoryManager.Columns["dataGridViewDashboard_ScriptFactory_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_ScriptFactory.Lines);
+                UpdateComboBox(MainForm.dataGridViewDashboard_OSBotManager.Columns["dataGridViewDashboard_OSBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_OSBot.Lines);
+                UpdateComboBox(MainForm.dataGridViewDashboard_DreamBotManager.Columns["dataGridViewDashboard_DreamBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_DreamBot.Lines);
+                UpdateComboBox(MainForm.dataGridViewDashboard_TRiBotManager.Columns["dataGridViewDashboard_TRiBotManager_Script"] as DataGridViewComboBoxColumn, richTextBoxLocalScript_TRiBot.Lines);
 
                 // Save the contents of the richTextBox to a file
                 SaveRichTextBoxContent(MainForm.filePathApplicationDataLocalScriptsScriptFactory, richTextBoxLocalScript_ScriptFactory);

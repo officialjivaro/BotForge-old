@@ -147,7 +147,7 @@
             btnScriptProfiles_FiremakingGrandExchange_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FiremakingGrandExchange_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Location = new Point(180, 325);
             btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_FiremakingGrandExchange_SaveProfile.Name = "btnScriptProfiles_FiremakingGrandExchange_SaveProfile";
@@ -172,7 +172,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(484, 411);
             Controls.Add(labelScriptProfiles_FiremakingGrandExchange_Header);
             Controls.Add(textBoxScriptProfiles_FiremakingGrandExchange_StopLevel);

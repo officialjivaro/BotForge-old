@@ -140,7 +140,7 @@
             listBoxScriptProfiles_TutorialIsland_DisableInteractions.ColumnWidth = 1;
             listBoxScriptProfiles_TutorialIsland_DisableInteractions.Cursor = Cursors.Hand;
             listBoxScriptProfiles_TutorialIsland_DisableInteractions.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            listBoxScriptProfiles_TutorialIsland_DisableInteractions.ForeColor = Color.FromArgb(64, 64, 64);
+            listBoxScriptProfiles_TutorialIsland_DisableInteractions.ForeColor = Color.FromArgb(60, 60, 60);
             listBoxScriptProfiles_TutorialIsland_DisableInteractions.FormattingEnabled = true;
             listBoxScriptProfiles_TutorialIsland_DisableInteractions.ImeMode = ImeMode.NoControl;
             listBoxScriptProfiles_TutorialIsland_DisableInteractions.ItemHeight = 18;
@@ -169,7 +169,7 @@
             btnScriptProfiles_TutorialIsland_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_TutorialIsland_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_TutorialIsland_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_TutorialIsland_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_TutorialIsland_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_TutorialIsland_SaveProfile.Location = new Point(380, 450);
             btnScriptProfiles_TutorialIsland_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_TutorialIsland_SaveProfile.Name = "btnScriptProfiles_TutorialIsland_SaveProfile";

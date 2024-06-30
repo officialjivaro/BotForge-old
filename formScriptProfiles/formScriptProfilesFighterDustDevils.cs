@@ -19,7 +19,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         // Initialize Variables
         string boolEnableAntipattern = "<Find>boolEnableAntipattern:false</Find><Replace>boolEnableAntipattern:false</Replace>";
         string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
-        string boolEnableHighAlching = "<Find>boolEnableHighAlching:false</Find><Replace>boolEnableHighAlching:false</Replace>";
+        string boolEnableHighAlchemy = "<Find>boolEnableHighAlchemy:false</Find><Replace>boolEnableHighAlchemy:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
         string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
@@ -48,7 +48,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
             {
                 {"boolEnableAntipattern", checkBoxScriptProfiles_FighterDustDevils_Antipattern},
                 {"boolEnableDeathHandler", checkBoxScriptProfiles_FighterDustDevils_DeathHandler},
-                {"boolEnableHighAlching", checkBoxScriptProfiles_FighterDustDevils_HighAlching},
+                {"boolEnableHighAlchemy", checkBoxScriptProfiles_FighterDustDevils_HighAlchemy},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_FighterDustDevils_WorldHopping},
                 {"boolEnableRenewBond", checkBoxScriptProfiles_FighterDustDevils_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_FighterDustDevils_Restocking},
@@ -78,7 +78,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine(boolEnableRestocking);
                 writer.WriteLine(boolEnableSellLoot);
                 writer.WriteLine("\nDust Devil Settings");
-                writer.WriteLine(boolEnableHighAlching);
+                writer.WriteLine(boolEnableHighAlchemy);
                 writer.WriteLine("<Find>SmokeDungeon/*/CatacombsOfKourend</Find><Replace>" + comboBoxScriptProfiles_FighterDustDevils_SelectArea.SelectedItem.ToString() + "</Replace>");
                 writer.WriteLine("<Find>None/*/CombatPotion/*/SuperCombatPotion</Find><Replace>" + comboBoxScriptProfiles_FighterDustDevils_SelectPotion.SelectedItem.ToString() + "</Replace>");
                 writer.WriteLine("\nGear Settings");

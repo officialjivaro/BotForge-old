@@ -29,7 +29,7 @@
         public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formScriptProfilesFighterDustDevils));
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching = new CheckBox();
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy = new CheckBox();
             checkBoxScriptProfiles_FighterDustDevils_WorldHopping = new CheckBox();
             checkBoxScriptProfiles_FighterDustDevils_Restocking = new CheckBox();
             checkBoxScriptProfiles_FighterDustDevils_SellLoot = new CheckBox();
@@ -76,16 +76,16 @@
             tabPageScriptProfiles_DustDevils_GearSettings.SuspendLayout();
             SuspendLayout();
             // 
-            // checkBoxScriptProfiles_FighterDustDevils_HighAlching
+            // checkBoxScriptProfiles_FighterDustDevils_HighAlchemy
             // 
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching.AutoSize = true;
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching.Location = new Point(100, 225);
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching.Margin = new Padding(0);
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching.Name = "checkBoxScriptProfiles_FighterDustDevils_HighAlching";
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching.Size = new Size(252, 22);
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching.TabIndex = 148;
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching.Text = "High Alchemy (Not Yet Supported)";
-            checkBoxScriptProfiles_FighterDustDevils_HighAlching.UseVisualStyleBackColor = true;
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy.AutoSize = true;
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy.Location = new Point(100, 225);
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy.Margin = new Padding(0);
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy.Name = "checkBoxScriptProfiles_FighterDustDevils_HighAlchemy";
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy.Size = new Size(252, 22);
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy.TabIndex = 148;
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy.Text = "High Alchemy (Not Yet Supported)";
+            checkBoxScriptProfiles_FighterDustDevils_HighAlchemy.UseVisualStyleBackColor = true;
             // 
             // checkBoxScriptProfiles_FighterDustDevils_WorldHopping
             // 
@@ -168,7 +168,7 @@
             btnScriptProfiles_FighterDustDevils_SaveProfile.BackgroundImageLayout = ImageLayout.Stretch;
             btnScriptProfiles_FighterDustDevils_SaveProfile.Cursor = Cursors.Hand;
             btnScriptProfiles_FighterDustDevils_SaveProfile.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnScriptProfiles_FighterDustDevils_SaveProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnScriptProfiles_FighterDustDevils_SaveProfile.ForeColor = Color.FromArgb(60, 60, 60);
             btnScriptProfiles_FighterDustDevils_SaveProfile.Location = new Point(445, 575);
             btnScriptProfiles_FighterDustDevils_SaveProfile.Margin = new Padding(0);
             btnScriptProfiles_FighterDustDevils_SaveProfile.Name = "btnScriptProfiles_FighterDustDevils_SaveProfile";
@@ -291,7 +291,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeCape
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeCape.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeCape.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.Location = new Point(205, 150);
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeCape.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeCape";
@@ -303,7 +303,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeChest
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeChest.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeChest.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.Location = new Point(455, 250);
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeChest.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeChest";
@@ -315,7 +315,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeRing
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeRing.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeRing.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.Location = new Point(705, 300);
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeRing.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeRing";
@@ -327,7 +327,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeLegs
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeLegs.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeLegs.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Location = new Point(455, 325);
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeLegs.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeLegs";
@@ -339,7 +339,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeHead
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeHead.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeHead.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.Location = new Point(455, 100);
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeHead.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeHead";
@@ -351,7 +351,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeFeet
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeFeet.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeFeet.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Location = new Point(455, 400);
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeFeet.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeFeet";
@@ -363,7 +363,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeHands
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeHands.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeHands.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.Location = new Point(205, 300);
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeHands.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeHands";
@@ -375,7 +375,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeWeapon
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Location = new Point(205, 225);
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeWeapon.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeWeapon";
@@ -387,7 +387,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MeleeArrow
             // 
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MeleeArrow.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MeleeArrow.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Location = new Point(705, 150);
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MeleeArrow.Name = "textBoxScriptProfiles_FighterDustDevils_MeleeArrow";
@@ -399,7 +399,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MiscShield
             // 
             textBoxScriptProfiles_FighterDustDevils_MiscShield.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MiscShield.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MiscShield.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MiscShield.Location = new Point(705, 225);
             textBoxScriptProfiles_FighterDustDevils_MiscShield.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MiscShield.Name = "textBoxScriptProfiles_FighterDustDevils_MiscShield";
@@ -411,7 +411,7 @@
             // textBoxScriptProfiles_FighterDustDevils_MiscAmulet
             // 
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.BackColor = Color.FromArgb(224, 224, 224);
-            textBoxScriptProfiles_FighterDustDevils_MiscAmulet.ForeColor = Color.FromArgb(64, 64, 64);
+            textBoxScriptProfiles_FighterDustDevils_MiscAmulet.ForeColor = Color.FromArgb(60, 60, 60);
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Location = new Point(455, 175);
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Margin = new Padding(0);
             textBoxScriptProfiles_FighterDustDevils_MiscAmulet.Name = "textBoxScriptProfiles_FighterDustDevils_MiscAmulet";
@@ -445,7 +445,7 @@
             // 
             // tabPageScriptProfiles_DustDevils_GeneralSettings
             // 
-            tabPageScriptProfiles_DustDevils_GeneralSettings.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageScriptProfiles_DustDevils_GeneralSettings.BackColor = Color.FromArgb(60, 60, 60);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(labelScriptProfiles_FighterDustDevils_GeneralSettings);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(comboBoxScriptProfiles_FighterDustDevils_SelectArea);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(comboBoxScriptProfiles_FighterDustDevils_SelectPotion);
@@ -457,7 +457,7 @@
             tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(checkBoxScriptProfiles_FighterDustDevils_SellLoot);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(checkBoxScriptProfiles_FighterDustDevils_Restocking);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(checkBoxScriptProfiles_FighterDustDevils_WorldHopping);
-            tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(checkBoxScriptProfiles_FighterDustDevils_HighAlching);
+            tabPageScriptProfiles_DustDevils_GeneralSettings.Controls.Add(checkBoxScriptProfiles_FighterDustDevils_HighAlchemy);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Location = new Point(4, 27);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Margin = new Padding(0);
             tabPageScriptProfiles_DustDevils_GeneralSettings.Name = "tabPageScriptProfiles_DustDevils_GeneralSettings";
@@ -482,7 +482,7 @@
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_FighterDustDevils_SelectArea.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_FighterDustDevils_SelectArea.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.Items.AddRange(new object[] { "SmokeDungeon", "CatacombsOfKourend" });
             comboBoxScriptProfiles_FighterDustDevils_SelectArea.Location = new Point(400, 275);
@@ -496,7 +496,7 @@
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.BackColor = Color.FromArgb(224, 224, 224);
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.FlatStyle = FlatStyle.Flat;
-            comboBoxScriptProfiles_FighterDustDevils_SelectPotion.ForeColor = Color.FromArgb(64, 64, 64);
+            comboBoxScriptProfiles_FighterDustDevils_SelectPotion.ForeColor = Color.FromArgb(60, 60, 60);
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.FormattingEnabled = true;
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.Items.AddRange(new object[] { "None", "CombatPotion", "SuperCombatPotion" });
             comboBoxScriptProfiles_FighterDustDevils_SelectPotion.Location = new Point(700, 275);
@@ -527,7 +527,7 @@
             // 
             // tabPageScriptProfiles_DustDevils_GearSettings
             // 
-            tabPageScriptProfiles_DustDevils_GearSettings.BackColor = Color.FromArgb(64, 64, 64);
+            tabPageScriptProfiles_DustDevils_GearSettings.BackColor = Color.FromArgb(60, 60, 60);
             tabPageScriptProfiles_DustDevils_GearSettings.Controls.Add(labelScriptProfiles_DustDevils_NoRestocking);
             tabPageScriptProfiles_DustDevils_GearSettings.Controls.Add(labelScriptProfiles_DustDevils_CustomGear);
             tabPageScriptProfiles_DustDevils_GearSettings.Controls.Add(textBoxScriptProfiles_FighterDustDevils_MeleeArrow);
@@ -586,7 +586,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(1014, 641);
             Controls.Add(tabControlScriptProfiles_DustDevils);
             Controls.Add(labelScriptProfiles_FighterDustDevils_Header);
@@ -613,7 +613,7 @@
         #endregion
         public Label labelScriptProfiles_FighterDustDevils_Header;
         public Label labelScriptProfiles_FighterDustDevils_Title;
-        public CheckBox checkBoxScriptProfiles_FighterDustDevils_HighAlching;
+        public CheckBox checkBoxScriptProfiles_FighterDustDevils_HighAlchemy;
         public CheckBox checkBoxScriptProfiles_FighterDustDevils_WorldHopping;
         public CheckBox checkBoxScriptProfiles_FighterDustDevils_Restocking;
         public CheckBox checkBoxScriptProfiles_FighterDustDevils_SellLoot;

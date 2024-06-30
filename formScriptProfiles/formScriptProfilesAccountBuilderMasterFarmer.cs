@@ -20,7 +20,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
         string boolEnableDeathHandler = "<Find>boolEnableDeathHandler:false</Find><Replace>boolEnableDeathHandler:false</Replace>";
         string boolEnableFarmMasterFarmers = "<Find>boolEnableFarmMasterFarmers:false</Find><Replace>boolEnableFarmMasterFarmers:false</Replace>";
         string boolEnableHopWorlds = "<Find>boolEnableHopWorlds:false</Find><Replace>boolEnableHopWorlds:false</Replace>";
-        string boolEnableNoGpStart = "<Find>boolEnableNoGpStart:false</Find><Replace>boolEnableNoGpStart:false</Replace>";
+        string boolEnableFailedRestockGoldFarming = "<Find>boolEnableFailedRestockGoldFarming:false</Find><Replace>boolEnableFailedRestockGoldFarming:false</Replace>";
         string boolEnableRenewBond = "<Find>boolEnableRenewBond:false</Find><Replace>boolEnableRenewBond:false</Replace>";
         string boolEnableRestocking = "<Find>boolEnableRestocking:false</Find><Replace>boolEnableRestocking:false</Replace>";
         string boolEnableRooftops = "<Find>boolEnableRooftops:false</Find><Replace>boolEnableRooftops:false</Replace>";
@@ -69,7 +69,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 {"boolEnableDeathHandler", checkBoxScriptProfiles_AccountBuilderMasterFarmer_DeathHandler},
                 {"boolEnableFarmMasterFarmers", checkBoxScriptProfiles_AccountBuilderMasterFarmer_FarmMasterFarmers},
                 {"boolEnableHopWorlds", checkBoxScriptProfiles_AccountBuilderMasterFarmer_WorldHopping},
-                {"boolEnableNoGpStart", checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart},
+                {"boolEnableFailedRestockGoldFarming", checkBoxScriptProfiles_AccountBuilderMasterFarmer_NoGpStart},
                 {"boolEnableRenewBond", checkBoxScriptProfiles_AccountBuilderMasterFarmer_RenewBond},
                 {"boolEnableRestocking", checkBoxScriptProfiles_AccountBuilderMasterFarmer_Restocking},
                 {"boolEnableRooftops", checkBoxScriptProfiles_AccountBuilderMasterFarmer_RooftopsMethod},
@@ -108,7 +108,7 @@ namespace Jivaro_Old_School_RuneScape_Bot_Manager.formScriptProfiles
                 writer.WriteLine(boolEnableSellLoot);
                 writer.WriteLine("\nAccount Builder Settings");
                 writer.WriteLine(boolEnableFarmMasterFarmers);
-                writer.WriteLine(boolEnableNoGpStart);
+                writer.WriteLine(boolEnableFailedRestockGoldFarming);
                 writer.WriteLine(boolEnableRooftops);
                 writer.WriteLine("<Find>71/*/85</Find><Replace>" + comboBoxScriptProfiles_AccountBuilderMasterFarmer_FarmingStopLevel.SelectedItem.ToString() + "</Replace>");
                 writer.WriteLine("\nActivity Duration Settings");
